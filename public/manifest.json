@@ -1,0 +1,22 @@
+{
+  "name": "Gridiron Apex - NFL Intelligence & News",
+  "short_name": "Gridiron Apex",
+  "description": "Premium NFL News, Live Schedules, Injury Wire and AI Tactical Intelligence for iPhone, iPad, and Mac.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
