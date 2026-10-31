@@ -5,12 +5,6 @@ import Image from "next/image";
 import { 
   Trophy, 
   Tv, 
-  ChevronRight, 
-  Flame, 
-  BarChart3, 
-  Award, 
-  CheckCircle2, 
-  Clock,
   Radio
 } from "lucide-react";
 import { NFL_TEAMS } from "@/lib/nfl-teams";

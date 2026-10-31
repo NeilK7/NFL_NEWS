@@ -1,30 +1,22 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import { 
   Sparkles, 
   ExternalLink, 
   RefreshCw, 
-  Flame, 
-  TrendingUp, 
-  Activity, 
-  ShieldCheck, 
   Clock, 
   Zap, 
-  BookOpen, 
   Search,
-  Filter,
-  X,
-  AlertCircle
+  X
 } from "lucide-react";
 import { NewsArticle, AISummaryResponse } from "@/types";
 
 interface AINewsFeedProps {
-  onOpenAISummary: (prompt: string, title: string) => void;
+  onOpenAISummary?: (prompt: string, title: string) => void;
 }
 
-export default function AINewsFeed({ onOpenAISummary }: AINewsFeedProps) {
+export default function AINewsFeed({}: AINewsFeedProps) {
   const [articles, setArticles] = useState<NewsArticle[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedSource, setSelectedSource] = useState<string>("ALL");
@@ -201,9 +193,9 @@ export default function AINewsFeed({ onOpenAISummary }: AINewsFeedProps) {
                       >
                         {article.source}
                       </span>
-                      {article.teamTag && (
+                      {(article.teamTag || article.tags?.[0]) && (
                         <span className="text-[10px] font-bold text-gray-300 bg-gray-800 px-1.5 py-0.5 rounded">
-                          {article.teamTag}
+                          {article.teamTag || article.tags?.[0]}
                         </span>
                       )}
                     </div>

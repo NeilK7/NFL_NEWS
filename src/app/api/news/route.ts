@@ -113,6 +113,8 @@ const FALLBACK_ARTICLES: NewsArticle[] = [
   },
 ];
 
+export const dynamic = 'force-dynamic';
+
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
@@ -120,10 +122,11 @@ export async function GET(request: Request) {
 
     let articles = [...FALLBACK_ARTICLES];
 
-    // Try fetching live ESPN NFL feed
+    // Try fetching live ESPN NFL feed with a strict 3-second timeout
     try {
       const res = await fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/news', {
-        next: { revalidate: 300 }, // Cache for 5 minutes
+        next: { revalidate: 300 },
+        signal: AbortSignal.timeout(3000),
       });
       if (res.ok) {
         const data = await res.json();
@@ -163,7 +166,7 @@ export async function GET(request: Request) {
     }
 
     return NextResponse.json({ articles });
-  } catch (error) {
+  } catch {
     return NextResponse.json({ articles: FALLBACK_ARTICLES }, { status: 200 });
   }
 }

@@ -9,28 +9,21 @@ import {
   Tv, 
   Activity, 
   Play, 
-  TrendingUp, 
-  ShieldAlert, 
-  CheckCircle, 
-  AlertTriangle, 
   Sparkles, 
-  ChevronRight,
-  Flame,
   Award,
   Video,
   X
 } from "lucide-react";
-import { NFLTeam, GameSchedule, Injury, SeasonHighlight, Player } from "@/types";
+import { NFLTeam, SeasonHighlight, Player } from "@/types";
 
 interface TeamDashboardProps {
   team: NFLTeam;
-  starPlayers: Player[];
+  starPlayers?: Player[];
   onOpenAISummary: (prompt: string, title: string) => void;
 }
 
 export default function TeamDashboard({
   team,
-  starPlayers,
   onOpenAISummary,
 }: TeamDashboardProps) {
   // Countdown Timer State
@@ -289,15 +282,21 @@ export default function TeamDashboard({
                   <span className="text-xs font-mono font-bold text-gray-400 w-12">
                     WK {game.week}
                   </span>
-                  <div className="w-8 h-8 relative flex-shrink-0">
-                    <Image
-                      src={game.opponentLogo}
-                      alt={game.opponent}
-                      fill
-                      className="object-contain"
-                      sizes="32px"
-                    />
-                  </div>
+                  {game.opponentLogo ? (
+                    <div className="w-8 h-8 relative flex-shrink-0">
+                      <Image
+                        src={game.opponentLogo}
+                        alt={game.opponent}
+                        fill
+                        className="object-contain"
+                        sizes="32px"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-8 h-8 rounded-full bg-gray-800 border border-gray-700 flex items-center justify-center text-[10px] font-bold text-gray-400 flex-shrink-0">
+                      BYE
+                    </div>
+                  )}
                   <div>
                     <div className="font-bold text-xs text-white flex items-center gap-1.5">
                       <span className="text-gray-400 font-normal">
@@ -548,7 +547,13 @@ export default function TeamDashboard({
 
             <div className="relative aspect-video w-full bg-black">
               <iframe
-                src={`https://www.youtube.com/embed/${activeHighlight.videoUrl}?autoplay=1`}
+                src={
+                  activeHighlight.videoUrl.includes("watch?v=")
+                    ? activeHighlight.videoUrl.replace("watch?v=", "embed/") + "?autoplay=1"
+                    : activeHighlight.videoUrl.startsWith("http")
+                    ? activeHighlight.videoUrl
+                    : `https://www.youtube.com/embed/${activeHighlight.videoUrl}?autoplay=1`
+                }
                 title={activeHighlight.title}
                 className="w-full h-full border-0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

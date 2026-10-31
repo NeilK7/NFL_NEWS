@@ -13,9 +13,13 @@ import {
   ShieldCheck, 
   Zap, 
   Sparkles,
-  ExternalLink,
-  QrCode
+  ExternalLink
 } from "lucide-react";
+
+interface BeforeInstallPromptEvent extends Event {
+  prompt: () => Promise<void>;
+  userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
+}
 
 interface AppleDownloadModalProps {
   isOpen: boolean;
@@ -24,17 +28,14 @@ interface AppleDownloadModalProps {
 
 export default function AppleDownloadModal({ isOpen, onClose }: AppleDownloadModalProps) {
   const [activeDevice, setActiveDevice] = useState<"ios" | "ipad" | "mac">("ios");
-  const [installPrompt, setInstallPrompt] = useState<any>(null);
+  const [installPrompt, setInstallPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [isCopied, setIsCopied] = useState(false);
-  const [currentUrl, setCurrentUrl] = useState("");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setCurrentUrl(window.location.origin);
-      
-      const handleBeforeInstallPrompt = (e: any) => {
+      const handleBeforeInstallPrompt = (e: Event) => {
         e.preventDefault();
-        setInstallPrompt(e);
+        setInstallPrompt(e as BeforeInstallPromptEvent);
       };
 
       window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);

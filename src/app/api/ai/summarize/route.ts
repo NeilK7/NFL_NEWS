@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
   try {
-    const { title, content, topic, context } = await request.json();
+    const { title, topic, context } = await request.json();
     const subject = title || topic || 'NFL Tactical Intelligence';
 
     // Generate intelligent tactical football synthesis
@@ -24,7 +24,7 @@ export async function POST(request: Request) {
       urgency: 'HIGH',
       generatedAt: new Date().toLocaleTimeString(),
     });
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: 'Failed to generate AI brief' }, { status: 500 });
   }
 }

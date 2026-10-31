@@ -5,14 +5,7 @@ import Image from "next/image";
 import { 
   Trophy, 
   Smartphone, 
-  Sparkles, 
-  Shield, 
-  Layers, 
-  ExternalLink,
-  Zap,
-  Activity,
-  Calendar,
-  ChevronRight
+  Sparkles
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import TeamDashboard from "@/components/TeamDashboard";
@@ -130,7 +123,7 @@ export default function Home() {
         loading: false,
         brief: data,
       });
-    } catch (e) {
+    } catch {
       setGlobalAIBrief({
         isOpen: true,
         title,

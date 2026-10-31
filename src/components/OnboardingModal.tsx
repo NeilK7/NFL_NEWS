@@ -10,9 +10,7 @@ import {
   Star, 
   ArrowRight, 
   Sparkles, 
-  X, 
-  UserCheck, 
-  ShieldCheck 
+  X
 } from "lucide-react";
 import { NFLTeam, Player, UserPreferences } from "@/types";
 import { NFL_TEAMS } from "@/lib/nfl-teams";

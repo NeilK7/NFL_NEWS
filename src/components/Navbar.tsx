@@ -6,13 +6,11 @@ import {
   Trophy, 
   Smartphone, 
   Sliders, 
-  Flame, 
   ChevronDown, 
   Radio, 
   Database, 
   Sparkles,
-  Shield,
-  Clock
+  Shield
 } from "lucide-react";
 import { NFLTeam } from "@/types";
 
