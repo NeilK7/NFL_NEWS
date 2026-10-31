@@ -12,7 +12,9 @@ import {
   Sparkles, 
   Award,
   Video,
-  X
+  X,
+  Search,
+  Users
 } from "lucide-react";
 import { NFLTeam, SeasonHighlight, Player } from "@/types";
 
@@ -35,6 +37,31 @@ export default function TeamDashboard({
   }>({ days: 3, hours: 14, minutes: 22, seconds: 45 });
 
   const [activeHighlight, setActiveHighlight] = useState<SeasonHighlight | null>(null);
+  const [rosterTab, setRosterTab] = useState<"ALL" | "OFFENSE" | "DEFENSE" | "SPECIAL">("ALL");
+  const [rosterSearch, setRosterSearch] = useState("");
+
+  const offensePositions = ["QB", "RB", "FB", "WR", "TE", "LT", "RT", "LG", "RG", "C", "OT", "OG"];
+  const defensePositions = ["DE", "DT", "NT", "OLB", "ILB", "LB", "CB", "FS", "SS", "S"];
+  const specialPositions = ["K", "P", "LS"];
+
+  const filteredRoster = team.starPlayers.filter((player) => {
+    const matchesSearch =
+      !rosterSearch.trim() ||
+      player.name.toLowerCase().includes(rosterSearch.toLowerCase()) ||
+      player.position.toLowerCase().includes(rosterSearch.toLowerCase()) ||
+      String(player.number).includes(rosterSearch);
+
+    let matchesTab = true;
+    if (rosterTab === "OFFENSE") {
+      matchesTab = offensePositions.includes(player.position);
+    } else if (rosterTab === "DEFENSE") {
+      matchesTab = defensePositions.includes(player.position);
+    } else if (rosterTab === "SPECIAL") {
+      matchesTab = specialPositions.includes(player.position);
+    }
+
+    return matchesSearch && matchesTab;
+  });
 
   // Active Countdown ticker
   useEffect(() => {
@@ -464,58 +491,112 @@ export default function TeamDashboard({
         </div>
       </div>
 
-      {/* 5. Star Playmakers Roster */}
-      <div className="glass-panel rounded-2xl p-6 border border-gray-800 space-y-4">
-        <div className="flex items-center justify-between pb-3 border-b border-gray-800">
-          <div className="flex items-center gap-2">
-            <Award className="w-5 h-5 text-amber-400" />
-            <h3 className="font-extrabold text-base text-white">
-              Franchise Star Playmakers
-            </h3>
-          </div>
-          <span className="text-xs text-gray-400">War Room Priority Weapons</span>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-          {team.starPlayers.map((player) => (
-            <div
-              key={player.id}
-              className="p-4 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-gray-700 transition-colors space-y-3"
-            >
-              <div className="flex items-center justify-between">
-                <span className="w-8 h-8 rounded-full bg-amber-500/10 text-amber-400 font-mono font-bold flex items-center justify-center text-xs border border-amber-500/20">
-                  #{player.number}
-                </span>
-                <span className="text-xs font-bold uppercase text-gray-400 bg-gray-800 px-2 py-0.5 rounded">
-                  {player.position}
-                </span>
-              </div>
-
-              <div>
-                <div className="font-extrabold text-sm text-white">
-                  {player.name}
-                </div>
-                <div className="text-xs text-amber-300/90 font-medium mt-0.5">
-                  {player.statsHighlight || (player.college ? `${player.college} • ${player.experience}` : player.status)}
-                </div>
-              </div>
-
-              {/* Stats showcase */}
-              {player.stats && (
-                <div className="pt-2 border-t border-gray-800 grid grid-cols-3 gap-1 text-center">
-                  {Object.entries(player.stats).map(([k, v]) => (
-                    <div key={k} className="p-1 rounded bg-gray-950">
-                      <div className="text-[10px] text-gray-500 uppercase">{k}</div>
-                      <div className="text-xs font-bold text-amber-300 font-mono">
-                        {String(v)}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
+      {/* 5. Complete Franchise Roster & Depth Chart */}
+      <div className="glass-panel rounded-2xl p-6 border border-gray-800 space-y-5">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-4 border-b border-gray-800">
+          <div>
+            <div className="flex items-center gap-2">
+              <Users className="w-5 h-5 text-amber-400" />
+              <h3 className="font-extrabold text-lg text-white">
+                {team.name} Full Active Roster & Depth Chart
+              </h3>
             </div>
-          ))}
+            <p className="text-xs text-gray-400 mt-0.5">
+              Showing {filteredRoster.length} of {team.starPlayers.length} verified franchise playmakers
+            </p>
+          </div>
+
+          {/* Search & Tabs */}
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            <div className="relative w-full sm:w-56">
+              <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+              <input
+                type="text"
+                value={rosterSearch}
+                onChange={(e) => setRosterSearch(e.target.value)}
+                placeholder="Filter by name or #..."
+                className="w-full bg-gray-900 border border-gray-700/80 rounded-xl pl-8 pr-3 py-1.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-amber-400"
+              />
+            </div>
+
+            <div className="flex items-center gap-1 bg-gray-900/90 p-1 rounded-xl border border-gray-800 w-full sm:w-auto justify-center">
+              {(["ALL", "OFFENSE", "DEFENSE", "SPECIAL"] as const).map((tab) => (
+                <button
+                  key={tab}
+                  onClick={() => setRosterTab(tab)}
+                  className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all ${
+                    rosterTab === tab
+                      ? "bg-amber-500 text-black shadow-sm"
+                      : "text-gray-400 hover:text-white"
+                  }`}
+                >
+                  {tab === "SPECIAL" ? "ST" : tab}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
+
+        {filteredRoster.length === 0 ? (
+          <div className="p-8 text-center text-xs text-gray-500">
+            No players matched &quot;{rosterSearch}&quot; in {rosterTab} category.
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 max-h-[600px] overflow-y-auto pr-1">
+            {filteredRoster.map((player) => (
+              <div
+                key={player.id}
+                className="p-3.5 rounded-xl bg-gray-900/60 border border-gray-800/90 hover:border-amber-500/40 transition-all space-y-2.5 group"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="w-7 h-7 rounded-full bg-amber-500/10 text-amber-400 font-mono font-bold flex items-center justify-center text-xs border border-amber-500/20">
+                    #{player.number}
+                  </span>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-[10px] font-extrabold uppercase text-gray-300 bg-gray-800 px-2 py-0.5 rounded">
+                      {player.position}
+                    </span>
+                    {player.status === "IR" && (
+                      <span className="text-[9px] font-black uppercase text-red-400 bg-red-950/60 px-1.5 py-0.5 rounded border border-red-500/30">
+                        IR
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                <div>
+                  <div className="font-extrabold text-sm text-white group-hover:text-amber-400 transition-colors">
+                    {player.name}
+                  </div>
+                  <div className="text-[11px] text-gray-400 flex items-center gap-1.5 mt-0.5">
+                    {player.college && <span>{player.college}</span>}
+                    {player.college && player.experience && <span>•</span>}
+                    {player.experience && <span>{player.experience}</span>}
+                  </div>
+                </div>
+
+                {player.statsHighlight && (
+                  <div className="p-2 rounded-lg bg-gray-950/80 border border-gray-800 text-xs font-semibold text-amber-300">
+                    {player.statsHighlight}
+                  </div>
+                )}
+
+                {player.stats && !player.statsHighlight && (
+                  <div className="grid grid-cols-3 gap-1 pt-1 text-center">
+                    {Object.entries(player.stats).map(([k, v]) => (
+                      <div key={k} className="p-1 rounded bg-gray-950">
+                        <div className="text-[9px] text-gray-500 uppercase">{k}</div>
+                        <div className="text-xs font-bold text-amber-300 font-mono">
+                          {String(v)}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Video Modal Player */}

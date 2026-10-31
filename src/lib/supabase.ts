@@ -9,11 +9,11 @@ export const supabase = (supabaseUrl && supabaseAnonKey)
   : null;
 
 const DEFAULT_PREFERENCES: UserPreferences = {
-  favoriteTeamIds: ['kc', 'sf'],
-  primaryTeamId: 'kc',
-  favoritePlayerIds: ['p-mahomes', 'p-purdy', 'p-lamar', 'p-cmc'],
-  favoriteTeams: ['kc', 'sf'],
-  favoritePlayers: ['p-mahomes', 'p-purdy', 'p-lamar', 'p-cmc'],
+  favoriteTeamIds: ['den', 'kc', 'sf'],
+  primaryTeamId: 'den',
+  favoritePlayerIds: ['p-nix', 'p-surtain', 'p-sutton', 'p-allen', 'p-bonitto', 'p-javonte'],
+  favoriteTeams: ['den', 'kc', 'sf'],
+  favoritePlayers: ['p-nix', 'p-surtain', 'p-sutton', 'p-allen', 'p-bonitto', 'p-javonte'],
   savedArticles: [],
   notificationsEnabled: true,
   theme: 'dark',

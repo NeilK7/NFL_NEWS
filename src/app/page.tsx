@@ -20,9 +20,10 @@ import { getUserPreferences } from "@/lib/supabase";
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"war-room" | "ai-news" | "scoreboard">("war-room");
   const [preferences, setPreferences] = useState<UserPreferences | null>(null);
-  const [selectedTeam, setSelectedTeam] = useState<NFLTeam>(NFL_TEAMS[0]); // default Chiefs
-  const [favoriteTeams, setFavoriteTeams] = useState<NFLTeam[]>([NFL_TEAMS[0], NFL_TEAMS[1]]); // Chiefs & 49ers
-  const [trackedPlayers, setTrackedPlayers] = useState<Player[]>([]);
+  const broncosTeam = NFL_TEAMS.find((t) => t.id === "den") || NFL_TEAMS[0];
+  const [selectedTeam, setSelectedTeam] = useState<NFLTeam>(broncosTeam);
+  const [favoriteTeams, setFavoriteTeams] = useState<NFLTeam[]>([broncosTeam]);
+  const [trackedPlayers, setTrackedPlayers] = useState<Player[]>(broncosTeam.starPlayers);
 
   // Modals
   const [isOnboardingOpen, setIsOnboardingOpen] = useState(false);
@@ -68,10 +69,14 @@ export default function Home() {
               }
             });
           });
-          setTrackedPlayers(players);
+          if (players.length > 0) {
+            setTrackedPlayers(players);
+          } else {
+            setTrackedPlayers(broncosTeam.starPlayers);
+          }
         } else {
-          // First visit: trigger Onboarding Modal so user selects teams & players
-          setIsOnboardingOpen(true);
+          // Default to Broncos roster
+          setTrackedPlayers(broncosTeam.starPlayers);
         }
       } catch (e) {
         console.error("Error loading user preferences:", e);

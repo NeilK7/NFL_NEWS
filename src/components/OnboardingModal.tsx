@@ -33,21 +33,27 @@ export default function OnboardingModal({
   const [searchQuery, setSearchQuery] = useState("");
   const [conferenceFilter, setConferenceFilter] = useState<"ALL" | "AFC" | "NFC">("ALL");
 
-  // Selected state
+  // Selected state - Default to Denver Broncos
+  const broncosTeam = NFL_TEAMS.find((t) => t.id === "den")!;
+  const defaultBroncosPlayerIds = broncosTeam
+    ? broncosTeam.starPlayers.slice(0, 10).map((p) => p.id)
+    : ["p-nix", "p-surtain", "p-sutton", "p-allen", "p-bonitto", "p-javonte"];
+
   const [selectedTeamIds, setSelectedTeamIds] = useState<string[]>(
-    currentPreferences?.favoriteTeamIds || ["kc", "sf"]
+    currentPreferences?.favoriteTeamIds || ["den", "kc", "sf"]
   );
   const [primaryTeamId, setPrimaryTeamId] = useState<string>(
-    currentPreferences?.primaryTeamId || "kc"
+    currentPreferences?.primaryTeamId || "den"
   );
   const [selectedPlayerIds, setSelectedPlayerIds] = useState<string[]>(
-    currentPreferences?.favoritePlayerIds || ["mahomes", "cmc"]
+    currentPreferences?.favoritePlayerIds || defaultBroncosPlayerIds
   );
   const [saving, setSaving] = useState(false);
+  const [playerSearchQuery, setPlayerSearchQuery] = useState("");
 
   if (!isOpen) return null;
 
-  // Filter teams
+  // Filter teams (Ensure Broncos is easily discoverable / prioritized)
   const filteredTeams = NFL_TEAMS.filter((t) => {
     const matchesSearch =
       t.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -56,15 +62,32 @@ export default function OnboardingModal({
     const matchesConf =
       conferenceFilter === "ALL" ? true : t.conference === conferenceFilter;
     return matchesSearch && matchesConf;
+  }).sort((a, b) => (a.id === "den" ? -1 : b.id === "den" ? 1 : 0));
+
+  // Collect players: ALL DENVER BRONCOS PLAYERS FIRST, then every other NFL player
+  const broncosPlayerItems = broncosTeam
+    ? broncosTeam.starPlayers.map((player) => ({ player, team: broncosTeam }))
+    : [];
+
+  const otherNFLPlayerItems: { player: Player; team: NFLTeam }[] = [];
+  NFL_TEAMS.filter((t) => t.id !== "den").forEach((team) => {
+    team.starPlayers.forEach((player) => {
+      otherNFLPlayerItems.push({ player, team });
+    });
   });
 
-  // Collect relevant star players
-  const availablePlayers: { player: Player; team: NFLTeam }[] = [];
-  NFL_TEAMS.forEach((team) => {
-    team.starPlayers.forEach((player) => {
-      // Prioritize players from selected teams, or all star players
-      availablePlayers.push({ player, team });
-    });
+  const allAvailablePlayers = [...broncosPlayerItems, ...otherNFLPlayerItems];
+
+  const filteredPlayers = allAvailablePlayers.filter(({ player, team }) => {
+    if (!playerSearchQuery.trim()) return true;
+    const query = playerSearchQuery.toLowerCase();
+    return (
+      player.name.toLowerCase().includes(query) ||
+      player.position.toLowerCase().includes(query) ||
+      team.name.toLowerCase().includes(query) ||
+      team.city.toLowerCase().includes(query) ||
+      (player.college && player.college.toLowerCase().includes(query))
+    );
   });
 
   const toggleTeam = (teamId: string) => {
@@ -88,11 +111,24 @@ export default function OnboardingModal({
     }
   };
 
+  const selectAllBroncos = () => {
+    if (!broncosTeam) return;
+    const broncosIds = broncosTeam.starPlayers.map((p) => p.id);
+    const combined = Array.from(new Set([...selectedPlayerIds, ...broncosIds]));
+    setSelectedPlayerIds(combined);
+  };
+
+  const deselectAllBroncos = () => {
+    if (!broncosTeam) return;
+    const broncosIds = new Set(broncosTeam.starPlayers.map((p) => p.id));
+    setSelectedPlayerIds(selectedPlayerIds.filter((id) => !broncosIds.has(id)));
+  };
+
   const handleComplete = async () => {
     setSaving(true);
     const newPrefs: UserPreferences = {
       favoriteTeamIds: selectedTeamIds,
-      primaryTeamId: primaryTeamId || selectedTeamIds[0] || "kc",
+      primaryTeamId: primaryTeamId || selectedTeamIds[0] || "den",
       favoritePlayerIds: selectedPlayerIds,
       notificationsEnabled: true,
       theme: "dark",
@@ -283,62 +319,168 @@ export default function OnboardingModal({
               </div>
             </div>
           ) : (
-            /* STEP 2: STAR PLAYERS */
+            /* STEP 2: STAR PLAYERS (BRONCOS FIRST, THEN EVERY OTHER NFL PLAYER) */
             <div className="space-y-4">
+              {/* Header with Search and Quick Select */}
+              <div className="flex flex-col sm:flex-row gap-3 items-center justify-between">
+                <div className="relative w-full sm:w-72">
+                  <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                  <input
+                    type="text"
+                    value={playerSearchQuery}
+                    onChange={(e) => setPlayerSearchQuery(e.target.value)}
+                    placeholder="Search any NFL player or position..."
+                    className="w-full bg-gray-900/90 border border-gray-700/80 rounded-xl pl-9 pr-3 py-2 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-amber-400"
+                  />
+                </div>
+
+                <div className="flex items-center gap-2 self-end sm:self-auto">
+                  <button
+                    type="button"
+                    onClick={selectAllBroncos}
+                    className="px-3 py-1.5 rounded-lg text-xs font-bold bg-[#FB4F14] text-white hover:bg-[#e04510] shadow-sm transition-all"
+                  >
+                    + Track All Broncos ({broncosPlayerItems.length})
+                  </button>
+                  <button
+                    type="button"
+                    onClick={deselectAllBroncos}
+                    className="px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-gray-800 text-gray-300 hover:text-white hover:bg-gray-700 transition-colors"
+                  >
+                    Clear Broncos
+                  </button>
+                </div>
+              </div>
+
               <div className="text-xs text-gray-400 bg-gray-900/40 p-2.5 rounded-xl border border-gray-800/80 flex items-center justify-between">
                 <span>
                   Tracking <strong className="text-amber-400 font-bold">{selectedPlayerIds.length}</strong> players
                 </span>
                 <span className="text-[11px] text-gray-400">
-                  Select key weapons for live injury & game feed priority
+                  Showing <strong className="text-orange-400">Denver Broncos roster first</strong>, then every other NFL playmaker
                 </span>
               </div>
 
               {/* Player Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-96 overflow-y-auto pr-1">
-                {availablePlayers.map(({ player, team }) => {
-                  const isTracked = selectedPlayerIds.includes(player.id);
-                  return (
-                    <div
-                      key={player.id}
-                      onClick={() => togglePlayer(player.id)}
-                      className={`p-3 rounded-xl border cursor-pointer transition-all flex items-center justify-between ${
-                        isTracked
-                          ? "bg-gray-800/90 border-amber-500 shadow-md shadow-amber-500/10"
-                          : "bg-gray-900/50 border-gray-800 hover:border-gray-700 hover:bg-gray-800/40"
-                      }`}
-                    >
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-full bg-gray-800 border border-gray-700 flex items-center justify-center font-bold text-xs text-amber-400 flex-shrink-0">
-                          #{player.number}
-                        </div>
-                        <div>
-                          <div className="font-bold text-sm text-white flex items-center gap-1.5">
-                            <span>{player.name}</span>
-                            <span className="text-[10px] font-semibold text-gray-400 px-1.5 py-0.2 bg-gray-800 rounded">
-                              {player.position}
-                            </span>
-                          </div>
-                          <div className="text-xs text-gray-400 flex items-center gap-1.5">
-                            <span className="font-medium text-amber-300">{team.name}</span>
-                            <span>•</span>
-                            <span>{player.experience || player.statsHighlight || player.status}</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div
-                        className={`w-6 h-6 rounded-full flex items-center justify-center transition-all ${
-                          isTracked
-                            ? "bg-amber-400 text-black font-bold"
-                            : "border border-gray-700 text-transparent"
-                        }`}
-                      >
-                        <Check className="w-3.5 h-3.5 stroke-[3]" />
-                      </div>
+              <div className="space-y-4 max-h-96 overflow-y-auto pr-1">
+                {/* 1. DENVER BRONCOS PLAYERS (FIRST) */}
+                {(!playerSearchQuery.trim() || filteredPlayers.some((p) => p.team.id === "den")) && (
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-orange-400 bg-orange-950/20 px-3 py-1.5 rounded-lg border border-orange-500/30">
+                      <span className="flex items-center gap-1.5">
+                        <Star className="w-3.5 h-3.5 fill-orange-400" />
+                        Denver Broncos Complete Roster ({broncosPlayerItems.length} Players)
+                      </span>
+                      <span className="text-[10px] text-gray-400 font-normal">Mile High Command Hub</span>
                     </div>
-                  );
-                })}
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                      {filteredPlayers
+                        .filter(({ team }) => team.id === "den")
+                        .map(({ player, team }) => {
+                          const isTracked = selectedPlayerIds.includes(player.id);
+                          return (
+                            <div
+                              key={player.id}
+                              onClick={() => togglePlayer(player.id)}
+                              className={`p-3 rounded-xl border cursor-pointer transition-all flex items-center justify-between ${
+                                isTracked
+                                  ? "bg-orange-950/40 border-orange-500 shadow-md shadow-orange-500/10"
+                                  : "bg-gray-900/50 border-gray-800 hover:border-gray-700 hover:bg-gray-800/40"
+                              }`}
+                            >
+                              <div className="flex items-center gap-3">
+                                <div className="w-9 h-9 rounded-full bg-orange-500/10 border border-orange-500/30 flex items-center justify-center font-bold text-xs text-orange-400 flex-shrink-0">
+                                  #{player.number}
+                                </div>
+                                <div>
+                                  <div className="font-bold text-sm text-white flex items-center gap-1.5">
+                                    <span>{player.name}</span>
+                                    <span className="text-[10px] font-semibold text-orange-300 bg-orange-950/60 px-1.5 py-0.2 rounded border border-orange-500/20">
+                                      {player.position}
+                                    </span>
+                                  </div>
+                                  <div className="text-xs text-gray-400 flex items-center gap-1.5 mt-0.5">
+                                    <span className="font-medium text-orange-400">{team.name}</span>
+                                    <span>•</span>
+                                    <span className="truncate max-w-[150px]">{player.statsHighlight || player.college || player.experience}</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                className={`w-6 h-6 rounded-full flex items-center justify-center transition-all ${
+                                  isTracked
+                                    ? "bg-orange-500 text-white font-bold"
+                                    : "border border-gray-700 text-transparent"
+                                }`}
+                              >
+                                <Check className="w-3.5 h-3.5 stroke-[3]" />
+                              </div>
+                            </div>
+                          );
+                        })}
+                    </div>
+                  </div>
+                )}
+
+                {/* 2. EVERY OTHER NFL PLAYER */}
+                {(!playerSearchQuery.trim() || filteredPlayers.some((p) => p.team.id !== "den")) && (
+                  <div className="space-y-2 pt-2">
+                    <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-gray-300 bg-gray-900 px-3 py-1.5 rounded-lg border border-gray-800">
+                      <span>Every Other NFL Player Across The League</span>
+                      <span className="text-[10px] text-gray-500 font-normal">All 31 Other Franchises</span>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                      {filteredPlayers
+                        .filter(({ team }) => team.id !== "den")
+                        .map(({ player, team }) => {
+                          const isTracked = selectedPlayerIds.includes(player.id);
+                          return (
+                            <div
+                              key={player.id}
+                              onClick={() => togglePlayer(player.id)}
+                              className={`p-3 rounded-xl border cursor-pointer transition-all flex items-center justify-between ${
+                                isTracked
+                                  ? "bg-gray-800/90 border-amber-500 shadow-md shadow-amber-500/10"
+                                  : "bg-gray-900/50 border-gray-800 hover:border-gray-700 hover:bg-gray-800/40"
+                              }`}
+                            >
+                              <div className="flex items-center gap-3">
+                                <div className="w-9 h-9 rounded-full bg-gray-800 border border-gray-700 flex items-center justify-center font-bold text-xs text-amber-400 flex-shrink-0">
+                                  #{player.number}
+                                </div>
+                                <div>
+                                  <div className="font-bold text-sm text-white flex items-center gap-1.5">
+                                    <span>{player.name}</span>
+                                    <span className="text-[10px] font-semibold text-gray-400 px-1.5 py-0.2 bg-gray-800 rounded">
+                                      {player.position}
+                                    </span>
+                                  </div>
+                                  <div className="text-xs text-gray-400 flex items-center gap-1.5 mt-0.5">
+                                    <span className="font-medium text-amber-300">{team.name}</span>
+                                    <span>•</span>
+                                    <span className="truncate max-w-[150px]">{player.statsHighlight || player.experience}</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                className={`w-6 h-6 rounded-full flex items-center justify-center transition-all ${
+                                  isTracked
+                                    ? "bg-amber-400 text-black font-bold"
+                                    : "border border-gray-700 text-transparent"
+                                }`}
+                              >
+                                <Check className="w-3.5 h-3.5 stroke-[3]" />
+                              </div>
+                            </div>
+                          );
+                        })}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           )}
