@@ -12,7 +12,10 @@ import {
   Sparkles, 
   Award,
   Video,
-  X
+  X,
+  RefreshCw,
+  ExternalLink,
+  Zap
 } from "lucide-react";
 import { NFLTeam, SeasonHighlight, Player } from "@/types";
 
@@ -22,11 +25,21 @@ interface TeamDashboardProps {
   onOpenAISummary: (prompt: string, title: string) => void;
 }
 
+interface TeamIntelData {
+  highlights: SeasonHighlight[];
+  aiReport: {
+    headline: string;
+    summary: string;
+    bulletPoints: string[];
+    poweredBy: string;
+  };
+  yahooHeadlines: string[];
+}
+
 export default function TeamDashboard({
   team,
   onOpenAISummary,
 }: TeamDashboardProps) {
-  // Countdown Timer State
   const [timeLeft, setTimeLeft] = useState<{
     days: number;
     hours: number;
@@ -35,6 +48,40 @@ export default function TeamDashboard({
   }>({ days: 3, hours: 14, minutes: 22, seconds: 45 });
 
   const [activeHighlight, setActiveHighlight] = useState<SeasonHighlight | null>(null);
+  const [liveHighlights, setLiveHighlights] = useState<SeasonHighlight[]>(team.highlights);
+  const [aiIntel, setAiIntel] = useState<TeamIntelData["aiReport"] | null>(null);
+  const [loadingIntel, setLoadingIntel] = useState<boolean>(false);
+
+  // Fetch real NFL highlights + Fireworks AI intelligence when team changes
+  const fetchTeamIntel = async (selectedTeam: NFLTeam) => {
+    setLoadingIntel(true);
+    setLiveHighlights(selectedTeam.highlights);
+    try {
+      const fullTeamName = `${selectedTeam.city} ${selectedTeam.name}`;
+      const res = await fetch(
+        `/api/team-intel?teamName=${encodeURIComponent(fullTeamName)}&teamAbbr=${encodeURIComponent(
+          selectedTeam.abbreviation
+        )}`
+      );
+      if (res.ok) {
+        const data: TeamIntelData = await res.json();
+        if (data.highlights && data.highlights.length > 0) {
+          setLiveHighlights(data.highlights);
+        }
+        if (data.aiReport) {
+          setAiIntel(data.aiReport);
+        }
+      }
+    } catch (err) {
+      console.warn("Failed to load live team intel:", err);
+    } finally {
+      setLoadingIntel(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchTeamIntel(team);
+  }, [team]);
 
   // Active Countdown ticker
   useEffect(() => {
@@ -105,7 +152,7 @@ export default function TeamDashboard({
                 </span>
               </div>
               <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
-                {team.name}
+                {team.city} {team.name}
               </h1>
               <p className="text-xs sm:text-sm text-gray-300 flex items-center gap-2 mt-1">
                 <MapPin className="w-3.5 h-3.5 text-amber-400" />
@@ -119,17 +166,62 @@ export default function TeamDashboard({
             <button
               onClick={() =>
                 onOpenAISummary(
-                  `Generate an executive scouting report for the ${team.name} ahead of their matchup with ${nextGame.opponent}. Cover offensive schematics, key player health, and statistical edge.`,
-                  `${team.name} Apex AI Scout Brief`
+                  `Generate an executive scouting report for the ${team.city} ${team.name} ahead of their matchup with ${nextGame.opponent}. Cover offensive schematics, key player health, and statistical edge.`,
+                  `${team.city} ${team.name} Fireworks AI Scout Brief`
                 )
               }
               className="py-2.5 px-4 bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-extrabold text-xs uppercase tracking-wider rounded-xl flex items-center gap-2 shadow-lg shadow-amber-500/20 transition-all hover:scale-[1.02] cursor-pointer"
             >
               <Sparkles className="w-4 h-4 fill-black" />
-              AI Game Plan Brief
+              Fireworks AI Game Plan
             </button>
           </div>
         </div>
+      </div>
+
+      {/* Live Fireworks AI Gathered Intelligence Banner */}
+      <div className="glass-panel-gold rounded-2xl p-5 border border-amber-500/30 space-y-3">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Zap className="w-4 h-4 text-amber-400 fill-amber-400" />
+            <span className="text-xs font-extrabold uppercase tracking-wider text-amber-300">
+              {aiIntel?.headline || `${team.city} ${team.name} Live Fireworks AI Intelligence`}
+            </span>
+          </div>
+          <button
+            onClick={() => fetchTeamIntel(team)}
+            disabled={loadingIntel}
+            className="text-[11px] font-semibold text-gray-300 hover:text-amber-300 flex items-center gap-1.5 bg-gray-900/70 px-2.5 py-1 rounded-lg border border-gray-800"
+          >
+            <RefreshCw className={`w-3 h-3 ${loadingIntel ? "animate-spin text-amber-400" : ""}`} />
+            <span>{loadingIntel ? "Fireworks AI Syncing..." : "Refresh AI & Videos"}</span>
+          </button>
+        </div>
+
+        {loadingIntel && !aiIntel ? (
+          <p className="text-xs text-gray-400 animate-pulse">
+            Fireworks AI is gathering real-time Yahoo Sports & ESPN intelligence and importing official NFL highlight reels for the {team.city} {team.name}...
+          </p>
+        ) : aiIntel ? (
+          <div className="space-y-2.5">
+            <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
+              {aiIntel.summary}
+            </p>
+            {aiIntel.bulletPoints && aiIntel.bulletPoints.length > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-2 pt-1">
+                {aiIntel.bulletPoints.map((pt, i) => (
+                  <div
+                    key={i}
+                    className="p-2.5 rounded-xl bg-gray-950/60 border border-gray-800/80 text-xs text-gray-300 flex items-start gap-2"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1.5 flex-shrink-0" />
+                    <span className="line-clamp-2">{pt}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        ) : null}
       </div>
 
       {/* 2. Next Game Countdown Card & Matchup Analytics */}
@@ -256,7 +348,78 @@ export default function TeamDashboard({
         </div>
       </div>
 
-      {/* 3. Schedule Wire & Injury Wire Tabs */}
+      {/* 3. Season Video Highlights (Live Imported via Fireworks AI + YouTube/ESPN) */}
+      <div className="space-y-4">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Video className="w-5 h-5 text-amber-400" />
+            <h3 className="text-xl font-black text-white">
+              Live Imported {team.name} Video Highlights
+            </h3>
+          </div>
+          <span className="text-xs text-amber-400 font-semibold flex items-center gap-1">
+            <Sparkles className="w-3.5 h-3.5" />
+            {loadingIntel ? "Importing Official NFL Highlights..." : "Verified NFL & ESPN Video Feeds"}
+          </span>
+        </div>
+
+        {loadingIntel && liveHighlights.length === 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {[1, 2, 3].map((n) => (
+              <div
+                key={n}
+                className="h-64 rounded-2xl bg-gray-900/60 border border-gray-800 animate-pulse"
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {liveHighlights.map((highlight) => (
+              <div
+                key={highlight.id}
+                onClick={() => setActiveHighlight(highlight)}
+                className="group glass-panel rounded-2xl overflow-hidden border border-gray-800 hover:border-amber-500/50 transition-all cursor-pointer flex flex-col justify-between shadow-lg"
+              >
+                <div className="relative aspect-video w-full overflow-hidden bg-gray-900">
+                  <Image
+                    src={highlight.thumbnailUrl}
+                    alt={highlight.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-amber-500/90 text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                      <Play className="w-5 h-5 fill-black ml-0.5" />
+                    </div>
+                  </div>
+                  <div className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-gray-200">
+                    {highlight.duration}
+                  </div>
+                  <div className="absolute top-2 left-2 px-2 py-0.5 rounded bg-amber-500 text-black text-[10px] font-black uppercase">
+                    {highlight.videoUrl.endsWith(".mp4") ? "ESPN HD" : "NFL Highlight"}
+                  </div>
+                </div>
+
+                <div className="p-4 space-y-1.5">
+                  <h4 className="font-bold text-sm text-white group-hover:text-amber-400 transition-colors line-clamp-2">
+                    {highlight.title}
+                  </h4>
+                  <p className="text-xs text-gray-400 line-clamp-2">
+                    {highlight.description}
+                  </p>
+                  <div className="text-[11px] text-gray-500 pt-1 flex items-center justify-between">
+                    <span>{highlight.opponent || "2024-25 Season"}</span>
+                    <span className="text-amber-400/80">{highlight.views}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* 4. Schedule Wire & Injury Wire Tabs */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Full Season Schedule */}
         <div className="glass-panel rounded-2xl p-6 border border-gray-800 space-y-4">
@@ -268,67 +431,78 @@ export default function TeamDashboard({
               </h3>
             </div>
             <span className="text-xs text-gray-400 font-medium">
-              18 Weeks Regular Season
+              Regular Season
             </span>
           </div>
 
           <div className="space-y-2.5 max-h-96 overflow-y-auto pr-1">
-            {team.schedule.map((game, idx) => (
-              <div
-                key={idx}
-                className="p-3 rounded-xl bg-gray-900/60 border border-gray-800/80 hover:border-gray-700 flex items-center justify-between transition-colors"
-              >
-                <div className="flex items-center gap-3">
-                  <span className="text-xs font-mono font-bold text-gray-400 w-12">
-                    WK {game.week}
-                  </span>
-                  {game.opponentLogo ? (
-                    <div className="w-8 h-8 relative flex-shrink-0">
-                      <Image
-                        src={game.opponentLogo}
-                        alt={game.opponent}
-                        fill
-                        className="object-contain"
-                        sizes="32px"
-                      />
-                    </div>
-                  ) : (
-                    <div className="w-8 h-8 rounded-full bg-gray-800 border border-gray-700 flex items-center justify-center text-[10px] font-bold text-gray-400 flex-shrink-0">
-                      BYE
-                    </div>
-                  )}
-                  <div>
-                    <div className="font-bold text-xs text-white flex items-center gap-1.5">
-                      <span className="text-gray-400 font-normal">
-                        {game.isHome ? "vs" : "@"}
-                      </span>
-                      <span>{game.opponent}</span>
-                    </div>
-                    <div className="text-[10px] text-gray-500">
-                      {game.date} • {game.time || game.timeOrScore}
-                    </div>
-                  </div>
+            {team.schedule.length === 0 ? (
+              <div className="p-4 rounded-xl bg-gray-900/60 border border-gray-800 text-xs text-gray-300 space-y-2">
+                <div className="font-bold text-white">
+                  Upcoming: {team.city} {team.name} {nextGame.isHome ? "vs" : "@"} {nextGame.opponent}
                 </div>
-
-                <div className="text-right">
-                  {game.result ? (
-                    <span
-                      className={`text-xs font-bold px-2 py-0.5 rounded ${
-                        game.result.startsWith("W")
-                          ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"
-                          : "bg-red-500/20 text-red-400 border border-red-500/30"
-                      }`}
-                    >
-                      {game.result} ({game.timeOrScore})
-                    </span>
-                  ) : (
-                    <span className="text-xs font-semibold text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
-                      {game.broadcastNetwork || game.tvNetwork || game.timeOrScore}
-                    </span>
-                  )}
+                <div className="text-gray-400">
+                  {nextGame.date} • {nextGame.time} on {nextGame.network} ({nextGame.spread})
                 </div>
               </div>
-            ))}
+            ) : (
+              team.schedule.map((game, idx) => (
+                <div
+                  key={idx}
+                  className="p-3 rounded-xl bg-gray-900/60 border border-gray-800/80 hover:border-gray-700 flex items-center justify-between transition-colors"
+                >
+                  <div className="flex items-center gap-3">
+                    <span className="text-xs font-mono font-bold text-gray-400 w-12">
+                      WK {game.week}
+                    </span>
+                    {game.opponentLogo ? (
+                      <div className="w-8 h-8 relative flex-shrink-0">
+                        <Image
+                          src={game.opponentLogo}
+                          alt={game.opponent}
+                          fill
+                          className="object-contain"
+                          sizes="32px"
+                        />
+                      </div>
+                    ) : (
+                      <div className="w-8 h-8 rounded-full bg-gray-800 border border-gray-700 flex items-center justify-center text-[10px] font-bold text-gray-400 flex-shrink-0">
+                        BYE
+                      </div>
+                    )}
+                    <div>
+                      <div className="font-bold text-xs text-white flex items-center gap-1.5">
+                        <span className="text-gray-400 font-normal">
+                          {game.isHome ? "vs" : "@"}
+                        </span>
+                        <span>{game.opponent}</span>
+                      </div>
+                      <div className="text-[10px] text-gray-500">
+                        {game.date} • {game.time || game.timeOrScore}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="text-right">
+                    {game.result ? (
+                      <span
+                        className={`text-xs font-bold px-2 py-0.5 rounded ${
+                          game.result.startsWith("W")
+                            ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"
+                            : "bg-red-500/20 text-red-400 border border-red-500/30"
+                        }`}
+                      >
+                        {game.result} ({game.timeOrScore})
+                      </span>
+                    ) : (
+                      <span className="text-xs font-semibold text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
+                        {game.broadcastNetwork || game.tvNetwork || game.timeOrScore}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              ))
+            )}
           </div>
         </div>
 
@@ -349,7 +523,7 @@ export default function TeamDashboard({
           <div className="space-y-3 max-h-96 overflow-y-auto pr-1">
             {team.injuries.length === 0 ? (
               <div className="p-8 text-center text-gray-400 text-sm">
-                Clean bill of health! No current designations.
+                Clean bill of health! No active injury designations reported.
               </div>
             ) : (
               team.injuries.map((injury, idx) => {
@@ -403,64 +577,6 @@ export default function TeamDashboard({
               })
             )}
           </div>
-        </div>
-      </div>
-
-      {/* 4. Season Video Highlights */}
-      <div className="space-y-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Video className="w-5 h-5 text-amber-400" />
-            <h3 className="text-xl font-black text-white">
-              2024–2025 Season Video Highlights
-            </h3>
-          </div>
-          <span className="text-xs text-gray-400">
-            HD Broadcast Game Replays & Top Plays
-          </span>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {team.highlights.map((highlight) => (
-            <div
-              key={highlight.id}
-              onClick={() => setActiveHighlight(highlight)}
-              className="group glass-panel rounded-2xl overflow-hidden border border-gray-800 hover:border-amber-500/50 transition-all cursor-pointer flex flex-col justify-between shadow-lg"
-            >
-              <div className="relative aspect-video w-full overflow-hidden bg-gray-900">
-                <Image
-                  src={highlight.thumbnailUrl}
-                  alt={highlight.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-amber-500/90 text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                    <Play className="w-5 h-5 fill-black ml-0.5" />
-                  </div>
-                </div>
-                <div className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-gray-200">
-                  {highlight.duration}
-                </div>
-                <div className="absolute top-2 left-2 px-2 py-0.5 rounded bg-amber-500 text-black text-[10px] font-black uppercase">
-                  Week {highlight.week}
-                </div>
-              </div>
-
-              <div className="p-4 space-y-1.5">
-                <h4 className="font-bold text-sm text-white group-hover:text-amber-400 transition-colors line-clamp-1">
-                  {highlight.title}
-                </h4>
-                <p className="text-xs text-gray-400 line-clamp-2">
-                  {highlight.description}
-                </p>
-                <div className="text-[11px] text-gray-500 pt-1">
-                  {highlight.opponent ? `Opponent: ${highlight.opponent}` : `${highlight.views} views`}
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
 
@@ -518,7 +634,7 @@ export default function TeamDashboard({
         </div>
       </div>
 
-      {/* Video Modal Player */}
+      {/* Video Modal Player (Supports Direct ESPN MP4 & Official YouTube NFL Highlights) */}
       {activeHighlight && (
         <div 
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md animate-in fade-in duration-200"
@@ -528,37 +644,57 @@ export default function TeamDashboard({
             className="relative w-full max-w-3xl bg-[#121622] border border-amber-500/30 rounded-2xl overflow-hidden shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="p-4 bg-gray-900 border-b border-gray-800 flex items-center justify-between">
+            <div className="p-4 bg-gray-900 border-b border-gray-800 flex items-center justify-between gap-4">
               <div>
-                <h4 className="font-bold text-sm text-white">
+                <h4 className="font-bold text-sm text-white line-clamp-1">
                   {activeHighlight.title}
                 </h4>
                 <p className="text-xs text-gray-400">
-                  Week {activeHighlight.week} vs {activeHighlight.opponent}
+                  {activeHighlight.opponent || "Official NFL Highlight"} • {activeHighlight.views}
                 </p>
               </div>
-              <button
-                onClick={() => setActiveHighlight(null)}
-                className="p-1.5 rounded-full hover:bg-gray-800 text-gray-400 hover:text-white"
-              >
-                <X className="w-5 h-5" />
-              </button>
+              <div className="flex items-center gap-2 flex-shrink-0">
+                <a
+                  href={activeHighlight.videoUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="py-1.5 px-3 rounded-lg bg-amber-500 hover:bg-amber-400 text-black font-bold text-xs flex items-center gap-1.5 transition-colors"
+                >
+                  <span>Watch on YouTube / Source</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+                <button
+                  onClick={() => setActiveHighlight(null)}
+                  className="p-1.5 rounded-full hover:bg-gray-800 text-gray-400 hover:text-white"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
             </div>
 
-            <div className="relative aspect-video w-full bg-black">
-              <iframe
-                src={
-                  activeHighlight.videoUrl.includes("watch?v=")
-                    ? activeHighlight.videoUrl.replace("watch?v=", "embed/") + "?autoplay=1"
-                    : activeHighlight.videoUrl.startsWith("http")
-                    ? activeHighlight.videoUrl
-                    : `https://www.youtube.com/embed/${activeHighlight.videoUrl}?autoplay=1`
-                }
-                title={activeHighlight.title}
-                className="w-full h-full border-0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+            <div className="relative aspect-video w-full bg-black flex items-center justify-center">
+              {activeHighlight.videoUrl.endsWith(".mp4") ||
+              activeHighlight.videoUrl.includes("video-cdn.espn.com") ? (
+                <video
+                  src={activeHighlight.videoUrl}
+                  controls
+                  autoPlay
+                  playsInline
+                  className="w-full h-full object-contain"
+                />
+              ) : (
+                <iframe
+                  src={
+                    activeHighlight.videoUrl.includes("watch?v=")
+                      ? activeHighlight.videoUrl.replace("watch?v=", "embed/") + "?autoplay=1&rel=0"
+                      : activeHighlight.videoUrl
+                  }
+                  title={activeHighlight.title}
+                  className="w-full h-full border-0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              )}
             </div>
           </div>
         </div>

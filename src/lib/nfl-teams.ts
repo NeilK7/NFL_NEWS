@@ -43,8 +43,8 @@ export const NFL_TEAMS: NFLTeam[] = [
       { id: 'kc-inj-3', playerName: 'JuJu Smith-Schuster', position: 'WR', teamId: 'kc', injury: 'Hamstring Sprain', status: 'Questionable', lastUpdated: 'Yesterday', details: 'Limited participant in Thursday practice; game-time decision.' },
     ],
     highlights: [
-      { id: 'kc-hl-1', title: 'Mahomes Miracle 4th Down Clutch Scramble vs Ravens', week: 1, duration: '2:45', thumbnailUrl: 'https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', description: 'Patrick Mahomes extends the play with signature improvisational magic to secure the opening night win.', views: '1.4M' },
-      { id: 'kc-hl-2', title: 'Harrison Butker 51-Yard Walk-Off Field Goal', week: 2, duration: '1:50', thumbnailUrl: 'https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', description: 'Down to the wire against Cincinnati, Butker splits the uprights as time expires.', views: '890K' },
+      { id: 'kc-hl-1', title: 'Mahomes Miracle 4th Down Clutch Scramble vs Ravens', week: 1, duration: '2:45', thumbnailUrl: 'https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/@NFL/videos', description: 'Patrick Mahomes extends the play with signature improvisational magic to secure the opening night win.', views: '1.4M' },
+      { id: 'kc-hl-2', title: 'Harrison Butker 51-Yard Walk-Off Field Goal', week: 2, duration: '1:50', thumbnailUrl: 'https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/@NFL/videos', description: 'Down to the wire against Cincinnati, Butker splits the uprights as time expires.', views: '890K' },
     ],
     starPlayers: [
       { id: 'p-mahomes', name: 'Patrick Mahomes', position: 'QB', number: 15, teamId: 'kc', avatarUrl: 'https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3139477.png&w=350&h=254', status: 'Active', statsHighlight: '1,235 YDS • 6 TD • 6-0 REC' },
@@ -93,7 +93,7 @@ export const NFL_TEAMS: NFLTeam[] = [
       { id: 'sf-inj-3', playerName: 'Jordan Mason', position: 'RB', teamId: 'sf', injury: 'AC Joint Sprain', status: 'Active', lastUpdated: '3 days ago', details: 'Full go for Sunday vs Chiefs with shoulder harness.' },
     ],
     highlights: [
-      { id: 'sf-hl-1', title: 'Brock Purdy 76-Yard Bomb to Deebo Samuel vs Seahawks', week: 6, duration: '2:15', thumbnailUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', description: 'Purdy delivers a pinpoint strike on Thursday Night Football in Seattle.', views: '1.2M' },
+      { id: 'sf-hl-1', title: 'Brock Purdy 76-Yard Bomb to Deebo Samuel vs Seahawks', week: 6, duration: '2:15', thumbnailUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/@NFL/videos', description: 'Purdy delivers a pinpoint strike on Thursday Night Football in Seattle.', views: '1.2M' },
     ],
     starPlayers: [
       { id: 'p-purdy', name: 'Brock Purdy', position: 'QB', number: 13, teamId: 'sf', avatarUrl: 'https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4361741.png&w=350&h=254', status: 'Active', statsHighlight: '1,629 YDS • 9 TD • 100.5 RTG' },
@@ -141,7 +141,7 @@ export const NFL_TEAMS: NFLTeam[] = [
       { id: 'bal-inj-1', playerName: 'Broderick Washington', position: 'DT', teamId: 'bal', injury: 'Knee', status: 'Questionable', lastUpdated: '1 day ago', details: 'Limited in practice this week.' },
     ],
     highlights: [
-      { id: 'bal-hl-1', title: 'Derrick Henry 87-Yard Touchdown Run vs Bills', week: 4, duration: '1:45', thumbnailUrl: 'https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', description: 'King Henry breaks free on the very first play from scrimmage on Sunday Night Football.', views: '2.1M' },
+      { id: 'bal-hl-1', title: 'Derrick Henry 87-Yard Touchdown Run vs Bills', week: 4, duration: '1:45', thumbnailUrl: 'https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/@NFL/videos', description: 'King Henry breaks free on the very first play from scrimmage on Sunday Night Football.', views: '2.1M' },
     ],
     starPlayers: [
       { id: 'p-lamar', name: 'Lamar Jackson', position: 'QB', number: 8, teamId: 'bal', avatarUrl: 'https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3916387.png&w=350&h=254', status: 'Active', statsHighlight: '1,529 PASS YDS • 10 TD • 403 RUSH YDS' },
@@ -188,7 +188,7 @@ export const NFL_TEAMS: NFLTeam[] = [
       { id: 'det-inj-1', playerName: 'Aidan Hutchinson', position: 'DE', teamId: 'det', injury: 'Fractured Tibia & Fibula', status: 'IR', lastUpdated: 'Yesterday', details: 'Underwent successful emergency surgery in Dallas; out for rest of regular season.' },
     ],
     highlights: [
-      { id: 'det-hl-1', title: 'Lions 47-9 Historic Demolition of Cowboys in Dallas', week: 6, duration: '3:05', thumbnailUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', description: 'Goff orchestrates trick plays and offensive fireworks in blowout win.', views: '1.8M' },
+      { id: 'det-hl-1', title: 'Lions 47-9 Historic Demolition of Cowboys in Dallas', week: 6, duration: '3:05', thumbnailUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/@NFL/videos', description: 'Goff orchestrates trick plays and offensive fireworks in blowout win.', views: '1.8M' },
     ],
     starPlayers: [
       { id: 'p-goff', name: 'Jared Goff', position: 'QB', number: 16, teamId: 'det', avatarUrl: 'https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3046779.png&w=350&h=254', status: 'Active', statsHighlight: '1,330 YDS • 8 TD • 72.1% CMP' },
@@ -236,7 +236,7 @@ export const NFL_TEAMS: NFLTeam[] = [
       { id: 'buf-inj-2', playerName: 'Matt Milano', position: 'LB', teamId: 'buf', injury: 'Biceps Tear', status: 'IR', lastUpdated: '1 week ago', details: 'Targeting December return.' },
     ],
     highlights: [
-      { id: 'buf-hl-1', title: 'Josh Allen 4 Total TDs in Monday Night Thriller vs Jets', week: 6, duration: '2:40', thumbnailUrl: 'https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', description: 'Josh Allen leads the division-clinching drive in MetLife stadium.', views: '1.1M' },
+      { id: 'buf-hl-1', title: 'Josh Allen 4 Total TDs in Monday Night Thriller vs Jets', week: 6, duration: '2:40', thumbnailUrl: 'https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/@NFL/videos', description: 'Josh Allen leads the division-clinching drive in MetLife stadium.', views: '1.1M' },
     ],
     starPlayers: [
       { id: 'p-allen', name: 'Josh Allen', position: 'QB', number: 17, teamId: 'buf', avatarUrl: 'https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3918298.png&w=350&h=254', status: 'Active', statsHighlight: '1,160 PASS YDS • 10 TD • 0 INT' },
@@ -283,7 +283,7 @@ export const NFL_TEAMS: NFLTeam[] = [
       { id: 'phi-inj-2', playerName: 'Dallas Goedert', position: 'TE', teamId: 'phi', injury: 'Ankle Sprain', status: 'Out', lastUpdated: 'Yesterday', details: 'Did not travel with team.' },
     ],
     highlights: [
-      { id: 'phi-hl-1', title: 'Saquon Barkley 3 Touchdown Debut in Brazil', week: 1, duration: '2:20', thumbnailUrl: 'https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', description: 'Barkley electrifies São Paulo with a dominant performance.', views: '1.9M' },
+      { id: 'phi-hl-1', title: 'Saquon Barkley 3 Touchdown Debut in Brazil', week: 1, duration: '2:20', thumbnailUrl: 'https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/@NFL/videos', description: 'Barkley electrifies São Paulo with a dominant performance.', views: '1.9M' },
     ],
     starPlayers: [
       { id: 'p-hurts', name: 'Jalen Hurts', position: 'QB', number: 1, teamId: 'phi', avatarUrl: 'https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4040715.png&w=350&h=254', status: 'Active', statsHighlight: '1,194 YDS • 6 TD • 2 RUSH TD' },
@@ -331,7 +331,7 @@ export const NFL_TEAMS: NFLTeam[] = [
       { id: 'dal-inj-2', playerName: 'Brandin Cooks', position: 'WR', teamId: 'dal', injury: 'Knee infection', status: 'IR', lastUpdated: '1 week ago', details: 'Placed on IR following minor procedure.' },
     ],
     highlights: [
-      { id: 'dal-hl-1', title: 'Dak Prescott Game-Winning Touchdown to Tolbert in Pittsburgh', week: 5, duration: '2:10', thumbnailUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', description: 'Prescott caps a 16-play drive with 20 seconds remaining.', views: '950K' },
+      { id: 'dal-hl-1', title: 'Dak Prescott Game-Winning Touchdown to Tolbert in Pittsburgh', week: 5, duration: '2:10', thumbnailUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/@NFL/videos', description: 'Prescott caps a 16-play drive with 20 seconds remaining.', views: '950K' },
     ],
     starPlayers: [
       { id: 'p-dak', name: 'Dak Prescott', position: 'QB', number: 4, teamId: 'dal', avatarUrl: 'https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2577417.png&w=350&h=254', status: 'Active', statsHighlight: '1,602 YDS • 8 TD • 6 INT' },
@@ -378,7 +378,7 @@ export const NFL_TEAMS: NFLTeam[] = [
       { id: 'min-inj-1', playerName: 'Aaron Jones', position: 'RB', teamId: 'min', injury: 'Hamstring', status: 'Questionable', lastUpdated: 'Today', details: 'Participated in walkthroughs; expected to suit up.' },
     ],
     highlights: [
-      { id: 'min-hl-1', title: 'Justin Jefferson 97-Yard Touchdown Reception vs 49ers', week: 2, duration: '2:15', thumbnailUrl: 'https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', description: 'Jefferson outruns the entire secondary on historic 97-yard connection.', views: '2.4M' },
+      { id: 'min-hl-1', title: 'Justin Jefferson 97-Yard Touchdown Reception vs 49ers', week: 2, duration: '2:15', thumbnailUrl: 'https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/@NFL/videos', description: 'Jefferson outruns the entire secondary on historic 97-yard connection.', views: '2.4M' },
     ],
     starPlayers: [
       { id: 'p-jj', name: 'Justin Jefferson', position: 'WR', number: 18, teamId: 'min', avatarUrl: 'https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4262921.png&w=350&h=254', status: 'Active', statsHighlight: '26 REC • 450 YDS • 4 TD' },
@@ -424,7 +424,7 @@ export const NFL_TEAMS: NFLTeam[] = [
       { id: 'gb-inj-1', playerName: 'Christian Watson', position: 'WR', teamId: 'gb', injury: 'Ankle Sprain', status: 'Active', lastUpdated: 'Yesterday', details: 'Full participant in practice.' },
     ],
     highlights: [
-      { id: 'gb-hl-1', title: 'Jordan Love 4 Touchdown Masterclass vs Cardinals', week: 6, duration: '2:30', thumbnailUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', description: 'Jordan Love shreds Arizona defense with precision throws in Lambeau rain.', views: '820K' },
+      { id: 'gb-hl-1', title: 'Jordan Love 4 Touchdown Masterclass vs Cardinals', week: 6, duration: '2:30', thumbnailUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/@NFL/videos', description: 'Jordan Love shreds Arizona defense with precision throws in Lambeau rain.', views: '820K' },
     ],
     starPlayers: [
       { id: 'p-love', name: 'Jordan Love', position: 'QB', number: 10, teamId: 'gb', avatarUrl: 'https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4036378.png&w=350&h=254', status: 'Active', statsHighlight: '1,131 YDS • 12 TD • 6 INT' },
@@ -470,7 +470,7 @@ export const NFL_TEAMS: NFLTeam[] = [
       { id: 'hou-inj-1', playerName: 'Nico Collins', position: 'WR', teamId: 'hou', injury: 'Hamstring', status: 'IR', lastUpdated: '3 days ago', details: 'Placed on IR; eligible to return in Week 10.' },
     ],
     highlights: [
-      { id: 'hou-hl-1', title: 'C.J. Stroud 59-Yard Touchdown Strike vs Bills', week: 5, duration: '2:00', thumbnailUrl: 'https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', description: 'Stroud connects with Collins on an explosive deep post.', views: '1.3M' },
+      { id: 'hou-hl-1', title: 'C.J. Stroud 59-Yard Touchdown Strike vs Bills', week: 5, duration: '2:00', thumbnailUrl: 'https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/@NFL/videos', description: 'Stroud connects with Collins on an explosive deep post.', views: '1.3M' },
     ],
     starPlayers: [
       { id: 'p-stroud', name: 'C.J. Stroud', position: 'QB', number: 7, teamId: 'hou', avatarUrl: 'https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4432577.png&w=350&h=254', status: 'Active', statsHighlight: '1,577 YDS • 10 TD • 4 INT' },
@@ -517,7 +517,7 @@ export const NFL_TEAMS: NFLTeam[] = [
       { id: 'pit-inj-1', playerName: 'Alex Highsmith', position: 'LB', teamId: 'pit', injury: 'Groin', status: 'Questionable', lastUpdated: 'Yesterday', details: 'Upgraded to full participant.' },
     ],
     highlights: [
-      { id: 'pit-hl-1', title: 'T.J. Watt Strip-Sack Fumble Recovery vs Raiders', week: 6, duration: '1:40', thumbnailUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', description: 'Watt forces two turnovers in defensive showcase.', views: '750K' },
+      { id: 'pit-hl-1', title: 'T.J. Watt Strip-Sack Fumble Recovery vs Raiders', week: 6, duration: '1:40', thumbnailUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&auto=format&fit=crop&q=60', videoUrl: 'https://www.youtube.com/@NFL/videos', description: 'Watt forces two turnovers in defensive showcase.', views: '750K' },
     ],
     starPlayers: [
       { id: 'p-watt', name: 'T.J. Watt', position: 'LB', number: 90, teamId: 'pit', avatarUrl: 'https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3045138.png&w=350&h=254', status: 'Active', statsHighlight: '4.5 SACKS • 3 FF • 25 TACKLES' },
