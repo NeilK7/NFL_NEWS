@@ -13,6 +13,7 @@ import {
   Shield
 } from "lucide-react";
 import { NFLTeam } from "@/types";
+import AllTeamsDropdown from "@/components/AllTeamsDropdown";
 
 interface NavbarProps {
   currentTab: "war-room" | "ai-news" | "scoreboard";
@@ -20,6 +21,8 @@ interface NavbarProps {
   selectedTeam: NFLTeam;
   favoriteTeams: NFLTeam[];
   onSelectTeam: (team: NFLTeam) => void;
+  onOpenTeamStats: (team: NFLTeam) => void;
+  onOpenTeamNews: (team: NFLTeam) => void;
   onOpenPreferences: () => void;
   onOpenAppleModal: () => void;
   isSupabaseSynced: boolean;
@@ -31,11 +34,12 @@ export default function Navbar({
   selectedTeam,
   favoriteTeams,
   onSelectTeam,
+  onOpenTeamStats,
+  onOpenTeamNews,
   onOpenPreferences,
   onOpenAppleModal,
   isSupabaseSynced,
 }: NavbarProps) {
-  const [teamDropdownOpen, setTeamDropdownOpen] = useState(false);
 
   const tickerItems = [
     { tag: "LIVE WIRE", text: "Chiefs @ 49ers Super Bowl LVIII Rematch Sunday 4:25 PM ET" },
@@ -136,79 +140,14 @@ export default function Navbar({
 
           {/* Right Actions: Team Quick-Selector & Apple Modal Trigger */}
           <div className="flex items-center gap-2 sm:gap-3">
-            {/* Team Selector Dropdown */}
-            {favoriteTeams.length > 0 && (
-              <div className="relative">
-                <button
-                  onClick={() => setTeamDropdownOpen(!teamDropdownOpen)}
-                  className="flex items-center gap-2 py-1.5 px-3 bg-gray-900/90 border border-gray-700/80 rounded-xl hover:border-amber-500/50 transition-all text-xs font-medium text-gray-200"
-                >
-                  <div className="w-5 h-5 relative flex-shrink-0">
-                    <Image
-                      src={selectedTeam.logoUrl}
-                      alt={selectedTeam.name}
-                      fill
-                      className="object-contain"
-                      sizes="20px"
-                    />
-                  </div>
-                  <span className="hidden sm:inline font-semibold text-white">
-                    {selectedTeam.abbreviation}
-                  </span>
-                  <ChevronDown className="w-3.5 h-3.5 text-gray-400" />
-                </button>
-
-                {teamDropdownOpen && (
-                  <div 
-                    className="absolute right-0 mt-2 w-56 bg-[#121722] border border-gray-800 rounded-xl shadow-2xl z-50 p-1.5 space-y-1 animate-in fade-in duration-100"
-                    onMouseLeave={() => setTeamDropdownOpen(false)}
-                  >
-                    <div className="px-2 py-1 text-[10px] font-semibold tracking-wider uppercase text-gray-400">
-                      My Favorites ({favoriteTeams.length})
-                    </div>
-                    {favoriteTeams.map((team) => (
-                      <button
-                        key={team.id}
-                        onClick={() => {
-                          onSelectTeam(team);
-                          setTeamDropdownOpen(false);
-                        }}
-                        className={`w-full flex items-center gap-2.5 px-2.5 py-2 rounded-lg text-xs font-medium text-left transition-colors ${
-                          selectedTeam.id === team.id
-                            ? "bg-amber-500/20 text-amber-300 border border-amber-500/30"
-                            : "text-gray-300 hover:bg-gray-800"
-                        }`}
-                      >
-                        <div className="w-5 h-5 relative flex-shrink-0">
-                          <Image
-                            src={team.logoUrl}
-                            alt={team.name}
-                            fill
-                            className="object-contain"
-                            sizes="20px"
-                          />
-                        </div>
-                        <span className="flex-1 truncate">{team.name}</span>
-                        {selectedTeam.id === team.id && (
-                          <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-                        )}
-                      </button>
-                    ))}
-                    <div className="pt-1 border-t border-gray-800">
-                      <button
-                        onClick={() => {
-                          setTeamDropdownOpen(false);
-                          onOpenPreferences();
-                        }}
-                        className="w-full text-center py-1.5 text-[11px] font-semibold text-amber-400 hover:text-amber-300 transition-colors"
-                      >
-                        + Manage Teams & Players
-                      </button>
-                    </div>
-                  </div>
-                )}
-              </div>
-            )}
+            {/* All 32 NFL Teams Dropdown (News & Stats) */}
+            <AllTeamsDropdown
+              selectedTeam={selectedTeam}
+              favoriteTeams={favoriteTeams}
+              onSelectTeam={onSelectTeam}
+              onOpenTeamStats={onOpenTeamStats}
+              onOpenTeamNews={onOpenTeamNews}
+            />
 
             {/* Apple Ecosystem Download Link (User requirement) */}
             <button

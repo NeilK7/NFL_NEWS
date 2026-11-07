@@ -54,6 +54,40 @@ export interface SeasonHighlight {
   opponent?: string;
 }
 
+export interface TeamStats {
+  pointsPerGame: number;
+  pointsAllowedPerGame: number;
+  totalYardsPerGame: number;
+  passingYardsPerGame: number;
+  rushingYardsPerGame: number;
+  yardsAllowedPerGame: number;
+  passYardsAllowedPerGame: number;
+  rushYardsAllowedPerGame: number;
+  turnoverDifferential: number;
+  sacks: number;
+  interceptions: number;
+  thirdDownPct: number;
+  redZonePct: number;
+  streak: string;
+  homeRecord: string;
+  awayRecord: string;
+  divisionRecord: string;
+  rankings?: {
+    scoringOffenseRank: number;
+    scoringDefenseRank: number;
+    totalOffenseRank: number;
+    totalDefenseRank: number;
+    passOffenseRank: number;
+    rushOffenseRank: number;
+  };
+  leaders?: {
+    passing?: { name: string; stat: string; yards: number; touchdowns: number };
+    rushing?: { name: string; stat: string; yards: number; touchdowns: number };
+    receiving?: { name: string; stat: string; receptions: number; yards: number; touchdowns: number };
+    defense?: { name: string; stat: string; tacklesOrSacks: string };
+  };
+}
+
 export interface NFLTeam {
   id: string;
   city: string;
@@ -87,6 +121,7 @@ export interface NFLTeam {
   injuries: Injury[];
   highlights: SeasonHighlight[];
   starPlayers: Player[];
+  teamStats?: TeamStats;
 }
 
 export interface AISummaryResponse {

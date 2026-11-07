@@ -1,4 +1,5 @@
 import { NFLTeam } from '@/types';
+import { getTeamStats } from '@/lib/team-stats';
 
 export const NFL_TEAMS: NFLTeam[] = [
   {
@@ -1284,6 +1285,13 @@ export const NFL_TEAMS: NFLTeam[] = [
     starPlayers: [],
   },
 ];
+
+// Attach stats to each NFL franchise
+NFL_TEAMS.forEach((team) => {
+  if (!team.teamStats) {
+    team.teamStats = getTeamStats(team.id);
+  }
+});
 
 export function getTeamById(id: string): NFLTeam | undefined {
   return NFL_TEAMS.find((team) => team.id.toLowerCase() === id.toLowerCase());

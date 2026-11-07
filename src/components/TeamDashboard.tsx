@@ -14,7 +14,9 @@ import {
   Video,
   X,
   Search,
-  Users
+  Users,
+  BarChart2,
+  Newspaper
 } from "lucide-react";
 import { NFLTeam, SeasonHighlight, Player } from "@/types";
 
@@ -22,11 +24,15 @@ interface TeamDashboardProps {
   team: NFLTeam;
   starPlayers?: Player[];
   onOpenAISummary: (prompt: string, title: string) => void;
+  onOpenStats?: () => void;
+  onOpenNews?: () => void;
 }
 
 export default function TeamDashboard({
   team,
   onOpenAISummary,
+  onOpenStats,
+  onOpenNews,
 }: TeamDashboardProps) {
   // Countdown Timer State
   const [timeLeft, setTimeLeft] = useState<{
@@ -141,8 +147,30 @@ export default function TeamDashboard({
             </div>
           </div>
 
-          {/* Quick AI Scout Action */}
-          <div className="flex flex-wrap items-center gap-3">
+          {/* Quick Franchise Actions: Stats, News, AI Scout */}
+          <div className="flex flex-wrap items-center gap-2.5">
+            {onOpenStats && (
+              <button
+                onClick={onOpenStats}
+                className="py-2.5 px-3.5 bg-gray-900/90 hover:bg-gray-800 border border-amber-500/40 hover:border-amber-400 text-amber-300 font-bold text-xs uppercase tracking-wider rounded-xl flex items-center gap-1.5 shadow-md transition-all hover:scale-[1.02] cursor-pointer"
+                title={`Inspect ${team.name} detailed statistics and rankings`}
+              >
+                <BarChart2 className="w-4 h-4 text-amber-400" />
+                <span>Stats & Ranks</span>
+              </button>
+            )}
+
+            {onOpenNews && (
+              <button
+                onClick={onOpenNews}
+                className="py-2.5 px-3.5 bg-gray-900/90 hover:bg-gray-800 border border-blue-500/40 hover:border-blue-400 text-blue-300 font-bold text-xs uppercase tracking-wider rounded-xl flex items-center gap-1.5 shadow-md transition-all hover:scale-[1.02] cursor-pointer"
+                title={`Inspect ${team.name} breaking news & AI briefs`}
+              >
+                <Newspaper className="w-4 h-4 text-blue-400" />
+                <span>Franchise News</span>
+              </button>
+            )}
+
             <button
               onClick={() =>
                 onOpenAISummary(

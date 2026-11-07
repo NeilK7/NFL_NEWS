@@ -13,6 +13,7 @@ import AINewsFeed from "@/components/AINewsFeed";
 import LeagueScoreboard from "@/components/LeagueScoreboard";
 import OnboardingModal from "@/components/OnboardingModal";
 import AppleDownloadModal from "@/components/AppleDownloadModal";
+import TeamStatsAndNewsModal from "@/components/TeamStatsAndNewsModal";
 import { NFLTeam, Player, UserPreferences, AISummaryResponse } from "@/types";
 import { NFL_TEAMS } from "@/lib/nfl-teams";
 import { getUserPreferences } from "@/lib/supabase";
@@ -29,6 +30,27 @@ export default function Home() {
   const [isOnboardingOpen, setIsOnboardingOpen] = useState(false);
   const [isAppleModalOpen, setIsAppleModalOpen] = useState(false);
   const [isSupabaseSynced, setIsSupabaseSynced] = useState(false);
+
+  // Team Stats & News Modal State
+  const [statsNewsModal, setStatsNewsModal] = useState<{
+    isOpen: boolean;
+    team: NFLTeam;
+    initialTab: "stats" | "news";
+  }>({
+    isOpen: false,
+    team: broncosTeam,
+    initialTab: "stats",
+  });
+
+  const handleOpenTeamStats = (team: NFLTeam) => {
+    setSelectedTeam(team);
+    setStatsNewsModal({ isOpen: true, team, initialTab: "stats" });
+  };
+
+  const handleOpenTeamNews = (team: NFLTeam) => {
+    setSelectedTeam(team);
+    setStatsNewsModal({ isOpen: true, team, initialTab: "news" });
+  };
 
   // Global AI Brief Modal
   const [globalAIBrief, setGlobalAIBrief] = useState<{
@@ -156,6 +178,8 @@ export default function Home() {
         selectedTeam={selectedTeam}
         favoriteTeams={favoriteTeams}
         onSelectTeam={setSelectedTeam}
+        onOpenTeamStats={handleOpenTeamStats}
+        onOpenTeamNews={handleOpenTeamNews}
         onOpenPreferences={() => setIsOnboardingOpen(true)}
         onOpenAppleModal={() => setIsAppleModalOpen(true)}
         isSupabaseSynced={isSupabaseSynced}
@@ -206,6 +230,8 @@ export default function Home() {
             team={selectedTeam}
             starPlayers={trackedPlayers}
             onOpenAISummary={handleOpenAISummary}
+            onOpenStats={() => handleOpenTeamStats(selectedTeam)}
+            onOpenNews={() => handleOpenTeamNews(selectedTeam)}
           />
         )}
 
@@ -300,6 +326,19 @@ export default function Home() {
       <AppleDownloadModal
         isOpen={isAppleModalOpen}
         onClose={() => setIsAppleModalOpen(false)}
+      />
+
+      {/* Dedicated Team Stats & News Modal */}
+      <TeamStatsAndNewsModal
+        isOpen={statsNewsModal.isOpen}
+        onClose={() => setStatsNewsModal((prev) => ({ ...prev, isOpen: false }))}
+        team={statsNewsModal.team}
+        initialTab={statsNewsModal.initialTab}
+        onSelectTeam={(newTeam) => {
+          setSelectedTeam(newTeam);
+          setStatsNewsModal((prev) => ({ ...prev, team: newTeam }));
+        }}
+        onOpenAISummary={handleOpenAISummary}
       />
 
       {/* Luxury Footer */}

@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { NewsArticle } from '@/types';
+import { getTeamNews } from '@/lib/team-news';
 
 const FALLBACK_ARTICLES: NewsArticle[] = [
   {
@@ -162,7 +163,21 @@ export async function GET(request: Request) {
     }
 
     if (team) {
-      articles = articles.filter(a => a.teamId?.toLowerCase() === team.toLowerCase() || a.tags.some(t => t.toLowerCase() === team.toLowerCase()));
+      const teamArticles = getTeamNews(team);
+      const matchedLive = articles.filter(a => 
+        a.teamId?.toLowerCase() === team.toLowerCase() || 
+        a.tags.some(t => t.toLowerCase() === team.toLowerCase()) ||
+        a.title.toLowerCase().includes(team.toLowerCase())
+      );
+      // Combine live matched articles with dedicated team articles, eliminating duplicates
+      const allTeamArticles = [...matchedLive, ...teamArticles];
+      const seen = new Set();
+      const uniqueTeamArticles = allTeamArticles.filter(item => {
+        if (seen.has(item.id)) return false;
+        seen.add(item.id);
+        return true;
+      });
+      return NextResponse.json({ articles: uniqueTeamArticles });
     }
 
     return NextResponse.json({ articles });
