@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { 
   Calendar, 
@@ -10,15 +10,18 @@ import {
   Activity, 
   Play, 
   Sparkles, 
-  Award,
   Video,
   X,
+  RefreshCw,
+  ExternalLink,
+  Zap,
+  Radio,
   Search,
   Users,
   BarChart2,
   Newspaper
 } from "lucide-react";
-import { NFLTeam, SeasonHighlight, Player } from "@/types";
+import { NFLTeam, SeasonHighlight, Player, GameSchedule, Injury } from "@/types";
 
 interface TeamDashboardProps {
   team: NFLTeam;
@@ -28,29 +31,94 @@ interface TeamDashboardProps {
   onOpenNews?: () => void;
 }
 
+interface TeamIntelData {
+  liveTeamData?: {
+    record?: { wins: number; losses: number; ties: number; summary?: string };
+    rankInDivision?: string;
+    schedule?: GameSchedule[];
+    nextGame?: {
+      week?: number;
+      opponent: string;
+      opponentAbbr: string;
+      opponentLogo: string;
+      isHome: boolean;
+      date: string;
+      time: string;
+      isoDate?: string | null;
+      network: string;
+      broadcastNetwork?: string;
+      spread: string;
+      stadium: string;
+      venue?: string;
+    };
+  };
+  highlights: SeasonHighlight[];
+  aiReport: {
+    headline: string;
+    summary: string;
+    bulletPoints: string[];
+    poweredBy: string;
+  };
+  aiInjuries?: Injury[];
+  liveStarPlayers?: Player[];
+  yahooHeadlines: string[];
+  updatedAt?: string;
+}
+
 export default function TeamDashboard({
   team,
   onOpenAISummary,
   onOpenStats,
   onOpenNews,
 }: TeamDashboardProps) {
-  // Countdown Timer State
   const [timeLeft, setTimeLeft] = useState<{
     days: number;
     hours: number;
     minutes: number;
     seconds: number;
-  }>({ days: 3, hours: 14, minutes: 22, seconds: 45 });
+  }>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   const [activeHighlight, setActiveHighlight] = useState<SeasonHighlight | null>(null);
+  const [liveHighlights, setLiveHighlights] = useState<SeasonHighlight[]>([]);
+  const [liveSchedule, setLiveSchedule] = useState<GameSchedule[]>([]);
+  const [liveRecord, setLiveRecord] = useState<{ wins: number; losses: number; ties: number }>({
+    wins: team.record?.wins || 0,
+    losses: team.record?.losses || 0,
+    ties: team.record?.ties || 0,
+  });
+  const [liveRank, setLiveRank] = useState<string>("Syncing Official Standings...");
+  const [liveNextGame, setLiveNextGame] = useState<any>(
+    team.nextGame || {
+      opponent: "Syncing Official NFL Schedule...",
+      opponentAbbr: "NFL",
+      opponentLogo: team.logoUrl,
+      isHome: true,
+      date: "Loading Live Slate...",
+      time: "",
+      isoDate: null,
+      network: "NFL",
+      broadcastNetwork: "NFL",
+      spread: "Syncing Live Matchup...",
+      stadium: team.stadium,
+      venue: team.stadium,
+    }
+  );
+  const [liveInjuries, setLiveInjuries] = useState<Injury[]>([]);
+  const [liveStarPlayers, setLiveStarPlayers] = useState<Player[]>([]);
+  const [aiIntel, setAiIntel] = useState<TeamIntelData["aiReport"] | null>(null);
+  const [lastSyncedAt, setLastSyncedAt] = useState<string>("Syncing...");
+  const [loadingIntel, setLoadingIntel] = useState<boolean>(true);
+
   const [rosterTab, setRosterTab] = useState<"ALL" | "OFFENSE" | "DEFENSE" | "SPECIAL">("ALL");
   const [rosterSearch, setRosterSearch] = useState("");
 
-  const offensePositions = ["QB", "RB", "FB", "WR", "TE", "LT", "RT", "LG", "RG", "C", "OT", "OG"];
-  const defensePositions = ["DE", "DT", "NT", "OLB", "ILB", "LB", "CB", "FS", "SS", "S"];
-  const specialPositions = ["K", "P", "LS"];
+  const offensePositions = ["QB", "RB", "FB", "WR", "TE", "LT", "RT", "LG", "RG", "C", "OT", "OG", "OL"];
+  const defensePositions = ["DE", "DT", "NT", "OLB", "ILB", "LB", "CB", "FS", "SS", "S", "DB", "DL"];
+  const specialPositions = ["K", "P", "LS", "PK"];
 
-  const filteredRoster = team.starPlayers.filter((player) => {
+  const activeRosterSource = liveStarPlayers.length > 0 ? liveStarPlayers : team.starPlayers;
+
+  const filteredRoster = activeRosterSource.filter((player) => {
     const matchesSearch =
       !rosterSearch.trim() ||
       player.name.toLowerCase().includes(rosterSearch.toLowerCase()) ||
@@ -69,27 +137,115 @@ export default function TeamDashboard({
     return matchesSearch && matchesTab;
   });
 
-  // Active Countdown ticker
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev.seconds > 0) {
-          return { ...prev, seconds: prev.seconds - 1 };
-        } else if (prev.minutes > 0) {
-          return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
-        } else if (prev.hours > 0) {
-          return { ...prev, hours: prev.hours - 1, minutes: 59, seconds: 59 };
-        } else if (prev.days > 0) {
-          return { ...prev, days: prev.days - 1, hours: 23, minutes: 59, seconds: 59 };
+  const fetchTeamIntel = useCallback(async (selectedTeam: NFLTeam, silent = false) => {
+    if (!silent) setLoadingIntel(true);
+    try {
+      const fullTeamName = `${selectedTeam.city} ${selectedTeam.name}`;
+      const res = await fetch(
+        `/api/team-intel?teamName=${encodeURIComponent(fullTeamName)}&teamAbbr=${encodeURIComponent(
+          selectedTeam.abbreviation
+        )}`,
+        { cache: "no-store" }
+      );
+      if (res.ok) {
+        const data: TeamIntelData = await res.json();
+        if (data.liveTeamData) {
+          if (data.liveTeamData.record) {
+            setLiveRecord(data.liveTeamData.record);
+          }
+          if (data.liveTeamData.rankInDivision) {
+            setLiveRank(data.liveTeamData.rankInDivision);
+          }
+          if (Array.isArray(data.liveTeamData.schedule) && data.liveTeamData.schedule.length > 0) {
+            setLiveSchedule(data.liveTeamData.schedule);
+          }
+          if (data.liveTeamData.nextGame) {
+            setLiveNextGame(data.liveTeamData.nextGame);
+          }
         }
-        return prev;
-      });
-    }, 1000);
-
-    return () => clearInterval(timer);
+        if (Array.isArray(data.highlights) && data.highlights.length > 0) {
+          setLiveHighlights(data.highlights);
+        }
+        if (data.aiReport) {
+          setAiIntel(data.aiReport);
+        }
+        if (Array.isArray(data.aiInjuries)) {
+          setLiveInjuries(data.aiInjuries);
+        }
+        if (Array.isArray(data.liveStarPlayers) && data.liveStarPlayers.length > 0) {
+          setLiveStarPlayers(data.liveStarPlayers);
+        } else {
+          setLiveStarPlayers(selectedTeam.starPlayers);
+        }
+        if (data.updatedAt) {
+          setLastSyncedAt(data.updatedAt);
+        }
+      }
+    } catch (err) {
+      console.warn("Failed to load live team intel:", err);
+    } finally {
+      if (!silent) setLoadingIntel(false);
+    }
   }, []);
 
-  const nextGame = team.nextGame;
+  // Initial load + automatic 45-second background polling for real-time updates
+  useEffect(() => {
+    setLiveHighlights(team.highlights || []);
+    setLiveSchedule(team.schedule || []);
+    setLiveInjuries(team.injuries || []);
+    setLiveStarPlayers(team.starPlayers || []);
+    setLiveRecord(team.record || { wins: 0, losses: 0, ties: 0 });
+    setAiIntel(null);
+    setLiveNextGame(
+      team.nextGame || {
+        opponent: "Syncing Official NFL Schedule...",
+        opponentAbbr: "NFL",
+        opponentLogo: team.logoUrl,
+        isHome: true,
+        date: "Loading Live Slate...",
+        time: "",
+        isoDate: null,
+        network: "NFL",
+        broadcastNetwork: "NFL",
+        spread: "Syncing Live Matchup...",
+        stadium: team.stadium,
+        venue: team.stadium,
+      }
+    );
+    fetchTeamIntel(team, false);
+
+    const pollInterval = setInterval(() => {
+      fetchTeamIntel(team, true);
+    }, 45000);
+
+    return () => clearInterval(pollInterval);
+  }, [team, fetchTeamIntel]);
+
+  // Real Kickoff Countdown Clock based on real ISO timestamp
+  useEffect(() => {
+    const updateClock = () => {
+      if (liveNextGame?.isoDate) {
+        const target = new Date(liveNextGame.isoDate).getTime();
+        const diff = Math.max(0, Math.floor((target - Date.now()) / 1000));
+        const days = Math.floor(diff / 86400);
+        const hours = Math.floor((diff % 86400) / 3600);
+        const minutes = Math.floor((diff % 3600) / 60);
+        const seconds = diff % 60;
+        setTimeLeft({ days, hours, minutes, seconds });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      }
+    };
+
+    updateClock();
+    const timer = setInterval(updateClock, 1000);
+    return () => clearInterval(timer);
+  }, [liveNextGame]);
+
+  const nextGame = liveNextGame || team.nextGame;
+  const displayedHighlights = liveHighlights.length > 0 ? liveHighlights : team.highlights;
+  const displayedSchedule = liveSchedule.length > 0 ? liveSchedule : team.schedule;
+  const displayedInjuries = liveInjuries.length > 0 ? liveInjuries : team.injuries;
 
   return (
     <div className="space-y-8 animate-in fade-in duration-300">
@@ -128,17 +284,22 @@ export default function TeamDashboard({
             </div>
 
             <div>
-              <div className="flex items-center gap-2 mb-1">
+              <div className="flex items-center gap-2 mb-1 flex-wrap">
                 <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-gray-900/80 text-amber-400 border border-amber-500/30">
                   {team.conference} {team.division}
                 </span>
-                <span className="text-xs text-gray-400 font-medium">
-                  {team.record.wins}-{team.record.losses}
-                  {team.record.ties ? `-${team.record.ties}` : ""}
+                <span className="text-xs text-white font-bold bg-gray-800/90 px-2 py-0.5 rounded">
+                  {liveRecord.wins}-{liveRecord.losses}
+                  {liveRecord.ties ? `-${liveRecord.ties}` : ""}
                 </span>
+                {liveRank && (
+                  <span className="text-xs text-emerald-400 font-semibold">
+                    • {liveRank}
+                  </span>
+                )}
               </div>
               <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
-                {team.name}
+                {team.city} {team.name}
               </h1>
               <p className="text-xs sm:text-sm text-gray-300 flex items-center gap-2 mt-1">
                 <MapPin className="w-3.5 h-3.5 text-amber-400" />
@@ -174,17 +335,68 @@ export default function TeamDashboard({
             <button
               onClick={() =>
                 onOpenAISummary(
-                  `Generate an executive scouting report for the ${team.name} ahead of their matchup with ${nextGame.opponent}. Cover offensive schematics, key player health, and statistical edge.`,
-                  `${team.name} Apex AI Scout Brief`
+                  `Generate an executive scouting report for the ${team.city} ${team.name} (${liveRecord.wins}-${liveRecord.losses}) ahead of their matchup with ${nextGame.opponent}. Cover current Yahoo Sports and NFL.com news, key player health, and tactical edge.`,
+                  `${team.city} ${team.name} Fireworks AI Scout Brief`
                 )
               }
               className="py-2.5 px-4 bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-extrabold text-xs uppercase tracking-wider rounded-xl flex items-center gap-2 shadow-lg shadow-amber-500/20 transition-all hover:scale-[1.02] cursor-pointer"
             >
               <Sparkles className="w-4 h-4 fill-black" />
-              AI Game Plan Brief
+              Fireworks AI Game Plan
             </button>
           </div>
         </div>
+      </div>
+
+      {/* Live Fireworks AI Gathered Intelligence Banner (Yahoo Sports + NFL.com) */}
+      <div className="glass-panel-gold rounded-2xl p-5 border border-amber-500/30 space-y-3">
+        <div className="flex items-center justify-between flex-wrap gap-2">
+          <div className="flex items-center gap-2">
+            <Zap className="w-4 h-4 text-amber-400 fill-amber-400" />
+            <span className="text-xs font-extrabold uppercase tracking-wider text-amber-300">
+              {aiIntel?.headline || `${team.city} ${team.name} Live Fireworks AI Intelligence (Yahoo Sports & NFL.com)`}
+            </span>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="text-[11px] text-emerald-400 flex items-center gap-1 font-medium">
+              <Radio className="w-3 h-3 animate-pulse" />
+              Auto-Sync Active ({lastSyncedAt})
+            </span>
+            <button
+              onClick={() => fetchTeamIntel(team, false)}
+              disabled={loadingIntel}
+              className="text-[11px] font-semibold text-gray-300 hover:text-amber-300 flex items-center gap-1.5 bg-gray-900/70 px-2.5 py-1 rounded-lg border border-gray-800 cursor-pointer"
+            >
+              <RefreshCw className={`w-3 h-3 ${loadingIntel ? "animate-spin text-amber-400" : ""}`} />
+              <span>{loadingIntel ? "Syncing Live Feeds..." : "Sync Now"}</span>
+            </button>
+          </div>
+        </div>
+
+        {loadingIntel && !aiIntel ? (
+          <p className="text-xs text-gray-400 animate-pulse">
+            Fireworks AI is gathering real-time Yahoo Sports & NFL.com updates, live records, and official NFL highlight reels for the {team.city} {team.name}...
+          </p>
+        ) : aiIntel ? (
+          <div className="space-y-2.5">
+            <p className="text-xs sm:text-sm text-gray-200 leading-relaxed">
+              {aiIntel.summary}
+            </p>
+            {aiIntel.bulletPoints && aiIntel.bulletPoints.length > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-2 pt-1">
+                {aiIntel.bulletPoints.map((pt, i) => (
+                  <div
+                    key={i}
+                    className="p-2.5 rounded-xl bg-gray-950/60 border border-gray-800/80 text-xs text-gray-300 flex items-start gap-2"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1.5 flex-shrink-0" />
+                    <span className="line-clamp-2">{pt}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        ) : null}
       </div>
 
       {/* 2. Next Game Countdown Card & Matchup Analytics */}
@@ -195,7 +407,7 @@ export default function TeamDashboard({
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
               <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">
-                Next Matchup: Week {nextGame.week || 7}
+                {nextGame.isoDate ? `Upcoming Matchup: Week ${nextGame.week || ""}` : `Latest Matchup: Week ${nextGame.week || ""}`}
               </span>
             </div>
             <div className="flex items-center gap-2 text-xs text-gray-400 font-medium">
@@ -221,7 +433,7 @@ export default function TeamDashboard({
                 {team.abbreviation}
               </div>
               <div className="text-xs text-gray-400">
-                {team.record.wins}-{team.record.losses}
+                {liveRecord.wins}-{liveRecord.losses}
               </div>
             </div>
 
@@ -233,7 +445,7 @@ export default function TeamDashboard({
               <div className="text-xs font-bold text-gray-300 mt-2">
                 {nextGame.spread}
               </div>
-              <div className="text-[11px] text-gray-500">
+              <div className="text-[11px] text-gray-400 mt-0.5">
                 {nextGame.date} • {nextGame.time}
               </div>
             </div>
@@ -253,7 +465,7 @@ export default function TeamDashboard({
                 {nextGame.opponent}
               </div>
               <div className="text-xs text-gray-400">
-                {nextGame.isHome ? "Away Rival" : "Host Stadium"}
+                {nextGame.isHome ? "Visiting Team" : "Home Team"}
               </div>
             </div>
           </div>
@@ -264,7 +476,7 @@ export default function TeamDashboard({
               <MapPin className="w-3.5 h-3.5 text-gray-500" />
               {nextGame.venue || nextGame.stadium}
             </span>
-            <span className="text-amber-400 font-medium">National Broadcast</span>
+            <span className="text-amber-400 font-medium">Live NFL Schedule Feed</span>
           </div>
         </div>
 
@@ -272,9 +484,13 @@ export default function TeamDashboard({
         <div className="glass-panel rounded-2xl p-6 border border-gray-800 flex flex-col justify-between text-center relative overflow-hidden">
           <div className="space-y-1">
             <div className="text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center justify-center gap-1.5">
-              <Clock className="w-3.5 h-3.5" /> Kickoff Countdown
+              <Clock className="w-3.5 h-3.5" /> Live Kickoff Countdown
             </div>
-            <p className="text-xs text-gray-400">Time remaining until opening drive</p>
+            <p className="text-xs text-gray-400">
+              {nextGame.isoDate
+                ? `Counting down to ${nextGame.date} (${nextGame.time})`
+                : `Matchup Status: ${nextGame.time}`}
+            </p>
           </div>
 
           {/* Countdown Blocks */}
@@ -306,12 +522,83 @@ export default function TeamDashboard({
           </div>
 
           <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-amber-300 font-medium">
-            AI Spread Predictor: {nextGame.spread} • Win Probability: 64.2%
+            {nextGame.spread} • Live Verified NFL Feed
           </div>
         </div>
       </div>
 
-      {/* 3. Schedule Wire & Injury Wire Tabs */}
+      {/* 3. Season Video Highlights (Live Imported via Fireworks AI + YouTube/ESPN) */}
+      <div className="space-y-4">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Video className="w-5 h-5 text-amber-400" />
+            <h3 className="text-xl font-black text-white">
+              Live Imported {team.name} Video Highlights
+            </h3>
+          </div>
+          <span className="text-xs text-amber-400 font-semibold flex items-center gap-1">
+            <Sparkles className="w-3.5 h-3.5" />
+            {loadingIntel ? "Importing Official NFL Highlights..." : "Verified NFL & ESPN Video Feeds"}
+          </span>
+        </div>
+
+        {loadingIntel && displayedHighlights.length === 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {[1, 2, 3].map((n) => (
+              <div
+                key={n}
+                className="h-64 rounded-2xl bg-gray-900/60 border border-gray-800 animate-pulse"
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {displayedHighlights.map((highlight) => (
+              <div
+                key={highlight.id}
+                onClick={() => setActiveHighlight(highlight)}
+                className="group glass-panel rounded-2xl overflow-hidden border border-gray-800 hover:border-amber-500/50 transition-all cursor-pointer flex flex-col justify-between shadow-lg"
+              >
+                <div className="relative aspect-video w-full overflow-hidden bg-gray-900">
+                  <Image
+                    src={highlight.thumbnailUrl}
+                    alt={highlight.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-amber-500/90 text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                      <Play className="w-5 h-5 fill-black ml-0.5" />
+                    </div>
+                  </div>
+                  <div className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-gray-200">
+                    {highlight.duration}
+                  </div>
+                  <div className="absolute top-2 left-2 px-2 py-0.5 rounded bg-amber-500 text-black text-[10px] font-black uppercase">
+                    {highlight.videoUrl.endsWith(".mp4") ? "ESPN HD" : "NFL Highlight"}
+                  </div>
+                </div>
+
+                <div className="p-4 space-y-1.5">
+                  <h4 className="font-bold text-sm text-white group-hover:text-amber-400 transition-colors line-clamp-2">
+                    {highlight.title}
+                  </h4>
+                  <p className="text-xs text-gray-400 line-clamp-2">
+                    {highlight.description}
+                  </p>
+                  <div className="text-[11px] text-gray-500 pt-1 flex items-center justify-between">
+                    <span>{highlight.opponent || "Official NFL"}</span>
+                    <span className="text-amber-400/80">{highlight.views}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* 4. Schedule Wire & Injury Wire Tabs */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Full Season Schedule */}
         <div className="glass-panel rounded-2xl p-6 border border-gray-800 space-y-4">
@@ -319,16 +606,16 @@ export default function TeamDashboard({
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4 text-amber-400" />
               <h3 className="font-extrabold text-base text-white">
-                2024–2025 Schedule & Slate
+                Official Live Team Schedule & Results
               </h3>
             </div>
-            <span className="text-xs text-gray-400 font-medium">
-              18 Weeks Regular Season
+            <span className="text-xs text-emerald-400 font-medium">
+              {displayedSchedule.length} Games Synced
             </span>
           </div>
 
           <div className="space-y-2.5 max-h-96 overflow-y-auto pr-1">
-            {team.schedule.map((game, idx) => (
+            {displayedSchedule.map((game, idx) => (
               <div
                 key={idx}
                 className="p-3 rounded-xl bg-gray-900/60 border border-gray-800/80 hover:border-gray-700 flex items-center justify-between transition-colors"
@@ -393,21 +680,21 @@ export default function TeamDashboard({
             <div className="flex items-center gap-2">
               <Activity className="w-4 h-4 text-red-400 animate-pulse" />
               <h3 className="font-extrabold text-base text-white">
-                Official Injury Wire & Status
+                Live Injury & Roster Wire
               </h3>
             </div>
-            <span className="text-xs text-gray-400 font-medium">
-              Apex Medical Intelligence
+            <span className="text-xs text-amber-400 font-medium">
+              Fireworks AI • Yahoo Sports & NFL.com
             </span>
           </div>
 
           <div className="space-y-3 max-h-96 overflow-y-auto pr-1">
-            {team.injuries.length === 0 ? (
+            {displayedInjuries.length === 0 ? (
               <div className="p-8 text-center text-gray-400 text-sm">
-                Clean bill of health! No current designations.
+                No critical injury designations currently reported on the active wire.
               </div>
             ) : (
-              team.injuries.map((injury, idx) => {
+              displayedInjuries.map((injury, idx) => {
                 const getStatusStyle = (status: string) => {
                   switch (status) {
                     case "Out":
@@ -445,7 +732,7 @@ export default function TeamDashboard({
                     </div>
 
                     <div className="text-xs text-gray-300 flex items-center gap-2">
-                      <span className="text-amber-400 font-medium">Injury:</span>
+                      <span className="text-amber-400 font-medium">Report:</span>
                       <span>{injury.injuryType || injury.injury}</span>
                     </div>
 
@@ -461,64 +748,6 @@ export default function TeamDashboard({
         </div>
       </div>
 
-      {/* 4. Season Video Highlights */}
-      <div className="space-y-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Video className="w-5 h-5 text-amber-400" />
-            <h3 className="text-xl font-black text-white">
-              2024–2025 Season Video Highlights
-            </h3>
-          </div>
-          <span className="text-xs text-gray-400">
-            HD Broadcast Game Replays & Top Plays
-          </span>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {team.highlights.map((highlight) => (
-            <div
-              key={highlight.id}
-              onClick={() => setActiveHighlight(highlight)}
-              className="group glass-panel rounded-2xl overflow-hidden border border-gray-800 hover:border-amber-500/50 transition-all cursor-pointer flex flex-col justify-between shadow-lg"
-            >
-              <div className="relative aspect-video w-full overflow-hidden bg-gray-900">
-                <Image
-                  src={highlight.thumbnailUrl}
-                  alt={highlight.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-amber-500/90 text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                    <Play className="w-5 h-5 fill-black ml-0.5" />
-                  </div>
-                </div>
-                <div className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-gray-200">
-                  {highlight.duration}
-                </div>
-                <div className="absolute top-2 left-2 px-2 py-0.5 rounded bg-amber-500 text-black text-[10px] font-black uppercase">
-                  Week {highlight.week}
-                </div>
-              </div>
-
-              <div className="p-4 space-y-1.5">
-                <h4 className="font-bold text-sm text-white group-hover:text-amber-400 transition-colors line-clamp-1">
-                  {highlight.title}
-                </h4>
-                <p className="text-xs text-gray-400 line-clamp-2">
-                  {highlight.description}
-                </p>
-                <div className="text-[11px] text-gray-500 pt-1">
-                  {highlight.opponent ? `Opponent: ${highlight.opponent}` : `${highlight.views} views`}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* 5. Complete Franchise Roster & Depth Chart */}
       <div className="glass-panel rounded-2xl p-6 border border-gray-800 space-y-5">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-4 border-b border-gray-800">
@@ -526,11 +755,11 @@ export default function TeamDashboard({
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-amber-400" />
               <h3 className="font-extrabold text-lg text-white">
-                {team.name} Full Active Roster & Depth Chart
+                {team.city} {team.name} Full Active Roster & Depth Chart
               </h3>
             </div>
             <p className="text-xs text-gray-400 mt-0.5">
-              Showing {filteredRoster.length} of {team.starPlayers.length} verified franchise playmakers
+              Showing {filteredRoster.length} of {activeRosterSource.length} verified franchise playmakers
             </p>
           </div>
 
@@ -577,9 +806,22 @@ export default function TeamDashboard({
                 className="p-3.5 rounded-xl bg-gray-900/60 border border-gray-800/90 hover:border-amber-500/40 transition-all space-y-2.5 group"
               >
                 <div className="flex items-center justify-between">
-                  <span className="w-7 h-7 rounded-full bg-amber-500/10 text-amber-400 font-mono font-bold flex items-center justify-center text-xs border border-amber-500/20">
-                    #{player.number}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    {player.avatarUrl && (
+                      <div className="w-8 h-8 relative rounded-full overflow-hidden bg-gray-800 border border-gray-700 flex-shrink-0">
+                        <Image
+                          src={player.avatarUrl}
+                          alt={player.name}
+                          fill
+                          className="object-cover"
+                          sizes="32px"
+                        />
+                      </div>
+                    )}
+                    <span className="w-7 h-7 rounded-full bg-amber-500/10 text-amber-400 font-mono font-bold flex items-center justify-center text-xs border border-amber-500/20">
+                      #{player.number}
+                    </span>
+                  </div>
                   <div className="flex items-center gap-1.5">
                     <span className="text-[10px] font-extrabold uppercase text-gray-300 bg-gray-800 px-2 py-0.5 rounded">
                       {player.position}
@@ -627,7 +869,7 @@ export default function TeamDashboard({
         )}
       </div>
 
-      {/* Video Modal Player */}
+      {/* Video Modal Player (Supports Direct ESPN MP4 & Official YouTube NFL Highlights) */}
       {activeHighlight && (
         <div 
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md animate-in fade-in duration-200"
@@ -637,37 +879,59 @@ export default function TeamDashboard({
             className="relative w-full max-w-3xl bg-[#121622] border border-amber-500/30 rounded-2xl overflow-hidden shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="p-4 bg-gray-900 border-b border-gray-800 flex items-center justify-between">
+            <div className="p-4 bg-gray-900 border-b border-gray-800 flex items-center justify-between gap-4">
               <div>
-                <h4 className="font-bold text-sm text-white">
+                <h4 className="font-bold text-sm text-white line-clamp-1">
                   {activeHighlight.title}
                 </h4>
                 <p className="text-xs text-gray-400">
-                  Week {activeHighlight.week} vs {activeHighlight.opponent}
+                  {activeHighlight.opponent || "Official NFL Highlight"} • {activeHighlight.views}
                 </p>
               </div>
-              <button
-                onClick={() => setActiveHighlight(null)}
-                className="p-1.5 rounded-full hover:bg-gray-800 text-gray-400 hover:text-white"
-              >
-                <X className="w-5 h-5" />
-              </button>
+              <div className="flex items-center gap-2 flex-shrink-0">
+                <a
+                  href={activeHighlight.videoUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="py-1.5 px-3 rounded-lg bg-amber-500 hover:bg-amber-400 text-black font-bold text-xs flex items-center gap-1.5 transition-colors"
+                >
+                  <span>Watch on YouTube / Source</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+                <button
+                  onClick={() => setActiveHighlight(null)}
+                  className="p-1.5 rounded-full hover:bg-gray-800 text-gray-400 hover:text-white"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
             </div>
 
-            <div className="relative aspect-video w-full bg-black">
-              <iframe
-                src={
-                  activeHighlight.videoUrl.includes("watch?v=")
-                    ? activeHighlight.videoUrl.replace("watch?v=", "embed/") + "?autoplay=1"
-                    : activeHighlight.videoUrl.startsWith("http")
-                    ? activeHighlight.videoUrl
-                    : `https://www.youtube.com/embed/${activeHighlight.videoUrl}?autoplay=1`
-                }
-                title={activeHighlight.title}
-                className="w-full h-full border-0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+            <div className="relative aspect-video w-full bg-black flex items-center justify-center">
+              {activeHighlight.videoUrl.endsWith(".mp4") ||
+              activeHighlight.videoUrl.includes("video-cdn.espn.com") ? (
+                <video
+                  src={activeHighlight.videoUrl}
+                  controls
+                  autoPlay
+                  playsInline
+                  className="w-full h-full object-contain"
+                />
+              ) : (
+                <iframe
+                  src={
+                    activeHighlight.videoUrl.includes("watch?v=")
+                      ? activeHighlight.videoUrl.replace("watch?v=", "embed/") + "?autoplay=1&rel=0"
+                      : activeHighlight.videoUrl.startsWith("http")
+                      ? activeHighlight.videoUrl
+                      : `https://www.youtube.com/embed/${activeHighlight.videoUrl}?autoplay=1&rel=0`
+                  }
+                  title={activeHighlight.title}
+                  className="w-full h-full border-0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              )}
             </div>
           </div>
         </div>

@@ -273,15 +273,12 @@ export default function OnboardingModal({
                       key={team.id}
                       onClick={() => {
                         if (!isSelected) {
-                          toggleTeam(team.id);
-                          if (selectedTeamIds.length === 0) setPrimaryTeamId(team.id);
+                          setSelectedTeamIds([...selectedTeamIds, team.id]);
+                          setPrimaryTeamId(team.id);
+                        } else if (!isPrimary) {
+                          setPrimaryTeamId(team.id);
                         } else {
-                          // If already selected, make it primary or deselect
-                          if (!isPrimary) {
-                            setPrimaryTeamId(team.id);
-                          } else {
-                            toggleTeam(team.id);
-                          }
+                          toggleTeam(team.id);
                         }
                       }}
                       className={`relative p-3 rounded-xl border cursor-pointer transition-all flex flex-col items-center justify-between group ${

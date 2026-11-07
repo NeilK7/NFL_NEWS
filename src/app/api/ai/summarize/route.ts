@@ -4,8 +4,9 @@ import { callFireworksAI } from '@/lib/fireworks';
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { title, summary, content, source, tags } = body;
-    const textToAnalyze = summary || content || title || 'NFL Breaking News Update';
+    const { title, topic, summary, context, content, source, tags } = body;
+    const effectiveTitle = title || topic || 'NFL Breaking News Update';
+    const textToAnalyze = summary || context || content || effectiveTitle;
 
     const systemPrompt = `You are "Gridiron Apex AI", an elite NFL executive intelligence analyst powered by Fireworks AI, Yahoo Sports, and NFL.com live data.
 Analyze the provided NFL news story and return ONLY a valid JSON object with the exact following keys:
@@ -18,7 +19,7 @@ Analyze the provided NFL news story and return ONLY a valid JSON object with the
       { role: 'system', content: systemPrompt },
       {
         role: 'user',
-        content: `Title: ${title}\nSource: ${source || 'NFL Wire'}\nTags: ${(tags || []).join(', ')}\nStory: ${textToAnalyze}`,
+        content: `Title: ${effectiveTitle}\nSource: ${source || 'NFL Wire'}\nTags: ${(tags || []).join(', ')}\nStory: ${textToAnalyze}`,
       },
     ]);
 
@@ -29,29 +30,32 @@ Analyze the provided NFL news story and return ONLY a valid JSON object with the
         const e = cleaned.lastIndexOf('}');
         const jsonStr = s !== -1 && e !== -1 ? cleaned.slice(s, e + 1) : cleaned;
         const parsed = JSON.parse(jsonStr);
+        const briefText = parsed.executiveBrief || parsed.summary || textToAnalyze;
+        const takeaways = Array.isArray(parsed.keyTakeaways)
+          ? parsed.keyTakeaways
+          : ['Key roster and scheme implications across the conference.'];
+        const fantasy = parsed.fantasyImpact || 'Monitor weekly usage and snaps.';
+        const urg = parsed.urgency || 'HIGH';
         return NextResponse.json({
-          summary: {
-            executiveBrief: parsed.executiveBrief || textToAnalyze,
-            keyTakeaways: Array.isArray(parsed.keyTakeaways)
-              ? parsed.keyTakeaways
-              : ['Key roster and scheme implications across the conference.'],
-            fantasyImpact: parsed.fantasyImpact || 'Monitor weekly usage and snaps.',
-            urgency: parsed.urgency || 'HIGH',
-          },
+          summary: briefText,
+          executiveBrief: briefText,
+          keyTakeaways: takeaways,
+          fantasyImpact: fantasy,
+          urgency: urg,
           provider: 'Fireworks AI (Yahoo Sports & NFL.com Live Engine)',
         });
       } catch {
+        const fallbackBrief = aiContent.replace(/```json|```/g, '').slice(0, 320);
         return NextResponse.json({
-          summary: {
-            executiveBrief: aiContent.replace(/```json|```/g, '').slice(0, 320),
-            keyTakeaways: [
-              'Synthesized live by Fireworks AI from Yahoo Sports and NFL.com.',
-              'Immediate impact on upcoming weekly game script and matchups.',
-              'Monitor official Friday injury designations for confirmation.',
-            ],
-            fantasyImpact: 'Adjust lineup projections according to updated snap shares.',
-            urgency: 'HIGH',
-          },
+          summary: fallbackBrief,
+          executiveBrief: fallbackBrief,
+          keyTakeaways: [
+            'Synthesized live by Fireworks AI from Yahoo Sports and NFL.com.',
+            'Immediate impact on upcoming weekly game script and matchups.',
+            'Monitor official Friday injury designations for confirmation.',
+          ],
+          fantasyImpact: 'Adjust lineup projections according to updated snap shares.',
+          urgency: 'HIGH',
           provider: 'Fireworks AI (Yahoo Sports & NFL.com Live Engine)',
         });
       }
@@ -67,34 +71,33 @@ Analyze the provided NFL news story and return ONLY a valid JSON object with the
       textToAnalyze.toLowerCase().includes('acquired') ||
       textToAnalyze.toLowerCase().includes('deal');
 
+    const fallbackBrief = `${effectiveTitle} — ${textToAnalyze.slice(0, 200)}`;
     return NextResponse.json({
-      summary: {
-        executiveBrief: `${title} — ${textToAnalyze.slice(0, 200)}`,
-        keyTakeaways: [
-          isTrade
-            ? 'Significant cap and draft capital implications for both franchises involved.'
-            : isInjury
-            ? 'Next-man-up rotational adjustments expected immediately in upcoming practices.'
-            : 'Coordinators adjusting weekly gameplan to exploit matchup advantages.',
-          `Verified via ${source || 'Yahoo Sports & NFL.com Wire'} insider reporting.`,
-          'Direct ripple effects on divisional playoff seeding and conference tiebreakers.',
-        ],
-        fantasyImpact: isInjury
-          ? 'High priority waiver wire alert: target immediate backup on the depth chart.'
-          : 'Upgrades offensive efficiency ceiling for primary skill-position weapons.',
-        urgency: isInjury || isTrade ? 'HIGH' : 'MEDIUM',
-      },
+      summary: fallbackBrief,
+      executiveBrief: fallbackBrief,
+      keyTakeaways: [
+        isTrade
+          ? 'Significant cap and draft capital implications for both franchises involved.'
+          : isInjury
+          ? 'Next-man-up rotational adjustments expected immediately in upcoming practices.'
+          : 'Coordinators adjusting weekly gameplan to exploit matchup advantages.',
+        `Verified via ${source || 'Yahoo Sports & NFL.com Wire'} insider reporting.`,
+        'Direct ripple effects on divisional playoff seeding and conference tiebreakers.',
+      ],
+      fantasyImpact: isInjury
+        ? 'High priority waiver wire alert: target immediate backup on the depth chart.'
+        : 'Upgrades offensive efficiency ceiling for primary skill-position weapons.',
+      urgency: isInjury || isTrade ? 'HIGH' : 'MEDIUM',
       provider: 'Fireworks AI Engine',
     });
   } catch {
     return NextResponse.json(
       {
-        summary: {
-          executiveBrief: 'Real-time NFL intelligence brief generated for your war room.',
-          keyTakeaways: ['Monitor active roster reports prior to kickoff.'],
-          fantasyImpact: 'Hold primary starters.',
-          urgency: 'MEDIUM',
-        },
+        summary: 'Real-time NFL intelligence brief generated for your war room.',
+        executiveBrief: 'Real-time NFL intelligence brief generated for your war room.',
+        keyTakeaways: ['Monitor active roster reports prior to kickoff.'],
+        fantasyImpact: 'Hold primary starters.',
+        urgency: 'MEDIUM',
         provider: 'Fireworks AI Engine',
       },
       { status: 200 }

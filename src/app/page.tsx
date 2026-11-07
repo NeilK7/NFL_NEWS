@@ -16,7 +16,7 @@ import AppleDownloadModal from "@/components/AppleDownloadModal";
 import TeamStatsAndNewsModal from "@/components/TeamStatsAndNewsModal";
 import { NFLTeam, Player, UserPreferences, AISummaryResponse } from "@/types";
 import { NFL_TEAMS } from "@/lib/nfl-teams";
-import { getUserPreferences } from "@/lib/supabase";
+import { getUserPreferences, saveUserPreferences, getLocalPreferences } from "@/lib/supabase";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"war-room" | "ai-news" | "scoreboard">("war-room");
@@ -42,13 +42,35 @@ export default function Home() {
     initialTab: "stats",
   });
 
-  const handleOpenTeamStats = (team: NFLTeam) => {
+  // Persist team selection immediately so refreshing the page keeps the active team
+  const handleSelectTeamAndPersist = (team: NFLTeam) => {
     setSelectedTeam(team);
+    const basePrefs = preferences || getLocalPreferences();
+    const updatedFavIds = basePrefs.favoriteTeamIds.includes(team.id)
+      ? basePrefs.favoriteTeamIds
+      : [team.id, ...basePrefs.favoriteTeamIds];
+    const nextPrefs: UserPreferences = {
+      ...basePrefs,
+      favoriteTeamIds: updatedFavIds,
+      favoriteTeams: updatedFavIds,
+      primaryTeamId: team.id,
+      hasCompletedOnboarding: true,
+    };
+    setPreferences(nextPrefs);
+    const favs = NFL_TEAMS.filter((t) => updatedFavIds.includes(t.id));
+    if (favs.length > 0) {
+      setFavoriteTeams(favs);
+    }
+    saveUserPreferences(nextPrefs).catch(() => {});
+  };
+
+  const handleOpenTeamStats = (team: NFLTeam) => {
+    handleSelectTeamAndPersist(team);
     setStatsNewsModal({ isOpen: true, team, initialTab: "stats" });
   };
 
   const handleOpenTeamNews = (team: NFLTeam) => {
-    setSelectedTeam(team);
+    handleSelectTeamAndPersist(team);
     setStatsNewsModal({ isOpen: true, team, initialTab: "news" });
   };
 
@@ -105,7 +127,7 @@ export default function Home() {
       }
     }
     loadData();
-  }, []);
+  }, [broncosTeam]);
 
   const handleSavePreferences = (newPrefs: UserPreferences) => {
     setPreferences(newPrefs);
@@ -127,6 +149,7 @@ export default function Home() {
       });
     });
     setTrackedPlayers(players);
+    saveUserPreferences(newPrefs).catch(() => {});
   };
 
   const handleOpenAISummary = async (prompt: string, title: string) => {
@@ -141,14 +164,21 @@ export default function Home() {
       const res = await fetch("/api/ai/summarize", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ topic: title, context: prompt }),
+        body: JSON.stringify({ title, topic: title, summary: prompt, context: prompt }),
       });
       const data = await res.json();
       setGlobalAIBrief({
         isOpen: true,
         title,
         loading: false,
-        brief: data,
+        brief: {
+          summary: typeof data.summary === "string" ? data.summary : data.summary?.executiveBrief || prompt,
+          keyTakeaways: data.keyTakeaways || data.summary?.keyTakeaways || [
+            "Synthesized live by Fireworks AI from Yahoo Sports and NFL.com.",
+          ],
+          fantasyImpact: data.fantasyImpact || data.summary?.fantasyImpact || "Monitor weekly usage and snaps.",
+          urgency: data.urgency || data.summary?.urgency || "HIGH",
+        },
       });
     } catch {
       setGlobalAIBrief({
@@ -177,7 +207,7 @@ export default function Home() {
         onTabChange={setActiveTab}
         selectedTeam={selectedTeam}
         favoriteTeams={favoriteTeams}
-        onSelectTeam={setSelectedTeam}
+        onSelectTeam={handleSelectTeamAndPersist}
         onOpenTeamStats={handleOpenTeamStats}
         onOpenTeamNews={handleOpenTeamNews}
         onOpenPreferences={() => setIsOnboardingOpen(true)}
@@ -196,7 +226,7 @@ export default function Home() {
             {favoriteTeams.map((team) => (
               <button
                 key={team.id}
-                onClick={() => setSelectedTeam(team)}
+                onClick={() => handleSelectTeamAndPersist(team)}
                 className={`flex items-center gap-2 py-1.5 px-3 rounded-xl border text-xs font-bold transition-all flex-shrink-0 ${
                   selectedTeam.id === team.id
                     ? "bg-amber-500/20 border-amber-500 text-amber-300 shadow-md shadow-amber-500/10 scale-[1.02]"
@@ -335,7 +365,7 @@ export default function Home() {
         team={statsNewsModal.team}
         initialTab={statsNewsModal.initialTab}
         onSelectTeam={(newTeam) => {
-          setSelectedTeam(newTeam);
+          handleSelectTeamAndPersist(newTeam);
           setStatsNewsModal((prev) => ({ ...prev, team: newTeam }));
         }}
         onOpenAISummary={handleOpenAISummary}
