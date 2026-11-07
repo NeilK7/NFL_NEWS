@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import confetti from "canvas-confetti";
 import { 
@@ -50,6 +50,24 @@ export default function OnboardingModal({
   );
   const [saving, setSaving] = useState(false);
   const [playerSearchQuery, setPlayerSearchQuery] = useState("");
+
+  // Sync modal state whenever saved preferences load or modal re-opens
+  useEffect(() => {
+    if (currentPreferences) {
+      if (currentPreferences.favoriteTeamIds?.length) {
+        setSelectedTeamIds(currentPreferences.favoriteTeamIds);
+      }
+      if (currentPreferences.primaryTeamId) {
+        setPrimaryTeamId(currentPreferences.primaryTeamId);
+      }
+      if (currentPreferences.favoritePlayerIds) {
+        setSelectedPlayerIds(currentPreferences.favoritePlayerIds);
+      }
+    }
+    if (isOpen) {
+      setStep(1);
+    }
+  }, [currentPreferences, isOpen]);
 
   if (!isOpen) return null;
 
@@ -502,14 +520,24 @@ export default function OnboardingModal({
           )}
 
           {step === 1 ? (
-            <button
-              onClick={() => setStep(2)}
-              disabled={selectedTeamIds.length === 0}
-              className="py-2.5 px-5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-bold text-xs uppercase tracking-wider rounded-xl flex items-center gap-2 shadow-lg shadow-amber-500/20 transition-all cursor-pointer disabled:opacity-50"
-            >
-              Next: Select Star Players
-              <ArrowRight className="w-4 h-4" />
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={handleComplete}
+                disabled={saving || selectedTeamIds.length === 0}
+                className="py-2.5 px-4 bg-gray-800 hover:bg-gray-700 border border-amber-500/40 text-amber-300 font-bold text-xs uppercase tracking-wider rounded-xl flex items-center gap-1.5 transition-all cursor-pointer disabled:opacity-50"
+              >
+                <Check className="w-3.5 h-3.5" />
+                {saving ? "Saving..." : "Save Teams Now"}
+              </button>
+              <button
+                onClick={() => setStep(2)}
+                disabled={selectedTeamIds.length === 0}
+                className="py-2.5 px-5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-bold text-xs uppercase tracking-wider rounded-xl flex items-center gap-2 shadow-lg shadow-amber-500/20 transition-all cursor-pointer disabled:opacity-50"
+              >
+                Next: Star Players
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
           ) : (
             <button
               onClick={handleComplete}

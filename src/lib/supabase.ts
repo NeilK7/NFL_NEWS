@@ -8,7 +8,7 @@ export const supabase = (supabaseUrl && supabaseAnonKey)
   ? createClient(supabaseUrl, supabaseAnonKey)
   : null;
 
-const DEFAULT_PREFERENCES: UserPreferences = {
+export const DEFAULT_PREFERENCES: UserPreferences = {
   favoriteTeamIds: ['den', 'kc', 'sf'],
   primaryTeamId: 'den',
   favoritePlayerIds: ['p-nix', 'p-surtain', 'p-sutton', 'p-allen', 'p-bonitto', 'p-javonte'],
@@ -17,10 +17,27 @@ const DEFAULT_PREFERENCES: UserPreferences = {
   savedArticles: [],
   notificationsEnabled: true,
   theme: 'dark',
-  hasCompletedOnboarding: false,
+  hasCompletedOnboarding: true,
 };
 
 const STORAGE_KEY = 'gridiron_apex_user_prefs';
+
+function normalizePrefs(parsed: any): UserPreferences {
+  const favTeams = parsed?.favoriteTeamIds || parsed?.favoriteTeams || DEFAULT_PREFERENCES.favoriteTeamIds;
+  const favPlayers = parsed?.favoritePlayerIds || parsed?.favoritePlayers || DEFAULT_PREFERENCES.favoritePlayerIds;
+  const primary = parsed?.primaryTeamId || favTeams[0] || 'den';
+
+  return {
+    ...DEFAULT_PREFERENCES,
+    ...parsed,
+    favoriteTeamIds: favTeams,
+    primaryTeamId: primary,
+    favoritePlayerIds: favPlayers,
+    favoriteTeams: favTeams,
+    favoritePlayers: favPlayers,
+    hasCompletedOnboarding: true,
+  };
+}
 
 export function getLocalPreferences(): UserPreferences {
   if (typeof window === 'undefined') return DEFAULT_PREFERENCES;
@@ -28,13 +45,7 @@ export function getLocalPreferences(): UserPreferences {
     const item = localStorage.getItem(STORAGE_KEY);
     if (!item) return DEFAULT_PREFERENCES;
     const parsed = JSON.parse(item);
-    return {
-      ...DEFAULT_PREFERENCES,
-      ...parsed,
-      favoriteTeamIds: parsed.favoriteTeamIds || parsed.favoriteTeams || DEFAULT_PREFERENCES.favoriteTeamIds,
-      primaryTeamId: parsed.primaryTeamId || (parsed.favoriteTeamIds?.[0]) || 'kc',
-      favoritePlayerIds: parsed.favoritePlayerIds || parsed.favoritePlayers || DEFAULT_PREFERENCES.favoritePlayerIds,
-    };
+    return normalizePrefs(parsed);
   } catch (e) {
     console.warn('Failed to load local preferences:', e);
     return DEFAULT_PREFERENCES;
@@ -43,52 +54,56 @@ export function getLocalPreferences(): UserPreferences {
 
 export async function getUserPreferences(): Promise<UserPreferences | null> {
   if (typeof window === 'undefined') return null;
+
+  let localPrefs: UserPreferences | null = null;
   try {
     const item = localStorage.getItem(STORAGE_KEY);
-    if (!item) return null;
-    const parsed = JSON.parse(item);
-    return {
-      ...DEFAULT_PREFERENCES,
-      ...parsed,
-      favoriteTeamIds: parsed.favoriteTeamIds || parsed.favoriteTeams || DEFAULT_PREFERENCES.favoriteTeamIds,
-      primaryTeamId: parsed.primaryTeamId || (parsed.favoriteTeamIds?.[0]) || 'kc',
-      favoritePlayerIds: parsed.favoritePlayerIds || parsed.favoritePlayers || DEFAULT_PREFERENCES.favoritePlayerIds,
-    };
+    if (item) {
+      localPrefs = normalizePrefs(JSON.parse(item));
+    }
   } catch (e) {
-    console.warn('Failed to load user preferences:', e);
-    return null;
+    console.warn('Failed to parse localStorage preferences:', e);
   }
+
+  // Also check server/cloud vault in case preferences were saved across sessions or browsers
+  try {
+    const res = await fetch('/api/users', { cache: 'no-store' });
+    if (res.ok) {
+      const data = await res.json();
+      if (data?.preferences) {
+        const cloudPrefs = normalizePrefs(data.preferences);
+        if (!localPrefs) {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(cloudPrefs));
+          return cloudPrefs;
+        }
+      }
+    }
+  } catch {
+    // ignore network error and return localPrefs
+  }
+
+  return localPrefs;
 }
 
-export async function saveUserPreferences(prefs: UserPreferences): Promise<void> {
-  const normalized: UserPreferences = {
-    ...DEFAULT_PREFERENCES,
-    ...prefs,
-    favoriteTeams: prefs.favoriteTeamIds,
-    favoritePlayers: prefs.favoritePlayerIds,
-    hasCompletedOnboarding: true,
-  };
+export async function saveUserPreferences(prefs: UserPreferences): Promise<UserPreferences> {
+  const normalized = normalizePrefs(prefs);
 
   if (typeof window !== 'undefined') {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(normalized));
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(normalized));
+    } catch (e) {
+      console.warn('localStorage write warning:', e);
+    }
+
+    // Persist to server + Supabase cloud vault via /api/users
+    fetch('/api/users', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ preferences: normalized }),
+    }).catch((err) => console.warn('Background cloud preference sync warning:', err));
   }
 
-  if (supabase) {
-    try {
-      const { data: { user } } = await supabase.auth.getUser();
-      if (user) {
-        await supabase
-          .from('user_profiles')
-          .upsert({
-            id: user.id,
-            preferences: normalized,
-            updated_at: new Date().toISOString(),
-          });
-      }
-    } catch (e) {
-      console.warn('Supabase sync skipped:', e);
-    }
-  }
+  return normalized;
 }
 
 export const savePreferences = saveUserPreferences;
