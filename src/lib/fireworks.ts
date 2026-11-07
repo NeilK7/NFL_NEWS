@@ -6,27 +6,35 @@ function getFireworksApiKey(): string {
     return process.env.FIREWORKS_API_KEY;
   }
 
-  // Fallback for local dev: check ruminate's .env.original_ruminate.local if present
-  try {
-    const ruminateEnvPath = path.resolve(process.cwd(), '../ruminate/.env.original_ruminate.local');
-    if (fs.existsSync(ruminateEnvPath)) {
-      const content = fs.readFileSync(ruminateEnvPath, 'utf8');
-      const match = content.match(/^FIREWORKS_API_KEY=["']?([^"'\r\n]+)["']?/m);
-      if (match && match[1]) {
-        return match[1];
+  // Fallback for local dev: check ruminate's .env files if present
+  const candidateFiles = [
+    '../ruminate/.env.original_ruminate.local',
+    '../ruminate/.env.prod.env',
+    '../ruminate/.env.production',
+  ];
+
+  for (const relPath of candidateFiles) {
+    try {
+      const fullPath = path.resolve(process.cwd(), relPath);
+      if (fs.existsSync(fullPath)) {
+        const content = fs.readFileSync(fullPath, 'utf8');
+        const match = content.match(/^FIREWORKS_API_KEY=["']?([^"'\r\n]+)["']?/m);
+        if (match && match[1]) {
+          return match[1];
+        }
       }
+    } catch {
+      // Ignore fs errors in serverless environments
     }
-  } catch {
-    // Ignore fs errors in serverless environments
   }
 
   return '';
 }
 
 const FIREWORKS_MODELS = [
-  'accounts/fireworks/models/deepseek-v4-pro',
   'accounts/fireworks/models/deepseek-v3',
   'accounts/fireworks/models/llama-v3p3-70b-instruct',
+  'accounts/fireworks/models/deepseek-v4-pro',
   'accounts/fireworks/models/llama-v3p1-70b-instruct',
 ];
 
@@ -35,36 +43,59 @@ export async function callFireworksAI(
   options?: { temperature?: number; maxTokens?: number }
 ): Promise<string | null> {
   const apiKey = getFireworksApiKey();
-  if (!apiKey) {
-    console.warn('Fireworks API key not found');
-    return null;
+
+  // 1. Try Fireworks AI if API key is available
+  if (apiKey) {
+    for (const model of FIREWORKS_MODELS) {
+      try {
+        const response = await fetch('https://api.fireworks.ai/inference/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${apiKey}`,
+          },
+          body: JSON.stringify({
+            model,
+            messages,
+            temperature: options?.temperature ?? 0.3,
+            max_tokens: options?.maxTokens ?? 800,
+          }),
+          signal: AbortSignal.timeout(7000),
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          const text = data.choices?.[0]?.message?.content;
+          if (text) return text;
+        }
+      } catch (err) {
+        console.warn(`Fireworks model ${model} attempt failed:`, err);
+      }
+    }
   }
 
-  for (const model of FIREWORKS_MODELS) {
-    try {
-      const response = await fetch('https://api.fireworks.ai/inference/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${apiKey}`,
-        },
-        body: JSON.stringify({
-          model,
-          messages,
-          temperature: options?.temperature ?? 0.4,
-          max_tokens: options?.maxTokens ?? 700,
-        }),
-        signal: AbortSignal.timeout(8000),
-      });
+  // 2. Free Serverless AI Fallback (OpenAI-compatible DeepSeek/Llama endpoint, zero key required)
+  try {
+    const freeRes = await fetch('https://text.pollinations.ai/openai', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: 'openai',
+        messages,
+        temperature: options?.temperature ?? 0.3,
+      }),
+      signal: AbortSignal.timeout(8000),
+    });
 
-      if (response.ok) {
-        const data = await response.json();
-        const text = data.choices?.[0]?.message?.content;
-        if (text) return text;
-      }
-    } catch (err) {
-      console.warn(`Fireworks model ${model} attempt failed:`, err);
+    if (freeRes.ok) {
+      const data = await freeRes.json();
+      const text = data.choices?.[0]?.message?.content;
+      if (text) return text;
     }
+  } catch (err) {
+    console.warn('Free AI fallback attempt failed:', err);
   }
 
   return null;

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { 
   Trophy, 
@@ -36,13 +36,29 @@ export default function Navbar({
   isSupabaseSynced,
 }: NavbarProps) {
   const [teamDropdownOpen, setTeamDropdownOpen] = useState(false);
+  const [tickerItems, setTickerItems] = useState<{ tag: string; text: string }[]>([
+    { tag: "LIVE WIRE", text: "Syncing live NFL scores & breaking news from Yahoo Sports and NFL.com..." },
+  ]);
 
-  const tickerItems = [
-    { tag: "LIVE WIRE", text: "Chiefs @ 49ers Super Bowl LVIII Rematch Sunday 4:25 PM ET" },
-    { tag: "YAHOO SPORTS", text: "AI Digest: Christian McCaffrey ramp-up timeline confirmed by medical staff" },
-    { tag: "ESPN BREAKING", text: "Lamar Jackson posts 4th career game with 4+ Pass TD and 100+ Rush Yds" },
-    { tag: "INJURY REPORT", text: "Apex AI scanner updated 32 injury designations across AFC & NFC" },
-  ];
+  useEffect(() => {
+    const fetchTicker = async () => {
+      try {
+        const res = await fetch("/api/scoreboard", { cache: "no-store" });
+        if (res.ok) {
+          const data = await res.json();
+          if (Array.isArray(data.tickerItems) && data.tickerItems.length > 0) {
+            setTickerItems(data.tickerItems);
+          }
+        }
+      } catch {
+        // keep current ticker items
+      }
+    };
+
+    fetchTicker();
+    const interval = setInterval(fetchTicker, 30000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-gray-800 bg-[#090b10]/90 backdrop-blur-xl">
@@ -50,12 +66,12 @@ export default function Navbar({
       <div className="bg-[#0f1422] border-b border-amber-500/20 px-4 py-1.5 overflow-hidden text-xs flex items-center">
         <div className="flex items-center gap-1.5 font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/30 flex-shrink-0 mr-3">
           <Radio className="w-3 h-3 text-red-500 animate-pulse" />
-          <span>APEX WIRE</span>
+          <span>LIVE NFL WIRE</span>
         </div>
         <div className="flex-1 overflow-x-auto no-scrollbar whitespace-nowrap flex items-center gap-8 text-gray-300">
           {tickerItems.map((item, idx) => (
             <div key={idx} className="inline-flex items-center gap-2">
-              <span className="text-[10px] font-semibold text-gray-400 bg-gray-800 px-1.5 py-0.2 rounded">
+              <span className="text-[10px] font-semibold text-amber-300 bg-gray-800 px-1.5 py-0.2 rounded">
                 {item.tag}
               </span>
               <span>{item.text}</span>
@@ -86,11 +102,11 @@ export default function Navbar({
                   APEX
                 </span>
                 <span className="hidden sm:inline-block text-[9px] font-bold tracking-widest uppercase bg-amber-500/20 text-amber-300 px-1.5 py-0.5 rounded border border-amber-500/30">
-                  PRO
+                  LIVE AI
                 </span>
               </div>
               <p className="text-[10px] text-gray-400 hidden sm:block -mt-1 font-medium tracking-wide">
-                Elite NFL War Room & AI Intelligence
+                Yahoo Sports & NFL.com Live AI Intelligence
               </p>
             </div>
           </div>
@@ -210,7 +226,7 @@ export default function Navbar({
               </div>
             )}
 
-            {/* Apple Ecosystem Download Link (User requirement) */}
+            {/* Apple Ecosystem Download Link */}
             <button
               onClick={onOpenAppleModal}
               className="flex items-center gap-1.5 py-1.5 px-3 bg-gradient-to-r from-amber-500/10 to-yellow-500/10 hover:from-amber-500/20 hover:to-yellow-500/20 border border-amber-500/40 rounded-xl text-xs font-semibold text-amber-300 transition-all hover:scale-[1.02] shadow-sm"

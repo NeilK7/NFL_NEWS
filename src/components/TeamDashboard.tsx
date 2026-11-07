@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { 
   Calendar, 
@@ -15,9 +15,10 @@ import {
   X,
   RefreshCw,
   ExternalLink,
-  Zap
+  Zap,
+  Radio
 } from "lucide-react";
-import { NFLTeam, SeasonHighlight, Player } from "@/types";
+import { NFLTeam, SeasonHighlight, Player, GameSchedule, Injury } from "@/types";
 
 interface TeamDashboardProps {
   team: NFLTeam;
@@ -26,6 +27,26 @@ interface TeamDashboardProps {
 }
 
 interface TeamIntelData {
+  liveTeamData?: {
+    record?: { wins: number; losses: number; ties: number; summary?: string };
+    rankInDivision?: string;
+    schedule?: GameSchedule[];
+    nextGame?: {
+      week?: number;
+      opponent: string;
+      opponentAbbr: string;
+      opponentLogo: string;
+      isHome: boolean;
+      date: string;
+      time: string;
+      isoDate?: string | null;
+      network: string;
+      broadcastNetwork?: string;
+      spread: string;
+      stadium: string;
+      venue?: string;
+    };
+  };
   highlights: SeasonHighlight[];
   aiReport: {
     headline: string;
@@ -33,7 +54,9 @@ interface TeamIntelData {
     bulletPoints: string[];
     poweredBy: string;
   };
+  aiInjuries?: Injury[];
   yahooHeadlines: string[];
+  updatedAt?: string;
 }
 
 export default function TeamDashboard({
@@ -45,65 +68,103 @@ export default function TeamDashboard({
     hours: number;
     minutes: number;
     seconds: number;
-  }>({ days: 3, hours: 14, minutes: 22, seconds: 45 });
+  }>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   const [activeHighlight, setActiveHighlight] = useState<SeasonHighlight | null>(null);
-  const [liveHighlights, setLiveHighlights] = useState<SeasonHighlight[]>(team.highlights);
+  const [liveHighlights, setLiveHighlights] = useState<SeasonHighlight[]>([]);
+  const [liveSchedule, setLiveSchedule] = useState<GameSchedule[]>(team.schedule);
+  const [liveRecord, setLiveRecord] = useState(team.record);
+  const [liveRank, setLiveRank] = useState(team.rankInDivision);
+  const [liveNextGame, setLiveNextGame] = useState<any>(team.nextGame);
+  const [liveInjuries, setLiveInjuries] = useState<Injury[]>(team.injuries);
   const [aiIntel, setAiIntel] = useState<TeamIntelData["aiReport"] | null>(null);
-  const [loadingIntel, setLoadingIntel] = useState<boolean>(false);
+  const [lastSyncedAt, setLastSyncedAt] = useState<string>("Syncing...");
+  const [loadingIntel, setLoadingIntel] = useState<boolean>(true);
 
-  // Fetch real NFL highlights + Fireworks AI intelligence when team changes
-  const fetchTeamIntel = async (selectedTeam: NFLTeam) => {
-    setLoadingIntel(true);
-    setLiveHighlights(selectedTeam.highlights);
+  const fetchTeamIntel = useCallback(async (selectedTeam: NFLTeam, silent = false) => {
+    if (!silent) setLoadingIntel(true);
     try {
       const fullTeamName = `${selectedTeam.city} ${selectedTeam.name}`;
       const res = await fetch(
         `/api/team-intel?teamName=${encodeURIComponent(fullTeamName)}&teamAbbr=${encodeURIComponent(
           selectedTeam.abbreviation
-        )}`
+        )}`,
+        { cache: "no-store" }
       );
       if (res.ok) {
         const data: TeamIntelData = await res.json();
+        if (data.liveTeamData) {
+          if (data.liveTeamData.record) {
+            setLiveRecord(data.liveTeamData.record);
+          }
+          if (data.liveTeamData.rankInDivision) {
+            setLiveRank(data.liveTeamData.rankInDivision);
+          }
+          if (data.liveTeamData.schedule && data.liveTeamData.schedule.length > 0) {
+            setLiveSchedule(data.liveTeamData.schedule);
+          }
+          if (data.liveTeamData.nextGame) {
+            setLiveNextGame(data.liveTeamData.nextGame);
+          }
+        }
         if (data.highlights && data.highlights.length > 0) {
           setLiveHighlights(data.highlights);
         }
         if (data.aiReport) {
           setAiIntel(data.aiReport);
         }
+        if (data.aiInjuries && data.aiInjuries.length > 0) {
+          setLiveInjuries(data.aiInjuries);
+        }
+        if (data.updatedAt) {
+          setLastSyncedAt(data.updatedAt);
+        }
       }
     } catch (err) {
       console.warn("Failed to load live team intel:", err);
     } finally {
-      setLoadingIntel(false);
+      if (!silent) setLoadingIntel(false);
     }
-  };
-
-  useEffect(() => {
-    fetchTeamIntel(team);
-  }, [team]);
-
-  // Active Countdown ticker
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev.seconds > 0) {
-          return { ...prev, seconds: prev.seconds - 1 };
-        } else if (prev.minutes > 0) {
-          return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
-        } else if (prev.hours > 0) {
-          return { ...prev, hours: prev.hours - 1, minutes: 59, seconds: 59 };
-        } else if (prev.days > 0) {
-          return { ...prev, days: prev.days - 1, hours: 23, minutes: 59, seconds: 59 };
-        }
-        return prev;
-      });
-    }, 1000);
-
-    return () => clearInterval(timer);
   }, []);
 
-  const nextGame = team.nextGame;
+  // Initial load + automatic 45-second background polling for real-time updates
+  useEffect(() => {
+    setLiveRecord(team.record);
+    setLiveRank(team.rankInDivision);
+    setLiveSchedule(team.schedule);
+    setLiveNextGame(team.nextGame);
+    setLiveInjuries(team.injuries);
+    fetchTeamIntel(team, false);
+
+    const pollInterval = setInterval(() => {
+      fetchTeamIntel(team, true);
+    }, 45000);
+
+    return () => clearInterval(pollInterval);
+  }, [team, fetchTeamIntel]);
+
+  // Real Kickoff Countdown Clock based on real ISO timestamp
+  useEffect(() => {
+    const updateClock = () => {
+      if (liveNextGame?.isoDate) {
+        const target = new Date(liveNextGame.isoDate).getTime();
+        const diff = Math.max(0, Math.floor((target - Date.now()) / 1000));
+        const days = Math.floor(diff / 86400);
+        const hours = Math.floor((diff % 86400) / 3600);
+        const minutes = Math.floor((diff % 3600) / 60);
+        const seconds = diff % 60;
+        setTimeLeft({ days, hours, minutes, seconds });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      }
+    };
+
+    updateClock();
+    const timer = setInterval(updateClock, 1000);
+    return () => clearInterval(timer);
+  }, [liveNextGame]);
+
+  const nextGame = liveNextGame || team.nextGame;
 
   return (
     <div className="space-y-8 animate-in fade-in duration-300">
@@ -142,14 +203,19 @@ export default function TeamDashboard({
             </div>
 
             <div>
-              <div className="flex items-center gap-2 mb-1">
+              <div className="flex items-center gap-2 mb-1 flex-wrap">
                 <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-gray-900/80 text-amber-400 border border-amber-500/30">
                   {team.conference} {team.division}
                 </span>
-                <span className="text-xs text-gray-400 font-medium">
-                  {team.record.wins}-{team.record.losses}
-                  {team.record.ties ? `-${team.record.ties}` : ""}
+                <span className="text-xs text-white font-bold bg-gray-800/90 px-2 py-0.5 rounded">
+                  {liveRecord.wins}-{liveRecord.losses}
+                  {liveRecord.ties ? `-${liveRecord.ties}` : ""}
                 </span>
+                {liveRank && (
+                  <span className="text-xs text-emerald-400 font-semibold">
+                    • {liveRank}
+                  </span>
+                )}
               </div>
               <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
                 {team.city} {team.name}
@@ -166,7 +232,7 @@ export default function TeamDashboard({
             <button
               onClick={() =>
                 onOpenAISummary(
-                  `Generate an executive scouting report for the ${team.city} ${team.name} ahead of their matchup with ${nextGame.opponent}. Cover offensive schematics, key player health, and statistical edge.`,
+                  `Generate an executive scouting report for the ${team.city} ${team.name} (${liveRecord.wins}-${liveRecord.losses}) ahead of their matchup with ${nextGame.opponent}. Cover current Yahoo Sports and NFL.com news, key player health, and tactical edge.`,
                   `${team.city} ${team.name} Fireworks AI Scout Brief`
                 )
               }
@@ -179,28 +245,34 @@ export default function TeamDashboard({
         </div>
       </div>
 
-      {/* Live Fireworks AI Gathered Intelligence Banner */}
+      {/* Live Fireworks AI Gathered Intelligence Banner (Yahoo Sports + NFL.com) */}
       <div className="glass-panel-gold rounded-2xl p-5 border border-amber-500/30 space-y-3">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between flex-wrap gap-2">
           <div className="flex items-center gap-2">
             <Zap className="w-4 h-4 text-amber-400 fill-amber-400" />
             <span className="text-xs font-extrabold uppercase tracking-wider text-amber-300">
-              {aiIntel?.headline || `${team.city} ${team.name} Live Fireworks AI Intelligence`}
+              {aiIntel?.headline || `${team.city} ${team.name} Live Fireworks AI Intelligence (Yahoo Sports & NFL.com)`}
             </span>
           </div>
-          <button
-            onClick={() => fetchTeamIntel(team)}
-            disabled={loadingIntel}
-            className="text-[11px] font-semibold text-gray-300 hover:text-amber-300 flex items-center gap-1.5 bg-gray-900/70 px-2.5 py-1 rounded-lg border border-gray-800"
-          >
-            <RefreshCw className={`w-3 h-3 ${loadingIntel ? "animate-spin text-amber-400" : ""}`} />
-            <span>{loadingIntel ? "Fireworks AI Syncing..." : "Refresh AI & Videos"}</span>
-          </button>
+          <div className="flex items-center gap-3">
+            <span className="text-[11px] text-emerald-400 flex items-center gap-1 font-medium">
+              <Radio className="w-3 h-3 animate-pulse" />
+              Auto-Sync Active ({lastSyncedAt})
+            </span>
+            <button
+              onClick={() => fetchTeamIntel(team, false)}
+              disabled={loadingIntel}
+              className="text-[11px] font-semibold text-gray-300 hover:text-amber-300 flex items-center gap-1.5 bg-gray-900/70 px-2.5 py-1 rounded-lg border border-gray-800 cursor-pointer"
+            >
+              <RefreshCw className={`w-3 h-3 ${loadingIntel ? "animate-spin text-amber-400" : ""}`} />
+              <span>{loadingIntel ? "Syncing Live Feeds..." : "Sync Now"}</span>
+            </button>
+          </div>
         </div>
 
         {loadingIntel && !aiIntel ? (
           <p className="text-xs text-gray-400 animate-pulse">
-            Fireworks AI is gathering real-time Yahoo Sports & ESPN intelligence and importing official NFL highlight reels for the {team.city} {team.name}...
+            Fireworks AI is gathering real-time Yahoo Sports & NFL.com updates, live records, and official NFL highlight reels for the {team.city} {team.name}...
           </p>
         ) : aiIntel ? (
           <div className="space-y-2.5">
@@ -232,7 +304,7 @@ export default function TeamDashboard({
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
               <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">
-                Next Matchup: Week {nextGame.week || 7}
+                {nextGame.isoDate ? `Upcoming Matchup: Week ${nextGame.week || ""}` : `Latest Matchup: Week ${nextGame.week || ""}`}
               </span>
             </div>
             <div className="flex items-center gap-2 text-xs text-gray-400 font-medium">
@@ -258,7 +330,7 @@ export default function TeamDashboard({
                 {team.abbreviation}
               </div>
               <div className="text-xs text-gray-400">
-                {team.record.wins}-{team.record.losses}
+                {liveRecord.wins}-{liveRecord.losses}
               </div>
             </div>
 
@@ -270,7 +342,7 @@ export default function TeamDashboard({
               <div className="text-xs font-bold text-gray-300 mt-2">
                 {nextGame.spread}
               </div>
-              <div className="text-[11px] text-gray-500">
+              <div className="text-[11px] text-gray-400 mt-0.5">
                 {nextGame.date} • {nextGame.time}
               </div>
             </div>
@@ -290,7 +362,7 @@ export default function TeamDashboard({
                 {nextGame.opponent}
               </div>
               <div className="text-xs text-gray-400">
-                {nextGame.isHome ? "Away Rival" : "Host Stadium"}
+                {nextGame.isHome ? "Visiting Team" : "Home Team"}
               </div>
             </div>
           </div>
@@ -301,7 +373,7 @@ export default function TeamDashboard({
               <MapPin className="w-3.5 h-3.5 text-gray-500" />
               {nextGame.venue || nextGame.stadium}
             </span>
-            <span className="text-amber-400 font-medium">National Broadcast</span>
+            <span className="text-amber-400 font-medium">Live NFL Schedule Feed</span>
           </div>
         </div>
 
@@ -309,9 +381,13 @@ export default function TeamDashboard({
         <div className="glass-panel rounded-2xl p-6 border border-gray-800 flex flex-col justify-between text-center relative overflow-hidden">
           <div className="space-y-1">
             <div className="text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center justify-center gap-1.5">
-              <Clock className="w-3.5 h-3.5" /> Kickoff Countdown
+              <Clock className="w-3.5 h-3.5" /> Live Kickoff Countdown
             </div>
-            <p className="text-xs text-gray-400">Time remaining until opening drive</p>
+            <p className="text-xs text-gray-400">
+              {nextGame.isoDate
+                ? `Counting down to ${nextGame.date} (${nextGame.time})`
+                : `Matchup Status: ${nextGame.time}`}
+            </p>
           </div>
 
           {/* Countdown Blocks */}
@@ -343,7 +419,7 @@ export default function TeamDashboard({
           </div>
 
           <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-amber-300 font-medium">
-            AI Spread Predictor: {nextGame.spread} • Win Probability: 64.2%
+            {nextGame.spread} • Live Verified NFL Feed
           </div>
         </div>
       </div>
@@ -409,7 +485,7 @@ export default function TeamDashboard({
                     {highlight.description}
                   </p>
                   <div className="text-[11px] text-gray-500 pt-1 flex items-center justify-between">
-                    <span>{highlight.opponent || "2024-25 Season"}</span>
+                    <span>{highlight.opponent || "Official NFL"}</span>
                     <span className="text-amber-400/80">{highlight.views}</span>
                   </div>
                 </div>
@@ -427,82 +503,71 @@ export default function TeamDashboard({
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4 text-amber-400" />
               <h3 className="font-extrabold text-base text-white">
-                2024–2025 Schedule & Slate
+                Official Live Team Schedule & Results
               </h3>
             </div>
-            <span className="text-xs text-gray-400 font-medium">
-              Regular Season
+            <span className="text-xs text-emerald-400 font-medium">
+              {liveSchedule.length} Games Synced
             </span>
           </div>
 
           <div className="space-y-2.5 max-h-96 overflow-y-auto pr-1">
-            {team.schedule.length === 0 ? (
-              <div className="p-4 rounded-xl bg-gray-900/60 border border-gray-800 text-xs text-gray-300 space-y-2">
-                <div className="font-bold text-white">
-                  Upcoming: {team.city} {team.name} {nextGame.isHome ? "vs" : "@"} {nextGame.opponent}
-                </div>
-                <div className="text-gray-400">
-                  {nextGame.date} • {nextGame.time} on {nextGame.network} ({nextGame.spread})
-                </div>
-              </div>
-            ) : (
-              team.schedule.map((game, idx) => (
-                <div
-                  key={idx}
-                  className="p-3 rounded-xl bg-gray-900/60 border border-gray-800/80 hover:border-gray-700 flex items-center justify-between transition-colors"
-                >
-                  <div className="flex items-center gap-3">
-                    <span className="text-xs font-mono font-bold text-gray-400 w-12">
-                      WK {game.week}
-                    </span>
-                    {game.opponentLogo ? (
-                      <div className="w-8 h-8 relative flex-shrink-0">
-                        <Image
-                          src={game.opponentLogo}
-                          alt={game.opponent}
-                          fill
-                          className="object-contain"
-                          sizes="32px"
-                        />
-                      </div>
-                    ) : (
-                      <div className="w-8 h-8 rounded-full bg-gray-800 border border-gray-700 flex items-center justify-center text-[10px] font-bold text-gray-400 flex-shrink-0">
-                        BYE
-                      </div>
-                    )}
-                    <div>
-                      <div className="font-bold text-xs text-white flex items-center gap-1.5">
-                        <span className="text-gray-400 font-normal">
-                          {game.isHome ? "vs" : "@"}
-                        </span>
-                        <span>{game.opponent}</span>
-                      </div>
-                      <div className="text-[10px] text-gray-500">
-                        {game.date} • {game.time || game.timeOrScore}
-                      </div>
+            {liveSchedule.map((game, idx) => (
+              <div
+                key={idx}
+                className="p-3 rounded-xl bg-gray-900/60 border border-gray-800/80 hover:border-gray-700 flex items-center justify-between transition-colors"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="text-xs font-mono font-bold text-gray-400 w-12">
+                    WK {game.week}
+                  </span>
+                  {game.opponentLogo ? (
+                    <div className="w-8 h-8 relative flex-shrink-0">
+                      <Image
+                        src={game.opponentLogo}
+                        alt={game.opponent}
+                        fill
+                        className="object-contain"
+                        sizes="32px"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-8 h-8 rounded-full bg-gray-800 border border-gray-700 flex items-center justify-center text-[10px] font-bold text-gray-400 flex-shrink-0">
+                      BYE
+                    </div>
+                  )}
+                  <div>
+                    <div className="font-bold text-xs text-white flex items-center gap-1.5">
+                      <span className="text-gray-400 font-normal">
+                        {game.isHome ? "vs" : "@"}
+                      </span>
+                      <span>{game.opponent}</span>
+                    </div>
+                    <div className="text-[10px] text-gray-500">
+                      {game.date} • {game.time || game.timeOrScore}
                     </div>
                   </div>
-
-                  <div className="text-right">
-                    {game.result ? (
-                      <span
-                        className={`text-xs font-bold px-2 py-0.5 rounded ${
-                          game.result.startsWith("W")
-                            ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"
-                            : "bg-red-500/20 text-red-400 border border-red-500/30"
-                        }`}
-                      >
-                        {game.result} ({game.timeOrScore})
-                      </span>
-                    ) : (
-                      <span className="text-xs font-semibold text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
-                        {game.broadcastNetwork || game.tvNetwork || game.timeOrScore}
-                      </span>
-                    )}
-                  </div>
                 </div>
-              ))
-            )}
+
+                <div className="text-right">
+                  {game.result ? (
+                    <span
+                      className={`text-xs font-bold px-2 py-0.5 rounded ${
+                        game.result.startsWith("W")
+                          ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"
+                          : "bg-red-500/20 text-red-400 border border-red-500/30"
+                      }`}
+                    >
+                      {game.result} ({game.timeOrScore})
+                    </span>
+                  ) : (
+                    <span className="text-xs font-semibold text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
+                      {game.broadcastNetwork || game.tvNetwork || game.timeOrScore}
+                    </span>
+                  )}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -512,21 +577,21 @@ export default function TeamDashboard({
             <div className="flex items-center gap-2">
               <Activity className="w-4 h-4 text-red-400 animate-pulse" />
               <h3 className="font-extrabold text-base text-white">
-                Official Injury Wire & Status
+                Live Injury & Roster Wire
               </h3>
             </div>
-            <span className="text-xs text-gray-400 font-medium">
-              Apex Medical Intelligence
+            <span className="text-xs text-amber-400 font-medium">
+              Fireworks AI • Yahoo Sports & NFL.com
             </span>
           </div>
 
           <div className="space-y-3 max-h-96 overflow-y-auto pr-1">
-            {team.injuries.length === 0 ? (
+            {liveInjuries.length === 0 ? (
               <div className="p-8 text-center text-gray-400 text-sm">
-                Clean bill of health! No active injury designations reported.
+                No critical injury designations currently reported on the active wire.
               </div>
             ) : (
-              team.injuries.map((injury, idx) => {
+              liveInjuries.map((injury, idx) => {
                 const getStatusStyle = (status: string) => {
                   switch (status) {
                     case "Out":
@@ -564,7 +629,7 @@ export default function TeamDashboard({
                     </div>
 
                     <div className="text-xs text-gray-300 flex items-center gap-2">
-                      <span className="text-amber-400 font-medium">Injury:</span>
+                      <span className="text-amber-400 font-medium">Report:</span>
                       <span>{injury.injuryType || injury.injury}</span>
                     </div>
 
@@ -615,20 +680,6 @@ export default function TeamDashboard({
                   {player.statsHighlight || (player.college ? `${player.college} • ${player.experience}` : player.status)}
                 </div>
               </div>
-
-              {/* Stats showcase */}
-              {player.stats && (
-                <div className="pt-2 border-t border-gray-800 grid grid-cols-3 gap-1 text-center">
-                  {Object.entries(player.stats).map(([k, v]) => (
-                    <div key={k} className="p-1 rounded bg-gray-950">
-                      <div className="text-[10px] text-gray-500 uppercase">{k}</div>
-                      <div className="text-xs font-bold text-amber-300 font-mono">
-                        {String(v)}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
             </div>
           ))}
         </div>

@@ -3,38 +3,10 @@ import { NewsArticle } from '@/types';
 
 export const dynamic = 'force-dynamic';
 
-const FALLBACK_ARTICLES: NewsArticle[] = [
-  {
-    id: 'news-1',
-    title: 'Davante Adams Reunited With Aaron Rodgers in Blockbuster Jets Trade',
-    summary:
-      'The New York Jets acquired three-time All-Pro receiver Davante Adams from the Las Vegas Raiders for a conditional third-round pick, reuniting him with former Packers MVP quarterback Aaron Rodgers.',
-    source: 'Yahoo Sports',
-    author: 'Jori Epstein',
-    publishedAt: 'Recent',
-    imageUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&auto=format&fit=crop&q=60',
-    url: 'https://sports.yahoo.com/nfl',
-    tags: ['Jets', 'Trade', 'Aaron Rodgers', 'Davante Adams'],
-    teamId: 'nyj',
-  },
-  {
-    id: 'news-2',
-    title: 'Super Bowl LVIII Rematch: 49ers and Chiefs Clash in Heavyweight Showdown',
-    summary:
-      'Kansas City and San Francisco square off in a high-stakes rematch as Patrick Mahomes and Brock Purdy headline the afternoon slate.',
-    source: 'ESPN',
-    author: 'Nick Wagoner',
-    publishedAt: 'Recent',
-    imageUrl: 'https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=800&auto=format&fit=crop&q=60',
-    url: 'https://www.espn.com/nfl',
-    tags: ['Chiefs', '49ers', 'Matchup'],
-    teamId: 'kc',
-  },
-];
-
 async function fetchYahooSportsRSS(): Promise<NewsArticle[]> {
   try {
     const res = await fetch('https://sports.yahoo.com/nfl/rss.xml', {
+      cache: 'no-store',
       signal: AbortSignal.timeout(4000),
     });
     if (!res.ok) return [];
@@ -44,7 +16,9 @@ async function fetchYahooSportsRSS(): Promise<NewsArticle[]> {
 
     for (let i = 0; i < Math.min(items.length, 10); i++) {
       const item = items[i];
-      const titleMatch = item.match(/<title><!\[CDATA\[([\s\S]*?)\]\]><\/title>|<title>([\s\S]*?)<\/title>/);
+      const titleMatch = item.match(
+        /<title><!\[CDATA\[([\s\S]*?)\]\]><\/title>|<title>([\s\S]*?)<\/title>/
+      );
       const linkMatch = item.match(/<link>([\s\S]*?)<\/link>/);
       const pubMatch = item.match(/<pubDate>([\s\S]*?)<\/pubDate>/);
       const mediaMatch = item.match(/<media:content[^>]*url="([^"]+)"/);
@@ -90,9 +64,70 @@ async function fetchYahooSportsRSS(): Promise<NewsArticle[]> {
   }
 }
 
+async function fetchNFLDotComRSS(): Promise<NewsArticle[]> {
+  try {
+    const res = await fetch('https://www.nfl.com/rss/rsslanding?searchString=home', {
+      cache: 'no-store',
+      signal: AbortSignal.timeout(4000),
+    });
+    if (!res.ok) return [];
+    const xml = await res.text();
+    const items = xml.match(/<item>[\s\S]*?<\/item>/g) || [];
+    const nflArticles: NewsArticle[] = [];
+
+    for (let i = 0; i < Math.min(items.length, 10); i++) {
+      const item = items[i];
+      const titleMatch = item.match(
+        /<title><!\[CDATA\[([\s\S]*?)\]\]><\/title>|<title>([\s\S]*?)<\/title>/
+      );
+      const linkMatch = item.match(/<link>([\s\S]*?)<\/link>/);
+      const pubMatch = item.match(/<pubDate>([\s\S]*?)<\/pubDate>/);
+      const descMatch = item.match(
+        /<description><!\[CDATA\[([\s\S]*?)\]\]><\/description>|<description>([\s\S]*?)<\/description>/
+      );
+
+      const title = (titleMatch?.[1] || titleMatch?.[2] || '')
+        .replace(/&amp;/g, '&')
+        .replace(/&#39;/g, "'")
+        .replace(/&quot;/g, '"')
+        .trim();
+      const rawUrl = (linkMatch?.[1] || 'https://www.nfl.com/news').trim();
+      const url = rawUrl.startsWith('http') ? rawUrl : `https://www.nfl.com${rawUrl}`;
+      const rawDesc = (descMatch?.[1] || descMatch?.[2] || '')
+        .replace(/<[^>]+>/g, '')
+        .replace(/&amp;/g, '&')
+        .replace(/&#39;/g, "'")
+        .replace(/&quot;/g, '"')
+        .trim();
+
+      if (title) {
+        nflArticles.push({
+          id: `nfldotcom-live-${i}`,
+          title,
+          summary: rawDesc || `Official NFL.com wire update ingested by Fireworks AI: ${title}`,
+          source: 'NFL.com',
+          author: 'NFL.com Wire',
+          publishedAt: pubMatch?.[1]
+            ? new Date(pubMatch[1]).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+            : 'Official Wire',
+          imageUrl:
+            'https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&auto=format&fit=crop&q=60',
+          url,
+          tags: ['NFL.com', 'Official Wire'],
+          teamTag: 'NFL.com',
+        });
+      }
+    }
+    return nflArticles;
+  } catch {
+    return [];
+  }
+}
+
 async function fetchESPNNews(): Promise<NewsArticle[]> {
   try {
     const res = await fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/news', {
+      cache: 'no-store',
       signal: AbortSignal.timeout(4000),
     });
     if (!res.ok) return [];
@@ -125,20 +160,22 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const team = searchParams.get('team');
 
-    const [yahooArticles, espnArticles] = await Promise.all([
+    const [yahooArticles, nflArticles, espnArticles] = await Promise.all([
       fetchYahooSportsRSS(),
+      fetchNFLDotComRSS(),
       fetchESPNNews(),
     ]);
 
-    // Interleave Yahoo Sports and ESPN live articles
+    // Interleave Yahoo Sports, NFL.com, and ESPN live articles
     const combined: NewsArticle[] = [];
-    const maxLen = Math.max(yahooArticles.length, espnArticles.length);
+    const maxLen = Math.max(yahooArticles.length, nflArticles.length, espnArticles.length);
     for (let i = 0; i < maxLen; i++) {
       if (yahooArticles[i]) combined.push(yahooArticles[i]);
+      if (nflArticles[i]) combined.push(nflArticles[i]);
       if (espnArticles[i]) combined.push(espnArticles[i]);
     }
 
-    let articles = combined.length > 0 ? combined : FALLBACK_ARTICLES;
+    let articles = combined;
 
     if (team) {
       articles = articles.filter(
@@ -149,8 +186,11 @@ export async function GET(request: Request) {
       );
     }
 
-    return NextResponse.json({ articles });
+    return NextResponse.json({
+      articles,
+      updatedAt: new Date().toLocaleTimeString(),
+    });
   } catch {
-    return NextResponse.json({ articles: FALLBACK_ARTICLES }, { status: 200 });
+    return NextResponse.json({ articles: [] }, { status: 200 });
   }
 }

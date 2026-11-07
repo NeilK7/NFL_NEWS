@@ -102,7 +102,7 @@ export interface NewsArticle {
   id: string;
   title: string;
   summary: string;
-  source: 'Yahoo Sports' | 'ESPN' | 'NFL Insider' | 'Gridiron AI';
+  source: 'Yahoo Sports' | 'NFL.com' | 'ESPN' | 'NFL Insider' | 'Gridiron AI';
   author: string;
   publishedAt: string;
   imageUrl: string;

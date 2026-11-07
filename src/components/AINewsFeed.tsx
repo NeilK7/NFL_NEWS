@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { 
   Sparkles, 
   ExternalLink, 
@@ -8,7 +8,8 @@ import {
   Clock, 
   Zap, 
   Search,
-  X
+  X,
+  Radio
 } from "lucide-react";
 import { NewsArticle, AISummaryResponse } from "@/types";
 
@@ -19,6 +20,7 @@ interface AINewsFeedProps {
 export default function AINewsFeed({}: AINewsFeedProps) {
   const [articles, setArticles] = useState<NewsArticle[]>([]);
   const [loading, setLoading] = useState(true);
+  const [lastUpdated, setLastUpdated] = useState<string>("Syncing...");
   const [selectedSource, setSelectedSource] = useState<string>("ALL");
   const [searchQuery, setSearchQuery] = useState("");
   const [activeBrief, setActiveBrief] = useState<{
@@ -27,24 +29,32 @@ export default function AINewsFeed({}: AINewsFeedProps) {
     loading: boolean;
   } | null>(null);
 
-  const fetchNews = async () => {
-    setLoading(true);
+  const fetchNews = useCallback(async (silent = false) => {
+    if (!silent) setLoading(true);
     try {
-      const res = await fetch("/api/news");
+      const res = await fetch("/api/news", { cache: "no-store" });
       const data = await res.json();
       if (data.articles) {
         setArticles(data.articles);
       }
+      if (data.updatedAt) {
+        setLastUpdated(data.updatedAt);
+      }
     } catch (err) {
       console.error("Failed to load news:", err);
     } finally {
-      setLoading(false);
+      if (!silent) setLoading(false);
     }
-  };
-
-  useEffect(() => {
-    fetchNews();
   }, []);
+
+  // Initial fetch + automatic 30-second live background polling
+  useEffect(() => {
+    fetchNews(false);
+    const interval = setInterval(() => {
+      fetchNews(true);
+    }, 30000);
+    return () => clearInterval(interval);
+  }, [fetchNews]);
 
   const handleGenerateBrief = async (article: NewsArticle) => {
     setActiveBrief({ article, brief: null, loading: true });
@@ -55,7 +65,7 @@ export default function AINewsFeed({}: AINewsFeedProps) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           topic: article.title,
-          context: `${article.summary} Source: ${article.source}. Category: ${article.category}.`,
+          context: `${article.summary} Source: ${article.source}.`,
         }),
       });
       const data = await res.json();
@@ -66,9 +76,9 @@ export default function AINewsFeed({}: AINewsFeedProps) {
         article,
         brief: {
           summary: article.summary,
-          keyTakeaways: ["High-impact league transaction", "Watch practice reports"],
-          fantasyImpact: "Neutral to slight positive target share",
-          urgency: "Medium",
+          keyTakeaways: ["Live NFL wire transaction", "Monitor official practice & injury reports"],
+          fantasyImpact: "Neutral to positive opportunity share",
+          urgency: "HIGH",
         },
         loading: false,
       });
@@ -77,7 +87,9 @@ export default function AINewsFeed({}: AINewsFeedProps) {
 
   const filteredArticles = articles.filter((art) => {
     const matchesSource =
-      selectedSource === "ALL" ? true : art.source.toLowerCase().includes(selectedSource.toLowerCase());
+      selectedSource === "ALL"
+        ? true
+        : art.source.toLowerCase().includes(selectedSource.toLowerCase());
     const matchesSearch =
       art.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       art.summary.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -93,25 +105,28 @@ export default function AINewsFeed({}: AINewsFeedProps) {
           <div className="flex items-center gap-2 mb-1">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
             <span className="text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center gap-1">
-              <Sparkles className="w-3.5 h-3.5" /> AI Ingestion Engine Active
+              <Sparkles className="w-3.5 h-3.5" /> Fireworks AI Live Ingestion Engine Active
             </span>
           </div>
           <h2 className="text-2xl font-black text-white tracking-tight">
-            Live AI NFL Intelligence Wire
+            Live Yahoo Sports, NFL.com & ESPN Intelligence Wire
           </h2>
           <p className="text-xs text-gray-400 mt-0.5">
-            Real-time multi-source crawler synthesizing Yahoo Sports, ESPN, and Pro Football Insiders.
+            Auto-updating background crawler pulling real-time news every 30 seconds ({lastUpdated}).
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
+          <span className="text-xs text-emerald-400 font-medium hidden sm:flex items-center gap-1.5">
+            <Radio className="w-3.5 h-3.5 animate-pulse" /> Live 30s Sync
+          </span>
           <button
-            onClick={fetchNews}
+            onClick={() => fetchNews(false)}
             disabled={loading}
             className="py-2 px-3.5 rounded-xl bg-gray-900 border border-gray-700 hover:border-amber-500 text-xs font-semibold text-gray-200 flex items-center gap-2 transition-all cursor-pointer"
           >
             <RefreshCw className={`w-3.5 h-3.5 ${loading ? "animate-spin text-amber-400" : ""}`} />
-            <span>Scan Feeds</span>
+            <span>Scan Feeds Now</span>
           </button>
         </div>
       </div>
@@ -121,10 +136,10 @@ export default function AINewsFeed({}: AINewsFeedProps) {
         {/* Source Pills */}
         <div className="flex items-center gap-1.5 overflow-x-auto w-full sm:w-auto p-1 bg-gray-900/80 rounded-xl border border-gray-800">
           {[
-            { id: "ALL", label: "All Intelligence" },
+            { id: "ALL", label: "All Sources" },
             { id: "yahoo", label: "Yahoo Sports" },
+            { id: "nfl.com", label: "NFL.com" },
             { id: "espn", label: "ESPN" },
-            { id: "insider", label: "NFL Insider" },
           ].map((src) => (
             <button
               key={src.id}
@@ -147,7 +162,7 @@ export default function AINewsFeed({}: AINewsFeedProps) {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search news, players, teams..."
+            placeholder="Search live news, players, teams..."
             className="w-full bg-gray-900/90 border border-gray-700/80 rounded-xl pl-9 pr-3 py-2 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-amber-400"
           />
         </div>
@@ -172,6 +187,7 @@ export default function AINewsFeed({}: AINewsFeedProps) {
           {filteredArticles.map((article) => {
             const isYahoo = article.source.toLowerCase().includes("yahoo");
             const isEspn = article.source.toLowerCase().includes("espn");
+            const isNfl = article.source.toLowerCase().includes("nfl.com");
 
             return (
               <div
@@ -186,6 +202,8 @@ export default function AINewsFeed({}: AINewsFeedProps) {
                         className={`px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider ${
                           isYahoo
                             ? "bg-purple-900/40 text-purple-300 border border-purple-500/30"
+                            : isNfl
+                            ? "bg-blue-900/40 text-blue-300 border border-blue-500/30"
                             : isEspn
                             ? "bg-red-900/40 text-red-300 border border-red-500/30"
                             : "bg-amber-900/40 text-amber-300 border border-amber-500/30"
@@ -222,7 +240,7 @@ export default function AINewsFeed({}: AINewsFeedProps) {
                     className="py-1.5 px-3 bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-colors cursor-pointer"
                   >
                     <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                    AI Intelligence Brief
+                    Fireworks AI Brief
                   </button>
 
                   <a
@@ -255,7 +273,7 @@ export default function AINewsFeed({}: AINewsFeedProps) {
             <div className="flex items-start justify-between pb-4 border-b border-gray-800">
               <div className="space-y-1 pr-6">
                 <span className="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30 inline-flex items-center gap-1">
-                  <Sparkles className="w-3 h-3 fill-amber-400" /> Apex AI Synthesis
+                  <Sparkles className="w-3 h-3 fill-amber-400" /> Fireworks AI Synthesis
                 </span>
                 <h3 className="text-lg font-bold text-white line-clamp-2">
                   {activeBrief.article.title}
@@ -275,7 +293,7 @@ export default function AINewsFeed({}: AINewsFeedProps) {
                 <div className="p-12 text-center space-y-3">
                   <Sparkles className="w-8 h-8 text-amber-400 animate-spin mx-auto" />
                   <p className="text-xs font-semibold text-gray-300">
-                    Apex AI Neural Scanner synthesizing cross-source intelligence...
+                    Fireworks AI Neural Scanner synthesizing live Yahoo Sports & NFL.com intelligence...
                   </p>
                 </div>
               ) : activeBrief.brief ? (
