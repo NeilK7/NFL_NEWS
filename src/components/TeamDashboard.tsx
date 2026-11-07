@@ -55,6 +55,7 @@ interface TeamIntelData {
     poweredBy: string;
   };
   aiInjuries?: Injury[];
+  liveStarPlayers?: Player[];
   yahooHeadlines: string[];
   updatedAt?: string;
 }
@@ -72,11 +73,29 @@ export default function TeamDashboard({
 
   const [activeHighlight, setActiveHighlight] = useState<SeasonHighlight | null>(null);
   const [liveHighlights, setLiveHighlights] = useState<SeasonHighlight[]>([]);
-  const [liveSchedule, setLiveSchedule] = useState<GameSchedule[]>(team.schedule);
-  const [liveRecord, setLiveRecord] = useState(team.record);
-  const [liveRank, setLiveRank] = useState(team.rankInDivision);
-  const [liveNextGame, setLiveNextGame] = useState<any>(team.nextGame);
-  const [liveInjuries, setLiveInjuries] = useState<Injury[]>(team.injuries);
+  const [liveSchedule, setLiveSchedule] = useState<GameSchedule[]>([]);
+  const [liveRecord, setLiveRecord] = useState<{ wins: number; losses: number; ties: number }>({
+    wins: 0,
+    losses: 0,
+    ties: 0,
+  });
+  const [liveRank, setLiveRank] = useState<string>("Syncing Official Standings...");
+  const [liveNextGame, setLiveNextGame] = useState<any>({
+    opponent: "Syncing Official NFL Schedule...",
+    opponentAbbr: "NFL",
+    opponentLogo: team.logoUrl,
+    isHome: true,
+    date: "Loading Live Slate...",
+    time: "",
+    isoDate: null,
+    network: "NFL",
+    broadcastNetwork: "NFL",
+    spread: "Syncing Live Matchup...",
+    stadium: team.stadium,
+    venue: team.stadium,
+  });
+  const [liveInjuries, setLiveInjuries] = useState<Injury[]>([]);
+  const [liveStarPlayers, setLiveStarPlayers] = useState<Player[]>([]);
   const [aiIntel, setAiIntel] = useState<TeamIntelData["aiReport"] | null>(null);
   const [lastSyncedAt, setLastSyncedAt] = useState<string>("Syncing...");
   const [loadingIntel, setLoadingIntel] = useState<boolean>(true);
@@ -100,21 +119,26 @@ export default function TeamDashboard({
           if (data.liveTeamData.rankInDivision) {
             setLiveRank(data.liveTeamData.rankInDivision);
           }
-          if (data.liveTeamData.schedule && data.liveTeamData.schedule.length > 0) {
+          if (Array.isArray(data.liveTeamData.schedule)) {
             setLiveSchedule(data.liveTeamData.schedule);
           }
           if (data.liveTeamData.nextGame) {
             setLiveNextGame(data.liveTeamData.nextGame);
           }
         }
-        if (data.highlights && data.highlights.length > 0) {
+        if (Array.isArray(data.highlights)) {
           setLiveHighlights(data.highlights);
         }
         if (data.aiReport) {
           setAiIntel(data.aiReport);
         }
-        if (data.aiInjuries && data.aiInjuries.length > 0) {
+        if (Array.isArray(data.aiInjuries)) {
           setLiveInjuries(data.aiInjuries);
+        }
+        if (Array.isArray(data.liveStarPlayers) && data.liveStarPlayers.length > 0) {
+          setLiveStarPlayers(data.liveStarPlayers);
+        } else {
+          setLiveStarPlayers(selectedTeam.starPlayers);
         }
         if (data.updatedAt) {
           setLastSyncedAt(data.updatedAt);
@@ -129,11 +153,25 @@ export default function TeamDashboard({
 
   // Initial load + automatic 45-second background polling for real-time updates
   useEffect(() => {
-    setLiveRecord(team.record);
-    setLiveRank(team.rankInDivision);
-    setLiveSchedule(team.schedule);
-    setLiveNextGame(team.nextGame);
-    setLiveInjuries(team.injuries);
+    setLiveHighlights([]);
+    setLiveSchedule([]);
+    setLiveInjuries([]);
+    setLiveStarPlayers([]);
+    setAiIntel(null);
+    setLiveNextGame({
+      opponent: "Syncing Official NFL Schedule...",
+      opponentAbbr: "NFL",
+      opponentLogo: team.logoUrl,
+      isHome: true,
+      date: "Loading Live Slate...",
+      time: "",
+      isoDate: null,
+      network: "NFL",
+      broadcastNetwork: "NFL",
+      spread: "Syncing Live Matchup...",
+      stadium: team.stadium,
+      venue: team.stadium,
+    });
     fetchTeamIntel(team, false);
 
     const pollInterval = setInterval(() => {
@@ -658,15 +696,28 @@ export default function TeamDashboard({
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-          {team.starPlayers.map((player) => (
+          {(liveStarPlayers.length > 0 ? liveStarPlayers : team.starPlayers).map((player) => (
             <div
               key={player.id}
               className="p-4 rounded-xl bg-gray-900/60 border border-gray-800 hover:border-gray-700 transition-colors space-y-3"
             >
               <div className="flex items-center justify-between">
-                <span className="w-8 h-8 rounded-full bg-amber-500/10 text-amber-400 font-mono font-bold flex items-center justify-center text-xs border border-amber-500/20">
-                  #{player.number}
-                </span>
+                <div className="flex items-center gap-2">
+                  {player.avatarUrl && (
+                    <div className="w-9 h-9 relative rounded-full overflow-hidden bg-gray-800 border border-gray-700">
+                      <Image
+                        src={player.avatarUrl}
+                        alt={player.name}
+                        fill
+                        className="object-cover"
+                        sizes="36px"
+                      />
+                    </div>
+                  )}
+                  <span className="w-8 h-8 rounded-full bg-amber-500/10 text-amber-400 font-mono font-bold flex items-center justify-center text-xs border border-amber-500/20">
+                    #{player.number}
+                  </span>
+                </div>
                 <span className="text-xs font-bold uppercase text-gray-400 bg-gray-800 px-2 py-0.5 rounded">
                   {player.position}
                 </span>
@@ -677,7 +728,7 @@ export default function TeamDashboard({
                   {player.name}
                 </div>
                 <div className="text-xs text-amber-300/90 font-medium mt-0.5">
-                  {player.statsHighlight || (player.college ? `${player.college} • ${player.experience}` : player.status)}
+                  {player.college ? `${player.college} • ${player.experience || "Active"}` : player.status}
                 </div>
               </div>
             </div>

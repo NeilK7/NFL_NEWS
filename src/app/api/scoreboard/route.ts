@@ -4,8 +4,12 @@ export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
-    const [scoreRes, yahooRes, nflRes] = await Promise.all([
+    const [scoreRes, standingsRes, yahooRes, nflRes] = await Promise.all([
       fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard', {
+        cache: 'no-store',
+        signal: AbortSignal.timeout(5000),
+      }).catch(() => null),
+      fetch('https://site.api.espn.com/apis/v2/sports/football/nfl/standings', {
         cache: 'no-store',
         signal: AbortSignal.timeout(5000),
       }).catch(() => null),
@@ -24,6 +28,29 @@ export async function GET() {
     const tickerItems: { tag: string; text: string }[] = [];
     let weekLabel = 'Live NFL Slate';
 
+    // 1. Parse all 32 team records from official NFL standings
+    if (standingsRes && standingsRes.ok) {
+      try {
+        const stData = await standingsRes.json();
+        const children = stData?.children || [];
+        for (const conf of children) {
+          const entries = conf?.standings?.entries || [];
+          for (const entry of entries) {
+            const abbr = (entry.team?.abbreviation || '').toLowerCase();
+            if (!abbr) continue;
+            const stats = entry.stats || [];
+            const wins = Number(stats.find((s: any) => s.name === 'wins')?.value ?? 0);
+            const losses = Number(stats.find((s: any) => s.name === 'losses')?.value ?? 0);
+            const ties = Number(stats.find((s: any) => s.name === 'ties')?.value ?? 0);
+            teamRecords[abbr] = { wins, losses, ties };
+          }
+        }
+      } catch {
+        // ignore standings parse error
+      }
+    }
+
+    // 2. Parse live scoreboard games
     if (scoreRes && scoreRes.ok) {
       const data = await scoreRes.json();
       if (data?.week?.number) {
@@ -40,7 +67,7 @@ export async function GET() {
         if (!home || !away) continue;
 
         const parseRec = (recStr?: string) => {
-          if (!recStr) return { wins: 0, losses: 0, ties: 0 };
+          if (!recStr) return null;
           const parts = recStr.split('-').map(Number);
           return { wins: parts[0] || 0, losses: parts[1] || 0, ties: parts[2] || 0 };
         };
@@ -50,19 +77,30 @@ export async function GET() {
         const homeRecSummary = home.records?.[0]?.summary || '';
         const awayRecSummary = away.records?.[0]?.summary || '';
 
-        if (homeAbbr && homeRecSummary) teamRecords[homeAbbr] = parseRec(homeRecSummary);
-        if (awayAbbr && awayRecSummary) teamRecords[awayAbbr] = parseRec(awayRecSummary);
+        if (homeAbbr && homeRecSummary && !teamRecords[homeAbbr]) {
+          const r = parseRec(homeRecSummary);
+          if (r) teamRecords[homeAbbr] = r;
+        }
+        if (awayAbbr && awayRecSummary && !teamRecords[awayAbbr]) {
+          const r = parseRec(awayRecSummary);
+          if (r) teamRecords[awayAbbr] = r;
+        }
 
         const state = comp.status?.type?.state;
         const isLive = state === 'in';
-        const statusDetail = comp.status?.type?.shortDetail || comp.status?.type?.detail || 'Scheduled';
+        const statusDetail =
+          comp.status?.type?.shortDetail || comp.status?.type?.detail || 'Scheduled';
         const network =
           comp.broadcasts?.[0]?.media?.shortName ||
           comp.geoBroadcasts?.[0]?.media?.shortName ||
           'NFL';
         const downDist =
           comp.situation?.downDistanceText ||
-          (state === 'post' ? 'Final' : homeRecSummary ? `${away.team?.abbreviation} (${awayRecSummary}) @ ${home.team?.abbreviation} (${homeRecSummary})` : 'NFL Matchup');
+          (state === 'post'
+            ? 'Final'
+            : homeRecSummary
+            ? `${away.team?.abbreviation} (${awayRecSummary}) @ ${home.team?.abbreviation} (${homeRecSummary})`
+            : 'NFL Matchup');
 
         const gameObj = {
           id: ev.id,
@@ -88,7 +126,12 @@ export async function GET() {
           awayScore: Number(away.score || 0),
           status: statusDetail,
           isLive,
-          possession: comp.situation?.possession === home.id ? homeAbbr : comp.situation?.possession === away.id ? awayAbbr : null,
+          possession:
+            comp.situation?.possession === home.id
+              ? homeAbbr
+              : comp.situation?.possession === away.id
+              ? awayAbbr
+              : null,
           downDistance: downDist,
           network,
           broadcastType: ev.shortName || 'NFL Matchup',
