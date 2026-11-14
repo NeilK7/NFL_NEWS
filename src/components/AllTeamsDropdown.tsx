@@ -19,6 +19,7 @@ interface AllTeamsDropdownProps {
   selectedTeam: NFLTeam;
   favoriteTeams?: NFLTeam[];
   onSelectTeam: (team: NFLTeam) => void;
+  onToggleFavoriteTeam?: (team: NFLTeam) => void;
   onOpenTeamStats: (team: NFLTeam) => void;
   onOpenTeamNews: (team: NFLTeam) => void;
 }
@@ -27,6 +28,7 @@ export default function AllTeamsDropdown({
   selectedTeam,
   favoriteTeams = [],
   onSelectTeam,
+  onToggleFavoriteTeam,
   onOpenTeamStats,
   onOpenTeamNews,
 }: AllTeamsDropdownProps) {
@@ -296,8 +298,25 @@ export default function AllTeamsDropdown({
                       </div>
                     </button>
 
-                    {/* Dedicated Direct News & Stats Actions */}
+                    {/* Dedicated Direct Favorite Toggle + News & Stats Actions */}
                     <div className="flex items-center gap-1 ml-2 flex-shrink-0">
+                      {onToggleFavoriteTeam && (
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onToggleFavoriteTeam(team);
+                          }}
+                          className={`p-1.5 rounded-lg border text-[10px] font-bold flex items-center justify-center transition-all cursor-pointer ${
+                            isFav
+                              ? "bg-amber-500/20 border-amber-500/50 text-amber-300 hover:bg-red-500/20 hover:border-red-500/50 hover:text-red-300"
+                              : "bg-gray-900 border-gray-700 text-gray-500 hover:text-amber-300 hover:border-amber-400"
+                          }`}
+                          title={isFav ? `Deselect / remove ${team.name} from favorites` : `Select / add ${team.name} to favorites`}
+                        >
+                          <Star className={`w-3 h-3 ${isFav ? "fill-amber-400" : ""}`} />
+                        </button>
+                      )}
+
                       <button
                         onClick={(e) => {
                           e.stopPropagation();

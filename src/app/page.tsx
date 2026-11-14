@@ -5,7 +5,8 @@ import Image from "next/image";
 import { 
   Trophy, 
   Smartphone, 
-  Sparkles
+  Sparkles,
+  X
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import TeamDashboard from "@/components/TeamDashboard";
@@ -64,6 +65,38 @@ export default function Home() {
     saveUserPreferences(nextPrefs).catch(() => {});
   };
 
+  const handleRemoveFavoriteTeam = (teamId: string) => {
+    const basePrefs = preferences || getLocalPreferences();
+    const updatedFavIds = basePrefs.favoriteTeamIds.filter((id) => id !== teamId);
+    const nextPrimaryId =
+      selectedTeam.id === teamId ? updatedFavIds[0] || "den" : selectedTeam.id;
+    const nextPrefs: UserPreferences = {
+      ...basePrefs,
+      favoriteTeamIds: updatedFavIds,
+      favoriteTeams: updatedFavIds,
+      primaryTeamId: nextPrimaryId,
+      hasCompletedOnboarding: true,
+    };
+    setPreferences(nextPrefs);
+    const favs = NFL_TEAMS.filter((t) => updatedFavIds.includes(t.id));
+    setFavoriteTeams(favs);
+    if (selectedTeam.id === teamId) {
+      const nextTeam = favs[0] || broncosTeam;
+      setSelectedTeam(nextTeam);
+    }
+    saveUserPreferences(nextPrefs).catch(() => {});
+  };
+
+  const handleToggleFavoriteTeam = (team: NFLTeam) => {
+    const basePrefs = preferences || getLocalPreferences();
+    const isFav = basePrefs.favoriteTeamIds.includes(team.id);
+    if (isFav) {
+      handleRemoveFavoriteTeam(team.id);
+    } else {
+      handleSelectTeamAndPersist(team);
+    }
+  };
+
   const handleOpenTeamStats = (team: NFLTeam) => {
     handleSelectTeamAndPersist(team);
     setStatsNewsModal({ isOpen: true, team, initialTab: "stats" });
@@ -98,8 +131,8 @@ export default function Home() {
 
           // Find favorite teams
           const favs = NFL_TEAMS.filter((t) => prefs.favoriteTeamIds.includes(t.id));
+          setFavoriteTeams(favs);
           if (favs.length > 0) {
-            setFavoriteTeams(favs);
             const primary = favs.find((t) => t.id === prefs.primaryTeamId) || favs[0];
             setSelectedTeam(primary);
           }
@@ -134,8 +167,8 @@ export default function Home() {
     setIsSupabaseSynced(true);
 
     const favs = NFL_TEAMS.filter((t) => newPrefs.favoriteTeamIds.includes(t.id));
+    setFavoriteTeams(favs);
     if (favs.length > 0) {
-      setFavoriteTeams(favs);
       const primary = favs.find((t) => t.id === newPrefs.primaryTeamId) || favs[0];
       setSelectedTeam(primary);
     }
@@ -208,6 +241,7 @@ export default function Home() {
         selectedTeam={selectedTeam}
         favoriteTeams={favoriteTeams}
         onSelectTeam={handleSelectTeamAndPersist}
+        onToggleFavoriteTeam={handleToggleFavoriteTeam}
         onOpenTeamStats={handleOpenTeamStats}
         onOpenTeamNews={handleOpenTeamNews}
         onOpenPreferences={() => setIsOnboardingOpen(true)}
@@ -217,39 +251,53 @@ export default function Home() {
 
       {/* Main Content Area */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-        {/* Quick Team Carousel Switcher (if user has multiple favorite teams) */}
-        {favoriteTeams.length > 1 && activeTab === "war-room" && (
+        {/* Quick Team Carousel Switcher (with one-click deselect / remove) */}
+        {activeTab === "war-room" && (
           <div className="mb-6 flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
             <span className="text-xs text-gray-500 font-bold uppercase tracking-wider flex-shrink-0 mr-1">
               My War Rooms:
             </span>
             {favoriteTeams.map((team) => (
-              <button
+              <div
                 key={team.id}
-                onClick={() => handleSelectTeamAndPersist(team)}
-                className={`flex items-center gap-2 py-1.5 px-3 rounded-xl border text-xs font-bold transition-all flex-shrink-0 ${
+                className={`flex items-center gap-1.5 py-1 pl-3 pr-1.5 rounded-xl border text-xs font-bold transition-all flex-shrink-0 ${
                   selectedTeam.id === team.id
-                    ? "bg-amber-500/20 border-amber-500 text-amber-300 shadow-md shadow-amber-500/10 scale-[1.02]"
+                    ? "bg-amber-500/20 border-amber-500 text-amber-300 shadow-md shadow-amber-500/10"
                     : "bg-gray-900/60 border-gray-800 text-gray-400 hover:text-white hover:bg-gray-800"
                 }`}
               >
-                <div className="w-4 h-4 relative">
-                  <Image
-                    src={team.logoUrl}
-                    alt={team.name}
-                    fill
-                    className="object-contain"
-                    sizes="16px"
-                  />
-                </div>
-                <span>{team.name}</span>
-              </button>
+                <button
+                  onClick={() => handleSelectTeamAndPersist(team)}
+                  className="flex items-center gap-2 cursor-pointer"
+                >
+                  <div className="w-4 h-4 relative">
+                    <Image
+                      src={team.logoUrl}
+                      alt={team.name}
+                      fill
+                      className="object-contain"
+                      sizes="16px"
+                    />
+                  </div>
+                  <span>{team.name}</span>
+                </button>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleRemoveFavoriteTeam(team.id);
+                  }}
+                  title={`Deselect / remove ${team.city} ${team.name}`}
+                  className="ml-0.5 p-0.5 rounded-md hover:bg-red-500/20 text-gray-400 hover:text-red-400 transition-colors cursor-pointer"
+                >
+                  <X className="w-3 h-3" />
+                </button>
+              </div>
             ))}
             <button
               onClick={() => setIsOnboardingOpen(true)}
-              className="py-1 px-2.5 rounded-xl border border-dashed border-gray-700 text-[11px] text-gray-400 hover:text-amber-300 hover:border-amber-500/50 transition-colors flex-shrink-0"
+              className="py-1.5 px-3 rounded-xl border border-dashed border-gray-700 text-[11px] text-gray-300 hover:text-amber-300 hover:border-amber-500/50 transition-colors flex-shrink-0 cursor-pointer"
             >
-              + Edit Franchises
+              + Select / Deselect Franchises
             </button>
           </div>
         )}

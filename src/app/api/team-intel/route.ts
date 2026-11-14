@@ -312,10 +312,31 @@ async function fetchLiveTeamScheduleAndRecord(teamAbbr: string) {
   }
 }
 
-async function fetchRealYouTubeHighlights(teamName: string): Promise<SeasonHighlight[]> {
+async function isEmbedPlayable(videoId: string): Promise<boolean> {
   try {
-    const query = `NFL ${teamName} Highlights`;
-    const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}&sp=EgIQAQ%253D%253D`;
+    const res = await fetch(`https://www.youtube.com/embed/${videoId}`, {
+      headers: {
+        Referer: 'http://localhost:3000/',
+        'User-Agent':
+          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
+      },
+      cache: 'no-store',
+      signal: AbortSignal.timeout(3000),
+    });
+    if (!res.ok) return false;
+    const html = await res.text();
+    return (
+      !html.includes('UNPLAYABLE') &&
+      !html.includes('Playback on other websites has been disabled')
+    );
+  } catch {
+    return false;
+  }
+}
+
+async function scrapeYouTubeQuery(query: string, teamName: string): Promise<YouTubeScrapedVideo[]> {
+  try {
+    const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
     const res = await fetch(url, {
       headers: {
         'User-Agent':
@@ -323,9 +344,8 @@ async function fetchRealYouTubeHighlights(teamName: string): Promise<SeasonHighl
         'Accept-Language': 'en-US,en;q=0.9',
       },
       cache: 'no-store',
-      signal: AbortSignal.timeout(5000),
+      signal: AbortSignal.timeout(4500),
     });
-
     if (!res.ok) return [];
     const html = await res.text();
     const match = html.match(/var ytInitialData = (\{[\s\S]*?\});<\/script>/);
@@ -336,25 +356,29 @@ async function fetchRealYouTubeHighlights(teamName: string): Promise<SeasonHighl
       data?.contents?.twoColumnSearchResultsRenderer?.primaryContents?.sectionListRenderer
         ?.contents?.[0]?.itemSectionRenderer?.contents || [];
 
-    const videos: YouTubeScrapedVideo[] = [];
-
+    const candidates: YouTubeScrapedVideo[] = [];
     for (const item of contents) {
       const vr = item.videoRenderer;
-      if (!vr || !vr.videoId) continue;
-      if (vr.videoId === 'dQw4w9WgXcQ') continue;
+      if (!vr || !vr.videoId || vr.videoId === 'dQw4w9WgXcQ') continue;
+
+      const ownerName = vr.ownerText?.runs?.[0]?.text || '';
+      // Skip official NFL channel uploads that block third-party iframe embeds
+      if (ownerName === 'NFL') continue;
 
       const title = vr.title?.runs?.map((r: { text: string }) => r.text).join('') || '';
       const duration = vr.lengthText?.simpleText || 'Highlight';
       const views =
-        vr.viewCountText?.simpleText || vr.shortViewCountText?.simpleText || 'NFL Official';
+        vr.viewCountText?.simpleText || vr.shortViewCountText?.simpleText || ownerName || 'NFL Highlight';
       const description =
         vr.detailedMetadataSnippets?.[0]?.snippetText?.runs
           ?.map((r: { text: string }) => r.text)
-          .join('') || `Official NFL highlight reel featuring the ${teamName}.`;
-      const publishedTime = vr.publishedTimeText?.simpleText || 'Official NFL';
+          .join('') || `Embedded highlight & breakdown featuring the ${teamName}.`;
+      const publishedTime = ownerName
+        ? `${ownerName} • ${vr.publishedTimeText?.simpleText || 'Live'}`
+        : vr.publishedTimeText?.simpleText || 'NFL';
 
       if (title) {
-        videos.push({
+        candidates.push({
           videoId: vr.videoId,
           title,
           duration,
@@ -363,10 +387,38 @@ async function fetchRealYouTubeHighlights(teamName: string): Promise<SeasonHighl
           publishedTime,
         });
       }
-      if (videos.length >= 6) break;
+      if (candidates.length >= 10) break;
+    }
+    return candidates;
+  } catch {
+    return [];
+  }
+}
+
+async function fetchRealYouTubeHighlights(teamName: string): Promise<SeasonHighlight[]> {
+  try {
+    const [cbsResults, espnResults, hlResults] = await Promise.all([
+      scrapeYouTubeQuery(`${teamName} CBS Sports highlights`, teamName),
+      scrapeYouTubeQuery(`${teamName} ESPN highlights`, teamName),
+      scrapeYouTubeQuery(`${teamName} full game highlights`, teamName),
+    ]);
+
+    const seen = new Set<string>();
+    const allCandidates: YouTubeScrapedVideo[] = [];
+    for (const v of [...cbsResults, ...espnResults, ...hlResults]) {
+      if (!seen.has(v.videoId)) {
+        seen.add(v.videoId);
+        allCandidates.push(v);
+      }
     }
 
-    return videos.map((v, idx) => ({
+    const toVerify = allCandidates.slice(0, 12);
+    const playabilityFlags = await Promise.all(toVerify.map((v) => isEmbedPlayable(v.videoId)));
+    const verified = toVerify.filter((_, idx) => playabilityFlags[idx]).slice(0, 6);
+
+    const finalVideos = verified.length > 0 ? verified : toVerify.slice(0, 6);
+
+    return finalVideos.map((v, idx) => ({
       id: `yt-${v.videoId}-${idx}`,
       title: v.title,
       week: idx + 1,
@@ -433,7 +485,7 @@ async function fetchESPNDirectVideos(teamName: string, teamAbbr: string): Promis
       }
     }
 
-    return highlights.length > 0 ? highlights : allClips.slice(0, 3);
+    return highlights;
   } catch {
     return [];
   }

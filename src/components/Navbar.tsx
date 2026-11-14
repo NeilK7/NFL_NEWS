@@ -19,6 +19,7 @@ interface NavbarProps {
   selectedTeam: NFLTeam;
   favoriteTeams: NFLTeam[];
   onSelectTeam: (team: NFLTeam) => void;
+  onToggleFavoriteTeam?: (team: NFLTeam) => void;
   onOpenTeamStats: (team: NFLTeam) => void;
   onOpenTeamNews: (team: NFLTeam) => void;
   onOpenPreferences: () => void;
@@ -32,6 +33,7 @@ export default function Navbar({
   selectedTeam,
   favoriteTeams,
   onSelectTeam,
+  onToggleFavoriteTeam,
   onOpenTeamStats,
   onOpenTeamNews,
   onOpenPreferences,
@@ -159,6 +161,7 @@ export default function Navbar({
               selectedTeam={selectedTeam}
               favoriteTeams={favoriteTeams}
               onSelectTeam={onSelectTeam}
+              onToggleFavoriteTeam={onToggleFavoriteTeam}
               onOpenTeamStats={onOpenTeamStats}
               onOpenTeamNews={onOpenTeamNews}
             />

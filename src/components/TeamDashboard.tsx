@@ -547,18 +547,18 @@ export default function TeamDashboard({
         </div>
       </div>
 
-      {/* 3. Season Video Highlights (Live Imported via Fireworks AI + YouTube/ESPN) */}
+      {/* 3. Season Video Highlights (In-Page Embedded Video Player) */}
       <div className="space-y-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Video className="w-5 h-5 text-amber-400" />
             <h3 className="text-xl font-black text-white">
-              Live Imported {team.name} Video Highlights
+              Live Embedded {team.name} Video Highlights
             </h3>
           </div>
           <span className="text-xs text-amber-400 font-semibold flex items-center gap-1">
             <Sparkles className="w-3.5 h-3.5" />
-            {loadingIntel ? "Importing Official NFL Highlights..." : "Verified NFL & ESPN Video Feeds"}
+            {loadingIntel ? "Importing Embedded Highlights..." : "Watch Directly Inside Gridiron Apex"}
           </span>
         </div>
 
@@ -573,47 +573,102 @@ export default function TeamDashboard({
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {displayedHighlights.map((highlight) => (
-              <div
-                key={highlight.id}
-                onClick={() => setActiveHighlight(highlight)}
-                className="group glass-panel rounded-2xl overflow-hidden border border-gray-800 hover:border-amber-500/50 transition-all cursor-pointer flex flex-col justify-between shadow-lg"
-              >
-                <div className="relative aspect-video w-full overflow-hidden bg-gray-900">
-                  <Image
-                    src={highlight.thumbnailUrl}
-                    alt={highlight.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                    <div className="w-12 h-12 rounded-full bg-amber-500/90 text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                      <Play className="w-5 h-5 fill-black ml-0.5" />
+            {displayedHighlights.map((highlight) => {
+              const isPlayingInline = activeHighlight?.id === highlight.id;
+              const isDirectVideo =
+                highlight.videoUrl.endsWith(".mp4") ||
+                highlight.videoUrl.includes("video-cdn.espn.com") ||
+                highlight.videoUrl.includes("akamaized.net");
+
+              const embedSrc = highlight.videoUrl.includes("watch?v=")
+                ? highlight.videoUrl.replace("watch?v=", "embed/") + "?autoplay=1&rel=0&modestbranding=1"
+                : highlight.videoUrl.startsWith("http")
+                ? highlight.videoUrl
+                : `https://www.youtube.com/embed/${highlight.videoUrl}?autoplay=1&rel=0&modestbranding=1`;
+
+              return (
+                <div
+                  key={highlight.id}
+                  onClick={() => {
+                    if (!isPlayingInline) setActiveHighlight(highlight);
+                  }}
+                  className={`group glass-panel rounded-2xl overflow-hidden border transition-all flex flex-col justify-between shadow-lg ${
+                    isPlayingInline
+                      ? "border-amber-500 ring-2 ring-amber-500/30"
+                      : "border-gray-800 hover:border-amber-500/50 cursor-pointer"
+                  }`}
+                >
+                  <div className="relative aspect-video w-full overflow-hidden bg-black">
+                    {isPlayingInline ? (
+                      isDirectVideo ? (
+                        <video
+                          src={highlight.videoUrl}
+                          controls
+                          autoPlay
+                          playsInline
+                          className="w-full h-full object-contain"
+                        />
+                      ) : (
+                        <iframe
+                          src={embedSrc}
+                          title={highlight.title}
+                          className="w-full h-full border-0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
+                      )
+                    ) : (
+                      <>
+                        <Image
+                          src={highlight.thumbnailUrl}
+                          alt={highlight.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          sizes="(max-width: 768px) 100vw, 33vw"
+                        />
+                        <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                          <div className="w-12 h-12 rounded-full bg-amber-500/90 text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                            <Play className="w-5 h-5 fill-black ml-0.5" />
+                          </div>
+                        </div>
+                        <div className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-gray-200">
+                          {highlight.duration}
+                        </div>
+                        <div className="absolute top-2 left-2 px-2 py-0.5 rounded bg-amber-500 text-black text-[10px] font-black uppercase">
+                          {isDirectVideo ? "ESPN HD" : "Play Here"}
+                        </div>
+                      </>
+                    )}
+                  </div>
+
+                  <div className="p-4 space-y-1.5">
+                    <div className="flex items-start justify-between gap-2">
+                      <h4 className="font-bold text-sm text-white group-hover:text-amber-400 transition-colors line-clamp-2">
+                        {highlight.title}
+                      </h4>
+                      {isPlayingInline && (
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setActiveHighlight(null);
+                          }}
+                          className="text-[10px] font-bold px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300 flex-shrink-0"
+                        >
+                          Close
+                        </button>
+                      )}
+                    </div>
+                    <p className="text-xs text-gray-400 line-clamp-2">
+                      {highlight.description}
+                    </p>
+                    <div className="text-[11px] text-gray-500 pt-1 flex items-center justify-between">
+                      <span>{highlight.opponent || "Embedded Highlight"}</span>
+                      <span className="text-amber-400/80">{highlight.views}</span>
                     </div>
                   </div>
-                  <div className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 text-[10px] font-mono text-gray-200">
-                    {highlight.duration}
-                  </div>
-                  <div className="absolute top-2 left-2 px-2 py-0.5 rounded bg-amber-500 text-black text-[10px] font-black uppercase">
-                    {highlight.videoUrl.endsWith(".mp4") ? "ESPN HD" : "NFL Highlight"}
-                  </div>
                 </div>
-
-                <div className="p-4 space-y-1.5">
-                  <h4 className="font-bold text-sm text-white group-hover:text-amber-400 transition-colors line-clamp-2">
-                    {highlight.title}
-                  </h4>
-                  <p className="text-xs text-gray-400 line-clamp-2">
-                    {highlight.description}
-                  </p>
-                  <div className="text-[11px] text-gray-500 pt-1 flex items-center justify-between">
-                    <span>{highlight.opponent || "Official NFL"}</span>
-                    <span className="text-amber-400/80">{highlight.views}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </div>
@@ -996,74 +1051,6 @@ export default function TeamDashboard({
           )}
         </div>
       </div>
-
-      {/* Video Modal Player (Supports Direct ESPN MP4 & Official YouTube NFL Highlights) */}
-      {activeHighlight && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md animate-in fade-in duration-200"
-          onClick={() => setActiveHighlight(null)}
-        >
-          <div 
-            className="relative w-full max-w-3xl bg-[#121622] border border-amber-500/30 rounded-2xl overflow-hidden shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="p-4 bg-gray-900 border-b border-gray-800 flex items-center justify-between gap-4">
-              <div>
-                <h4 className="font-bold text-sm text-white line-clamp-1">
-                  {activeHighlight.title}
-                </h4>
-                <p className="text-xs text-gray-400">
-                  {activeHighlight.opponent || "Official NFL Highlight"} • {activeHighlight.views}
-                </p>
-              </div>
-              <div className="flex items-center gap-2 flex-shrink-0">
-                <a
-                  href={activeHighlight.videoUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="py-1.5 px-3 rounded-lg bg-amber-500 hover:bg-amber-400 text-black font-bold text-xs flex items-center gap-1.5 transition-colors"
-                >
-                  <span>Watch on YouTube / Source</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-                <button
-                  onClick={() => setActiveHighlight(null)}
-                  className="p-1.5 rounded-full hover:bg-gray-800 text-gray-400 hover:text-white"
-                >
-                  <X className="w-5 h-5" />
-                </button>
-              </div>
-            </div>
-
-            <div className="relative aspect-video w-full bg-black flex items-center justify-center">
-              {activeHighlight.videoUrl.endsWith(".mp4") ||
-              activeHighlight.videoUrl.includes("video-cdn.espn.com") ? (
-                <video
-                  src={activeHighlight.videoUrl}
-                  controls
-                  autoPlay
-                  playsInline
-                  className="w-full h-full object-contain"
-                />
-              ) : (
-                <iframe
-                  src={
-                    activeHighlight.videoUrl.includes("watch?v=")
-                      ? activeHighlight.videoUrl.replace("watch?v=", "embed/") + "?autoplay=1&rel=0"
-                      : activeHighlight.videoUrl.startsWith("http")
-                      ? activeHighlight.videoUrl
-                      : `https://www.youtube.com/embed/${activeHighlight.videoUrl}?autoplay=1&rel=0`
-                  }
-                  title={activeHighlight.title}
-                  className="w-full h-full border-0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              )}
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

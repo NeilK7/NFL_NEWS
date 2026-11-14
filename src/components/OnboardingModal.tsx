@@ -54,7 +54,7 @@ export default function OnboardingModal({
   // Sync modal state whenever saved preferences load or modal re-opens
   useEffect(() => {
     if (currentPreferences) {
-      if (currentPreferences.favoriteTeamIds?.length) {
+      if (Array.isArray(currentPreferences.favoriteTeamIds)) {
         setSelectedTeamIds(currentPreferences.favoriteTeamIds);
       }
       if (currentPreferences.primaryTeamId) {
@@ -110,15 +110,29 @@ export default function OnboardingModal({
 
   const toggleTeam = (teamId: string) => {
     if (selectedTeamIds.includes(teamId)) {
-      if (selectedTeamIds.length === 1) return; // Must have at least one
       const updated = selectedTeamIds.filter((id) => id !== teamId);
       setSelectedTeamIds(updated);
       if (primaryTeamId === teamId) {
-        setPrimaryTeamId(updated[0]);
+        setPrimaryTeamId(updated[0] || "den");
       }
     } else {
-      setSelectedTeamIds([...selectedTeamIds, teamId]);
+      const updated = [...selectedTeamIds, teamId];
+      setSelectedTeamIds(updated);
+      if (updated.length === 1 || !primaryTeamId) {
+        setPrimaryTeamId(teamId);
+      }
     }
+  };
+
+  const selectAllTeams = () => {
+    const allIds = NFL_TEAMS.map((t) => t.id);
+    setSelectedTeamIds(allIds);
+    if (!primaryTeamId) setPrimaryTeamId("den");
+  };
+
+  const clearAllTeams = () => {
+    setSelectedTeamIds([]);
+    setPrimaryTeamId("");
   };
 
   const togglePlayer = (playerId: string) => {
@@ -144,9 +158,15 @@ export default function OnboardingModal({
 
   const handleComplete = async () => {
     setSaving(true);
+    const finalTeamIds = selectedTeamIds;
+    const finalPrimaryId =
+      primaryTeamId && finalTeamIds.includes(primaryTeamId)
+        ? primaryTeamId
+        : finalTeamIds[0] || "den";
+
     const newPrefs: UserPreferences = {
-      favoriteTeamIds: selectedTeamIds,
-      primaryTeamId: primaryTeamId || selectedTeamIds[0] || "den",
+      favoriteTeamIds: finalTeamIds,
+      primaryTeamId: finalPrimaryId,
       favoritePlayerIds: selectedPlayerIds,
       notificationsEnabled: true,
       theme: "dark",
@@ -252,35 +272,44 @@ export default function OnboardingModal({
                 </div>
               </div>
 
-              {/* Selected Count Indicator */}
-              <div className="flex items-center justify-between text-xs text-gray-400 bg-gray-900/40 p-2.5 rounded-xl border border-gray-800/80">
-                <span>
-                  Selected: <strong className="text-amber-400 font-bold">{selectedTeamIds.length}</strong> teams
-                </span>
-                <span className="text-[11px] text-gray-400">
-                  Click a selected team to set as <strong className="text-amber-300">Primary Hub</strong>
-                </span>
+              {/* Selected Count Indicator & Bulk Actions */}
+              <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-gray-400 bg-gray-900/40 p-2.5 rounded-xl border border-gray-800/80">
+                <div className="flex items-center gap-3">
+                  <span>
+                    Selected: <strong className="text-amber-400 font-bold">{selectedTeamIds.length}</strong> teams
+                  </span>
+                  <span className="text-[11px] text-gray-400 hidden sm:inline">
+                    • Click any team to select or deselect
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={selectAllTeams}
+                    className="px-2.5 py-1 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-300 font-bold text-[11px] transition-colors cursor-pointer"
+                  >
+                    Select All 32
+                  </button>
+                  <button
+                    type="button"
+                    onClick={clearAllTeams}
+                    className="px-2.5 py-1 rounded-lg bg-red-500/20 hover:bg-red-500/30 border border-red-500/40 text-red-300 font-bold text-[11px] transition-colors cursor-pointer"
+                  >
+                    Deselect All
+                  </button>
+                </div>
               </div>
 
               {/* Grid of 32 Teams */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-h-96 overflow-y-auto pr-1">
                 {filteredTeams.map((team) => {
                   const isSelected = selectedTeamIds.includes(team.id);
-                  const isPrimary = primaryTeamId === team.id;
+                  const isPrimary = primaryTeamId === team.id && isSelected;
 
                   return (
                     <div
                       key={team.id}
-                      onClick={() => {
-                        if (!isSelected) {
-                          setSelectedTeamIds([...selectedTeamIds, team.id]);
-                          setPrimaryTeamId(team.id);
-                        } else if (!isPrimary) {
-                          setPrimaryTeamId(team.id);
-                        } else {
-                          toggleTeam(team.id);
-                        }
-                      }}
+                      onClick={() => toggleTeam(team.id)}
                       className={`relative p-3 rounded-xl border cursor-pointer transition-all flex flex-col items-center justify-between group ${
                         isSelected
                           ? "bg-gray-800/90 border-amber-500 shadow-md shadow-amber-500/10"
@@ -292,11 +321,24 @@ export default function OnboardingModal({
                           : undefined,
                       }}
                     >
-                      {/* Primary Badge */}
-                      {isPrimary && (
-                        <span className="absolute top-2 left-2 text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-amber-400 text-black tracking-wider flex items-center gap-1 shadow-sm">
-                          <Star className="w-2.5 h-2.5 fill-black" /> Primary
-                        </span>
+                      {/* Primary Badge / Make Primary Button */}
+                      {isSelected && (
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setPrimaryTeamId(team.id);
+                          }}
+                          className={`absolute top-2 left-2 text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded tracking-wider flex items-center gap-1 shadow-sm transition-colors ${
+                            isPrimary
+                              ? "bg-amber-400 text-black"
+                              : "bg-gray-900/90 text-gray-300 hover:bg-amber-500/30 hover:text-amber-300 border border-gray-700"
+                          }`}
+                          title={isPrimary ? "Primary Hub" : "Click to set as Primary Hub"}
+                        >
+                          <Star className={`w-2.5 h-2.5 ${isPrimary ? "fill-black" : ""}`} />
+                          <span>{isPrimary ? "Primary" : "Set Hub"}</span>
+                        </button>
                       )}
 
                       {/* Selection Checkmark */}
@@ -520,7 +562,7 @@ export default function OnboardingModal({
             <div className="flex items-center gap-2">
               <button
                 onClick={handleComplete}
-                disabled={saving || selectedTeamIds.length === 0}
+                disabled={saving}
                 className="py-2.5 px-4 bg-gray-800 hover:bg-gray-700 border border-amber-500/40 text-amber-300 font-bold text-xs uppercase tracking-wider rounded-xl flex items-center gap-1.5 transition-all cursor-pointer disabled:opacity-50"
               >
                 <Check className="w-3.5 h-3.5" />
@@ -528,8 +570,7 @@ export default function OnboardingModal({
               </button>
               <button
                 onClick={() => setStep(2)}
-                disabled={selectedTeamIds.length === 0}
-                className="py-2.5 px-5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-bold text-xs uppercase tracking-wider rounded-xl flex items-center gap-2 shadow-lg shadow-amber-500/20 transition-all cursor-pointer disabled:opacity-50"
+                className="py-2.5 px-5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-bold text-xs uppercase tracking-wider rounded-xl flex items-center gap-2 shadow-lg shadow-amber-500/20 transition-all cursor-pointer"
               >
                 Next: Star Players
                 <ArrowRight className="w-4 h-4" />
