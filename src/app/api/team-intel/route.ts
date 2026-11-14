@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
-import { SeasonHighlight, GameSchedule, Injury, Player } from '@/types';
+import { SeasonHighlight, GameSchedule, Injury, Player, TeamStats } from '@/types';
 import { callFireworksAI } from '@/lib/fireworks';
+import { getTeamStats } from '@/lib/team-stats';
 
 export const dynamic = 'force-dynamic';
 
@@ -33,7 +34,9 @@ async function fetchLiveRosterAndInjuries(teamAbbr: string): Promise<{
 
     const data = await res.json();
     const groups = data?.athletes || [];
-    const keyPositions = new Set(['QB', 'RB', 'WR', 'TE', 'DE', 'LB', 'CB', 'S', 'DT', 'OT']);
+    const posPriority: Record<string, number> = {
+      QB: 1, RB: 2, WR: 3, TE: 4, DE: 5, DT: 6, LB: 7, OLB: 7, ILB: 7, CB: 8, S: 9, FS: 9, SS: 9, OT: 10, G: 11, C: 12, PK: 13, K: 13, P: 14, LS: 15,
+    };
 
     for (const group of groups) {
       const items = group?.items || [];
@@ -100,14 +103,10 @@ async function fetchLiveRosterAndInjuries(teamAbbr: string): Promise<{
           }
         }
 
-        // Collect key active star players from the live roster
-        if (
-          keyPositions.has(pos) &&
-          athlete.status?.type === 'active' &&
-          athlete.headshot?.href
-        ) {
+        // Collect all active players across Offense, Defense, and Special Teams
+        if (athlete.status?.type === 'active' || !athlete.status?.type) {
           starPlayers.push({
-            id: `live-p-${athlete.id}`,
+            id: `p-${abbr}-${athlete.id}`,
             name: fullName,
             position: pos,
             number: jersey,
@@ -116,13 +115,15 @@ async function fetchLiveRosterAndInjuries(teamAbbr: string): Promise<{
             status: 'Active',
             college,
             experience: expStr,
-            statsHighlight: `${college} • ${expStr}`,
+            statsHighlight: `${pos} #${jersey} • ${college} • ${expStr}`,
           });
         }
       }
     }
 
-    return { injuries: injuries.slice(0, 12), starPlayers: starPlayers.slice(0, 16) };
+    starPlayers.sort((a, b) => (posPriority[a.position] || 99) - (posPriority[b.position] || 99));
+
+    return { injuries: injuries.slice(0, 15), starPlayers };
   } catch (err) {
     console.warn('Live roster/injury fetch error:', err);
     return { injuries, starPlayers };
@@ -540,14 +541,79 @@ async function fetchYahooAndNFLHeadlines(teamName: string): Promise<string[]> {
     : headlines.slice(0, 10);
 }
 
+async function fetchLiveTeamStats(teamAbbr: string): Promise<TeamStats> {
+  const abbr = teamAbbr.toLowerCase();
+  const baseStats = getTeamStats(abbr);
+
+  try {
+    const res = await fetch(
+      `https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${abbr}/statistics`,
+      {
+        cache: 'no-store',
+        signal: AbortSignal.timeout(4500),
+      }
+    );
+    if (!res.ok) return baseStats;
+
+    const data = await res.json();
+    const cats = data?.results?.stats?.categories || [];
+    const oppCats = data?.results?.opponent || [];
+
+    const getVal = (arr: any[], catName: string, statName: string, fallback: number) => {
+      if (!Array.isArray(arr)) return fallback;
+      const cat = arr.find((c: any) => c.name === catName);
+      const st = cat?.stats?.find((s: any) => s.name === statName);
+      if (!st) return fallback;
+      const raw = st.value ?? parseFloat(String(st.displayValue || '0').replace(/,/g, ''));
+      return isNaN(raw) ? fallback : Number(raw.toFixed(1));
+    };
+
+    const passYPG = getVal(cats, 'passing', 'netPassingYardsPerGame', baseStats.passingYardsPerGame);
+    const rushYPG = getVal(cats, 'rushing', 'rushingYardsPerGame', baseStats.rushingYardsPerGame);
+    const totalYPG = Number((passYPG + rushYPG).toFixed(1));
+    const ppg = getVal(cats, 'scoring', 'totalPointsPerGame', baseStats.pointsPerGame);
+
+    const oppPassYPG = getVal(oppCats, 'passing', 'netPassingYardsPerGame', baseStats.passYardsAllowedPerGame);
+    const oppRushYPG = getVal(oppCats, 'rushing', 'rushingYardsPerGame', baseStats.rushYardsAllowedPerGame);
+    const yardsAllowedPG = getVal(oppCats, 'passing', 'yardsPerGame', Number((oppPassYPG + oppRushYPG).toFixed(1)));
+    const ptsAllowedPG = getVal(oppCats, 'scoring', 'totalPointsPerGame', baseStats.pointsAllowedPerGame);
+
+    const sacks = getVal(cats, 'defensive', 'sacks', baseStats.sacks);
+    const interceptions = getVal(cats, 'defensiveInterceptions', 'interceptions', baseStats.interceptions);
+    const turnoverDiff = getVal(cats, 'miscellaneous', 'turnOverDifferential', baseStats.turnoverDifferential);
+    const thirdDownPct = getVal(cats, 'miscellaneous', 'thirdDownConvPct', baseStats.thirdDownPct);
+    const redZonePct = getVal(cats, 'miscellaneous', 'redzoneTouchdownPct', baseStats.redZonePct);
+
+    return {
+      ...baseStats,
+      pointsPerGame: ppg,
+      pointsAllowedPerGame: ptsAllowedPG,
+      totalYardsPerGame: totalYPG,
+      passingYardsPerGame: passYPG,
+      rushingYardsPerGame: rushYPG,
+      yardsAllowedPerGame: yardsAllowedPG,
+      passYardsAllowedPerGame: oppPassYPG,
+      rushYardsAllowedPerGame: oppRushYPG,
+      turnoverDifferential: turnoverDiff,
+      sacks,
+      interceptions,
+      thirdDownPct,
+      redZonePct,
+    };
+  } catch {
+    return baseStats;
+  }
+}
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const teamName = searchParams.get('teamName') || 'Denver Broncos';
   const teamAbbr = searchParams.get('teamAbbr') || 'DEN';
 
-  const [liveTeamData, rosterAndInjuries, espnVideos, ytVideos, liveHeadlines] = await Promise.all([
+  const [liveTeamData, rosterAndInjuries, liveTeamStats, espnVideos, ytVideos, liveHeadlines] = await Promise.all([
     fetchLiveTeamScheduleAndRecord(teamAbbr),
     fetchLiveRosterAndInjuries(teamAbbr),
+    fetchLiveTeamStats(teamAbbr),
     fetchESPNDirectVideos(teamName, teamAbbr),
     fetchRealYouTubeHighlights(teamName),
     fetchYahooAndNFLHeadlines(teamName),
@@ -624,6 +690,7 @@ export async function GET(request: Request) {
 
   return NextResponse.json({
     liveTeamData,
+    liveTeamStats,
     highlights: combinedHighlights,
     aiReport,
     aiInjuries: rosterAndInjuries.injuries,

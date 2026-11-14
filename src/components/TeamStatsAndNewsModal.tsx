@@ -45,8 +45,12 @@ export default function TeamStatsAndNewsModal({
   const [newsArticles, setNewsArticles] = useState<NewsArticle[]>([]);
   const [newsLoading, setNewsLoading] = useState(false);
   const [newsSearch, setNewsSearch] = useState("");
+  const [liveStats, setLiveStats] = useState<TeamStats | null>(null);
+  const [liveRecord, setLiveRecord] = useState<{ wins: number; losses: number; ties: number }>(
+    team.record
+  );
 
-  const stats: TeamStats = team.teamStats || getTeamStats(team.id);
+  const stats: TeamStats = liveStats || team.teamStats || getTeamStats(team.id);
 
   // Synchronize initialTab when modal opens
   useEffect(() => {
@@ -55,20 +59,47 @@ export default function TeamStatsAndNewsModal({
     }
   }, [isOpen, initialTab]);
 
-  // Load team news when modal opens or team changes
+  // Load team news and live stats when modal opens or team changes
   useEffect(() => {
     if (!isOpen) return;
 
     let isMounted = true;
-    async function fetchTeamNews() {
+    setLiveStats(null);
+    setLiveRecord(team.record);
+
+    async function fetchTeamNewsAndStats() {
       setNewsLoading(true);
       try {
-        const res = await fetch(`/api/news?team=${team.id}`);
-        const data = await res.json();
-        if (isMounted && data.articles && data.articles.length > 0) {
-          setNewsArticles(data.articles);
+        const fullTeamName = `${team.city} ${team.name}`;
+        const [newsRes, intelRes] = await Promise.all([
+          fetch(`/api/news?team=${team.id}`, { cache: "no-store" }),
+          fetch(
+            `/api/team-intel?teamName=${encodeURIComponent(fullTeamName)}&teamAbbr=${encodeURIComponent(
+              team.abbreviation
+            )}`,
+            { cache: "no-store" }
+          ),
+        ]);
+
+        if (newsRes.ok) {
+          const data = await newsRes.json();
+          if (isMounted && data.articles && data.articles.length > 0) {
+            setNewsArticles(data.articles);
+          } else if (isMounted) {
+            setNewsArticles(getTeamNews(team.id, team.name, team.abbreviation));
+          }
         } else if (isMounted) {
           setNewsArticles(getTeamNews(team.id, team.name, team.abbreviation));
+        }
+
+        if (intelRes.ok) {
+          const intelData = await intelRes.json();
+          if (isMounted && intelData.liveTeamStats) {
+            setLiveStats(intelData.liveTeamStats);
+          }
+          if (isMounted && intelData.liveTeamData?.record) {
+            setLiveRecord(intelData.liveTeamData.record);
+          }
         }
       } catch {
         if (isMounted) {
@@ -79,11 +110,11 @@ export default function TeamStatsAndNewsModal({
       }
     }
 
-    fetchTeamNews();
+    fetchTeamNewsAndStats();
     return () => {
       isMounted = false;
     };
-  }, [isOpen, team.id, team.name, team.abbreviation]);
+  }, [isOpen, team.id, team.city, team.name, team.abbreviation, team.record]);
 
   if (!isOpen) return null;
 
@@ -185,7 +216,8 @@ export default function TeamStatsAndNewsModal({
                 </span>
                 <span>•</span>
                 <span className="font-semibold text-white">
-                  Record: {team.record.wins}-{team.record.losses}
+                  Record: {liveRecord.wins}-{liveRecord.losses}
+                  {liveRecord.ties ? `-${liveRecord.ties}` : ""}
                 </span>
                 <span>•</span>
                 <span className="text-gray-400">{team.stadium}</span>

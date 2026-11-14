@@ -22,6 +22,7 @@ import {
   Newspaper
 } from "lucide-react";
 import { NFLTeam, SeasonHighlight, Player, GameSchedule, Injury } from "@/types";
+import { NFL_TEAMS } from "@/lib/nfl-teams";
 
 interface TeamDashboardProps {
   team: NFLTeam;
@@ -110,20 +111,34 @@ export default function TeamDashboard({
   const [loadingIntel, setLoadingIntel] = useState<boolean>(true);
 
   const [rosterTab, setRosterTab] = useState<"ALL" | "OFFENSE" | "DEFENSE" | "SPECIAL">("ALL");
+  const [rosterScope, setRosterScope] = useState<"TEAM" | "LEAGUE">("LEAGUE");
   const [rosterSearch, setRosterSearch] = useState("");
 
-  const offensePositions = ["QB", "RB", "FB", "WR", "TE", "LT", "RT", "LG", "RG", "C", "OT", "OG", "OL"];
+  const offensePositions = ["QB", "RB", "FB", "WR", "TE", "LT", "RT", "LG", "RG", "C", "OT", "OG", "OL", "G", "T"];
   const defensePositions = ["DE", "DT", "NT", "OLB", "ILB", "LB", "CB", "FS", "SS", "S", "DB", "DL"];
   const specialPositions = ["K", "P", "LS", "PK"];
 
   const activeRosterSource = liveStarPlayers.length > 0 ? liveStarPlayers : team.starPlayers;
 
-  const filteredRoster = activeRosterSource.filter((player) => {
+  const leaguePlayersOrdered: { player: Player; teamObj: NFLTeam }[] = React.useMemo(() => {
+    const primaryPlayers = activeRosterSource.map((p) => ({ player: p, teamObj: team }));
+    const otherTeams = NFL_TEAMS.filter((t) => t.id !== team.id);
+    const otherPlayers = otherTeams.flatMap((t) =>
+      t.starPlayers.map((p) => ({ player: p, teamObj: t }))
+    );
+    return [...primaryPlayers, ...otherPlayers];
+  }, [activeRosterSource, team]);
+
+  const filterPlayerItem = (player: Player, teamObj: NFLTeam) => {
+    const q = rosterSearch.trim().toLowerCase();
     const matchesSearch =
-      !rosterSearch.trim() ||
-      player.name.toLowerCase().includes(rosterSearch.toLowerCase()) ||
-      player.position.toLowerCase().includes(rosterSearch.toLowerCase()) ||
-      String(player.number).includes(rosterSearch);
+      !q ||
+      player.name.toLowerCase().includes(q) ||
+      player.position.toLowerCase().includes(q) ||
+      String(player.number).includes(q) ||
+      teamObj.name.toLowerCase().includes(q) ||
+      teamObj.city.toLowerCase().includes(q) ||
+      teamObj.abbreviation.toLowerCase().includes(q);
 
     let matchesTab = true;
     if (rosterTab === "OFFENSE") {
@@ -135,7 +150,12 @@ export default function TeamDashboard({
     }
 
     return matchesSearch && matchesTab;
-  });
+  };
+
+  const filteredTeamRoster = activeRosterSource.filter((p) => filterPlayerItem(p, team));
+  const filteredOtherNFLPlayers = leaguePlayersOrdered
+    .filter((item) => item.teamObj.id !== team.id)
+    .filter(({ player, teamObj }) => filterPlayerItem(player, teamObj));
 
   const fetchTeamIntel = useCallback(async (selectedTeam: NFLTeam, silent = false) => {
     if (!silent) setLoadingIntel(true);
@@ -748,32 +768,58 @@ export default function TeamDashboard({
         </div>
       </div>
 
-      {/* 5. Complete Franchise Roster & Depth Chart */}
+      {/* 5. Complete Franchise Roster & All NFL Players Directory */}
       <div className="glass-panel rounded-2xl p-6 border border-gray-800 space-y-5">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-4 border-b border-gray-800">
           <div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-amber-400" />
               <h3 className="font-extrabold text-lg text-white">
-                {team.city} {team.name} Full Active Roster & Depth Chart
+                {team.city} {team.name} Full Roster & Complete NFL Player Directory
               </h3>
             </div>
             <p className="text-xs text-gray-400 mt-0.5">
-              Showing {filteredRoster.length} of {activeRosterSource.length} verified franchise playmakers
+              Showing all {filteredTeamRoster.length} {team.name} players first
+              {rosterScope === "LEAGUE"
+                ? `, followed by ${filteredOtherNFLPlayers.length} active players across all 31 other NFL franchises`
+                : ` (${activeRosterSource.length} total active on ${team.abbreviation})`}
             </p>
           </div>
 
-          {/* Search & Tabs */}
-          <div className="flex flex-col sm:flex-row items-center gap-3">
-            <div className="relative w-full sm:w-56">
+          {/* Search, Scope Toggle & Position Tabs */}
+          <div className="flex flex-wrap items-center gap-2.5">
+            <div className="relative w-full sm:w-52">
               <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
               <input
                 type="text"
                 value={rosterSearch}
                 onChange={(e) => setRosterSearch(e.target.value)}
-                placeholder="Filter by name or #..."
+                placeholder="Search any player, team, #..."
                 className="w-full bg-gray-900 border border-gray-700/80 rounded-xl pl-8 pr-3 py-1.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-amber-400"
               />
+            </div>
+
+            <div className="flex items-center gap-1 bg-gray-900/90 p-1 rounded-xl border border-gray-800">
+              <button
+                onClick={() => setRosterScope("LEAGUE")}
+                className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all ${
+                  rosterScope === "LEAGUE"
+                    ? "bg-amber-500 text-black shadow-sm"
+                    : "text-gray-400 hover:text-white"
+                }`}
+              >
+                {team.abbreviation} + All NFL ({leaguePlayersOrdered.length})
+              </button>
+              <button
+                onClick={() => setRosterScope("TEAM")}
+                className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all ${
+                  rosterScope === "TEAM"
+                    ? "bg-amber-500 text-black shadow-sm"
+                    : "text-gray-400 hover:text-white"
+                }`}
+              >
+                {team.name} Only ({activeRosterSource.length})
+              </button>
             </div>
 
             <div className="flex items-center gap-1 bg-gray-900/90 p-1 rounded-xl border border-gray-800 w-full sm:w-auto justify-center">
@@ -794,79 +840,161 @@ export default function TeamDashboard({
           </div>
         </div>
 
-        {filteredRoster.length === 0 ? (
-          <div className="p-8 text-center text-xs text-gray-500">
-            No players matched &quot;{rosterSearch}&quot; in {rosterTab} category.
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5 max-h-[600px] overflow-y-auto pr-1">
-            {filteredRoster.map((player) => (
-              <div
-                key={player.id}
-                className="p-3.5 rounded-xl bg-gray-900/60 border border-gray-800/90 hover:border-amber-500/40 transition-all space-y-2.5 group"
-              >
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    {player.avatarUrl && (
-                      <div className="w-8 h-8 relative rounded-full overflow-hidden bg-gray-800 border border-gray-700 flex-shrink-0">
-                        <Image
-                          src={player.avatarUrl}
-                          alt={player.name}
-                          fill
-                          className="object-cover"
-                          sizes="32px"
-                        />
+        <div className="space-y-6 max-h-[750px] overflow-y-auto pr-1">
+          {/* SECTION 1: ALL SELECTED TEAM (BRONCOS DEFAULT) PLAYERS FIRST */}
+          <div className="space-y-3">
+            <div className="flex items-center justify-between px-3 py-2 rounded-xl bg-amber-500/10 border border-amber-500/30">
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-5 relative">
+                  <Image
+                    src={team.logoUrl}
+                    alt={team.name}
+                    fill
+                    className="object-contain"
+                    sizes="20px"
+                  />
+                </div>
+                <span className="text-xs font-black uppercase tracking-wider text-amber-300">
+                  {team.city} {team.name} Complete Active Roster ({filteredTeamRoster.length} Players)
+                </span>
+              </div>
+              <span className="text-[10px] font-semibold text-gray-400">
+                Primary Franchise Depth Chart
+              </span>
+            </div>
+
+            {filteredTeamRoster.length === 0 ? (
+              <div className="p-6 text-center text-xs text-gray-500">
+                No {team.name} players matched &quot;{rosterSearch}&quot; in {rosterTab} category.
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5">
+                {filteredTeamRoster.map((player) => (
+                  <div
+                    key={player.id}
+                    className="p-3.5 rounded-xl bg-gray-900/60 border border-gray-800/90 hover:border-amber-500/40 transition-all space-y-2.5 group"
+                  >
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        {player.avatarUrl && (
+                          <div className="w-8 h-8 relative rounded-full overflow-hidden bg-gray-800 border border-gray-700 flex-shrink-0">
+                            <Image
+                              src={player.avatarUrl}
+                              alt={player.name}
+                              fill
+                              className="object-cover"
+                              sizes="32px"
+                            />
+                          </div>
+                        )}
+                        <span className="w-7 h-7 rounded-full bg-amber-500/10 text-amber-400 font-mono font-bold flex items-center justify-center text-xs border border-amber-500/20">
+                          #{player.number}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-1.5">
+                        <span className="text-[10px] font-extrabold uppercase text-amber-300 bg-amber-500/10 border border-amber-500/20 px-1.5 py-0.5 rounded">
+                          {team.abbreviation}
+                        </span>
+                        <span className="text-[10px] font-extrabold uppercase text-gray-300 bg-gray-800 px-2 py-0.5 rounded">
+                          {player.position}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div className="font-extrabold text-sm text-white group-hover:text-amber-400 transition-colors">
+                        {player.name}
+                      </div>
+                      <div className="text-[11px] text-gray-400 flex items-center gap-1.5 mt-0.5">
+                        {player.college && <span>{player.college}</span>}
+                        {player.college && player.experience && <span>•</span>}
+                        {player.experience && <span>{player.experience}</span>}
+                      </div>
+                    </div>
+
+                    {player.statsHighlight && (
+                      <div className="p-2 rounded-lg bg-gray-950/80 border border-gray-800 text-xs font-semibold text-amber-300">
+                        {player.statsHighlight}
                       </div>
                     )}
-                    <span className="w-7 h-7 rounded-full bg-amber-500/10 text-amber-400 font-mono font-bold flex items-center justify-center text-xs border border-amber-500/20">
-                      #{player.number}
-                    </span>
                   </div>
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-[10px] font-extrabold uppercase text-gray-300 bg-gray-800 px-2 py-0.5 rounded">
-                      {player.position}
-                    </span>
-                    {player.status === "IR" && (
-                      <span className="text-[9px] font-black uppercase text-red-400 bg-red-950/60 px-1.5 py-0.5 rounded border border-red-500/30">
-                        IR
-                      </span>
-                    )}
-                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* SECTION 2: EVERY OTHER NFL PLAYER ACROSS ALL 31 OTHER FRANCHISES */}
+          {rosterScope === "LEAGUE" && (
+            <div className="space-y-3 pt-4 border-t border-gray-800">
+              <div className="flex items-center justify-between px-3 py-2 rounded-xl bg-gray-900 border border-gray-800">
+                <span className="text-xs font-black uppercase tracking-wider text-white">
+                  Every Other NFL Player ({filteredOtherNFLPlayers.length} Active Players Across All 31 Other Teams)
+                </span>
+                <span className="text-[10px] text-gray-400">
+                  Live ESPN League-Wide Roster Wire
+                </span>
+              </div>
+
+              {filteredOtherNFLPlayers.length === 0 ? (
+                <div className="p-6 text-center text-xs text-gray-500">
+                  No other NFL players matched &quot;{rosterSearch}&quot; in {rosterTab} category.
                 </div>
-
-                <div>
-                  <div className="font-extrabold text-sm text-white group-hover:text-amber-400 transition-colors">
-                    {player.name}
-                  </div>
-                  <div className="text-[11px] text-gray-400 flex items-center gap-1.5 mt-0.5">
-                    {player.college && <span>{player.college}</span>}
-                    {player.college && player.experience && <span>•</span>}
-                    {player.experience && <span>{player.experience}</span>}
-                  </div>
-                </div>
-
-                {player.statsHighlight && (
-                  <div className="p-2 rounded-lg bg-gray-950/80 border border-gray-800 text-xs font-semibold text-amber-300">
-                    {player.statsHighlight}
-                  </div>
-                )}
-
-                {player.stats && !player.statsHighlight && (
-                  <div className="grid grid-cols-3 gap-1 pt-1 text-center">
-                    {Object.entries(player.stats).map(([k, v]) => (
-                      <div key={k} className="p-1 rounded bg-gray-950">
-                        <div className="text-[9px] text-gray-500 uppercase">{k}</div>
-                        <div className="text-xs font-bold text-amber-300 font-mono">
-                          {String(v)}
+              ) : (
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3.5">
+                  {filteredOtherNFLPlayers.map(({ player, teamObj }) => (
+                    <div
+                      key={player.id}
+                      className="p-3.5 rounded-xl bg-gray-900/50 border border-gray-800/80 hover:border-gray-700 transition-all space-y-2.5 group"
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                          {player.avatarUrl && (
+                            <div className="w-8 h-8 relative rounded-full overflow-hidden bg-gray-800 border border-gray-700 flex-shrink-0">
+                              <Image
+                                src={player.avatarUrl}
+                                alt={player.name}
+                                fill
+                                className="object-cover"
+                                sizes="32px"
+                              />
+                            </div>
+                          )}
+                          <span className="w-7 h-7 rounded-full bg-gray-800 text-gray-300 font-mono font-bold flex items-center justify-center text-xs border border-gray-700">
+                            #{player.number}
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="text-[10px] font-bold uppercase text-amber-400 bg-gray-800 px-1.5 py-0.5 rounded">
+                            {teamObj.abbreviation}
+                          </span>
+                          <span className="text-[10px] font-extrabold uppercase text-gray-300 bg-gray-800 px-2 py-0.5 rounded">
+                            {player.position}
+                          </span>
                         </div>
                       </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
+
+                      <div>
+                        <div className="font-extrabold text-sm text-white group-hover:text-amber-400 transition-colors">
+                          {player.name}
+                        </div>
+                        <div className="text-[11px] text-gray-400 flex items-center gap-1.5 mt-0.5">
+                          <span className="text-gray-300 font-medium">{teamObj.city} {teamObj.name}</span>
+                          {player.college && <span>• {player.college}</span>}
+                        </div>
+                      </div>
+
+                      {player.statsHighlight && (
+                        <div className="p-2 rounded-lg bg-gray-950/80 border border-gray-800 text-xs font-semibold text-gray-300">
+                          {player.statsHighlight}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Video Modal Player (Supports Direct ESPN MP4 & Official YouTube NFL Highlights) */}

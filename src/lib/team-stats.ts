@@ -1,1101 +1,1705 @@
 import { TeamStats } from "@/types";
 
 export const TEAM_STATS_DATA: Record<string, TeamStats> = {
-  den: {
-    pointsPerGame: 20.0,
-    pointsAllowedPerGame: 15.1,
-    totalYardsPerGame: 304.5,
-    passingYardsPerGame: 187.2,
-    rushingYardsPerGame: 117.3,
-    yardsAllowedPerGame: 284.3,
-    passYardsAllowedPerGame: 170.2,
-    rushYardsAllowedPerGame: 114.1,
-    turnoverDifferential: 3,
-    sacks: 28,
-    interceptions: 6,
-    thirdDownPct: 37.5,
-    redZonePct: 56.2,
-    streak: "Won 1",
-    homeRecord: "2-1",
-    awayRecord: "2-2",
-    divisionRecord: "1-1",
-    rankings: {
-      scoringOffenseRank: 21,
-      scoringDefenseRank: 3,
-      totalOffenseRank: 25,
-      totalDefenseRank: 4,
-      passOffenseRank: 27,
-      rushOffenseRank: 16,
+  "den": {
+    "pointsPerGame": 22,
+    "pointsAllowedPerGame": 20.7,
+    "totalYardsPerGame": 277.3,
+    "passingYardsPerGame": 185.9,
+    "rushingYardsPerGame": 91.4,
+    "yardsAllowedPerGame": 374.2,
+    "passYardsAllowedPerGame": 230.7,
+    "rushYardsAllowedPerGame": 124.3,
+    "turnoverDifferential": 5,
+    "sacks": 26,
+    "interceptions": 8,
+    "thirdDownPct": 32.4,
+    "redZonePct": 63,
+    "streak": "W5",
+    "homeRecord": "4-0",
+    "awayRecord": "3-2",
+    "divisionRecord": "2-1",
+    "rankings": {
+      "scoringOffenseRank": 20,
+      "scoringDefenseRank": 10,
+      "totalOffenseRank": 29,
+      "totalDefenseRank": 25,
+      "passOffenseRank": 24,
+      "rushOffenseRank": 27
     },
-    leaders: {
-      passing: { name: "Bo Nix", stat: "1,530 YDS • 8 TD • 5 INT", yards: 1530, touchdowns: 8 },
-      rushing: { name: "Javonte Williams", stat: "360 YDS • 2 TD", yards: 360, touchdowns: 2 },
-      receiving: { name: "Courtland Sutton", stat: "31 REC • 377 YDS • 2 TD", receptions: 31, yards: 377, touchdowns: 2 },
-      defense: { name: "Nik Bonitto", stat: "6.0 SACKS • 1 FF", tacklesOrSacks: "6.0 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Bo Nix",
+        "stat": "174/287, 1730 YDS, 11 TD, 4 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "J.K. Dobbins",
+        "stat": "98 CAR, 324 YDS, 3 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Jaylen Waddle",
+        "stat": "30 REC, 337 YDS, 2 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Zach Allen",
+        "stat": "4.5 SACKS",
+        "tacklesOrSacks": "4.5 Sacks"
+      }
+    }
   },
-  kc: {
-    pointsPerGame: 24.3,
-    pointsAllowedPerGame: 17.0,
-    totalYardsPerGame: 350.2,
-    passingYardsPerGame: 236.8,
-    rushingYardsPerGame: 113.4,
-    yardsAllowedPerGame: 298.0,
-    passYardsAllowedPerGame: 208.5,
-    rushYardsAllowedPerGame: 89.5,
-    turnoverDifferential: -1,
-    sacks: 15,
-    interceptions: 4,
-    thirdDownPct: 51.2,
-    redZonePct: 62.5,
-    streak: "Won 6",
-    homeRecord: "3-0",
-    awayRecord: "3-0",
-    divisionRecord: "2-0",
-    rankings: {
-      scoringOffenseRank: 11,
-      scoringDefenseRank: 5,
-      totalOffenseRank: 10,
-      totalDefenseRank: 6,
-      passOffenseRank: 12,
-      rushOffenseRank: 18,
+  "kc": {
+    "pointsPerGame": 25.3,
+    "pointsAllowedPerGame": 17.9,
+    "totalYardsPerGame": 384.2,
+    "passingYardsPerGame": 246.4,
+    "rushingYardsPerGame": 137.8,
+    "yardsAllowedPerGame": 318,
+    "passYardsAllowedPerGame": 210.4,
+    "rushYardsAllowedPerGame": 97.5,
+    "turnoverDifferential": 4,
+    "sacks": 14,
+    "interceptions": 6,
+    "thirdDownPct": 41.7,
+    "redZonePct": 63.3,
+    "streak": "W1",
+    "homeRecord": "4-0",
+    "awayRecord": "2-2",
+    "divisionRecord": "3-1",
+    "rankings": {
+      "scoringOffenseRank": 10,
+      "scoringDefenseRank": 3,
+      "totalOffenseRank": 2,
+      "totalDefenseRank": 7,
+      "passOffenseRank": 10,
+      "rushOffenseRank": 4
     },
-    leaders: {
-      passing: { name: "Patrick Mahomes", stat: "1,389 YDS • 6 TD • 8 INT", yards: 1389, touchdowns: 6 },
-      rushing: { name: "Kareem Hunt", stat: "308 YDS • 3 TD", yards: 308, touchdowns: 3 },
-      receiving: { name: "Travis Kelce", stat: "32 REC • 292 YDS • 0 TD", receptions: 32, yards: 292, touchdowns: 0 },
-      defense: { name: "Chris Jones", stat: "3.5 SACKS • 1 FF", tacklesOrSacks: "3.5 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Patrick Mahomes",
+        "stat": "177/263, 2037 YDS, 14 TD, 4 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Kenneth Walker III",
+        "stat": "159 CAR, 872 YDS, 7 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Travis Kelce",
+        "stat": "33 REC, 482 YDS, 2 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "George Karlaftis",
+        "stat": "4 SACKS",
+        "tacklesOrSacks": "4 Sacks"
+      }
+    }
   },
-  bal: {
-    pointsPerGame: 31.1,
-    pointsAllowedPerGame: 24.8,
-    totalYardsPerGame: 453.7,
-    passingYardsPerGame: 242.8,
-    rushingYardsPerGame: 210.9,
-    yardsAllowedPerGame: 356.5,
-    passYardsAllowedPerGame: 287.1,
-    rushYardsAllowedPerGame: 69.4,
-    turnoverDifferential: 4,
-    sacks: 22,
-    interceptions: 5,
-    thirdDownPct: 47.8,
-    redZonePct: 75.0,
-    streak: "Won 5",
-    homeRecord: "3-1",
-    awayRecord: "2-1",
-    divisionRecord: "1-1",
-    rankings: {
-      scoringOffenseRank: 1,
-      scoringDefenseRank: 26,
-      totalOffenseRank: 1,
-      totalDefenseRank: 22,
-      passOffenseRank: 9,
-      rushOffenseRank: 1,
+  "sf": {
+    "pointsPerGame": 29.4,
+    "pointsAllowedPerGame": 19.5,
+    "totalYardsPerGame": 376.8,
+    "passingYardsPerGame": 241.5,
+    "rushingYardsPerGame": 135.3,
+    "yardsAllowedPerGame": 303.8,
+    "passYardsAllowedPerGame": 211,
+    "rushYardsAllowedPerGame": 80.9,
+    "turnoverDifferential": 1,
+    "sacks": 15,
+    "interceptions": 6,
+    "thirdDownPct": 51.7,
+    "redZonePct": 84.6,
+    "streak": "W1",
+    "homeRecord": "5-0",
+    "awayRecord": "2-1",
+    "divisionRecord": "3-0",
+    "rankings": {
+      "scoringOffenseRank": 3,
+      "scoringDefenseRank": 6,
+      "totalOffenseRank": 6,
+      "totalDefenseRank": 2,
+      "passOffenseRank": 11,
+      "rushOffenseRank": 7
     },
-    leaders: {
-      passing: { name: "Lamar Jackson", stat: "1,810 YDS • 15 TD • 2 INT", yards: 1810, touchdowns: 15 },
-      rushing: { name: "Derrick Henry", stat: "873 YDS • 8 TD • 6.5 YPC", yards: 873, touchdowns: 8 },
-      receiving: { name: "Zay Flowers", stat: "34 REC • 412 YDS • 1 TD", receptions: 34, yards: 412, touchdowns: 1 },
-      defense: { name: "Kyle Van Noy", stat: "7.0 SACKS • 1 FF", tacklesOrSacks: "7.0 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Brock Purdy",
+        "stat": "163/236, 1980 YDS, 17 TD, 5 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Christian McCaffrey",
+        "stat": "102 CAR, 457 YDS, 9 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "George Kittle",
+        "stat": "38 REC, 483 YDS, 5 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Keion White",
+        "stat": "3.5 SACKS",
+        "tacklesOrSacks": "3.5 Sacks"
+      }
+    }
   },
-  det: {
-    pointsPerGame: 30.2,
-    pointsAllowedPerGame: 20.0,
-    totalYardsPerGame: 416.0,
-    passingYardsPerGame: 256.3,
-    rushingYardsPerGame: 159.7,
-    yardsAllowedPerGame: 324.8,
-    passYardsAllowedPerGame: 246.2,
-    rushYardsAllowedPerGame: 78.6,
-    turnoverDifferential: 6,
-    sacks: 17,
-    interceptions: 8,
-    thirdDownPct: 45.9,
-    redZonePct: 69.4,
-    streak: "Won 4",
-    homeRecord: "2-1",
-    awayRecord: "3-0",
-    divisionRecord: "1-0",
-    rankings: {
-      scoringOffenseRank: 2,
-      scoringDefenseRank: 9,
-      totalOffenseRank: 3,
-      totalDefenseRank: 14,
-      passOffenseRank: 4,
-      rushOffenseRank: 4,
+  "bal": {
+    "pointsPerGame": 21,
+    "pointsAllowedPerGame": 26.2,
+    "totalYardsPerGame": 326.2,
+    "passingYardsPerGame": 188.4,
+    "rushingYardsPerGame": 137.8,
+    "yardsAllowedPerGame": 341.8,
+    "passYardsAllowedPerGame": 229.8,
+    "rushYardsAllowedPerGame": 99.9,
+    "turnoverDifferential": -2,
+    "sacks": 17,
+    "interceptions": 4,
+    "thirdDownPct": 37.8,
+    "redZonePct": 59.3,
+    "streak": "L4",
+    "homeRecord": "1-3",
+    "awayRecord": "3-2",
+    "divisionRecord": "0-2",
+    "rankings": {
+      "scoringOffenseRank": 22,
+      "scoringDefenseRank": 25,
+      "totalOffenseRank": 19,
+      "totalDefenseRank": 14,
+      "passOffenseRank": 23,
+      "rushOffenseRank": 5
     },
-    leaders: {
-      passing: { name: "Jared Goff", stat: "1,610 YDS • 10 TD • 4 INT • 73.6%", yards: 1610, touchdowns: 10 },
-      rushing: { name: "David Montgomery", stat: "386 YDS • 6 TD", yards: 386, touchdowns: 6 },
-      receiving: { name: "Amon-Ra St. Brown", stat: "39 REC • 401 YDS • 4 TD", receptions: 39, yards: 401, touchdowns: 4 },
-      defense: { name: "Brian Branch", stat: "4 INT • 38 TCKL", tacklesOrSacks: "4 INT" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Lamar Jackson",
+        "stat": "68/97, 967 YDS, 6 TD, 1 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Derrick Henry",
+        "stat": "175 CAR, 689 YDS, 8 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Zay Flowers",
+        "stat": "43 REC, 614 YDS, 3 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Mike Green",
+        "stat": "3.5 SACKS",
+        "tacklesOrSacks": "3.5 Sacks"
+      }
+    }
   },
-  buf: {
-    pointsPerGame: 28.4,
-    pointsAllowedPerGame: 19.4,
-    totalYardsPerGame: 334.8,
-    passingYardsPerGame: 204.4,
-    rushingYardsPerGame: 130.4,
-    yardsAllowedPerGame: 331.0,
-    passYardsAllowedPerGame: 209.5,
-    rushYardsAllowedPerGame: 121.5,
-    turnoverDifferential: 10,
-    sacks: 19,
-    interceptions: 8,
-    thirdDownPct: 40.5,
-    redZonePct: 65.5,
-    streak: "Won 2",
-    homeRecord: "3-0",
-    awayRecord: "2-2",
-    divisionRecord: "2-0",
-    rankings: {
-      scoringOffenseRank: 5,
-      scoringDefenseRank: 8,
-      totalOffenseRank: 17,
-      totalDefenseRank: 16,
-      passOffenseRank: 21,
-      rushOffenseRank: 11,
+  "det": {
+    "pointsPerGame": 27.8,
+    "pointsAllowedPerGame": 23.6,
+    "totalYardsPerGame": 379.8,
+    "passingYardsPerGame": 252,
+    "rushingYardsPerGame": 127.8,
+    "yardsAllowedPerGame": 377.3,
+    "passYardsAllowedPerGame": 260.9,
+    "rushYardsAllowedPerGame": 94.1,
+    "turnoverDifferential": 3,
+    "sacks": 27,
+    "interceptions": 6,
+    "thirdDownPct": 37.2,
+    "redZonePct": 61.8,
+    "streak": "W4",
+    "homeRecord": "4-0",
+    "awayRecord": "2-2",
+    "divisionRecord": "2-0",
+    "rankings": {
+      "scoringOffenseRank": 5,
+      "scoringDefenseRank": 17,
+      "totalOffenseRank": 4,
+      "totalDefenseRank": 28,
+      "passOffenseRank": 8,
+      "rushOffenseRank": 8
     },
-    leaders: {
-      passing: { name: "Josh Allen", stat: "1,483 YDS • 12 TD • 0 INT", yards: 1483, touchdowns: 12 },
-      rushing: { name: "James Cook", stat: "341 YDS • 5 TD", yards: 341, touchdowns: 5 },
-      receiving: { name: "Khalil Shakir", stat: "27 REC • 312 YDS • 2 TD", receptions: 27, yards: 312, touchdowns: 2 },
-      defense: { name: "Greg Rousseau", stat: "3.5 SACKS • 8 TFL", tacklesOrSacks: "3.5 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Jared Goff",
+        "stat": "185/273, 2134 YDS, 15 TD, 2 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Jahmyr Gibbs",
+        "stat": "177 CAR, 847 YDS, 9 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Amon-Ra St. Brown",
+        "stat": "61 REC, 657 YDS, 5 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Alim McNeill",
+        "stat": "5.5 SACKS",
+        "tacklesOrSacks": "5.5 Sacks"
+      }
+    }
   },
-  phi: {
-    pointsPerGame: 23.3,
-    pointsAllowedPerGame: 20.4,
-    totalYardsPerGame: 367.4,
-    passingYardsPerGame: 200.2,
-    rushingYardsPerGame: 167.2,
-    yardsAllowedPerGame: 320.6,
-    passYardsAllowedPerGame: 215.4,
-    rushYardsAllowedPerGame: 105.2,
-    turnoverDifferential: 1,
-    sacks: 16,
-    interceptions: 3,
-    thirdDownPct: 39.8,
-    redZonePct: 60.0,
-    streak: "Won 2",
-    homeRecord: "2-1",
-    awayRecord: "2-1",
-    divisionRecord: "1-0",
-    rankings: {
-      scoringOffenseRank: 14,
-      scoringDefenseRank: 11,
-      totalOffenseRank: 8,
-      totalDefenseRank: 11,
-      passOffenseRank: 23,
-      rushOffenseRank: 2,
+  "buf": {
+    "pointsPerGame": 32,
+    "pointsAllowedPerGame": 23.4,
+    "totalYardsPerGame": 386.4,
+    "passingYardsPerGame": 239.8,
+    "rushingYardsPerGame": 146.6,
+    "yardsAllowedPerGame": 344.4,
+    "passYardsAllowedPerGame": 238.8,
+    "rushYardsAllowedPerGame": 91.6,
+    "turnoverDifferential": 0,
+    "sacks": 17,
+    "interceptions": 6,
+    "thirdDownPct": 43.2,
+    "redZonePct": 66.7,
+    "streak": "W4",
+    "homeRecord": "3-1",
+    "awayRecord": "4-0",
+    "divisionRecord": "0-1",
+    "rankings": {
+      "scoringOffenseRank": 1,
+      "scoringDefenseRank": 16,
+      "totalOffenseRank": 1,
+      "totalDefenseRank": 15,
+      "passOffenseRank": 13,
+      "rushOffenseRank": 2
     },
-    leaders: {
-      passing: { name: "Jalen Hurts", stat: "1,308 YDS • 7 TD • 4 INT", yards: 1308, touchdowns: 7 },
-      rushing: { name: "Saquon Barkley", stat: "658 YDS • 5 TD • 6.1 YPC", yards: 658, touchdowns: 5 },
-      receiving: { name: "A.J. Brown", stat: "16 REC • 324 YDS • 3 TD", receptions: 16, yards: 324, touchdowns: 3 },
-      defense: { name: "Zack Baun", stat: "57 TCKL • 2.0 SACKS", tacklesOrSacks: "57 Tackles" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Josh Allen",
+        "stat": "156/236, 2027 YDS, 12 TD, 6 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "James Cook III",
+        "stat": "169 CAR, 814 YDS, 8 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Dalton Kincaid",
+        "stat": "30 REC, 429 YDS, 2 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Greg Rousseau",
+        "stat": "8 SACKS",
+        "tacklesOrSacks": "8 Sacks"
+      }
+    }
   },
-  sf: {
-    pointsPerGame: 25.7,
-    pointsAllowedPerGame: 22.6,
-    totalYardsPerGame: 404.0,
-    passingYardsPerGame: 254.4,
-    rushingYardsPerGame: 149.6,
-    yardsAllowedPerGame: 316.3,
-    passYardsAllowedPerGame: 205.1,
-    rushYardsAllowedPerGame: 111.2,
-    turnoverDifferential: -1,
-    sacks: 18,
-    interceptions: 8,
-    thirdDownPct: 42.1,
-    redZonePct: 48.4,
-    streak: "Lost 1",
-    homeRecord: "2-2",
-    awayRecord: "1-2",
-    divisionRecord: "1-2",
-    rankings: {
-      scoringOffenseRank: 9,
-      scoringDefenseRank: 15,
-      totalOffenseRank: 4,
-      totalDefenseRank: 9,
-      passOffenseRank: 5,
-      rushOffenseRank: 7,
+  "phi": {
+    "pointsPerGame": 16.4,
+    "pointsAllowedPerGame": 24.6,
+    "totalYardsPerGame": 260.3,
+    "passingYardsPerGame": 171.7,
+    "rushingYardsPerGame": 88.6,
+    "yardsAllowedPerGame": 365,
+    "passYardsAllowedPerGame": 227.3,
+    "rushYardsAllowedPerGame": 126.1,
+    "turnoverDifferential": -4,
+    "sacks": 16,
+    "interceptions": 3,
+    "thirdDownPct": 35.9,
+    "redZonePct": 72.7,
+    "streak": "L7",
+    "homeRecord": "1-4",
+    "awayRecord": "1-3",
+    "divisionRecord": "1-3",
+    "rankings": {
+      "scoringOffenseRank": 30,
+      "scoringDefenseRank": 19,
+      "totalOffenseRank": 32,
+      "totalDefenseRank": 24,
+      "passOffenseRank": 29,
+      "rushOffenseRank": 28
     },
-    leaders: {
-      passing: { name: "Brock Purdy", stat: "1,841 YDS • 9 TD • 7 INT", yards: 1841, touchdowns: 9 },
-      rushing: { name: "Jordan Mason", stat: "667 YDS • 3 TD • 5.2 YPC", yards: 667, touchdowns: 3 },
-      receiving: { name: "George Kittle", stat: "34 REC • 375 YDS • 5 TD", receptions: 34, yards: 375, touchdowns: 5 },
-      defense: { name: "Nick Bosa", stat: "4.5 SACKS • 1 INT", tacklesOrSacks: "4.5 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Jalen Hurts",
+        "stat": "89/154, 933 YDS, 8 TD, 3 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Saquon Barkley",
+        "stat": "69 CAR, 296 YDS, 3 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Makai Lemon",
+        "stat": "37 REC, 312 YDS, 1 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Nolan Smith Jr.",
+        "stat": "5 SACKS",
+        "tacklesOrSacks": "5 Sacks"
+      }
+    }
   },
-  min: {
-    pointsPerGame: 28.0,
-    pointsAllowedPerGame: 17.8,
-    totalYardsPerGame: 334.2,
-    passingYardsPerGame: 213.8,
-    rushingYardsPerGame: 120.4,
-    yardsAllowedPerGame: 340.5,
-    passYardsAllowedPerGame: 263.0,
-    rushYardsAllowedPerGame: 77.5,
-    turnoverDifferential: 6,
-    sacks: 24,
-    interceptions: 11,
-    thirdDownPct: 41.2,
-    redZonePct: 64.7,
-    streak: "Won 5",
-    homeRecord: "3-0",
-    awayRecord: "2-0",
-    divisionRecord: "1-0",
-    rankings: {
-      scoringOffenseRank: 6,
-      scoringDefenseRank: 6,
-      totalOffenseRank: 18,
-      totalDefenseRank: 18,
-      passOffenseRank: 18,
-      rushOffenseRank: 15,
+  "min": {
+    "pointsPerGame": 18.3,
+    "pointsAllowedPerGame": 14.5,
+    "totalYardsPerGame": 266.8,
+    "passingYardsPerGame": 160.8,
+    "rushingYardsPerGame": 106,
+    "yardsAllowedPerGame": 305.8,
+    "passYardsAllowedPerGame": 161.1,
+    "rushYardsAllowedPerGame": 118.9,
+    "turnoverDifferential": 5,
+    "sacks": 29,
+    "interceptions": 9,
+    "thirdDownPct": 33.3,
+    "redZonePct": 52.9,
+    "streak": "L2",
+    "homeRecord": "3-1",
+    "awayRecord": "3-1",
+    "divisionRecord": "2-1",
+    "rankings": {
+      "scoringOffenseRank": 27,
+      "scoringDefenseRank": 1,
+      "totalOffenseRank": 31,
+      "totalDefenseRank": 3,
+      "passOffenseRank": 31,
+      "rushOffenseRank": 19
     },
-    leaders: {
-      passing: { name: "J.J. McCarthy / Vikings QB", stat: "1,111 YDS • 11 TD", yards: 1111, touchdowns: 11 },
-      rushing: { name: "Aaron Jones", stat: "350 YDS • 1 TD • 4.9 YPC", yards: 350, touchdowns: 1 },
-      receiving: { name: "Justin Jefferson", stat: "33 REC • 513 YDS • 5 TD", receptions: 33, yards: 513, touchdowns: 5 },
-      defense: { name: "Andrew Van Ginkel", stat: "5.0 SACKS • 2 INT • 2 TD", tacklesOrSacks: "5.0 Sacks • 2 TD" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Kyler Murray",
+        "stat": "100/154, 1022 YDS, 5 TD, 3 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Aaron Jones Sr.",
+        "stat": "115 CAR, 474 YDS, 2 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Justin Jefferson",
+        "stat": "31 REC, 393 YDS, 4 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Andrew Van Ginkel",
+        "stat": "7.5 SACKS",
+        "tacklesOrSacks": "7.5 Sacks"
+      }
+    }
   },
-  gb: {
-    pointsPerGame: 26.6,
-    pointsAllowedPerGame: 20.4,
-    totalYardsPerGame: 382.4,
-    passingYardsPerGame: 227.4,
-    rushingYardsPerGame: 155.0,
-    yardsAllowedPerGame: 314.0,
-    passYardsAllowedPerGame: 200.1,
-    rushYardsAllowedPerGame: 113.9,
-    turnoverDifferential: 8,
-    sacks: 20,
-    interceptions: 9,
-    thirdDownPct: 43.5,
-    redZonePct: 62.1,
-    streak: "Won 3",
-    homeRecord: "3-1",
-    awayRecord: "2-1",
-    divisionRecord: "0-1",
-    rankings: {
-      scoringOffenseRank: 7,
-      scoringDefenseRank: 10,
-      totalOffenseRank: 7,
-      totalDefenseRank: 8,
-      passOffenseRank: 13,
-      rushOffenseRank: 5,
+  "gb": {
+    "pointsPerGame": 24,
+    "pointsAllowedPerGame": 21.2,
+    "totalYardsPerGame": 347.9,
+    "passingYardsPerGame": 279.7,
+    "rushingYardsPerGame": 68.2,
+    "yardsAllowedPerGame": 340.9,
+    "passYardsAllowedPerGame": 213.9,
+    "rushYardsAllowedPerGame": 109,
+    "turnoverDifferential": 8,
+    "sacks": 26,
+    "interceptions": 13,
+    "thirdDownPct": 37.8,
+    "redZonePct": 55.9,
+    "streak": "W2",
+    "homeRecord": "3-1",
+    "awayRecord": "3-2",
+    "divisionRecord": "1-2",
+    "rankings": {
+      "scoringOffenseRank": 12,
+      "scoringDefenseRank": 11,
+      "totalOffenseRank": 12,
+      "totalDefenseRank": 13,
+      "passOffenseRank": 2,
+      "rushOffenseRank": 32
     },
-    leaders: {
-      passing: { name: "Jordan Love", stat: "1,351 YDS • 15 TD • 8 INT", yards: 1351, touchdowns: 15 },
-      rushing: { name: "Josh Jacobs", stat: "464 YDS • 1 TD", yards: 464, touchdowns: 1 },
-      receiving: { name: "Jayden Reed", stat: "29 REC • 442 YDS • 3 TD", receptions: 29, yards: 442, touchdowns: 3 },
-      defense: { name: "Xavier McKinney", stat: "5 INT • 1 FR", tacklesOrSacks: "5 INT" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Jordan Love",
+        "stat": "215/341, 2618 YDS, 19 TD, 6 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Kaleb Johnson",
+        "stat": "42 CAR, 172 YDS, 1 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Christian Watson",
+        "stat": "49 REC, 879 YDS, 7 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Lukas Van Ness",
+        "stat": "4.5 SACKS",
+        "tacklesOrSacks": "4.5 Sacks"
+      }
+    }
   },
-  hou: {
-    pointsPerGame: 23.6,
-    pointsAllowedPerGame: 22.7,
-    totalYardsPerGame: 366.1,
-    passingYardsPerGame: 256.7,
-    rushingYardsPerGame: 109.4,
-    yardsAllowedPerGame: 277.9,
-    passYardsAllowedPerGame: 167.7,
-    rushYardsAllowedPerGame: 110.2,
-    turnoverDifferential: 1,
-    sacks: 21,
-    interceptions: 5,
-    thirdDownPct: 44.0,
-    redZonePct: 58.3,
-    streak: "Won 1",
-    homeRecord: "3-0",
-    awayRecord: "2-2",
-    divisionRecord: "2-0",
-    rankings: {
-      scoringOffenseRank: 13,
-      scoringDefenseRank: 16,
-      totalOffenseRank: 9,
-      totalDefenseRank: 3,
-      passOffenseRank: 3,
-      rushOffenseRank: 20,
+  "hou": {
+    "pointsPerGame": 26.1,
+    "pointsAllowedPerGame": 24,
+    "totalYardsPerGame": 356.5,
+    "passingYardsPerGame": 269.4,
+    "rushingYardsPerGame": 87.1,
+    "yardsAllowedPerGame": 360,
+    "passYardsAllowedPerGame": 235.6,
+    "rushYardsAllowedPerGame": 103,
+    "turnoverDifferential": 4,
+    "sacks": 29,
+    "interceptions": 4,
+    "thirdDownPct": 39.8,
+    "redZonePct": 62.1,
+    "streak": "W1",
+    "homeRecord": "0-4",
+    "awayRecord": "3-1",
+    "divisionRecord": "2-1",
+    "rankings": {
+      "scoringOffenseRank": 9,
+      "scoringDefenseRank": 18,
+      "totalOffenseRank": 11,
+      "totalDefenseRank": 21,
+      "passOffenseRank": 3,
+      "rushOffenseRank": 29
     },
-    leaders: {
-      passing: { name: "C.J. Stroud", stat: "1,663 YDS • 10 TD • 4 INT", yards: 1663, touchdowns: 10 },
-      rushing: { name: "Joe Mixon", stat: "375 YDS • 4 TD • 5.2 YPC", yards: 375, touchdowns: 4 },
-      receiving: { name: "Stefon Diggs", stat: "42 REC • 415 YDS • 3 TD", receptions: 42, yards: 415, touchdowns: 3 },
-      defense: { name: "Will Anderson Jr.", stat: "5.5 SACKS • 8 TFL", tacklesOrSacks: "5.5 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "C.J. Stroud",
+        "stat": "181/282, 2251 YDS, 16 TD, 2 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Woody Marks",
+        "stat": "95 CAR, 341 YDS, 2 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Nico Collins",
+        "stat": "28 REC, 384 YDS, 4 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Will Anderson Jr.",
+        "stat": "9.5 SACKS",
+        "tacklesOrSacks": "9.5 Sacks"
+      }
+    }
   },
-  pit: {
-    pointsPerGame: 23.4,
-    pointsAllowedPerGame: 14.4,
-    totalYardsPerGame: 312.3,
-    passingYardsPerGame: 180.3,
-    rushingYardsPerGame: 132.0,
-    yardsAllowedPerGame: 298.3,
-    passYardsAllowedPerGame: 217.3,
-    rushYardsAllowedPerGame: 81.0,
-    turnoverDifferential: 9,
-    sacks: 17,
-    interceptions: 7,
-    thirdDownPct: 38.6,
-    redZonePct: 45.5,
-    streak: "Won 2",
-    homeRecord: "2-1",
-    awayRecord: "3-1",
-    divisionRecord: "0-0",
-    rankings: {
-      scoringOffenseRank: 15,
-      scoringDefenseRank: 2,
-      totalOffenseRank: 24,
-      totalDefenseRank: 7,
-      passOffenseRank: 28,
-      rushOffenseRank: 10,
+  "wsh": {
+    "pointsPerGame": 21.8,
+    "pointsAllowedPerGame": 24.8,
+    "totalYardsPerGame": 327,
+    "passingYardsPerGame": 210.2,
+    "rushingYardsPerGame": 116.8,
+    "yardsAllowedPerGame": 363.9,
+    "passYardsAllowedPerGame": 244.8,
+    "rushYardsAllowedPerGame": 103.8,
+    "turnoverDifferential": 7,
+    "sacks": 18,
+    "interceptions": 6,
+    "thirdDownPct": 33.3,
+    "redZonePct": 54.5,
+    "streak": "W1",
+    "homeRecord": "2-2-1",
+    "awayRecord": "1-3",
+    "divisionRecord": "2-2-1",
+    "rankings": {
+      "scoringOffenseRank": 21,
+      "scoringDefenseRank": 20,
+      "totalOffenseRank": 18,
+      "totalDefenseRank": 23,
+      "passOffenseRank": 21,
+      "rushOffenseRank": 14
     },
-    leaders: {
-      passing: { name: "Russell Wilson", stat: "264 YDS • 2 TD • 1 Rush TD", yards: 264, touchdowns: 2 },
-      rushing: { name: "Najee Harris", stat: "478 YDS • 2 TD", yards: 478, touchdowns: 2 },
-      receiving: { name: "George Pickens", stat: "31 REC • 474 YDS • 1 TD", receptions: 31, yards: 474, touchdowns: 1 },
-      defense: { name: "T.J. Watt", stat: "4.5 SACKS • 3 FF", tacklesOrSacks: "4.5 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Jayden Daniels",
+        "stat": "138/213, 1499 YDS, 10 TD, 2 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Jayden Daniels",
+        "stat": "42 CAR, 280 YDS, 2 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Stefon Diggs",
+        "stat": "36 REC, 386 YDS, 6 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Odafe Oweh",
+        "stat": "5 SACKS",
+        "tacklesOrSacks": "5 Sacks"
+      }
+    }
   },
-  dal: {
-    pointsPerGame: 21.0,
-    pointsAllowedPerGame: 28.0,
-    totalYardsPerGame: 336.5,
-    passingYardsPerGame: 259.3,
-    rushingYardsPerGame: 77.2,
-    yardsAllowedPerGame: 356.5,
-    passYardsAllowedPerGame: 213.3,
-    rushYardsAllowedPerGame: 143.2,
-    turnoverDifferential: -6,
-    sacks: 14,
-    interceptions: 4,
-    thirdDownPct: 38.5,
-    redZonePct: 52.4,
-    streak: "Lost 1",
-    homeRecord: "0-3",
-    awayRecord: "3-0",
-    divisionRecord: "1-0",
-    rankings: {
-      scoringOffenseRank: 20,
-      scoringDefenseRank: 31,
-      totalOffenseRank: 16,
-      totalDefenseRank: 23,
-      passOffenseRank: 2,
-      rushOffenseRank: 32,
+  "pit": {
+    "pointsPerGame": 22.5,
+    "pointsAllowedPerGame": 18,
+    "totalYardsPerGame": 328.4,
+    "passingYardsPerGame": 210.5,
+    "rushingYardsPerGame": 117.9,
+    "yardsAllowedPerGame": 325.9,
+    "passYardsAllowedPerGame": 221.8,
+    "rushYardsAllowedPerGame": 83.9,
+    "turnoverDifferential": 5,
+    "sacks": 26,
+    "interceptions": 7,
+    "thirdDownPct": 37.9,
+    "redZonePct": 50,
+    "streak": "W4",
+    "homeRecord": "4-0",
+    "awayRecord": "2-2",
+    "divisionRecord": "2-1",
+    "rankings": {
+      "scoringOffenseRank": 17,
+      "scoringDefenseRank": 4,
+      "totalOffenseRank": 16,
+      "totalDefenseRank": 8,
+      "passOffenseRank": 19,
+      "rushOffenseRank": 11
     },
-    leaders: {
-      passing: { name: "Dak Prescott", stat: "1,602 YDS • 8 TD • 6 INT", yards: 1602, touchdowns: 8 },
-      rushing: { name: "Rico Dowdle", stat: "246 YDS • 0 TD", yards: 246, touchdowns: 0 },
-      receiving: { name: "CeeDee Lamb", stat: "32 REC • 467 YDS • 2 TD", receptions: 32, yards: 467, touchdowns: 2 },
-      defense: { name: "Micah Parsons", stat: "1.0 SACK • 14 QB Hits", tacklesOrSacks: "1.0 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Aaron Rodgers",
+        "stat": "175/288, 1871 YDS, 13 TD, 6 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Jaylen Warren",
+        "stat": "119 CAR, 704 YDS, 2 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "DK Metcalf",
+        "stat": "33 REC, 378 YDS, 1 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "T.J. Watt",
+        "stat": "7.5 SACKS",
+        "tacklesOrSacks": "7.5 Sacks"
+      }
+    }
   },
-  wsh: {
-    pointsPerGame: 31.1,
-    pointsAllowedPerGame: 21.7,
-    totalYardsPerGame: 384.1,
-    passingYardsPerGame: 219.0,
-    rushingYardsPerGame: 165.1,
-    yardsAllowedPerGame: 325.4,
-    passYardsAllowedPerGame: 207.9,
-    rushYardsAllowedPerGame: 117.5,
-    turnoverDifferential: 4,
-    sacks: 18,
-    interceptions: 3,
-    thirdDownPct: 46.2,
-    redZonePct: 70.8,
-    streak: "Won 1",
-    homeRecord: "3-0",
-    awayRecord: "2-2",
-    divisionRecord: "1-0",
-    rankings: {
-      scoringOffenseRank: 3,
-      scoringDefenseRank: 13,
-      totalOffenseRank: 5,
-      totalDefenseRank: 15,
-      passOffenseRank: 16,
-      rushOffenseRank: 3,
+  "atl": {
+    "pointsPerGame": 20.9,
+    "pointsAllowedPerGame": 24.8,
+    "totalYardsPerGame": 322.6,
+    "passingYardsPerGame": 185.4,
+    "rushingYardsPerGame": 137.2,
+    "yardsAllowedPerGame": 360,
+    "passYardsAllowedPerGame": 228,
+    "rushYardsAllowedPerGame": 118.8,
+    "turnoverDifferential": -8,
+    "sacks": 20,
+    "interceptions": 3,
+    "thirdDownPct": 34.9,
+    "redZonePct": 61.5,
+    "streak": "L2",
+    "homeRecord": "1-4",
+    "awayRecord": "2-2",
+    "divisionRecord": "1-2",
+    "rankings": {
+      "scoringOffenseRank": 23,
+      "scoringDefenseRank": 21,
+      "totalOffenseRank": 21,
+      "totalDefenseRank": 22,
+      "passOffenseRank": 25,
+      "rushOffenseRank": 6
     },
-    leaders: {
-      passing: { name: "Jayden Daniels", stat: "1,410 YDS • 6 TD • 2 INT • 75.6%", yards: 1410, touchdowns: 6 },
-      rushing: { name: "Brian Robinson Jr.", stat: "396 YDS • 6 TD", yards: 396, touchdowns: 6 },
-      receiving: { name: "Terry McLaurin", stat: "35 REC • 454 YDS • 4 TD", receptions: 35, yards: 454, touchdowns: 4 },
-      defense: { name: "Frankie Luvu", stat: "4.0 SACKS • 49 TCKL", tacklesOrSacks: "4.0 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Michael Penix Jr.",
+        "stat": "124/199, 1444 YDS, 10 TD, 6 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Bijan Robinson",
+        "stat": "169 CAR, 880 YDS, 5 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Drake London",
+        "stat": "44 REC, 692 YDS, 1 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Za'Darius Smith",
+        "stat": "4.5 SACKS",
+        "tacklesOrSacks": "4.5 Sacks"
+      }
+    }
   },
-  chi: {
-    pointsPerGame: 24.7,
-    pointsAllowedPerGame: 16.8,
-    totalYardsPerGame: 322.2,
-    passingYardsPerGame: 217.2,
-    rushingYardsPerGame: 105.0,
-    yardsAllowedPerGame: 295.0,
-    passYardsAllowedPerGame: 183.0,
-    rushYardsAllowedPerGame: 112.0,
-    turnoverDifferential: 6,
-    sacks: 19,
-    interceptions: 7,
-    thirdDownPct: 37.0,
-    redZonePct: 61.9,
-    streak: "Won 3",
-    homeRecord: "4-0",
-    awayRecord: "0-2",
-    divisionRecord: "0-0",
-    rankings: {
-      scoringOffenseRank: 12,
-      scoringDefenseRank: 4,
-      totalOffenseRank: 21,
-      totalDefenseRank: 5,
-      passOffenseRank: 17,
-      rushOffenseRank: 22,
+  "tb": {
+    "pointsPerGame": 22.4,
+    "pointsAllowedPerGame": 19.8,
+    "totalYardsPerGame": 305.8,
+    "passingYardsPerGame": 141.9,
+    "rushingYardsPerGame": 163.9,
+    "yardsAllowedPerGame": 305.8,
+    "passYardsAllowedPerGame": 213.8,
+    "rushYardsAllowedPerGame": 79.1,
+    "turnoverDifferential": 7,
+    "sacks": 17,
+    "interceptions": 16,
+    "thirdDownPct": 36.3,
+    "redZonePct": 48.4,
+    "streak": "L1",
+    "homeRecord": "1-4",
+    "awayRecord": "2-2",
+    "divisionRecord": "2-0",
+    "rankings": {
+      "scoringOffenseRank": 18,
+      "scoringDefenseRank": 7,
+      "totalOffenseRank": 25,
+      "totalDefenseRank": 4,
+      "passOffenseRank": 32,
+      "rushOffenseRank": 1
     },
-    leaders: {
-      passing: { name: "Caleb Williams", stat: "1,317 YDS • 9 TD • 5 INT", yards: 1317, touchdowns: 9 },
-      rushing: { name: "D'Andre Swift", stat: "398 YDS • 3 TD", yards: 398, touchdowns: 3 },
-      receiving: { name: "DJ Moore", stat: "31 REC • 314 YDS • 3 TD", receptions: 31, yards: 314, touchdowns: 3 },
-      defense: { name: "Montez Sweat", stat: "3.5 SACKS • 1 FF", tacklesOrSacks: "3.5 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Baker Mayfield",
+        "stat": "86/142, 922 YDS, 3 TD, 4 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Bucky Irving",
+        "stat": "167 CAR, 825 YDS, 7 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Emeka Egbuka",
+        "stat": "31 REC, 278 YDS, 2 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "David Walker",
+        "stat": "4 SACKS",
+        "tacklesOrSacks": "4 Sacks"
+      }
+    }
   },
-  cin: {
-    pointsPerGame: 25.4,
-    pointsAllowedPerGame: 23.7,
-    totalYardsPerGame: 341.6,
-    passingYardsPerGame: 251.1,
-    rushingYardsPerGame: 90.5,
-    yardsAllowedPerGame: 343.3,
-    passYardsAllowedPerGame: 216.7,
-    rushYardsAllowedPerGame: 126.6,
-    turnoverDifferential: 2,
-    sacks: 12,
-    interceptions: 6,
-    thirdDownPct: 43.1,
-    redZonePct: 68.0,
-    streak: "Won 2",
-    homeRecord: "0-3",
-    awayRecord: "3-1",
-    divisionRecord: "1-1",
-    rankings: {
-      scoringOffenseRank: 10,
-      scoringDefenseRank: 19,
-      totalOffenseRank: 13,
-      totalDefenseRank: 19,
-      passOffenseRank: 6,
-      rushOffenseRank: 28,
+  "chi": {
+    "pointsPerGame": 26.8,
+    "pointsAllowedPerGame": 20.4,
+    "totalYardsPerGame": 383,
+    "passingYardsPerGame": 241,
+    "rushingYardsPerGame": 142,
+    "yardsAllowedPerGame": 326.7,
+    "passYardsAllowedPerGame": 219.8,
+    "rushYardsAllowedPerGame": 91.1,
+    "turnoverDifferential": -4,
+    "sacks": 26,
+    "interceptions": 7,
+    "thirdDownPct": 45.3,
+    "redZonePct": 55.3,
+    "streak": "W4",
+    "homeRecord": "4-1",
+    "awayRecord": "3-1",
+    "divisionRecord": "0-2",
+    "rankings": {
+      "scoringOffenseRank": 7,
+      "scoringDefenseRank": 9,
+      "totalOffenseRank": 3,
+      "totalDefenseRank": 9,
+      "passOffenseRank": 12,
+      "rushOffenseRank": 3
     },
-    leaders: {
-      passing: { name: "Joe Burrow", stat: "1,759 YDS • 14 TD • 2 INT", yards: 1759, touchdowns: 14 },
-      rushing: { name: "Chase Brown", stat: "327 YDS • 3 TD", yards: 327, touchdowns: 3 },
-      receiving: { name: "Ja'Marr Chase", stat: "39 REC • 620 YDS • 6 TD", receptions: 39, yards: 620, touchdowns: 6 },
-      defense: { name: "Trey Hendrickson", stat: "7.0 SACKS • 1 FF", tacklesOrSacks: "7.0 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Caleb Williams",
+        "stat": "134/195, 1546 YDS, 8 TD, 5 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "D'Andre Swift",
+        "stat": "155 CAR, 576 YDS, 10 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Luther Burden III",
+        "stat": "49 REC, 644 YDS, 4 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Austin Booker",
+        "stat": "5 SACKS",
+        "tacklesOrSacks": "5 Sacks"
+      }
+    }
   },
-  tb: {
-    pointsPerGame: 29.9,
-    pointsAllowedPerGame: 26.0,
-    totalYardsPerGame: 383.4,
-    passingYardsPerGame: 247.0,
-    rushingYardsPerGame: 136.4,
-    yardsAllowedPerGame: 384.6,
-    passYardsAllowedPerGame: 254.0,
-    rushYardsAllowedPerGame: 130.6,
-    turnoverDifferential: 2,
-    sacks: 17,
-    interceptions: 5,
-    thirdDownPct: 47.1,
-    redZonePct: 70.0,
-    streak: "Lost 1",
-    homeRecord: "2-2",
-    awayRecord: "2-1",
-    divisionRecord: "1-1",
-    rankings: {
-      scoringOffenseRank: 4,
-      scoringDefenseRank: 28,
-      totalOffenseRank: 6,
-      totalDefenseRank: 29,
-      passOffenseRank: 7,
-      rushOffenseRank: 8,
+  "dal": {
+    "pointsPerGame": 27.3,
+    "pointsAllowedPerGame": 26.2,
+    "totalYardsPerGame": 360.5,
+    "passingYardsPerGame": 256.9,
+    "rushingYardsPerGame": 103.6,
+    "yardsAllowedPerGame": 384.4,
+    "passYardsAllowedPerGame": 225.2,
+    "rushYardsAllowedPerGame": 147.4,
+    "turnoverDifferential": -1,
+    "sacks": 17,
+    "interceptions": 4,
+    "thirdDownPct": 45.3,
+    "redZonePct": 71.4,
+    "streak": "W1",
+    "homeRecord": "1-3",
+    "awayRecord": "3-2",
+    "divisionRecord": "2-1",
+    "rankings": {
+      "scoringOffenseRank": 6,
+      "scoringDefenseRank": 26,
+      "totalOffenseRank": 10,
+      "totalDefenseRank": 29,
+      "passOffenseRank": 6,
+      "rushOffenseRank": 21
     },
-    leaders: {
-      passing: { name: "Baker Mayfield", stat: "1,859 YDS • 18 TD • 7 INT", yards: 1859, touchdowns: 18 },
-      rushing: { name: "Bucky Irving", stat: "351 YDS • 3 TD • 5.2 YPC", yards: 351, touchdowns: 3 },
-      receiving: { name: "Chris Godwin", stat: "50 REC • 576 YDS • 5 TD", receptions: 50, yards: 576, touchdowns: 5 },
-      defense: { name: "Lavonte David", stat: "49 TCKL • 2.5 SACKS • 1 INT", tacklesOrSacks: "49 Tackles" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Dak Prescott",
+        "stat": "218/336, 2381 YDS, 16 TD, 5 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Javonte Williams",
+        "stat": "154 CAR, 629 YDS, 9 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "CeeDee Lamb",
+        "stat": "70 REC, 904 YDS, 7 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Quinnen Williams",
+        "stat": "5 SACKS",
+        "tacklesOrSacks": "5 Sacks"
+      }
+    }
   },
-  atl: {
-    pointsPerGame: 23.3,
-    pointsAllowedPerGame: 24.1,
-    totalYardsPerGame: 355.0,
-    passingYardsPerGame: 235.3,
-    rushingYardsPerGame: 119.7,
-    yardsAllowedPerGame: 336.1,
-    passYardsAllowedPerGame: 199.1,
-    rushYardsAllowedPerGame: 137.0,
-    turnoverDifferential: -1,
-    sacks: 6,
-    interceptions: 5,
-    thirdDownPct: 41.5,
-    redZonePct: 56.5,
-    streak: "Lost 1",
-    homeRecord: "2-2",
-    awayRecord: "2-1",
-    divisionRecord: "3-0",
-    rankings: {
-      scoringOffenseRank: 16,
-      scoringDefenseRank: 21,
-      totalOffenseRank: 11,
-      totalDefenseRank: 17,
-      passOffenseRank: 11,
-      rushOffenseRank: 14,
+  "cin": {
+    "pointsPerGame": 30,
+    "pointsAllowedPerGame": 21.9,
+    "totalYardsPerGame": 371.1,
+    "passingYardsPerGame": 285.5,
+    "rushingYardsPerGame": 85.6,
+    "yardsAllowedPerGame": 375.3,
+    "passYardsAllowedPerGame": 228.3,
+    "rushYardsAllowedPerGame": 126.6,
+    "turnoverDifferential": 2,
+    "sacks": 23,
+    "interceptions": 5,
+    "thirdDownPct": 53.6,
+    "redZonePct": 68.8,
+    "streak": "W4",
+    "homeRecord": "2-1",
+    "awayRecord": "4-1",
+    "divisionRecord": "1-1",
+    "rankings": {
+      "scoringOffenseRank": 2,
+      "scoringDefenseRank": 14,
+      "totalOffenseRank": 7,
+      "totalDefenseRank": 26,
+      "passOffenseRank": 1,
+      "rushOffenseRank": 30
     },
-    leaders: {
-      passing: { name: "Kirk Cousins", stat: "1,830 YDS • 10 TD • 7 INT", yards: 1830, touchdowns: 10 },
-      rushing: { name: "Bijan Robinson", stat: "438 YDS • 4 TD", yards: 438, touchdowns: 4 },
-      receiving: { name: "Drake London", stat: "38 REC • 428 YDS • 5 TD", receptions: 38, yards: 428, touchdowns: 5 },
-      defense: { name: "Jessie Bates III", stat: "2 INT • 2 FF • 46 TCKL", tacklesOrSacks: "2 INT • 2 FF" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Joe Burrow",
+        "stat": "219/296, 2386 YDS, 23 TD, 6 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Chase Brown",
+        "stat": "103 CAR, 397 YDS, 1 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Tee Higgins",
+        "stat": "48 REC, 758 YDS, 6 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Boye Mafe",
+        "stat": "5.5 SACKS",
+        "tacklesOrSacks": "5.5 Sacks"
+      }
+    }
   },
-  sea: {
-    pointsPerGame: 25.7,
-    pointsAllowedPerGame: 23.4,
-    totalYardsPerGame: 368.3,
-    passingYardsPerGame: 270.9,
-    rushingYardsPerGame: 97.4,
-    yardsAllowedPerGame: 358.7,
-    passYardsAllowedPerGame: 212.6,
-    rushYardsAllowedPerGame: 146.1,
-    turnoverDifferential: 1,
-    sacks: 17,
-    interceptions: 4,
-    thirdDownPct: 39.0,
-    redZonePct: 57.7,
-    streak: "Won 1",
-    homeRecord: "2-2",
-    awayRecord: "2-1",
-    divisionRecord: "0-1",
-    rankings: {
-      scoringOffenseRank: 8,
-      scoringDefenseRank: 18,
-      totalOffenseRank: 8,
-      totalDefenseRank: 24,
-      passOffenseRank: 1,
-      rushOffenseRank: 26,
+  "nyj": {
+    "pointsPerGame": 20.2,
+    "pointsAllowedPerGame": 24.8,
+    "totalYardsPerGame": 309.9,
+    "passingYardsPerGame": 204.7,
+    "rushingYardsPerGame": 105.2,
+    "yardsAllowedPerGame": 340.1,
+    "passYardsAllowedPerGame": 197.8,
+    "rushYardsAllowedPerGame": 128,
+    "turnoverDifferential": 3,
+    "sacks": 22,
+    "interceptions": 1,
+    "thirdDownPct": 35.4,
+    "redZonePct": 40.7,
+    "streak": "L4",
+    "homeRecord": "1-3",
+    "awayRecord": "1-4",
+    "divisionRecord": "0-2",
+    "rankings": {
+      "scoringOffenseRank": 25,
+      "scoringDefenseRank": 22,
+      "totalOffenseRank": 23,
+      "totalDefenseRank": 12,
+      "passOffenseRank": 22,
+      "rushOffenseRank": 20
     },
-    leaders: {
-      passing: { name: "Geno Smith", stat: "1,985 YDS • 8 TD • 6 INT", yards: 1985, touchdowns: 8 },
-      rushing: { name: "Kenneth Walker III", stat: "303 YDS • 6 TD", yards: 303, touchdowns: 6 },
-      receiving: { name: "DK Metcalf", stat: "35 REC • 568 YDS • 3 TD", receptions: 35, yards: 568, touchdowns: 3 },
-      defense: { name: "Boye Mafe", stat: "4.0 SACKS • 1 FF", tacklesOrSacks: "4.0 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Geno Smith",
+        "stat": "183/271, 2078 YDS, 12 TD, 3 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Braelon Allen",
+        "stat": "120 CAR, 598 YDS, 3 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Garrett Wilson",
+        "stat": "43 REC, 527 YDS, 3 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "David Bailey",
+        "stat": "7.5 SACKS",
+        "tacklesOrSacks": "7.5 Sacks"
+      }
+    }
   },
-  lac: {
-    pointsPerGame: 17.7,
-    pointsAllowedPerGame: 13.8,
-    totalYardsPerGame: 281.2,
-    passingYardsPerGame: 164.8,
-    rushingYardsPerGame: 116.4,
-    yardsAllowedPerGame: 279.8,
-    passYardsAllowedPerGame: 188.6,
-    rushYardsAllowedPerGame: 91.2,
-    turnoverDifferential: 4,
-    sacks: 13,
-    interceptions: 6,
-    thirdDownPct: 35.4,
-    redZonePct: 46.2,
-    streak: "Lost 1",
-    homeRecord: "1-1",
-    awayRecord: "2-2",
-    divisionRecord: "2-1",
-    rankings: {
-      scoringOffenseRank: 27,
-      scoringDefenseRank: 1,
-      totalOffenseRank: 31,
-      totalDefenseRank: 2,
-      passOffenseRank: 30,
-      rushOffenseRank: 17,
+  "mia": {
+    "pointsPerGame": 15.8,
+    "pointsAllowedPerGame": 25,
+    "totalYardsPerGame": 282.3,
+    "passingYardsPerGame": 164.8,
+    "rushingYardsPerGame": 117.5,
+    "yardsAllowedPerGame": 336.4,
+    "passYardsAllowedPerGame": 214.4,
+    "rushYardsAllowedPerGame": 111.8,
+    "turnoverDifferential": -3,
+    "sacks": 12,
+    "interceptions": 5,
+    "thirdDownPct": 41.6,
+    "redZonePct": 47.6,
+    "streak": "L2",
+    "homeRecord": "0-4",
+    "awayRecord": "1-3",
+    "divisionRecord": "1-1",
+    "rankings": {
+      "scoringOffenseRank": 31,
+      "scoringDefenseRank": 24,
+      "totalOffenseRank": 28,
+      "totalDefenseRank": 11,
+      "passOffenseRank": 30,
+      "rushOffenseRank": 12
     },
-    leaders: {
-      passing: { name: "Justin Herbert", stat: "1,164 YDS • 6 TD • 1 INT", yards: 1164, touchdowns: 6 },
-      rushing: { name: "J.K. Dobbins", stat: "478 YDS • 3 TD • 5.0 YPC", yards: 478, touchdowns: 3 },
-      receiving: { name: "Ladd McConkey", stat: "24 REC • 265 YDS • 2 TD", receptions: 24, yards: 265, touchdowns: 2 },
-      defense: { name: "Khalil Mack", stat: "2.5 SACKS • 1 FF", tacklesOrSacks: "2.5 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Malik Willis",
+        "stat": "121/208, 1396 YDS, 6 TD, 6 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Ollie Gordon II",
+        "stat": "107 CAR, 463 YDS, 4 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Malik Washington",
+        "stat": "33 REC, 350 YDS, 1 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Chop Robinson",
+        "stat": "4 SACKS",
+        "tacklesOrSacks": "4 Sacks"
+      }
+    }
   },
-  nyj: {
-    pointsPerGame: 18.3,
-    pointsAllowedPerGame: 20.7,
-    totalYardsPerGame: 308.7,
-    passingYardsPerGame: 226.3,
-    rushingYardsPerGame: 82.4,
-    yardsAllowedPerGame: 292.9,
-    passYardsAllowedPerGame: 164.7,
-    rushYardsAllowedPerGame: 128.2,
-    turnoverDifferential: -2,
-    sacks: 21,
-    interceptions: 5,
-    thirdDownPct: 34.8,
-    redZonePct: 53.8,
-    streak: "Lost 4",
-    homeRecord: "1-2",
-    awayRecord: "1-3",
-    divisionRecord: "1-1",
-    rankings: {
-      scoringOffenseRank: 24,
-      scoringDefenseRank: 12,
-      totalOffenseRank: 23,
-      totalDefenseRank: 7,
-      passOffenseRank: 14,
-      rushOffenseRank: 30,
+  "sea": {
+    "pointsPerGame": 22.4,
+    "pointsAllowedPerGame": 18,
+    "totalYardsPerGame": 327.8,
+    "passingYardsPerGame": 217,
+    "rushingYardsPerGame": 110.8,
+    "yardsAllowedPerGame": 257.9,
+    "passYardsAllowedPerGame": 155.1,
+    "rushYardsAllowedPerGame": 89.1,
+    "turnoverDifferential": -1,
+    "sacks": 21,
+    "interceptions": 8,
+    "thirdDownPct": 37.4,
+    "redZonePct": 50,
+    "streak": "W1",
+    "homeRecord": "4-2",
+    "awayRecord": "1-2",
+    "divisionRecord": "2-1",
+    "rankings": {
+      "scoringOffenseRank": 19,
+      "scoringDefenseRank": 5,
+      "totalOffenseRank": 17,
+      "totalDefenseRank": 1,
+      "passOffenseRank": 17,
+      "rushOffenseRank": 18
     },
-    leaders: {
-      passing: { name: "Aaron Rodgers", stat: "1,663 YDS • 10 TD • 7 INT", yards: 1663, touchdowns: 10 },
-      rushing: { name: "Breece Hall", stat: "348 YDS • 3 TD • 32 REC", yards: 348, touchdowns: 3 },
-      receiving: { name: "Garrett Wilson", stat: "46 REC • 460 YDS • 3 TD", receptions: 46, yards: 460, touchdowns: 3 },
-      defense: { name: "Will McDonald IV", stat: "8.0 SACKS • 2 FF", tacklesOrSacks: "8.0 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Sam Darnold",
+        "stat": "127/211, 1478 YDS, 10 TD, 9 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Emanuel Wilson",
+        "stat": "111 CAR, 403 YDS, 3 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Jaxon Smith-Njigba",
+        "stat": "71 REC, 1036 YDS, 9 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Byron Murphy II",
+        "stat": "4 SACKS",
+        "tacklesOrSacks": "4 Sacks"
+      }
+    }
   },
-  lar: {
-    pointsPerGame: 19.0,
-    pointsAllowedPerGame: 25.7,
-    totalYardsPerGame: 310.8,
-    passingYardsPerGame: 209.5,
-    rushingYardsPerGame: 101.3,
-    yardsAllowedPerGame: 360.7,
-    passYardsAllowedPerGame: 212.8,
-    rushYardsAllowedPerGame: 147.9,
-    turnoverDifferential: -1,
-    sacks: 11,
-    interceptions: 3,
-    thirdDownPct: 36.8,
-    redZonePct: 50.0,
-    streak: "Won 1",
-    homeRecord: "2-1",
-    awayRecord: "0-3",
-    divisionRecord: "1-1",
-    rankings: {
-      scoringOffenseRank: 23,
-      scoringDefenseRank: 27,
-      totalOffenseRank: 22,
-      totalDefenseRank: 25,
-      passOffenseRank: 20,
-      rushOffenseRank: 24,
+  "lac": {
+    "pointsPerGame": 15.1,
+    "pointsAllowedPerGame": 27.4,
+    "totalYardsPerGame": 291.6,
+    "passingYardsPerGame": 177.1,
+    "rushingYardsPerGame": 114.5,
+    "yardsAllowedPerGame": 352.6,
+    "passYardsAllowedPerGame": 221.3,
+    "rushYardsAllowedPerGame": 122,
+    "turnoverDifferential": -7,
+    "sacks": 13,
+    "interceptions": 7,
+    "thirdDownPct": 34.2,
+    "redZonePct": 47.4,
+    "streak": "L8",
+    "homeRecord": "0-4",
+    "awayRecord": "0-4",
+    "divisionRecord": "0-3",
+    "rankings": {
+      "scoringOffenseRank": 32,
+      "scoringDefenseRank": 28,
+      "totalOffenseRank": 26,
+      "totalDefenseRank": 18,
+      "passOffenseRank": 26,
+      "rushOffenseRank": 16
     },
-    leaders: {
-      passing: { name: "Matthew Stafford", stat: "1,392 YDS • 3 TD • 4 INT", yards: 1392, touchdowns: 3 },
-      rushing: { name: "Kyren Williams", stat: "436 YDS • 8 TD", yards: 436, touchdowns: 8 },
-      receiving: { name: "Tutu Atwell", stat: "23 REC • 332 YDS • 0 TD", receptions: 23, yards: 332, touchdowns: 0 },
-      defense: { name: "Kobie Turner", stat: "3.0 SACKS • 25 TCKL", tacklesOrSacks: "3.0 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Justin Herbert",
+        "stat": "144/235, 1591 YDS, 6 TD, 11 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Omarion Hampton",
+        "stat": "102 CAR, 369 YDS, 3 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Ladd McConkey",
+        "stat": "17 REC, 286 YDS, 1 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Khalil Mack",
+        "stat": "3 SACKS",
+        "tacklesOrSacks": "3 Sacks"
+      }
+    }
   },
-  ari: {
-    pointsPerGame: 21.4,
-    pointsAllowedPerGame: 25.4,
-    totalYardsPerGame: 331.0,
-    passingYardsPerGame: 181.1,
-    rushingYardsPerGame: 149.9,
-    yardsAllowedPerGame: 362.9,
-    passYardsAllowedPerGame: 223.7,
-    rushYardsAllowedPerGame: 139.2,
-    turnoverDifferential: 2,
-    sacks: 11,
-    interceptions: 4,
-    thirdDownPct: 38.2,
-    redZonePct: 55.6,
-    streak: "Won 1",
-    homeRecord: "2-2",
-    awayRecord: "1-2",
-    divisionRecord: "2-0",
-    rankings: {
-      scoringOffenseRank: 19,
-      scoringDefenseRank: 25,
-      totalOffenseRank: 19,
-      totalDefenseRank: 26,
-      passOffenseRank: 26,
-      rushOffenseRank: 6,
+  "lar": {
+    "pointsPerGame": 23.8,
+    "pointsAllowedPerGame": 20.1,
+    "totalYardsPerGame": 379.7,
+    "passingYardsPerGame": 254.4,
+    "rushingYardsPerGame": 125.3,
+    "yardsAllowedPerGame": 312.9,
+    "passYardsAllowedPerGame": 198.7,
+    "rushYardsAllowedPerGame": 103.8,
+    "turnoverDifferential": -4,
+    "sacks": 16,
+    "interceptions": 7,
+    "thirdDownPct": 40,
+    "redZonePct": 68.6,
+    "streak": "W3",
+    "homeRecord": "2-3",
+    "awayRecord": "3-1",
+    "divisionRecord": "0-2",
+    "rankings": {
+      "scoringOffenseRank": 13,
+      "scoringDefenseRank": 8,
+      "totalOffenseRank": 5,
+      "totalDefenseRank": 5,
+      "passOffenseRank": 7,
+      "rushOffenseRank": 9
     },
-    leaders: {
-      passing: { name: "Kyler Murray", stat: "1,331 YDS • 9 TD • 3 INT • 325 RUSH", yards: 1331, touchdowns: 9 },
-      rushing: { name: "James Conner", stat: "504 YDS • 3 TD", yards: 504, touchdowns: 3 },
-      receiving: { name: "Marvin Harrison Jr.", stat: "20 REC • 300 YDS • 4 TD", receptions: 20, yards: 300, touchdowns: 4 },
-      defense: { name: "Budda Baker", stat: "67 TCKL • 3 TFL", tacklesOrSacks: "67 Tackles" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Matthew Stafford",
+        "stat": "230/346, 2374 YDS, 16 TD, 9 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Kyren Williams",
+        "stat": "127 CAR, 593 YDS, 6 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Puka Nacua",
+        "stat": "70 REC, 715 YDS, 4 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Byron Young",
+        "stat": "4.5 SACKS",
+        "tacklesOrSacks": "4.5 Sacks"
+      }
+    }
   },
-  ind: {
-    pointsPerGame: 22.1,
-    pointsAllowedPerGame: 21.3,
-    totalYardsPerGame: 326.3,
-    passingYardsPerGame: 186.4,
-    rushingYardsPerGame: 139.9,
-    yardsAllowedPerGame: 379.6,
-    passYardsAllowedPerGame: 220.1,
-    rushYardsAllowedPerGame: 159.5,
-    turnoverDifferential: 2,
-    sacks: 14,
-    interceptions: 6,
-    thirdDownPct: 37.6,
-    redZonePct: 63.6,
-    streak: "Won 2",
-    homeRecord: "3-1",
-    awayRecord: "1-2",
-    divisionRecord: "1-2",
-    rankings: {
-      scoringOffenseRank: 17,
-      scoringDefenseRank: 14,
-      totalOffenseRank: 20,
-      totalDefenseRank: 28,
-      passOffenseRank: 25,
-      rushOffenseRank: 9,
+  "ind": {
+    "pointsPerGame": 20.4,
+    "pointsAllowedPerGame": 27.7,
+    "totalYardsPerGame": 288.9,
+    "passingYardsPerGame": 173.7,
+    "rushingYardsPerGame": 115.2,
+    "yardsAllowedPerGame": 375.3,
+    "passYardsAllowedPerGame": 224.8,
+    "rushYardsAllowedPerGame": 137,
+    "turnoverDifferential": -11,
+    "sacks": 19,
+    "interceptions": 2,
+    "thirdDownPct": 36.9,
+    "redZonePct": 58.3,
+    "streak": "L5",
+    "homeRecord": "1-3",
+    "awayRecord": "1-4",
+    "divisionRecord": "1-2",
+    "rankings": {
+      "scoringOffenseRank": 24,
+      "scoringDefenseRank": 30,
+      "totalOffenseRank": 27,
+      "totalDefenseRank": 27,
+      "passOffenseRank": 27,
+      "rushOffenseRank": 15
     },
-    leaders: {
-      passing: { name: "Anthony Richardson", stat: "772 YDS • 3 TD • 6 INT", yards: 772, touchdowns: 3 },
-      rushing: { name: "Jonathan Taylor", stat: "349 YDS • 4 TD", yards: 349, touchdowns: 4 },
-      receiving: { name: "Josh Downs", stat: "27 REC • 302 YDS • 2 TD", receptions: 27, yards: 302, touchdowns: 2 },
-      defense: { name: "Zaire Franklin", stat: "76 TCKL • 2 FF", tacklesOrSacks: "76 Tackles" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Daniel Jones",
+        "stat": "182/302, 1722 YDS, 6 TD, 10 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Jonathan Taylor",
+        "stat": "161 CAR, 656 YDS, 8 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Deion Burks",
+        "stat": "33 REC, 354 YDS, 1 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Laiatu Latu",
+        "stat": "4 SACKS",
+        "tacklesOrSacks": "4 Sacks"
+      }
+    }
   },
-  no: {
-    pointsPerGame: 25.3,
-    pointsAllowedPerGame: 25.7,
-    totalYardsPerGame: 337.9,
-    passingYardsPerGame: 221.4,
-    rushingYardsPerGame: 116.5,
-    yardsAllowedPerGame: 391.1,
-    passYardsAllowedPerGame: 244.6,
-    rushYardsAllowedPerGame: 146.5,
-    turnoverDifferential: 1,
-    sacks: 15,
-    interceptions: 8,
-    thirdDownPct: 40.0,
-    redZonePct: 62.5,
-    streak: "Lost 5",
-    homeRecord: "1-3",
-    awayRecord: "1-2",
-    divisionRecord: "1-2",
-    rankings: {
-      scoringOffenseRank: 11,
-      scoringDefenseRank: 26,
-      totalOffenseRank: 15,
-      totalDefenseRank: 30,
-      passOffenseRank: 15,
-      rushOffenseRank: 17,
+  "ari": {
+    "pointsPerGame": 19.8,
+    "pointsAllowedPerGame": 28.3,
+    "totalYardsPerGame": 318,
+    "passingYardsPerGame": 215.3,
+    "rushingYardsPerGame": 102.7,
+    "yardsAllowedPerGame": 352.6,
+    "passYardsAllowedPerGame": 215.4,
+    "rushYardsAllowedPerGame": 121.9,
+    "turnoverDifferential": 0,
+    "sacks": 19,
+    "interceptions": 3,
+    "thirdDownPct": 38,
+    "redZonePct": 42.9,
+    "streak": "L1",
+    "homeRecord": "0-3",
+    "awayRecord": "3-3",
+    "divisionRecord": "1-3",
+    "rankings": {
+      "scoringOffenseRank": 26,
+      "scoringDefenseRank": 31,
+      "totalOffenseRank": 22,
+      "totalDefenseRank": 19,
+      "passOffenseRank": 18,
+      "rushOffenseRank": 22
     },
-    leaders: {
-      passing: { name: "Derek Carr", stat: "989 YDS • 8 TD • 4 INT", yards: 989, touchdowns: 8 },
-      rushing: { name: "Alvin Kamara", stat: "438 YDS • 6 TD • 34 REC", yards: 438, touchdowns: 6 },
-      receiving: { name: "Chris Olave", stat: "23 REC • 280 YDS • 1 TD", receptions: 23, yards: 280, touchdowns: 1 },
-      defense: { name: "Paulson Adebo", stat: "3 INT • 52 TCKL", tacklesOrSacks: "3 INT" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Joey Aguilar",
+        "stat": "193/305, 1719 YDS, 10 TD, 7 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Tyler Allgeier",
+        "stat": "89 CAR, 369 YDS, 2 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Trey McBride",
+        "stat": "73 REC, 598 YDS, 5 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Budda Baker",
+        "stat": "3.5 SACKS",
+        "tacklesOrSacks": "3.5 Sacks"
+      }
+    }
   },
-  mia: {
-    pointsPerGame: 11.7,
-    pointsAllowedPerGame: 21.5,
-    totalYardsPerGame: 302.8,
-    passingYardsPerGame: 187.0,
-    rushingYardsPerGame: 115.8,
-    yardsAllowedPerGame: 286.8,
-    passYardsAllowedPerGame: 154.5,
-    rushYardsAllowedPerGame: 132.3,
-    turnoverDifferential: -4,
-    sacks: 9,
-    interceptions: 3,
-    thirdDownPct: 29.5,
-    redZonePct: 37.5,
-    streak: "Lost 1",
-    homeRecord: "1-2",
-    awayRecord: "1-2",
-    divisionRecord: "1-1",
-    rankings: {
-      scoringOffenseRank: 32,
-      scoringDefenseRank: 15,
-      totalOffenseRank: 26,
-      totalDefenseRank: 4,
-      passOffenseRank: 24,
-      rushOffenseRank: 19,
+  "no": {
+    "pointsPerGame": 23.1,
+    "pointsAllowedPerGame": 27,
+    "totalYardsPerGame": 325.8,
+    "passingYardsPerGame": 230.5,
+    "rushingYardsPerGame": 95.3,
+    "yardsAllowedPerGame": 389.5,
+    "passYardsAllowedPerGame": 236.6,
+    "rushYardsAllowedPerGame": 133.9,
+    "turnoverDifferential": -6,
+    "sacks": 23,
+    "interceptions": 4,
+    "thirdDownPct": 43.5,
+    "redZonePct": 70.4,
+    "streak": "W1",
+    "homeRecord": "1-4",
+    "awayRecord": "2-1",
+    "divisionRecord": "0-1",
+    "rankings": {
+      "scoringOffenseRank": 15,
+      "scoringDefenseRank": 27,
+      "totalOffenseRank": 20,
+      "totalDefenseRank": 30,
+      "passOffenseRank": 14,
+      "rushOffenseRank": 26
     },
-    leaders: {
-      passing: { name: "Tua Tagovailoa", stat: "483 YDS • 2 TD • 3 INT", yards: 483, touchdowns: 2 },
-      rushing: { name: "De'Von Achane", stat: "260 YDS • 1 TD • 23 REC", yards: 260, touchdowns: 1 },
-      receiving: { name: "Tyreek Hill", stat: "24 REC • 294 YDS • 1 TD", receptions: 24, yards: 294, touchdowns: 1 },
-      defense: { name: "Zach Sieler", stat: "2.0 SACKS • 1 INT", tacklesOrSacks: "2.0 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Tyler Shough",
+        "stat": "204/308, 1986 YDS, 14 TD, 6 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Tyler Shough",
+        "stat": "34 CAR, 162 YDS, 2 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Chris Olave",
+        "stat": "56 REC, 734 YDS, 2 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Chase Young",
+        "stat": "8 SACKS",
+        "tacklesOrSacks": "8 Sacks"
+      }
+    }
   },
-  lv: {
-    pointsPerGame: 17.6,
-    pointsAllowedPerGame: 26.1,
-    totalYardsPerGame: 297.7,
-    passingYardsPerGame: 210.4,
-    rushingYardsPerGame: 87.3,
-    yardsAllowedPerGame: 334.6,
-    passYardsAllowedPerGame: 198.3,
-    rushYardsAllowedPerGame: 136.3,
-    turnoverDifferential: -13,
-    sacks: 15,
-    interceptions: 2,
-    thirdDownPct: 33.3,
-    redZonePct: 53.3,
-    streak: "Lost 3",
-    homeRecord: "1-2",
-    awayRecord: "1-3",
-    divisionRecord: "0-2",
-    rankings: {
-      scoringOffenseRank: 28,
-      scoringDefenseRank: 29,
-      totalOffenseRank: 27,
-      totalDefenseRank: 17,
-      passOffenseRank: 19,
-      rushOffenseRank: 29,
+  "lv": {
+    "pointsPerGame": 26.4,
+    "pointsAllowedPerGame": 29.8,
+    "totalYardsPerGame": 331,
+    "passingYardsPerGame": 259.7,
+    "rushingYardsPerGame": 71.3,
+    "yardsAllowedPerGame": 399.9,
+    "passYardsAllowedPerGame": 234.2,
+    "rushYardsAllowedPerGame": 151.2,
+    "turnoverDifferential": 1,
+    "sacks": 19,
+    "interceptions": 7,
+    "thirdDownPct": 43.8,
+    "redZonePct": 52.9,
+    "streak": "L1",
+    "homeRecord": "1-3",
+    "awayRecord": "3-2",
+    "divisionRecord": "1-1",
+    "rankings": {
+      "scoringOffenseRank": 8,
+      "scoringDefenseRank": 32,
+      "totalOffenseRank": 15,
+      "totalDefenseRank": 32,
+      "passOffenseRank": 5,
+      "rushOffenseRank": 31
     },
-    leaders: {
-      passing: { name: "Gardner Minshew", stat: "1,165 YDS • 4 TD • 8 INT", yards: 1165, touchdowns: 4 },
-      rushing: { name: "Alexander Mattison", stat: "265 YDS • 3 TD", yards: 265, touchdowns: 3 },
-      receiving: { name: "Brock Bowers", stat: "47 REC • 477 YDS • 1 TD", receptions: 47, yards: 477, touchdowns: 1 },
-      defense: { name: "Maxx Crosby", stat: "6.5 SACKS • 10 TFL", tacklesOrSacks: "6.5 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Fernando Mendoza",
+        "stat": "202/315, 2340 YDS, 20 TD, 8 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Ashton Jeanty",
+        "stat": "114 CAR, 362 YDS, 1 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Brock Bowers",
+        "stat": "48 REC, 658 YDS, 6 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Maxx Crosby",
+        "stat": "4 SACKS",
+        "tacklesOrSacks": "4 Sacks"
+      }
+    }
   },
-  jax: {
-    pointsPerGame: 20.7,
-    pointsAllowedPerGame: 27.7,
-    totalYardsPerGame: 332.3,
-    passingYardsPerGame: 208.0,
-    rushingYardsPerGame: 124.3,
-    yardsAllowedPerGame: 390.9,
-    passYardsAllowedPerGame: 273.9,
-    rushYardsAllowedPerGame: 117.0,
-    turnoverDifferential: -3,
-    sacks: 15,
-    interceptions: 1,
-    thirdDownPct: 34.1,
-    redZonePct: 58.8,
-    streak: "Won 1",
-    homeRecord: "1-2",
-    awayRecord: "1-3",
-    divisionRecord: "1-1",
-    rankings: {
-      scoringOffenseRank: 21,
-      scoringDefenseRank: 30,
-      totalOffenseRank: 18,
-      totalDefenseRank: 31,
-      passOffenseRank: 20,
-      rushOffenseRank: 13,
+  "jax": {
+    "pointsPerGame": 28.6,
+    "pointsAllowedPerGame": 15.1,
+    "totalYardsPerGame": 346.4,
+    "passingYardsPerGame": 229.3,
+    "rushingYardsPerGame": 117.1,
+    "yardsAllowedPerGame": 327.6,
+    "passYardsAllowedPerGame": 229,
+    "rushYardsAllowedPerGame": 89.3,
+    "turnoverDifferential": 9,
+    "sacks": 16,
+    "interceptions": 11,
+    "thirdDownPct": 46.4,
+    "redZonePct": 65.2,
+    "streak": "W2",
+    "homeRecord": "4-1",
+    "awayRecord": "2-1",
+    "divisionRecord": "1-1",
+    "rankings": {
+      "scoringOffenseRank": 4,
+      "scoringDefenseRank": 2,
+      "totalOffenseRank": 13,
+      "totalDefenseRank": 10,
+      "passOffenseRank": 15,
+      "rushOffenseRank": 13
     },
-    leaders: {
-      passing: { name: "Trevor Lawrence", stat: "1,528 YDS • 9 TD • 3 INT", yards: 1528, touchdowns: 9 },
-      rushing: { name: "Tank Bigsby", stat: "415 YDS • 4 TD • 6.2 YPC", yards: 415, touchdowns: 4 },
-      receiving: { name: "Brian Thomas Jr.", stat: "30 REC • 510 YDS • 4 TD", receptions: 30, yards: 510, touchdowns: 4 },
-      defense: { name: "Travon Walker", stat: "6.0 SACKS • 1 FR", tacklesOrSacks: "6.0 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Trevor Lawrence",
+        "stat": "146/224, 1932 YDS, 18 TD, 4 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Bhayshul Tuten",
+        "stat": "122 CAR, 521 YDS, 4 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Parker Washington",
+        "stat": "29 REC, 493 YDS, 5 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Travon Walker",
+        "stat": "3 SACKS",
+        "tacklesOrSacks": "3 Sacks"
+      }
+    }
   },
-  ten: {
-    pointsPerGame: 17.7,
-    pointsAllowedPerGame: 24.0,
-    totalYardsPerGame: 261.3,
-    passingYardsPerGame: 144.7,
-    rushingYardsPerGame: 116.7,
-    yardsAllowedPerGame: 271.7,
-    passYardsAllowedPerGame: 166.7,
-    rushYardsAllowedPerGame: 105.0,
-    turnoverDifferential: -8,
-    sacks: 12,
-    interceptions: 1,
-    thirdDownPct: 32.4,
-    redZonePct: 50.0,
-    streak: "Lost 2",
-    homeRecord: "0-3",
-    awayRecord: "1-2",
-    divisionRecord: "0-2",
-    rankings: {
-      scoringOffenseRank: 26,
-      scoringDefenseRank: 20,
-      totalOffenseRank: 32,
-      totalDefenseRank: 1,
-      passOffenseRank: 32,
-      rushOffenseRank: 18,
+  "cle": {
+    "pointsPerGame": 17.9,
+    "pointsAllowedPerGame": 21.8,
+    "totalYardsPerGame": 307.7,
+    "passingYardsPerGame": 210.4,
+    "rushingYardsPerGame": 97.3,
+    "yardsAllowedPerGame": 350.8,
+    "passYardsAllowedPerGame": 201,
+    "rushYardsAllowedPerGame": 130.6,
+    "turnoverDifferential": 1,
+    "sacks": 26,
+    "interceptions": 6,
+    "thirdDownPct": 34.2,
+    "redZonePct": 39.1,
+    "streak": "L2",
+    "homeRecord": "3-0",
+    "awayRecord": "2-4",
+    "divisionRecord": "2-1",
+    "rankings": {
+      "scoringOffenseRank": 29,
+      "scoringDefenseRank": 12,
+      "totalOffenseRank": 24,
+      "totalDefenseRank": 17,
+      "passOffenseRank": 20,
+      "rushOffenseRank": 25
     },
-    leaders: {
-      passing: { name: "Will Levis", stat: "699 YDS • 5 TD • 7 INT", yards: 699, touchdowns: 5 },
-      rushing: { name: "Tony Pollard", stat: "400 YDS • 3 TD", yards: 400, touchdowns: 3 },
-      receiving: { name: "Calvin Ridley", stat: "12 REC • 183 YDS • 1 TD", receptions: 12, yards: 183, touchdowns: 1 },
-      defense: { name: "Harold Landry III", stat: "4.0 SACKS • 1 FF", tacklesOrSacks: "4.0 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Deshaun Watson",
+        "stat": "163/249, 1806 YDS, 7 TD, 3 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Quinshon Judkins",
+        "stat": "116 CAR, 385 YDS, 3 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Denzel Boston",
+        "stat": "32 REC, 507 YDS, 3 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Mason Graham",
+        "stat": "4 SACKS",
+        "tacklesOrSacks": "4 Sacks"
+      }
+    }
   },
-  cle: {
-    pointsPerGame: 15.6,
-    pointsAllowedPerGame: 23.1,
-    totalYardsPerGame: 253.9,
-    passingYardsPerGame: 159.6,
-    rushingYardsPerGame: 94.3,
-    yardsAllowedPerGame: 322.0,
-    passYardsAllowedPerGame: 196.4,
-    rushYardsAllowedPerGame: 125.6,
-    turnoverDifferential: -4,
-    sacks: 17,
-    interceptions: 2,
-    thirdDownPct: 29.8,
-    redZonePct: 47.4,
-    streak: "Lost 5",
-    homeRecord: "0-3",
-    awayRecord: "1-3",
-    divisionRecord: "1-1",
-    rankings: {
-      scoringOffenseRank: 29,
-      scoringDefenseRank: 17,
-      totalOffenseRank: 31,
-      totalDefenseRank: 13,
-      passOffenseRank: 31,
-      rushOffenseRank: 27,
+  "ten": {
+    "pointsPerGame": 18,
+    "pointsAllowedPerGame": 24.9,
+    "totalYardsPerGame": 272.5,
+    "passingYardsPerGame": 173,
+    "rushingYardsPerGame": 99.5,
+    "yardsAllowedPerGame": 396.9,
+    "passYardsAllowedPerGame": 258.3,
+    "rushYardsAllowedPerGame": 124.1,
+    "turnoverDifferential": -1,
+    "sacks": 20,
+    "interceptions": 8,
+    "thirdDownPct": 36.2,
+    "redZonePct": 52.2,
+    "streak": "L2",
+    "homeRecord": "0-4",
+    "awayRecord": "1-3",
+    "divisionRecord": "1-1",
+    "rankings": {
+      "scoringOffenseRank": 28,
+      "scoringDefenseRank": 23,
+      "totalOffenseRank": 30,
+      "totalDefenseRank": 31,
+      "passOffenseRank": 28,
+      "rushOffenseRank": 24
     },
-    leaders: {
-      passing: { name: "Jameis Winston", stat: "334 YDS • 3 TD • 0 INT", yards: 334, touchdowns: 3 },
-      rushing: { name: "Jerome Ford", stat: "264 YDS • 1 TD", yards: 264, touchdowns: 1 },
-      receiving: { name: "David Njoku", stat: "20 REC • 165 YDS • 1 TD", receptions: 20, yards: 165, touchdowns: 1 },
-      defense: { name: "Myles Garrett", stat: "4.0 SACKS • 2 FF", tacklesOrSacks: "4.0 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Cam Ward",
+        "stat": "155/248, 1483 YDS, 6 TD, 5 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Tony Pollard",
+        "stat": "133 CAR, 595 YDS, 6 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Carnell Tate",
+        "stat": "34 REC, 413 YDS, 1 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Jacob Martin",
+        "stat": "6.5 SACKS",
+        "tacklesOrSacks": "6.5 Sacks"
+      }
+    }
   },
-  ne: {
-    pointsPerGame: 14.1,
-    pointsAllowedPerGame: 25.0,
-    totalYardsPerGame: 279.9,
-    passingYardsPerGame: 168.4,
-    rushingYardsPerGame: 111.4,
-    yardsAllowedPerGame: 359.4,
-    passYardsAllowedPerGame: 223.4,
-    rushYardsAllowedPerGame: 136.0,
-    turnoverDifferential: -4,
-    sacks: 15,
-    interceptions: 2,
-    thirdDownPct: 31.0,
-    redZonePct: 47.1,
-    streak: "Lost 6",
-    homeRecord: "0-3",
-    awayRecord: "1-3",
-    divisionRecord: "1-1",
-    rankings: {
-      scoringOffenseRank: 30,
-      scoringDefenseRank: 23,
-      totalOffenseRank: 30,
-      totalDefenseRank: 24,
-      passOffenseRank: 29,
-      rushOffenseRank: 21,
+  "ne": {
+    "pointsPerGame": 23.4,
+    "pointsAllowedPerGame": 23,
+    "totalYardsPerGame": 369.5,
+    "passingYardsPerGame": 249.6,
+    "rushingYardsPerGame": 119.9,
+    "yardsAllowedPerGame": 347.3,
+    "passYardsAllowedPerGame": 231.9,
+    "rushYardsAllowedPerGame": 96.7,
+    "turnoverDifferential": -11,
+    "sacks": 25,
+    "interceptions": 5,
+    "thirdDownPct": 40.4,
+    "redZonePct": 58.3,
+    "streak": "L1",
+    "homeRecord": "3-1",
+    "awayRecord": "2-3",
+    "divisionRecord": "3-0",
+    "rankings": {
+      "scoringOffenseRank": 14,
+      "scoringDefenseRank": 15,
+      "totalOffenseRank": 8,
+      "totalDefenseRank": 16,
+      "passOffenseRank": 9,
+      "rushOffenseRank": 10
     },
-    leaders: {
-      passing: { name: "Drake Maye", stat: "541 YDS • 5 TD • 2 INT", yards: 541, touchdowns: 5 },
-      rushing: { name: "Rhamondre Stevenson", stat: "374 YDS • 3 TD", yards: 374, touchdowns: 3 },
-      receiving: { name: "Demario Douglas", stat: "26 REC • 259 YDS • 1 TD", receptions: 26, yards: 259, touchdowns: 1 },
-      defense: { name: "Keion White", stat: "4.0 SACKS • 1 FF", tacklesOrSacks: "4.0 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Drake Maye",
+        "stat": "178/272, 2282 YDS, 18 TD, 11 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Rhamondre Stevenson",
+        "stat": "102 CAR, 399 YDS, 2 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "DeMario Douglas",
+        "stat": "31 REC, 434 YDS, 4 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Elijah Ponder",
+        "stat": "7.5 SACKS",
+        "tacklesOrSacks": "7.5 Sacks"
+      }
+    }
   },
-  nyg: {
-    pointsPerGame: 14.6,
-    pointsAllowedPerGame: 21.3,
-    totalYardsPerGame: 290.4,
-    passingYardsPerGame: 189.1,
-    rushingYardsPerGame: 101.3,
-    yardsAllowedPerGame: 326.3,
-    passYardsAllowedPerGame: 188.4,
-    rushYardsAllowedPerGame: 137.9,
-    turnoverDifferential: 1,
-    sacks: 31,
-    interceptions: 1,
-    thirdDownPct: 32.3,
-    redZonePct: 41.2,
-    streak: "Lost 2",
-    homeRecord: "0-4",
-    awayRecord: "2-1",
-    divisionRecord: "0-2",
-    rankings: {
-      scoringOffenseRank: 31,
-      scoringDefenseRank: 14,
-      totalOffenseRank: 29,
-      totalDefenseRank: 16,
-      passOffenseRank: 23,
-      rushOffenseRank: 25,
+  "nyg": {
+    "pointsPerGame": 22.6,
+    "pointsAllowedPerGame": 21.8,
+    "totalYardsPerGame": 340.5,
+    "passingYardsPerGame": 227.9,
+    "rushingYardsPerGame": 112.6,
+    "yardsAllowedPerGame": 317.4,
+    "passYardsAllowedPerGame": 184.1,
+    "rushYardsAllowedPerGame": 121.6,
+    "turnoverDifferential": -2,
+    "sacks": 17,
+    "interceptions": 8,
+    "thirdDownPct": 39.7,
+    "redZonePct": 65.4,
+    "streak": "L1",
+    "homeRecord": "3-2",
+    "awayRecord": "2-1-1",
+    "divisionRecord": "2-1-1",
+    "rankings": {
+      "scoringOffenseRank": 16,
+      "scoringDefenseRank": 13,
+      "totalOffenseRank": 14,
+      "totalDefenseRank": 6,
+      "passOffenseRank": 16,
+      "rushOffenseRank": 17
     },
-    leaders: {
-      passing: { name: "Daniel Jones", stat: "1,442 YDS • 6 TD • 4 INT", yards: 1442, touchdowns: 6 },
-      rushing: { name: "Tyrone Tracy Jr.", stat: "208 YDS • 1 TD", yards: 208, touchdowns: 1 },
-      receiving: { name: "Malik Nabers", stat: "39 REC • 427 YDS • 3 TD", receptions: 39, yards: 427, touchdowns: 3 },
-      defense: { name: "Dexter Lawrence II", stat: "9.0 SACKS • 13 QB Hits", tacklesOrSacks: "9.0 Sacks" },
-    },
+    "leaders": {
+      "passing": {
+        "name": "Jameis Winston",
+        "stat": "96/166, 1028 YDS, 8 TD, 5 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Cam Skattebo",
+        "stat": "116 CAR, 496 YDS, 4 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Malik Nabers",
+        "stat": "58 REC, 692 YDS, 2 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Arvell Reese",
+        "stat": "4.5 SACKS",
+        "tacklesOrSacks": "4.5 Sacks"
+      }
+    }
   },
-  car: {
-    pointsPerGame: 15.7,
-    pointsAllowedPerGame: 34.7,
-    totalYardsPerGame: 281.6,
-    passingYardsPerGame: 172.9,
-    rushingYardsPerGame: 108.7,
-    yardsAllowedPerGame: 385.7,
-    passYardsAllowedPerGame: 223.6,
-    rushYardsAllowedPerGame: 162.1,
-    turnoverDifferential: -8,
-    sacks: 7,
-    interceptions: 3,
-    thirdDownPct: 32.9,
-    redZonePct: 53.8,
-    streak: "Lost 5",
-    homeRecord: "0-3",
-    awayRecord: "1-3",
-    divisionRecord: "0-2",
-    rankings: {
-      scoringOffenseRank: 28,
-      scoringDefenseRank: 32,
-      totalOffenseRank: 28,
-      totalDefenseRank: 32,
-      passOffenseRank: 28,
-      rushOffenseRank: 23,
+  "car": {
+    "pointsPerGame": 24.9,
+    "pointsAllowedPerGame": 27.4,
+    "totalYardsPerGame": 362.4,
+    "passingYardsPerGame": 261.1,
+    "rushingYardsPerGame": 101.3,
+    "yardsAllowedPerGame": 355.1,
+    "passYardsAllowedPerGame": 211.5,
+    "rushYardsAllowedPerGame": 133.4,
+    "turnoverDifferential": -1,
+    "sacks": 12,
+    "interceptions": 5,
+    "thirdDownPct": 37.7,
+    "redZonePct": 65.5,
+    "streak": "L3",
+    "homeRecord": "1-3",
+    "awayRecord": "2-2",
+    "divisionRecord": "1-1",
+    "rankings": {
+      "scoringOffenseRank": 11,
+      "scoringDefenseRank": 29,
+      "totalOffenseRank": 9,
+      "totalDefenseRank": 20,
+      "passOffenseRank": 4,
+      "rushOffenseRank": 23
     },
-    leaders: {
-      passing: { name: "Andy Dalton / Bryce Young", stat: "1,280 YDS • 7 TD • 7 INT", yards: 1280, touchdowns: 7 },
-      rushing: { name: "Chuba Hubbard", stat: "537 YDS • 3 TD • 5.2 YPC", yards: 537, touchdowns: 3 },
-      receiving: { name: "Diontae Johnson", stat: "30 REC • 357 YDS • 3 TD", receptions: 30, yards: 357, touchdowns: 3 },
-      defense: { name: "Xavier Woods", stat: "48 TCKL • 1 INT", tacklesOrSacks: "48 Tackles" },
-    },
-  },
+    "leaders": {
+      "passing": {
+        "name": "Bryce Young",
+        "stat": "186/308, 2197 YDS, 16 TD, 6 INT",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "rushing": {
+        "name": "Chuba Hubbard",
+        "stat": "134 CAR, 619 YDS, 5 TD",
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "receiving": {
+        "name": "Tetairoa McMillan",
+        "stat": "46 REC, 625 YDS, 3 TD",
+        "receptions": 0,
+        "yards": 0,
+        "touchdowns": 0
+      },
+      "defense": {
+        "name": "Princely Umanmielen",
+        "stat": "3 SACKS",
+        "tacklesOrSacks": "3 Sacks"
+      }
+    }
+  }
 };
 
 export function getTeamStats(teamId: string): TeamStats {
-  const normalized = teamId.toLowerCase();
-  if (TEAM_STATS_DATA[normalized]) {
-    return TEAM_STATS_DATA[normalized];
-  }
-
-  return {
-    pointsPerGame: 22.5,
-    pointsAllowedPerGame: 21.0,
-    totalYardsPerGame: 335.0,
-    passingYardsPerGame: 220.0,
-    rushingYardsPerGame: 115.0,
-    yardsAllowedPerGame: 325.0,
-    passYardsAllowedPerGame: 215.0,
-    rushYardsAllowedPerGame: 110.0,
-    turnoverDifferential: 0,
-    sacks: 18,
-    interceptions: 5,
-    thirdDownPct: 40.0,
-    redZonePct: 58.0,
-    streak: "1-0 L1",
-    homeRecord: "2-1",
-    awayRecord: "1-2",
-    divisionRecord: "1-1",
-    rankings: {
-      scoringOffenseRank: 16,
-      scoringDefenseRank: 16,
-      totalOffenseRank: 16,
-      totalDefenseRank: 16,
-      passOffenseRank: 16,
-      rushOffenseRank: 16,
-    },
-    leaders: {
-      passing: { name: "Franchise Quarterback", stat: "1,450 YDS • 10 TD", yards: 1450, touchdowns: 10 },
-      rushing: { name: "Lead Back", stat: "420 YDS • 4 TD", yards: 420, touchdowns: 4 },
-      receiving: { name: "Target WR1", stat: "32 REC • 410 YDS • 3 TD", receptions: 32, yards: 410, touchdowns: 3 },
-      defense: { name: "Defensive Anchor", stat: "4.5 SACKS • 35 TCKL", tacklesOrSacks: "4.5 Sacks" },
-    },
-  };
+  const key = teamId.toLowerCase();
+  return TEAM_STATS_DATA[key] || TEAM_STATS_DATA.den;
 }

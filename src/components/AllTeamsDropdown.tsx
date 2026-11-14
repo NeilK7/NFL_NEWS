@@ -33,7 +33,31 @@ export default function AllTeamsDropdown({
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeTab, setActiveTab] = useState<"ALL" | "AFC" | "NFC" | "FAVS">("ALL");
+  const [liveRecords, setLiveRecords] = useState<
+    Record<string, { wins: number; losses: number; ties: number }>
+  >({});
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Fetch live W-L records from official standings endpoint
+  useEffect(() => {
+    let mounted = true;
+    fetch("/api/scoreboard", { cache: "no-store" })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (mounted && data?.teamRecords) {
+          setLiveRecords(data.teamRecords);
+        }
+      })
+      .catch(() => {});
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  const getTeamRecord = (team: NFLTeam) =>
+    liveRecords[team.id.toLowerCase()] ||
+    liveRecords[team.abbreviation.toLowerCase()] ||
+    team.record;
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -96,7 +120,7 @@ export default function AllTeamsDropdown({
             {selectedTeam.city} {selectedTeam.name}
           </span>
           <span className="hidden xl:inline text-[10px] text-gray-400 font-mono">
-            ({selectedTeam.record.wins}-{selectedTeam.record.losses})
+            ({getTeamRecord(selectedTeam).wins}-{getTeamRecord(selectedTeam).losses})
           </span>
         </div>
         <span className="text-[9px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30 hidden md:inline">
@@ -234,10 +258,11 @@ export default function AllTeamsDropdown({
                         : "hover:bg-gray-800/80 text-gray-300"
                     }`}
                   >
-                    {/* Team Info / War Room Selector */}
+                    {/* Team Info / Opens Stats & News + Selects War Room */}
                     <button
                       onClick={() => {
                         onSelectTeam(team);
+                        onOpenTeamStats(team);
                         setIsOpen(false);
                       }}
                       className="flex items-center gap-2.5 flex-1 min-w-0 text-left cursor-pointer"
@@ -266,7 +291,7 @@ export default function AllTeamsDropdown({
                           )}
                         </div>
                         <div className="text-[10px] text-gray-400 font-mono">
-                          {team.conference} {team.division} • {team.record.wins}-{team.record.losses}
+                          {team.conference} {team.division} • {getTeamRecord(team).wins}-{getTeamRecord(team).losses}
                         </div>
                       </div>
                     </button>

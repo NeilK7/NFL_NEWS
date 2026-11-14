@@ -36,8 +36,8 @@ export default function OnboardingModal({
   // Selected state - Default to Denver Broncos
   const broncosTeam = NFL_TEAMS.find((t) => t.id === "den")!;
   const defaultBroncosPlayerIds = broncosTeam
-    ? broncosTeam.starPlayers.slice(0, 10).map((p) => p.id)
-    : ["p-nix", "p-surtain", "p-sutton", "p-allen", "p-bonitto", "p-javonte"];
+    ? broncosTeam.starPlayers.map((p) => p.id)
+    : [];
 
   const [selectedTeamIds, setSelectedTeamIds] = useState<string[]>(
     currentPreferences?.favoriteTeamIds || ["den", "kc", "sf"]

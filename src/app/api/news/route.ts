@@ -6,59 +6,104 @@ import { NFL_TEAMS } from '@/lib/nfl-teams';
 
 export const dynamic = 'force-dynamic';
 
+const ESPN_TEAM_IDS: Record<string, string> = {
+  ari: '22',
+  atl: '1',
+  bal: '33',
+  buf: '2',
+  car: '29',
+  chi: '3',
+  cin: '4',
+  cle: '5',
+  dal: '6',
+  den: '7',
+  det: '8',
+  gb: '9',
+  hou: '34',
+  ind: '11',
+  jax: '30',
+  kc: '12',
+  lv: '13',
+  lac: '24',
+  lar: '14',
+  mia: '15',
+  min: '16',
+  ne: '17',
+  no: '18',
+  nyg: '19',
+  nyj: '20',
+  phi: '21',
+  pit: '23',
+  sf: '25',
+  sea: '26',
+  tb: '27',
+  ten: '10',
+  wsh: '28',
+};
+
 const TEAM_KEYWORDS: { id: string; keywords: string[] }[] = [
-  { id: 'kc', keywords: ['chiefs', 'mahomes', 'kelce', 'kansas city', 'spagnuolo', 'reid'] },
-  { id: 'sf', keywords: ['49ers', 'niners', 'purdy', 'mccaffrey', 'shanahan', 'bosa', 'san francisco', 'kittle'] },
-  { id: 'bal', keywords: ['ravens', 'lamar jackson', 'derrick henry', 'baltimore', 'harbaugh', 'zay flowers'] },
-  { id: 'det', keywords: ['lions', 'goff', 'dan campbell', 'hutchinson', 'st. brown', 'gibbs', 'detroit'] },
-  { id: 'buf', keywords: ['bills', 'josh allen', 'buffalo', 'mcdermott', 'shakir', 'kincaid'] },
-  { id: 'phi', keywords: ['eagles', 'hurts', 'saquon', 'barkley', 'philadelphia', 'sirianni', 'a.j. brown'] },
-  { id: 'dal', keywords: ['cowboys', 'prescott', 'dak', 'ceedee', 'parsons', 'dallas', 'jerry jones'] },
-  { id: 'nyj', keywords: ['jets', 'rodgers', 'davante', 'breece hall', 'garrett wilson'] },
-  { id: 'cin', keywords: ['bengals', 'burrow', 'ja\'marr', 'chase', 'higgins', 'cincinnati'] },
-  { id: 'hou', keywords: ['texans', 'stroud', 'nico collins', 'mixon', 'houston', 'demeco'] },
+  { id: 'den', keywords: ['broncos', 'bo nix', 'surtain', 'sean payton', 'denver', 'sutton', 'bonitto', 'dobbins', 'zach allen'] },
+  { id: 'kc', keywords: ['chiefs', 'mahomes', 'kelce', 'kansas city', 'spagnuolo', 'andy reid', 'chris jones'] },
+  { id: 'sf', keywords: ['49ers', 'niners', 'purdy', 'mccaffrey', 'shanahan', 'nick bosa', 'san francisco', 'kittle'] },
+  { id: 'bal', keywords: ['ravens', 'lamar jackson', 'derrick henry', 'baltimore', 'john harbaugh', 'zay flowers'] },
+  { id: 'det', keywords: ['lions', 'jared goff', 'dan campbell', 'hutchinson', 'st. brown', 'gibbs', 'detroit'] },
+  { id: 'buf', keywords: ['bills', 'josh allen', 'buffalo', 'mcdermott', 'shakir', 'kincaid', 'james cook'] },
+  { id: 'phi', keywords: ['eagles', 'jalen hurts', 'saquon', 'barkley', 'philadelphia', 'sirianni', 'a.j. brown'] },
+  { id: 'dal', keywords: ['cowboys', 'prescott', 'ceedee', 'parsons', 'dallas', 'jerry jones'] },
+  { id: 'nyj', keywords: ['jets', 'breece hall', 'garrett wilson', 'sauce gardner', 'justin fields'] },
+  { id: 'cin', keywords: ['bengals', 'burrow', 'ja\'marr', 'tee higgins', 'cincinnati', 'trey hendrickson'] },
+  { id: 'hou', keywords: ['texans', 'stroud', 'nico collins', 'mixon', 'houston', 'demeco ryans'] },
   { id: 'gb', keywords: ['packers', 'jordan love', 'green bay', 'lafleur', 'josh jacobs'] },
-  { id: 'mia', keywords: ['dolphins', 'tua', 'tyreek', 'achane', 'miami', 'mcdaniel'] },
-  { id: 'pit', keywords: ['steelers', 'russell wilson', 't.j. watt', 'pittsburgh', 'tomlin', 'pickens', 'fields'] },
-  { id: 'min', keywords: ['vikings', 'justin jefferson', 'mccarthy', 'minnesota', 'o\'connell'] },
-  { id: 'was', keywords: ['commanders', 'jayden daniels', 'mclaurin', 'washington', 'dan quinn'] },
+  { id: 'mia', keywords: ['dolphins', 'tagovailoa', 'tyreek', 'achane', 'miami', 'mike mcdaniel'] },
+  { id: 'pit', keywords: ['steelers', 't.j. watt', 'pittsburgh', 'mike tomlin', 'pickens'] },
+  { id: 'min', keywords: ['vikings', 'justin jefferson', 'j.j. mccarthy', 'minnesota', 'kevin o\'connell'] },
+  { id: 'wsh', keywords: ['commanders', 'jayden daniels', 'mclaurin', 'washington', 'dan quinn'] },
   { id: 'chi', keywords: ['bears', 'caleb williams', 'dj moore', 'chicago', 'odunze'] },
-  { id: 'atl', keywords: ['falcons', 'cousins', 'bijan', 'drake london', 'atlanta', 'penix'] },
-  { id: 'tb', keywords: ['buccaneers', 'bucs', 'mayfield', 'mike evans', 'godwin', 'tampa bay'] },
-  { id: 'sea', keywords: ['seahawks', 'geno smith', 'metcalf', 'kenneth walker', 'seattle'] },
-  { id: 'lar', keywords: ['rams', 'stafford', 'puka', 'nacua', 'kupp', 'mcvay'] },
-  { id: 'lac', keywords: ['chargers', 'herbert', 'harbaugh', 'bosa', 'mack'] },
-  { id: 'den', keywords: ['broncos', 'bo nix', 'surtain', 'sean payton', 'denver', 'sutton'] },
-  { id: 'lv', keywords: ['raiders', 'maxx crosby', 'bowers', 'las vegas'] },
-  { id: 'cle', keywords: ['browns', 'myles garrett', 'chubb', 'cleveland'] },
+  { id: 'atl', keywords: ['falcons', 'bijan robinson', 'drake london', 'atlanta', 'penix'] },
+  { id: 'tb', keywords: ['buccaneers', 'bucs', 'baker mayfield', 'mike evans', 'godwin', 'tampa bay'] },
+  { id: 'sea', keywords: ['seahawks', 'sam darnold', 'jaxon smith-njigba', 'seattle', 'mike macdonald'] },
+  { id: 'lar', keywords: ['rams', 'matthew stafford', 'puka', 'nacua', 'sean mcvay'] },
+  { id: 'lac', keywords: ['chargers', 'justin herbert', 'jim harbaugh', 'ladd mcconkey', 'khalil mack'] },
+  { id: 'lv', keywords: ['raiders', 'maxx crosby', 'brock bowers', 'las vegas', 'ashton jeanty'] },
+  { id: 'cle', keywords: ['browns', 'myles garrett', 'cleveland', 'jerry jeudy'] },
   { id: 'ind', keywords: ['colts', 'anthony richardson', 'jonathan taylor', 'indianapolis'] },
-  { id: 'jax', keywords: ['jaguars', 'trevor lawrence', 'etienne', 'jacksonville', 'brian thomas'] },
-  { id: 'ten', keywords: ['titans', 'levis', 'pollard', 'ridley', 'tennessee'] },
-  { id: 'ne', keywords: ['patriots', 'drake maye', 'new england', 'mayo', 'vrabel'] },
-  { id: 'nyg', keywords: ['giants', 'nabers', 'dexter lawrence', 'daboll'] },
-  { id: 'no', keywords: ['saints', 'kamara', 'olave', 'new orleans'] },
-  { id: 'car', keywords: ['panthers', 'bryce young', 'chuba', 'carolina'] },
-  { id: 'ari', keywords: ['cardinals', 'kyler murray', 'marvin harrison', 'arizona', 'mcbride'] },
+  { id: 'jax', keywords: ['jaguars', 'trevor lawrence', 'etienne', 'jacksonville', 'brian thomas', 'travis hunter'] },
+  { id: 'ten', keywords: ['titans', 'cam ward', 'tony pollard', 'calvin ridley', 'tennessee'] },
+  { id: 'ne', keywords: ['patriots', 'drake maye', 'new england', 'mike vrabel'] },
+  { id: 'nyg', keywords: ['giants', 'malik nabers', 'dexter lawrence', 'daboll', 'abdul carter'] },
+  { id: 'no', keywords: ['saints', 'alvin kamara', 'chris olave', 'new orleans'] },
+  { id: 'car', keywords: ['panthers', 'bryce young', 'chuba hubbard', 'carolina', 'tetairoa mcmillan'] },
+  { id: 'ari', keywords: ['cardinals', 'kyler murray', 'marvin harrison', 'arizona', 'trey mcbride'] },
 ];
 
+function escapeRegex(str: string): string {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function hasWholeWord(text: string, phrase: string): boolean {
+  const re = new RegExp(`\\b${escapeRegex(phrase)}\\b`, 'i');
+  return re.test(text);
+}
+
 function detectTeamAndTags(title: string, summary: string): { teamId?: string; tags: string[] } {
-  const combined = `${title} ${summary}`.toLowerCase();
+  const combined = `${title} ${summary}`;
+  const lower = combined.toLowerCase();
   const tags = new Set<string>(['NFL', 'Live Wire']);
   let matchedTeamId: string | undefined;
 
   for (const tk of TEAM_KEYWORDS) {
     for (const kw of tk.keywords) {
-      if (combined.includes(kw)) {
+      if (hasWholeWord(combined, kw)) {
         if (!matchedTeamId) matchedTeamId = tk.id;
         tags.add(tk.id.toUpperCase());
       }
     }
   }
 
-  if (combined.includes('injur') || combined.includes('surgery') || combined.includes('questionable') || combined.includes('out')) {
+  if (lower.includes('injur') || lower.includes('surgery') || lower.includes('questionable') || hasWholeWord(combined, 'out')) {
     tags.add('Injuries');
   }
-  if (combined.includes('trade') || combined.includes('sign') || combined.includes('contract') || combined.includes('draft')) {
+  if (hasWholeWord(combined, 'trade') || hasWholeWord(combined, 'sign') || lower.includes('contract') || hasWholeWord(combined, 'draft')) {
     tags.add('Roster Move');
   }
 
@@ -213,9 +258,13 @@ async function fetchNFLDotComRSS(): Promise<NewsArticle[]> {
   }
 }
 
-async function fetchESPNLiveNews(): Promise<NewsArticle[]> {
+async function fetchESPNLiveNews(espnTeamId?: string, teamKey?: string, teamName?: string): Promise<NewsArticle[]> {
   try {
-    const res = await fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/news?limit=15', {
+    const endpoint = espnTeamId
+      ? `https://site.api.espn.com/apis/site/v2/sports/football/nfl/news?team=${espnTeamId}&limit=15`
+      : 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/news?limit=15';
+
+    const res = await fetch(endpoint, {
       cache: 'no-store',
       signal: AbortSignal.timeout(4500),
     });
@@ -226,9 +275,12 @@ async function fetchESPNLiveNews(): Promise<NewsArticle[]> {
     return data.articles.slice(0, 12).map((item: any, idx: number) => {
       const title = item.headline || item.title || 'Breaking NFL News';
       const summary = item.description || item.story || title;
-      const { teamId, tags } = detectTeamAndTags(title, summary);
+      const detected = detectTeamAndTags(title, summary);
+      const teamId = teamKey || detected.teamId;
+      const tags = teamName ? Array.from(new Set([teamName, ...detected.tags])).slice(0, 4) : detected.tags;
+
       return {
-        id: `espn-live-${item.id || idx}`,
+        id: `espn-live-${teamKey || 'all'}-${item.id || idx}`,
         title,
         summary,
         source: 'ESPN' as const,
@@ -240,6 +292,7 @@ async function fetchESPNLiveNews(): Promise<NewsArticle[]> {
         url: item.links?.web?.href || 'https://www.espn.com/nfl',
         tags,
         teamId,
+        teamTag: teamName,
         aiSummary: {
           executiveBrief: summary,
           keyTakeaways: [
@@ -260,6 +313,53 @@ export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const teamParam = searchParams.get('team');
+
+    if (teamParam) {
+      const tLower = teamParam.toLowerCase() === 'was' ? 'wsh' : teamParam.toLowerCase();
+      const teamObj = NFL_TEAMS.find((t) => t.id === tLower || t.abbreviation.toLowerCase() === tLower);
+      const espnTeamId = ESPN_TEAM_IDS[tLower];
+      const keywordObj = TEAM_KEYWORDS.find((k) => k.id === tLower);
+
+      const [espnTeamArticles, yahooArticles, nflArticles] = await Promise.all([
+        fetchESPNLiveNews(espnTeamId, tLower, teamObj?.name),
+        fetchYahooSportsRSS(),
+        fetchNFLDotComRSS(),
+      ]);
+
+      const allWire = [...yahooArticles, ...nflArticles];
+      const matchedWire = allWire.filter((a) => {
+        if (a.teamId?.toLowerCase() === tLower) return true;
+        if (a.tags.some((t) => t.toLowerCase() === tLower)) return true;
+        const text = `${a.title} ${a.summary}`;
+        if (teamObj && (hasWholeWord(text, teamObj.name) || hasWholeWord(text, teamObj.city))) {
+          return true;
+        }
+        if (keywordObj && keywordObj.keywords.some((kw) => hasWholeWord(text, kw))) {
+          return true;
+        }
+        return false;
+      });
+
+      const fallbackTeamArticles = getTeamNews(
+        tLower,
+        teamObj?.name || 'Broncos',
+        teamObj?.abbreviation || 'DEN'
+      );
+
+      const merged = [...matchedWire, ...espnTeamArticles, ...fallbackTeamArticles];
+      const seen = new Set<string>();
+      const uniqueTeamArticles = merged.filter((item) => {
+        if (seen.has(item.title)) return false;
+        seen.add(item.title);
+        return true;
+      });
+
+      return NextResponse.json({
+        articles: uniqueTeamArticles.slice(0, 15),
+        updatedAt: new Date().toLocaleTimeString(),
+        sources: ['ESPN', 'Yahoo Sports', 'NFL.com', 'Fireworks AI'],
+      });
+    }
 
     const [yahooArticles, nflArticles, espnArticles] = await Promise.all([
       fetchYahooSportsRSS(),
@@ -318,43 +418,13 @@ export async function GET(request: Request) {
       }
     }
 
-    if (teamParam) {
-      const tLower = teamParam.toLowerCase();
-      const teamObj = NFL_TEAMS.find((t) => t.id === tLower);
-      const matchedLive = combined.filter(
-        (a) =>
-          a.teamId?.toLowerCase() === tLower ||
-          a.tags.some((t) => t.toLowerCase() === tLower) ||
-          a.title.toLowerCase().includes(tLower) ||
-          (teamObj && a.title.toLowerCase().includes(teamObj.name.toLowerCase())) ||
-          (teamObj && a.title.toLowerCase().includes(teamObj.city.toLowerCase()))
-      );
-      const fallbackTeamArticles = getTeamNews(
-        tLower,
-        teamObj?.name || 'Broncos',
-        teamObj?.abbreviation || 'DEN'
-      );
-      const merged = [...matchedLive, ...fallbackTeamArticles];
-      const seen = new Set();
-      const uniqueTeamArticles = merged.filter((item) => {
-        if (seen.has(item.title)) return false;
-        seen.add(item.title);
-        return true;
-      });
-      return NextResponse.json({
-        articles: uniqueTeamArticles,
-        updatedAt: new Date().toLocaleTimeString(),
-        sources: ['Yahoo Sports', 'NFL.com', 'ESPN', 'Fireworks AI'],
-      });
-    }
-
     return NextResponse.json({
       articles: combined,
       updatedAt: new Date().toLocaleTimeString(),
       sources: ['Yahoo Sports', 'NFL.com', 'ESPN', 'Fireworks AI'],
     });
-  } catch (err) {
-    console.error('Live news aggregation error:', err);
-    return NextResponse.json({ articles: [], updatedAt: new Date().toLocaleTimeString() }, { status: 200 });
+  } catch (error) {
+    console.error('Error in /api/news:', error);
+    return NextResponse.json({ articles: [], error: 'Failed to load live NFL news' }, { status: 500 });
   }
 }
