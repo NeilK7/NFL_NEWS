@@ -1207,7 +1207,7 @@ export const TEAM_STATS_DATA: Record<string, TeamStats> = {
         "touchdowns": 0
       },
       "receiving": {
-        "name": "Deion Burks",
+        "name": "Alec Pierce",
         "stat": "33 REC, 354 YDS, 1 TD",
         "receptions": 0,
         "yards": 0,
@@ -1248,7 +1248,7 @@ export const TEAM_STATS_DATA: Record<string, TeamStats> = {
     },
     "leaders": {
       "passing": {
-        "name": "Joey Aguilar",
+        "name": "Carson Beck",
         "stat": "193/305, 1719 YDS, 10 TD, 7 INT",
         "yards": 0,
         "touchdowns": 0

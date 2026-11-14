@@ -23,24 +23,93 @@ async function fetchLiveRosterAndInjuries(teamAbbr: string): Promise<{
   const starPlayers: Player[] = [];
 
   try {
-    const res = await fetch(
-      `https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${abbr}/roster`,
-      {
-        cache: 'no-store',
-        signal: AbortSignal.timeout(5000),
-      }
-    );
+    const [res, depthRes] = await Promise.all([
+      fetch(
+        `https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${abbr}/roster`,
+        {
+          cache: 'no-store',
+          signal: AbortSignal.timeout(5000),
+        }
+      ),
+      fetch(
+        `https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${abbr}/depthcharts`,
+        {
+          cache: 'no-store',
+          signal: AbortSignal.timeout(5000),
+        }
+      ),
+    ]);
     if (!res.ok) return { injuries, starPlayers };
 
     const data = await res.json();
+    const depthData = depthRes.ok ? await depthRes.json() : null;
+
+    const depthRankById: Record<string, number> = {};
+    for (const dc of depthData?.depthchart || []) {
+      for (const [posKey, posObj] of Object.entries(dc.positions || {}) as [string, any][]) {
+        if (['pr', 'kr', 'h'].includes(posKey.toLowerCase())) continue;
+        (posObj?.athletes || []).forEach((ath: any, idx: number) => {
+          const aid = String(ath.id);
+          const rank = idx + 1;
+          if (!depthRankById[aid] || rank < depthRankById[aid]) {
+            depthRankById[aid] = rank;
+          }
+        });
+      }
+    }
+
+    const FRANCHISE_STARS = new Set([
+      'Bo Nix', 'J.K. Dobbins', 'RJ Harvey', 'Courtland Sutton', 'Jaylen Waddle', 'Marvin Mims Jr.', 'Evan Engram', 'Pat Surtain II', 'Nik Bonitto', 'Zach Allen', 'Talanoa Hufanga', 'Jonathon Cooper',
+      'Patrick Mahomes', 'Kenneth Walker III', 'Rashee Rice', 'Xavier Worthy', 'Josh Downs', 'Travis Kelce', 'Chris Jones', 'Trent McDuffie',
+      'Brock Purdy', 'Christian McCaffrey', 'Brandon Aiyuk', 'Deebo Samuel Sr.', 'Mike Evans', 'Keenan Allen', 'George Kittle', 'Nick Bosa', 'Fred Warner',
+      'Lamar Jackson', 'Derrick Henry', 'Zay Flowers', 'Rashod Bateman', 'Mark Andrews', 'Roquan Smith', 'Kyle Hamilton', 'Nnamdi Madubuike',
+      'Jared Goff', 'Jahmyr Gibbs', 'Isiah Pacheco', 'Amon-Ra St. Brown', 'Jameson Williams', 'Sam LaPorta', 'Aidan Hutchinson', 'Brian Branch',
+      'Josh Allen', 'James Cook III', 'DJ Moore', 'Khalil Shakir', 'Keon Coleman', 'Dalton Kincaid', 'Ed Oliver', 'Greg Rousseau',
+      'Jalen Hurts', 'Saquon Barkley', 'DeVonta Smith', 'Dallas Goedert', 'Jalen Carter', 'Zack Baun', 'Quinyon Mitchell', 'Cooper DeJean',
+      'Kyler Murray', 'Kirk Cousins', 'Aaron Jones Sr.', 'Jordan Mason', 'Justin Jefferson', 'Jordan Addison', 'Jauan Jennings', 'T.J. Hockenson',
+      'Jordan Love', 'Josh Jacobs', 'Jayden Reed', 'Christian Watson', 'Matthew Golden', 'Tucker Kraft', 'Xavier McKinney', 'Rashan Gary',
+      'C.J. Stroud', 'David Montgomery', 'Nico Collins', 'Marvin Harrison Jr.', 'Tank Dell', 'Dalton Schultz', 'Will Anderson Jr.', 'Danielle Hunter', 'Derek Stingley Jr.',
+      'Jayden Daniels', 'Austin Ekeler', 'Rachaad White', 'Terry McLaurin', 'Stefon Diggs', 'Chig Okonkwo', 'Frankie Luvu',
+      'Aaron Rodgers', 'Jaylen Warren', 'Rico Dowdle', 'DK Metcalf', 'Michael Pittman Jr.', 'Pat Freiermuth', 'Darnell Washington', 'T.J. Watt', 'Minkah Fitzpatrick', 'Cam Heyward',
+      'Michael Penix Jr.', 'Tua Tagovailoa', 'Bijan Robinson', 'Drake London', 'Kyle Pitts Sr.', 'Jessie Bates III',
+      'Baker Mayfield', 'Bucky Irving', 'Chris Godwin Jr.', 'Emeka Egbuka', 'Jalen McMillan', 'Cade Otton', 'Antoine Winfield Jr.', 'Vita Vea',
+      'Caleb Williams', "D'Andre Swift", 'Rome Odunze', 'Luther Burden III', 'Cole Kmet', 'Colston Loveland', 'Montez Sweat', 'Jaylon Johnson',
+      'Dak Prescott', 'Javonte Williams', 'CeeDee Lamb', 'George Pickens', 'Jake Ferguson', 'Micah Parsons', 'DaRon Bland', 'Trevon Diggs',
+      'Joe Burrow', 'Chase Brown', "Ja'Marr Chase", 'Tee Higgins', 'Mike Gesicki', 'Trey Hendrickson',
+      'Geno Smith', 'Breece Hall', 'Braelon Allen', 'Garrett Wilson', 'Adonai Mitchell', 'Mason Taylor', 'Quinnen Williams', 'Sauce Gardner',
+      'Malik Willis', 'Kyle McCord', "De'Von Achane", 'Jaylen Wright', 'Malik Washington', 'Jalen Tolbert', 'Greg Dulcich',
+      'Sam Darnold', 'Zach Charbonnet', 'Jaxon Smith-Njigba', 'Cooper Kupp', 'Rashid Shaheed', 'Devon Witherspoon', 'Leonard Williams',
+      'Justin Herbert', 'Omarion Hampton', 'Ladd McConkey', 'Quentin Johnston', 'David Njoku', 'Khalil Mack', 'Derwin James Jr.',
+      'Matthew Stafford', 'Kyren Williams', 'Puka Nacua', 'Davante Adams', 'Tutu Atwell', 'Tyler Higbee', 'Jared Verse', 'Braden Fiske',
+      'Anthony Richardson Sr.', 'Daniel Jones', 'Jonathan Taylor', 'Alec Pierce', 'Tyler Warren', 'DeForest Buckner', 'Zaire Franklin',
+      'Carson Beck', 'Gardner Minshew II', 'James Conner', 'Trey Benson', 'Tyler Allgeier', 'Michael Wilson', 'Trey McBride', 'Budda Baker',
+      'Spencer Rattler', 'Tyler Shough', 'Alvin Kamara', 'Travis Etienne Jr.', 'Chris Olave', 'Juwan Johnson', 'Noah Fant', 'Cameron Jordan',
+      'Fernando Mendoza', "Aidan O'Connell", 'Ashton Jeanty', 'Tre Tucker', 'Jack Bech', 'Brock Bowers', 'Maxx Crosby',
+      'Trevor Lawrence', 'Bhayshul Tuten', 'Brian Thomas Jr.', 'Travis Hunter', 'Jakobi Meyers', 'Brenton Strange', 'Josh Hines-Allen', 'Travon Walker',
+      'Deshaun Watson', 'Shedeur Sanders', 'Quinshon Judkins', 'Jerry Jeudy', 'Harold Fannin Jr.', 'Myles Garrett', 'Denzel Ward',
+      'Cam Ward', 'Tony Pollard', 'Tyjae Spears', 'Calvin Ridley', "Wan'Dale Robinson", 'Carnell Tate', 'Jeffery Simmons',
+      'Drake Maye', 'Rhamondre Stevenson', 'TreVeyon Henderson', 'A.J. Brown', 'DeMario Douglas', 'Romeo Doubs', 'Hunter Henry', 'Christian Gonzalez',
+      'J.J. McCarthy', 'Jaxson Dart', 'Tyrone Tracy Jr.', 'Cam Skattebo', 'Devin Singletary', 'Malik Nabers', 'Darnell Mooney', 'Isaiah Likely', 'Dexter Lawrence II', 'Brian Burns',
+      'Bryce Young', 'Chuba Hubbard', 'Jonathon Brooks', 'Tetairoa McMillan', 'Xavier Legette', 'Jalen Coker', "Ja'Tavion Sanders", 'Derrick Brown', 'Jaycee Horn',
+    ]);
+
     const groups = data?.athletes || [];
     const posPriority: Record<string, number> = {
-      QB: 1, RB: 2, WR: 3, TE: 4, DE: 5, DT: 6, LB: 7, OLB: 7, ILB: 7, CB: 8, S: 9, FS: 9, SS: 9, OT: 10, G: 11, C: 12, PK: 13, K: 13, P: 14, LS: 15,
+      QB: 1, RB: 2, WR: 3, TE: 4, DE: 5, DT: 6, NT: 6, LB: 7, OLB: 7, ILB: 7, CB: 8, S: 9, FS: 9, SS: 9, DB: 9, OT: 10, G: 11, C: 12, OL: 12, PK: 13, K: 13, P: 14, LS: 15, FB: 16,
     };
 
+    const seenPlayerIds = new Set<string>();
+    const rawPlayers: (Player & { _depthRank: number; _starTier: number })[] = [];
+
     for (const group of groups) {
+      if (group?.position === 'practiceSquad') continue;
       const items = group?.items || [];
       for (const athlete of items) {
+        if (athlete.status?.type === 'practice-squad') continue;
+        const aidStr = String(athlete.id);
+        if (seenPlayerIds.has(aidStr)) continue;
+        seenPlayerIds.add(aidStr);
+
         const pos = athlete.position?.abbreviation || 'NFL';
         const fullName = athlete.fullName || athlete.displayName || 'Player';
         const jersey = Number(athlete.jersey || 0);
@@ -56,6 +125,13 @@ async function fetchLiveRosterAndInjuries(teamAbbr: string): Promise<{
           athlete.headshot?.href ||
           `https://a.espncdn.com/i/teamlogos/nfl/500/${abbr}.png`;
 
+        let playerStatus: Player['status'] = 'Active';
+        if (athlete.status?.type === 'day-to-day') {
+          playerStatus = 'Questionable';
+        } else if (group?.position === 'injuredReserveOrOut') {
+          playerStatus = 'IR';
+        }
+
         // Extract real live injuries from the official roster wire
         if (Array.isArray(athlete.injuries) && athlete.injuries.length > 0) {
           for (const inj of athlete.injuries) {
@@ -70,6 +146,8 @@ async function fetchLiveRosterAndInjuries(teamAbbr: string): Promise<{
             } else if (rawStatus.toLowerCase().includes('active')) {
               mappedStatus = 'Active';
             }
+
+            playerStatus = mappedStatus;
 
             const injType =
               inj.details?.type ||
@@ -103,25 +181,38 @@ async function fetchLiveRosterAndInjuries(teamAbbr: string): Promise<{
           }
         }
 
-        // Collect all active players across Offense, Defense, and Special Teams
-        if (athlete.status?.type === 'active' || !athlete.status?.type) {
-          starPlayers.push({
-            id: `p-${abbr}-${athlete.id}`,
-            name: fullName,
-            position: pos,
-            number: jersey,
-            teamId: abbr,
-            avatarUrl,
-            status: 'Active',
-            college,
-            experience: expStr,
-            statsHighlight: `${pos} #${jersey} • ${college} • ${expStr}`,
-          });
-        }
+        const isStar = FRANCHISE_STARS.has(fullName) && !(fullName === 'Justin Jefferson' && pos === 'LB');
+        const dRank = isStar ? 1 : (depthRankById[aidStr] || 99);
+        const depthBadge = dRank === 1 ? 'Starter • ' : '';
+
+        rawPlayers.push({
+          id: `p-${abbr}-${athlete.id}`,
+          name: fullName,
+          position: pos,
+          number: jersey,
+          teamId: abbr,
+          avatarUrl,
+          status: playerStatus,
+          college,
+          experience: expStr,
+          statsHighlight: `${depthBadge}${pos} #${jersey} • ${college} • ${expStr}`,
+          _depthRank: dRank,
+          _starTier: isStar ? 0 : (dRank === 1 ? 1 : 2),
+        });
       }
     }
 
-    starPlayers.sort((a, b) => (posPriority[a.position] || 99) - (posPriority[b.position] || 99));
+    rawPlayers.sort((a, b) => {
+      if (a._starTier !== b._starTier) return a._starTier - b._starTier;
+      const pDiff = (posPriority[a.position] || 99) - (posPriority[b.position] || 99);
+      if (pDiff !== 0) return pDiff;
+      return (a._depthRank || 99) - (b._depthRank || 99);
+    });
+
+    for (const p of rawPlayers) {
+      const { _depthRank, _starTier, ...cleanPlayer } = p;
+      starPlayers.push(cleanPlayer);
+    }
 
     return { injuries: injuries.slice(0, 15), starPlayers };
   } catch (err) {

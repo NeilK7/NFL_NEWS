@@ -345,36 +345,23 @@ export default function TeamDashboard({
               <button
                 onClick={onOpenNews}
                 className="py-2.5 px-3.5 bg-gray-900/90 hover:bg-gray-800 border border-blue-500/40 hover:border-blue-400 text-blue-300 font-bold text-xs uppercase tracking-wider rounded-xl flex items-center gap-1.5 shadow-md transition-all hover:scale-[1.02] cursor-pointer"
-                title={`Inspect ${team.name} breaking news & AI briefs`}
+                title={`Inspect ${team.name} breaking news & briefs`}
               >
                 <Newspaper className="w-4 h-4 text-blue-400" />
                 <span>Franchise News</span>
               </button>
             )}
-
-            <button
-              onClick={() =>
-                onOpenAISummary(
-                  `Generate an executive scouting report for the ${team.city} ${team.name} (${liveRecord.wins}-${liveRecord.losses}) ahead of their matchup with ${nextGame.opponent}. Cover current Yahoo Sports and NFL.com news, key player health, and tactical edge.`,
-                  `${team.city} ${team.name} Fireworks AI Scout Brief`
-                )
-              }
-              className="py-2.5 px-4 bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-extrabold text-xs uppercase tracking-wider rounded-xl flex items-center gap-2 shadow-lg shadow-amber-500/20 transition-all hover:scale-[1.02] cursor-pointer"
-            >
-              <Sparkles className="w-4 h-4 fill-black" />
-              Fireworks AI Game Plan
-            </button>
           </div>
         </div>
       </div>
 
-      {/* Live Fireworks AI Gathered Intelligence Banner (Yahoo Sports + NFL.com) */}
+      {/* Live Franchise Updates Banner (Yahoo Sports + NFL.com) */}
       <div className="glass-panel-gold rounded-2xl p-5 border border-amber-500/30 space-y-3">
         <div className="flex items-center justify-between flex-wrap gap-2">
           <div className="flex items-center gap-2">
             <Zap className="w-4 h-4 text-amber-400 fill-amber-400" />
             <span className="text-xs font-extrabold uppercase tracking-wider text-amber-300">
-              {aiIntel?.headline || `${team.city} ${team.name} Live Fireworks AI Intelligence (Yahoo Sports & NFL.com)`}
+              {aiIntel?.headline || `${team.city} ${team.name} Live Franchise Briefing (Yahoo Sports & NFL.com)`}
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -395,7 +382,7 @@ export default function TeamDashboard({
 
         {loadingIntel && !aiIntel ? (
           <p className="text-xs text-gray-400 animate-pulse">
-            Fireworks AI is gathering real-time Yahoo Sports & NFL.com updates, live records, and official NFL highlight reels for the {team.city} {team.name}...
+            Gathering real-time Yahoo Sports & NFL.com updates, live records, and official NFL highlight reels for the {team.city} {team.name}...
           </p>
         ) : aiIntel ? (
           <div className="space-y-2.5">

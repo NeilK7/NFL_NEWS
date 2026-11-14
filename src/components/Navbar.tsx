@@ -105,12 +105,9 @@ export default function Navbar({
                 <span className="font-extrabold text-lg sm:text-xl tracking-tight gold-gradient-text">
                   APEX
                 </span>
-                <span className="hidden sm:inline-block text-[9px] font-bold tracking-widest uppercase bg-amber-500/20 text-amber-300 px-1.5 py-0.5 rounded border border-amber-500/30">
-                  LIVE AI
-                </span>
               </div>
               <p className="text-[10px] text-gray-400 hidden sm:block -mt-1 font-medium tracking-wide">
-                Yahoo Sports & NFL.com Live AI Intelligence
+                Yahoo Sports & NFL.com Official Hub
               </p>
             </div>
           </div>
