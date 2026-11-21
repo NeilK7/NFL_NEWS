@@ -252,69 +252,17 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "den-inj-4372016",
-        "playerName": "Jaylen Waddle",
-        "position": "WR",
-        "teamId": "den",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 8",
-        "updatedAt": "Nov 8",
-        "details": "Jaylen Waddle (WR) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Jaylen Waddle (WR) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "den-inj-4429193",
-        "playerName": "Kris Abrams-Draine",
-        "position": "CB",
-        "teamId": "den",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
-        "details": "Kris Abrams-Draine (CB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Kris Abrams-Draine (CB) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "den-inj-4360853",
-        "playerName": "Talanoa Hufanga",
-        "position": "S",
-        "teamId": "den",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
-        "details": "Talanoa Hufanga (S) is listed as Out (Undisclosed).",
-        "practiceStatus": "Talanoa Hufanga (S) is listed as Out (Undisclosed)."
-      },
-      {
         "id": "den-inj-4039059",
         "playerName": "Brandon Jones",
         "position": "S",
         "teamId": "den",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
-        "details": "Brandon Jones (S) is listed as Out (Undisclosed).",
-        "practiceStatus": "Brandon Jones (S) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "den-inj-4382401",
-        "playerName": "Riley Moss",
-        "position": "CB",
-        "teamId": "den",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 8",
-        "updatedAt": "Nov 8",
-        "details": "Riley Moss (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Riley Moss (CB) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Brandon Jones (S) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Brandon Jones (S) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "den-inj-4362748",
@@ -428,8 +376,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Aug 31",
-        "updatedAt": "Aug 31",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Caleb Lohner (TE) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Caleb Lohner (TE) is listed as Injured Reserve (Undisclosed)."
       },
@@ -527,7 +475,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 17,
         "teamId": "den",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4372016.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Alabama",
         "experience": "6 yrs exp",
         "statsHighlight": "30 REC, 337 YDS, 2 TD"
@@ -599,7 +547,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 9,
         "teamId": "den",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360853.png",
-        "status": "Out",
+        "status": "Active",
         "college": "USC",
         "experience": "6 yrs exp",
         "statsHighlight": "Starter • S #9 • USC • 6 yrs exp"
@@ -695,7 +643,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 21,
         "teamId": "den",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4382401.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Iowa",
         "experience": "4 yrs exp",
         "statsHighlight": "Starter • CB #21 • Iowa • 4 yrs exp"
@@ -707,7 +655,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 22,
         "teamId": "den",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4039059.png",
-        "status": "Out",
+        "status": "Questionable",
         "college": "Texas",
         "experience": "7 yrs exp",
         "statsHighlight": "Starter • S #22 • Texas • 7 yrs exp"
@@ -1049,18 +997,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #92 • IU Pennsylvania • 3 yrs exp"
       },
       {
-        "id": "p-den-4428241",
-        "name": "Levelle Bailey",
-        "position": "LB",
-        "number": 56,
-        "teamId": "den",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4428241.png",
-        "status": "IR",
-        "college": "Fresno State",
-        "experience": "2 yrs exp",
-        "statsHighlight": "LB #56 • Fresno State • 2 yrs exp"
-      },
-      {
         "id": "p-den-4693373",
         "name": "Jordan Turner",
         "position": "LB",
@@ -1071,6 +1007,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Michigan State",
         "experience": "2 yrs exp",
         "statsHighlight": "LB #55 • Michigan State • 2 yrs exp"
+      },
+      {
+        "id": "p-den-4428241",
+        "name": "Levelle Bailey",
+        "position": "LB",
+        "number": 56,
+        "teamId": "den",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4428241.png",
+        "status": "IR",
+        "college": "Fresno State",
+        "experience": "2 yrs exp",
+        "statsHighlight": "LB #56 • Fresno State • 2 yrs exp"
       },
       {
         "id": "p-den-4687592",
@@ -1091,7 +1039,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 31,
         "teamId": "den",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429193.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Missouri",
         "experience": "3 yrs exp",
         "statsHighlight": "CB #31 • Missouri • 3 yrs exp"
@@ -1279,24 +1227,24 @@ export const NFL_TEAMS: NFLTeam[] = [
     "logoUrl": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
     "stadium": "GEHA Field at Arrowhead Stadium",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 2,
       "ties": 0
     },
     "rankInDivision": "Active in AFC West",
     "nextGame": {
-      "week": 10,
-      "opponent": "Atlanta Falcons",
-      "opponentAbbr": "ATL",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/atl.png",
-      "isHome": false,
-      "date": "Sun, Nov 15",
+      "week": 11,
+      "opponent": "Arizona Cardinals",
+      "opponentAbbr": "ARI",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ari.png",
+      "isHome": true,
+      "date": "Sun, Nov 22",
       "time": "10:00 AM",
       "network": "CBS",
       "broadcastNetwork": "CBS",
       "spread": "KC Live Line",
-      "stadium": "Mercedes-Benz Stadium",
-      "venue": "Mercedes-Benz Stadium",
+      "stadium": "Arrowhead Stadium",
+      "venue": "Arrowhead Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -1411,10 +1359,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Atlanta Falcons",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/atl.png",
         "isHome": false,
-        "timeOrScore": "10:00 AM",
+        "timeOrScore": "35-13",
         "tvNetwork": "CBS",
         "broadcastNetwork": "CBS",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "W"
       },
       {
         "week": 11,
@@ -1522,23 +1471,23 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Jaylon Moore (OT) is listed as Out (Undisclosed).",
         "practiceStatus": "Jaylon Moore (OT) is listed as Out (Undisclosed)."
       },
       {
-        "id": "kc-inj-4685489",
-        "playerName": "Jaydn Ott",
-        "position": "RB",
+        "id": "kc-inj-4242459",
+        "playerName": "Trey Smith",
+        "position": "G",
         "teamId": "kc",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Jaydn Ott (RB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Jaydn Ott (RB) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Trey Smith (G) is listed as Out (Undisclosed).",
+        "practiceStatus": "Trey Smith (G) is listed as Out (Undisclosed)."
       },
       {
         "id": "kc-inj-4567048",
@@ -1547,24 +1496,24 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "kc",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Kenneth Walker III (RB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Kenneth Walker III (RB) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Kenneth Walker III (RB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Kenneth Walker III (RB) is listed as Out (Undisclosed)."
       },
       {
-        "id": "kc-inj-4880124",
-        "playerName": "Mansoor Delane",
-        "position": "CB",
+        "id": "kc-inj-4591008",
+        "playerName": "Omarr Norman-Lott",
+        "position": "DT",
         "teamId": "kc",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Mansoor Delane (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Mansoor Delane (CB) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Omarr Norman-Lott (DT) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Omarr Norman-Lott (DT) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "kc-inj-4871063",
@@ -1573,11 +1522,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "kc",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Peter Woods (DT) is listed as Out (Undisclosed).",
-        "practiceStatus": "Peter Woods (DT) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Peter Woods (DT) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Peter Woods (DT) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "kc-inj-4885466",
@@ -1630,19 +1579,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Aug 31",
         "details": "Jimmy Holiday (WR) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Jimmy Holiday (WR) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "kc-inj-4591008",
-        "playerName": "Omarr Norman-Lott",
-        "position": "DT",
-        "teamId": "kc",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Oct 28",
-        "updatedAt": "Oct 28",
-        "details": "Omarr Norman-Lott (DT) is listed as Out (Undisclosed).",
-        "practiceStatus": "Omarr Norman-Lott (DT) is listed as Out (Undisclosed)."
       },
       {
         "id": "kc-inj-4569659",
@@ -1708,6 +1644,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Aug 21",
         "details": "Matt Waletzko (OT) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Matt Waletzko (OT) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "kc-inj-4430723",
+        "playerName": "Jared Wiley",
+        "position": "TE",
+        "teamId": "kc",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Jared Wiley (TE) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Jared Wiley (TE) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -1733,7 +1682,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Texas Tech",
         "experience": "10 yrs exp",
-        "statsHighlight": "23 CAR, 85 YDS, 1 TD"
+        "statsHighlight": "25 CAR, 100 YDS, 1 TD"
       },
       {
         "id": "p-kc-4567048",
@@ -1742,7 +1691,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 9,
         "teamId": "kc",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4567048.png",
-        "status": "Questionable",
+        "status": "Out",
         "college": "Michigan State",
         "experience": "5 yrs exp",
         "statsHighlight": "159 CAR, 872 YDS, 7 TD"
@@ -1769,7 +1718,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "SMU",
         "experience": "4 yrs exp",
-        "statsHighlight": "25 REC, 292 YDS, 2 TD"
+        "statsHighlight": "30 REC, 374 YDS, 2 TD"
       },
       {
         "id": "p-kc-4683062",
@@ -1781,7 +1730,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Texas",
         "experience": "3 yrs exp",
-        "statsHighlight": "33 REC, 278 YDS, 1 TD"
+        "statsHighlight": "Starter • WR #1 • Texas • 3 yrs exp"
       },
       {
         "id": "p-kc-15847",
@@ -1793,7 +1742,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Cincinnati",
         "experience": "14 yrs exp",
-        "statsHighlight": "33 REC, 482 YDS, 2 TD"
+        "statsHighlight": "35 REC, 512 YDS, 2 TD"
       },
       {
         "id": "p-kc-3044859",
@@ -1898,7 +1847,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 5,
         "teamId": "kc",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4880124.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "LSU",
         "experience": "Rookie",
         "statsHighlight": "Starter • CB #5 • LSU • Rookie"
@@ -1952,18 +1901,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • OT #70 • Indiana • Rookie"
       },
       {
-        "id": "p-kc-4043041",
-        "name": "Jaylon Moore",
-        "position": "OT",
-        "number": 77,
-        "teamId": "kc",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4043041.png",
-        "status": "Out",
-        "college": "Western Michigan",
-        "experience": "6 yrs exp",
-        "statsHighlight": "Starter • OT #77 • Western Michigan • 6 yrs exp"
-      },
-      {
         "id": "p-kc-4431595",
         "name": "Kingsley Suamataia",
         "position": "OT",
@@ -1976,16 +1913,28 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • OT #76 • BYU • 3 yrs exp"
       },
       {
-        "id": "p-kc-4242459",
-        "name": "Trey Smith",
+        "id": "p-kc-4043039",
+        "name": "Mike Caliendo",
         "position": "G",
-        "number": 65,
+        "number": 66,
         "teamId": "kc",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242459.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4043039.png",
         "status": "Active",
-        "college": "Tennessee",
-        "experience": "6 yrs exp",
-        "statsHighlight": "Starter • G #65 • Tennessee • 6 yrs exp"
+        "college": "Western Michigan",
+        "experience": "4 yrs exp",
+        "statsHighlight": "Starter • G #66 • Western Michigan • 4 yrs exp"
+      },
+      {
+        "id": "p-kc-4373280",
+        "name": "Joshua Ezeudu",
+        "position": "G",
+        "number": 73,
+        "teamId": "kc",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4373280.png",
+        "status": "Active",
+        "college": "North Carolina",
+        "experience": "5 yrs exp",
+        "statsHighlight": "Starter • G #73 • North Carolina • 5 yrs exp"
       },
       {
         "id": "p-kc-4241385",
@@ -2081,7 +2030,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Nebraska",
         "experience": "Rookie",
-        "statsHighlight": "26 CAR, 111 YDS, 1 TD"
+        "statsHighlight": "20 REC, 307 YDS, 3 TD"
       },
       {
         "id": "p-kc-4685489",
@@ -2090,7 +2039,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 34,
         "teamId": "kc",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685489.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Oklahoma",
         "experience": "Rookie",
         "statsHighlight": "RB #34 • Oklahoma • Rookie"
@@ -2106,6 +2055,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "SMU",
         "experience": "2 yrs exp",
         "statsHighlight": "RB #24 • SMU • 2 yrs exp"
+      },
+      {
+        "id": "p-kc-4605841",
+        "name": "Nate Carter",
+        "position": "RB",
+        "number": 35,
+        "teamId": "kc",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4605841.png",
+        "status": "Active",
+        "college": "Michigan State",
+        "experience": "2 yrs exp",
+        "statsHighlight": "RB #35 • Michigan State • 2 yrs exp"
       },
       {
         "id": "p-kc-4912218",
@@ -2180,6 +2141,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "WR #2 • Baylor • 5 yrs exp"
       },
       {
+        "id": "p-kc-5155179",
+        "name": "Jacob De Jesus",
+        "position": "WR",
+        "number": 80,
+        "teamId": "kc",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5155179.png",
+        "status": "Active",
+        "college": "California",
+        "experience": "Rookie",
+        "statsHighlight": "WR #80 • California • Rookie"
+      },
+      {
         "id": "p-kc-3118892",
         "name": "Justin Watson",
         "position": "WR",
@@ -2222,7 +2195,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 12,
         "teamId": "kc",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430723.png",
-        "status": "Active",
+        "status": "IR",
         "college": "TCU",
         "experience": "3 yrs exp",
         "statsHighlight": "TE #12 • TCU • 3 yrs exp"
@@ -2282,7 +2255,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 99,
         "teamId": "kc",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4871063.png",
-        "status": "Out",
+        "status": "Questionable",
         "college": "Clemson",
         "experience": "Rookie",
         "statsHighlight": "DT #99 • Clemson • Rookie"
@@ -2306,7 +2279,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 55,
         "teamId": "kc",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4591008.png",
-        "status": "Out",
+        "status": "Questionable",
         "college": "Tennessee",
         "experience": "2 yrs exp",
         "statsHighlight": "DT #55 • Tennessee • 2 yrs exp"
@@ -2346,18 +2319,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Oklahoma",
         "experience": "1 yr exp",
         "statsHighlight": "LB #40 • Oklahoma • 1 yr exp"
-      },
-      {
-        "id": "p-kc-4036959",
-        "name": "Cole Christiansen",
-        "position": "LB",
-        "number": 48,
-        "teamId": "kc",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4036959.png",
-        "status": "Active",
-        "college": "Army",
-        "experience": "2 yrs exp",
-        "statsHighlight": "LB #48 • Army • 2 yrs exp"
       },
       {
         "id": "p-kc-4035433",
@@ -2432,6 +2393,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "S #29 • Iowa • Rookie"
       },
       {
+        "id": "p-kc-4043041",
+        "name": "Jaylon Moore",
+        "position": "OT",
+        "number": 77,
+        "teamId": "kc",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4043041.png",
+        "status": "Out",
+        "college": "Western Michigan",
+        "experience": "6 yrs exp",
+        "statsHighlight": "OT #77 • Western Michigan • 6 yrs exp"
+      },
+      {
         "id": "p-kc-4569659",
         "name": "Josh Simmons",
         "position": "OT",
@@ -2468,28 +2441,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "OT #61 • Ole Miss • Rookie"
       },
       {
-        "id": "p-kc-4043039",
-        "name": "Mike Caliendo",
+        "id": "p-kc-4242459",
+        "name": "Trey Smith",
         "position": "G",
-        "number": 66,
+        "number": 65,
         "teamId": "kc",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4043039.png",
-        "status": "Active",
-        "college": "Western Michigan",
-        "experience": "4 yrs exp",
-        "statsHighlight": "G #66 • Western Michigan • 4 yrs exp"
-      },
-      {
-        "id": "p-kc-4373280",
-        "name": "Joshua Ezeudu",
-        "position": "G",
-        "number": 73,
-        "teamId": "kc",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4373280.png",
-        "status": "Active",
-        "college": "North Carolina",
-        "experience": "5 yrs exp",
-        "statsHighlight": "G #73 • North Carolina • 5 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242459.png",
+        "status": "Out",
+        "college": "Tennessee",
+        "experience": "6 yrs exp",
+        "statsHighlight": "G #65 • Tennessee • 6 yrs exp"
       },
       {
         "id": "p-kc-4367645",
@@ -2518,24 +2479,24 @@ export const NFL_TEAMS: NFLTeam[] = [
     "logoUrl": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
     "stadium": "Levi's Stadium",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 1,
       "ties": 0
     },
     "rankInDivision": "Active in NFC West",
     "nextGame": {
-      "week": 10,
-      "opponent": "Dallas Cowboys",
-      "opponentAbbr": "DAL",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
-      "isHome": false,
-      "date": "Sun, Nov 15",
-      "time": "1:25 PM",
-      "network": "Fox",
-      "broadcastNetwork": "Fox",
+      "week": 11,
+      "opponent": "Minnesota Vikings",
+      "opponentAbbr": "MIN",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+      "isHome": true,
+      "date": "Sun, Nov 22",
+      "time": "5:20 PM",
+      "network": "NBC",
+      "broadcastNetwork": "NBC",
       "spread": "SF Live Line",
-      "stadium": "AT&T Stadium",
-      "venue": "AT&T Stadium",
+      "stadium": "Estadio Banorte",
+      "venue": "Estadio Banorte",
       "countdownHours": 48
     },
     "schedule": [
@@ -2650,10 +2611,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Dallas Cowboys",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
         "isHome": false,
-        "timeOrScore": "1:25 PM",
+        "timeOrScore": "46-40",
         "tvNetwork": "Fox",
         "broadcastNetwork": "Fox",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "W"
       },
       {
         "week": 11,
@@ -2761,8 +2723,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
         "details": "Brandon Aiyuk (WR) is listed as Out (Undisclosed).",
         "practiceStatus": "Brandon Aiyuk (WR) is listed as Out (Undisclosed)."
       },
@@ -2773,37 +2735,50 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "sf",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Mike Evans (WR) is listed as Out (Undisclosed).",
-        "practiceStatus": "Mike Evans (WR) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Mike Evans (WR) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Mike Evans (WR) is listed as Questionable (Undisclosed)."
       },
       {
-        "id": "sf-inj-13241",
-        "playerName": "Trent Williams",
-        "position": "OT",
+        "id": "sf-inj-4685397",
+        "playerName": "Jordan James",
+        "position": "RB",
         "teamId": "sf",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Trent Williams (OT) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Trent Williams (OT) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Jordan James (RB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Jordan James (RB) is listed as Questionable (Undisclosed)."
       },
       {
-        "id": "sf-inj-4427325",
-        "playerName": "Renardo Green",
-        "position": "CB",
+        "id": "sf-inj-4241464",
+        "playerName": "Mac Jones",
+        "position": "QB",
         "teamId": "sf",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Renardo Green (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Renardo Green (CB) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Mac Jones (QB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Mac Jones (QB) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "sf-inj-3116097",
+        "playerName": "Luke Gifford",
+        "position": "LB",
+        "teamId": "sf",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Luke Gifford (LB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Luke Gifford (LB) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "sf-inj-3916903",
@@ -2813,23 +2788,23 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
         "details": "Dre Greenlaw (LB) is listed as Questionable (Undisclosed).",
         "practiceStatus": "Dre Greenlaw (LB) is listed as Questionable (Undisclosed)."
       },
       {
-        "id": "sf-inj-4242488",
-        "playerName": "Deommodore Lenoir",
-        "position": "CB",
+        "id": "sf-inj-4039029",
+        "playerName": "Khalid Kareem",
+        "position": "DE",
         "teamId": "sf",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Deommodore Lenoir (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Deommodore Lenoir (CB) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Khalid Kareem (DE) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Khalid Kareem (DE) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "sf-inj-4565200",
@@ -2839,8 +2814,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
         "details": "Upton Stout (CB) is listed as Questionable (Undisclosed).",
         "practiceStatus": "Upton Stout (CB) is listed as Questionable (Undisclosed)."
       },
@@ -2891,8 +2866,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Aug 30",
-        "updatedAt": "Aug 30",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
         "details": "Isaac Guerendo (RB) is listed as Out (Undisclosed).",
         "practiceStatus": "Isaac Guerendo (RB) is listed as Out (Undisclosed)."
       },
@@ -2904,8 +2879,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 10",
-        "updatedAt": "Nov 10",
+        "lastUpdated": "Nov 14",
+        "updatedAt": "Nov 14",
         "details": "Gracen Halton (DT) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Gracen Halton (DT) is listed as Injured Reserve (Undisclosed)."
       },
@@ -2917,8 +2892,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 7",
-        "updatedAt": "Nov 7",
+        "lastUpdated": "Nov 14",
+        "updatedAt": "Nov 14",
         "details": "Nate Hobbs (CB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Nate Hobbs (CB) is listed as Injured Reserve (Undisclosed)."
       },
@@ -2934,19 +2909,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Aug 3",
         "details": "Mikail Kamara (DE) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Mikail Kamara (DE) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "sf-inj-3895856",
-        "playerName": "Christian Kirk",
-        "position": "WR",
-        "teamId": "sf",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Nov 7",
-        "updatedAt": "Nov 7",
-        "details": "Christian Kirk (WR) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Christian Kirk (WR) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -2972,7 +2934,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Iowa State",
         "experience": "5 yrs exp",
-        "statsHighlight": "39 CAR, 201 YDS, 2 TD"
+        "statsHighlight": "41 CAR, 222 YDS, 2 TD"
       },
       {
         "id": "p-sf-3117251",
@@ -2984,7 +2946,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Stanford",
         "experience": "10 yrs exp",
-        "statsHighlight": "36 REC, 270 YDS, 1 TD"
+        "statsHighlight": "40 REC, 431 YDS, 3 TD"
       },
       {
         "id": "p-sf-4360438",
@@ -3002,13 +2964,13 @@ export const NFL_TEAMS: NFLTeam[] = [
         "id": "p-sf-15818",
         "name": "Keenan Allen",
         "position": "WR",
-        "number": 0,
+        "number": 3,
         "teamId": "sf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/15818.png",
         "status": "Active",
         "college": "California",
         "experience": "13 yrs exp",
-        "statsHighlight": "Starter • WR #0 • California • 13 yrs exp"
+        "statsHighlight": "Starter • WR #3 • California • 13 yrs exp"
       },
       {
         "id": "p-sf-16737",
@@ -3017,7 +2979,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 5,
         "teamId": "sf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/16737.png",
-        "status": "Out",
+        "status": "Questionable",
         "college": "Texas A&M",
         "experience": "13 yrs exp",
         "statsHighlight": "27 REC, 420 YDS, 3 TD"
@@ -3044,7 +3006,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Iowa",
         "experience": "10 yrs exp",
-        "statsHighlight": "38 REC, 483 YDS, 5 TD"
+        "statsHighlight": "44 REC, 557 YDS, 5 TD"
       },
       {
         "id": "p-sf-4040605",
@@ -3137,7 +3099,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 0,
         "teamId": "sf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4427325.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Florida State",
         "experience": "3 yrs exp",
         "statsHighlight": "Starter • CB #0 • Florida State • 3 yrs exp"
@@ -3149,7 +3111,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 2,
         "teamId": "sf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242488.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Oregon",
         "experience": "6 yrs exp",
         "statsHighlight": "Starter • CB #2 • Oregon • 6 yrs exp"
@@ -3209,7 +3171,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 71,
         "teamId": "sf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/13241.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Oklahoma",
         "experience": "17 yrs exp",
         "statsHighlight": "Starter • OT #71 • Oklahoma • 17 yrs exp"
@@ -3305,7 +3267,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 10,
         "teamId": "sf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4241464.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Alabama",
         "experience": "6 yrs exp",
         "statsHighlight": "QB #10 • Alabama • 6 yrs exp"
@@ -3332,7 +3294,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Indiana",
         "experience": "Rookie",
-        "statsHighlight": "68 CAR, 303 YDS, 1 TD"
+        "statsHighlight": "79 CAR, 356 YDS, 2 TD"
       },
       {
         "id": "p-sf-4685397",
@@ -3341,7 +3303,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 29,
         "teamId": "sf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685397.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Oregon",
         "experience": "2 yrs exp",
         "statsHighlight": "RB #29 • Oregon • 2 yrs exp"
@@ -3359,16 +3321,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "RB #31 • Louisville • 3 yrs exp"
       },
       {
-        "id": "p-sf-16731",
-        "name": "Brandin Cooks",
+        "id": "p-sf-4575665",
+        "name": "Jacob Cowing",
         "position": "WR",
-        "number": 84,
+        "number": 4,
         "teamId": "sf",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/16731.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4575665.png",
         "status": "Active",
-        "college": "Oregon State",
-        "experience": "13 yrs exp",
-        "statsHighlight": "WR #84 • Oregon State • 13 yrs exp"
+        "college": "Arizona",
+        "experience": "3 yrs exp",
+        "statsHighlight": "WR #4 • Arizona • 3 yrs exp"
       },
       {
         "id": "p-sf-3043116",
@@ -3395,16 +3357,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "WR #17 • Ole Miss • 2 yrs exp"
       },
       {
-        "id": "p-sf-4575665",
-        "name": "Jacob Cowing",
+        "id": "p-sf-16731",
+        "name": "Brandin Cooks",
         "position": "WR",
-        "number": 4,
+        "number": 84,
         "teamId": "sf",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4575665.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/16731.png",
         "status": "Active",
-        "college": "Arizona",
-        "experience": "3 yrs exp",
-        "statsHighlight": "WR #4 • Arizona • 3 yrs exp"
+        "college": "Oregon State",
+        "experience": "13 yrs exp",
+        "statsHighlight": "WR #84 • Oregon State • 13 yrs exp"
       },
       {
         "id": "p-sf-4710714",
@@ -3533,7 +3495,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 47,
         "teamId": "sf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4039029.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Notre Dame",
         "experience": "4 yrs exp",
         "statsHighlight": "DE #47 • Notre Dame • 4 yrs exp"
@@ -3653,7 +3615,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 51,
         "teamId": "sf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3116097.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Nebraska",
         "experience": "8 yrs exp",
         "statsHighlight": "LB #51 • Nebraska • 8 yrs exp"
@@ -3878,23 +3840,23 @@ export const NFL_TEAMS: NFLTeam[] = [
     "stadium": "M&T Bank Stadium",
     "record": {
       "wins": 4,
-      "losses": 5,
+      "losses": 6,
       "ties": 0
     },
     "rankInDivision": "Active in AFC North",
     "nextGame": {
-      "week": 10,
-      "opponent": "Los Angeles Chargers",
-      "opponentAbbr": "LAC",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
-      "isHome": true,
-      "date": "Mon, Nov 16",
-      "time": "5:15 PM",
-      "network": "ESPN",
-      "broadcastNetwork": "ESPN",
+      "week": 11,
+      "opponent": "Carolina Panthers",
+      "opponentAbbr": "CAR",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/car.png",
+      "isHome": false,
+      "date": "Sun, Nov 22",
+      "time": "10:00 AM",
+      "network": "Fox",
+      "broadcastNetwork": "Fox",
       "spread": "BAL Live Line",
-      "stadium": "M&T Bank Stadium",
-      "venue": "M&T Bank Stadium",
+      "stadium": "Bank of America Stadium",
+      "venue": "Bank of America Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -4022,10 +3984,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Los Angeles Chargers",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
         "isHome": true,
-        "timeOrScore": "5:15 PM",
+        "timeOrScore": "20-23",
         "tvNetwork": "ESPN",
         "broadcastNetwork": "ESPN",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "L"
       },
       {
         "week": 11,
@@ -4159,11 +4122,24 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "bal",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Jaylinn Hawkins (S) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Jaylinn Hawkins (S) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Jaylinn Hawkins (S) is listed as Out (Undisclosed).",
+        "practiceStatus": "Jaylinn Hawkins (S) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "bal-inj-3126356",
+        "playerName": "Marlon Humphrey",
+        "position": "CB",
+        "teamId": "bal",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Marlon Humphrey (CB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Marlon Humphrey (CB) is listed as Out (Undisclosed)."
       },
       {
         "id": "bal-inj-4426372",
@@ -4177,6 +4153,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Nov 5",
         "details": "Adisa Isaac (LB) is listed as Questionable (Undisclosed).",
         "practiceStatus": "Adisa Isaac (LB) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "bal-inj-4035245",
+        "playerName": "Nnamdi Madubuike",
+        "position": "DT",
+        "teamId": "bal",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Nnamdi Madubuike (DT) is listed as Out (Undisclosed).",
+        "practiceStatus": "Nnamdi Madubuike (DT) is listed as Out (Undisclosed)."
       },
       {
         "id": "bal-inj-4035671",
@@ -4199,8 +4188,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
         "details": "Lamar Jackson (QB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Lamar Jackson (QB) is listed as Injured Reserve (Undisclosed)."
       },
@@ -4244,19 +4233,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Danny Pinter (C) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "bal-inj-4685526",
-        "playerName": "Adam Randall",
-        "position": "RB",
-        "teamId": "bal",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Nov 4",
-        "updatedAt": "Nov 4",
-        "details": "Adam Randall (RB) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Adam Randall (RB) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
         "id": "bal-inj-4433887",
         "playerName": "Jahquez Robinson",
         "position": "S",
@@ -4294,19 +4270,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Oct 7",
         "details": "Durham Smythe (TE) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Durham Smythe (TE) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "bal-inj-4036419",
-        "playerName": "Skylar Thompson",
-        "position": "QB",
-        "teamId": "bal",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Aug 19",
-        "updatedAt": "Aug 19",
-        "details": "Skylar Thompson (QB) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Skylar Thompson (QB) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -4344,7 +4307,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Alabama",
         "experience": "11 yrs exp",
-        "statsHighlight": "175 CAR, 689 YDS, 8 TD"
+        "statsHighlight": "185 CAR, 699 YDS, 10 TD"
       },
       {
         "id": "p-bal-4360939",
@@ -4356,7 +4319,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Minnesota",
         "experience": "6 yrs exp",
-        "statsHighlight": "20 REC, 294 YDS, 1 TD"
+        "statsHighlight": "23 REC, 336 YDS, 1 TD"
       },
       {
         "id": "p-bal-4429615",
@@ -4368,7 +4331,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Boston College",
         "experience": "4 yrs exp",
-        "statsHighlight": "43 REC, 614 YDS, 3 TD"
+        "statsHighlight": "49 REC, 688 YDS, 3 TD"
       },
       {
         "id": "p-bal-3116365",
@@ -4380,7 +4343,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Oklahoma",
         "experience": "9 yrs exp",
-        "statsHighlight": "31 REC, 237 YDS, 1 TD"
+        "statsHighlight": "39 REC, 319 YDS, 1 TD"
       },
       {
         "id": "p-bal-4035245",
@@ -4389,7 +4352,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 92,
         "teamId": "bal",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4035245.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Texas A&M",
         "experience": "7 yrs exp",
         "statsHighlight": "Starter • DT #92 • Texas A&M • 7 yrs exp"
@@ -4440,7 +4403,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "NC State",
         "experience": "11 yrs exp",
-        "statsHighlight": "Starter • QB #11 • NC State • 11 yrs exp"
+        "statsHighlight": "33/49, 340 YDS, 1 INT"
       },
       {
         "id": "p-bal-4870847",
@@ -4509,7 +4472,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 44,
         "teamId": "bal",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3126356.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Alabama",
         "experience": "10 yrs exp",
         "statsHighlight": "Starter • CB #44 • Alabama • 10 yrs exp"
@@ -4533,7 +4496,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 21,
         "teamId": "bal",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3858276.png",
-        "status": "Questionable",
+        "status": "Out",
         "college": "California",
         "experience": "7 yrs exp",
         "statsHighlight": "Starter • S #21 • California • 7 yrs exp"
@@ -4656,7 +4619,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "UConn",
         "experience": "Rookie",
-        "statsHighlight": "20/39, 151 YDS, 3 INT"
+        "statsHighlight": "QB #12 • UConn • Rookie"
       },
       {
         "id": "p-bal-4428512",
@@ -4704,7 +4667,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Oklahoma State",
         "experience": "8 yrs exp",
-        "statsHighlight": "33 CAR, 240 YDS, 1 TD"
+        "statsHighlight": "36 CAR, 244 YDS, 1 TD"
+      },
+      {
+        "id": "p-bal-4685526",
+        "name": "Adam Randall",
+        "position": "RB",
+        "number": 23,
+        "teamId": "bal",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685526.png",
+        "status": "Active",
+        "college": "Clemson",
+        "experience": "Rookie",
+        "statsHighlight": "RB #23 • Clemson • Rookie"
       },
       {
         "id": "p-bal-4690013",
@@ -4717,18 +4692,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Marshall",
         "experience": "3 yrs exp",
         "statsHighlight": "RB #26 • Marshall • 3 yrs exp"
-      },
-      {
-        "id": "p-bal-4685526",
-        "name": "Adam Randall",
-        "position": "RB",
-        "number": 23,
-        "teamId": "bal",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685526.png",
-        "status": "IR",
-        "college": "Clemson",
-        "experience": "Rookie",
-        "statsHighlight": "RB #23 • Clemson • Rookie"
       },
       {
         "id": "p-bal-5088338",
@@ -4767,6 +4730,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "WR #10 • Colorado • 2 yrs exp"
       },
       {
+        "id": "p-bal-2576581",
+        "name": "Chris Moore",
+        "position": "WR",
+        "number": 17,
+        "teamId": "bal",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2576581.png",
+        "status": "Active",
+        "college": "Cincinnati",
+        "experience": "10 yrs exp",
+        "statsHighlight": "WR #17 • Cincinnati • 10 yrs exp"
+      },
+      {
         "id": "p-bal-4876132",
         "name": "Josh Cuevas",
         "position": "TE",
@@ -4801,6 +4776,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Notre Dame",
         "experience": "9 yrs exp",
         "statsHighlight": "TE #80 • Notre Dame • 9 yrs exp"
+      },
+      {
+        "id": "p-bal-2576399",
+        "name": "Nick Vannett",
+        "position": "TE",
+        "number": 87,
+        "teamId": "bal",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2576399.png",
+        "status": "Active",
+        "college": "Ohio State",
+        "experience": "11 yrs exp",
+        "statsHighlight": "TE #87 • Ohio State • 11 yrs exp"
       },
       {
         "id": "p-bal-15846",
@@ -5019,6 +5006,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "OT #76 • Alabama A&M • 2 yrs exp"
       },
       {
+        "id": "p-bal-3701582",
+        "name": "Chuma Edoga",
+        "position": "OT",
+        "number": 62,
+        "teamId": "bal",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3701582.png",
+        "status": "Active",
+        "college": "USC",
+        "experience": "8 yrs exp",
+        "statsHighlight": "OT #62 • USC • 8 yrs exp"
+      },
+      {
         "id": "p-bal-4685736",
         "name": "Emery Jones Jr.",
         "position": "OT",
@@ -5117,24 +5116,24 @@ export const NFL_TEAMS: NFLTeam[] = [
     "logoUrl": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
     "stadium": "Ford Field",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 2,
       "ties": 0
     },
     "rankInDivision": "Active in NFC North",
     "nextGame": {
-      "week": 10,
-      "opponent": "New England Patriots",
-      "opponentAbbr": "NE",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
+      "week": 11,
+      "opponent": "Tampa Bay Buccaneers",
+      "opponentAbbr": "TB",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/tb.png",
       "isHome": true,
-      "date": "Sun, Nov 15",
-      "time": "6:30 AM",
+      "date": "Sun, Nov 22",
+      "time": "10:00 AM",
       "network": "Fox",
       "broadcastNetwork": "Fox",
       "spread": "DET Live Line",
-      "stadium": "FC Bayern Munich Stadium",
-      "venue": "FC Bayern Munich Stadium",
+      "stadium": "Ford Field",
+      "venue": "Ford Field",
       "countdownHours": 48
     },
     "schedule": [
@@ -5249,10 +5248,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "New England Patriots",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
         "isHome": true,
-        "timeOrScore": "6:30 AM",
+        "timeOrScore": "35-10",
         "tvNetwork": "Fox",
         "broadcastNetwork": "Fox",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "W"
       },
       {
         "week": 11,
@@ -5353,17 +5353,17 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "det-inj-4374302",
-        "playerName": "Amon-Ra St. Brown",
-        "position": "WR",
+        "id": "det-inj-4361788",
+        "playerName": "Cade Mays",
+        "position": "C",
         "teamId": "det",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Amon-Ra St. Brown (WR) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Amon-Ra St. Brown (WR) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Cade Mays (C) is listed as Out (Undisclosed).",
+        "practiceStatus": "Cade Mays (C) is listed as Out (Undisclosed)."
       },
       {
         "id": "det-inj-4912274",
@@ -5373,10 +5373,75 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Sione Vaki (RB) is listed as Questionable (Undisclosed).",
         "practiceStatus": "Sione Vaki (RB) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "det-inj-4036507",
+        "playerName": "Joe Bachie",
+        "position": "LB",
+        "teamId": "det",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Joe Bachie (LB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Joe Bachie (LB) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "det-inj-4027919",
+        "playerName": "Khalil Dorsey",
+        "position": "CB",
+        "teamId": "det",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Khalil Dorsey (CB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Khalil Dorsey (CB) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "det-inj-4569323",
+        "playerName": "Thomas Harper",
+        "position": "S",
+        "teamId": "det",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Sep 26",
+        "updatedAt": "Sep 26",
+        "details": "Thomas Harper (S) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Thomas Harper (S) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "det-inj-4361861",
+        "playerName": "Tyler Lacy",
+        "position": "DT",
+        "teamId": "det",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Tyler Lacy (DT) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Tyler Lacy (DT) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "det-inj-4566092",
+        "playerName": "Ennis Rakestraw Jr.",
+        "position": "CB",
+        "teamId": "det",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Ennis Rakestraw Jr. (CB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Ennis Rakestraw Jr. (CB) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "det-inj-3139387",
@@ -5385,11 +5450,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "det",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "D.J. Reed (CB) is listed as Out (Undisclosed).",
-        "practiceStatus": "D.J. Reed (CB) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "D.J. Reed (CB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "D.J. Reed (CB) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "det-inj-4611506",
@@ -5431,30 +5496,17 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Damone Clark (LB) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "det-inj-4569323",
-        "playerName": "Thomas Harper",
-        "position": "S",
+        "id": "det-inj-4372099",
+        "playerName": "Aidan Hutchinson",
+        "position": "DE",
         "teamId": "det",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Sep 26",
-        "updatedAt": "Sep 26",
-        "details": "Thomas Harper (S) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Thomas Harper (S) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "det-inj-4360383",
-        "playerName": "Kerby Joseph",
-        "position": "S",
-        "teamId": "det",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Kerby Joseph (S) is listed as Out (Undisclosed).",
-        "practiceStatus": "Kerby Joseph (S) is listed as Out (Undisclosed)."
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Aidan Hutchinson (DE) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Aidan Hutchinson (DE) is listed as Injured Reserve (Undisclosed)."
       },
       {
         "id": "det-inj-3126997",
@@ -5494,58 +5546,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Sep 22",
         "details": "Avonte Maddox (CB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Avonte Maddox (CB) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "det-inj-5209589",
-        "playerName": "Giovanni Manu",
-        "position": "OT",
-        "teamId": "det",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Aug 31",
-        "updatedAt": "Aug 31",
-        "details": "Giovanni Manu (OT) is listed as Out (Undisclosed).",
-        "practiceStatus": "Giovanni Manu (OT) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "det-inj-4361788",
-        "playerName": "Cade Mays",
-        "position": "C",
-        "teamId": "det",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Cade Mays (C) is listed as Out (Undisclosed).",
-        "practiceStatus": "Cade Mays (C) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "det-inj-4361529",
-        "playerName": "Isiah Pacheco",
-        "position": "RB",
-        "teamId": "det",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Oct 30",
-        "updatedAt": "Oct 30",
-        "details": "Isiah Pacheco (RB) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Isiah Pacheco (RB) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "det-inj-4896353",
-        "playerName": "Jimmy Rolder",
-        "position": "LB",
-        "teamId": "det",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Nov 3",
-        "updatedAt": "Nov 3",
-        "details": "Jimmy Rolder (LB) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Jimmy Rolder (LB) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -5571,7 +5571,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "California",
         "experience": "11 yrs exp",
-        "statsHighlight": "19 CAR, 20 YDS, 1 TD"
+        "statsHighlight": "20 CAR, 23 YDS, 1 TD"
       },
       {
         "id": "p-det-4429795",
@@ -5583,7 +5583,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Alabama",
         "experience": "4 yrs exp",
-        "statsHighlight": "177 CAR, 847 YDS, 9 TD"
+        "statsHighlight": "199 CAR, 1000 YDS, 11 TD"
       },
       {
         "id": "p-det-4361529",
@@ -5604,10 +5604,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 14,
         "teamId": "det",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4374302.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "USC",
         "experience": "6 yrs exp",
-        "statsHighlight": "61 REC, 657 YDS, 5 TD"
+        "statsHighlight": "65 REC, 755 YDS, 7 TD"
       },
       {
         "id": "p-det-4426388",
@@ -5619,7 +5619,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Alabama",
         "experience": "5 yrs exp",
-        "statsHighlight": "28 REC, 468 YDS, 5 TD"
+        "statsHighlight": "32 REC, 518 YDS, 5 TD"
       },
       {
         "id": "p-det-4430027",
@@ -5631,7 +5631,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Iowa",
         "experience": "4 yrs exp",
-        "statsHighlight": "35 REC, 399 YDS, 3 TD"
+        "statsHighlight": "36 REC, 415 YDS, 3 TD"
       },
       {
         "id": "p-det-4372099",
@@ -5640,7 +5640,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 97,
         "teamId": "det",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4372099.png",
-        "status": "Active",
+        "status": "IR",
         "college": "Michigan",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • DE #97 • Michigan • 5 yrs exp"
@@ -5670,16 +5670,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • WR #18 • Arkansas • 2 yrs exp"
       },
       {
-        "id": "p-det-4361861",
-        "name": "Tyler Lacy",
-        "position": "DT",
-        "number": 93,
+        "id": "p-det-4685461",
+        "name": "Derrick Moore",
+        "position": "DE",
+        "number": 8,
         "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361861.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685461.png",
         "status": "Active",
-        "college": "Oklahoma State",
-        "experience": "4 yrs exp",
-        "statsHighlight": "Starter • DT #93 • Oklahoma State • 4 yrs exp"
+        "college": "Michigan",
+        "experience": "Rookie",
+        "statsHighlight": "Starter • DE #8 • Michigan • Rookie"
       },
       {
         "id": "p-det-4361662",
@@ -5718,16 +5718,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • LB #55 • Purdue • 6 yrs exp"
       },
       {
-        "id": "p-det-4242521",
-        "name": "K.J. Britt",
+        "id": "p-det-5144894",
+        "name": "Trevor Nowaske",
         "position": "LB",
-        "number": 35,
+        "number": 53,
         "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242521.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5144894.png",
         "status": "Active",
-        "college": "Auburn",
-        "experience": "6 yrs exp",
-        "statsHighlight": "Starter • LB #35 • Auburn • 6 yrs exp"
+        "college": "Saginaw Valley State",
+        "experience": "4 yrs exp",
+        "statsHighlight": "Starter • LB #53 • Saginaw Valley State • 4 yrs exp"
       },
       {
         "id": "p-det-4241411",
@@ -5742,6 +5742,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • LB #44 • Oklahoma State • 5 yrs exp"
       },
       {
+        "id": "p-det-4038849",
+        "name": "DJ Wonnum",
+        "position": "LB",
+        "number": 98,
+        "teamId": "det",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4038849.png",
+        "status": "Active",
+        "college": "South Carolina",
+        "experience": "7 yrs exp",
+        "statsHighlight": "Starter • LB #98 • South Carolina • 7 yrs exp"
+      },
+      {
         "id": "p-det-4371973",
         "name": "Roger McCreary",
         "position": "CB",
@@ -5754,40 +5766,40 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • CB #21 • Auburn • 5 yrs exp"
       },
       {
-        "id": "p-det-4566092",
-        "name": "Ennis Rakestraw Jr.",
-        "position": "CB",
-        "number": 2,
-        "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4566092.png",
-        "status": "Active",
-        "college": "Missouri",
-        "experience": "3 yrs exp",
-        "statsHighlight": "Starter • CB #2 • Missouri • 3 yrs exp"
-      },
-      {
         "id": "p-det-3139387",
         "name": "D.J. Reed",
         "position": "CB",
         "number": 4,
         "teamId": "det",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3139387.png",
-        "status": "Out",
+        "status": "Questionable",
         "college": "Kansas State",
         "experience": "9 yrs exp",
         "statsHighlight": "Starter • CB #4 • Kansas State • 9 yrs exp"
       },
       {
-        "id": "p-det-3045463",
-        "name": "Chuck Clark",
-        "position": "S",
-        "number": 36,
+        "id": "p-det-3910229",
+        "name": "Rock Ya-Sin",
+        "position": "CB",
+        "number": 23,
         "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3045463.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3910229.png",
         "status": "Active",
-        "college": "Virginia Tech",
-        "experience": "10 yrs exp",
-        "statsHighlight": "Starter • S #36 • Virginia Tech • 10 yrs exp"
+        "college": "Temple",
+        "experience": "8 yrs exp",
+        "statsHighlight": "Starter • CB #23 • Temple • 8 yrs exp"
+      },
+      {
+        "id": "p-det-4360383",
+        "name": "Kerby Joseph",
+        "position": "S",
+        "number": 31,
+        "teamId": "det",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360383.png",
+        "status": "Active",
+        "college": "Illinois",
+        "experience": "5 yrs exp",
+        "statsHighlight": "Starter • S #31 • Illinois • 5 yrs exp"
       },
       {
         "id": "p-det-5081450",
@@ -5838,16 +5850,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • G #69 • Georgia • 2 yrs exp"
       },
       {
-        "id": "p-det-4361425",
-        "name": "Juice Scruggs",
-        "position": "G",
-        "number": 70,
+        "id": "p-det-4361788",
+        "name": "Cade Mays",
+        "position": "C",
+        "number": 64,
         "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361425.png",
-        "status": "Active",
-        "college": "Penn State",
-        "experience": "4 yrs exp",
-        "statsHighlight": "Starter • G #70 • Penn State • 4 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361788.png",
+        "status": "Out",
+        "college": "Tennessee",
+        "experience": "5 yrs exp",
+        "statsHighlight": "Starter • C #64 • Tennessee • 5 yrs exp"
       },
       {
         "id": "p-det-4689936",
@@ -5895,7 +5907,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Tennessee",
         "experience": "9 yrs exp",
-        "statsHighlight": "QB #11 • Tennessee • 9 yrs exp"
+        "statsHighlight": "1/1, 7 YDS"
       },
       {
         "id": "p-det-4912274",
@@ -5907,7 +5919,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Questionable",
         "college": "Utah",
         "experience": "3 yrs exp",
-        "statsHighlight": "30 CAR, 135 YDS"
+        "statsHighlight": "36 CAR, 163 YDS"
       },
       {
         "id": "p-det-4383429",
@@ -6018,16 +6030,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "TE #83 • Central Michigan • 9 yrs exp"
       },
       {
-        "id": "p-det-4685461",
-        "name": "Derrick Moore",
+        "id": "p-det-4892218",
+        "name": "Eric O'Neill",
         "position": "DE",
-        "number": 8,
+        "number": 66,
         "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685461.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4892218.png",
         "status": "Active",
-        "college": "Michigan",
+        "college": "Rutgers",
         "experience": "Rookie",
-        "statsHighlight": "DE #8 • Michigan • Rookie"
+        "statsHighlight": "DE #66 • Rutgers • Rookie"
       },
       {
         "id": "p-det-4039020",
@@ -6040,18 +6052,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Washington",
         "experience": "6 yrs exp",
         "statsHighlight": "DE #95 • Washington • 6 yrs exp"
-      },
-      {
-        "id": "p-det-4892218",
-        "name": "Eric O'Neill",
-        "position": "DE",
-        "number": 66,
-        "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4892218.png",
-        "status": "Active",
-        "college": "Rutgers",
-        "experience": "Rookie",
-        "statsHighlight": "DE #66 • Rutgers • Rookie"
       },
       {
         "id": "p-det-4710422",
@@ -6102,6 +6102,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DT #50 • Texas Tech • Rookie"
       },
       {
+        "id": "p-det-4361861",
+        "name": "Tyler Lacy",
+        "position": "DT",
+        "number": 93,
+        "teamId": "det",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361861.png",
+        "status": "Questionable",
+        "college": "Oklahoma State",
+        "experience": "4 yrs exp",
+        "statsHighlight": "DT #93 • Oklahoma State • 4 yrs exp"
+      },
+      {
         "id": "p-det-4586333",
         "name": "Mekhi Wingo",
         "position": "DT",
@@ -6132,10 +6144,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 35,
         "teamId": "det",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4036507.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Michigan State",
         "experience": "7 yrs exp",
         "statsHighlight": "LB #35 • Michigan State • 7 yrs exp"
+      },
+      {
+        "id": "p-det-4242521",
+        "name": "K.J. Britt",
+        "position": "LB",
+        "number": 40,
+        "teamId": "det",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242521.png",
+        "status": "Active",
+        "college": "Auburn",
+        "experience": "6 yrs exp",
+        "statsHighlight": "LB #40 • Auburn • 6 yrs exp"
       },
       {
         "id": "p-det-4038432",
@@ -6150,40 +6174,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #57 • Oklahoma State • 6 yrs exp"
       },
       {
-        "id": "p-det-4038849",
-        "name": "DJ Wonnum",
+        "id": "p-det-4689333",
+        "name": "Tyrus Wheat",
         "position": "LB",
-        "number": 98,
+        "number": 59,
         "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4038849.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4689333.png",
         "status": "Active",
-        "college": "South Carolina",
-        "experience": "7 yrs exp",
-        "statsHighlight": "LB #98 • South Carolina • 7 yrs exp"
-      },
-      {
-        "id": "p-det-4035434",
-        "name": "Devin White",
-        "position": "LB",
-        "number": 45,
-        "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4035434.png",
-        "status": "IR",
-        "college": "LSU",
-        "experience": "8 yrs exp",
-        "statsHighlight": "LB #45 • LSU • 8 yrs exp"
-      },
-      {
-        "id": "p-det-5144894",
-        "name": "Trevor Nowaske",
-        "position": "LB",
-        "number": 53,
-        "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5144894.png",
-        "status": "Active",
-        "college": "Saginaw Valley State",
+        "college": "Mississippi State",
         "experience": "4 yrs exp",
-        "statsHighlight": "LB #53 • Saginaw Valley State • 4 yrs exp"
+        "statsHighlight": "LB #59 • Mississippi State • 4 yrs exp"
       },
       {
         "id": "p-det-4569465",
@@ -6198,6 +6198,30 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #46 • Iowa • 4 yrs exp"
       },
       {
+        "id": "p-det-4362636",
+        "name": "Damone Clark",
+        "position": "LB",
+        "number": 11,
+        "teamId": "det",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4362636.png",
+        "status": "IR",
+        "college": "LSU",
+        "experience": "5 yrs exp",
+        "statsHighlight": "LB #11 • LSU • 5 yrs exp"
+      },
+      {
+        "id": "p-det-4035434",
+        "name": "Devin White",
+        "position": "LB",
+        "number": 45,
+        "teamId": "det",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4035434.png",
+        "status": "IR",
+        "college": "LSU",
+        "experience": "8 yrs exp",
+        "statsHighlight": "LB #45 • LSU • 8 yrs exp"
+      },
+      {
         "id": "p-det-4896353",
         "name": "Jimmy Rolder",
         "position": "LB",
@@ -6210,16 +6234,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #41 • Michigan • Rookie"
       },
       {
-        "id": "p-det-4362636",
-        "name": "Damone Clark",
+        "id": "p-det-4567219",
+        "name": "Owen Pappoe",
         "position": "LB",
-        "number": 11,
+        "number": 51,
         "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4362636.png",
-        "status": "IR",
-        "college": "LSU",
-        "experience": "5 yrs exp",
-        "statsHighlight": "LB #11 • LSU • 5 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4567219.png",
+        "status": "Active",
+        "college": "Auburn",
+        "experience": "4 yrs exp",
+        "statsHighlight": "LB #51 • Auburn • 4 yrs exp"
       },
       {
         "id": "p-det-5093004",
@@ -6240,34 +6264,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 30,
         "teamId": "det",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4027919.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Northern Arizona",
         "experience": "6 yrs exp",
         "statsHighlight": "CB #30 • Northern Arizona • 6 yrs exp"
       },
       {
-        "id": "p-det-3910229",
-        "name": "Rock Ya-Sin",
+        "id": "p-det-4566092",
+        "name": "Ennis Rakestraw Jr.",
         "position": "CB",
-        "number": 23,
+        "number": 2,
         "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3910229.png",
-        "status": "Active",
-        "college": "Temple",
-        "experience": "8 yrs exp",
-        "statsHighlight": "CB #23 • Temple • 8 yrs exp"
-      },
-      {
-        "id": "p-det-5143915",
-        "name": "Nick Whiteside",
-        "position": "CB",
-        "number": 38,
-        "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5143915.png",
-        "status": "Active",
-        "college": "Saginaw Valley State",
-        "experience": "2 yrs exp",
-        "statsHighlight": "CB #38 • Saginaw Valley State • 2 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4566092.png",
+        "status": "Questionable",
+        "college": "Missouri",
+        "experience": "3 yrs exp",
+        "statsHighlight": "CB #2 • Missouri • 3 yrs exp"
       },
       {
         "id": "p-det-3123938",
@@ -6282,16 +6294,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "CB #29 • Pittsburgh • 9 yrs exp"
       },
       {
-        "id": "p-det-4361939",
-        "name": "Andre Cisco",
+        "id": "p-det-3045463",
+        "name": "Chuck Clark",
         "position": "S",
-        "number": 8,
+        "number": 36,
         "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361939.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3045463.png",
         "status": "Active",
-        "college": "Syracuse",
-        "experience": "6 yrs exp",
-        "statsHighlight": "S #8 • Syracuse • 6 yrs exp"
+        "college": "Virginia Tech",
+        "experience": "10 yrs exp",
+        "statsHighlight": "S #36 • Virginia Tech • 10 yrs exp"
       },
       {
         "id": "p-det-4372459",
@@ -6306,6 +6318,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "S #5 • Rutgers • 4 yrs exp"
       },
       {
+        "id": "p-det-4361939",
+        "name": "Andre Cisco",
+        "position": "S",
+        "number": 28,
+        "teamId": "det",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361939.png",
+        "status": "Active",
+        "college": "Syracuse",
+        "experience": "6 yrs exp",
+        "statsHighlight": "S #28 • Syracuse • 6 yrs exp"
+      },
+      {
         "id": "p-det-4569323",
         "name": "Thomas Harper",
         "position": "S",
@@ -6316,18 +6340,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Notre Dame",
         "experience": "3 yrs exp",
         "statsHighlight": "S #12 • Notre Dame • 3 yrs exp"
-      },
-      {
-        "id": "p-det-4360383",
-        "name": "Kerby Joseph",
-        "position": "S",
-        "number": 31,
-        "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360383.png",
-        "status": "Out",
-        "college": "Illinois",
-        "experience": "5 yrs exp",
-        "statsHighlight": "S #31 • Illinois • 5 yrs exp"
       },
       {
         "id": "p-det-4241217",
@@ -6366,6 +6378,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "G #71 • LSU • 2 yrs exp"
       },
       {
+        "id": "p-det-4361425",
+        "name": "Juice Scruggs",
+        "position": "G",
+        "number": 70,
+        "teamId": "det",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361425.png",
+        "status": "Active",
+        "college": "Penn State",
+        "experience": "4 yrs exp",
+        "statsHighlight": "G #70 • Penn State • 4 yrs exp"
+      },
+      {
         "id": "p-det-4611506",
         "name": "Ben Bartch",
         "position": "G",
@@ -6388,18 +6412,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Ohio State",
         "experience": "1 yr exp",
         "statsHighlight": "C #65 • Ohio State • 1 yr exp"
-      },
-      {
-        "id": "p-det-4361788",
-        "name": "Cade Mays",
-        "position": "C",
-        "number": 64,
-        "teamId": "det",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361788.png",
-        "status": "Out",
-        "college": "Tennessee",
-        "experience": "5 yrs exp",
-        "statsHighlight": "C #64 • Tennessee • 5 yrs exp"
       }
     ]
   },
@@ -6416,24 +6428,24 @@ export const NFL_TEAMS: NFLTeam[] = [
     "logoUrl": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
     "stadium": "Highmark Stadium",
     "record": {
-      "wins": 7,
+      "wins": 8,
       "losses": 1,
       "ties": 0
     },
     "rankInDivision": "Active in AFC East",
     "nextGame": {
-      "week": 10,
-      "opponent": "New York Jets",
-      "opponentAbbr": "NYJ",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
-      "isHome": false,
-      "date": "Sun, Nov 15",
+      "week": 11,
+      "opponent": "Miami Dolphins",
+      "opponentAbbr": "MIA",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/mia.png",
+      "isHome": true,
+      "date": "Sun, Nov 22",
       "time": "10:00 AM",
       "network": "CBS",
       "broadcastNetwork": "CBS",
       "spread": "BUF Live Line",
-      "stadium": "MetLife Stadium",
-      "venue": "MetLife Stadium",
+      "stadium": "Highmark Stadium",
+      "venue": "Highmark Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -6548,10 +6560,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "New York Jets",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
         "isHome": false,
-        "timeOrScore": "10:00 AM",
+        "timeOrScore": "31-12",
         "tvNetwork": "CBS",
         "broadcastNetwork": "CBS",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "W"
       },
       {
         "week": 11,
@@ -6652,17 +6665,30 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "buf-inj-4030899",
-        "playerName": "Spencer Brown",
-        "position": "OT",
+        "id": "buf-inj-4573699",
+        "playerName": "Jackson Hawes",
+        "position": "TE",
+        "teamId": "buf",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Jackson Hawes (TE) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Jackson Hawes (TE) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "buf-inj-4385690",
+        "playerName": "Dalton Kincaid",
+        "position": "TE",
         "teamId": "buf",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Doubtful",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Spencer Brown (OT) is listed as Doubtful (Undisclosed).",
-        "practiceStatus": "Spencer Brown (OT) is listed as Doubtful (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Dalton Kincaid (TE) is listed as Doubtful (Undisclosed).",
+        "practiceStatus": "Dalton Kincaid (TE) is listed as Doubtful (Undisclosed)."
       },
       {
         "id": "buf-inj-4379778",
@@ -6671,24 +6697,50 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "buf",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Christian Benford (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Christian Benford (CB) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Christian Benford (CB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Christian Benford (CB) is listed as Out (Undisclosed)."
       },
       {
-        "id": "buf-inj-4044133",
-        "playerName": "Sam Franklin Jr.",
+        "id": "buf-inj-4036060",
+        "playerName": "Damar Hamlin",
         "position": "S",
         "teamId": "buf",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Sam Franklin Jr. (S) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Sam Franklin Jr. (S) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Damar Hamlin (S) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Damar Hamlin (S) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "buf-inj-4684527",
+        "playerName": "T.J. Sanders",
+        "position": "DT",
+        "teamId": "buf",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "T.J. Sanders (DT) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "T.J. Sanders (DT) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "buf-inj-4568624",
+        "playerName": "Dorian Williams",
+        "position": "LB",
+        "teamId": "buf",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Dorian Williams (LB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Dorian Williams (LB) is listed as Out (Undisclosed)."
       },
       {
         "id": "buf-inj-4685347",
@@ -6704,19 +6756,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Zane Durant (DT) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "buf-inj-4596480",
-        "playerName": "Jordan Hancock",
-        "position": "CB",
-        "teamId": "buf",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Nov 4",
-        "updatedAt": "Nov 4",
-        "details": "Jordan Hancock (CB) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Jordan Hancock (CB) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
         "id": "buf-inj-4242433",
         "playerName": "Joshua Palmer",
         "position": "WR",
@@ -6730,17 +6769,17 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Joshua Palmer (WR) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "buf-inj-4241476",
-        "playerName": "Tyrell Shavers",
-        "position": "WR",
+        "id": "buf-inj-4606712",
+        "playerName": "Ar'maj Reed-Adams",
+        "position": "G",
         "teamId": "buf",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Tyrell Shavers (WR) is listed as Out (Undisclosed).",
-        "practiceStatus": "Tyrell Shavers (WR) is listed as Out (Undisclosed)."
+        "status": "IR",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
+        "details": "Ar'maj Reed-Adams (G) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Ar'maj Reed-Adams (G) is listed as Injured Reserve (Undisclosed)."
       },
       {
         "id": "buf-inj-4568703",
@@ -6779,7 +6818,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Wyoming",
         "experience": "9 yrs exp",
-        "statsHighlight": "61 CAR, 285 YDS, 9 TD"
+        "statsHighlight": "66 CAR, 290 YDS, 11 TD"
       },
       {
         "id": "p-buf-4379399",
@@ -6791,7 +6830,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Georgia",
         "experience": "5 yrs exp",
-        "statsHighlight": "169 CAR, 814 YDS, 8 TD"
+        "statsHighlight": "187 CAR, 971 YDS, 9 TD"
       },
       {
         "id": "p-buf-4635008",
@@ -6803,7 +6842,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Florida State",
         "experience": "3 yrs exp",
-        "statsHighlight": "23 REC, 304 YDS, 3 TD"
+        "statsHighlight": "Starter • WR #0 • Florida State • 3 yrs exp"
       },
       {
         "id": "p-buf-3915416",
@@ -6815,7 +6854,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Maryland",
         "experience": "9 yrs exp",
-        "statsHighlight": "Starter • WR #2 • Maryland • 9 yrs exp"
+        "statsHighlight": "23 REC, 375 YDS, 3 TD"
       },
       {
         "id": "p-buf-4373678",
@@ -6827,7 +6866,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Boise State",
         "experience": "5 yrs exp",
-        "statsHighlight": "31 REC, 412 YDS, 1 TD"
+        "statsHighlight": "33 REC, 438 YDS, 1 TD"
       },
       {
         "id": "p-buf-4385690",
@@ -6836,10 +6875,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 86,
         "teamId": "buf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4385690.png",
-        "status": "Active",
+        "status": "Doubtful",
         "college": "Utah",
         "experience": "4 yrs exp",
-        "statsHighlight": "30 REC, 429 YDS, 2 TD"
+        "statsHighlight": "32 REC, 487 YDS, 2 TD"
       },
       {
         "id": "p-buf-4039303",
@@ -6872,7 +6911,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 98,
         "teamId": "buf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4684527.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "South Carolina",
         "experience": "2 yrs exp",
         "statsHighlight": "Starter • DT #98 • South Carolina • 2 yrs exp"
@@ -6920,7 +6959,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 42,
         "teamId": "buf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4568624.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Tulane",
         "experience": "4 yrs exp",
         "statsHighlight": "Starter • LB #42 • Tulane • 4 yrs exp"
@@ -6944,7 +6983,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 47,
         "teamId": "buf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4379778.png",
-        "status": "Questionable",
+        "status": "Out",
         "college": "Villanova",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • CB #47 • Villanova • 5 yrs exp"
@@ -6977,13 +7016,13 @@ export const NFL_TEAMS: NFLTeam[] = [
         "id": "p-buf-4036134",
         "name": "Amani Hooker",
         "position": "S",
-        "number": 37,
+        "number": 22,
         "teamId": "buf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4036134.png",
         "status": "Active",
         "college": "Iowa",
         "experience": "8 yrs exp",
-        "statsHighlight": "Starter • S #37 • Iowa • 8 yrs exp"
+        "statsHighlight": "Starter • S #22 • Iowa • 8 yrs exp"
       },
       {
         "id": "p-buf-4367203",
@@ -7004,7 +7043,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 79,
         "teamId": "buf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4030899.png",
-        "status": "Doubtful",
+        "status": "Active",
         "college": "Northern Iowa",
         "experience": "6 yrs exp",
         "statsHighlight": "Starter • OT #79 • Northern Iowa • 6 yrs exp"
@@ -7094,6 +7133,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "QB #11 • Houston • 8 yrs exp"
       },
       {
+        "id": "p-buf-4039034",
+        "name": "Shane Buechele",
+        "position": "QB",
+        "number": 6,
+        "teamId": "buf",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4039034.png",
+        "status": "Active",
+        "college": "SMU",
+        "experience": "4 yrs exp",
+        "statsHighlight": "QB #6 • SMU • 4 yrs exp"
+      },
+      {
         "id": "p-buf-3915411",
         "name": "Ty Johnson",
         "position": "RB",
@@ -7115,7 +7166,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Kentucky",
         "experience": "3 yrs exp",
-        "statsHighlight": "13 CAR, 44 YDS"
+        "statsHighlight": "16 CAR, 52 YDS"
       },
       {
         "id": "p-buf-4683153",
@@ -7148,7 +7199,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 14,
         "teamId": "buf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4241476.png",
-        "status": "Out",
+        "status": "Active",
         "college": "San Diego State",
         "experience": "2 yrs exp",
         "statsHighlight": "WR #14 • San Diego State • 2 yrs exp"
@@ -7184,7 +7235,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 85,
         "teamId": "buf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4573699.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Georgia Tech",
         "experience": "2 yrs exp",
         "statsHighlight": "TE #85 • Georgia Tech • 2 yrs exp"
@@ -7322,18 +7373,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #56 • Troy • 3 yrs exp"
       },
       {
-        "id": "p-buf-4427348",
-        "name": "Te'Cory Couch",
-        "position": "CB",
-        "number": 33,
-        "teamId": "buf",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4427348.png",
-        "status": "Active",
-        "college": "Miami",
-        "experience": "1 yr exp",
-        "statsHighlight": "CB #33 • Miami • 1 yr exp"
-      },
-      {
         "id": "p-buf-4688931",
         "name": "Maxwell Hairston",
         "position": "CB",
@@ -7352,7 +7391,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 37,
         "teamId": "buf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4596480.png",
-        "status": "IR",
+        "status": "Active",
         "college": "Ohio State",
         "experience": "2 yrs exp",
         "statsHighlight": "CB #37 • Ohio State • 2 yrs exp"
@@ -7388,7 +7427,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 3,
         "teamId": "buf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4036060.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Pittsburgh",
         "experience": "6 yrs exp",
         "statsHighlight": "S #3 • Pittsburgh • 6 yrs exp"
@@ -7412,7 +7451,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 28,
         "teamId": "buf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4044133.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Temple",
         "experience": "7 yrs exp",
         "statsHighlight": "S #28 • Temple • 7 yrs exp"
@@ -7448,7 +7487,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 60,
         "teamId": "buf",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4606712.png",
-        "status": "Active",
+        "status": "IR",
         "college": "Texas A&M",
         "experience": "Rookie",
         "statsHighlight": "G #60 • Texas A&M • Rookie"
@@ -7742,32 +7781,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Tank Bigsby (RB) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "phi-inj-3926231",
-        "playerName": "Britain Covey",
-        "position": "WR",
-        "teamId": "phi",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
-        "details": "Britain Covey (WR) is listed as Out (Undisclosed).",
-        "practiceStatus": "Britain Covey (WR) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "phi-inj-15797",
-        "playerName": "Lane Johnson",
-        "position": "OT",
-        "teamId": "phi",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Oct 26",
-        "updatedAt": "Oct 26",
-        "details": "Lane Johnson (OT) is listed as Out (Undisclosed).",
-        "practiceStatus": "Lane Johnson (OT) is listed as Out (Undisclosed)."
-      },
-      {
         "id": "phi-inj-4360238",
         "playerName": "Dameon Pierce",
         "position": "RB",
@@ -7781,19 +7794,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Dameon Pierce (RB) is listed as Questionable (Undisclosed)."
       },
       {
-        "id": "phi-inj-4241478",
-        "playerName": "DeVonta Smith",
-        "position": "WR",
-        "teamId": "phi",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
-        "details": "DeVonta Smith (WR) is listed as Out (Undisclosed).",
-        "practiceStatus": "DeVonta Smith (WR) is listed as Out (Undisclosed)."
-      },
-      {
         "id": "phi-inj-4428850",
         "playerName": "Dontayvion Wicks",
         "position": "WR",
@@ -7801,8 +7801,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Dontayvion Wicks (WR) is listed as Out (Undisclosed).",
         "practiceStatus": "Dontayvion Wicks (WR) is listed as Out (Undisclosed)."
       },
@@ -7813,63 +7813,24 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "phi",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 8",
-        "updatedAt": "Nov 8",
-        "details": "Zack Baun (LB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Zack Baun (LB) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Zack Baun (LB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Zack Baun (LB) is listed as Out (Undisclosed)."
       },
       {
-        "id": "phi-inj-4372051",
-        "playerName": "Chance Campbell",
+        "id": "phi-inj-4431573",
+        "playerName": "Smael Mondon Jr.",
         "position": "LB",
         "teamId": "phi",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Oct 10",
-        "updatedAt": "Oct 10",
-        "details": "Chance Campbell (LB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Chance Campbell (LB) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "phi-inj-4685287",
-        "playerName": "Jihaad Campbell",
-        "position": "LB",
-        "teamId": "phi",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
-        "details": "Jihaad Campbell (LB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Jihaad Campbell (LB) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "phi-inj-4240456",
-        "playerName": "Michael Carter II",
-        "position": "CB",
-        "teamId": "phi",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
-        "details": "Michael Carter II (CB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Michael Carter II (CB) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "phi-inj-2971027",
-        "playerName": "Jonathan Jones",
-        "position": "CB",
-        "teamId": "phi",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
-        "details": "Jonathan Jones (CB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Jonathan Jones (CB) is listed as Out (Undisclosed)."
+        "status": "Doubtful",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Smael Mondon Jr. (LB) is listed as Doubtful (Undisclosed).",
+        "practiceStatus": "Smael Mondon Jr. (LB) is listed as Doubtful (Undisclosed)."
       },
       {
         "id": "phi-inj-4259590",
@@ -7922,6 +7883,32 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Aug 31",
         "details": "Andre' Sam (S) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Andre' Sam (S) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "phi-inj-4431545",
+        "playerName": "Will Shipley",
+        "position": "RB",
+        "teamId": "phi",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Will Shipley (RB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Will Shipley (RB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "phi-inj-4686104",
+        "playerName": "Johnny Wilson",
+        "position": "WR",
+        "teamId": "phi",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Aug 22",
+        "updatedAt": "Aug 22",
+        "details": "Johnny Wilson (WR) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Johnny Wilson (WR) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -7968,7 +7955,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 6,
         "teamId": "phi",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4241478.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Alabama",
         "experience": "6 yrs exp",
         "statsHighlight": "26 REC, 310 YDS, 2 TD"
@@ -8004,7 +7991,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 53,
         "teamId": "phi",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3917657.png",
-        "status": "Questionable",
+        "status": "Out",
         "college": "Wisconsin",
         "experience": "7 yrs exp",
         "statsHighlight": "Starter • LB #53 • Wisconsin • 7 yrs exp"
@@ -8100,7 +8087,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 11,
         "teamId": "phi",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685287.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Alabama",
         "experience": "2 yrs exp",
         "statsHighlight": "Starter • LB #11 • Alabama • 2 yrs exp"
@@ -8286,16 +8273,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "QB #18 • North Dakota State • Rookie"
       },
       {
-        "id": "p-phi-4429013",
-        "name": "Tank Bigsby",
+        "id": "p-phi-4685279",
+        "name": "Jaydon Blue",
         "position": "RB",
-        "number": 8,
+        "number": 30,
         "teamId": "phi",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429013.png",
-        "status": "IR",
-        "college": "Auburn",
-        "experience": "4 yrs exp",
-        "statsHighlight": "RB #8 • Auburn • 4 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685279.png",
+        "status": "Active",
+        "college": "Texas",
+        "experience": "2 yrs exp",
+        "statsHighlight": "RB #30 • Texas • 2 yrs exp"
       },
       {
         "id": "p-phi-4431545",
@@ -8308,6 +8295,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Clemson",
         "experience": "3 yrs exp",
         "statsHighlight": "RB #28 • Clemson • 3 yrs exp"
+      },
+      {
+        "id": "p-phi-4429013",
+        "name": "Tank Bigsby",
+        "position": "RB",
+        "number": 8,
+        "teamId": "phi",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429013.png",
+        "status": "IR",
+        "college": "Auburn",
+        "experience": "4 yrs exp",
+        "statsHighlight": "RB #8 • Auburn • 4 yrs exp"
       },
       {
         "id": "p-phi-4241555",
@@ -8352,7 +8351,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 85,
         "teamId": "phi",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3926231.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Utah",
         "experience": "5 yrs exp",
         "statsHighlight": "WR #85 • Utah • 5 yrs exp"
@@ -8406,18 +8405,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "TE #83 • Oregon • 9 yrs exp"
       },
       {
-        "id": "p-phi-4241374",
-        "name": "Grant Calcaterra",
-        "position": "TE",
-        "number": 81,
-        "teamId": "phi",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4241374.png",
-        "status": "Active",
-        "college": "SMU",
-        "experience": "5 yrs exp",
-        "statsHighlight": "TE #81 • SMU • 5 yrs exp"
-      },
-      {
         "id": "p-phi-15835",
         "name": "Zach Ertz",
         "position": "TE",
@@ -8428,6 +8415,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Stanford",
         "experience": "14 yrs exp",
         "statsHighlight": "TE #86 • Stanford • 14 yrs exp"
+      },
+      {
+        "id": "p-phi-4241374",
+        "name": "Grant Calcaterra",
+        "position": "TE",
+        "number": 81,
+        "teamId": "phi",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4241374.png",
+        "status": "Active",
+        "college": "SMU",
+        "experience": "5 yrs exp",
+        "statsHighlight": "TE #81 • SMU • 5 yrs exp"
       },
       {
         "id": "p-phi-4240585",
@@ -8484,7 +8483,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 42,
         "teamId": "phi",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4431573.png",
-        "status": "Active",
+        "status": "Doubtful",
         "college": "Georgia",
         "experience": "2 yrs exp",
         "statsHighlight": "LB #42 • Georgia • 2 yrs exp"
@@ -8500,18 +8499,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Clemson",
         "experience": "3 yrs exp",
         "statsHighlight": "LB #54 • Clemson • 3 yrs exp"
-      },
-      {
-        "id": "p-phi-4372051",
-        "name": "Chance Campbell",
-        "position": "LB",
-        "number": 59,
-        "teamId": "phi",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4372051.png",
-        "status": "Questionable",
-        "college": "Ole Miss",
-        "experience": "4 yrs exp",
-        "statsHighlight": "LB #59 • Ole Miss • 4 yrs exp"
       },
       {
         "id": "p-phi-5165139",
@@ -8532,7 +8519,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 35,
         "teamId": "phi",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4240456.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Duke",
         "experience": "6 yrs exp",
         "statsHighlight": "CB #35 • Duke • 6 yrs exp"
@@ -8544,7 +8531,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 31,
         "teamId": "phi",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2971027.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Auburn",
         "experience": "11 yrs exp",
         "statsHighlight": "CB #31 • Auburn • 11 yrs exp"
@@ -8634,18 +8621,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "S #21 • Texas Tech • Rookie"
       },
       {
-        "id": "p-phi-15797",
-        "name": "Lane Johnson",
-        "position": "OT",
-        "number": 65,
-        "teamId": "phi",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/15797.png",
-        "status": "Out",
-        "college": "Oklahoma",
-        "experience": "14 yrs exp",
-        "statsHighlight": "OT #65 • Oklahoma • 14 yrs exp"
-      },
-      {
         "id": "p-phi-4240015",
         "name": "John Ojukwu",
         "position": "OT",
@@ -8656,6 +8631,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Boise State",
         "experience": "2 yrs exp",
         "statsHighlight": "OT #67 • Boise State • 2 yrs exp"
+      },
+      {
+        "id": "p-phi-4696203",
+        "name": "Ajani Cornelius",
+        "position": "OT",
+        "number": 65,
+        "teamId": "phi",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4696203.png",
+        "status": "Active",
+        "college": "Oregon",
+        "experience": "2 yrs exp",
+        "statsHighlight": "OT #65 • Oregon • 2 yrs exp"
       },
       {
         "id": "p-phi-4432738",
@@ -8708,24 +8695,24 @@ export const NFL_TEAMS: NFLTeam[] = [
     "logoUrl": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
     "stadium": "U.S. Bank Stadium",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 2,
       "ties": 0
     },
     "rankInDivision": "Active in NFC North",
     "nextGame": {
-      "week": 10,
-      "opponent": "Green Bay Packers",
-      "opponentAbbr": "GB",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
+      "week": 11,
+      "opponent": "San Francisco 49ers",
+      "opponentAbbr": "SF",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
       "isHome": false,
-      "date": "Sun, Nov 15",
-      "time": "10:00 AM",
-      "network": "Fox",
-      "broadcastNetwork": "Fox",
+      "date": "Sun, Nov 22",
+      "time": "5:20 PM",
+      "network": "NBC",
+      "broadcastNetwork": "NBC",
       "spread": "MIN Live Line",
-      "stadium": "Lambeau Field",
-      "venue": "Lambeau Field",
+      "stadium": "Estadio Banorte",
+      "venue": "Estadio Banorte",
       "countdownHours": 48
     },
     "schedule": [
@@ -8840,10 +8827,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Green Bay Packers",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
         "isHome": false,
-        "timeOrScore": "10:00 AM",
+        "timeOrScore": "30-10",
         "tvNetwork": "Fox",
         "broadcastNetwork": "Fox",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "W"
       },
       {
         "week": 11,
@@ -8944,45 +8932,6 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "min-inj-4429205",
-        "playerName": "Jordan Addison",
-        "position": "WR",
-        "teamId": "min",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Jordan Addison (WR) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Jordan Addison (WR) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "min-inj-4036133",
-        "playerName": "T.J. Hockenson",
-        "position": "TE",
-        "teamId": "min",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "T.J. Hockenson (TE) is listed as Out (Undisclosed).",
-        "practiceStatus": "T.J. Hockenson (TE) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "min-inj-3886598",
-        "playerName": "Jauan Jennings",
-        "position": "WR",
-        "teamId": "min",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Jauan Jennings (WR) is listed as Out (Undisclosed).",
-        "practiceStatus": "Jauan Jennings (WR) is listed as Out (Undisclosed)."
-      },
-      {
         "id": "min-inj-3917315",
         "playerName": "Kyler Murray",
         "position": "QB",
@@ -8990,62 +8939,36 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Kyler Murray (QB) is listed as Out (Undisclosed).",
         "practiceStatus": "Kyler Murray (QB) is listed as Out (Undisclosed)."
       },
       {
-        "id": "min-inj-3728281",
-        "playerName": "Blake Cashman",
-        "position": "LB",
+        "id": "min-inj-4044540",
+        "playerName": "Isaiah Rodgers",
+        "position": "CB",
         "teamId": "min",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Blake Cashman (LB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Blake Cashman (LB) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Isaiah Rodgers (CB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Isaiah Rodgers (CB) is listed as Questionable (Undisclosed)."
       },
       {
-        "id": "min-inj-4629149",
-        "playerName": "Tyrion Ingram-Dawkins",
-        "position": "DE",
-        "teamId": "min",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Tyrion Ingram-Dawkins (DE) is listed as Out (Undisclosed).",
-        "practiceStatus": "Tyrion Ingram-Dawkins (DE) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "min-inj-4046537",
-        "playerName": "Joshua Metellus",
+        "id": "min-inj-4568007",
+        "playerName": "Jay Ward",
         "position": "S",
         "teamId": "min",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Joshua Metellus (S) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Joshua Metellus (S) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "min-inj-16772",
-        "playerName": "Kyle Van Noy",
-        "position": "LB",
-        "teamId": "min",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
-        "details": "Kyle Van Noy (LB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Kyle Van Noy (LB) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Jay Ward (S) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Jay Ward (S) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "min-inj-3115373",
@@ -9059,6 +8982,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Aug 19",
         "details": "Jamal Adams (LB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Jamal Adams (LB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "min-inj-4429205",
+        "playerName": "Jordan Addison",
+        "position": "WR",
+        "teamId": "min",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Jordan Addison (WR) is listed as Out (Undisclosed).",
+        "practiceStatus": "Jordan Addison (WR) is listed as Out (Undisclosed)."
       },
       {
         "id": "min-inj-4608794",
@@ -9113,6 +9049,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Josh Oliver (TE) is listed as Injured Reserve (Undisclosed)."
       },
       {
+        "id": "min-inj-4875564",
+        "playerName": "Bo Richter",
+        "position": "LB",
+        "teamId": "min",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Bo Richter (LB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Bo Richter (LB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
         "id": "min-inj-4428421",
         "playerName": "Nick Samac",
         "position": "C",
@@ -9149,7 +9098,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Michigan State",
         "experience": "15 yrs exp",
-        "statsHighlight": "Starter • QB #8 • Michigan State • 15 yrs exp"
+        "statsHighlight": "21/31, 207 YDS, 2 TD, 1 INT"
       },
       {
         "id": "p-min-3917315",
@@ -9173,7 +9122,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "UTEP",
         "experience": "10 yrs exp",
-        "statsHighlight": "115 CAR, 474 YDS, 2 TD"
+        "statsHighlight": "126 CAR, 521 YDS, 3 TD"
       },
       {
         "id": "p-min-4360569",
@@ -9185,19 +9134,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Georgia Tech",
         "experience": "5 yrs exp",
-        "statsHighlight": "44 CAR, 182 YDS, 1 TD"
-      },
-      {
-        "id": "p-min-4429205",
-        "name": "Jordan Addison",
-        "position": "WR",
-        "number": 3,
-        "teamId": "min",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429205.png",
-        "status": "Questionable",
-        "college": "USC",
-        "experience": "4 yrs exp",
-        "statsHighlight": "18 REC, 277 YDS, 1 TD"
+        "statsHighlight": "60 CAR, 241 YDS, 1 TD"
       },
       {
         "id": "p-min-4262921",
@@ -9209,7 +9146,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "LSU",
         "experience": "7 yrs exp",
-        "statsHighlight": "31 REC, 393 YDS, 4 TD"
+        "statsHighlight": "40 REC, 467 YDS, 4 TD"
       },
       {
         "id": "p-min-3886598",
@@ -9218,10 +9155,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 14,
         "teamId": "min",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3886598.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Tennessee",
         "experience": "6 yrs exp",
         "statsHighlight": "Starter • WR #14 • Tennessee • 6 yrs exp"
+      },
+      {
+        "id": "p-min-4429205",
+        "name": "Jordan Addison",
+        "position": "WR",
+        "number": 3,
+        "teamId": "min",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429205.png",
+        "status": "Out",
+        "college": "USC",
+        "experience": "4 yrs exp",
+        "statsHighlight": "18 REC, 277 YDS, 1 TD"
       },
       {
         "id": "p-min-4036133",
@@ -9230,7 +9179,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 87,
         "teamId": "min",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4036133.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Iowa",
         "experience": "8 yrs exp",
         "statsHighlight": "35 REC, 328 YDS, 3 TD"
@@ -9278,7 +9227,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 51,
         "teamId": "min",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3728281.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Minnesota",
         "experience": "8 yrs exp",
         "statsHighlight": "Starter • LB #51 • Minnesota • 8 yrs exp"
@@ -9350,7 +9299,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 2,
         "teamId": "min",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4044540.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Massachusetts",
         "experience": "6 yrs exp",
         "statsHighlight": "Starter • CB #2 • Massachusetts • 6 yrs exp"
@@ -9362,7 +9311,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 44,
         "teamId": "min",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4046537.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Michigan",
         "experience": "7 yrs exp",
         "statsHighlight": "Starter • S #44 • Michigan • 7 yrs exp"
@@ -9509,7 +9458,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Minnesota",
         "experience": "2 yrs exp",
-        "statsHighlight": "6/7, 58 YDS"
+        "statsHighlight": "QB #12 • Minnesota • 2 yrs exp"
       },
       {
         "id": "p-min-4240631",
@@ -9548,6 +9497,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "WR #13 • Maryland • 2 yrs exp"
       },
       {
+        "id": "p-min-4360637",
+        "name": "Jeshaun Jones",
+        "position": "WR",
+        "number": 82,
+        "teamId": "min",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360637.png",
+        "status": "Active",
+        "college": "Maryland",
+        "experience": "1 yr exp",
+        "statsHighlight": "WR #82 • Maryland • 1 yr exp"
+      },
+      {
         "id": "p-min-4430656",
         "name": "Myles Price",
         "position": "WR",
@@ -9572,16 +9533,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "WR #89 • Georgia • Rookie"
       },
       {
-        "id": "p-min-4360637",
-        "name": "Jeshaun Jones",
-        "position": "WR",
-        "number": 82,
+        "id": "p-min-4708049",
+        "name": "Gavin Bartholomew",
+        "position": "TE",
+        "number": 86,
         "teamId": "min",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360637.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4708049.png",
         "status": "Active",
-        "college": "Maryland",
-        "experience": "1 yr exp",
-        "statsHighlight": "WR #82 • Maryland • 1 yr exp"
+        "college": "Pittsburgh",
+        "experience": "2 yrs exp",
+        "statsHighlight": "TE #86 • Pittsburgh • 2 yrs exp"
       },
       {
         "id": "p-min-4433959",
@@ -9596,18 +9557,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "TE #85 • Georgia • 2 yrs exp"
       },
       {
-        "id": "p-min-4708049",
-        "name": "Gavin Bartholomew",
-        "position": "TE",
-        "number": 86,
-        "teamId": "min",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4708049.png",
-        "status": "Active",
-        "college": "Pittsburgh",
-        "experience": "2 yrs exp",
-        "statsHighlight": "TE #86 • Pittsburgh • 2 yrs exp"
-      },
-      {
         "id": "p-min-3921690",
         "name": "Josh Oliver",
         "position": "TE",
@@ -9620,13 +9569,25 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "TE #84 • San José State • 8 yrs exp"
       },
       {
+        "id": "p-min-4361112",
+        "name": "Devin Culp",
+        "position": "TE",
+        "number": 48,
+        "teamId": "min",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361112.png",
+        "status": "Active",
+        "college": "Washington",
+        "experience": "3 yrs exp",
+        "statsHighlight": "TE #48 • Washington • 3 yrs exp"
+      },
+      {
         "id": "p-min-4629149",
         "name": "Tyrion Ingram-Dawkins",
         "position": "DE",
         "number": 90,
         "teamId": "min",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4629149.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Georgia",
         "experience": "2 yrs exp",
         "statsHighlight": "DE #90 • Georgia • 2 yrs exp"
@@ -9698,22 +9659,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 17,
         "teamId": "min",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/16772.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "BYU",
         "experience": "13 yrs exp",
         "statsHighlight": "LB #17 • BYU • 13 yrs exp"
-      },
-      {
-        "id": "p-min-4875564",
-        "name": "Bo Richter",
-        "position": "LB",
-        "number": 98,
-        "teamId": "min",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4875564.png",
-        "status": "Active",
-        "college": "Air Force",
-        "experience": "3 yrs exp",
-        "statsHighlight": "LB #98 • Air Force • 3 yrs exp"
       },
       {
         "id": "p-min-3115373",
@@ -9738,6 +9687,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "BYU",
         "experience": "2 yrs exp",
         "statsHighlight": "LB #92 • BYU • 2 yrs exp"
+      },
+      {
+        "id": "p-min-4875564",
+        "name": "Bo Richter",
+        "position": "LB",
+        "number": 98,
+        "teamId": "min",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4875564.png",
+        "status": "IR",
+        "college": "Air Force",
+        "experience": "3 yrs exp",
+        "statsHighlight": "LB #98 • Air Force • 3 yrs exp"
       },
       {
         "id": "p-min-5091793",
@@ -9794,7 +9755,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 24,
         "teamId": "min",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4568007.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "LSU",
         "experience": "4 yrs exp",
         "statsHighlight": "S #24 • LSU • 4 yrs exp"
@@ -9899,23 +9860,23 @@ export const NFL_TEAMS: NFLTeam[] = [
     "stadium": "Lambeau Field",
     "record": {
       "wins": 6,
-      "losses": 3,
+      "losses": 4,
       "ties": 0
     },
     "rankInDivision": "Active in NFC North",
     "nextGame": {
-      "week": 10,
-      "opponent": "Minnesota Vikings",
-      "opponentAbbr": "MIN",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
-      "isHome": true,
-      "date": "Sun, Nov 15",
-      "time": "10:00 AM",
-      "network": "Fox",
-      "broadcastNetwork": "Fox",
+      "week": 12,
+      "opponent": "Los Angeles Rams",
+      "opponentAbbr": "LAR",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
+      "isHome": false,
+      "date": "Wed, Nov 25",
+      "time": "5:00 PM",
+      "network": "Netflix",
+      "broadcastNetwork": "Netflix",
       "spread": "GB Live Line",
-      "stadium": "Lambeau Field",
-      "venue": "Lambeau Field",
+      "stadium": "SoFi Stadium",
+      "venue": "SoFi Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -10043,10 +10004,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Minnesota Vikings",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
         "isHome": true,
-        "timeOrScore": "10:00 AM",
+        "timeOrScore": "10-30",
         "tvNetwork": "Fox",
         "broadcastNetwork": "Fox",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "L"
       },
       {
         "week": 12,
@@ -10135,19 +10097,6 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "gb-inj-4361904",
-        "playerName": "Travis Glover",
-        "position": "OT",
-        "teamId": "gb",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Travis Glover (OT) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Travis Glover (OT) is listed as Questionable (Undisclosed)."
-      },
-      {
         "id": "gb-inj-4047365",
         "playerName": "Josh Jacobs",
         "position": "RB",
@@ -10155,10 +10104,36 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
         "details": "Josh Jacobs (RB) is listed as Out (Undisclosed).",
         "practiceStatus": "Josh Jacobs (RB) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "gb-inj-4259305",
+        "playerName": "Bo Melton",
+        "position": "WR",
+        "teamId": "gb",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 15",
+        "updatedAt": "Nov 15",
+        "details": "Bo Melton (WR) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Bo Melton (WR) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "gb-inj-4430191",
+        "playerName": "Skyy Moore",
+        "position": "WR",
+        "teamId": "gb",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 16",
+        "updatedAt": "Nov 16",
+        "details": "Skyy Moore (WR) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Skyy Moore (WR) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "gb-inj-4426411",
@@ -10168,23 +10143,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
         "details": "Sean Rhyan (G) is listed as Out (Undisclosed).",
         "practiceStatus": "Sean Rhyan (G) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "gb-inj-4360086",
-        "playerName": "Josh Whyle",
-        "position": "TE",
-        "teamId": "gb",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Josh Whyle (TE) is listed as Out (Undisclosed).",
-        "practiceStatus": "Josh Whyle (TE) is listed as Out (Undisclosed)."
       },
       {
         "id": "gb-inj-14931",
@@ -10193,24 +10155,24 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "gb",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Kevin Zeitler (G) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Kevin Zeitler (G) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
+        "details": "Kevin Zeitler (G) is listed as Out (Undisclosed).",
+        "practiceStatus": "Kevin Zeitler (G) is listed as Out (Undisclosed)."
       },
       {
-        "id": "gb-inj-4688930",
-        "playerName": "Javon Bullard",
-        "position": "S",
+        "id": "gb-inj-5076652",
+        "playerName": "Brandon Cisse",
+        "position": "CB",
         "teamId": "gb",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Javon Bullard (S) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Javon Bullard (S) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 16",
+        "updatedAt": "Nov 16",
+        "details": "Brandon Cisse (CB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Brandon Cisse (CB) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "gb-inj-3124005",
@@ -10219,37 +10181,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "gb",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Doubtful",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Zaire Franklin (LB) is listed as Doubtful (Undisclosed).",
-        "practiceStatus": "Zaire Franklin (LB) is listed as Doubtful (Undisclosed)."
-      },
-      {
-        "id": "gb-inj-4241470",
-        "playerName": "Xavier McKinney",
-        "position": "S",
-        "teamId": "gb",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Xavier McKinney (S) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Xavier McKinney (S) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "gb-inj-4686906",
-        "playerName": "Lukas Van Ness",
-        "position": "DE",
-        "teamId": "gb",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Lukas Van Ness (DE) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Lukas Van Ness (DE) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
+        "details": "Zaire Franklin (LB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Zaire Franklin (LB) is listed as Out (Undisclosed)."
       },
       {
         "id": "gb-inj-4240435",
@@ -10291,19 +10227,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Warren Brinson (DT) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "gb-inj-3149687",
-        "playerName": "Chris Brooks",
-        "position": "RB",
-        "teamId": "gb",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Chris Brooks (RB) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Chris Brooks (RB) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
         "id": "gb-inj-4430438",
         "playerName": "Edgerrin Cooper",
         "position": "LB",
@@ -10328,6 +10251,45 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Oct 17",
         "details": "Jonathan Ford (DT) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Jonathan Ford (DT) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "gb-inj-2983055",
+        "playerName": "Javon Hargrave",
+        "position": "DT",
+        "teamId": "gb",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Oct 17",
+        "updatedAt": "Oct 17",
+        "details": "Javon Hargrave (DT) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Javon Hargrave (DT) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "gb-inj-4428037",
+        "playerName": "Jacob Monk",
+        "position": "C",
+        "teamId": "gb",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Oct 26",
+        "updatedAt": "Oct 26",
+        "details": "Jacob Monk (C) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Jacob Monk (C) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "gb-inj-4428085",
+        "playerName": "Luke Musgrave",
+        "position": "TE",
+        "teamId": "gb",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Oct 22",
+        "updatedAt": "Oct 22",
+        "details": "Luke Musgrave (TE) is listed as Out (Undisclosed).",
+        "practiceStatus": "Luke Musgrave (TE) is listed as Out (Undisclosed)."
       }
     ],
     "highlights": [
@@ -10353,7 +10315,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Utah State",
         "experience": "7 yrs exp",
-        "statsHighlight": "215/341, 2618 YDS, 19 TD, 6 INT"
+        "statsHighlight": "232/368, 2838 YDS, 20 TD, 7 INT"
       },
       {
         "id": "p-gb-4047365",
@@ -10377,7 +10339,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Texas",
         "experience": "2 yrs exp",
-        "statsHighlight": "53 REC, 783 YDS, 5 TD"
+        "statsHighlight": "58 REC, 853 YDS, 5 TD"
       },
       {
         "id": "p-gb-4248528",
@@ -10389,7 +10351,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "North Dakota State",
         "experience": "5 yrs exp",
-        "statsHighlight": "49 REC, 879 YDS, 7 TD"
+        "statsHighlight": "52 REC, 916 YDS, 7 TD"
       },
       {
         "id": "p-gb-4362249",
@@ -10413,7 +10375,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "South Dakota State",
         "experience": "4 yrs exp",
-        "statsHighlight": "36 REC, 351 YDS, 3 TD"
+        "statsHighlight": "37 REC, 370 YDS, 3 TD"
       },
       {
         "id": "p-gb-4361423",
@@ -10434,7 +10396,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 44,
         "teamId": "gb",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3124005.png",
-        "status": "Doubtful",
+        "status": "Out",
         "college": "Syracuse",
         "experience": "9 yrs exp",
         "statsHighlight": "Starter • LB #44 • Syracuse • 9 yrs exp"
@@ -10446,7 +10408,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 29,
         "teamId": "gb",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4241470.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Alabama",
         "experience": "7 yrs exp",
         "statsHighlight": "Starter • S #29 • Alabama • 7 yrs exp"
@@ -10482,7 +10444,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 90,
         "teamId": "gb",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4686906.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Iowa",
         "experience": "4 yrs exp",
         "statsHighlight": "Starter • DE #90 • Iowa • 4 yrs exp"
@@ -10524,16 +10486,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • DT #95 • Georgia • 5 yrs exp"
       },
       {
-        "id": "p-gb-4567406",
-        "name": "Ty'Ron Hopper",
+        "id": "p-gb-4239947",
+        "name": "Isaiah McDuffie",
         "position": "LB",
-        "number": 59,
+        "number": 58,
         "teamId": "gb",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4567406.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4239947.png",
         "status": "Active",
-        "college": "Missouri",
-        "experience": "3 yrs exp",
-        "statsHighlight": "Starter • LB #59 • Missouri • 3 yrs exp"
+        "college": "Boston College",
+        "experience": "6 yrs exp",
+        "statsHighlight": "Starter • LB #58 • Boston College • 6 yrs exp"
       },
       {
         "id": "p-gb-5076652",
@@ -10542,7 +10504,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 2,
         "teamId": "gb",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5076652.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "South Carolina",
         "experience": "Rookie",
         "statsHighlight": "Starter • CB #2 • South Carolina • Rookie"
@@ -10566,7 +10528,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 7,
         "teamId": "gb",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4688930.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Georgia",
         "experience": "3 yrs exp",
         "statsHighlight": "Starter • S #7 • Georgia • 3 yrs exp"
@@ -10596,30 +10558,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • OT #71 • NC State • 2 yrs exp"
       },
       {
-        "id": "p-gb-4361904",
-        "name": "Travis Glover",
-        "position": "OT",
-        "number": 79,
-        "teamId": "gb",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361904.png",
-        "status": "Questionable",
-        "college": "Georgia State",
-        "experience": "3 yrs exp",
-        "statsHighlight": "Starter • OT #79 • Georgia State • 3 yrs exp"
-      },
-      {
-        "id": "p-gb-4242390",
-        "name": "Aaron Banks",
-        "position": "G",
-        "number": 65,
-        "teamId": "gb",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242390.png",
-        "status": "Active",
-        "college": "Notre Dame",
-        "experience": "6 yrs exp",
-        "statsHighlight": "Starter • G #65 • Notre Dame • 6 yrs exp"
-      },
-      {
         "id": "p-gb-3821571",
         "name": "Jordan Morgan",
         "position": "G",
@@ -10642,6 +10580,30 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "UCLA",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • G #75 • UCLA • 5 yrs exp"
+      },
+      {
+        "id": "p-gb-2512477",
+        "name": "Laken Tomlinson",
+        "position": "G",
+        "number": 72,
+        "teamId": "gb",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2512477.png",
+        "status": "Active",
+        "college": "Duke",
+        "experience": "12 yrs exp",
+        "statsHighlight": "Starter • G #72 • Duke • 12 yrs exp"
+      },
+      {
+        "id": "p-gb-14931",
+        "name": "Kevin Zeitler",
+        "position": "G",
+        "number": 70,
+        "teamId": "gb",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/14931.png",
+        "status": "Out",
+        "college": "Wisconsin",
+        "experience": "14 yrs exp",
+        "statsHighlight": "Starter • G #70 • Wisconsin • 14 yrs exp"
       },
       {
         "id": "p-gb-4869461",
@@ -10689,19 +10651,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Virginia Tech",
         "experience": "16 yrs exp",
-        "statsHighlight": "QB #6 • Virginia Tech • 16 yrs exp"
-      },
-      {
-        "id": "p-gb-4429023",
-        "name": "MarShawn Lloyd",
-        "position": "RB",
-        "number": 32,
-        "teamId": "gb",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429023.png",
-        "status": "Active",
-        "college": "USC",
-        "experience": "3 yrs exp",
-        "statsHighlight": "57 CAR, 149 YDS, 2 TD"
+        "statsHighlight": "1/2, 3 YDS"
       },
       {
         "id": "p-gb-4819231",
@@ -10713,19 +10663,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Iowa",
         "experience": "2 yrs exp",
-        "statsHighlight": "42 CAR, 172 YDS, 1 TD"
+        "statsHighlight": "52 CAR, 214 YDS, 1 TD"
       },
       {
-        "id": "p-gb-4249836",
-        "name": "Pierre Strong Jr.",
+        "id": "p-gb-4429023",
+        "name": "MarShawn Lloyd",
         "position": "RB",
-        "number": 22,
+        "number": 32,
         "teamId": "gb",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4249836.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429023.png",
         "status": "Active",
-        "college": "South Dakota State",
-        "experience": "4 yrs exp",
-        "statsHighlight": "RB #22 • South Dakota State • 4 yrs exp"
+        "college": "USC",
+        "experience": "3 yrs exp",
+        "statsHighlight": "61 CAR, 162 YDS, 2 TD"
       },
       {
         "id": "p-gb-3149687",
@@ -10734,7 +10684,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 30,
         "teamId": "gb",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3149687.png",
-        "status": "IR",
+        "status": "Active",
         "college": "BYU",
         "experience": "4 yrs exp",
         "statsHighlight": "RB #30 • BYU • 4 yrs exp"
@@ -10746,22 +10696,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 16,
         "teamId": "gb",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4259305.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Rutgers",
         "experience": "3 yrs exp",
         "statsHighlight": "WR #16 • Rutgers • 3 yrs exp"
       },
       {
-        "id": "p-gb-4578436",
-        "name": "Coleman Owen",
+        "id": "p-gb-4430191",
+        "name": "Skyy Moore",
         "position": "WR",
-        "number": 13,
+        "number": 23,
         "teamId": "gb",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4578436.png",
-        "status": "Active",
-        "college": "Ohio",
-        "experience": "1 yr exp",
-        "statsHighlight": "WR #13 • Ohio • 1 yr exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430191.png",
+        "status": "Questionable",
+        "college": "Western Michigan",
+        "experience": "5 yrs exp",
+        "statsHighlight": "WR #23 • Western Michigan • 5 yrs exp"
       },
       {
         "id": "p-gb-4635009",
@@ -10776,18 +10726,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "WR #87 • Florida • Rookie"
       },
       {
-        "id": "p-gb-4430191",
-        "name": "Skyy Moore",
-        "position": "WR",
-        "number": 23,
-        "teamId": "gb",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430191.png",
-        "status": "IR",
-        "college": "Western Michigan",
-        "experience": "5 yrs exp",
-        "statsHighlight": "WR #23 • Western Michigan • 5 yrs exp"
-      },
-      {
         "id": "p-gb-4431346",
         "name": "Mark Redman",
         "position": "TE",
@@ -10798,18 +10736,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Louisville",
         "experience": "1 yr exp",
         "statsHighlight": "TE #86 • Louisville • 1 yr exp"
-      },
-      {
-        "id": "p-gb-4360086",
-        "name": "Josh Whyle",
-        "position": "TE",
-        "number": 81,
-        "teamId": "gb",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360086.png",
-        "status": "Out",
-        "college": "Cincinnati",
-        "experience": "4 yrs exp",
-        "statsHighlight": "TE #81 • Cincinnati • 4 yrs exp"
       },
       {
         "id": "p-gb-3054212",
@@ -10834,6 +10760,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Oregon State",
         "experience": "4 yrs exp",
         "statsHighlight": "TE #88 • Oregon State • 4 yrs exp"
+      },
+      {
+        "id": "p-gb-4360086",
+        "name": "Josh Whyle",
+        "position": "TE",
+        "number": 81,
+        "teamId": "gb",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360086.png",
+        "status": "IR",
+        "college": "Cincinnati",
+        "experience": "4 yrs exp",
+        "statsHighlight": "TE #81 • Cincinnati • 4 yrs exp"
       },
       {
         "id": "p-gb-4361027",
@@ -10956,16 +10894,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DT #98 • South Carolina State • 11 yrs exp"
       },
       {
-        "id": "p-gb-4239947",
-        "name": "Isaiah McDuffie",
+        "id": "p-gb-4567406",
+        "name": "Ty'Ron Hopper",
         "position": "LB",
-        "number": 58,
+        "number": 59,
         "teamId": "gb",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4239947.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4567406.png",
         "status": "Active",
-        "college": "Boston College",
-        "experience": "6 yrs exp",
-        "statsHighlight": "LB #58 • Boston College • 6 yrs exp"
+        "college": "Missouri",
+        "experience": "3 yrs exp",
+        "statsHighlight": "LB #59 • Missouri • 3 yrs exp"
       },
       {
         "id": "p-gb-4036141",
@@ -11064,6 +11002,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "S #37 • UNLV • 1 yr exp"
       },
       {
+        "id": "p-gb-4361904",
+        "name": "Travis Glover",
+        "position": "OT",
+        "number": 79,
+        "teamId": "gb",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361904.png",
+        "status": "Active",
+        "college": "Georgia State",
+        "experience": "3 yrs exp",
+        "statsHighlight": "OT #79 • Georgia State • 3 yrs exp"
+      },
+      {
         "id": "p-gb-4240435",
         "name": "Zach Bako-Bewele",
         "position": "OT",
@@ -11074,6 +11024,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Wake Forest",
         "experience": "5 yrs exp",
         "statsHighlight": "OT #50 • Wake Forest • 5 yrs exp"
+      },
+      {
+        "id": "p-gb-4242390",
+        "name": "Aaron Banks",
+        "position": "G",
+        "number": 65,
+        "teamId": "gb",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242390.png",
+        "status": "Active",
+        "college": "Notre Dame",
+        "experience": "6 yrs exp",
+        "statsHighlight": "G #65 • Notre Dame • 6 yrs exp"
       },
       {
         "id": "p-gb-4240090",
@@ -11088,18 +11050,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "G #74 • Louisville • 7 yrs exp"
       },
       {
-        "id": "p-gb-2512477",
-        "name": "Laken Tomlinson",
-        "position": "G",
-        "number": 72,
-        "teamId": "gb",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2512477.png",
-        "status": "Active",
-        "college": "Duke",
-        "experience": "12 yrs exp",
-        "statsHighlight": "G #72 • Duke • 12 yrs exp"
-      },
-      {
         "id": "p-gb-2312707",
         "name": "John Williams",
         "position": "G",
@@ -11110,18 +11060,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Cincinnati",
         "experience": "2 yrs exp",
         "statsHighlight": "G #73 • Cincinnati • 2 yrs exp"
-      },
-      {
-        "id": "p-gb-14931",
-        "name": "Kevin Zeitler",
-        "position": "G",
-        "number": 70,
-        "teamId": "gb",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/14931.png",
-        "status": "Questionable",
-        "college": "Wisconsin",
-        "experience": "14 yrs exp",
-        "statsHighlight": "G #70 • Wisconsin • 14 yrs exp"
       },
       {
         "id": "p-gb-4360887",
@@ -11174,24 +11112,24 @@ export const NFL_TEAMS: NFLTeam[] = [
     "logoUrl": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
     "stadium": "NRG Stadium",
     "record": {
-      "wins": 3,
-      "losses": 5,
+      "wins": 4,
+      "losses": 6,
       "ties": 0
     },
     "rankInDivision": "Active in AFC South",
     "nextGame": {
-      "week": 10,
-      "opponent": "Cleveland Browns",
-      "opponentAbbr": "CLE",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cle.png",
-      "isHome": false,
-      "date": "Sun, Nov 15",
+      "week": 12,
+      "opponent": "Baltimore Ravens",
+      "opponentAbbr": "BAL",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
+      "isHome": true,
+      "date": "Sun, Nov 29",
       "time": "10:00 AM",
-      "network": "Fox",
-      "broadcastNetwork": "Fox",
+      "network": "CBS",
+      "broadcastNetwork": "CBS",
       "spread": "HOU Live Line",
-      "stadium": "Huntington Bank Field",
-      "venue": "Huntington Bank Field",
+      "stadium": "Reliant Stadium",
+      "venue": "Reliant Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -11306,10 +11244,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Cleveland Browns",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cle.png",
         "isHome": false,
-        "timeOrScore": "10:00 AM",
+        "timeOrScore": "24-27",
         "tvNetwork": "Fox",
         "broadcastNetwork": "Fox",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "L"
       },
       {
         "week": 11,
@@ -11318,10 +11257,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Indianapolis Colts",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ind.png",
         "isHome": true,
-        "timeOrScore": "5:15 PM",
+        "timeOrScore": "26-3",
         "tvNetwork": "Prime Video",
         "broadcastNetwork": "Prime Video",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "W"
       },
       {
         "week": 12,
@@ -11410,17 +11350,30 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "hou-inj-3043109",
-        "playerName": "Trent Brown",
-        "position": "OT",
+        "id": "hou-inj-4362732",
+        "playerName": "Jake Andrews",
+        "position": "C",
+        "teamId": "hou",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Jake Andrews (C) is listed as Out (Undisclosed).",
+        "practiceStatus": "Jake Andrews (C) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "hou-inj-4429022",
+        "playerName": "Kayshon Boutte",
+        "position": "WR",
         "teamId": "hou",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Trent Brown (OT) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Trent Brown (OT) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Kayshon Boutte (WR) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Kayshon Boutte (WR) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "hou-inj-4432708",
@@ -11430,8 +11383,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
         "details": "Marvin Harrison Jr. (WR) is listed as Out (Undisclosed).",
         "practiceStatus": "Marvin Harrison Jr. (WR) is listed as Out (Undisclosed)."
       },
@@ -11443,8 +11396,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
         "details": "Brevin Jordan (TE) is listed as Out (Undisclosed).",
         "practiceStatus": "Brevin Jordan (TE) is listed as Out (Undisclosed)."
       },
@@ -11462,17 +11415,17 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Jawhar Jordan (RB) is listed as Out (Undisclosed)."
       },
       {
-        "id": "hou-inj-4035538",
-        "playerName": "David Montgomery",
+        "id": "hou-inj-4429059",
+        "playerName": "Woody Marks",
         "position": "RB",
         "teamId": "hou",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "David Montgomery (RB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "David Montgomery (RB) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Woody Marks (RB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Woody Marks (RB) is listed as Out (Undisclosed)."
       },
       {
         "id": "hou-inj-4586312",
@@ -11494,11 +11447,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "hou",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Keylan Rutledge (G) is listed as Out (Undisclosed).",
-        "practiceStatus": "Keylan Rutledge (G) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Keylan Rutledge (G) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Keylan Rutledge (G) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "hou-inj-3045474",
@@ -11507,37 +11460,24 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "hou",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Wyatt Teller (G) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Wyatt Teller (G) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Wyatt Teller (G) is listed as Out (Undisclosed).",
+        "practiceStatus": "Wyatt Teller (G) is listed as Out (Undisclosed)."
       },
       {
-        "id": "hou-inj-3919117",
-        "playerName": "Azeez Al-Shaair",
-        "position": "LB",
+        "id": "hou-inj-4428656",
+        "playerName": "Nate Thomas",
+        "position": "OT",
         "teamId": "hou",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Azeez Al-Shaair (LB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Azeez Al-Shaair (LB) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "hou-inj-4685724",
-        "playerName": "Will Anderson Jr.",
-        "position": "DE",
-        "teamId": "hou",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Will Anderson Jr. (DE) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Will Anderson Jr. (DE) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Nate Thomas (OT) is listed as Out (Undisclosed).",
+        "practiceStatus": "Nate Thomas (OT) is listed as Out (Undisclosed)."
       },
       {
         "id": "hou-inj-2976560",
@@ -11547,23 +11487,36 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
         "details": "Danielle Hunter (DE) is listed as Out (Undisclosed).",
         "practiceStatus": "Danielle Hunter (DE) is listed as Out (Undisclosed)."
       },
       {
-        "id": "hou-inj-4594277",
-        "playerName": "Jaylin Smith",
-        "position": "CB",
+        "id": "hou-inj-2970204",
+        "playerName": "Sheldon Rankins",
+        "position": "DT",
+        "teamId": "hou",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Sheldon Rankins (DT) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Sheldon Rankins (DT) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "hou-inj-3919117",
+        "playerName": "Azeez Al-Shaair",
+        "position": "LB",
         "teamId": "hou",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "Jaylin Smith (CB) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Jaylin Smith (CB) is listed as Injured Reserve (Undisclosed)."
+        "lastUpdated": "Nov 16",
+        "updatedAt": "Nov 16",
+        "details": "Azeez Al-Shaair (LB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Azeez Al-Shaair (LB) is listed as Injured Reserve (Undisclosed)."
       },
       {
         "id": "hou-inj-4373273",
@@ -11590,19 +11543,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Aug 31",
         "details": "Solomon Byrd (DE) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Solomon Byrd (DE) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "hou-inj-2969921",
-        "playerName": "Mario Edwards Jr.",
-        "position": "DT",
-        "teamId": "hou",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Sep 30",
-        "updatedAt": "Sep 30",
-        "details": "Mario Edwards Jr. (DT) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Mario Edwards Jr. (DT) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -11628,7 +11568,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Ohio State",
         "experience": "4 yrs exp",
-        "statsHighlight": "20 CAR, 100 YDS, 1 TD"
+        "statsHighlight": "29 CAR, 147 YDS, 1 TD"
       },
       {
         "id": "p-hou-4035538",
@@ -11637,10 +11577,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 32,
         "teamId": "hou",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4035538.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Iowa State",
         "experience": "8 yrs exp",
-        "statsHighlight": "52 CAR, 138 YDS, 2 TD"
+        "statsHighlight": "78 CAR, 245 YDS, 2 TD"
       },
       {
         "id": "p-hou-4258173",
@@ -11652,7 +11592,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Michigan",
         "experience": "6 yrs exp",
-        "statsHighlight": "28 REC, 384 YDS, 4 TD"
+        "statsHighlight": "40 REC, 536 YDS, 6 TD"
       },
       {
         "id": "p-hou-4432708",
@@ -11688,7 +11628,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Stanford",
         "experience": "9 yrs exp",
-        "statsHighlight": "35 REC, 364 YDS"
+        "statsHighlight": "37 REC, 386 YDS, 1 TD"
       },
       {
         "id": "p-hou-4685724",
@@ -11697,7 +11637,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 51,
         "teamId": "hou",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685724.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Alabama",
         "experience": "4 yrs exp",
         "statsHighlight": "Starter • DE #51 • Alabama • 4 yrs exp"
@@ -11727,18 +11667,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • CB #24 • LSU • 5 yrs exp"
       },
       {
-        "id": "p-hou-4429059",
-        "name": "Woody Marks",
-        "position": "RB",
-        "number": 4,
-        "teamId": "hou",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429059.png",
-        "status": "Active",
-        "college": "USC",
-        "experience": "2 yrs exp",
-        "statsHighlight": "95 CAR, 341 YDS, 2 TD"
-      },
-      {
         "id": "p-hou-4686422",
         "name": "Xavier Hutchinson",
         "position": "WR",
@@ -11757,7 +11685,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 98,
         "teamId": "hou",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2970204.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Louisville",
         "experience": "11 yrs exp",
         "statsHighlight": "Starter • DT #98 • Louisville • 11 yrs exp"
@@ -11773,18 +11701,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Ohio State",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • DT #72 • Ohio State • 5 yrs exp"
-      },
-      {
-        "id": "p-hou-3919117",
-        "name": "Azeez Al-Shaair",
-        "position": "LB",
-        "number": 0,
-        "teamId": "hou",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3919117.png",
-        "status": "Out",
-        "college": "Florida Atlantic",
-        "experience": "8 yrs exp",
-        "statsHighlight": "Starter • LB #0 • Florida Atlantic • 8 yrs exp"
       },
       {
         "id": "p-hou-4033812",
@@ -11809,6 +11725,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Alabama",
         "experience": "4 yrs exp",
         "statsHighlight": "Starter • LB #39 • Alabama • 4 yrs exp"
+      },
+      {
+        "id": "p-hou-4837286",
+        "name": "Wade Woodaz",
+        "position": "LB",
+        "number": 30,
+        "teamId": "hou",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4837286.png",
+        "status": "Active",
+        "college": "Clemson",
+        "experience": "Rookie",
+        "statsHighlight": "Starter • LB #30 • Clemson • Rookie"
       },
       {
         "id": "p-hou-4602699",
@@ -11865,7 +11793,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 77,
         "teamId": "hou",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3043109.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Florida",
         "experience": "12 yrs exp",
         "statsHighlight": "Starter • OT #77 • Florida • 12 yrs exp"
@@ -11913,7 +11841,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 66,
         "teamId": "hou",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4839498.png",
-        "status": "Out",
+        "status": "Questionable",
         "college": "Georgia Tech",
         "experience": "Rookie",
         "statsHighlight": "Starter • G #66 • Georgia Tech • Rookie"
@@ -11979,6 +11907,30 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "QB #18 • Florida • 2 yrs exp"
       },
       {
+        "id": "p-hou-4429059",
+        "name": "Woody Marks",
+        "position": "RB",
+        "number": 4,
+        "teamId": "hou",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429059.png",
+        "status": "Out",
+        "college": "USC",
+        "experience": "2 yrs exp",
+        "statsHighlight": "107 CAR, 391 YDS, 2 TD"
+      },
+      {
+        "id": "p-hou-4362478",
+        "name": "Emari Demercado",
+        "position": "RB",
+        "number": 21,
+        "teamId": "hou",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4362478.png",
+        "status": "Active",
+        "college": "TCU",
+        "experience": "4 yrs exp",
+        "statsHighlight": "RB #21 • TCU • 4 yrs exp"
+      },
+      {
         "id": "p-hou-4373273",
         "name": "British Brooks",
         "position": "RB",
@@ -12003,16 +11955,40 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "RB #25 • Louisville • 1 yr exp"
       },
       {
+        "id": "p-hou-2983509",
+        "name": "Dare Ogunbowale",
+        "position": "RB",
+        "number": 23,
+        "teamId": "hou",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2983509.png",
+        "status": "Active",
+        "college": "Wisconsin",
+        "experience": "9 yrs exp",
+        "statsHighlight": "RB #23 • Wisconsin • 9 yrs exp"
+      },
+      {
         "id": "p-hou-4429022",
         "name": "Kayshon Boutte",
         "position": "WR",
         "number": 14,
         "teamId": "hou",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429022.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "LSU",
         "experience": "4 yrs exp",
-        "statsHighlight": "WR #14 • LSU • 4 yrs exp"
+        "statsHighlight": "21 REC, 359 YDS, 3 TD"
+      },
+      {
+        "id": "p-hou-4372716",
+        "name": "Nikko Remigio",
+        "position": "WR",
+        "number": 88,
+        "teamId": "hou",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4372716.png",
+        "status": "Active",
+        "college": "Fresno State",
+        "experience": "2 yrs exp",
+        "statsHighlight": "WR #88 • Fresno State • 2 yrs exp"
       },
       {
         "id": "p-hou-4586312",
@@ -12024,7 +12000,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "IR",
         "college": "Iowa State",
         "experience": "2 yrs exp",
-        "statsHighlight": "19 REC, 331 YDS, 2 TD"
+        "statsHighlight": "WR #13 • Iowa State • 2 yrs exp"
       },
       {
         "id": "p-hou-4877706",
@@ -12135,18 +12111,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DE #94 • Miami (OH) • 5 yrs exp"
       },
       {
-        "id": "p-hou-4699802",
-        "name": "Sabastian Harsh",
-        "position": "DE",
-        "number": 54,
-        "teamId": "hou",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4699802.png",
-        "status": "Active",
-        "college": "NC State",
-        "experience": "Rookie",
-        "statsHighlight": "DE #54 • NC State • Rookie"
-      },
-      {
         "id": "p-hou-4243321",
         "name": "Ali Gaye",
         "position": "DE",
@@ -12159,18 +12123,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DE #95 • LSU • 3 yrs exp"
       },
       {
-        "id": "p-hou-4361689",
-        "name": "Solomon Byrd",
-        "position": "DE",
-        "number": 50,
-        "teamId": "hou",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361689.png",
-        "status": "IR",
-        "college": "USC",
-        "experience": "1 yr exp",
-        "statsHighlight": "DE #50 • USC • 1 yr exp"
-      },
-      {
         "id": "p-hou-4374066",
         "name": "Dylan Horton",
         "position": "DE",
@@ -12181,6 +12133,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "TCU",
         "experience": "4 yrs exp",
         "statsHighlight": "DE #92 • TCU • 4 yrs exp"
+      },
+      {
+        "id": "p-hou-4361689",
+        "name": "Solomon Byrd",
+        "position": "DE",
+        "number": 50,
+        "teamId": "hou",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361689.png",
+        "status": "IR",
+        "college": "USC",
+        "experience": "1 yr exp",
+        "statsHighlight": "DE #50 • USC • 1 yr exp"
       },
       {
         "id": "p-hou-4870893",
@@ -12198,13 +12162,13 @@ export const NFL_TEAMS: NFLTeam[] = [
         "id": "p-hou-4046716",
         "name": "Naquan Jones",
         "position": "DT",
-        "number": 0,
+        "number": 91,
         "teamId": "hou",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4046716.png",
         "status": "Active",
         "college": "Michigan State",
         "experience": "7 yrs exp",
-        "statsHighlight": "DT #0 • Michigan State • 7 yrs exp"
+        "statsHighlight": "DT #91 • Michigan State • 7 yrs exp"
       },
       {
         "id": "p-hou-2969921",
@@ -12219,28 +12183,28 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DT #97 • Florida State • 11 yrs exp"
       },
       {
-        "id": "p-hou-4837286",
-        "name": "Wade Woodaz",
+        "id": "p-hou-4241250",
+        "name": "Jake Hummel",
         "position": "LB",
-        "number": 30,
+        "number": 33,
         "teamId": "hou",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4837286.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4241250.png",
         "status": "Active",
-        "college": "Clemson",
-        "experience": "Rookie",
-        "statsHighlight": "LB #30 • Clemson • Rookie"
+        "college": "Iowa State",
+        "experience": "5 yrs exp",
+        "statsHighlight": "LB #33 • Iowa State • 5 yrs exp"
       },
       {
-        "id": "p-hou-4687188",
-        "name": "K.C. Ossai",
+        "id": "p-hou-3919117",
+        "name": "Azeez Al-Shaair",
         "position": "LB",
-        "number": 52,
+        "number": 0,
         "teamId": "hou",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4687188.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3919117.png",
         "status": "IR",
-        "college": "Louisiana",
-        "experience": "1 yr exp",
-        "statsHighlight": "LB #52 • Louisiana • 1 yr exp"
+        "college": "Florida Atlantic",
+        "experience": "8 yrs exp",
+        "statsHighlight": "LB #0 • Florida Atlantic • 8 yrs exp"
       },
       {
         "id": "p-hou-3071353",
@@ -12255,28 +12219,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #45 • Tarleton State • 8 yrs exp"
       },
       {
-        "id": "p-hou-4241250",
-        "name": "Jake Hummel",
+        "id": "p-hou-4687188",
+        "name": "K.C. Ossai",
         "position": "LB",
-        "number": 33,
+        "number": 52,
         "teamId": "hou",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4241250.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4687188.png",
         "status": "IR",
-        "college": "Iowa State",
-        "experience": "5 yrs exp",
-        "statsHighlight": "LB #33 • Iowa State • 5 yrs exp"
-      },
-      {
-        "id": "p-hou-4361707",
-        "name": "Chad Muma",
-        "position": "LB",
-        "number": 49,
-        "teamId": "hou",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361707.png",
-        "status": "Active",
-        "college": "Wyoming",
-        "experience": "4 yrs exp",
-        "statsHighlight": "LB #49 • Wyoming • 4 yrs exp"
+        "college": "Louisiana",
+        "experience": "1 yr exp",
+        "statsHighlight": "LB #52 • Louisiana • 1 yr exp"
       },
       {
         "id": "p-hou-4241394",
@@ -12297,7 +12249,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 22,
         "teamId": "hou",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4594277.png",
-        "status": "IR",
+        "status": "Active",
         "college": "USC",
         "experience": "2 yrs exp",
         "statsHighlight": "CB #22 • USC • 2 yrs exp"
@@ -12393,7 +12345,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 78,
         "teamId": "hou",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4428656.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Louisiana",
         "experience": "3 yrs exp",
         "statsHighlight": "OT #78 • Louisiana • 3 yrs exp"
@@ -12411,18 +12363,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "OT #57 • Notre Dame • 3 yrs exp"
       },
       {
-        "id": "p-hou-3045474",
-        "name": "Wyatt Teller",
-        "position": "G",
-        "number": 75,
-        "teamId": "hou",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3045474.png",
-        "status": "Questionable",
-        "college": "Virginia Tech",
-        "experience": "9 yrs exp",
-        "statsHighlight": "G #75 • Virginia Tech • 9 yrs exp"
-      },
-      {
         "id": "p-hou-4880873",
         "name": "Febechi Nwaiwu",
         "position": "G",
@@ -12433,6 +12373,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Oklahoma",
         "experience": "Rookie",
         "statsHighlight": "G #64 • Oklahoma • Rookie"
+      },
+      {
+        "id": "p-hou-3045474",
+        "name": "Wyatt Teller",
+        "position": "G",
+        "number": 75,
+        "teamId": "hou",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3045474.png",
+        "status": "Out",
+        "college": "Virginia Tech",
+        "experience": "9 yrs exp",
+        "statsHighlight": "G #75 • Virginia Tech • 9 yrs exp"
       },
       {
         "id": "p-hou-4879242",
@@ -12453,7 +12405,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 60,
         "teamId": "hou",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4362732.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Troy",
         "experience": "4 yrs exp",
         "statsHighlight": "C #60 • Troy • 4 yrs exp"
@@ -12710,30 +12662,17 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "wsh-inj-4575131",
-        "playerName": "Jacory Croskey-Merritt",
-        "position": "RB",
+        "id": "wsh-inj-4567156",
+        "playerName": "Treylon Burks",
+        "position": "WR",
         "teamId": "wsh",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Oct 19",
-        "updatedAt": "Oct 19",
-        "details": "Jacory Croskey-Merritt (RB) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Jacory Croskey-Merritt (RB) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "wsh-inj-4432722",
-        "playerName": "Athan Kaliakmanis",
-        "position": "QB",
-        "teamId": "wsh",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Athan Kaliakmanis (QB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Athan Kaliakmanis (QB) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Treylon Burks (WR) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Treylon Burks (WR) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "wsh-inj-4602667",
@@ -12749,56 +12688,17 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Jaylin Lane (WR) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "wsh-inj-2576736",
-        "playerName": "Lucas Patrick",
-        "position": "G",
+        "id": "wsh-inj-4697815",
+        "playerName": "Rachaad White",
+        "position": "RB",
         "teamId": "wsh",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "Lucas Patrick (G) is listed as Out (Undisclosed).",
-        "practiceStatus": "Lucas Patrick (G) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "wsh-inj-4605488",
-        "playerName": "Tanoa Togiai",
-        "position": "G",
-        "teamId": "wsh",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Tanoa Togiai (G) is listed as Out (Undisclosed).",
-        "practiceStatus": "Tanoa Togiai (G) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "wsh-inj-4361088",
-        "playerName": "Colson Yankoff",
-        "position": "TE",
-        "teamId": "wsh",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "Colson Yankoff (TE) is listed as Out (Undisclosed).",
-        "practiceStatus": "Colson Yankoff (TE) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "wsh-inj-4428343",
-        "playerName": "Ricky Barber",
-        "position": "DT",
-        "teamId": "wsh",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Ricky Barber (DT) is listed as Out (Undisclosed).",
-        "practiceStatus": "Ricky Barber (DT) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Rachaad White (RB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Rachaad White (RB) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "wsh-inj-4361357",
@@ -12814,17 +12714,17 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Javontae Jean-Baptiste (LB) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "wsh-inj-3122797",
-        "playerName": "Isaac Yiadom",
-        "position": "CB",
+        "id": "wsh-inj-4360378",
+        "playerName": "Quan Martin",
+        "position": "S",
         "teamId": "wsh",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Isaac Yiadom (CB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Isaac Yiadom (CB) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Quan Martin (S) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Quan Martin (S) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "wsh-inj-4361577",
@@ -12851,6 +12751,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Sep 29",
         "details": "Leo Chenal (LB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Leo Chenal (LB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "wsh-inj-4575131",
+        "playerName": "Jacory Croskey-Merritt",
+        "position": "RB",
+        "teamId": "wsh",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Jacory Croskey-Merritt (RB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Jacory Croskey-Merritt (RB) is listed as Injured Reserve (Undisclosed)."
       },
       {
         "id": "wsh-inj-4259491",
@@ -12903,6 +12816,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Nov 4",
         "details": "Daron Payne (DT) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Daron Payne (DT) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "wsh-inj-3051890",
+        "playerName": "Laremy Tunsil",
+        "position": "OT",
+        "teamId": "wsh",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 16",
+        "updatedAt": "Nov 16",
+        "details": "Laremy Tunsil (OT) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Laremy Tunsil (OT) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -12949,7 +12875,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 1,
         "teamId": "wsh",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4697815.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Arizona State",
         "experience": "5 yrs exp",
         "statsHighlight": "65 CAR, 275 YDS, 1 TD"
@@ -13009,7 +12935,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 13,
         "teamId": "wsh",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4567156.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Arkansas",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • WR #13 • Arkansas • 5 yrs exp"
@@ -13171,18 +13097,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • OT #72 • Oregon • 2 yrs exp"
       },
       {
-        "id": "p-wsh-3115922",
-        "name": "Nick Allegretti",
-        "position": "G",
-        "number": 67,
-        "teamId": "wsh",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3115922.png",
-        "status": "Active",
-        "college": "Illinois",
-        "experience": "8 yrs exp",
-        "statsHighlight": "Starter • G #67 • Illinois • 8 yrs exp"
-      },
-      {
         "id": "p-wsh-4685030",
         "name": "Brandon Coleman",
         "position": "G",
@@ -13205,6 +13119,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Texas",
         "experience": "6 yrs exp",
         "statsHighlight": "Starter • G #76 • Texas • 6 yrs exp"
+      },
+      {
+        "id": "p-wsh-2576736",
+        "name": "Lucas Patrick",
+        "position": "G",
+        "number": 63,
+        "teamId": "wsh",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2576736.png",
+        "status": "Active",
+        "college": "Duke",
+        "experience": "10 yrs exp",
+        "statsHighlight": "Starter • G #63 • Duke • 10 yrs exp"
       },
       {
         "id": "p-wsh-4244615",
@@ -13273,7 +13199,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 16,
         "teamId": "wsh",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4432722.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Rutgers",
         "experience": "Rookie",
         "statsHighlight": "15/33, 186 YDS, 1 TD, 1 INT"
@@ -13387,6 +13313,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "WR #86 • UNLV • Rookie"
       },
       {
+        "id": "p-wsh-4689334",
+        "name": "Malik Heath",
+        "position": "WR",
+        "number": 0,
+        "teamId": "wsh",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4689334.png",
+        "status": "Active",
+        "college": "Ole Miss",
+        "experience": "3 yrs exp",
+        "statsHighlight": "WR #0 • Ole Miss • 3 yrs exp"
+      },
+      {
         "id": "p-wsh-4690923",
         "name": "Ben Sinnott",
         "position": "TE",
@@ -13417,7 +13355,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 80,
         "teamId": "wsh",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361088.png",
-        "status": "Out",
+        "status": "Active",
         "college": "UCLA",
         "experience": "3 yrs exp",
         "statsHighlight": "TE #80 • UCLA • 3 yrs exp"
@@ -13441,7 +13379,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 50,
         "teamId": "wsh",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4428343.png",
-        "status": "Out",
+        "status": "Active",
         "college": "UCF",
         "experience": "1 yr exp",
         "statsHighlight": "DT #50 • UCF • 1 yr exp"
@@ -13597,7 +13535,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 37,
         "teamId": "wsh",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3122797.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Boston College",
         "experience": "9 yrs exp",
         "statsHighlight": "CB #37 • Boston College • 9 yrs exp"
@@ -13609,7 +13547,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 20,
         "teamId": "wsh",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360378.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Illinois",
         "experience": "4 yrs exp",
         "statsHighlight": "S #20 • Illinois • 4 yrs exp"
@@ -13663,16 +13601,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "OT #78 • Ole Miss • 11 yrs exp"
       },
       {
-        "id": "p-wsh-2576736",
-        "name": "Lucas Patrick",
+        "id": "p-wsh-3115922",
+        "name": "Nick Allegretti",
         "position": "G",
-        "number": 63,
+        "number": 67,
         "teamId": "wsh",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2576736.png",
-        "status": "Out",
-        "college": "Duke",
-        "experience": "10 yrs exp",
-        "statsHighlight": "G #63 • Duke • 10 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3115922.png",
+        "status": "Active",
+        "college": "Illinois",
+        "experience": "8 yrs exp",
+        "statsHighlight": "G #67 • Illinois • 8 yrs exp"
       },
       {
         "id": "p-wsh-3042702",
@@ -13693,7 +13631,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 62,
         "teamId": "wsh",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4605488.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Utah",
         "experience": "Rookie",
         "statsHighlight": "G #62 • Utah • Rookie"
@@ -13726,23 +13664,23 @@ export const NFL_TEAMS: NFLTeam[] = [
     "stadium": "Acrisure Stadium",
     "record": {
       "wins": 6,
-      "losses": 2,
+      "losses": 3,
       "ties": 0
     },
     "rankInDivision": "Active in AFC North",
     "nextGame": {
-      "week": 10,
-      "opponent": "Cincinnati Bengals",
-      "opponentAbbr": "CIN",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
+      "week": 11,
+      "opponent": "Philadelphia Eagles",
+      "opponentAbbr": "PHI",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
       "isHome": false,
-      "date": "Sun, Nov 15",
-      "time": "5:20 PM",
-      "network": "NBC",
-      "broadcastNetwork": "NBC",
+      "date": "Sun, Nov 22",
+      "time": "10:00 AM",
+      "network": "CBS",
+      "broadcastNetwork": "CBS",
       "spread": "PIT Live Line",
-      "stadium": "Paycor Stadium",
-      "venue": "Paycor Stadium",
+      "stadium": "Lincoln Financial Field",
+      "venue": "Lincoln Financial Field",
       "countdownHours": 48
     },
     "schedule": [
@@ -13857,10 +13795,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Cincinnati Bengals",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
         "isHome": false,
-        "timeOrScore": "5:20 PM",
+        "timeOrScore": "18-38",
         "tvNetwork": "NBC",
         "broadcastNetwork": "NBC",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "L"
       },
       {
         "week": 11,
@@ -13961,6 +13900,32 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
+        "id": "pit-inj-4429164",
+        "playerName": "Nick Herbig",
+        "position": "LB",
+        "teamId": "pit",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Nick Herbig (LB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Nick Herbig (LB) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "pit-inj-4242207",
+        "playerName": "Patrick Queen",
+        "position": "LB",
+        "teamId": "pit",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Patrick Queen (LB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Patrick Queen (LB) is listed as Questionable (Undisclosed)."
+      },
+      {
         "id": "pit-inj-5192448",
         "playerName": "Cole Burgess",
         "position": "WR",
@@ -13994,10 +13959,23 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Sep 26",
-        "updatedAt": "Sep 26",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
         "details": "Gennings Dunker (G) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Gennings Dunker (G) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "pit-inj-3929846",
+        "playerName": "DeShon Elliott",
+        "position": "S",
+        "teamId": "pit",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "DeShon Elliott (S) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "DeShon Elliott (S) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "pit-inj-4429743",
@@ -14011,32 +13989,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "May 5",
         "details": "Daequan Hardy (CB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Daequan Hardy (CB) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "pit-inj-4682980",
-        "playerName": "Derrick Harmon",
-        "position": "DT",
-        "teamId": "pit",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Derrick Harmon (DT) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Derrick Harmon (DT) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "pit-inj-4694237",
-        "playerName": "Max Hurleman",
-        "position": "RB",
-        "teamId": "pit",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Sep 19",
-        "updatedAt": "Sep 19",
-        "details": "Max Hurleman (RB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Max Hurleman (RB) is listed as Out (Undisclosed)."
       },
       {
         "id": "pit-inj-3047495",
@@ -14078,6 +14030,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Logan Lee (DT) is listed as Injured Reserve (Undisclosed)."
       },
       {
+        "id": "pit-inj-4368304",
+        "playerName": "Mason McCormick",
+        "position": "G",
+        "teamId": "pit",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Mason McCormick (G) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Mason McCormick (G) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
         "id": "pit-inj-4035687",
         "playerName": "Michael Pittman Jr.",
         "position": "WR",
@@ -14085,8 +14050,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Michael Pittman Jr. (WR) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Michael Pittman Jr. (WR) is listed as Injured Reserve (Undisclosed)."
       },
@@ -14098,8 +14063,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Oct 17",
-        "updatedAt": "Oct 17",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Roman Wilson (WR) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Roman Wilson (WR) is listed as Injured Reserve (Undisclosed)."
       }
@@ -14127,7 +14092,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "California",
         "experience": "22 yrs exp",
-        "statsHighlight": "12 CAR, 23 YDS"
+        "statsHighlight": "190/317, 2014 YDS, 15 TD, 6 INT"
       },
       {
         "id": "p-pit-4038815",
@@ -14139,7 +14104,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "South Carolina",
         "experience": "7 yrs exp",
-        "statsHighlight": "46 CAR, 174 YDS, 1 TD"
+        "statsHighlight": "51 CAR, 200 YDS, 1 TD"
       },
       {
         "id": "p-pit-4569987",
@@ -14151,7 +14116,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Oklahoma State",
         "experience": "5 yrs exp",
-        "statsHighlight": "25 REC, 294 YDS, 1 TD"
+        "statsHighlight": "30 REC, 320 YDS, 1 TD"
       },
       {
         "id": "p-pit-4047650",
@@ -14163,7 +14128,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Ole Miss",
         "experience": "8 yrs exp",
-        "statsHighlight": "33 REC, 378 YDS, 1 TD"
+        "statsHighlight": "35 REC, 432 YDS, 2 TD"
       },
       {
         "id": "p-pit-4035687",
@@ -14238,18 +14203,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • WR #15 • Notre Dame • 6 yrs exp"
       },
       {
-        "id": "p-pit-4430947",
-        "name": "Yahya Black",
-        "position": "DE",
-        "number": 94,
-        "teamId": "pit",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430947.png",
-        "status": "Active",
-        "college": "Iowa",
-        "experience": "2 yrs exp",
-        "statsHighlight": "Starter • DE #94 • Iowa • 2 yrs exp"
-      },
-      {
         "id": "p-pit-4426694",
         "name": "Keeanu Benton",
         "position": "DT",
@@ -14260,6 +14213,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Wisconsin",
         "experience": "4 yrs exp",
         "statsHighlight": "Starter • DT #95 • Wisconsin • 4 yrs exp"
+      },
+      {
+        "id": "p-pit-4682980",
+        "name": "Derrick Harmon",
+        "position": "DT",
+        "number": 99,
+        "teamId": "pit",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4682980.png",
+        "status": "Active",
+        "college": "Oregon",
+        "experience": "2 yrs exp",
+        "statsHighlight": "Starter • DT #99 • Oregon • 2 yrs exp"
       },
       {
         "id": "p-pit-13977",
@@ -14292,7 +14257,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 6,
         "teamId": "pit",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242207.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "LSU",
         "experience": "7 yrs exp",
         "statsHighlight": "Starter • LB #6 • LSU • 7 yrs exp"
@@ -14394,16 +14359,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • OT #71 • Arizona State • Rookie"
       },
       {
-        "id": "p-pit-4368304",
-        "name": "Mason McCormick",
+        "id": "p-pit-4372056",
+        "name": "Spencer Anderson",
         "position": "G",
-        "number": 66,
+        "number": 74,
         "teamId": "pit",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4368304.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4372056.png",
         "status": "Active",
-        "college": "South Dakota State",
-        "experience": "3 yrs exp",
-        "statsHighlight": "Starter • G #66 • South Dakota State • 3 yrs exp"
+        "college": "Maryland",
+        "experience": "4 yrs exp",
+        "statsHighlight": "Starter • G #74 • Maryland • 4 yrs exp"
       },
       {
         "id": "p-pit-4429775",
@@ -14487,7 +14452,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Oklahoma State",
         "experience": "9 yrs exp",
-        "statsHighlight": "0/1, 0 YDS"
+        "statsHighlight": "1/4, 2 YDS"
       },
       {
         "id": "p-pit-4429955",
@@ -14523,7 +14488,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Central Michigan",
         "experience": "1 yr exp",
-        "statsHighlight": "RB #31 • Central Michigan • 1 yr exp"
+        "statsHighlight": "8 CAR, 49 YDS"
       },
       {
         "id": "p-pit-4037457",
@@ -14550,30 +14515,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "RB #29 • Navy • Rookie"
       },
       {
-        "id": "p-pit-4694237",
-        "name": "Max Hurleman",
-        "position": "RB",
-        "number": 84,
-        "teamId": "pit",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4694237.png",
-        "status": "Out",
-        "college": "Notre Dame",
-        "experience": "1 yr exp",
-        "statsHighlight": "RB #84 • Notre Dame • 1 yr exp"
-      },
-      {
-        "id": "p-pit-4240577",
-        "name": "Brandon Smith",
-        "position": "WR",
-        "number": 87,
-        "teamId": "pit",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4240577.png",
-        "status": "Active",
-        "college": "Iowa",
-        "experience": "1 yr exp",
-        "statsHighlight": "WR #87 • Iowa • 1 yr exp"
-      },
-      {
         "id": "p-pit-5081338",
         "name": "Kaden Wetjen",
         "position": "WR",
@@ -14584,18 +14525,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Iowa",
         "experience": "Rookie",
         "statsHighlight": "WR #10 • Iowa • Rookie"
-      },
-      {
-        "id": "p-pit-5192448",
-        "name": "Cole Burgess",
-        "position": "WR",
-        "number": 85,
-        "teamId": "pit",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5192448.png",
-        "status": "IR",
-        "college": "SUNY Cortland",
-        "experience": "1 yr exp",
-        "statsHighlight": "WR #85 • SUNY Cortland • 1 yr exp"
       },
       {
         "id": "p-pit-4431492",
@@ -14610,6 +14539,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "WR #14 • Michigan • 3 yrs exp"
       },
       {
+        "id": "p-pit-5192448",
+        "name": "Cole Burgess",
+        "position": "WR",
+        "number": 85,
+        "teamId": "pit",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5192448.png",
+        "status": "IR",
+        "college": "SUNY Cortland",
+        "experience": "1 yr exp",
+        "statsHighlight": "WR #85 • SUNY Cortland • 1 yr exp"
+      },
+      {
         "id": "p-pit-2975674",
         "name": "Robert Tonyan",
         "position": "TE",
@@ -14620,6 +14561,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Indiana State",
         "experience": "8 yrs exp",
         "statsHighlight": "TE #85 • Indiana State • 8 yrs exp"
+      },
+      {
+        "id": "p-pit-4430947",
+        "name": "Yahya Black",
+        "position": "DE",
+        "number": 94,
+        "teamId": "pit",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430947.png",
+        "status": "Active",
+        "college": "Iowa",
+        "experience": "2 yrs exp",
+        "statsHighlight": "DE #94 • Iowa • 2 yrs exp"
       },
       {
         "id": "p-pit-4431533",
@@ -14658,18 +14611,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DT #69 • Rutgers • 8 yrs exp"
       },
       {
-        "id": "p-pit-4682980",
-        "name": "Derrick Harmon",
-        "position": "DT",
-        "number": 99,
-        "teamId": "pit",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4682980.png",
-        "status": "IR",
-        "college": "Oregon",
-        "experience": "2 yrs exp",
-        "statsHighlight": "DT #99 • Oregon • 2 yrs exp"
-      },
-      {
         "id": "p-pit-4569474",
         "name": "Logan Lee",
         "position": "DT",
@@ -14700,7 +14641,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 51,
         "teamId": "pit",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429164.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Wisconsin",
         "experience": "4 yrs exp",
         "statsHighlight": "LB #51 • Wisconsin • 4 yrs exp"
@@ -14778,16 +14719,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "CB #40 • Arkansas • 1 yr exp"
       },
       {
-        "id": "p-pit-4360935",
-        "name": "Terell Smith",
+        "id": "p-pit-4429743",
+        "name": "Daequan Hardy",
         "position": "CB",
-        "number": 39,
+        "number": 31,
         "teamId": "pit",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360935.png",
-        "status": "Active",
-        "college": "Minnesota",
-        "experience": "5 yrs exp",
-        "statsHighlight": "CB #39 • Minnesota • 5 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429743.png",
+        "status": "IR",
+        "college": "Penn State",
+        "experience": "1 yr exp",
+        "statsHighlight": "CB #31 • Penn State • 1 yr exp"
       },
       {
         "id": "p-pit-4608004",
@@ -14800,18 +14741,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Central Michigan",
         "experience": "2 yrs exp",
         "statsHighlight": "CB #34 • Central Michigan • 2 yrs exp"
-      },
-      {
-        "id": "p-pit-4429743",
-        "name": "Daequan Hardy",
-        "position": "CB",
-        "number": 31,
-        "teamId": "pit",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429743.png",
-        "status": "IR",
-        "college": "Penn State",
-        "experience": "1 yr exp",
-        "statsHighlight": "CB #31 • Penn State • 1 yr exp"
       },
       {
         "id": "p-pit-4820584",
@@ -14850,18 +14779,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "OT #68 • Auburn • 6 yrs exp"
       },
       {
-        "id": "p-pit-4372056",
-        "name": "Spencer Anderson",
-        "position": "G",
-        "number": 74,
-        "teamId": "pit",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4372056.png",
-        "status": "Active",
-        "college": "Maryland",
-        "experience": "4 yrs exp",
-        "statsHighlight": "G #74 • Maryland • 4 yrs exp"
-      },
-      {
         "id": "p-pit-4431258",
         "name": "Gennings Dunker",
         "position": "G",
@@ -14872,6 +14789,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Iowa",
         "experience": "Rookie",
         "statsHighlight": "G #73 • Iowa • Rookie"
+      },
+      {
+        "id": "p-pit-4368304",
+        "name": "Mason McCormick",
+        "position": "G",
+        "number": 66,
+        "teamId": "pit",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4368304.png",
+        "status": "IR",
+        "college": "South Dakota State",
+        "experience": "3 yrs exp",
+        "statsHighlight": "G #66 • South Dakota State • 3 yrs exp"
       },
       {
         "id": "p-pit-4035253",
@@ -14901,23 +14830,23 @@ export const NFL_TEAMS: NFLTeam[] = [
     "stadium": "Mercedes-Benz Stadium",
     "record": {
       "wins": 3,
-      "losses": 6,
+      "losses": 7,
       "ties": 0
     },
     "rankInDivision": "Active in NFC South",
     "nextGame": {
-      "week": 10,
-      "opponent": "Kansas City Chiefs",
-      "opponentAbbr": "KC",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-      "isHome": true,
-      "date": "Sun, Nov 15",
+      "week": 12,
+      "opponent": "Minnesota Vikings",
+      "opponentAbbr": "MIN",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+      "isHome": false,
+      "date": "Sun, Nov 29",
       "time": "10:00 AM",
-      "network": "CBS",
-      "broadcastNetwork": "CBS",
+      "network": "Fox",
+      "broadcastNetwork": "Fox",
       "spread": "ATL Live Line",
-      "stadium": "Mercedes-Benz Stadium",
-      "venue": "Mercedes-Benz Stadium",
+      "stadium": "U.S. Bank Stadium",
+      "venue": "U.S. Bank Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -15045,10 +14974,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Kansas City Chiefs",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
         "isHome": true,
-        "timeOrScore": "10:00 AM",
+        "timeOrScore": "13-35",
         "tvNetwork": "CBS",
         "broadcastNetwork": "CBS",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "L"
       },
       {
         "week": 12,
@@ -15144,8 +15074,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
         "details": "Zachariah Branch (WR) is listed as Out (Undisclosed).",
         "practiceStatus": "Zachariah Branch (WR) is listed as Out (Undisclosed)."
       },
@@ -15156,37 +15086,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "atl",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Doubtful",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Divine Deablo (LB) is listed as Doubtful (Undisclosed).",
-        "practiceStatus": "Divine Deablo (LB) is listed as Doubtful (Undisclosed)."
-      },
-      {
-        "id": "atl-inj-4429014",
-        "playerName": "Gervon Dexter Sr.",
-        "position": "DT",
-        "teamId": "atl",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "Gervon Dexter Sr. (DT) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Gervon Dexter Sr. (DT) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "atl-inj-5081394",
-        "playerName": "James Pearce Jr.",
-        "position": "LB",
-        "teamId": "atl",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "James Pearce Jr. (LB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "James Pearce Jr. (LB) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
+        "details": "Divine Deablo (LB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Divine Deablo (LB) is listed as Out (Undisclosed)."
       },
       {
         "id": "atl-inj-4685597",
@@ -15200,19 +15104,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Aug 19",
         "details": "Jalon Walker (LB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Jalon Walker (LB) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "atl-inj-3128303",
-        "playerName": "Josh Woods",
-        "position": "LB",
-        "teamId": "atl",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "Josh Woods (LB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Josh Woods (LB) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "atl-inj-4428872",
@@ -15355,7 +15246,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Washington",
         "experience": "3 yrs exp",
-        "statsHighlight": "20 CAR, 65 YDS"
+        "statsHighlight": "24 CAR, 94 YDS"
       },
       {
         "id": "p-atl-4241479",
@@ -15379,7 +15270,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Texas",
         "experience": "4 yrs exp",
-        "statsHighlight": "31 REC, 250 YDS, 1 TD"
+        "statsHighlight": "185 CAR, 951 YDS, 6 TD"
       },
       {
         "id": "p-atl-4426502",
@@ -15391,7 +15282,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "USC",
         "experience": "5 yrs exp",
-        "statsHighlight": "44 REC, 692 YDS, 1 TD"
+        "statsHighlight": "50 REC, 801 YDS, 1 TD"
       },
       {
         "id": "p-atl-4360248",
@@ -15403,7 +15294,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Florida",
         "experience": "5 yrs exp",
-        "statsHighlight": "Starter • TE #8 • Florida • 5 yrs exp"
+        "statsHighlight": "29 REC, 270 YDS, 4 TD"
       },
       {
         "id": "p-atl-4361409",
@@ -15415,7 +15306,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Penn State",
         "experience": "5 yrs exp",
-        "statsHighlight": "16 REC, 353 YDS, 2 TD"
+        "statsHighlight": "19 REC, 416 YDS, 2 TD"
       },
       {
         "id": "p-atl-3917914",
@@ -15448,7 +15339,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 95,
         "teamId": "atl",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429014.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Florida",
         "experience": "4 yrs exp",
         "statsHighlight": "Starter • DT #95 • Florida • 4 yrs exp"
@@ -15496,7 +15387,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 0,
         "teamId": "atl",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4037626.png",
-        "status": "Doubtful",
+        "status": "Out",
         "college": "Virginia Tech",
         "experience": "6 yrs exp",
         "statsHighlight": "Starter • LB #0 • Virginia Tech • 6 yrs exp"
@@ -15508,7 +15399,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 27,
         "teamId": "atl",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5081394.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Tennessee",
         "experience": "2 yrs exp",
         "statsHighlight": "Starter • LB #27 • Tennessee • 2 yrs exp"
@@ -15904,7 +15795,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 46,
         "teamId": "atl",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3128303.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Maryland",
         "experience": "7 yrs exp",
         "statsHighlight": "LB #46 • Maryland • 7 yrs exp"
@@ -15970,6 +15861,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #50 • Western Kentucky • 5 yrs exp"
       },
       {
+        "id": "p-atl-4684030",
+        "name": "TJ Quinn",
+        "position": "LB",
+        "number": 43,
+        "teamId": "atl",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4684030.png",
+        "status": "Active",
+        "college": "Louisville",
+        "experience": "Rookie",
+        "statsHighlight": "LB #43 • Louisville • Rookie"
+      },
+      {
         "id": "p-atl-4431194",
         "name": "Billy Bowman Jr.",
         "position": "CB",
@@ -15980,30 +15883,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Oklahoma",
         "experience": "2 yrs exp",
         "statsHighlight": "CB #33 • Oklahoma • 2 yrs exp"
-      },
-      {
-        "id": "p-atl-3895841",
-        "name": "Mike Hughes",
-        "position": "CB",
-        "number": 21,
-        "teamId": "atl",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3895841.png",
-        "status": "Active",
-        "college": "UCF",
-        "experience": "9 yrs exp",
-        "statsHighlight": "CB #21 • UCF • 9 yrs exp"
-      },
-      {
-        "id": "p-atl-4870988",
-        "name": "Avieon Terrell",
-        "position": "CB",
-        "number": 12,
-        "teamId": "atl",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4870988.png",
-        "status": "Active",
-        "college": "Clemson",
-        "experience": "Rookie",
-        "statsHighlight": "CB #12 • Clemson • Rookie"
       },
       {
         "id": "p-atl-3050916",
@@ -16018,6 +15897,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "CB #28 • Southeast Missouri State • 9 yrs exp"
       },
       {
+        "id": "p-atl-3895841",
+        "name": "Mike Hughes",
+        "position": "CB",
+        "number": 21,
+        "teamId": "atl",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3895841.png",
+        "status": "Active",
+        "college": "UCF",
+        "experience": "9 yrs exp",
+        "statsHighlight": "CB #21 • UCF • 9 yrs exp"
+      },
+      {
         "id": "p-atl-4575860",
         "name": "Robert Longerbeam",
         "position": "CB",
@@ -16028,6 +15919,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Rutgers",
         "experience": "2 yrs exp",
         "statsHighlight": "CB #37 • Rutgers • 2 yrs exp"
+      },
+      {
+        "id": "p-atl-4870988",
+        "name": "Avieon Terrell",
+        "position": "CB",
+        "number": 12,
+        "teamId": "atl",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4870988.png",
+        "status": "Active",
+        "college": "Clemson",
+        "experience": "Rookie",
+        "statsHighlight": "CB #12 • Clemson • Rookie"
       },
       {
         "id": "p-atl-4430411",
@@ -16365,17 +16268,30 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
+        "id": "tb-inj-3052587",
+        "playerName": "Baker Mayfield",
+        "position": "QB",
+        "teamId": "tb",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Baker Mayfield (QB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Baker Mayfield (QB) is listed as Questionable (Undisclosed)."
+      },
+      {
         "id": "tb-inj-4686334",
         "playerName": "Yaya Diaby",
         "position": "LB",
         "teamId": "tb",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
-        "details": "Yaya Diaby (LB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Yaya Diaby (LB) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Yaya Diaby (LB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Yaya Diaby (LB) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "tb-inj-4034790",
@@ -16384,11 +16300,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "tb",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 8",
-        "updatedAt": "Nov 8",
-        "details": "Antoine Winfield Jr. (S) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Antoine Winfield Jr. (S) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Antoine Winfield Jr. (S) is listed as Out (Undisclosed).",
+        "practiceStatus": "Antoine Winfield Jr. (S) is listed as Out (Undisclosed)."
       },
       {
         "id": "tb-inj-4248533",
@@ -16398,8 +16314,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Oct 28",
-        "updatedAt": "Oct 28",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
         "details": "Josh Hayes (CB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Josh Hayes (CB) is listed as Injured Reserve (Undisclosed)."
       },
@@ -16463,7 +16379,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 6,
         "teamId": "tb",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3052587.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Oklahoma",
         "experience": "9 yrs exp",
         "statsHighlight": "86/142, 922 YDS, 3 TD, 4 INT"
@@ -16547,22 +16463,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 31,
         "teamId": "tb",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4034790.png",
-        "status": "Questionable",
+        "status": "Out",
         "college": "Minnesota",
         "experience": "7 yrs exp",
         "statsHighlight": "Starter • S #31 • Minnesota • 7 yrs exp"
       },
       {
-        "id": "p-tb-5220680",
-        "name": "Ted Hurst III",
+        "id": "p-tb-4608810",
+        "name": "Tez Johnson",
         "position": "WR",
-        "number": 17,
+        "number": 15,
         "teamId": "tb",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5220680.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4608810.png",
         "status": "Active",
-        "college": "Georgia State",
-        "experience": "Rookie",
-        "statsHighlight": "Starter • WR #17 • Georgia State • Rookie"
+        "college": "Oregon",
+        "experience": "2 yrs exp",
+        "statsHighlight": "11 REC, 254 YDS, 1 TD"
       },
       {
         "id": "p-tb-4427673",
@@ -16619,7 +16535,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 0,
         "teamId": "tb",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4686334.png",
-        "status": "Out",
+        "status": "Questionable",
         "college": "Louisville",
         "experience": "4 yrs exp",
         "statsHighlight": "Starter • LB #0 • Louisville • 4 yrs exp"
@@ -16841,6 +16757,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "RB #18 • LSU • 2 yrs exp"
       },
       {
+        "id": "p-tb-5220680",
+        "name": "Ted Hurst III",
+        "position": "WR",
+        "number": 17,
+        "teamId": "tb",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5220680.png",
+        "status": "Active",
+        "college": "Georgia State",
+        "experience": "Rookie",
+        "statsHighlight": "WR #17 • Georgia State • Rookie"
+      },
+      {
         "id": "p-tb-5097554",
         "name": "Kameron Johnson",
         "position": "WR",
@@ -16851,18 +16779,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Barton",
         "experience": "3 yrs exp",
         "statsHighlight": "WR #19 • Barton • 3 yrs exp"
-      },
-      {
-        "id": "p-tb-4608810",
-        "name": "Tez Johnson",
-        "position": "WR",
-        "number": 15,
-        "teamId": "tb",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4608810.png",
-        "status": "Active",
-        "college": "Oregon",
-        "experience": "2 yrs exp",
-        "statsHighlight": "11 REC, 254 YDS, 1 TD"
       },
       {
         "id": "p-tb-4372505",
@@ -17428,56 +17344,30 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "chi-inj-4685278",
-        "playerName": "Luther Burden III",
+        "id": "chi-inj-4869748",
+        "playerName": "Zavion Thomas",
         "position": "WR",
         "teamId": "chi",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 8",
-        "updatedAt": "Nov 8",
-        "details": "Luther Burden III (WR) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Luther Burden III (WR) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Zavion Thomas (WR) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Zavion Thomas (WR) is listed as Questionable (Undisclosed)."
       },
       {
-        "id": "chi-inj-4608686",
-        "playerName": "Kyle Monangai",
-        "position": "RB",
-        "teamId": "chi",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 8",
-        "updatedAt": "Nov 8",
-        "details": "Kyle Monangai (RB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Kyle Monangai (RB) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "chi-inj-4870953",
-        "playerName": "Malik Muhammad II",
+        "id": "chi-inj-4361093",
+        "playerName": "Kyler Gordon",
         "position": "CB",
         "teamId": "chi",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 8",
-        "updatedAt": "Nov 8",
-        "details": "Malik Muhammad II (CB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Malik Muhammad II (CB) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "chi-inj-4426374",
-        "playerName": "Tyrique Stevenson Sr.",
-        "position": "CB",
-        "teamId": "chi",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 8",
-        "updatedAt": "Nov 8",
-        "details": "Tyrique Stevenson Sr. (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Tyrique Stevenson Sr. (CB) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Kyler Gordon (CB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Kyler Gordon (CB) is listed as Out (Undisclosed)."
       },
       {
         "id": "chi-inj-4036032",
@@ -17621,6 +17511,32 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Nov 5",
         "details": "Zavier Scott (RB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Zavier Scott (RB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "chi-inj-4241611",
+        "playerName": "Nephi Sewell",
+        "position": "LB",
+        "teamId": "chi",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Aug 25",
+        "updatedAt": "Aug 25",
+        "details": "Nephi Sewell (LB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Nephi Sewell (LB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "chi-inj-3116726",
+        "playerName": "Kentavius Street",
+        "position": "DT",
+        "teamId": "chi",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 4",
+        "updatedAt": "Nov 4",
+        "details": "Kentavius Street (DT) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Kentavius Street (DT) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -17667,7 +17583,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 10,
         "teamId": "chi",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685278.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Missouri",
         "experience": "2 yrs exp",
         "statsHighlight": "49 REC, 644 YDS, 4 TD"
@@ -17823,7 +17739,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 6,
         "teamId": "chi",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361093.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Washington",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • CB #6 • Washington • 5 yrs exp"
@@ -17847,7 +17763,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 29,
         "teamId": "chi",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4426374.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Miami",
         "experience": "4 yrs exp",
         "statsHighlight": "Starter • CB #29 • Miami • 4 yrs exp"
@@ -18003,7 +17919,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 25,
         "teamId": "chi",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4608686.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Rutgers",
         "experience": "2 yrs exp",
         "statsHighlight": "60 CAR, 324 YDS, 3 TD"
@@ -18063,7 +17979,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 13,
         "teamId": "chi",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4869748.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "LSU",
         "experience": "Rookie",
         "statsHighlight": "WR #13 • LSU • Rookie"
@@ -18339,7 +18255,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 24,
         "teamId": "chi",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4870953.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Texas",
         "experience": "Rookie",
         "statsHighlight": "CB #24 • Texas • Rookie"
@@ -18480,18 +18396,18 @@ export const NFL_TEAMS: NFLTeam[] = [
     "stadium": "AT&T Stadium",
     "record": {
       "wins": 4,
-      "losses": 5,
+      "losses": 6,
       "ties": 0
     },
     "rankInDivision": "Active in NFC East",
     "nextGame": {
-      "week": 10,
-      "opponent": "San Francisco 49ers",
-      "opponentAbbr": "SF",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+      "week": 11,
+      "opponent": "Tennessee Titans",
+      "opponentAbbr": "TEN",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
       "isHome": true,
-      "date": "Sun, Nov 15",
-      "time": "1:25 PM",
+      "date": "Sun, Nov 22",
+      "time": "10:00 AM",
       "network": "Fox",
       "broadcastNetwork": "Fox",
       "spread": "DAL Live Line",
@@ -18624,10 +18540,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "San Francisco 49ers",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
         "isHome": true,
-        "timeOrScore": "1:25 PM",
+        "timeOrScore": "40-46",
         "tvNetwork": "Fox",
         "broadcastNetwork": "Fox",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "L"
       },
       {
         "week": 11,
@@ -18716,6 +18633,19 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
+        "id": "dal-inj-4685263",
+        "playerName": "Tyler Booker",
+        "position": "G",
+        "teamId": "dal",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Nov 16",
+        "updatedAt": "Nov 16",
+        "details": "Tyler Booker (G) is listed as Out (Undisclosed).",
+        "practiceStatus": "Tyler Booker (G) is listed as Out (Undisclosed)."
+      },
+      {
         "id": "dal-inj-4242355",
         "playerName": "Jake Ferguson",
         "position": "TE",
@@ -18723,23 +18653,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
         "details": "Jake Ferguson (TE) is listed as Out (Undisclosed).",
         "practiceStatus": "Jake Ferguson (TE) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "dal-inj-4429676",
-        "playerName": "Tyler Goodson",
-        "position": "RB",
-        "teamId": "dal",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 10",
-        "updatedAt": "Nov 10",
-        "details": "Tyler Goodson (RB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Tyler Goodson (RB) is listed as Out (Undisclosed)."
       },
       {
         "id": "dal-inj-4426485",
@@ -18749,10 +18666,36 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Jonathan Mingo (WR) is listed as Out (Undisclosed).",
         "practiceStatus": "Jonathan Mingo (WR) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "dal-inj-4372096",
+        "playerName": "Luke Schoonmaker",
+        "position": "TE",
+        "teamId": "dal",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Luke Schoonmaker (TE) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Luke Schoonmaker (TE) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "dal-inj-4685266",
+        "playerName": "Jaishawn Barham",
+        "position": "LB",
+        "teamId": "dal",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Jaishawn Barham (LB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Jaishawn Barham (LB) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "dal-inj-4248911",
@@ -18761,37 +18704,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "dal",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "DaRon Bland (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "DaRon Bland (CB) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "dal-inj-4595352",
-        "playerName": "Alijah Clark",
-        "position": "S",
-        "teamId": "dal",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Alijah Clark (S) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Alijah Clark (S) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "dal-inj-4683848",
-        "playerName": "Donovan Ezeiruaku",
-        "position": "LB",
-        "teamId": "dal",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Donovan Ezeiruaku (LB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Donovan Ezeiruaku (LB) is listed as Out (Undisclosed)."
+        "lastUpdated": "Nov 16",
+        "updatedAt": "Nov 16",
+        "details": "DaRon Bland (CB) is listed as Out (Undisclosed).",
+        "practiceStatus": "DaRon Bland (CB) is listed as Out (Undisclosed)."
       },
       {
         "id": "dal-inj-3929850",
@@ -18801,49 +18718,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "P.J. Locke (S) is listed as Out (Undisclosed).",
         "practiceStatus": "P.J. Locke (S) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "dal-inj-4426506",
-        "playerName": "Joey Porter Jr.",
-        "position": "CB",
-        "teamId": "dal",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Joey Porter Jr. (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Joey Porter Jr. (CB) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "dal-inj-4360590",
-        "playerName": "Juanyeh Thomas",
-        "position": "S",
-        "teamId": "dal",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Doubtful",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Juanyeh Thomas (S) is listed as Doubtful (Undisclosed).",
-        "practiceStatus": "Juanyeh Thomas (S) is listed as Doubtful (Undisclosed)."
-      },
-      {
-        "id": "dal-inj-2980097",
-        "playerName": "Jonathan Bullard",
-        "position": "DT",
-        "teamId": "dal",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Nov 7",
-        "updatedAt": "Nov 7",
-        "details": "Jonathan Bullard (DT) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Jonathan Bullard (DT) is listed as Injured Reserve (Undisclosed)."
       },
       {
         "id": "dal-inj-4240603",
@@ -18885,6 +18763,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Kelvin Gilliam Jr. (DT) is listed as Injured Reserve (Undisclosed)."
       },
       {
+        "id": "dal-inj-4429676",
+        "playerName": "Tyler Goodson",
+        "position": "RB",
+        "teamId": "dal",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 14",
+        "updatedAt": "Nov 14",
+        "details": "Tyler Goodson (RB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Tyler Goodson (RB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
         "id": "dal-inj-4044138",
         "playerName": "Matt Hennessy",
         "position": "C",
@@ -18909,6 +18800,32 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Nov 7",
         "details": "Malachi Lawrence (LB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Malachi Lawrence (LB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "dal-inj-4702577",
+        "playerName": "Devin Moore",
+        "position": "CB",
+        "teamId": "dal",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 11",
+        "updatedAt": "Nov 11",
+        "details": "Devin Moore (CB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Devin Moore (CB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "dal-inj-4043089",
+        "playerName": "Jalen Thompson",
+        "position": "S",
+        "teamId": "dal",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Jalen Thompson (S) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Jalen Thompson (S) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -18934,7 +18851,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Mississippi State",
         "experience": "11 yrs exp",
-        "statsHighlight": "25 CAR, 102 YDS, 1 TD"
+        "statsHighlight": "29 CAR, 109 YDS, 1 TD"
       },
       {
         "id": "p-dal-4361579",
@@ -18946,7 +18863,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "North Carolina",
         "experience": "6 yrs exp",
-        "statsHighlight": "154 CAR, 629 YDS, 9 TD"
+        "statsHighlight": "170 CAR, 692 YDS, 9 TD"
       },
       {
         "id": "p-dal-4241389",
@@ -18958,7 +18875,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Oklahoma",
         "experience": "7 yrs exp",
-        "statsHighlight": "70 REC, 904 YDS, 7 TD"
+        "statsHighlight": "77 REC, 976 YDS, 8 TD"
       },
       {
         "id": "p-dal-4426354",
@@ -18970,7 +18887,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Georgia",
         "experience": "5 yrs exp",
-        "statsHighlight": "39 REC, 533 YDS, 2 TD"
+        "statsHighlight": "50 REC, 678 YDS, 5 TD"
       },
       {
         "id": "p-dal-4242355",
@@ -19015,7 +18932,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 26,
         "teamId": "dal",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4248911.png",
-        "status": "Questionable",
+        "status": "Out",
         "college": "Fresno State",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • CB #26 • Fresno State • 5 yrs exp"
@@ -19030,7 +18947,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Southeast Missouri State",
         "experience": "3 yrs exp",
-        "statsHighlight": "32 REC, 395 YDS, 2 TD"
+        "statsHighlight": "38 REC, 466 YDS, 3 TD"
       },
       {
         "id": "p-dal-3122752",
@@ -19063,22 +18980,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 6,
         "teamId": "dal",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4683848.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Boston College",
         "experience": "2 yrs exp",
         "statsHighlight": "Starter • LB #6 • Boston College • 2 yrs exp"
       },
       {
-        "id": "p-dal-4362088",
-        "name": "DeMarvion Overshown",
+        "id": "p-dal-4685400",
+        "name": "Shemar James",
         "position": "LB",
-        "number": 0,
+        "number": 50,
         "teamId": "dal",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4362088.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685400.png",
         "status": "Active",
-        "college": "Texas",
-        "experience": "4 yrs exp",
-        "statsHighlight": "Starter • LB #0 • Texas • 4 yrs exp"
+        "college": "Florida",
+        "experience": "2 yrs exp",
+        "statsHighlight": "Starter • LB #50 • Florida • 2 yrs exp"
       },
       {
         "id": "p-dal-4428914",
@@ -19099,7 +19016,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 25,
         "teamId": "dal",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4426506.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Penn State",
         "experience": "4 yrs exp",
         "statsHighlight": "Starter • CB #25 • Penn State • 4 yrs exp"
@@ -19171,7 +19088,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 52,
         "teamId": "dal",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685263.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Alabama",
         "experience": "2 yrs exp",
         "statsHighlight": "Starter • G #52 • Alabama • 2 yrs exp"
@@ -19267,7 +19184,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 32,
         "teamId": "dal",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429676.png",
-        "status": "Out",
+        "status": "IR",
         "college": "Iowa",
         "experience": "4 yrs exp",
         "statsHighlight": "40 CAR, 163 YDS"
@@ -19283,6 +19200,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Florida",
         "experience": "3 yrs exp",
         "statsHighlight": "RB #20 • Florida • 3 yrs exp"
+      },
+      {
+        "id": "p-dal-4429202",
+        "name": "Israel Abanikanda",
+        "position": "RB",
+        "number": 37,
+        "teamId": "dal",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429202.png",
+        "status": "Active",
+        "college": "Pittsburgh",
+        "experience": "3 yrs exp",
+        "statsHighlight": "RB #37 • Pittsburgh • 3 yrs exp"
       },
       {
         "id": "p-dal-4808759",
@@ -19351,22 +19280,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 86,
         "teamId": "dal",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4372096.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Michigan",
         "experience": "4 yrs exp",
         "statsHighlight": "TE #86 • Michigan • 4 yrs exp"
-      },
-      {
-        "id": "p-dal-4242442",
-        "name": "Princeton Fant",
-        "position": "TE",
-        "number": 85,
-        "teamId": "dal",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242442.png",
-        "status": "IR",
-        "college": "Tennessee",
-        "experience": "2 yrs exp",
-        "statsHighlight": "TE #85 • Tennessee • 2 yrs exp"
       },
       {
         "id": "p-dal-4361988",
@@ -19381,6 +19298,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "TE #84 • Virginia Tech • 4 yrs exp"
       },
       {
+        "id": "p-dal-4242442",
+        "name": "Princeton Fant",
+        "position": "TE",
+        "number": 85,
+        "teamId": "dal",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242442.png",
+        "status": "IR",
+        "college": "Tennessee",
+        "experience": "2 yrs exp",
+        "statsHighlight": "TE #85 • Tennessee • 2 yrs exp"
+      },
+      {
         "id": "p-dal-4039170",
         "name": "Elijah Garcia",
         "position": "DE",
@@ -19391,6 +19320,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Rice",
         "experience": "3 yrs exp",
         "statsHighlight": "DE #93 • Rice • 3 yrs exp"
+      },
+      {
+        "id": "p-dal-2980097",
+        "name": "Jonathan Bullard",
+        "position": "DT",
+        "number": 90,
+        "teamId": "dal",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2980097.png",
+        "status": "Active",
+        "college": "Florida",
+        "experience": "11 yrs exp",
+        "statsHighlight": "DT #90 • Florida • 11 yrs exp"
       },
       {
         "id": "p-dal-4870960",
@@ -19405,18 +19346,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DT #99 • Alabama • Rookie"
       },
       {
-        "id": "p-dal-2980097",
-        "name": "Jonathan Bullard",
-        "position": "DT",
-        "number": 90,
-        "teamId": "dal",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2980097.png",
-        "status": "IR",
-        "college": "Florida",
-        "experience": "11 yrs exp",
-        "statsHighlight": "DT #90 • Florida • 11 yrs exp"
-      },
-      {
         "id": "p-dal-4431547",
         "name": "Kelvin Gilliam Jr.",
         "position": "DT",
@@ -19429,28 +19358,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DT #94 • Virginia Tech • Rookie"
       },
       {
-        "id": "p-dal-4685266",
-        "name": "Jaishawn Barham",
+        "id": "p-dal-4240608",
+        "name": "James Houston",
         "position": "LB",
-        "number": 55,
+        "number": 41,
         "teamId": "dal",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685266.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4240608.png",
         "status": "Active",
-        "college": "Michigan",
-        "experience": "Rookie",
-        "statsHighlight": "LB #55 • Michigan • Rookie"
-      },
-      {
-        "id": "p-dal-4685400",
-        "name": "Shemar James",
-        "position": "LB",
-        "number": 50,
-        "teamId": "dal",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685400.png",
-        "status": "Active",
-        "college": "Florida",
-        "experience": "2 yrs exp",
-        "statsHighlight": "LB #50 • Florida • 2 yrs exp"
+        "college": "Jackson State",
+        "experience": "5 yrs exp",
+        "statsHighlight": "LB #41 • Jackson State • 5 yrs exp"
       },
       {
         "id": "p-dal-4427816",
@@ -19477,6 +19394,30 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #40 • Texas A&M • 16 yrs exp"
       },
       {
+        "id": "p-dal-4362088",
+        "name": "DeMarvion Overshown",
+        "position": "LB",
+        "number": 0,
+        "teamId": "dal",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4362088.png",
+        "status": "Active",
+        "college": "Texas",
+        "experience": "4 yrs exp",
+        "statsHighlight": "LB #0 • Texas • 4 yrs exp"
+      },
+      {
+        "id": "p-dal-4685266",
+        "name": "Jaishawn Barham",
+        "position": "LB",
+        "number": 55,
+        "teamId": "dal",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685266.png",
+        "status": "Questionable",
+        "college": "Michigan",
+        "experience": "Rookie",
+        "statsHighlight": "LB #55 • Michigan • Rookie"
+      },
+      {
         "id": "p-dal-4429249",
         "name": "Justin Barron",
         "position": "LB",
@@ -19487,30 +19428,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Syracuse",
         "experience": "1 yr exp",
         "statsHighlight": "LB #45 • Syracuse • 1 yr exp"
-      },
-      {
-        "id": "p-dal-4240608",
-        "name": "James Houston",
-        "position": "LB",
-        "number": 41,
-        "teamId": "dal",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4240608.png",
-        "status": "Active",
-        "college": "Jackson State",
-        "experience": "5 yrs exp",
-        "statsHighlight": "LB #41 • Jackson State • 5 yrs exp"
-      },
-      {
-        "id": "p-dal-4689333",
-        "name": "Tyrus Wheat",
-        "position": "LB",
-        "number": 59,
-        "teamId": "dal",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4689333.png",
-        "status": "Active",
-        "college": "Mississippi State",
-        "experience": "4 yrs exp",
-        "statsHighlight": "LB #59 • Mississippi State • 4 yrs exp"
       },
       {
         "id": "p-dal-4710067",
@@ -19615,7 +19532,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 11,
         "teamId": "dal",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4595352.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Syracuse",
         "experience": "2 yrs exp",
         "statsHighlight": "S #11 • Syracuse • 2 yrs exp"
@@ -19627,7 +19544,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 43,
         "teamId": "dal",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360590.png",
-        "status": "Doubtful",
+        "status": "Active",
         "college": "Georgia Tech",
         "experience": "4 yrs exp",
         "statsHighlight": "S #43 • Georgia Tech • 4 yrs exp"
@@ -19643,18 +19560,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Washington State",
         "experience": "8 yrs exp",
         "statsHighlight": "S #34 • Washington State • 8 yrs exp"
-      },
-      {
-        "id": "p-dal-4696203",
-        "name": "Ajani Cornelius",
-        "position": "OT",
-        "number": 65,
-        "teamId": "dal",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4696203.png",
-        "status": "Active",
-        "college": "Oregon",
-        "experience": "2 yrs exp",
-        "statsHighlight": "OT #65 • Oregon • 2 yrs exp"
       },
       {
         "id": "p-dal-4428990",
@@ -19693,6 +19598,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "G #66 • Oregon • 4 yrs exp"
       },
       {
+        "id": "p-dal-3920591",
+        "name": "Nick Leverett",
+        "position": "G",
+        "number": 51,
+        "teamId": "dal",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3920591.png",
+        "status": "Active",
+        "college": "Rice",
+        "experience": "5 yrs exp",
+        "statsHighlight": "G #51 • Rice • 5 yrs exp"
+      },
+      {
         "id": "p-dal-4044138",
         "name": "Matt Hennessy",
         "position": "C",
@@ -19719,24 +19636,24 @@ export const NFL_TEAMS: NFLTeam[] = [
     "logoUrl": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
     "stadium": "Paycor Stadium",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 2,
       "ties": 0
     },
     "rankInDivision": "Active in AFC North",
     "nextGame": {
-      "week": 10,
-      "opponent": "Pittsburgh Steelers",
-      "opponentAbbr": "PIT",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
-      "isHome": true,
-      "date": "Sun, Nov 15",
-      "time": "5:20 PM",
-      "network": "NBC",
-      "broadcastNetwork": "NBC",
+      "week": 11,
+      "opponent": "Washington Commanders",
+      "opponentAbbr": "WSH",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
+      "isHome": false,
+      "date": "Mon, Nov 23",
+      "time": "5:15 PM",
+      "network": "ESPN",
+      "broadcastNetwork": "ESPN",
       "spread": "CIN Live Line",
-      "stadium": "Paycor Stadium",
-      "venue": "Paycor Stadium",
+      "stadium": "Northwest Stadium",
+      "venue": "Northwest Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -19851,10 +19768,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Pittsburgh Steelers",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
         "isHome": true,
-        "timeOrScore": "5:20 PM",
+        "timeOrScore": "38-18",
         "tvNetwork": "NBC",
         "broadcastNetwork": "NBC",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "W"
       },
       {
         "week": 11,
@@ -19955,17 +19873,56 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "cin-inj-4401811",
-        "playerName": "Kyle Dugger",
-        "position": "S",
+        "id": "cin-inj-4646773",
+        "playerName": "Dylan Fairchild",
+        "position": "G",
         "teamId": "cin",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Kyle Dugger (S) is listed as Out (Undisclosed).",
-        "practiceStatus": "Kyle Dugger (S) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Dylan Fairchild (G) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Dylan Fairchild (G) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "cin-inj-3125082",
+        "playerName": "Dalton Risner",
+        "position": "G",
+        "teamId": "cin",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Dalton Risner (G) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Dalton Risner (G) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "cin-inj-3051746",
+        "playerName": "Oren Burks",
+        "position": "LB",
+        "teamId": "cin",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Oren Burks (LB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Oren Burks (LB) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "cin-inj-4426422",
+        "playerName": "Dax Hill",
+        "position": "CB",
+        "teamId": "cin",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Dax Hill (CB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Dax Hill (CB) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "cin-inj-4427834",
@@ -19988,8 +19945,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Oct 12",
-        "updatedAt": "Oct 12",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
         "details": "Swayze Bozeman (LB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Swayze Bozeman (LB) is listed as Injured Reserve (Undisclosed)."
       },
@@ -20040,8 +19997,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
         "details": "Andrei Iosivas (WR) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Andrei Iosivas (WR) is listed as Injured Reserve (Undisclosed)."
       },
@@ -20095,7 +20052,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "LSU",
         "experience": "7 yrs exp",
-        "statsHighlight": "23 CAR, 77 YDS, 3 TD"
+        "statsHighlight": "24 CAR, 85 YDS, 3 TD"
       },
       {
         "id": "p-cin-4362238",
@@ -20107,7 +20064,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Illinois",
         "experience": "4 yrs exp",
-        "statsHighlight": "103 CAR, 397 YDS, 1 TD"
+        "statsHighlight": "113 CAR, 441 YDS, 1 TD"
       },
       {
         "id": "p-cin-4362628",
@@ -20119,7 +20076,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "LSU",
         "experience": "6 yrs exp",
-        "statsHighlight": "53 REC, 647 YDS, 7 TD"
+        "statsHighlight": "64 REC, 878 YDS, 7 TD"
       },
       {
         "id": "p-cin-4239993",
@@ -20131,7 +20088,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Clemson",
         "experience": "7 yrs exp",
-        "statsHighlight": "48 REC, 758 YDS, 6 TD"
+        "statsHighlight": "53 REC, 824 YDS, 6 TD"
       },
       {
         "id": "p-cin-3116164",
@@ -20143,7 +20100,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Penn State",
         "experience": "9 yrs exp",
-        "statsHighlight": "19 REC, 252 YDS, 6 TD"
+        "statsHighlight": "20 REC, 261 YDS, 6 TD"
       },
       {
         "id": "p-cin-4035483",
@@ -20212,7 +20169,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 42,
         "teamId": "cin",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3051746.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Vanderbilt",
         "experience": "9 yrs exp",
         "statsHighlight": "Starter • LB #42 • Vanderbilt • 9 yrs exp"
@@ -20260,7 +20217,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 23,
         "teamId": "cin",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4426422.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Michigan",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • CB #23 • Michigan • 5 yrs exp"
@@ -20332,7 +20289,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 63,
         "teamId": "cin",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4646773.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Georgia",
         "experience": "2 yrs exp",
         "statsHighlight": "Starter • G #63 • Georgia • 2 yrs exp"
@@ -20344,7 +20301,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 66,
         "teamId": "cin",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3125082.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Kansas State",
         "experience": "8 yrs exp",
         "statsHighlight": "Starter • G #66 • Kansas State • 8 yrs exp"
@@ -20419,7 +20376,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Oklahoma",
         "experience": "10 yrs exp",
-        "statsHighlight": "46 CAR, 179 YDS, 1 TD"
+        "statsHighlight": "52 CAR, 193 YDS, 2 TD"
       },
       {
         "id": "p-cin-4429299",
@@ -20716,7 +20673,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 29,
         "teamId": "cin",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4401811.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Lenoir Rhyne",
         "experience": "7 yrs exp",
         "statsHighlight": "S #29 • Lenoir Rhyne • 7 yrs exp"
@@ -20833,23 +20790,23 @@ export const NFL_TEAMS: NFLTeam[] = [
     "stadium": "MetLife Stadium",
     "record": {
       "wins": 2,
-      "losses": 7,
+      "losses": 8,
       "ties": 0
     },
     "rankInDivision": "Active in AFC East",
     "nextGame": {
-      "week": 10,
-      "opponent": "Buffalo Bills",
-      "opponentAbbr": "BUF",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
-      "isHome": true,
-      "date": "Sun, Nov 15",
-      "time": "10:00 AM",
-      "network": "CBS",
-      "broadcastNetwork": "CBS",
+      "week": 11,
+      "opponent": "Los Angeles Chargers",
+      "opponentAbbr": "LAC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
+      "isHome": false,
+      "date": "Sun, Nov 22",
+      "time": "1:05 PM",
+      "network": "Fox",
+      "broadcastNetwork": "Fox",
       "spread": "NYJ Live Line",
-      "stadium": "MetLife Stadium",
-      "venue": "MetLife Stadium",
+      "stadium": "SoFi Stadium",
+      "venue": "SoFi Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -20977,10 +20934,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Buffalo Bills",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
         "isHome": true,
-        "timeOrScore": "10:00 AM",
+        "timeOrScore": "12-31",
         "tvNetwork": "CBS",
         "broadcastNetwork": "CBS",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "L"
       },
       {
         "week": 11,
@@ -21075,50 +21033,37 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "nyj",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Omar Cooper Jr. (WR) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Omar Cooper Jr. (WR) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Omar Cooper Jr. (WR) is listed as Out (Undisclosed).",
+        "practiceStatus": "Omar Cooper Jr. (WR) is listed as Out (Undisclosed)."
       },
       {
-        "id": "nyj-inj-4597500",
-        "playerName": "Adonai Mitchell",
+        "id": "nyj-inj-4243375",
+        "playerName": "Dylan Parham",
+        "position": "G",
+        "teamId": "nyj",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 16",
+        "updatedAt": "Nov 16",
+        "details": "Dylan Parham (G) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Dylan Parham (G) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "nyj-inj-4569371",
+        "playerName": "Isaiah Williams",
         "position": "WR",
         "teamId": "nyj",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Adonai Mitchell (WR) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Adonai Mitchell (WR) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "nyj-inj-4569618",
-        "playerName": "Garrett Wilson",
-        "position": "WR",
-        "teamId": "nyj",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Garrett Wilson (WR) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Garrett Wilson (WR) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "nyj-inj-4426817",
-        "playerName": "Jarvis Brownlee Jr.",
-        "position": "CB",
-        "teamId": "nyj",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Jarvis Brownlee Jr. (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Jarvis Brownlee Jr. (CB) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Isaiah Williams (WR) is listed as Out (Undisclosed).",
+        "practiceStatus": "Isaiah Williams (WR) is listed as Out (Undisclosed)."
       },
       {
         "id": "nyj-inj-4700136",
@@ -21141,8 +21086,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
         "details": "Joseph Ossai (DE) is listed as Questionable (Undisclosed).",
         "practiceStatus": "Joseph Ossai (DE) is listed as Questionable (Undisclosed)."
       },
@@ -21154,8 +21099,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
         "details": "Harrison Phillips (DT) is listed as Questionable (Undisclosed).",
         "practiceStatus": "Harrison Phillips (DT) is listed as Questionable (Undisclosed)."
       },
@@ -21166,24 +21111,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "nyj",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Trevin Wallace (LB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Trevin Wallace (LB) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "nyj-inj-4570470",
-        "playerName": "Nahshon Wright",
-        "position": "CB",
-        "teamId": "nyj",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "Nahshon Wright (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Nahshon Wright (CB) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Trevin Wallace (LB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Trevin Wallace (LB) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "nyj-inj-4692555",
@@ -21262,6 +21194,32 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Oct 7",
         "details": "Braiden McGregor (DE) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Braiden McGregor (DE) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "nyj-inj-4373656",
+        "playerName": "Max Mitchell",
+        "position": "OT",
+        "teamId": "nyj",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 3",
+        "updatedAt": "Nov 3",
+        "details": "Max Mitchell (OT) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Max Mitchell (OT) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "nyj-inj-4002046",
+        "playerName": "David Onyemata",
+        "position": "DT",
+        "teamId": "nyj",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "David Onyemata (DT) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "David Onyemata (DT) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -21299,7 +21257,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Wisconsin",
         "experience": "3 yrs exp",
-        "statsHighlight": "120 CAR, 598 YDS, 3 TD"
+        "statsHighlight": "128 CAR, 638 YDS, 3 TD"
       },
       {
         "id": "p-nyj-4427366",
@@ -21311,7 +21269,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Iowa State",
         "experience": "5 yrs exp",
-        "statsHighlight": "66 CAR, 224 YDS, 1 TD"
+        "statsHighlight": "77 CAR, 265 YDS, 1 TD"
       },
       {
         "id": "p-nyj-4597500",
@@ -21320,10 +21278,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 15,
         "teamId": "nyj",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4597500.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Texas",
         "experience": "3 yrs exp",
-        "statsHighlight": "16 REC, 265 YDS, 1 TD"
+        "statsHighlight": "19 REC, 324 YDS, 1 TD"
       },
       {
         "id": "p-nyj-4569618",
@@ -21332,10 +21290,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 5,
         "teamId": "nyj",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4569618.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Ohio State",
         "experience": "5 yrs exp",
-        "statsHighlight": "43 REC, 527 YDS, 3 TD"
+        "statsHighlight": "50 REC, 633 YDS, 3 TD"
       },
       {
         "id": "p-nyj-4808766",
@@ -21368,7 +21326,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 11,
         "teamId": "nyj",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4723820.png",
-        "status": "Questionable",
+        "status": "Out",
         "college": "Indiana",
         "experience": "Rookie",
         "statsHighlight": "20 REC, 306 YDS, 2 TD"
@@ -21452,22 +21410,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 49,
         "teamId": "nyj",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4683815.png",
-        "status": "Out",
+        "status": "Questionable",
         "college": "Kentucky",
         "experience": "3 yrs exp",
         "statsHighlight": "Starter • LB #49 • Kentucky • 3 yrs exp"
       },
       {
-        "id": "p-nyj-4426817",
-        "name": "Jarvis Brownlee Jr.",
+        "id": "p-nyj-5118340",
+        "name": "D'Angelo Ponds",
         "position": "CB",
-        "number": 2,
+        "number": 23,
         "teamId": "nyj",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4426817.png",
-        "status": "Questionable",
-        "college": "Louisville",
-        "experience": "3 yrs exp",
-        "statsHighlight": "Starter • CB #2 • Louisville • 3 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5118340.png",
+        "status": "Active",
+        "college": "Indiana",
+        "experience": "Rookie",
+        "statsHighlight": "Starter • CB #23 • Indiana • Rookie"
       },
       {
         "id": "p-nyj-4035824",
@@ -21536,7 +21494,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 64,
         "teamId": "nyj",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4243375.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Memphis",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • G #64 • Memphis • 5 yrs exp"
@@ -21611,7 +21569,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Clemson",
         "experience": "Rookie",
-        "statsHighlight": "QB #10 • Clemson • Rookie"
+        "statsHighlight": "11/20, 137 YDS, 1 INT"
       },
       {
         "id": "p-nyj-4361418",
@@ -21680,7 +21638,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 18,
         "teamId": "nyj",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4569371.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Illinois",
         "experience": "3 yrs exp",
         "statsHighlight": "WR #18 • Illinois • 3 yrs exp"
@@ -21950,16 +21908,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #41 • Indiana • 3 yrs exp"
       },
       {
-        "id": "p-nyj-5118340",
-        "name": "D'Angelo Ponds",
+        "id": "p-nyj-4426817",
+        "name": "Jarvis Brownlee Jr.",
         "position": "CB",
-        "number": 23,
+        "number": 2,
         "teamId": "nyj",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5118340.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4426817.png",
         "status": "Active",
-        "college": "Indiana",
-        "experience": "Rookie",
-        "statsHighlight": "CB #23 • Indiana • Rookie"
+        "college": "Louisville",
+        "experience": "3 yrs exp",
+        "statsHighlight": "CB #2 • Louisville • 3 yrs exp"
       },
       {
         "id": "p-nyj-5208977",
@@ -21980,7 +21938,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 26,
         "teamId": "nyj",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4570470.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Oregon State",
         "experience": "6 yrs exp",
         "statsHighlight": "CB #26 • Oregon State • 6 yrs exp"
@@ -22004,7 +21962,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 34,
         "teamId": "nyj",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4837388.png",
-        "status": "IR",
+        "status": "Active",
         "college": "Kansas State",
         "experience": "Rookie",
         "statsHighlight": "S #34 • Kansas State • Rookie"
@@ -22046,18 +22004,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "OT #75 • Rice • 1 yr exp"
       },
       {
-        "id": "p-nyj-4373951",
-        "name": "Kohl Levao",
-        "position": "G",
-        "number": 60,
-        "teamId": "nyj",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4373951.png",
-        "status": "Active",
-        "college": "Hawai'i",
-        "experience": "1 yr exp",
-        "statsHighlight": "G #60 • Hawai'i • 1 yr exp"
-      },
-      {
         "id": "p-nyj-4905597",
         "name": "Anez Cooper",
         "position": "G",
@@ -22073,13 +22019,13 @@ export const NFL_TEAMS: NFLTeam[] = [
         "id": "p-nyj-4429636",
         "name": "Blake Freeland",
         "position": "OL",
-        "number": 0,
+        "number": 76,
         "teamId": "nyj",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429636.png",
         "status": "Active",
         "college": "BYU",
         "experience": "4 yrs exp",
-        "statsHighlight": "OL #0 • BYU • 4 yrs exp"
+        "statsHighlight": "OL #76 • BYU • 4 yrs exp"
       },
       {
         "id": "p-nyj-4076803",
@@ -22121,23 +22067,23 @@ export const NFL_TEAMS: NFLTeam[] = [
     "stadium": "Hard Rock Stadium",
     "record": {
       "wins": 1,
-      "losses": 7,
+      "losses": 8,
       "ties": 0
     },
     "rankInDivision": "Active in AFC East",
     "nextGame": {
-      "week": 10,
-      "opponent": "Indianapolis Colts",
-      "opponentAbbr": "IND",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ind.png",
+      "week": 11,
+      "opponent": "Buffalo Bills",
+      "opponentAbbr": "BUF",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
       "isHome": false,
-      "date": "Sun, Nov 15",
+      "date": "Sun, Nov 22",
       "time": "10:00 AM",
       "network": "CBS",
       "broadcastNetwork": "CBS",
       "spread": "MIA Live Line",
-      "stadium": "Lucas Oil Stadium",
-      "venue": "Lucas Oil Stadium",
+      "stadium": "Highmark Stadium",
+      "venue": "Highmark Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -22252,10 +22198,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Indianapolis Colts",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ind.png",
         "isHome": false,
-        "timeOrScore": "10:00 AM",
+        "timeOrScore": "22-24",
         "tvNetwork": "CBS",
         "broadcastNetwork": "CBS",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "L"
       },
       {
         "week": 11,
@@ -22356,30 +22303,17 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "mia-inj-4869961",
-        "playerName": "Chris Bell",
-        "position": "WR",
-        "teamId": "mia",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Doubtful",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Chris Bell (WR) is listed as Doubtful (Undisclosed).",
-        "practiceStatus": "Chris Bell (WR) is listed as Doubtful (Undisclosed)."
-      },
-      {
         "id": "mia-inj-4040537",
         "playerName": "Aaron Brewer",
         "position": "C",
         "teamId": "mia",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Aaron Brewer (C) is listed as Out (Undisclosed).",
-        "practiceStatus": "Aaron Brewer (C) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Aaron Brewer (C) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Aaron Brewer (C) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "mia-inj-4430681",
@@ -22389,10 +22323,62 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Jared Wayne (WR) is listed as Out (Undisclosed).",
         "practiceStatus": "Jared Wayne (WR) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "mia-inj-4875079",
+        "playerName": "Marcellas Dial Jr.",
+        "position": "CB",
+        "teamId": "mia",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Marcellas Dial Jr. (CB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Marcellas Dial Jr. (CB) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "mia-inj-4567225",
+        "playerName": "Jaylin Simpson",
+        "position": "S",
+        "teamId": "mia",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Doubtful",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Jaylin Simpson (S) is listed as Doubtful (Undisclosed).",
+        "practiceStatus": "Jaylin Simpson (S) is listed as Doubtful (Undisclosed)."
+      },
+      {
+        "id": "mia-inj-4431664",
+        "playerName": "Dante Trader Jr.",
+        "position": "S",
+        "teamId": "mia",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Doubtful",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Dante Trader Jr. (S) is listed as Doubtful (Undisclosed).",
+        "practiceStatus": "Dante Trader Jr. (S) is listed as Doubtful (Undisclosed)."
+      },
+      {
+        "id": "mia-inj-2977680",
+        "playerName": "Bradley Pinion",
+        "position": "P",
+        "teamId": "mia",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Bradley Pinion (P) is listed as Out (Undisclosed).",
+        "practiceStatus": "Bradley Pinion (P) is listed as Out (Undisclosed)."
       },
       {
         "id": "mia-inj-4429160",
@@ -22415,10 +22401,23 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
         "details": "Darrell Baker Jr. (CB) is listed as Out (Undisclosed).",
         "practiceStatus": "Darrell Baker Jr. (CB) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "mia-inj-4683276",
+        "playerName": "Zeek Biggers",
+        "position": "DT",
+        "teamId": "mia",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
+        "details": "Zeek Biggers (DT) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Zeek Biggers (DT) is listed as Injured Reserve (Undisclosed)."
       },
       {
         "id": "mia-inj-3859006",
@@ -22460,6 +22459,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Trey Moore (LB) is listed as Injured Reserve (Undisclosed)."
       },
       {
+        "id": "mia-inj-4837188",
+        "playerName": "Jordan Phillips",
+        "position": "DT",
+        "teamId": "mia",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Jordan Phillips (DT) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Jordan Phillips (DT) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
         "id": "mia-inj-3057956",
         "playerName": "Zach Sieler",
         "position": "DT",
@@ -22484,19 +22496,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Aug 27",
         "details": "Cole Turner (TE) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Cole Turner (TE) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "mia-inj-4242512",
-        "playerName": "Malik Willis",
-        "position": "QB",
-        "teamId": "mia",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "Malik Willis (QB) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Malik Willis (QB) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -22522,7 +22521,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Syracuse",
         "experience": "1 yr exp",
-        "statsHighlight": "Starter • QB #14 • Syracuse • 1 yr exp"
+        "statsHighlight": "17/32, 209 YDS"
       },
       {
         "id": "p-mia-4242512",
@@ -22582,7 +22581,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Virginia",
         "experience": "3 yrs exp",
-        "statsHighlight": "33 REC, 350 YDS, 1 TD"
+        "statsHighlight": "36 REC, 400 YDS, 1 TD"
       },
       {
         "id": "p-mia-4367209",
@@ -22606,7 +22605,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Oklahoma State",
         "experience": "2 yrs exp",
-        "statsHighlight": "107 CAR, 463 YDS, 4 TD"
+        "statsHighlight": "127 CAR, 539 YDS, 4 TD"
       },
       {
         "id": "p-mia-4869961",
@@ -22615,7 +22614,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 18,
         "teamId": "mia",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4869961.png",
-        "status": "Doubtful",
+        "status": "Active",
         "college": "Louisville",
         "experience": "Rookie",
         "statsHighlight": "Starter • WR #18 • Louisville • Rookie"
@@ -22630,19 +22629,31 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Texas Tech",
         "experience": "Rookie",
-        "statsHighlight": "19 REC, 296 YDS, 2 TD"
+        "statsHighlight": "22 REC, 367 YDS, 2 TD"
       },
       {
-        "id": "p-mia-4683276",
-        "name": "Zeek Biggers",
+        "id": "p-mia-4712462",
+        "name": "Keith Cooper Jr.",
         "position": "DT",
-        "number": 93,
+        "number": 97,
         "teamId": "mia",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4683276.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4712462.png",
         "status": "Active",
-        "college": "Georgia Tech",
+        "college": "Houston",
+        "experience": "1 yr exp",
+        "statsHighlight": "Starter • DT #97 • Houston • 1 yr exp"
+      },
+      {
+        "id": "p-mia-4894654",
+        "name": "Kenneth Grant",
+        "position": "DT",
+        "number": 78,
+        "teamId": "mia",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4894654.png",
+        "status": "Active",
+        "college": "Michigan",
         "experience": "2 yrs exp",
-        "statsHighlight": "Starter • DT #93 • Georgia Tech • 2 yrs exp"
+        "statsHighlight": "Starter • DT #78 • Michigan • 2 yrs exp"
       },
       {
         "id": "p-mia-4043130",
@@ -22759,7 +22770,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 11,
         "teamId": "mia",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4431664.png",
-        "status": "Active",
+        "status": "Doubtful",
         "college": "Maryland",
         "experience": "2 yrs exp",
         "statsHighlight": "Starter • S #11 • Maryland • 2 yrs exp"
@@ -22819,22 +22830,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 55,
         "teamId": "mia",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4040537.png",
-        "status": "Out",
+        "status": "Questionable",
         "college": "Texas State",
         "experience": "7 yrs exp",
         "statsHighlight": "Starter • C #55 • Texas State • 7 yrs exp"
-      },
-      {
-        "id": "p-mia-3043234",
-        "name": "Zane Gonzalez",
-        "position": "PK",
-        "number": 45,
-        "teamId": "mia",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3043234.png",
-        "status": "Active",
-        "college": "Arizona State",
-        "experience": "9 yrs exp",
-        "statsHighlight": "Starter • PK #45 • Arizona State • 9 yrs exp"
       },
       {
         "id": "p-mia-2977680",
@@ -22843,7 +22842,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 48,
         "teamId": "mia",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2977680.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Clemson",
         "experience": "12 yrs exp",
         "statsHighlight": "1/1, 46 YDS"
@@ -22871,6 +22870,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "San Diego State",
         "experience": "Rookie",
         "statsHighlight": "Starter • FB #34 • San Diego State • Rookie"
+      },
+      {
+        "id": "p-mia-4429435",
+        "name": "Brady Cook",
+        "position": "QB",
+        "number": 15,
+        "teamId": "mia",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429435.png",
+        "status": "Active",
+        "college": "Missouri",
+        "experience": "2 yrs exp",
+        "statsHighlight": "QB #15 • Missouri • 2 yrs exp"
       },
       {
         "id": "p-mia-4685246",
@@ -22919,6 +22930,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Pittsburgh",
         "experience": "1 yr exp",
         "statsHighlight": "WR #86 • Pittsburgh • 1 yr exp"
+      },
+      {
+        "id": "p-mia-4241802",
+        "name": "Jalen Reagor",
+        "position": "WR",
+        "number": 17,
+        "teamId": "mia",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4241802.png",
+        "status": "Active",
+        "college": "TCU",
+        "experience": "7 yrs exp",
+        "statsHighlight": "WR #17 • TCU • 7 yrs exp"
       },
       {
         "id": "p-mia-4880236",
@@ -22993,52 +23016,40 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DE #59 • Western Michigan • Rookie"
       },
       {
-        "id": "p-mia-4372463",
-        "name": "Jamree Kromah",
+        "id": "p-mia-4683101",
+        "name": "Max Llewellyn",
+        "position": "DE",
+        "number": 57,
+        "teamId": "mia",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4683101.png",
+        "status": "Active",
+        "college": "Iowa",
+        "experience": "Rookie",
+        "statsHighlight": "DE #57 • Iowa • Rookie"
+      },
+      {
+        "id": "p-mia-4569016",
+        "name": "Eric Watts",
         "position": "DE",
         "number": 0,
         "teamId": "mia",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4372463.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4569016.png",
         "status": "Active",
-        "college": "James Madison",
-        "experience": "1 yr exp",
-        "statsHighlight": "DE #0 • James Madison • 1 yr exp"
-      },
-      {
-        "id": "p-mia-4712462",
-        "name": "Keith Cooper Jr.",
-        "position": "DT",
-        "number": 97,
-        "teamId": "mia",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4712462.png",
-        "status": "Active",
-        "college": "Houston",
-        "experience": "1 yr exp",
-        "statsHighlight": "DT #97 • Houston • 1 yr exp"
-      },
-      {
-        "id": "p-mia-4894654",
-        "name": "Kenneth Grant",
-        "position": "DT",
-        "number": 78,
-        "teamId": "mia",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4894654.png",
-        "status": "Active",
-        "college": "Michigan",
+        "college": "UConn",
         "experience": "2 yrs exp",
-        "statsHighlight": "DT #78 • Michigan • 2 yrs exp"
+        "statsHighlight": "DE #0 • UConn • 2 yrs exp"
       },
       {
-        "id": "p-mia-4698109",
-        "name": "Rene Konga",
+        "id": "p-mia-4569448",
+        "name": "Jordan Jefferson",
         "position": "DT",
-        "number": 95,
+        "number": 0,
         "teamId": "mia",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4698109.png",
-        "status": "IR",
-        "college": "Louisville",
-        "experience": "Rookie",
-        "statsHighlight": "DT #95 • Louisville • Rookie"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4569448.png",
+        "status": "Active",
+        "college": "LSU",
+        "experience": "Active Roster",
+        "statsHighlight": "DT #0 • LSU • Active Roster"
       },
       {
         "id": "p-mia-3057956",
@@ -23053,16 +23064,40 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DT #92 • Ferris State • 9 yrs exp"
       },
       {
+        "id": "p-mia-4683276",
+        "name": "Zeek Biggers",
+        "position": "DT",
+        "number": 93,
+        "teamId": "mia",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4683276.png",
+        "status": "IR",
+        "college": "Georgia Tech",
+        "experience": "2 yrs exp",
+        "statsHighlight": "DT #93 • Georgia Tech • 2 yrs exp"
+      },
+      {
         "id": "p-mia-4837188",
         "name": "Jordan Phillips",
         "position": "DT",
         "number": 94,
         "teamId": "mia",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4837188.png",
-        "status": "Active",
+        "status": "IR",
         "college": "Maryland",
         "experience": "2 yrs exp",
         "statsHighlight": "DT #94 • Maryland • 2 yrs exp"
+      },
+      {
+        "id": "p-mia-4698109",
+        "name": "Rene Konga",
+        "position": "DT",
+        "number": 95,
+        "teamId": "mia",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4698109.png",
+        "status": "IR",
+        "college": "Louisville",
+        "experience": "Rookie",
+        "statsHighlight": "DT #95 • Louisville • Rookie"
       },
       {
         "id": "p-mia-4360413",
@@ -23143,7 +23178,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 24,
         "teamId": "mia",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4875079.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "South Carolina",
         "experience": "3 yrs exp",
         "statsHighlight": "CB #24 • South Carolina • 3 yrs exp"
@@ -23179,7 +23214,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 32,
         "teamId": "mia",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4567225.png",
-        "status": "Active",
+        "status": "Doubtful",
         "college": "Auburn",
         "experience": "1 yr exp",
         "statsHighlight": "S #32 • Auburn • 1 yr exp"
@@ -23271,24 +23306,24 @@ export const NFL_TEAMS: NFLTeam[] = [
     "logoUrl": "https://a.espncdn.com/i/teamlogos/nfl/500/sea.png",
     "stadium": "Lumen Field",
     "record": {
-      "wins": 5,
+      "wins": 6,
       "losses": 4,
       "ties": 0
     },
     "rankInDivision": "Active in NFC West",
     "nextGame": {
-      "week": 10,
-      "opponent": "Las Vegas Raiders",
-      "opponentAbbr": "LV",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
+      "week": 12,
+      "opponent": "San Francisco 49ers",
+      "opponentAbbr": "SF",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
       "isHome": false,
-      "date": "Sun, Nov 15",
-      "time": "1:05 PM",
-      "network": "CBS",
-      "broadcastNetwork": "CBS",
+      "date": "Sun, Nov 29",
+      "time": "1:25 PM",
+      "network": "Fox",
+      "broadcastNetwork": "Fox",
       "spread": "SEA Live Line",
-      "stadium": "Allegiant Stadium",
-      "venue": "Allegiant Stadium",
+      "stadium": "Levi's Stadium",
+      "venue": "Levi's Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -23416,10 +23451,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Las Vegas Raiders",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
         "isHome": false,
-        "timeOrScore": "1:05 PM",
+        "timeOrScore": "21-13",
         "tvNetwork": "CBS",
         "broadcastNetwork": "CBS",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "W"
       },
       {
         "week": 12,
@@ -23515,8 +23551,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
         "details": "Charles Cross (OT) is listed as Out (Undisclosed).",
         "practiceStatus": "Charles Cross (OT) is listed as Out (Undisclosed)."
       },
@@ -23528,10 +23564,36 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
+        "lastUpdated": "Nov 16",
+        "updatedAt": "Nov 16",
         "details": "Sam Darnold (QB) is listed as Out (Undisclosed).",
         "practiceStatus": "Sam Darnold (QB) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "sea-inj-4429835",
+        "playerName": "George Holani",
+        "position": "RB",
+        "teamId": "sea",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 16",
+        "updatedAt": "Nov 16",
+        "details": "George Holani (RB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "George Holani (RB) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "sea-inj-4245171",
+        "playerName": "Abraham Lucas",
+        "position": "OT",
+        "teamId": "sea",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 15",
+        "updatedAt": "Nov 15",
+        "details": "Abraham Lucas (OT) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Abraham Lucas (OT) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "sea-inj-3129308",
@@ -23541,8 +23603,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
         "details": "Quenton Nelson (G) is listed as Out (Undisclosed).",
         "practiceStatus": "Quenton Nelson (G) is listed as Out (Undisclosed)."
       },
@@ -23560,6 +23622,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Terrion Arnold (CB) is listed as Out (Undisclosed)."
       },
       {
+        "id": "sea-inj-3115312",
+        "playerName": "Jarran Reed",
+        "position": "DT",
+        "teamId": "sea",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 15",
+        "updatedAt": "Nov 15",
+        "details": "Jarran Reed (DT) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Jarran Reed (DT) is listed as Questionable (Undisclosed)."
+      },
+      {
         "id": "sea-inj-2971622",
         "playerName": "Leonard Williams",
         "position": "DT",
@@ -23567,8 +23642,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
         "details": "Leonard Williams (DT) is listed as Out (Undisclosed).",
         "practiceStatus": "Leonard Williams (DT) is listed as Out (Undisclosed)."
       },
@@ -23686,7 +23761,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "UCLA",
         "experience": "4 yrs exp",
-        "statsHighlight": "Starter • RB #26 • UCLA • 4 yrs exp"
+        "statsHighlight": "42 CAR, 194 YDS"
       },
       {
         "id": "p-sea-2977187",
@@ -23698,7 +23773,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Eastern Washington",
         "experience": "10 yrs exp",
-        "statsHighlight": "22 REC, 238 YDS, 2 TD"
+        "statsHighlight": "23 REC, 272 YDS, 3 TD"
       },
       {
         "id": "p-sea-4032473",
@@ -23722,7 +23797,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Ohio State",
         "experience": "4 yrs exp",
-        "statsHighlight": "71 REC, 1036 YDS, 9 TD"
+        "statsHighlight": "79 REC, 1207 YDS, 10 TD"
       },
       {
         "id": "p-sea-2971622",
@@ -23770,7 +23845,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Michigan",
         "experience": "3 yrs exp",
-        "statsHighlight": "23 REC, 210 YDS, 1 TD"
+        "statsHighlight": "26 REC, 229 YDS, 1 TD"
       },
       {
         "id": "p-sea-4570040",
@@ -23791,7 +23866,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 90,
         "teamId": "sea",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3115312.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Alabama",
         "experience": "11 yrs exp",
         "statsHighlight": "Starter • DT #90 • Alabama • 11 yrs exp"
@@ -23911,7 +23986,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 72,
         "teamId": "sea",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4245171.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Washington State",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • OT #72 • Washington State • 5 yrs exp"
@@ -24010,7 +24085,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Missouri",
         "experience": "8 yrs exp",
-        "statsHighlight": "54/76, 597 YDS, 5 TD"
+        "statsHighlight": "68/93, 837 YDS, 7 TD"
       },
       {
         "id": "p-sea-4432734",
@@ -24034,7 +24109,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Notre Dame",
         "experience": "Rookie",
-        "statsHighlight": "47 CAR, 172 YDS"
+        "statsHighlight": "56 CAR, 208 YDS, 1 TD"
       },
       {
         "id": "p-sea-4429835",
@@ -24043,10 +24118,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 36,
         "teamId": "sea",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429835.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Boise State",
         "experience": "3 yrs exp",
-        "statsHighlight": "37 CAR, 117 YDS, 1 TD"
+        "statsHighlight": "RB #36 • Boise State • 3 yrs exp"
       },
       {
         "id": "p-sea-4887558",
@@ -24179,18 +24254,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "USC",
         "experience": "4 yrs exp",
         "statsHighlight": "DT #95 • USC • 4 yrs exp"
-      },
-      {
-        "id": "p-sea-4609203",
-        "name": "Deven Eastern",
-        "position": "DT",
-        "number": 97,
-        "teamId": "sea",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4609203.png",
-        "status": "Active",
-        "college": "Minnesota",
-        "experience": "Rookie",
-        "statsHighlight": "DT #97 • Minnesota • Rookie"
       },
       {
         "id": "p-sea-2980100",
@@ -24447,24 +24510,24 @@ export const NFL_TEAMS: NFLTeam[] = [
     "logoUrl": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
     "stadium": "SoFi Stadium",
     "record": {
-      "wins": 0,
+      "wins": 1,
       "losses": 8,
       "ties": 0
     },
     "rankInDivision": "Active in AFC West",
     "nextGame": {
-      "week": 10,
-      "opponent": "Baltimore Ravens",
-      "opponentAbbr": "BAL",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
-      "isHome": false,
-      "date": "Mon, Nov 16",
-      "time": "5:15 PM",
-      "network": "ESPN",
-      "broadcastNetwork": "ESPN",
+      "week": 11,
+      "opponent": "New York Jets",
+      "opponentAbbr": "NYJ",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
+      "isHome": true,
+      "date": "Sun, Nov 22",
+      "time": "1:05 PM",
+      "network": "Fox",
+      "broadcastNetwork": "Fox",
       "spread": "LAC Live Line",
-      "stadium": "M&T Bank Stadium",
-      "venue": "M&T Bank Stadium",
+      "stadium": "SoFi Stadium",
+      "venue": "SoFi Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -24579,10 +24642,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Baltimore Ravens",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
         "isHome": false,
-        "timeOrScore": "5:15 PM",
+        "timeOrScore": "23-20",
         "tvNetwork": "ESPN",
         "broadcastNetwork": "ESPN",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "W"
       },
       {
         "week": 11,
@@ -24599,13 +24663,13 @@ export const NFL_TEAMS: NFLTeam[] = [
       {
         "week": 12,
         "date": "Nov 29",
-        "time": "5:20 PM",
+        "time": "1:05 PM",
         "opponent": "New England Patriots",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
         "isHome": true,
-        "timeOrScore": "5:20 PM",
-        "tvNetwork": "NBC",
-        "broadcastNetwork": "NBC",
+        "timeOrScore": "1:05 PM",
+        "tvNetwork": "CBS",
+        "broadcastNetwork": "CBS",
         "status": "SCHEDULED"
       },
       {
@@ -24683,19 +24747,6 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "lac-inj-4040842",
-        "playerName": "Kayode Awosika",
-        "position": "G",
-        "teamId": "lac",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 10",
-        "updatedAt": "Nov 10",
-        "details": "Kayode Awosika (G) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Kayode Awosika (G) is listed as Questionable (Undisclosed)."
-      },
-      {
         "id": "lac-inj-4035788",
         "playerName": "Tyler Biadasz",
         "position": "C",
@@ -24709,6 +24760,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Tyler Biadasz (C) is listed as Injured Reserve (Undisclosed)."
       },
       {
+        "id": "lac-inj-4241263",
+        "playerName": "Charlie Kolar",
+        "position": "TE",
+        "teamId": "lac",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Charlie Kolar (TE) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Charlie Kolar (TE) is listed as Questionable (Undisclosed)."
+      },
+      {
         "id": "lac-inj-4612826",
         "playerName": "Ladd McConkey",
         "position": "WR",
@@ -24716,36 +24780,23 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Ladd McConkey (WR) is listed as Questionable (Undisclosed).",
         "practiceStatus": "Ladd McConkey (WR) is listed as Questionable (Undisclosed)."
       },
       {
-        "id": "lac-inj-4596334",
-        "playerName": "Keaton Mitchell",
-        "position": "RB",
+        "id": "lac-inj-4411189",
+        "playerName": "Trey Pipkins III",
+        "position": "OT",
         "teamId": "lac",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Keaton Mitchell (RB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Keaton Mitchell (RB) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "lac-inj-4433914",
-        "playerName": "Branson Taylor",
-        "position": "G",
-        "teamId": "lac",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Branson Taylor (G) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Branson Taylor (G) is listed as Questionable (Undisclosed)."
+        "status": "IR",
+        "lastUpdated": "Nov 16",
+        "updatedAt": "Nov 16",
+        "details": "Trey Pipkins III (OT) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Trey Pipkins III (OT) is listed as Injured Reserve (Undisclosed)."
       },
       {
         "id": "lac-inj-4685553",
@@ -24754,37 +24805,24 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "lac",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Brenen Thompson (WR) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Brenen Thompson (WR) is listed as Questionable (Undisclosed)."
+        "status": "Doubtful",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Brenen Thompson (WR) is listed as Doubtful (Undisclosed).",
+        "practiceStatus": "Brenen Thompson (WR) is listed as Doubtful (Undisclosed)."
       },
       {
-        "id": "lac-inj-4567138",
-        "playerName": "Justin Eboigbe",
-        "position": "DT",
+        "id": "lac-inj-4241597",
+        "playerName": "Daiyan Henley",
+        "position": "LB",
         "teamId": "lac",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 8",
-        "updatedAt": "Nov 8",
-        "details": "Justin Eboigbe (DT) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Justin Eboigbe (DT) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "lac-inj-4690171",
-        "playerName": "Deane Leonard",
-        "position": "CB",
-        "teamId": "lac",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Deane Leonard (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Deane Leonard (CB) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Daiyan Henley (LB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Daiyan Henley (LB) is listed as Out (Undisclosed)."
       },
       {
         "id": "lac-inj-4838693",
@@ -24793,11 +24831,24 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "lac",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Rodney Shelley (CB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Rodney Shelley (CB) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "lac-inj-4432571",
+        "playerName": "Tarheeb Still",
+        "position": "CB",
+        "teamId": "lac",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Rodney Shelley (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Rodney Shelley (CB) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Tarheeb Still (CB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Tarheeb Still (CB) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "lac-inj-4574105",
@@ -24807,8 +24858,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 8",
-        "updatedAt": "Nov 8",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
         "details": "Isas Waxter (CB) is listed as Questionable (Undisclosed).",
         "practiceStatus": "Isas Waxter (CB) is listed as Questionable (Undisclosed)."
       },
@@ -24819,11 +24870,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "lac",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 10",
-        "updatedAt": "Nov 10",
-        "details": "Kendall Williamson (S) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Kendall Williamson (S) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Kendall Williamson (S) is listed as Out (Undisclosed).",
+        "practiceStatus": "Kendall Williamson (S) is listed as Out (Undisclosed)."
       },
       {
         "id": "lac-inj-3917668",
@@ -24865,17 +24916,30 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Trey Lance (QB) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "lac-inj-3123076",
-        "playerName": "David Njoku",
-        "position": "TE",
+        "id": "lac-inj-4248627",
+        "playerName": "Trevor Penning",
+        "position": "G",
         "teamId": "lac",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "David Njoku (TE) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "David Njoku (TE) is listed as Injured Reserve (Undisclosed)."
+        "lastUpdated": "Oct 10",
+        "updatedAt": "Oct 10",
+        "details": "Trevor Penning (G) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Trevor Penning (G) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "lac-inj-4242283",
+        "playerName": "Rashawn Slater",
+        "position": "OT",
+        "teamId": "lac",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Oct 9",
+        "updatedAt": "Oct 9",
+        "details": "Rashawn Slater (OT) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Rashawn Slater (OT) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -24901,7 +24965,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Oregon",
         "experience": "7 yrs exp",
-        "statsHighlight": "34 CAR, 190 YDS"
+        "statsHighlight": "41 CAR, 241 YDS, 1 TD"
       },
       {
         "id": "p-lac-4685382",
@@ -24913,7 +24977,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "North Carolina",
         "experience": "2 yrs exp",
-        "statsHighlight": "102 CAR, 369 YDS, 3 TD"
+        "statsHighlight": "124 CAR, 474 YDS, 4 TD"
       },
       {
         "id": "p-lac-4429025",
@@ -24925,7 +24989,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "TCU",
         "experience": "4 yrs exp",
-        "statsHighlight": "13 REC, 260 YDS, 1 TD"
+        "statsHighlight": "14 REC, 266 YDS, 1 TD"
       },
       {
         "id": "p-lac-4612826",
@@ -24946,7 +25010,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 83,
         "teamId": "lac",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3123076.png",
-        "status": "IR",
+        "status": "Active",
         "college": "Miami",
         "experience": "12 yrs exp",
         "statsHighlight": "Starter • TE #83 • Miami • 12 yrs exp"
@@ -24985,7 +25049,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Ole Miss",
         "experience": "2 yrs exp",
-        "statsHighlight": "21 REC, 262 YDS"
+        "statsHighlight": "26 REC, 348 YDS"
       },
       {
         "id": "p-lac-4241263",
@@ -24994,7 +25058,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 88,
         "teamId": "lac",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4241263.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Iowa State",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • TE #88 • Iowa State • 5 yrs exp"
@@ -25018,7 +25082,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 92,
         "teamId": "lac",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4567138.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Alabama",
         "experience": "3 yrs exp",
         "statsHighlight": "Starter • DT #92 • Alabama • 3 yrs exp"
@@ -25042,7 +25106,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 0,
         "teamId": "lac",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4241597.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Washington State",
         "experience": "4 yrs exp",
         "statsHighlight": "Starter • LB #0 • Washington State • 4 yrs exp"
@@ -25114,7 +25178,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 4,
         "teamId": "lac",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4432571.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Maryland",
         "experience": "3 yrs exp",
         "statsHighlight": "Starter • CB #4 • Maryland • 3 yrs exp"
@@ -25156,18 +25220,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • OT #77 • Memphis • Rookie"
       },
       {
-        "id": "p-lac-4040842",
-        "name": "Kayode Awosika",
-        "position": "G",
-        "number": 74,
-        "teamId": "lac",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4040842.png",
-        "status": "Questionable",
-        "college": "Buffalo",
-        "experience": "5 yrs exp",
-        "statsHighlight": "Starter • G #74 • Buffalo • 5 yrs exp"
-      },
-      {
         "id": "p-lac-4051001",
         "name": "Cole Strange",
         "position": "G",
@@ -25178,6 +25230,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Chattanooga",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • G #69 • Chattanooga • 5 yrs exp"
+      },
+      {
+        "id": "p-lac-4682789",
+        "name": "Logan Taylor",
+        "position": "G",
+        "number": 65,
+        "teamId": "lac",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4682789.png",
+        "status": "Active",
+        "college": "Boston College",
+        "experience": "Rookie",
+        "statsHighlight": "Starter • G #65 • Boston College • Rookie"
       },
       {
         "id": "p-lac-4682506",
@@ -25264,6 +25328,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "QB #5 • North Dakota State • 6 yrs exp"
       },
       {
+        "id": "p-lac-4596334",
+        "name": "Keaton Mitchell",
+        "position": "RB",
+        "number": 34,
+        "teamId": "lac",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4596334.png",
+        "status": "Active",
+        "college": "East Carolina",
+        "experience": "4 yrs exp",
+        "statsHighlight": "49 CAR, 182 YDS"
+      },
+      {
         "id": "p-lac-4430968",
         "name": "Kimani Vidal",
         "position": "RB",
@@ -25274,18 +25350,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Troy",
         "experience": "3 yrs exp",
         "statsHighlight": "RB #28 • Troy • 3 yrs exp"
-      },
-      {
-        "id": "p-lac-4596334",
-        "name": "Keaton Mitchell",
-        "position": "RB",
-        "number": 34,
-        "teamId": "lac",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4596334.png",
-        "status": "Questionable",
-        "college": "East Carolina",
-        "experience": "4 yrs exp",
-        "statsHighlight": "46 CAR, 178 YDS"
       },
       {
         "id": "p-lac-4362477",
@@ -25318,7 +25382,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 89,
         "teamId": "lac",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685553.png",
-        "status": "Questionable",
+        "status": "Doubtful",
         "college": "Mississippi State",
         "experience": "Rookie",
         "statsHighlight": "WR #89 • Mississippi State • Rookie"
@@ -25348,6 +25412,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "TE #86 • Syracuse • 2 yrs exp"
       },
       {
+        "id": "p-lac-3914151",
+        "name": "Josiah Deguara",
+        "position": "TE",
+        "number": 0,
+        "teamId": "lac",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3914151.png",
+        "status": "Active",
+        "college": "Cincinnati",
+        "experience": "6 yrs exp",
+        "statsHighlight": "TE #0 • Cincinnati • 6 yrs exp"
+      },
+      {
         "id": "p-lac-4429811",
         "name": "Patrick Herbert",
         "position": "TE",
@@ -25358,6 +25434,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Oregon",
         "experience": "1 yr exp",
         "statsHighlight": "TE #81 • Oregon • 1 yr exp"
+      },
+      {
+        "id": "p-lac-4039164",
+        "name": "Myles Adams",
+        "position": "DE",
+        "number": 0,
+        "teamId": "lac",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4039164.png",
+        "status": "Active",
+        "college": "Rice",
+        "experience": "4 yrs exp",
+        "statsHighlight": "DE #0 • Rice • 4 yrs exp"
       },
       {
         "id": "p-lac-4682818",
@@ -25384,6 +25472,42 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DT #94 • Alabama • 10 yrs exp"
       },
       {
+        "id": "p-lac-4429190",
+        "name": "Akheem Mesidor",
+        "position": "LB",
+        "number": 90,
+        "teamId": "lac",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429190.png",
+        "status": "Active",
+        "college": "Miami",
+        "experience": "Rookie",
+        "statsHighlight": "LB #90 • Miami • Rookie"
+      },
+      {
+        "id": "p-lac-2579621",
+        "name": "Denzel Perryman",
+        "position": "LB",
+        "number": 6,
+        "teamId": "lac",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2579621.png",
+        "status": "Active",
+        "college": "Miami",
+        "experience": "12 yrs exp",
+        "statsHighlight": "LB #6 • Miami • 12 yrs exp"
+      },
+      {
+        "id": "p-lac-4431467",
+        "name": "Marlowe Wax",
+        "position": "LB",
+        "number": 58,
+        "teamId": "lac",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4431467.png",
+        "status": "Active",
+        "college": "Syracuse",
+        "experience": "2 yrs exp",
+        "statsHighlight": "LB #58 • Syracuse • 2 yrs exp"
+      },
+      {
         "id": "p-lac-2576702",
         "name": "Bud Dupree",
         "position": "LB",
@@ -25408,42 +25532,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #43 • Oregon • 7 yrs exp"
       },
       {
-        "id": "p-lac-4429190",
-        "name": "Akheem Mesidor",
-        "position": "LB",
-        "number": 90,
-        "teamId": "lac",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429190.png",
-        "status": "Active",
-        "college": "Miami",
-        "experience": "Rookie",
-        "statsHighlight": "LB #90 • Miami • Rookie"
-      },
-      {
-        "id": "p-lac-4431467",
-        "name": "Marlowe Wax",
-        "position": "LB",
-        "number": 58,
-        "teamId": "lac",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4431467.png",
-        "status": "Active",
-        "college": "Syracuse",
-        "experience": "2 yrs exp",
-        "statsHighlight": "LB #58 • Syracuse • 2 yrs exp"
-      },
-      {
-        "id": "p-lac-2579621",
-        "name": "Denzel Perryman",
-        "position": "LB",
-        "number": 6,
-        "teamId": "lac",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2579621.png",
-        "status": "IR",
-        "college": "Miami",
-        "experience": "12 yrs exp",
-        "statsHighlight": "LB #6 • Miami • 12 yrs exp"
-      },
-      {
         "id": "p-lac-4911489",
         "name": "Caleb Murphy",
         "position": "LB",
@@ -25462,7 +25550,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 33,
         "teamId": "lac",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4690171.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Ole Miss",
         "experience": "5 yrs exp",
         "statsHighlight": "CB #33 • Ole Miss • 5 yrs exp"
@@ -25474,7 +25562,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 24,
         "teamId": "lac",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4838693.png",
-        "status": "Questionable",
+        "status": "Out",
         "college": "Georgia Tech",
         "experience": "Rookie",
         "statsHighlight": "CB #24 • Georgia Tech • Rookie"
@@ -25510,7 +25598,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 32,
         "teamId": "lac",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360745.png",
-        "status": "Questionable",
+        "status": "Out",
         "college": "Stanford",
         "experience": "2 yrs exp",
         "statsHighlight": "S #32 • Stanford • 2 yrs exp"
@@ -25528,18 +25616,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "S #27 • Clemson • 2 yrs exp"
       },
       {
-        "id": "p-lac-4411189",
-        "name": "Trey Pipkins III",
-        "position": "OT",
-        "number": 79,
-        "teamId": "lac",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4411189.png",
-        "status": "IR",
-        "college": "Sioux Falls",
-        "experience": "8 yrs exp",
-        "statsHighlight": "OT #79 • Sioux Falls • 8 yrs exp"
-      },
-      {
         "id": "p-lac-4242283",
         "name": "Rashawn Slater",
         "position": "OT",
@@ -25550,6 +25626,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Northwestern",
         "experience": "6 yrs exp",
         "statsHighlight": "OT #70 • Northwestern • 6 yrs exp"
+      },
+      {
+        "id": "p-lac-4411189",
+        "name": "Trey Pipkins III",
+        "position": "OT",
+        "number": 79,
+        "teamId": "lac",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4411189.png",
+        "status": "IR",
+        "college": "Sioux Falls",
+        "experience": "8 yrs exp",
+        "statsHighlight": "OT #79 • Sioux Falls • 8 yrs exp"
       },
       {
         "id": "p-lac-5084965",
@@ -25564,6 +25652,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "OT #67 • Oregon • Rookie"
       },
       {
+        "id": "p-lac-4040842",
+        "name": "Kayode Awosika",
+        "position": "G",
+        "number": 74,
+        "teamId": "lac",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4040842.png",
+        "status": "Active",
+        "college": "Buffalo",
+        "experience": "5 yrs exp",
+        "statsHighlight": "G #74 • Buffalo • 5 yrs exp"
+      },
+      {
         "id": "p-lac-5082660",
         "name": "Alex Harkey",
         "position": "G",
@@ -25574,18 +25674,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Oregon",
         "experience": "Rookie",
         "statsHighlight": "G #73 • Oregon • Rookie"
-      },
-      {
-        "id": "p-lac-4682789",
-        "name": "Logan Taylor",
-        "position": "G",
-        "number": 65,
-        "teamId": "lac",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4682789.png",
-        "status": "Active",
-        "college": "Boston College",
-        "experience": "Rookie",
-        "statsHighlight": "G #65 • Boston College • Rookie"
       },
       {
         "id": "p-lac-4248627",
@@ -25606,7 +25694,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 71,
         "teamId": "lac",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4433914.png",
-        "status": "Questionable",
+        "status": "IR",
         "college": "Pittsburgh",
         "experience": "1 yr exp",
         "statsHighlight": "G #71 • Pittsburgh • 1 yr exp"
@@ -25636,18 +25724,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "C #63 • Wisconsin • 7 yrs exp"
       },
       {
-        "id": "p-lac-2976117",
-        "name": "Daniel Brunskill",
-        "position": "C",
-        "number": 61,
-        "teamId": "lac",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2976117.png",
-        "status": "Active",
-        "college": "San Diego State",
-        "experience": "9 yrs exp",
-        "statsHighlight": "C #61 • San Diego State • 9 yrs exp"
-      },
-      {
         "id": "p-lac-3917668",
         "name": "Alec Ingold",
         "position": "FB",
@@ -25674,24 +25750,24 @@ export const NFL_TEAMS: NFLTeam[] = [
     "logoUrl": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
     "stadium": "SoFi Stadium",
     "record": {
-      "wins": 5,
+      "wins": 6,
       "losses": 4,
       "ties": 0
     },
     "rankInDivision": "Active in NFC West",
     "nextGame": {
-      "week": 10,
-      "opponent": "Arizona Cardinals",
-      "opponentAbbr": "ARI",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ari.png",
-      "isHome": false,
-      "date": "Sun, Nov 15",
-      "time": "1:05 PM",
-      "network": "CBS",
-      "broadcastNetwork": "CBS",
+      "week": 12,
+      "opponent": "Green Bay Packers",
+      "opponentAbbr": "GB",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
+      "isHome": true,
+      "date": "Wed, Nov 25",
+      "time": "5:00 PM",
+      "network": "Netflix",
+      "broadcastNetwork": "Netflix",
       "spread": "LAR Live Line",
-      "stadium": "State Farm Stadium",
-      "venue": "State Farm Stadium",
+      "stadium": "SoFi Stadium",
+      "venue": "SoFi Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -25819,10 +25895,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Arizona Cardinals",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ari.png",
         "isHome": false,
-        "timeOrScore": "1:05 PM",
+        "timeOrScore": "34-6",
         "tvNetwork": "CBS",
         "broadcastNetwork": "CBS",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "W"
       },
       {
         "week": 12,
@@ -25911,19 +25988,6 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "lar-inj-4426553",
-        "playerName": "Davis Allen",
-        "position": "TE",
-        "teamId": "lar",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Davis Allen (TE) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Davis Allen (TE) is listed as Questionable (Undisclosed)."
-      },
-      {
         "id": "lar-inj-4362474",
         "playerName": "Steve Avila",
         "position": "G",
@@ -25931,62 +25995,23 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
         "details": "Steve Avila (G) is listed as Out (Undisclosed).",
         "practiceStatus": "Steve Avila (G) is listed as Out (Undisclosed)."
       },
       {
-        "id": "lar-inj-4426515",
-        "playerName": "Puka Nacua",
-        "position": "WR",
+        "id": "lar-inj-3052180",
+        "playerName": "Coleman Shelton",
+        "position": "C",
         "teamId": "lar",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Puka Nacua (WR) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Puka Nacua (WR) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "lar-inj-4242154",
-        "playerName": "Kam Curl",
-        "position": "S",
-        "teamId": "lar",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Kam Curl (S) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Kam Curl (S) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "lar-inj-3122132",
-        "playerName": "Myles Garrett",
-        "position": "DE",
-        "teamId": "lar",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Myles Garrett (DE) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Myles Garrett (DE) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "lar-inj-4426405",
-        "playerName": "Trent McDuffie",
-        "position": "CB",
-        "teamId": "lar",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Trent McDuffie (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Trent McDuffie (CB) is listed as Questionable (Undisclosed)."
+        "status": "Doubtful",
+        "lastUpdated": "Nov 16",
+        "updatedAt": "Nov 16",
+        "details": "Coleman Shelton (C) is listed as Doubtful (Undisclosed).",
+        "practiceStatus": "Coleman Shelton (C) is listed as Doubtful (Undisclosed)."
       },
       {
         "id": "lar-inj-2575907",
@@ -25995,11 +26020,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "lar",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 10",
-        "updatedAt": "Nov 10",
-        "details": "Joe Cardona (LS) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Joe Cardona (LS) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
+        "details": "Joe Cardona (LS) is listed as Out (Undisclosed).",
+        "practiceStatus": "Joe Cardona (LS) is listed as Out (Undisclosed)."
       },
       {
         "id": "lar-inj-16800",
@@ -26009,8 +26034,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Davante Adams (WR) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Davante Adams (WR) is listed as Injured Reserve (Undisclosed)."
       },
@@ -26061,8 +26086,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 10",
-        "updatedAt": "Nov 10",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Terrance Ferguson (TE) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Terrance Ferguson (TE) is listed as Injured Reserve (Undisclosed)."
       },
@@ -26093,6 +26118,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Blake Grupe (PK) is listed as Injured Reserve (Undisclosed)."
       },
       {
+        "id": "lar-inj-4430155",
+        "playerName": "Dylan McMahon",
+        "position": "C",
+        "teamId": "lar",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 16",
+        "updatedAt": "Nov 16",
+        "details": "Dylan McMahon (C) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Dylan McMahon (C) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
         "id": "lar-inj-4045161",
         "playerName": "Zech McPhearson",
         "position": "CB",
@@ -26104,6 +26142,45 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Sep 5",
         "details": "Zech McPhearson (CB) is listed as Questionable (Undisclosed).",
         "practiceStatus": "Zech McPhearson (CB) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "lar-inj-4426515",
+        "playerName": "Puka Nacua",
+        "position": "WR",
+        "teamId": "lar",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Puka Nacua (WR) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Puka Nacua (WR) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "lar-inj-4695022",
+        "playerName": "Daniel Rickert",
+        "position": "DE",
+        "teamId": "lar",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Aug 25",
+        "updatedAt": "Aug 25",
+        "details": "Daniel Rickert (DE) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Daniel Rickert (DE) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "lar-inj-4038843",
+        "playerName": "Keir Thomas II",
+        "position": "LB",
+        "teamId": "lar",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Oct 22",
+        "updatedAt": "Oct 22",
+        "details": "Keir Thomas II (LB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Keir Thomas II (LB) is listed as Questionable (Undisclosed)."
       }
     ],
     "highlights": [
@@ -26129,7 +26206,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Georgia",
         "experience": "18 yrs exp",
-        "statsHighlight": "230/346, 2374 YDS, 16 TD, 9 INT"
+        "statsHighlight": "248/372, 2623 YDS, 19 TD, 10 INT"
       },
       {
         "id": "p-lar-4430737",
@@ -26141,7 +26218,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Notre Dame",
         "experience": "5 yrs exp",
-        "statsHighlight": "127 CAR, 593 YDS, 6 TD"
+        "statsHighlight": "139 CAR, 616 YDS, 6 TD"
       },
       {
         "id": "p-lar-4360797",
@@ -26156,18 +26233,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • WR #8 • Louisville • 6 yrs exp"
       },
       {
-        "id": "p-lar-4426515",
-        "name": "Puka Nacua",
-        "position": "WR",
-        "number": 12,
-        "teamId": "lar",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4426515.png",
-        "status": "IR",
-        "college": "BYU",
-        "experience": "4 yrs exp",
-        "statsHighlight": "70 REC, 715 YDS, 4 TD"
-      },
-      {
         "id": "p-lar-16800",
         "name": "Davante Adams",
         "position": "WR",
@@ -26180,6 +26245,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "30 REC, 480 YDS, 4 TD"
       },
       {
+        "id": "p-lar-4426515",
+        "name": "Puka Nacua",
+        "position": "WR",
+        "number": 12,
+        "teamId": "lar",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4426515.png",
+        "status": "IR",
+        "college": "BYU",
+        "experience": "4 yrs exp",
+        "statsHighlight": "70 REC, 715 YDS, 4 TD"
+      },
+      {
         "id": "p-lar-2573401",
         "name": "Tyler Higbee",
         "position": "TE",
@@ -26189,7 +26266,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Western Kentucky",
         "experience": "11 yrs exp",
-        "statsHighlight": "28 REC, 287 YDS, 1 TD"
+        "statsHighlight": "31 REC, 304 YDS, 2 TD"
       },
       {
         "id": "p-lar-4362245",
@@ -26210,7 +26287,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 95,
         "teamId": "lar",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3122132.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Texas A&M",
         "experience": "10 yrs exp",
         "statsHighlight": "Starter • DE #95 • Texas A&M • 10 yrs exp"
@@ -26222,7 +26299,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 22,
         "teamId": "lar",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4426405.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Washington",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • CB #22 • Washington • 5 yrs exp"
@@ -26330,7 +26407,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 3,
         "teamId": "lar",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242154.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Arkansas",
         "experience": "7 yrs exp",
         "statsHighlight": "Starter • S #3 • Arkansas • 7 yrs exp"
@@ -26396,6 +26473,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • G #69 • Louisiana • 7 yrs exp"
       },
       {
+        "id": "p-lar-3912189",
+        "name": "Bill Murray",
+        "position": "G",
+        "number": 66,
+        "teamId": "lar",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3912189.png",
+        "status": "Active",
+        "college": "William & Mary",
+        "experience": "2 yrs exp",
+        "statsHighlight": "Starter • G #66 • William & Mary • 2 yrs exp"
+      },
+      {
         "id": "p-lar-4567175",
         "name": "Beaux Limmer",
         "position": "C",
@@ -26406,18 +26495,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Arkansas",
         "experience": "3 yrs exp",
         "statsHighlight": "Starter • C #50 • Arkansas • 3 yrs exp"
-      },
-      {
-        "id": "p-lar-3052180",
-        "name": "Coleman Shelton",
-        "position": "C",
-        "number": 65,
-        "teamId": "lar",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3052180.png",
-        "status": "Active",
-        "college": "Washington",
-        "experience": "8 yrs exp",
-        "statsHighlight": "Starter • C #65 • Washington • 8 yrs exp"
       },
       {
         "id": "p-lar-16339",
@@ -26450,7 +26527,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 49,
         "teamId": "lar",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2575907.png",
-        "status": "Questionable",
+        "status": "Out",
         "college": "Navy",
         "experience": "12 yrs exp",
         "statsHighlight": "Starter • LS #49 • Navy • 12 yrs exp"
@@ -26501,7 +26578,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Michigan",
         "experience": "3 yrs exp",
-        "statsHighlight": "86 CAR, 447 YDS, 4 TD"
+        "statsHighlight": "103 CAR, 547 YDS, 5 TD"
       },
       {
         "id": "p-lar-4243003",
@@ -26513,7 +26590,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Fresno State",
         "experience": "5 yrs exp",
-        "statsHighlight": "RB #20 • Fresno State • 5 yrs exp"
+        "statsHighlight": "20 CAR, 100 YDS"
       },
       {
         "id": "p-lar-5082269",
@@ -26528,28 +26605,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "RB #33 • Houston • Rookie"
       },
       {
-        "id": "p-lar-4431342",
-        "name": "Brennan Presley",
-        "position": "WR",
-        "number": 81,
-        "teamId": "lar",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4431342.png",
-        "status": "Active",
-        "college": "Oklahoma State",
-        "experience": "1 yr exp",
-        "statsHighlight": "WR #81 • Oklahoma State • 1 yr exp"
-      },
-      {
         "id": "p-lar-4386544",
         "name": "Xavier Smith",
         "position": "WR",
-        "number": 19,
+        "number": 14,
         "teamId": "lar",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4386544.png",
         "status": "Active",
         "college": "Florida A&M",
         "experience": "3 yrs exp",
-        "statsHighlight": "WR #19 • Florida A&M • 3 yrs exp"
+        "statsHighlight": "WR #14 • Florida A&M • 3 yrs exp"
       },
       {
         "id": "p-lar-4569382",
@@ -26582,7 +26647,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 87,
         "teamId": "lar",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4426553.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Clemson",
         "experience": "4 yrs exp",
         "statsHighlight": "TE #87 • Clemson • 4 yrs exp"
@@ -26888,18 +26953,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "OT #79 • Missouri • Rookie"
       },
       {
-        "id": "p-lar-4362474",
-        "name": "Steve Avila",
-        "position": "G",
-        "number": 73,
-        "teamId": "lar",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4362474.png",
-        "status": "Out",
-        "college": "TCU",
-        "experience": "4 yrs exp",
-        "statsHighlight": "G #73 • TCU • 4 yrs exp"
-      },
-      {
         "id": "p-lar-4360859",
         "name": "Justin Dedich",
         "position": "G",
@@ -26912,16 +26965,28 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "G #67 • USC • 3 yrs exp"
       },
       {
-        "id": "p-lar-3912189",
-        "name": "Bill Murray",
+        "id": "p-lar-4362474",
+        "name": "Steve Avila",
         "position": "G",
-        "number": 66,
+        "number": 73,
         "teamId": "lar",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3912189.png",
-        "status": "Active",
-        "college": "William & Mary",
-        "experience": "2 yrs exp",
-        "statsHighlight": "G #66 • William & Mary • 2 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4362474.png",
+        "status": "Out",
+        "college": "TCU",
+        "experience": "4 yrs exp",
+        "statsHighlight": "G #73 • TCU • 4 yrs exp"
+      },
+      {
+        "id": "p-lar-3052180",
+        "name": "Coleman Shelton",
+        "position": "C",
+        "number": 65,
+        "teamId": "lar",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3052180.png",
+        "status": "Doubtful",
+        "college": "Washington",
+        "experience": "8 yrs exp",
+        "statsHighlight": "C #65 • Washington • 8 yrs exp"
       },
       {
         "id": "p-lar-4430155",
@@ -26930,7 +26995,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 63,
         "teamId": "lar",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430155.png",
-        "status": "Active",
+        "status": "IR",
         "college": "NC State",
         "experience": "2 yrs exp",
         "statsHighlight": "C #63 • NC State • 2 yrs exp"
@@ -26986,21 +27051,21 @@ export const NFL_TEAMS: NFLTeam[] = [
     "logoUrl": "https://a.espncdn.com/i/teamlogos/nfl/500/ind.png",
     "stadium": "Lucas Oil Stadium",
     "record": {
-      "wins": 2,
-      "losses": 7,
+      "wins": 3,
+      "losses": 8,
       "ties": 0
     },
     "rankInDivision": "Active in AFC South",
     "nextGame": {
-      "week": 10,
-      "opponent": "Miami Dolphins",
-      "opponentAbbr": "MIA",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/mia.png",
+      "week": 12,
+      "opponent": "New York Giants",
+      "opponentAbbr": "NYG",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
       "isHome": true,
-      "date": "Sun, Nov 15",
+      "date": "Sun, Nov 29",
       "time": "10:00 AM",
-      "network": "CBS",
-      "broadcastNetwork": "CBS",
+      "network": "Fox",
+      "broadcastNetwork": "Fox",
       "spread": "IND Live Line",
       "stadium": "Lucas Oil Stadium",
       "venue": "Lucas Oil Stadium",
@@ -27131,10 +27196,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Miami Dolphins",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/mia.png",
         "isHome": true,
-        "timeOrScore": "10:00 AM",
+        "timeOrScore": "24-22",
         "tvNetwork": "CBS",
         "broadcastNetwork": "CBS",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "W"
       },
       {
         "week": 11,
@@ -27143,10 +27209,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Houston Texans",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
         "isHome": false,
-        "timeOrScore": "5:15 PM",
+        "timeOrScore": "3-26",
         "tvNetwork": "Prime Video",
         "broadcastNetwork": "Prime Video",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "L"
       },
       {
         "week": 12,
@@ -27223,17 +27290,17 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "ind-inj-2998565",
-        "playerName": "Mo Alie-Cox",
-        "position": "TE",
+        "id": "ind-inj-4683423",
+        "playerName": "Riley Leonard",
+        "position": "QB",
         "teamId": "ind",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Mo Alie-Cox (TE) is listed as Out (Undisclosed).",
-        "practiceStatus": "Mo Alie-Cox (TE) is listed as Out (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Riley Leonard (QB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Riley Leonard (QB) is listed as Out (Undisclosed)."
       },
       {
         "id": "ind-inj-4362523",
@@ -27242,11 +27309,37 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "ind",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Will Mallory (TE) is listed as Out (Undisclosed).",
+        "practiceStatus": "Will Mallory (TE) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "ind-inj-4686468",
+        "playerName": "Seth McGowan",
+        "position": "RB",
+        "teamId": "ind",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Will Mallory (TE) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Will Mallory (TE) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Seth McGowan (RB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Seth McGowan (RB) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "ind-inj-4362580",
+        "playerName": "Bernhard Raimann",
+        "position": "OT",
+        "teamId": "ind",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Bernhard Raimann (OT) is listed as Out (Undisclosed).",
+        "practiceStatus": "Bernhard Raimann (OT) is listed as Out (Undisclosed)."
       },
       {
         "id": "ind-inj-4892240",
@@ -27256,36 +27349,23 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
         "details": "Jalen Travis (OT) is listed as Out (Undisclosed).",
         "practiceStatus": "Jalen Travis (OT) is listed as Out (Undisclosed)."
       },
       {
-        "id": "ind-inj-4601021",
-        "playerName": "Jaylon Carlies",
-        "position": "LB",
+        "id": "ind-inj-4427250",
+        "playerName": "Sauce Gardner",
+        "position": "CB",
         "teamId": "ind",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Jaylon Carlies (LB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Jaylon Carlies (LB) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "ind-inj-3917142",
-        "playerName": "Akeem Davis-Gaither",
-        "position": "LB",
-        "teamId": "ind",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Akeem Davis-Gaither (LB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Akeem Davis-Gaither (LB) is listed as Out (Undisclosed)."
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Sauce Gardner (CB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Sauce Gardner (CB) is listed as Out (Undisclosed)."
       },
       {
         "id": "ind-inj-3863182",
@@ -27295,23 +27375,49 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
         "details": "Jerry Tillery (DT) is listed as Out (Undisclosed).",
         "practiceStatus": "Jerry Tillery (DT) is listed as Out (Undisclosed)."
       },
       {
-        "id": "ind-inj-2566045",
-        "playerName": "Luke Rhodes",
-        "position": "LS",
+        "id": "ind-inj-4037361",
+        "playerName": "Charvarius Ward",
+        "position": "CB",
         "teamId": "ind",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Luke Rhodes (LS) is listed as Out (Undisclosed).",
-        "practiceStatus": "Luke Rhodes (LS) is listed as Out (Undisclosed)."
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
+        "details": "Charvarius Ward (CB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Charvarius Ward (CB) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "ind-inj-2998565",
+        "playerName": "Mo Alie-Cox",
+        "position": "TE",
+        "teamId": "ind",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 14",
+        "updatedAt": "Nov 14",
+        "details": "Mo Alie-Cox (TE) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Mo Alie-Cox (TE) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "ind-inj-4601021",
+        "playerName": "Jaylon Carlies",
+        "position": "LB",
+        "teamId": "ind",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
+        "details": "Jaylon Carlies (LB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Jaylon Carlies (LB) is listed as Injured Reserve (Undisclosed)."
       },
       {
         "id": "ind-inj-4240896",
@@ -27327,17 +27433,17 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Micheal Clemons (DE) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "ind-inj-3843843",
-        "playerName": "Arden Key",
-        "position": "DE",
+        "id": "ind-inj-3917142",
+        "playerName": "Akeem Davis-Gaither",
+        "position": "LB",
         "teamId": "ind",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "Arden Key (DE) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Arden Key (DE) is listed as Injured Reserve (Undisclosed)."
+        "lastUpdated": "Nov 14",
+        "updatedAt": "Nov 14",
+        "details": "Akeem Davis-Gaither (LB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Akeem Davis-Gaither (LB) is listed as Injured Reserve (Undisclosed)."
       },
       {
         "id": "ind-inj-4036275",
@@ -27377,45 +27483,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Aug 31",
         "details": "D.J. Montgomery (WR) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "D.J. Montgomery (WR) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "ind-inj-4360078",
-        "playerName": "Alec Pierce",
-        "position": "WR",
-        "teamId": "ind",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "Alec Pierce (WR) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Alec Pierce (WR) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "ind-inj-4361196",
-        "playerName": "Cam Taylor-Britt",
-        "position": "CB",
-        "teamId": "ind",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Oct 27",
-        "updatedAt": "Oct 27",
-        "details": "Cam Taylor-Britt (CB) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Cam Taylor-Britt (CB) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "ind-inj-4702120",
-        "playerName": "Carson Towt",
-        "position": "TE",
-        "teamId": "ind",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Sep 8",
-        "updatedAt": "Sep 8",
-        "details": "Carson Towt (TE) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Carson Towt (TE) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -27432,18 +27499,6 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "starPlayers": [
       {
-        "id": "p-ind-3917792",
-        "name": "Daniel Jones",
-        "position": "QB",
-        "number": 17,
-        "teamId": "ind",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3917792.png",
-        "status": "Active",
-        "college": "Duke",
-        "experience": "8 yrs exp",
-        "statsHighlight": "28 CAR, 86 YDS, 1 TD"
-      },
-      {
         "id": "p-ind-4429084",
         "name": "Anthony Richardson Sr.",
         "position": "QB",
@@ -27453,7 +27508,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Florida",
         "experience": "4 yrs exp",
-        "statsHighlight": "2/2, 8 YDS"
+        "statsHighlight": "2/4, 8 YDS"
       },
       {
         "id": "p-ind-4242335",
@@ -27465,7 +27520,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Wisconsin",
         "experience": "7 yrs exp",
-        "statsHighlight": "161 CAR, 656 YDS, 8 TD"
+        "statsHighlight": "188 CAR, 760 YDS, 8 TD"
       },
       {
         "id": "p-ind-4360078",
@@ -27489,7 +27544,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Penn State",
         "experience": "2 yrs exp",
-        "statsHighlight": "38 REC, 275 YDS, 2 TD"
+        "statsHighlight": "41 REC, 298 YDS, 2 TD"
       },
       {
         "id": "p-ind-4427250",
@@ -27498,22 +27553,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 1,
         "teamId": "ind",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4427250.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Cincinnati",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • CB #1 • Cincinnati • 5 yrs exp"
       },
       {
-        "id": "p-ind-4061956",
-        "name": "Ashton Dulin",
+        "id": "p-ind-4683151",
+        "name": "Deion Burks",
         "position": "WR",
-        "number": 16,
+        "number": 80,
         "teamId": "ind",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4061956.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4683151.png",
         "status": "Active",
-        "college": "Malone",
-        "experience": "8 yrs exp",
-        "statsHighlight": "Starter • WR #16 • Malone • 8 yrs exp"
+        "college": "Oklahoma",
+        "experience": "Rookie",
+        "statsHighlight": "Starter • WR #80 • Oklahoma • Rookie"
       },
       {
         "id": "p-ind-4429684",
@@ -27540,6 +27595,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • WR #13 • Ole Miss • 10 yrs exp"
       },
       {
+        "id": "p-ind-3843843",
+        "name": "Arden Key",
+        "position": "DE",
+        "number": 98,
+        "teamId": "ind",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3843843.png",
+        "status": "Active",
+        "college": "LSU",
+        "experience": "9 yrs exp",
+        "statsHighlight": "Starter • DE #98 • LSU • 9 yrs exp"
+      },
+      {
         "id": "p-ind-4426473",
         "name": "Laiatu Latu",
         "position": "DE",
@@ -27550,18 +27617,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "UCLA",
         "experience": "3 yrs exp",
         "statsHighlight": "Starter • DE #97 • UCLA • 3 yrs exp"
-      },
-      {
-        "id": "p-ind-4566154",
-        "name": "Jaylahn Tuimoloau",
-        "position": "DE",
-        "number": 91,
-        "teamId": "ind",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4566154.png",
-        "status": "Active",
-        "college": "Ohio State",
-        "experience": "2 yrs exp",
-        "statsHighlight": "Starter • DE #91 • Ohio State • 2 yrs exp"
       },
       {
         "id": "p-ind-4427635",
@@ -27612,16 +27667,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • LB #50 • Oregon • Rookie"
       },
       {
-        "id": "p-ind-3917142",
-        "name": "Akeem Davis-Gaither",
+        "id": "p-ind-4692638",
+        "name": "Tahj Chambers",
         "position": "LB",
-        "number": 51,
+        "number": 44,
         "teamId": "ind",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3917142.png",
-        "status": "Out",
-        "college": "App State",
-        "experience": "7 yrs exp",
-        "statsHighlight": "Starter • LB #51 • App State • 7 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4692638.png",
+        "status": "Active",
+        "college": "Ole Miss",
+        "experience": "Rookie",
+        "statsHighlight": "Starter • LB #44 • Ole Miss • Rookie"
       },
       {
         "id": "p-ind-4682909",
@@ -27642,7 +27697,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 7,
         "teamId": "ind",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4037361.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Middle Tennessee",
         "experience": "9 yrs exp",
         "statsHighlight": "Starter • CB #7 • Middle Tennessee • 9 yrs exp"
@@ -27678,22 +27733,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 79,
         "teamId": "ind",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4362580.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Central Michigan",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • OT #79 • Central Michigan • 5 yrs exp"
       },
       {
-        "id": "p-ind-4361979",
-        "name": "Luke Tenuta",
+        "id": "p-ind-4892240",
+        "name": "Jalen Travis",
         "position": "OT",
-        "number": 67,
+        "number": 75,
         "teamId": "ind",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361979.png",
-        "status": "Active",
-        "college": "Virginia Tech",
-        "experience": "4 yrs exp",
-        "statsHighlight": "Starter • OT #67 • Virginia Tech • 4 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4892240.png",
+        "status": "Out",
+        "college": "Iowa State",
+        "experience": "2 yrs exp",
+        "statsHighlight": "Starter • OT #75 • Iowa State • 2 yrs exp"
       },
       {
         "id": "p-ind-4838270",
@@ -27762,7 +27817,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 46,
         "teamId": "ind",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2566045.png",
-        "status": "Out",
+        "status": "Active",
         "college": "William & Mary",
         "experience": "10 yrs exp",
         "statsHighlight": "Starter • LS #46 • William & Mary • 10 yrs exp"
@@ -27774,7 +27829,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 15,
         "teamId": "ind",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4683423.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Notre Dame",
         "experience": "2 yrs exp",
         "statsHighlight": "QB #15 • Notre Dame • 2 yrs exp"
@@ -27786,10 +27841,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 20,
         "teamId": "ind",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4686468.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Kentucky",
         "experience": "Rookie",
-        "statsHighlight": "43 CAR, 208 YDS, 1 TD"
+        "statsHighlight": "58 CAR, 292 YDS, 2 TD"
       },
       {
         "id": "p-ind-4874509",
@@ -27804,16 +27859,28 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "RB #21 • Kansas State • 2 yrs exp"
       },
       {
-        "id": "p-ind-4683151",
-        "name": "Deion Burks",
+        "id": "p-ind-4061956",
+        "name": "Ashton Dulin",
         "position": "WR",
-        "number": 80,
+        "number": 16,
         "teamId": "ind",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4683151.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4061956.png",
         "status": "Active",
-        "college": "Oklahoma",
-        "experience": "Rookie",
-        "statsHighlight": "WR #80 • Oklahoma • Rookie"
+        "college": "Malone",
+        "experience": "8 yrs exp",
+        "statsHighlight": "WR #16 • Malone • 8 yrs exp"
+      },
+      {
+        "id": "p-ind-4050373",
+        "name": "Quez Watkins",
+        "position": "WR",
+        "number": 9,
+        "teamId": "ind",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4050373.png",
+        "status": "Active",
+        "college": "Southern Miss",
+        "experience": "5 yrs exp",
+        "statsHighlight": "WR #9 • Southern Miss • 5 yrs exp"
       },
       {
         "id": "p-ind-3929785",
@@ -27846,22 +27913,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 86,
         "teamId": "ind",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4362523.png",
-        "status": "Questionable",
+        "status": "Out",
         "college": "Miami",
         "experience": "4 yrs exp",
         "statsHighlight": "TE #86 • Miami • 4 yrs exp"
-      },
-      {
-        "id": "p-ind-2998565",
-        "name": "Mo Alie-Cox",
-        "position": "TE",
-        "number": 81,
-        "teamId": "ind",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2998565.png",
-        "status": "Out",
-        "college": "VCU",
-        "experience": "9 yrs exp",
-        "statsHighlight": "TE #81 • VCU • 9 yrs exp"
       },
       {
         "id": "p-ind-4722908",
@@ -27888,6 +27943,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "TE #49 • Oregon • 9 yrs exp"
       },
       {
+        "id": "p-ind-2998565",
+        "name": "Mo Alie-Cox",
+        "position": "TE",
+        "number": 81,
+        "teamId": "ind",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2998565.png",
+        "status": "IR",
+        "college": "VCU",
+        "experience": "9 yrs exp",
+        "statsHighlight": "TE #81 • VCU • 9 yrs exp"
+      },
+      {
         "id": "p-ind-4702120",
         "name": "Carson Towt",
         "position": "TE",
@@ -27912,6 +27979,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "TE #49 • Michigan • 5 yrs exp"
       },
       {
+        "id": "p-ind-4566154",
+        "name": "Jaylahn Tuimoloau",
+        "position": "DE",
+        "number": 91,
+        "teamId": "ind",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4566154.png",
+        "status": "Active",
+        "college": "Ohio State",
+        "experience": "2 yrs exp",
+        "statsHighlight": "DE #91 • Ohio State • 2 yrs exp"
+      },
+      {
         "id": "p-ind-4240896",
         "name": "Micheal Clemons",
         "position": "DE",
@@ -27922,18 +28001,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Texas A&M",
         "experience": "5 yrs exp",
         "statsHighlight": "DE #72 • Texas A&M • 5 yrs exp"
-      },
-      {
-        "id": "p-ind-3843843",
-        "name": "Arden Key",
-        "position": "DE",
-        "number": 98,
-        "teamId": "ind",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3843843.png",
-        "status": "IR",
-        "college": "LSU",
-        "experience": "9 yrs exp",
-        "statsHighlight": "DE #98 • LSU • 9 yrs exp"
       },
       {
         "id": "p-ind-4692033",
@@ -27984,30 +28051,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #58 • UNLV • 2 yrs exp"
       },
       {
-        "id": "p-ind-4601021",
-        "name": "Jaylon Carlies",
-        "position": "LB",
-        "number": 57,
-        "teamId": "ind",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4601021.png",
-        "status": "Out",
-        "college": "Missouri",
-        "experience": "3 yrs exp",
-        "statsHighlight": "LB #57 • Missouri • 3 yrs exp"
-      },
-      {
-        "id": "p-ind-4692638",
-        "name": "Tahj Chambers",
-        "position": "LB",
-        "number": 44,
-        "teamId": "ind",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4692638.png",
-        "status": "Active",
-        "college": "Ole Miss",
-        "experience": "Rookie",
-        "statsHighlight": "LB #44 • Ole Miss • Rookie"
-      },
-      {
         "id": "p-ind-4685324",
         "name": "Caden Curry",
         "position": "LB",
@@ -28020,6 +28063,30 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #55 • Ohio State • Rookie"
       },
       {
+        "id": "p-ind-4587724",
+        "name": "West Weeks",
+        "position": "LB",
+        "number": 47,
+        "teamId": "ind",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4587724.png",
+        "status": "Active",
+        "college": "LSU",
+        "experience": "Rookie",
+        "statsHighlight": "LB #47 • LSU • Rookie"
+      },
+      {
+        "id": "p-ind-3917142",
+        "name": "Akeem Davis-Gaither",
+        "position": "LB",
+        "number": 51,
+        "teamId": "ind",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3917142.png",
+        "status": "IR",
+        "college": "App State",
+        "experience": "7 yrs exp",
+        "statsHighlight": "LB #51 • App State • 7 yrs exp"
+      },
+      {
         "id": "p-ind-4708238",
         "name": "George Gumbs Jr.",
         "position": "LB",
@@ -28030,6 +28097,30 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Florida",
         "experience": "Rookie",
         "statsHighlight": "LB #52 • Florida • Rookie"
+      },
+      {
+        "id": "p-ind-4601021",
+        "name": "Jaylon Carlies",
+        "position": "LB",
+        "number": 57,
+        "teamId": "ind",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4601021.png",
+        "status": "IR",
+        "college": "Missouri",
+        "experience": "3 yrs exp",
+        "statsHighlight": "LB #57 • Missouri • 3 yrs exp"
+      },
+      {
+        "id": "p-ind-4695991",
+        "name": "Johnathan Edwards",
+        "position": "CB",
+        "number": 35,
+        "teamId": "ind",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4695991.png",
+        "status": "Active",
+        "college": "Tulane",
+        "experience": "2 yrs exp",
+        "statsHighlight": "CB #35 • Tulane • 2 yrs exp"
       },
       {
         "id": "p-ind-5153072",
@@ -28056,18 +28147,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "CB #33 • Oklahoma State • Rookie"
       },
       {
-        "id": "p-ind-4361196",
-        "name": "Cam Taylor-Britt",
-        "position": "CB",
-        "number": 29,
-        "teamId": "ind",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361196.png",
-        "status": "IR",
-        "college": "Nebraska",
-        "experience": "5 yrs exp",
-        "statsHighlight": "CB #29 • Nebraska • 5 yrs exp"
-      },
-      {
         "id": "p-ind-4569607",
         "name": "Cameron Mitchell",
         "position": "CB",
@@ -28080,16 +28159,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "CB #43 • Northwestern • 4 yrs exp"
       },
       {
-        "id": "p-ind-4695991",
-        "name": "Johnathan Edwards",
+        "id": "p-ind-4361196",
+        "name": "Cam Taylor-Britt",
         "position": "CB",
-        "number": 35,
+        "number": 29,
         "teamId": "ind",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4695991.png",
-        "status": "Active",
-        "college": "Tulane",
-        "experience": "2 yrs exp",
-        "statsHighlight": "CB #35 • Tulane • 2 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361196.png",
+        "status": "IR",
+        "college": "Nebraska",
+        "experience": "5 yrs exp",
+        "statsHighlight": "CB #29 • Nebraska • 5 yrs exp"
       },
       {
         "id": "p-ind-4331768",
@@ -28128,6 +28207,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "S #41 • Ole Miss • 1 yr exp"
       },
       {
+        "id": "p-ind-4361979",
+        "name": "Luke Tenuta",
+        "position": "OT",
+        "number": 67,
+        "teamId": "ind",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361979.png",
+        "status": "Active",
+        "college": "Virginia Tech",
+        "experience": "4 yrs exp",
+        "statsHighlight": "OT #67 • Virginia Tech • 4 yrs exp"
+      },
+      {
         "id": "p-ind-3895840",
         "name": "Charlie Heck",
         "position": "OT",
@@ -28138,18 +28229,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "North Carolina",
         "experience": "7 yrs exp",
         "statsHighlight": "OT #73 • North Carolina • 7 yrs exp"
-      },
-      {
-        "id": "p-ind-4892240",
-        "name": "Jalen Travis",
-        "position": "OT",
-        "number": 75,
-        "teamId": "ind",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4892240.png",
-        "status": "Out",
-        "college": "Iowa State",
-        "experience": "2 yrs exp",
-        "statsHighlight": "OT #75 • Iowa State • 2 yrs exp"
       },
       {
         "id": "p-ind-4370363",
@@ -28191,23 +28270,23 @@ export const NFL_TEAMS: NFLTeam[] = [
     "stadium": "State Farm Stadium",
     "record": {
       "wins": 3,
-      "losses": 6,
+      "losses": 7,
       "ties": 0
     },
     "rankInDivision": "Active in NFC West",
     "nextGame": {
-      "week": 10,
-      "opponent": "Los Angeles Rams",
-      "opponentAbbr": "LAR",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
-      "isHome": true,
-      "date": "Sun, Nov 15",
-      "time": "1:05 PM",
+      "week": 11,
+      "opponent": "Kansas City Chiefs",
+      "opponentAbbr": "KC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+      "isHome": false,
+      "date": "Sun, Nov 22",
+      "time": "10:00 AM",
       "network": "CBS",
       "broadcastNetwork": "CBS",
       "spread": "ARI Live Line",
-      "stadium": "State Farm Stadium",
-      "venue": "State Farm Stadium",
+      "stadium": "Arrowhead Stadium",
+      "venue": "Arrowhead Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -28335,10 +28414,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Los Angeles Rams",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
         "isHome": true,
-        "timeOrScore": "1:05 PM",
+        "timeOrScore": "6-34",
         "tvNetwork": "CBS",
         "broadcastNetwork": "CBS",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "L"
       },
       {
         "week": 11,
@@ -28427,6 +28507,19 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
+        "id": "ari-inj-4430841",
+        "playerName": "Carson Beck",
+        "position": "QB",
+        "teamId": "ari",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Carson Beck (QB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Carson Beck (QB) is listed as Questionable (Undisclosed)."
+      },
+      {
         "id": "ari-inj-4692835",
         "playerName": "Jalen Brooks",
         "position": "WR",
@@ -28440,19 +28533,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Jalen Brooks (WR) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "ari-inj-3886633",
-        "playerName": "Hjalte Froholdt",
-        "position": "C",
-        "teamId": "ari",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Hjalte Froholdt (C) is listed as Out (Undisclosed).",
-        "practiceStatus": "Hjalte Froholdt (C) is listed as Out (Undisclosed)."
-      },
-      {
         "id": "ari-inj-4367199",
         "playerName": "Jon Gaines II",
         "position": "G",
@@ -28460,75 +28540,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Jon Gaines II (G) is listed as Out (Undisclosed).",
         "practiceStatus": "Jon Gaines II (G) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "ari-inj-4709718",
-        "playerName": "Jayden Williams",
-        "position": "OT",
-        "teamId": "ari",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Jayden Williams (OT) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Jayden Williams (OT) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "ari-inj-4040805",
-        "playerName": "Roy Lopez",
-        "position": "DT",
-        "teamId": "ari",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 8",
-        "updatedAt": "Nov 8",
-        "details": "Roy Lopez (DT) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Roy Lopez (DT) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "ari-inj-4698113",
-        "playerName": "Max Melton",
-        "position": "CB",
-        "teamId": "ari",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "Max Melton (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Max Melton (CB) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "ari-inj-4569480",
-        "playerName": "Darius Robinson",
-        "position": "DE",
-        "teamId": "ari",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Darius Robinson (DE) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Darius Robinson (DE) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "ari-inj-3918331",
-        "playerName": "Andrew Wingard",
-        "position": "S",
-        "teamId": "ari",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Andrew Wingard (S) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Andrew Wingard (S) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "ari-inj-4429275",
@@ -28583,6 +28598,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Kendrick Bourne (WR) is listed as Injured Reserve (Undisclosed)."
       },
       {
+        "id": "ari-inj-4428996",
+        "playerName": "Jordan Burch",
+        "position": "LB",
+        "teamId": "ari",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
+        "details": "Jordan Burch (LB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Jordan Burch (LB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
         "id": "ari-inj-4240619",
         "playerName": "Zachary Carter",
         "position": "DT",
@@ -28590,8 +28618,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
+        "lastUpdated": "Nov 13",
+        "updatedAt": "Nov 13",
         "details": "Zachary Carter (DT) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Zachary Carter (DT) is listed as Injured Reserve (Undisclosed)."
       },
@@ -28603,8 +28631,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 3",
-        "updatedAt": "Nov 3",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
         "details": "James Conner (RB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "James Conner (RB) is listed as Injured Reserve (Undisclosed)."
       },
@@ -28620,6 +28648,58 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Sep 23",
         "details": "Will Johnson (CB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Will Johnson (CB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "ari-inj-4428991",
+        "playerName": "Paris Johnson Jr.",
+        "position": "OT",
+        "teamId": "ari",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Oct 6",
+        "updatedAt": "Oct 6",
+        "details": "Paris Johnson Jr. (OT) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Paris Johnson Jr. (OT) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "ari-inj-4870808",
+        "playerName": "Jeremiyah Love",
+        "position": "RB",
+        "teamId": "ari",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 3",
+        "updatedAt": "Nov 3",
+        "details": "Jeremiyah Love (RB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Jeremiyah Love (RB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "ari-inj-4686338",
+        "playerName": "Josh Minkins",
+        "position": "S",
+        "teamId": "ari",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Sep 1",
+        "updatedAt": "Sep 1",
+        "details": "Josh Minkins (S) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Josh Minkins (S) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "ari-inj-4038524",
+        "playerName": "Gardner Minshew II",
+        "position": "QB",
+        "teamId": "ari",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
+        "details": "Gardner Minshew II (QB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Gardner Minshew II (QB) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -28642,10 +28722,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 19,
         "teamId": "ari",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430841.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Miami",
         "experience": "Rookie",
-        "statsHighlight": "Starter • QB #19 • Miami • Rookie"
+        "statsHighlight": "11/18, 108 YDS, 2 INT"
       },
       {
         "id": "p-ari-4038524",
@@ -28669,7 +28749,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "BYU",
         "experience": "5 yrs exp",
-        "statsHighlight": "89 CAR, 369 YDS, 2 TD"
+        "statsHighlight": "94 CAR, 383 YDS, 2 TD"
       },
       {
         "id": "p-ari-4429275",
@@ -28717,7 +28797,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Colorado State",
         "experience": "5 yrs exp",
-        "statsHighlight": "73 REC, 598 YDS, 5 TD"
+        "statsHighlight": "78 REC, 635 YDS, 5 TD"
       },
       {
         "id": "p-ari-3127287",
@@ -28774,7 +28854,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 51,
         "teamId": "ari",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4040805.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Arizona",
         "experience": "6 yrs exp",
         "statsHighlight": "Starter • DT #51 • Arizona • 6 yrs exp"
@@ -28882,22 +28962,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 16,
         "teamId": "ari",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4698113.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Rutgers",
         "experience": "3 yrs exp",
         "statsHighlight": "Starter • CB #16 • Rutgers • 3 yrs exp"
       },
       {
-        "id": "p-ari-3918331",
-        "name": "Andrew Wingard",
+        "id": "p-ari-4430821",
+        "name": "Kitan Crawford",
         "position": "S",
-        "number": 28,
+        "number": 36,
         "teamId": "ari",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3918331.png",
-        "status": "Questionable",
-        "college": "Wyoming",
-        "experience": "8 yrs exp",
-        "statsHighlight": "Starter • S #28 • Wyoming • 8 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430821.png",
+        "status": "Active",
+        "college": "Nevada",
+        "experience": "2 yrs exp",
+        "statsHighlight": "Starter • S #36 • Nevada • 2 yrs exp"
       },
       {
         "id": "p-ari-3059839",
@@ -28918,7 +28998,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 66,
         "teamId": "ari",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4709718.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Ole Miss",
         "experience": "Rookie",
         "statsHighlight": "Starter • OT #66 • Ole Miss • Rookie"
@@ -28954,7 +29034,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 72,
         "teamId": "ari",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3886633.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Arkansas",
         "experience": "8 yrs exp",
         "statsHighlight": "Starter • C #72 • Arkansas • 8 yrs exp"
@@ -29011,13 +29091,13 @@ export const NFL_TEAMS: NFLTeam[] = [
         "id": "p-ari-5151948",
         "name": "Joey Aguilar",
         "position": "QB",
-        "number": 0,
+        "number": 18,
         "teamId": "ari",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5151948.png",
         "status": "Active",
         "college": "Tennessee",
         "experience": "Rookie",
-        "statsHighlight": "QB #0 • Tennessee • Rookie"
+        "statsHighlight": "QB #18 • Tennessee • Rookie"
       },
       {
         "id": "p-ari-4427728",
@@ -29029,7 +29109,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "NC State",
         "experience": "4 yrs exp",
-        "statsHighlight": "28 CAR, 168 YDS"
+        "statsHighlight": "33 CAR, 187 YDS"
       },
       {
         "id": "p-ari-4569609",
@@ -29104,6 +29184,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "WR #86 • South Carolina • 4 yrs exp"
       },
       {
+        "id": "p-ari-3059722",
+        "name": "Zay Jones",
+        "position": "WR",
+        "number": 7,
+        "teamId": "ari",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3059722.png",
+        "status": "Active",
+        "college": "East Carolina",
+        "experience": "9 yrs exp",
+        "statsHighlight": "WR #7 • East Carolina • 9 yrs exp"
+      },
+      {
         "id": "p-ari-4428811",
         "name": "Xavier Weaver",
         "position": "WR",
@@ -29128,6 +29220,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "TE #84 • Stanford • 4 yrs exp"
       },
       {
+        "id": "p-ari-4239944",
+        "name": "Hunter Long",
+        "position": "TE",
+        "number": 89,
+        "teamId": "ari",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4239944.png",
+        "status": "Active",
+        "college": "Boston College",
+        "experience": "6 yrs exp",
+        "statsHighlight": "TE #89 • Boston College • 6 yrs exp"
+      },
+      {
         "id": "p-ari-4374045",
         "name": "Teagan Quitoriano",
         "position": "TE",
@@ -29138,18 +29242,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Oregon State",
         "experience": "5 yrs exp",
         "statsHighlight": "TE #47 • Oregon State • 5 yrs exp"
-      },
-      {
-        "id": "p-ari-4239944",
-        "name": "Hunter Long",
-        "position": "TE",
-        "number": 89,
-        "teamId": "ari",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4239944.png",
-        "status": "IR",
-        "college": "Boston College",
-        "experience": "6 yrs exp",
-        "statsHighlight": "TE #89 • Boston College • 6 yrs exp"
       },
       {
         "id": "p-ari-4696700",
@@ -29194,10 +29286,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 56,
         "teamId": "ari",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4569480.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Missouri",
         "experience": "3 yrs exp",
         "statsHighlight": "DE #56 • Missouri • 3 yrs exp"
+      },
+      {
+        "id": "p-ari-4427401",
+        "name": "Jared Harrison-Hunte",
+        "position": "DE",
+        "number": 98,
+        "teamId": "ari",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4427401.png",
+        "status": "Active",
+        "college": "SMU",
+        "experience": "2 yrs exp",
+        "statsHighlight": "DE #98 • SMU • 2 yrs exp"
       },
       {
         "id": "p-ari-3051775",
@@ -29248,16 +29352,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #5 • Ohio State • 6 yrs exp"
       },
       {
-        "id": "p-ari-4428996",
-        "name": "Jordan Burch",
+        "id": "p-ari-4361272",
+        "name": "Eku Leota",
         "position": "LB",
-        "number": 52,
+        "number": 54,
         "teamId": "ari",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4428996.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361272.png",
         "status": "Active",
-        "college": "Oregon",
+        "college": "Auburn",
         "experience": "2 yrs exp",
-        "statsHighlight": "LB #52 • Oregon • 2 yrs exp"
+        "statsHighlight": "LB #54 • Auburn • 2 yrs exp"
       },
       {
         "id": "p-ari-4709695",
@@ -29284,16 +29388,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #0 • Ohio State • 2 yrs exp"
       },
       {
-        "id": "p-ari-4361272",
-        "name": "Eku Leota",
+        "id": "p-ari-4428996",
+        "name": "Jordan Burch",
         "position": "LB",
-        "number": 54,
+        "number": 52,
         "teamId": "ari",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361272.png",
-        "status": "Active",
-        "college": "Auburn",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4428996.png",
+        "status": "IR",
+        "college": "Oregon",
         "experience": "2 yrs exp",
-        "statsHighlight": "LB #54 • Auburn • 2 yrs exp"
+        "statsHighlight": "LB #52 • Oregon • 2 yrs exp"
       },
       {
         "id": "p-ari-4900789",
@@ -29368,18 +29472,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "CB #23 • Houston • 3 yrs exp"
       },
       {
-        "id": "p-ari-4430821",
-        "name": "Kitan Crawford",
-        "position": "S",
-        "number": 36,
-        "teamId": "ari",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430821.png",
-        "status": "Active",
-        "college": "Nevada",
-        "experience": "2 yrs exp",
-        "statsHighlight": "S #36 • Nevada • 2 yrs exp"
-      },
-      {
         "id": "p-ari-4428633",
         "name": "Dadrion Taylor-Demerson",
         "position": "S",
@@ -29392,6 +29484,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "S #42 • Texas Tech • 3 yrs exp"
       },
       {
+        "id": "p-ari-5099542",
+        "name": "Wydett Williams Jr.",
+        "position": "S",
+        "number": 31,
+        "teamId": "ari",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5099542.png",
+        "status": "Active",
+        "college": "Ole Miss",
+        "experience": "Rookie",
+        "statsHighlight": "S #31 • Ole Miss • Rookie"
+      },
+      {
         "id": "p-ari-4240824",
         "name": "Joey Blount",
         "position": "S",
@@ -29402,6 +29506,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Virginia",
         "experience": "5 yrs exp",
         "statsHighlight": "S #32 • Virginia • 5 yrs exp"
+      },
+      {
+        "id": "p-ari-3918331",
+        "name": "Andrew Wingard",
+        "position": "S",
+        "number": 28,
+        "teamId": "ari",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3918331.png",
+        "status": "IR",
+        "college": "Wyoming",
+        "experience": "8 yrs exp",
+        "statsHighlight": "S #28 • Wyoming • 8 yrs exp"
       },
       {
         "id": "p-ari-4686338",
@@ -29438,18 +29554,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Alabama",
         "experience": "6 yrs exp",
         "statsHighlight": "OT #79 • Alabama • 6 yrs exp"
-      },
-      {
-        "id": "p-ari-4683506",
-        "name": "Albert Reese IV",
-        "position": "OT",
-        "number": 76,
-        "teamId": "ari",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4683506.png",
-        "status": "Active",
-        "college": "Mississippi State",
-        "experience": "Rookie",
-        "statsHighlight": "OT #76 • Mississippi State • Rookie"
       },
       {
         "id": "p-ari-4428991",
@@ -29527,23 +29631,23 @@ export const NFL_TEAMS: NFLTeam[] = [
     "stadium": "Caesars Superdome",
     "record": {
       "wins": 3,
-      "losses": 5,
+      "losses": 6,
       "ties": 0
     },
     "rankInDivision": "Active in NFC South",
     "nextGame": {
-      "week": 10,
-      "opponent": "Carolina Panthers",
-      "opponentAbbr": "CAR",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/car.png",
-      "isHome": true,
-      "date": "Sun, Nov 15",
+      "week": 11,
+      "opponent": "Chicago Bears",
+      "opponentAbbr": "CHI",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
+      "isHome": false,
+      "date": "Sun, Nov 22",
       "time": "10:00 AM",
       "network": "Fox",
       "broadcastNetwork": "Fox",
       "spread": "NO Live Line",
-      "stadium": "Caesars Superdome",
-      "venue": "Caesars Superdome",
+      "stadium": "Soldier Field",
+      "venue": "Soldier Field",
       "countdownHours": 48
     },
     "schedule": [
@@ -29658,10 +29762,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Carolina Panthers",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/car.png",
         "isHome": true,
-        "timeOrScore": "10:00 AM",
+        "timeOrScore": "17-20",
         "tvNetwork": "Fox",
         "broadcastNetwork": "Fox",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "L"
       },
       {
         "week": 11,
@@ -29762,19 +29867,6 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "no-inj-5081999",
-        "playerName": "CJ Donaldson",
-        "position": "RB",
-        "teamId": "no",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "CJ Donaldson (RB) is listed as Out (Undisclosed).",
-        "practiceStatus": "CJ Donaldson (RB) is listed as Out (Undisclosed)."
-      },
-      {
         "id": "no-inj-4606711",
         "playerName": "Taliese Fuaga",
         "position": "OT",
@@ -29782,8 +29874,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
         "details": "Taliese Fuaga (OT) is listed as Out (Undisclosed).",
         "practiceStatus": "Taliese Fuaga (OT) is listed as Out (Undisclosed)."
       },
@@ -29795,10 +29887,23 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 19",
+        "updatedAt": "Nov 19",
         "details": "Erik McCoy (C) is listed as Out (Undisclosed).",
         "practiceStatus": "Erik McCoy (C) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "no-inj-4430379",
+        "playerName": "Asim Richards",
+        "position": "OT",
+        "teamId": "no",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Nov 16",
+        "updatedAt": "Nov 16",
+        "details": "Asim Richards (OT) is listed as Out (Undisclosed).",
+        "practiceStatus": "Asim Richards (OT) is listed as Out (Undisclosed)."
       },
       {
         "id": "no-inj-4429568",
@@ -29807,24 +29912,37 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "no",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Martin Emerson Jr. (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Martin Emerson Jr. (CB) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Martin Emerson Jr. (CB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Martin Emerson Jr. (CB) is listed as Out (Undisclosed)."
       },
       {
-        "id": "no-inj-4685479",
-        "playerName": "Christen Miller",
-        "position": "DT",
+        "id": "no-inj-4605498",
+        "playerName": "Decamerion Richardson",
+        "position": "CB",
         "teamId": "no",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Christen Miller (DT) is listed as Out (Undisclosed).",
-        "practiceStatus": "Christen Miller (DT) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Decamerion Richardson (CB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Decamerion Richardson (CB) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "no-inj-4241993",
+        "playerName": "Pete Werner",
+        "position": "LB",
+        "teamId": "no",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Pete Werner (LB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Pete Werner (LB) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "no-inj-4428988",
@@ -29853,19 +29971,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Ty Chandler (RB) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "no-inj-4239996",
-        "playerName": "Travis Etienne Jr.",
-        "position": "RB",
-        "teamId": "no",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Travis Etienne Jr. (RB) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Travis Etienne Jr. (RB) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
         "id": "no-inj-4432731",
         "playerName": "Moliki Matavao",
         "position": "TE",
@@ -29877,6 +29982,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Aug 25",
         "details": "Moliki Matavao (TE) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Moliki Matavao (TE) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "no-inj-4685479",
+        "playerName": "Christen Miller",
+        "position": "DT",
+        "teamId": "no",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 14",
+        "updatedAt": "Nov 14",
+        "details": "Christen Miller (DT) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Christen Miller (DT) is listed as Injured Reserve (Undisclosed)."
       },
       {
         "id": "no-inj-4040945",
@@ -29966,7 +30084,19 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Louisville",
         "experience": "2 yrs exp",
-        "statsHighlight": "34 CAR, 162 YDS, 2 TD"
+        "statsHighlight": "40 CAR, 187 YDS, 2 TD"
+      },
+      {
+        "id": "p-no-4239996",
+        "name": "Travis Etienne Jr.",
+        "position": "RB",
+        "number": 3,
+        "teamId": "no",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4239996.png",
+        "status": "Active",
+        "college": "Clemson",
+        "experience": "6 yrs exp",
+        "statsHighlight": "Starter • RB #3 • Clemson • 6 yrs exp"
       },
       {
         "id": "p-no-3054850",
@@ -29978,19 +30108,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Tennessee",
         "experience": "10 yrs exp",
-        "statsHighlight": "47 CAR, 157 YDS, 2 TD"
-      },
-      {
-        "id": "p-no-4239996",
-        "name": "Travis Etienne Jr.",
-        "position": "RB",
-        "number": 3,
-        "teamId": "no",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4239996.png",
-        "status": "IR",
-        "college": "Clemson",
-        "experience": "6 yrs exp",
-        "statsHighlight": "Starter • RB #3 • Clemson • 6 yrs exp"
+        "statsHighlight": "49 CAR, 161 YDS, 3 TD"
       },
       {
         "id": "p-no-4361370",
@@ -30002,7 +30120,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Ohio State",
         "experience": "5 yrs exp",
-        "statsHighlight": "56 REC, 734 YDS, 2 TD"
+        "statsHighlight": "59 REC, 764 YDS, 2 TD"
       },
       {
         "id": "p-no-4036131",
@@ -30026,7 +30144,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Oregon",
         "experience": "7 yrs exp",
-        "statsHighlight": "28 REC, 289 YDS, 4 TD"
+        "statsHighlight": "30 REC, 317 YDS, 4 TD"
       },
       {
         "id": "p-no-13971",
@@ -30062,7 +30180,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Utah",
         "experience": "3 yrs exp",
-        "statsHighlight": "35 REC, 365 YDS, 3 TD"
+        "statsHighlight": "37 REC, 379 YDS, 3 TD"
       },
       {
         "id": "p-no-3918310",
@@ -30113,6 +30231,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • DT #93 • Fort Hays • 9 yrs exp"
       },
       {
+        "id": "p-no-4567224",
+        "name": "Colby Wooden",
+        "position": "DT",
+        "number": 50,
+        "teamId": "no",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4567224.png",
+        "status": "Active",
+        "college": "Auburn",
+        "experience": "4 yrs exp",
+        "statsHighlight": "Starter • DT #50 • Auburn • 4 yrs exp"
+      },
+      {
         "id": "p-no-3124890",
         "name": "Kaden Elliss",
         "position": "LB",
@@ -30131,7 +30261,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 20,
         "teamId": "no",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4241993.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Ohio State",
         "experience": "6 yrs exp",
         "statsHighlight": "Starter • LB #20 • Ohio State • 6 yrs exp"
@@ -30143,7 +30273,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 22,
         "teamId": "no",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429568.png",
-        "status": "Questionable",
+        "status": "Out",
         "college": "Mississippi State",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • CB #22 • Mississippi State • 5 yrs exp"
@@ -30173,16 +30303,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • S #23 • Utah • 7 yrs exp"
       },
       {
-        "id": "p-no-3931399",
-        "name": "Justin Reid",
+        "id": "p-no-4360949",
+        "name": "Jordan Howden",
         "position": "S",
-        "number": 21,
+        "number": 31,
         "teamId": "no",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3931399.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360949.png",
         "status": "Active",
-        "college": "Stanford",
-        "experience": "9 yrs exp",
-        "statsHighlight": "Starter • S #21 • Stanford • 9 yrs exp"
+        "college": "Minnesota",
+        "experience": "4 yrs exp",
+        "statsHighlight": "Starter • S #31 • Minnesota • 4 yrs exp"
       },
       {
         "id": "p-no-4683813",
@@ -30209,16 +30339,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • OT #71 • Texas • 2 yrs exp"
       },
       {
-        "id": "p-no-4606711",
-        "name": "Taliese Fuaga",
+        "id": "p-no-4682479",
+        "name": "Mason Murphy",
         "position": "OT",
-        "number": 75,
+        "number": 74,
         "teamId": "no",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4606711.png",
-        "status": "Out",
-        "college": "Oregon State",
-        "experience": "3 yrs exp",
-        "statsHighlight": "Starter • OT #75 • Oregon State • 3 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4682479.png",
+        "status": "Active",
+        "college": "Auburn",
+        "experience": "Rookie",
+        "statsHighlight": "Starter • OT #74 • Auburn • Rookie"
       },
       {
         "id": "p-no-3917660",
@@ -30323,7 +30453,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 43,
         "teamId": "no",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5081999.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Ohio State",
         "experience": "Rookie",
         "statsHighlight": "RB #43 • Ohio State • Rookie"
@@ -30461,30 +30591,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DT #97 • Northern Iowa • 3 yrs exp"
       },
       {
-        "id": "p-no-4567224",
-        "name": "Colby Wooden",
-        "position": "DT",
-        "number": 50,
-        "teamId": "no",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4567224.png",
-        "status": "Active",
-        "college": "Auburn",
-        "experience": "4 yrs exp",
-        "statsHighlight": "DT #50 • Auburn • 4 yrs exp"
-      },
-      {
-        "id": "p-no-4685479",
-        "name": "Christen Miller",
-        "position": "DT",
-        "number": 52,
-        "teamId": "no",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685479.png",
-        "status": "Out",
-        "college": "Georgia",
-        "experience": "Rookie",
-        "statsHighlight": "DT #52 • Georgia • Rookie"
-      },
-      {
         "id": "p-no-4248047",
         "name": "John Ridgeway III",
         "position": "DT",
@@ -30507,6 +30613,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Clemson",
         "experience": "4 yrs exp",
         "statsHighlight": "DT #90 • Clemson • 4 yrs exp"
+      },
+      {
+        "id": "p-no-4685479",
+        "name": "Christen Miller",
+        "position": "DT",
+        "number": 52,
+        "teamId": "no",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685479.png",
+        "status": "IR",
+        "college": "Georgia",
+        "experience": "Rookie",
+        "statsHighlight": "DT #52 • Georgia • Rookie"
       },
       {
         "id": "p-no-3925350",
@@ -30575,7 +30693,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 25,
         "teamId": "no",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4605498.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Mississippi State",
         "experience": "4 yrs exp",
         "statsHighlight": "CB #25 • Mississippi State • 4 yrs exp"
@@ -30617,18 +30735,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "CB #25 • Oregon State • 3 yrs exp"
       },
       {
-        "id": "p-no-4360949",
-        "name": "Jordan Howden",
-        "position": "S",
-        "number": 31,
-        "teamId": "no",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360949.png",
-        "status": "Active",
-        "college": "Minnesota",
-        "experience": "4 yrs exp",
-        "statsHighlight": "S #31 • Minnesota • 4 yrs exp"
-      },
-      {
         "id": "p-no-4432768",
         "name": "Lorenzo Styles Jr.",
         "position": "S",
@@ -30641,16 +30747,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "S #36 • Ohio State • Rookie"
       },
       {
-        "id": "p-no-4682479",
-        "name": "Mason Murphy",
+        "id": "p-no-4696488",
+        "name": "Easton Kilty",
         "position": "OT",
-        "number": 74,
+        "number": 73,
         "teamId": "no",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4682479.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4696488.png",
         "status": "Active",
-        "college": "Auburn",
-        "experience": "Rookie",
-        "statsHighlight": "OT #74 • Auburn • Rookie"
+        "college": "Kansas State",
+        "experience": "1 yr exp",
+        "statsHighlight": "OT #73 • Kansas State • 1 yr exp"
       },
       {
         "id": "p-no-4430379",
@@ -30659,10 +30765,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 72,
         "teamId": "no",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430379.png",
-        "status": "Active",
+        "status": "Out",
         "college": "North Carolina",
         "experience": "4 yrs exp",
         "statsHighlight": "OT #72 • North Carolina • 4 yrs exp"
+      },
+      {
+        "id": "p-no-4606711",
+        "name": "Taliese Fuaga",
+        "position": "OT",
+        "number": 75,
+        "teamId": "no",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4606711.png",
+        "status": "Out",
+        "college": "Oregon State",
+        "experience": "3 yrs exp",
+        "statsHighlight": "OT #75 • Oregon State • 3 yrs exp"
       },
       {
         "id": "p-no-4361600",
@@ -30675,18 +30793,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Old Dominion",
         "experience": "4 yrs exp",
         "statsHighlight": "OT #64 • Old Dominion • 4 yrs exp"
-      },
-      {
-        "id": "p-no-4696488",
-        "name": "Easton Kilty",
-        "position": "OT",
-        "number": 73,
-        "teamId": "no",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4696488.png",
-        "status": "Active",
-        "college": "Kansas State",
-        "experience": "1 yr exp",
-        "statsHighlight": "OT #73 • Kansas State • 1 yr exp"
       },
       {
         "id": "p-no-4243186",
@@ -30740,23 +30846,23 @@ export const NFL_TEAMS: NFLTeam[] = [
     "stadium": "Allegiant Stadium",
     "record": {
       "wins": 4,
-      "losses": 5,
+      "losses": 6,
       "ties": 0
     },
     "rankInDivision": "Active in AFC West",
     "nextGame": {
-      "week": 10,
-      "opponent": "Seattle Seahawks",
-      "opponentAbbr": "SEA",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sea.png",
-      "isHome": true,
-      "date": "Sun, Nov 15",
-      "time": "1:05 PM",
+      "week": 11,
+      "opponent": "Denver Broncos",
+      "opponentAbbr": "DEN",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
+      "isHome": false,
+      "date": "Sun, Nov 22",
+      "time": "1:25 PM",
       "network": "CBS",
       "broadcastNetwork": "CBS",
       "spread": "LV Live Line",
-      "stadium": "Allegiant Stadium",
-      "venue": "Allegiant Stadium",
+      "stadium": "Empower Field at Mile High",
+      "venue": "Empower Field at Mile High",
       "countdownHours": 48
     },
     "schedule": [
@@ -30884,10 +30990,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Seattle Seahawks",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/sea.png",
         "isHome": true,
-        "timeOrScore": "1:05 PM",
+        "timeOrScore": "13-21",
         "tvNetwork": "CBS",
         "broadcastNetwork": "CBS",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "L"
       },
       {
         "week": 11,
@@ -30904,13 +31011,13 @@ export const NFL_TEAMS: NFLTeam[] = [
       {
         "week": 12,
         "date": "Nov 29",
-        "time": "10:00 AM",
+        "time": "5:20 PM",
         "opponent": "Cleveland Browns",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/cle.png",
         "isHome": false,
-        "timeOrScore": "10:00 AM",
-        "tvNetwork": "Fox",
-        "broadcastNetwork": "Fox",
+        "timeOrScore": "5:20 PM",
+        "tvNetwork": "NBC",
+        "broadcastNetwork": "NBC",
         "status": "SCHEDULED"
       },
       {
@@ -30976,30 +31083,56 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "lv-inj-4432775",
-        "playerName": "Dont'e Thornton Jr.",
-        "position": "WR",
+        "id": "lv-inj-4432665",
+        "playerName": "Brock Bowers",
+        "position": "TE",
         "teamId": "lv",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Dont'e Thornton Jr. (WR) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Dont'e Thornton Jr. (WR) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Brock Bowers (TE) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Brock Bowers (TE) is listed as Questionable (Undisclosed)."
       },
       {
-        "id": "lv-inj-4360749",
-        "playerName": "Thomas Booker IV",
+        "id": "lv-inj-3045172",
+        "playerName": "Folorunso Fatukasi",
         "position": "DT",
         "teamId": "lv",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 10",
-        "updatedAt": "Nov 10",
-        "details": "Thomas Booker IV (DT) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Thomas Booker IV (DT) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Folorunso Fatukasi (DT) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Folorunso Fatukasi (DT) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "lv-inj-4429109",
+        "playerName": "Tonka Hemingway",
+        "position": "DT",
+        "teamId": "lv",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Tonka Hemingway (DT) is listed as Out (Undisclosed).",
+        "practiceStatus": "Tonka Hemingway (DT) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "lv-inj-4249087",
+        "playerName": "Matt Gay",
+        "position": "PK",
+        "teamId": "lv",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Matt Gay (PK) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Matt Gay (PK) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "lv-inj-4360475",
@@ -31090,7 +31223,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Indiana",
         "experience": "Rookie",
-        "statsHighlight": "6/8, 48 YDS"
+        "statsHighlight": "7 CAR, 25 YDS, 1 TD"
       },
       {
         "id": "p-lv-4260394",
@@ -31114,7 +31247,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Boise State",
         "experience": "2 yrs exp",
-        "statsHighlight": "114 CAR, 362 YDS, 1 TD"
+        "statsHighlight": "46 REC, 417 YDS, 3 TD"
       },
       {
         "id": "p-lv-4603186",
@@ -31138,7 +31271,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Cincinnati",
         "experience": "4 yrs exp",
-        "statsHighlight": "33 REC, 529 YDS, 4 TD"
+        "statsHighlight": "34 REC, 538 YDS, 4 TD"
       },
       {
         "id": "p-lv-4432665",
@@ -31147,10 +31280,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 89,
         "teamId": "lv",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4432665.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Georgia",
         "experience": "3 yrs exp",
-        "statsHighlight": "48 REC, 658 YDS, 6 TD"
+        "statsHighlight": "50 REC, 676 YDS, 6 TD"
       },
       {
         "id": "p-lv-3916655",
@@ -31207,7 +31340,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 94,
         "teamId": "lv",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3045172.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "UConn",
         "experience": "8 yrs exp",
         "statsHighlight": "Starter • DT #94 • UConn • 8 yrs exp"
@@ -31219,7 +31352,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 97,
         "teamId": "lv",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429109.png",
-        "status": "Active",
+        "status": "Out",
         "college": "South Carolina",
         "experience": "2 yrs exp",
         "statsHighlight": "Starter • DT #97 • South Carolina • 2 yrs exp"
@@ -31261,16 +31394,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • CB #3 • Weber State • 9 yrs exp"
       },
       {
-        "id": "p-lv-4430330",
-        "name": "Darien Porter",
+        "id": "p-lv-4917354",
+        "name": "Hezekiah Masses",
         "position": "CB",
-        "number": 26,
+        "number": 35,
         "teamId": "lv",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430330.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4917354.png",
         "status": "Active",
-        "college": "Iowa State",
-        "experience": "2 yrs exp",
-        "statsHighlight": "Starter • CB #26 • Iowa State • 2 yrs exp"
+        "college": "California",
+        "experience": "Rookie",
+        "statsHighlight": "Starter • CB #35 • California • Rookie"
       },
       {
         "id": "p-lv-4259561",
@@ -31375,7 +31508,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 14,
         "teamId": "lv",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4249087.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Utah",
         "experience": "7 yrs exp",
         "statsHighlight": "Starter • PK #14 • Utah • 7 yrs exp"
@@ -31426,7 +31559,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Arkansas",
         "experience": "Rookie",
-        "statsHighlight": "71 CAR, 275 YDS, 1 TD"
+        "statsHighlight": "79 CAR, 298 YDS, 1 TD"
       },
       {
         "id": "p-lv-4366963",
@@ -31438,7 +31571,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "New Hampshire",
         "experience": "3 yrs exp",
-        "statsHighlight": "5 CAR, 9 YDS, 1 TD"
+        "statsHighlight": "RB #23 • New Hampshire • 3 yrs exp"
       },
       {
         "id": "p-lv-4688835",
@@ -31453,28 +31586,28 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "RB #37 • Indiana • Rookie"
       },
       {
-        "id": "p-lv-5150247",
-        "name": "Malik Benson",
-        "position": "WR",
-        "number": 19,
-        "teamId": "lv",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5150247.png",
-        "status": "Active",
-        "college": "Oregon",
-        "experience": "Rookie",
-        "statsHighlight": "WR #19 • Oregon • Rookie"
-      },
-      {
         "id": "p-lv-4432775",
         "name": "Dont'e Thornton Jr.",
         "position": "WR",
         "number": 10,
         "teamId": "lv",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4432775.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Tennessee",
         "experience": "2 yrs exp",
         "statsHighlight": "WR #10 • Tennessee • 2 yrs exp"
+      },
+      {
+        "id": "p-lv-4241983",
+        "name": "Cody White",
+        "position": "WR",
+        "number": 82,
+        "teamId": "lv",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4241983.png",
+        "status": "Active",
+        "college": "Michigan State",
+        "experience": "6 yrs exp",
+        "statsHighlight": "WR #82 • Michigan State • 6 yrs exp"
       },
       {
         "id": "p-lv-4401805",
@@ -31489,16 +31622,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "WR #81 • Lenoir Rhyne • 5 yrs exp"
       },
       {
-        "id": "p-lv-4241983",
-        "name": "Cody White",
+        "id": "p-lv-5150247",
+        "name": "Malik Benson",
         "position": "WR",
-        "number": 82,
+        "number": 19,
         "teamId": "lv",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4241983.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5150247.png",
         "status": "Active",
-        "college": "Michigan State",
-        "experience": "6 yrs exp",
-        "statsHighlight": "WR #82 • Michigan State • 6 yrs exp"
+        "college": "Oregon",
+        "experience": "Rookie",
+        "statsHighlight": "WR #19 • Oregon • Rookie"
       },
       {
         "id": "p-lv-4374187",
@@ -31522,7 +31655,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Notre Dame",
         "experience": "4 yrs exp",
-        "statsHighlight": "39 REC, 388 YDS, 1 TD"
+        "statsHighlight": "TE #87 • Notre Dame • 4 yrs exp"
       },
       {
         "id": "p-lv-4045305",
@@ -31547,6 +31680,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Temple",
         "experience": "5 yrs exp",
         "statsHighlight": "TE #41 • Temple • 5 yrs exp"
+      },
+      {
+        "id": "p-lv-5155825",
+        "name": "Carter Runyon",
+        "position": "TE",
+        "number": 84,
+        "teamId": "lv",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5155825.png",
+        "status": "Active",
+        "college": "Towson",
+        "experience": "2 yrs exp",
+        "statsHighlight": "TE #84 • Towson • 2 yrs exp"
       },
       {
         "id": "p-lv-4239719",
@@ -31591,7 +31736,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 99,
         "teamId": "lv",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360749.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Stanford",
         "experience": "4 yrs exp",
         "statsHighlight": "DT #99 • Stanford • 4 yrs exp"
@@ -31669,18 +31814,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #54 • Washington State • 3 yrs exp"
       },
       {
-        "id": "p-lv-4917354",
-        "name": "Hezekiah Masses",
-        "position": "CB",
-        "number": 35,
-        "teamId": "lv",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4917354.png",
-        "status": "Active",
-        "college": "California",
-        "experience": "Rookie",
-        "statsHighlight": "CB #35 • California • Rookie"
-      },
-      {
         "id": "p-lv-5157289",
         "name": "Jermod McCoy",
         "position": "CB",
@@ -31691,6 +31824,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Tennessee",
         "experience": "Rookie",
         "statsHighlight": "CB #28 • Tennessee • Rookie"
+      },
+      {
+        "id": "p-lv-4430330",
+        "name": "Darien Porter",
+        "position": "CB",
+        "number": 26,
+        "teamId": "lv",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430330.png",
+        "status": "Active",
+        "college": "Iowa State",
+        "experience": "2 yrs exp",
+        "statsHighlight": "CB #26 • Iowa State • 2 yrs exp"
       },
       {
         "id": "p-lv-4685978",
@@ -31827,24 +31972,24 @@ export const NFL_TEAMS: NFLTeam[] = [
     "logoUrl": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
     "stadium": "EverBank Stadium",
     "record": {
-      "wins": 6,
+      "wins": 7,
       "losses": 2,
       "ties": 0
     },
     "rankInDivision": "Active in AFC South",
     "nextGame": {
-      "week": 10,
-      "opponent": "Tennessee Titans",
-      "opponentAbbr": "TEN",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
+      "week": 11,
+      "opponent": "New York Giants",
+      "opponentAbbr": "NYG",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
       "isHome": false,
-      "date": "Sun, Nov 15",
-      "time": "10:00 AM",
-      "network": "Fox",
-      "broadcastNetwork": "Fox",
+      "date": "Sun, Nov 22",
+      "time": "1:25 PM",
+      "network": "CBS",
+      "broadcastNetwork": "CBS",
       "spread": "JAX Live Line",
-      "stadium": "Nissan Stadium",
-      "venue": "Nissan Stadium",
+      "stadium": "MetLife Stadium",
+      "venue": "MetLife Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -31959,10 +32104,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Tennessee Titans",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
         "isHome": false,
-        "timeOrScore": "10:00 AM",
+        "timeOrScore": "40-23",
         "tvNetwork": "Fox",
         "broadcastNetwork": "Fox",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "W"
       },
       {
         "week": 11,
@@ -31979,13 +32125,13 @@ export const NFL_TEAMS: NFLTeam[] = [
       {
         "week": 12,
         "date": "Nov 29",
-        "time": "1:05 PM",
+        "time": "10:00 AM",
         "opponent": "Tennessee Titans",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
         "isHome": true,
-        "timeOrScore": "1:05 PM",
-        "tvNetwork": "CBS",
-        "broadcastNetwork": "CBS",
+        "timeOrScore": "10:00 AM",
+        "tvNetwork": "Fox",
+        "broadcastNetwork": "Fox",
         "status": "SCHEDULED"
       },
       {
@@ -32069,37 +32215,37 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "jax",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Robert Hainsey (C) is listed as Out (Undisclosed).",
+        "practiceStatus": "Robert Hainsey (C) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "jax-inj-3134316",
+        "playerName": "Matt Dickerson",
+        "position": "DE",
+        "teamId": "jax",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "Robert Hainsey (C) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Robert Hainsey (C) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Matt Dickerson (DE) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Matt Dickerson (DE) is listed as Questionable (Undisclosed)."
       },
       {
-        "id": "jax-inj-3919512",
-        "playerName": "Jessie Bates III",
-        "position": "S",
+        "id": "jax-inj-4573319",
+        "playerName": "Danny Striggow",
+        "position": "DE",
         "teamId": "jax",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Jessie Bates III (S) is listed as Out (Undisclosed).",
-        "practiceStatus": "Jessie Bates III (S) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "jax-inj-4877475",
-        "playerName": "Cam'Ron Silmon-Craig",
-        "position": "S",
-        "teamId": "jax",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 5",
-        "updatedAt": "Nov 5",
-        "details": "Cam'Ron Silmon-Craig (S) is listed as Out (Undisclosed).",
-        "practiceStatus": "Cam'Ron Silmon-Craig (S) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Danny Striggow (DE) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Danny Striggow (DE) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "jax-inj-4426646",
@@ -32148,8 +32294,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
+        "lastUpdated": "Nov 13",
+        "updatedAt": "Nov 13",
         "details": "B.J. Green II (DE) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "B.J. Green II (DE) is listed as Injured Reserve (Undisclosed)."
       },
@@ -32281,7 +32427,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Clemson",
         "experience": "6 yrs exp",
-        "statsHighlight": "146/224, 1932 YDS, 18 TD, 4 INT"
+        "statsHighlight": "25 CAR, 106 YDS"
       },
       {
         "id": "p-jax-4882093",
@@ -32293,7 +32439,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Virginia Tech",
         "experience": "2 yrs exp",
-        "statsHighlight": "122 CAR, 521 YDS, 4 TD"
+        "statsHighlight": "148 CAR, 609 YDS, 5 TD"
       },
       {
         "id": "p-jax-4685415",
@@ -32317,7 +32463,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "NC State",
         "experience": "8 yrs exp",
-        "statsHighlight": "26 REC, 374 YDS, 2 TD"
+        "statsHighlight": "29 REC, 408 YDS, 2 TD"
       },
       {
         "id": "p-jax-4432773",
@@ -32341,7 +32487,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Penn State",
         "experience": "4 yrs exp",
-        "statsHighlight": "30 REC, 356 YDS, 1 TD"
+        "statsHighlight": "32 REC, 365 YDS, 2 TD"
       },
       {
         "id": "p-jax-3915239",
@@ -32374,7 +32520,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 30,
         "teamId": "jax",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3919512.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Wake Forest",
         "experience": "9 yrs exp",
         "statsHighlight": "Starter • S #30 • Wake Forest • 9 yrs exp"
@@ -32389,7 +32535,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Penn State",
         "experience": "4 yrs exp",
-        "statsHighlight": "29 REC, 493 YDS, 5 TD"
+        "statsHighlight": "36 REC, 645 YDS, 6 TD"
       },
       {
         "id": "p-jax-2971275",
@@ -32402,6 +32548,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Oregon",
         "experience": "12 yrs exp",
         "statsHighlight": "Starter • DT #91 • Oregon • 12 yrs exp"
+      },
+      {
+        "id": "p-jax-4381558",
+        "name": "Jordan Davis",
+        "position": "DT",
+        "number": 90,
+        "teamId": "jax",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4381558.png",
+        "status": "Active",
+        "college": "Georgia",
+        "experience": "5 yrs exp",
+        "statsHighlight": "Starter • DT #90 • Georgia • 5 yrs exp"
       },
       {
         "id": "p-jax-4334300",
@@ -32452,16 +32610,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • CB #1 • Arkansas • 5 yrs exp"
       },
       {
-        "id": "p-jax-3045207",
-        "name": "Jourdan Lewis",
+        "id": "p-jax-4426448",
+        "name": "Jarrian Jones",
         "position": "CB",
-        "number": 2,
+        "number": 4,
         "teamId": "jax",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3045207.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4426448.png",
         "status": "Active",
-        "college": "Michigan",
-        "experience": "10 yrs exp",
-        "statsHighlight": "Starter • CB #2 • Michigan • 10 yrs exp"
+        "college": "Florida State",
+        "experience": "3 yrs exp",
+        "statsHighlight": "Starter • CB #4 • Florida State • 3 yrs exp"
       },
       {
         "id": "p-jax-4429168",
@@ -32524,16 +32682,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • G #75 • Oregon • Rookie"
       },
       {
-        "id": "p-jax-4242391",
-        "name": "Robert Hainsey",
+        "id": "p-jax-4430481",
+        "name": "Jonah Monheim",
         "position": "C",
-        "number": 73,
+        "number": 60,
         "teamId": "jax",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242391.png",
-        "status": "Questionable",
-        "college": "Notre Dame",
-        "experience": "6 yrs exp",
-        "statsHighlight": "Starter • C #73 • Notre Dame • 6 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430481.png",
+        "status": "Active",
+        "college": "USC",
+        "experience": "2 yrs exp",
+        "statsHighlight": "Starter • C #60 • USC • 2 yrs exp"
       },
       {
         "id": "p-jax-4686361",
@@ -32605,7 +32763,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Kentucky",
         "experience": "4 yrs exp",
-        "statsHighlight": "55 CAR, 228 YDS, 4 TD"
+        "statsHighlight": "59 CAR, 233 YDS, 4 TD"
       },
       {
         "id": "p-jax-2576336",
@@ -32617,7 +32775,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Nebraska",
         "experience": "12 yrs exp",
-        "statsHighlight": "23 CAR, 88 YDS"
+        "statsHighlight": "RB #20 • Nebraska • 12 yrs exp"
       },
       {
         "id": "p-jax-4911851",
@@ -32698,7 +32856,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 92,
         "teamId": "jax",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4573319.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Minnesota",
         "experience": "2 yrs exp",
         "statsHighlight": "DE #92 • Minnesota • 2 yrs exp"
@@ -32722,7 +32880,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 93,
         "teamId": "jax",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3134316.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "UCLA",
         "experience": "6 yrs exp",
         "statsHighlight": "DE #93 • UCLA • 6 yrs exp"
@@ -32812,18 +32970,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DT #52 • Ohio State • 7 yrs exp"
       },
       {
-        "id": "p-jax-4381558",
-        "name": "Jordan Davis",
-        "position": "DT",
-        "number": 90,
-        "teamId": "jax",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4381558.png",
-        "status": "Active",
-        "college": "Georgia",
-        "experience": "5 yrs exp",
-        "statsHighlight": "DT #90 • Georgia • 5 yrs exp"
-      },
-      {
         "id": "p-jax-4572704",
         "name": "Branson Combs",
         "position": "LB",
@@ -32884,16 +33030,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #53 • Middle Tennessee • Rookie"
       },
       {
-        "id": "p-jax-4426448",
-        "name": "Jarrian Jones",
+        "id": "p-jax-3045207",
+        "name": "Jourdan Lewis",
         "position": "CB",
-        "number": 4,
+        "number": 2,
         "teamId": "jax",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4426448.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3045207.png",
         "status": "Active",
-        "college": "Florida State",
-        "experience": "3 yrs exp",
-        "statsHighlight": "CB #4 • Florida State • 3 yrs exp"
+        "college": "Michigan",
+        "experience": "10 yrs exp",
+        "statsHighlight": "CB #2 • Michigan • 10 yrs exp"
       },
       {
         "id": "p-jax-4047655",
@@ -32986,7 +33132,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 42,
         "teamId": "jax",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4877475.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Colorado",
         "experience": "1 yr exp",
         "statsHighlight": "S #42 • Colorado • 1 yr exp"
@@ -33064,16 +33210,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "G #65 • California • 8 yrs exp"
       },
       {
-        "id": "p-jax-4430481",
-        "name": "Jonah Monheim",
+        "id": "p-jax-4242391",
+        "name": "Robert Hainsey",
         "position": "C",
-        "number": 60,
+        "number": 73,
         "teamId": "jax",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430481.png",
-        "status": "Active",
-        "college": "USC",
-        "experience": "2 yrs exp",
-        "statsHighlight": "C #60 • USC • 2 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242391.png",
+        "status": "Out",
+        "college": "Notre Dame",
+        "experience": "6 yrs exp",
+        "statsHighlight": "C #73 • Notre Dame • 6 yrs exp"
       },
       {
         "id": "p-jax-3129307",
@@ -33102,21 +33248,21 @@ export const NFL_TEAMS: NFLTeam[] = [
     "logoUrl": "https://a.espncdn.com/i/teamlogos/nfl/500/cle.png",
     "stadium": "Huntington Bank Field",
     "record": {
-      "wins": 5,
+      "wins": 6,
       "losses": 4,
       "ties": 0
     },
     "rankInDivision": "Active in AFC North",
     "nextGame": {
-      "week": 10,
-      "opponent": "Houston Texans",
-      "opponentAbbr": "HOU",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
+      "week": 12,
+      "opponent": "Las Vegas Raiders",
+      "opponentAbbr": "LV",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
       "isHome": true,
-      "date": "Sun, Nov 15",
-      "time": "10:00 AM",
-      "network": "Fox",
-      "broadcastNetwork": "Fox",
+      "date": "Sun, Nov 29",
+      "time": "5:20 PM",
+      "network": "NBC",
+      "broadcastNetwork": "NBC",
       "spread": "CLE Live Line",
       "stadium": "Huntington Bank Field",
       "venue": "Huntington Bank Field",
@@ -33247,21 +33393,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Houston Texans",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
         "isHome": true,
-        "timeOrScore": "10:00 AM",
+        "timeOrScore": "27-24",
         "tvNetwork": "Fox",
         "broadcastNetwork": "Fox",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "W"
       },
       {
         "week": 12,
         "date": "Nov 29",
-        "time": "10:00 AM",
+        "time": "5:20 PM",
         "opponent": "Las Vegas Raiders",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
         "isHome": true,
-        "timeOrScore": "10:00 AM",
-        "tvNetwork": "Fox",
-        "broadcastNetwork": "Fox",
+        "timeOrScore": "5:20 PM",
+        "tvNetwork": "NBC",
+        "broadcastNetwork": "NBC",
         "status": "SCHEDULED"
       },
       {
@@ -33339,17 +33486,17 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "cle-inj-4832800",
-        "playerName": "Denzel Boston",
-        "position": "WR",
+        "id": "cle-inj-4569620",
+        "playerName": "Ronnie Hickman",
+        "position": "S",
         "teamId": "cle",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Denzel Boston (WR) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Denzel Boston (WR) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
+        "details": "Ronnie Hickman (S) is listed as Out (Undisclosed).",
+        "practiceStatus": "Ronnie Hickman (S) is listed as Out (Undisclosed)."
       },
       {
         "id": "cle-inj-2515270",
@@ -33358,37 +33505,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "cle",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Michael Burton (FB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Michael Burton (FB) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "cle-inj-4569620",
-        "playerName": "Ronnie Hickman",
-        "position": "S",
-        "teamId": "cle",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Ronnie Hickman (S) is listed as Out (Undisclosed).",
-        "practiceStatus": "Ronnie Hickman (S) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "cle-inj-4429392",
-        "playerName": "Elijah Chatman",
-        "position": "DT",
-        "teamId": "cle",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Aug 31",
-        "updatedAt": "Aug 31",
-        "details": "Elijah Chatman (DT) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Elijah Chatman (DT) is listed as Injured Reserve (Undisclosed)."
+        "lastUpdated": "Nov 14",
+        "updatedAt": "Nov 14",
+        "details": "Michael Burton (FB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Michael Burton (FB) is listed as Injured Reserve (Undisclosed)."
       },
       {
         "id": "cle-inj-4243541",
@@ -33530,7 +33651,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Clemson",
         "experience": "10 yrs exp",
-        "statsHighlight": "51 CAR, 217 YDS, 1 TD"
+        "statsHighlight": "59 CAR, 266 YDS, 2 TD"
       },
       {
         "id": "p-cle-4685702",
@@ -33542,7 +33663,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Ohio State",
         "experience": "2 yrs exp",
-        "statsHighlight": "116 CAR, 385 YDS, 3 TD"
+        "statsHighlight": "126 CAR, 423 YDS, 4 TD"
       },
       {
         "id": "p-cle-4241463",
@@ -33566,7 +33687,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Bowling Green",
         "experience": "2 yrs exp",
-        "statsHighlight": "37 REC, 453 YDS, 4 TD"
+        "statsHighlight": "44 REC, 544 YDS, 4 TD"
       },
       {
         "id": "p-cle-4578085",
@@ -33599,10 +33720,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 12,
         "teamId": "cle",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4832800.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Washington",
         "experience": "Rookie",
-        "statsHighlight": "32 REC, 507 YDS, 3 TD"
+        "statsHighlight": "33 REC, 523 YDS, 3 TD"
       },
       {
         "id": "p-cle-4870653",
@@ -33614,7 +33735,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Texas A&M",
         "experience": "Rookie",
-        "statsHighlight": "37 REC, 437 YDS, 1 TD"
+        "statsHighlight": "40 REC, 458 YDS, 1 TD"
       },
       {
         "id": "p-cle-4427963",
@@ -33839,7 +33960,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 34,
         "teamId": "cle",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2515270.png",
-        "status": "Out",
+        "status": "IR",
         "college": "Rutgers",
         "experience": "11 yrs exp",
         "statsHighlight": "Starter • FB #34 • Rutgers • 11 yrs exp"
@@ -33878,7 +33999,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Tennessee",
         "experience": "2 yrs exp",
-        "statsHighlight": "15 CAR, 73 YDS"
+        "statsHighlight": "19 CAR, 79 YDS"
       },
       {
         "id": "p-cle-4722893",
@@ -33965,16 +34086,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "TE #18 • Cincinnati • Rookie"
       },
       {
-        "id": "p-cle-4685540",
-        "name": "Carsen Ryan",
+        "id": "p-cle-4876006",
+        "name": "Zaire Mitchell-Paden",
         "position": "TE",
-        "number": 48,
+        "number": 80,
         "teamId": "cle",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4685540.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4876006.png",
         "status": "Active",
-        "college": "BYU",
-        "experience": "Rookie",
-        "statsHighlight": "TE #48 • BYU • Rookie"
+        "college": "Florida Atlantic",
+        "experience": "2 yrs exp",
+        "statsHighlight": "TE #80 • Florida Atlantic • 2 yrs exp"
       },
       {
         "id": "p-cle-3115336",
@@ -33999,6 +34120,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Tulane",
         "experience": "2 yrs exp",
         "statsHighlight": "DE #98 • Tulane • 2 yrs exp"
+      },
+      {
+        "id": "p-cle-4372463",
+        "name": "Jamree Kromah",
+        "position": "DE",
+        "number": 0,
+        "teamId": "cle",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4372463.png",
+        "status": "Active",
+        "college": "James Madison",
+        "experience": "1 yr exp",
+        "statsHighlight": "DE #0 • James Madison • 1 yr exp"
       },
       {
         "id": "p-cle-4570119",
@@ -34047,18 +34180,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "UCF",
         "experience": "5 yrs exp",
         "statsHighlight": "DT #93 • UCF • 5 yrs exp"
-      },
-      {
-        "id": "p-cle-4429392",
-        "name": "Elijah Chatman",
-        "position": "DT",
-        "number": 62,
-        "teamId": "cle",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429392.png",
-        "status": "IR",
-        "college": "SMU",
-        "experience": "2 yrs exp",
-        "statsHighlight": "DT #62 • SMU • 2 yrs exp"
       },
       {
         "id": "p-cle-5150249",
@@ -34292,23 +34413,23 @@ export const NFL_TEAMS: NFLTeam[] = [
     "stadium": "Nissan Stadium",
     "record": {
       "wins": 1,
-      "losses": 7,
+      "losses": 8,
       "ties": 0
     },
     "rankInDivision": "Active in AFC South",
     "nextGame": {
-      "week": 10,
-      "opponent": "Jacksonville Jaguars",
-      "opponentAbbr": "JAX",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
-      "isHome": true,
-      "date": "Sun, Nov 15",
+      "week": 11,
+      "opponent": "Dallas Cowboys",
+      "opponentAbbr": "DAL",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
+      "isHome": false,
+      "date": "Sun, Nov 22",
       "time": "10:00 AM",
       "network": "Fox",
       "broadcastNetwork": "Fox",
       "spread": "TEN Live Line",
-      "stadium": "Nissan Stadium",
-      "venue": "Nissan Stadium",
+      "stadium": "AT&T Stadium",
+      "venue": "AT&T Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -34423,10 +34544,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Jacksonville Jaguars",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
         "isHome": true,
-        "timeOrScore": "10:00 AM",
+        "timeOrScore": "23-40",
         "tvNetwork": "Fox",
         "broadcastNetwork": "Fox",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "L"
       },
       {
         "week": 11,
@@ -34443,13 +34565,13 @@ export const NFL_TEAMS: NFLTeam[] = [
       {
         "week": 12,
         "date": "Nov 29",
-        "time": "1:05 PM",
+        "time": "10:00 AM",
         "opponent": "Jacksonville Jaguars",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
         "isHome": false,
-        "timeOrScore": "1:05 PM",
-        "tvNetwork": "CBS",
-        "broadcastNetwork": "CBS",
+        "timeOrScore": "10:00 AM",
+        "tvNetwork": "Fox",
+        "broadcastNetwork": "Fox",
         "status": "SCHEDULED"
       },
       {
@@ -34527,19 +34649,6 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "ten-inj-4429100",
-        "playerName": "Peter Skoronski",
-        "position": "G",
-        "teamId": "ten",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Peter Skoronski (G) is listed as Out (Undisclosed).",
-        "practiceStatus": "Peter Skoronski (G) is listed as Out (Undisclosed)."
-      },
-      {
         "id": "ten-inj-4428557",
         "playerName": "Tyjae Spears",
         "position": "RB",
@@ -34547,8 +34656,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Tyjae Spears (RB) is listed as Questionable (Undisclosed).",
         "practiceStatus": "Tyjae Spears (RB) is listed as Questionable (Undisclosed)."
       },
@@ -34559,24 +34668,24 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "ten",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Carnell Tate (WR) is listed as Out (Undisclosed).",
-        "practiceStatus": "Carnell Tate (WR) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Carnell Tate (WR) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Carnell Tate (WR) is listed as Questionable (Undisclosed)."
       },
       {
-        "id": "ten-inj-3926229",
-        "playerName": "Cody Barton",
-        "position": "LB",
+        "id": "ten-inj-4240532",
+        "playerName": "Tony Adams",
+        "position": "S",
         "teamId": "ten",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Cody Barton (LB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Cody Barton (LB) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Tony Adams (S) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Tony Adams (S) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "ten-inj-4870805",
@@ -34585,24 +34694,24 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "ten",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Anthony Hill Jr. (LB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Anthony Hill Jr. (LB) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Anthony Hill Jr. (LB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Anthony Hill Jr. (LB) is listed as Questionable (Undisclosed)."
       },
       {
-        "id": "ten-inj-3915398",
-        "playerName": "Tommy Townsend",
-        "position": "P",
+        "id": "ten-inj-4695280",
+        "playerName": "Micah Robinson",
+        "position": "CB",
         "teamId": "ten",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Tommy Townsend (P) is listed as Out (Undisclosed).",
-        "practiceStatus": "Tommy Townsend (P) is listed as Out (Undisclosed)."
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Micah Robinson (CB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Micah Robinson (CB) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "ten-inj-4585317",
@@ -34625,8 +34734,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Sep 29",
-        "updatedAt": "Sep 29",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
         "details": "Fernando Carmona (G) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Fernando Carmona (G) is listed as Injured Reserve (Undisclosed)."
       },
@@ -34683,6 +34792,32 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Tanoh Kpassagnon (DE) is listed as Injured Reserve (Undisclosed)."
       },
       {
+        "id": "ten-inj-4569587",
+        "playerName": "Wan'Dale Robinson",
+        "position": "WR",
+        "teamId": "ten",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
+        "details": "Wan'Dale Robinson (WR) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Wan'Dale Robinson (WR) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "ten-inj-4429100",
+        "playerName": "Peter Skoronski",
+        "position": "G",
+        "teamId": "ten",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Nov 14",
+        "updatedAt": "Nov 14",
+        "details": "Peter Skoronski (G) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Peter Skoronski (G) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
         "id": "ten-inj-4876319",
         "playerName": "Jackson Slater",
         "position": "G",
@@ -34696,17 +34831,17 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Jackson Slater (G) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "ten-inj-4431613",
-        "playerName": "James Williams Sr.",
-        "position": "LB",
+        "id": "ten-inj-3915398",
+        "playerName": "Tommy Townsend",
+        "position": "P",
         "teamId": "ten",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 9",
-        "updatedAt": "Nov 9",
-        "details": "James Williams Sr. (LB) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "James Williams Sr. (LB) is listed as Injured Reserve (Undisclosed)."
+        "lastUpdated": "Nov 14",
+        "updatedAt": "Nov 14",
+        "details": "Tommy Townsend (P) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Tommy Townsend (P) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -34732,7 +34867,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Miami",
         "experience": "2 yrs exp",
-        "statsHighlight": "26 CAR, 112 YDS, 2 TD"
+        "statsHighlight": "29 CAR, 151 YDS, 2 TD"
       },
       {
         "id": "p-ten-3916148",
@@ -34744,7 +34879,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Memphis",
         "experience": "8 yrs exp",
-        "statsHighlight": "133 CAR, 595 YDS, 6 TD"
+        "statsHighlight": "142 CAR, 628 YDS, 6 TD"
       },
       {
         "id": "p-ten-4428557",
@@ -34756,7 +34891,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Questionable",
         "college": "Tulane",
         "experience": "4 yrs exp",
-        "statsHighlight": "18 CAR, 66 YDS"
+        "statsHighlight": "22 CAR, 94 YDS"
       },
       {
         "id": "p-ten-3925357",
@@ -34771,28 +34906,40 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • WR #0 • Alabama • 8 yrs exp"
       },
       {
-        "id": "p-ten-4569587",
-        "name": "Wan'Dale Robinson",
-        "position": "WR",
-        "number": 4,
-        "teamId": "ten",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4569587.png",
-        "status": "Active",
-        "college": "Kentucky",
-        "experience": "5 yrs exp",
-        "statsHighlight": "35 REC, 262 YDS, 3 TD"
-      },
-      {
         "id": "p-ten-4871023",
         "name": "Carnell Tate",
         "position": "WR",
         "number": 14,
         "teamId": "ten",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4871023.png",
-        "status": "Out",
+        "status": "Questionable",
         "college": "Ohio State",
         "experience": "Rookie",
         "statsHighlight": "34 REC, 413 YDS, 1 TD"
+      },
+      {
+        "id": "p-ten-4569587",
+        "name": "Wan'Dale Robinson",
+        "position": "WR",
+        "number": 4,
+        "teamId": "ten",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4569587.png",
+        "status": "IR",
+        "college": "Kentucky",
+        "experience": "5 yrs exp",
+        "statsHighlight": "38 REC, 272 YDS, 3 TD"
+      },
+      {
+        "id": "p-ten-4883647",
+        "name": "Elic Ayomanor",
+        "position": "WR",
+        "number": 5,
+        "teamId": "ten",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4883647.png",
+        "status": "Active",
+        "college": "Stanford",
+        "experience": "2 yrs exp",
+        "statsHighlight": "18 REC, 290 YDS, 1 TD"
       },
       {
         "id": "p-ten-4431268",
@@ -34873,7 +35020,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 50,
         "teamId": "ten",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3926229.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Utah",
         "experience": "8 yrs exp",
         "statsHighlight": "Starter • LB #50 • Utah • 8 yrs exp"
@@ -34897,7 +35044,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 53,
         "teamId": "ten",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4870805.png",
-        "status": "Out",
+        "status": "Questionable",
         "college": "Texas",
         "experience": "Rookie",
         "statsHighlight": "Starter • LB #53 • Texas • Rookie"
@@ -34915,16 +35062,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • CB #18 • LSU • 5 yrs exp"
       },
       {
-        "id": "p-ten-4570469",
-        "name": "Marcus Harris",
+        "id": "p-ten-4369835",
+        "name": "Alontae Taylor",
         "position": "CB",
-        "number": 26,
+        "number": 24,
         "teamId": "ten",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4570469.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4369835.png",
         "status": "Active",
-        "college": "California",
-        "experience": "2 yrs exp",
-        "statsHighlight": "Starter • CB #26 • California • 2 yrs exp"
+        "college": "Tennessee",
+        "experience": "5 yrs exp",
+        "statsHighlight": "Starter • CB #24 • Tennessee • 5 yrs exp"
       },
       {
         "id": "p-ten-4917635",
@@ -34945,7 +35092,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 29,
         "teamId": "ten",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4240532.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Illinois",
         "experience": "5 yrs exp",
         "statsHighlight": "Starter • S #29 • Illinois • 5 yrs exp"
@@ -34999,16 +35146,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • G #70 • UCLA • 2 yrs exp"
       },
       {
-        "id": "p-ten-4429100",
-        "name": "Peter Skoronski",
+        "id": "p-ten-4710661",
+        "name": "Chandler Zavala",
         "position": "G",
-        "number": 77,
+        "number": 76,
         "teamId": "ten",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429100.png",
-        "status": "Out",
-        "college": "Northwestern",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4710661.png",
+        "status": "Active",
+        "college": "NC State",
         "experience": "4 yrs exp",
-        "statsHighlight": "Starter • G #77 • Northwestern • 4 yrs exp"
+        "statsHighlight": "Starter • G #76 • NC State • 4 yrs exp"
       },
       {
         "id": "p-ten-4038544",
@@ -35035,16 +35182,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • PK #6 • Virginia Tech • 8 yrs exp"
       },
       {
-        "id": "p-ten-3915398",
-        "name": "Tommy Townsend",
+        "id": "p-ten-12701",
+        "name": "Thomas Morstead",
         "position": "P",
-        "number": 3,
+        "number": 13,
         "teamId": "ten",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3915398.png",
-        "status": "Out",
-        "college": "Florida",
-        "experience": "7 yrs exp",
-        "statsHighlight": "Starter • P #3 • Florida • 7 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/12701.png",
+        "status": "Active",
+        "college": "SMU",
+        "experience": "18 yrs exp",
+        "statsHighlight": "Starter • P #13 • SMU • 18 yrs exp"
       },
       {
         "id": "p-ten-13848",
@@ -35083,18 +35230,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "RB #32 • Penn State • Rookie"
       },
       {
-        "id": "p-ten-4240657",
-        "name": "Michael Carter",
-        "position": "RB",
-        "number": 35,
-        "teamId": "ten",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4240657.png",
-        "status": "Active",
-        "college": "North Carolina",
-        "experience": "5 yrs exp",
-        "statsHighlight": "RB #35 • North Carolina • 5 yrs exp"
-      },
-      {
         "id": "p-ten-4367567",
         "name": "Julius Chestnut",
         "position": "RB",
@@ -35119,16 +35254,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "RB #31 • Michigan • 2 yrs exp"
       },
       {
-        "id": "p-ten-4883647",
-        "name": "Elic Ayomanor",
+        "id": "p-ten-4431353",
+        "name": "Xavier Restrepo",
         "position": "WR",
-        "number": 5,
+        "number": 87,
         "teamId": "ten",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4883647.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4431353.png",
         "status": "Active",
-        "college": "Stanford",
-        "experience": "2 yrs exp",
-        "statsHighlight": "13 REC, 211 YDS, 1 TD"
+        "college": "Miami",
+        "experience": "1 yr exp",
+        "statsHighlight": "WR #87 • Miami • 1 yr exp"
       },
       {
         "id": "p-ten-3916566",
@@ -35203,18 +35338,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DE #15 • Auburn • Rookie"
       },
       {
-        "id": "p-ten-4367828",
-        "name": "Truman Jones",
-        "position": "DE",
-        "number": 56,
-        "teamId": "ten",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4367828.png",
-        "status": "Active",
-        "college": "Harvard",
-        "experience": "2 yrs exp",
-        "statsHighlight": "DE #56 • Harvard • 2 yrs exp"
-      },
-      {
         "id": "p-ten-4876057",
         "name": "Oluwafemi Oladejo",
         "position": "DE",
@@ -35225,6 +35348,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "UCLA",
         "experience": "2 yrs exp",
         "statsHighlight": "DE #7 • UCLA • 2 yrs exp"
+      },
+      {
+        "id": "p-ten-4367828",
+        "name": "Truman Jones",
+        "position": "DE",
+        "number": 56,
+        "teamId": "ten",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4367828.png",
+        "status": "Active",
+        "college": "Harvard",
+        "experience": "2 yrs exp",
+        "statsHighlight": "DE #56 • Harvard • 2 yrs exp"
       },
       {
         "id": "p-ten-2982313",
@@ -35239,16 +35374,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DE #58 • Villanova • 8 yrs exp"
       },
       {
-        "id": "p-ten-4373956",
-        "name": "Jonah Laulu",
+        "id": "p-ten-4045701",
+        "name": "Timmy Horne",
         "position": "DT",
-        "number": 0,
+        "number": 94,
         "teamId": "ten",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4373956.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4045701.png",
         "status": "Active",
-        "college": "Oklahoma",
-        "experience": "3 yrs exp",
-        "statsHighlight": "DT #0 • Oklahoma • 3 yrs exp"
+        "college": "Kansas State",
+        "experience": "4 yrs exp",
+        "statsHighlight": "DT #94 • Kansas State • 4 yrs exp"
       },
       {
         "id": "p-ten-4429142",
@@ -35263,16 +35398,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DT #93 • Georgia • 2 yrs exp"
       },
       {
-        "id": "p-ten-4045701",
-        "name": "Timmy Horne",
+        "id": "p-ten-4373956",
+        "name": "Jonah Laulu",
         "position": "DT",
-        "number": 94,
+        "number": 0,
         "teamId": "ten",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4045701.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4373956.png",
         "status": "Active",
-        "college": "Kansas State",
-        "experience": "4 yrs exp",
-        "statsHighlight": "DT #94 • Kansas State • 4 yrs exp"
+        "college": "Oklahoma",
+        "experience": "3 yrs exp",
+        "statsHighlight": "DT #0 • Oklahoma • 3 yrs exp"
       },
       {
         "id": "p-ten-5081785",
@@ -35311,18 +35446,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #54 • Auburn • 2 yrs exp"
       },
       {
-        "id": "p-ten-4429058",
-        "name": "Jaylen Harrell",
-        "position": "LB",
-        "number": 92,
-        "teamId": "ten",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429058.png",
-        "status": "IR",
-        "college": "Michigan",
-        "experience": "3 yrs exp",
-        "statsHighlight": "LB #92 • Michigan • 3 yrs exp"
-      },
-      {
         "id": "p-ten-4431613",
         "name": "James Williams Sr.",
         "position": "LB",
@@ -35347,28 +35470,40 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "LB #45 • Illinois • 3 yrs exp"
       },
       {
-        "id": "p-ten-4695280",
-        "name": "Micah Robinson",
-        "position": "CB",
-        "number": 21,
+        "id": "p-ten-4429058",
+        "name": "Jaylen Harrell",
+        "position": "LB",
+        "number": 92,
         "teamId": "ten",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4695280.png",
-        "status": "Active",
-        "college": "Tulane",
-        "experience": "2 yrs exp",
-        "statsHighlight": "CB #21 • Tulane • 2 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429058.png",
+        "status": "IR",
+        "college": "Michigan",
+        "experience": "3 yrs exp",
+        "statsHighlight": "LB #92 • Michigan • 3 yrs exp"
       },
       {
-        "id": "p-ten-4369835",
-        "name": "Alontae Taylor",
-        "position": "CB",
-        "number": 24,
+        "id": "p-ten-4361094",
+        "name": "Dominique Hampton",
+        "position": "LB",
+        "number": 40,
         "teamId": "ten",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4369835.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4361094.png",
         "status": "Active",
-        "college": "Tennessee",
-        "experience": "5 yrs exp",
-        "statsHighlight": "CB #24 • Tennessee • 5 yrs exp"
+        "college": "Washington",
+        "experience": "2 yrs exp",
+        "statsHighlight": "LB #40 • Washington • 2 yrs exp"
+      },
+      {
+        "id": "p-ten-4570469",
+        "name": "Marcus Harris",
+        "position": "CB",
+        "number": 26,
+        "teamId": "ten",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4570469.png",
+        "status": "Active",
+        "college": "California",
+        "experience": "2 yrs exp",
+        "statsHighlight": "CB #26 • California • 2 yrs exp"
       },
       {
         "id": "p-ten-4685145",
@@ -35383,6 +35518,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "CB #42 • Texas A&M • 4 yrs exp"
       },
       {
+        "id": "p-ten-4695280",
+        "name": "Micah Robinson",
+        "position": "CB",
+        "number": 21,
+        "teamId": "ten",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4695280.png",
+        "status": "Questionable",
+        "college": "Tulane",
+        "experience": "2 yrs exp",
+        "statsHighlight": "CB #21 • Tulane • 2 yrs exp"
+      },
+      {
         "id": "p-ten-4035663",
         "name": "Terrell Burgess",
         "position": "S",
@@ -35395,18 +35542,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "S #38 • Utah • 6 yrs exp"
       },
       {
-        "id": "p-ten-4585317",
-        "name": "Kendell Brooks",
-        "position": "S",
-        "number": 30,
-        "teamId": "ten",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4585317.png",
-        "status": "IR",
-        "college": "Michigan State",
-        "experience": "2 yrs exp",
-        "statsHighlight": "S #30 • Michigan State • 2 yrs exp"
-      },
-      {
         "id": "p-ten-3915437",
         "name": "Isaiah Oliver",
         "position": "S",
@@ -35417,6 +35552,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Colorado",
         "experience": "8 yrs exp",
         "statsHighlight": "S #28 • Colorado • 8 yrs exp"
+      },
+      {
+        "id": "p-ten-4585317",
+        "name": "Kendell Brooks",
+        "position": "S",
+        "number": 30,
+        "teamId": "ten",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4585317.png",
+        "status": "IR",
+        "college": "Michigan State",
+        "experience": "2 yrs exp",
+        "statsHighlight": "S #30 • Michigan State • 2 yrs exp"
       },
       {
         "id": "p-ten-4426987",
@@ -35479,6 +35626,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "G #64 • Sacramento State • 2 yrs exp"
       },
       {
+        "id": "p-ten-4429100",
+        "name": "Peter Skoronski",
+        "position": "G",
+        "number": 77,
+        "teamId": "ten",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4429100.png",
+        "status": "IR",
+        "college": "Northwestern",
+        "experience": "4 yrs exp",
+        "statsHighlight": "G #77 • Northwestern • 4 yrs exp"
+      },
+      {
         "id": "p-ten-4596542",
         "name": "Pat Coogan",
         "position": "C",
@@ -35489,6 +35648,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Indiana",
         "experience": "Rookie",
         "statsHighlight": "C #79 • Indiana • Rookie"
+      },
+      {
+        "id": "p-ten-3915398",
+        "name": "Tommy Townsend",
+        "position": "P",
+        "number": 3,
+        "teamId": "ten",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3915398.png",
+        "status": "IR",
+        "college": "Florida",
+        "experience": "7 yrs exp",
+        "statsHighlight": "P #3 • Florida • 7 yrs exp"
       }
     ]
   },
@@ -35506,23 +35677,23 @@ export const NFL_TEAMS: NFLTeam[] = [
     "stadium": "Gillette Stadium",
     "record": {
       "wins": 5,
-      "losses": 4,
+      "losses": 5,
       "ties": 0
     },
     "rankInDivision": "Active in AFC East",
     "nextGame": {
-      "week": 10,
-      "opponent": "Detroit Lions",
-      "opponentAbbr": "DET",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+      "week": 12,
+      "opponent": "Los Angeles Chargers",
+      "opponentAbbr": "LAC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
       "isHome": false,
-      "date": "Sun, Nov 15",
-      "time": "6:30 AM",
-      "network": "Fox",
-      "broadcastNetwork": "Fox",
+      "date": "Sun, Nov 29",
+      "time": "1:05 PM",
+      "network": "CBS",
+      "broadcastNetwork": "CBS",
       "spread": "NE Live Line",
-      "stadium": "FC Bayern Munich Stadium",
-      "venue": "FC Bayern Munich Stadium",
+      "stadium": "SoFi Stadium",
+      "venue": "SoFi Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -35650,21 +35821,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "Detroit Lions",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
         "isHome": false,
-        "timeOrScore": "6:30 AM",
+        "timeOrScore": "10-35",
         "tvNetwork": "Fox",
         "broadcastNetwork": "Fox",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "L"
       },
       {
         "week": 12,
         "date": "Nov 29",
-        "time": "5:20 PM",
+        "time": "1:05 PM",
         "opponent": "Los Angeles Chargers",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
         "isHome": false,
-        "timeOrScore": "5:20 PM",
-        "tvNetwork": "NBC",
-        "broadcastNetwork": "NBC",
+        "timeOrScore": "1:05 PM",
+        "tvNetwork": "CBS",
+        "broadcastNetwork": "CBS",
         "status": "SCHEDULED"
       },
       {
@@ -35748,11 +35920,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "ne",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "A.J. Brown (WR) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "A.J. Brown (WR) is listed as Questionable (Undisclosed)."
+        "status": "Doubtful",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "A.J. Brown (WR) is listed as Doubtful (Undisclosed).",
+        "practiceStatus": "A.J. Brown (WR) is listed as Doubtful (Undisclosed)."
       },
       {
         "id": "ne-inj-4362890",
@@ -35762,36 +35934,23 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
         "details": "Ben Brown (C) is listed as Out (Undisclosed).",
         "practiceStatus": "Ben Brown (C) is listed as Out (Undisclosed)."
       },
       {
-        "id": "ne-inj-4432710",
-        "playerName": "TreVeyon Henderson",
-        "position": "RB",
+        "id": "ne-inj-4431452",
+        "playerName": "Drake Maye",
+        "position": "QB",
         "teamId": "ne",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "TreVeyon Henderson (RB) is listed as Out (Undisclosed).",
-        "practiceStatus": "TreVeyon Henderson (RB) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "ne-inj-4372026",
-        "playerName": "Cameron Latu",
-        "position": "TE",
-        "teamId": "ne",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "Cameron Latu (TE) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Cameron Latu (TE) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Drake Maye (QB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Drake Maye (QB) is listed as Out (Undisclosed)."
       },
       {
         "id": "ne-inj-4428394",
@@ -35800,37 +35959,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "ne",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "Walter Rouse (OL) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Walter Rouse (OL) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "ne-inj-4569173",
-        "playerName": "Rhamondre Stevenson",
-        "position": "RB",
-        "teamId": "ne",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Rhamondre Stevenson (RB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Rhamondre Stevenson (RB) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "ne-inj-2574056",
-        "playerName": "Kevin Byard",
-        "position": "S",
-        "teamId": "ne",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Kevin Byard (S) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Kevin Byard (S) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
+        "details": "Walter Rouse (OL) is listed as Out (Undisclosed).",
+        "practiceStatus": "Walter Rouse (OL) is listed as Out (Undisclosed)."
       },
       {
         "id": "ne-inj-3916923",
@@ -35840,10 +35973,23 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
         "details": "Carlton Davis III (CB) is listed as Out (Undisclosed).",
         "practiceStatus": "Carlton Davis III (CB) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "ne-inj-3915525",
+        "playerName": "Dre'Mont Jones",
+        "position": "DE",
+        "teamId": "ne",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 15",
+        "updatedAt": "Nov 15",
+        "details": "Dre'Mont Jones (DE) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Dre'Mont Jones (DE) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "ne-inj-4047941",
@@ -35852,24 +35998,24 @@ export const NFL_TEAMS: NFLTeam[] = [
         "teamId": "ne",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Brenden Schooler (S) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Brenden Schooler (S) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 17",
+        "updatedAt": "Nov 17",
+        "details": "Brenden Schooler (S) is listed as Out (Undisclosed).",
+        "practiceStatus": "Brenden Schooler (S) is listed as Out (Undisclosed)."
       },
       {
-        "id": "ne-inj-4368113",
-        "playerName": "Charles Woods",
-        "position": "CB",
+        "id": "ne-inj-3129446",
+        "playerName": "Robert Spillane",
+        "position": "LB",
         "teamId": "ne",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Charles Woods (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Charles Woods (CB) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 15",
+        "updatedAt": "Nov 15",
+        "details": "Robert Spillane (LB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Robert Spillane (LB) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "ne-inj-4361432",
@@ -35885,17 +36031,17 @@ export const NFL_TEAMS: NFLTeam[] = [
         "practiceStatus": "Romeo Doubs (WR) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "ne-inj-4039505",
-        "playerName": "Reggie Gilliam",
-        "position": "FB",
+        "id": "ne-inj-4432710",
+        "playerName": "TreVeyon Henderson",
+        "position": "RB",
         "teamId": "ne",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 11",
-        "updatedAt": "Nov 11",
-        "details": "Reggie Gilliam (FB) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Reggie Gilliam (FB) is listed as Injured Reserve (Undisclosed)."
+        "lastUpdated": "Nov 14",
+        "updatedAt": "Nov 14",
+        "details": "TreVeyon Henderson (RB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "TreVeyon Henderson (RB) is listed as Injured Reserve (Undisclosed)."
       },
       {
         "id": "ne-inj-4365395",
@@ -35935,6 +36081,32 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Aug 31",
         "details": "Khalil Jacobs (LB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Khalil Jacobs (LB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "ne-inj-3122793",
+        "playerName": "Harold Landry III",
+        "position": "LB",
+        "teamId": "ne",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Out",
+        "lastUpdated": "Aug 31",
+        "updatedAt": "Aug 31",
+        "details": "Harold Landry III (LB) is listed as Out (Undisclosed).",
+        "practiceStatus": "Harold Landry III (LB) is listed as Out (Undisclosed)."
+      },
+      {
+        "id": "ne-inj-4676889",
+        "playerName": "Myles Montgomery",
+        "position": "RB",
+        "teamId": "ne",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Aug 19",
+        "updatedAt": "Aug 19",
+        "details": "Myles Montgomery (RB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Myles Montgomery (RB) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -35957,22 +36129,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 10,
         "teamId": "ne",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4431452.png",
-        "status": "Active",
+        "status": "Out",
         "college": "North Carolina",
         "experience": "3 yrs exp",
-        "statsHighlight": "47 CAR, 219 YDS, 3 TD"
-      },
-      {
-        "id": "p-ne-4432710",
-        "name": "TreVeyon Henderson",
-        "position": "RB",
-        "number": 32,
-        "teamId": "ne",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4432710.png",
-        "status": "Out",
-        "college": "Ohio State",
-        "experience": "2 yrs exp",
-        "statsHighlight": "Starter • RB #32 • Ohio State • 2 yrs exp"
+        "statsHighlight": "48 CAR, 230 YDS, 3 TD"
       },
       {
         "id": "p-ne-4569173",
@@ -35981,10 +36141,22 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 38,
         "teamId": "ne",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4569173.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Oklahoma",
         "experience": "6 yrs exp",
-        "statsHighlight": "102 CAR, 399 YDS, 2 TD"
+        "statsHighlight": "108 CAR, 403 YDS, 2 TD"
+      },
+      {
+        "id": "p-ne-4432710",
+        "name": "TreVeyon Henderson",
+        "position": "RB",
+        "number": 32,
+        "teamId": "ne",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4432710.png",
+        "status": "IR",
+        "college": "Ohio State",
+        "experience": "2 yrs exp",
+        "statsHighlight": "Starter • RB #32 • Ohio State • 2 yrs exp"
       },
       {
         "id": "p-ne-4047646",
@@ -35993,7 +36165,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 1,
         "teamId": "ne",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4047646.png",
-        "status": "Questionable",
+        "status": "Doubtful",
         "college": "Ole Miss",
         "experience": "8 yrs exp",
         "statsHighlight": "Starter • WR #1 • Ole Miss • 8 yrs exp"
@@ -36008,7 +36180,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Liberty",
         "experience": "4 yrs exp",
-        "statsHighlight": "31 REC, 434 YDS, 4 TD"
+        "statsHighlight": "32 REC, 438 YDS, 4 TD"
       },
       {
         "id": "p-ne-4361432",
@@ -36020,7 +36192,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "IR",
         "college": "Nevada",
         "experience": "5 yrs exp",
-        "statsHighlight": "14 REC, 261 YDS, 3 TD"
+        "statsHighlight": "Starter • WR #87 • Nevada • 5 yrs exp"
       },
       {
         "id": "p-ne-3046439",
@@ -36032,7 +36204,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Arkansas",
         "experience": "11 yrs exp",
-        "statsHighlight": "32 REC, 361 YDS, 2 TD"
+        "statsHighlight": "34 REC, 383 YDS, 2 TD"
       },
       {
         "id": "p-ne-4686772",
@@ -36056,7 +36228,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "North Carolina",
         "experience": "10 yrs exp",
-        "statsHighlight": "Starter • WR #13 • North Carolina • 10 yrs exp"
+        "statsHighlight": "23 REC, 293 YDS, 1 TD"
       },
       {
         "id": "p-ne-3915525",
@@ -36065,7 +36237,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 5,
         "teamId": "ne",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3915525.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Ohio State",
         "experience": "8 yrs exp",
         "statsHighlight": "Starter • DE #5 • Ohio State • 8 yrs exp"
@@ -36137,7 +36309,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 14,
         "teamId": "ne",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3129446.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Western Michigan",
         "experience": "8 yrs exp",
         "statsHighlight": "Starter • LB #14 • Western Michigan • 8 yrs exp"
@@ -36173,7 +36345,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 31,
         "teamId": "ne",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2574056.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Middle Tennessee",
         "experience": "11 yrs exp",
         "statsHighlight": "Starter • S #31 • Middle Tennessee • 11 yrs exp"
@@ -36227,16 +36399,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • OT #65 • TCU • 9 yrs exp"
       },
       {
-        "id": "p-ne-4428394",
-        "name": "Walter Rouse",
-        "position": "OL",
-        "number": 72,
+        "id": "p-ne-15718",
+        "name": "Greg Van Roten",
+        "position": "G",
+        "number": 70,
         "teamId": "ne",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4428394.png",
-        "status": "Questionable",
-        "college": "Oklahoma",
-        "experience": "3 yrs exp",
-        "statsHighlight": "Starter • OL #72 • Oklahoma • 3 yrs exp"
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/15718.png",
+        "status": "Active",
+        "college": "Pennsylvania",
+        "experience": "12 yrs exp",
+        "statsHighlight": "Starter • G #70 • Pennsylvania • 12 yrs exp"
       },
       {
         "id": "p-ne-4599198",
@@ -36293,7 +36465,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 44,
         "teamId": "ne",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4039505.png",
-        "status": "IR",
+        "status": "Active",
         "college": "Toledo",
         "experience": "7 yrs exp",
         "statsHighlight": "Starter • FB #44 • Toledo • 7 yrs exp"
@@ -36308,7 +36480,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Illinois",
         "experience": "4 yrs exp",
-        "statsHighlight": "4/8, 51 YDS"
+        "statsHighlight": "16/32, 132 YDS, 1 TD, 1 INT"
       },
       {
         "id": "p-ne-4431465",
@@ -36332,7 +36504,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Cincinnati",
         "experience": "2 yrs exp",
-        "statsHighlight": "50 CAR, 244 YDS, 1 TD"
+        "statsHighlight": "60 CAR, 269 YDS, 1 TD"
       },
       {
         "id": "p-ne-4698253",
@@ -36383,18 +36555,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "WR #18 • Washington State • 2 yrs exp"
       },
       {
-        "id": "p-ne-3115328",
-        "name": "Jalen Hurd",
-        "position": "WR",
-        "number": 13,
-        "teamId": "ne",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3115328.png",
-        "status": "Active",
-        "college": "Baylor",
-        "experience": "4 yrs exp",
-        "statsHighlight": "WR #13 • Baylor • 4 yrs exp"
-      },
-      {
         "id": "p-ne-4831959",
         "name": "Eli Raridon",
         "position": "TE",
@@ -36413,7 +36573,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 36,
         "teamId": "ne",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4372026.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Alabama",
         "experience": "3 yrs exp",
         "statsHighlight": "TE #36 • Alabama • 3 yrs exp"
@@ -36569,7 +36729,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 22,
         "teamId": "ne",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4368113.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "SMU",
         "experience": "3 yrs exp",
         "statsHighlight": "CB #22 • SMU • 3 yrs exp"
@@ -36617,7 +36777,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 41,
         "teamId": "ne",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4047941.png",
-        "status": "Questionable",
+        "status": "Out",
         "college": "Texas",
         "experience": "5 yrs exp",
         "statsHighlight": "S #41 • Texas • 5 yrs exp"
@@ -36635,18 +36795,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "S #24 • Troy • 3 yrs exp"
       },
       {
-        "id": "p-ne-4565293",
-        "name": "Marcus Bryant",
-        "position": "OT",
-        "number": 52,
-        "teamId": "ne",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4565293.png",
-        "status": "Active",
-        "college": "Missouri",
-        "experience": "2 yrs exp",
-        "statsHighlight": "OT #52 • Missouri • 2 yrs exp"
-      },
-      {
         "id": "p-ne-4921438",
         "name": "Caleb Lomu",
         "position": "OT",
@@ -36657,6 +36805,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Utah",
         "experience": "Rookie",
         "statsHighlight": "OT #74 • Utah • Rookie"
+      },
+      {
+        "id": "p-ne-4565293",
+        "name": "Marcus Bryant",
+        "position": "OT",
+        "number": 52,
+        "teamId": "ne",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4565293.png",
+        "status": "Active",
+        "college": "Missouri",
+        "experience": "2 yrs exp",
+        "statsHighlight": "OT #52 • Missouri • 2 yrs exp"
       },
       {
         "id": "p-ne-4431526",
@@ -36683,18 +36843,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "G #71 • Michigan • 7 yrs exp"
       },
       {
-        "id": "p-ne-15718",
-        "name": "Greg Van Roten",
-        "position": "G",
-        "number": 70,
-        "teamId": "ne",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/15718.png",
-        "status": "IR",
-        "college": "Pennsylvania",
-        "experience": "12 yrs exp",
-        "statsHighlight": "G #70 • Pennsylvania • 12 yrs exp"
-      },
-      {
         "id": "p-ne-4259646",
         "name": "Alijah Vera-Tucker",
         "position": "G",
@@ -36707,6 +36855,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "G #75 • USC • 6 yrs exp"
       },
       {
+        "id": "p-ne-4916597",
+        "name": "Andrew Rupcich",
+        "position": "G",
+        "number": 67,
+        "teamId": "ne",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4916597.png",
+        "status": "Active",
+        "college": "Culver Stockton",
+        "experience": "2 yrs exp",
+        "statsHighlight": "G #67 • Culver Stockton • 2 yrs exp"
+      },
+      {
         "id": "p-ne-4362890",
         "name": "Ben Brown",
         "position": "C",
@@ -36717,6 +36877,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Ole Miss",
         "experience": "4 yrs exp",
         "statsHighlight": "C #77 • Ole Miss • 4 yrs exp"
+      },
+      {
+        "id": "p-ne-4428394",
+        "name": "Walter Rouse",
+        "position": "OL",
+        "number": 72,
+        "teamId": "ne",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4428394.png",
+        "status": "Out",
+        "college": "Oklahoma",
+        "experience": "3 yrs exp",
+        "statsHighlight": "OL #72 • Oklahoma • 3 yrs exp"
       }
     ]
   },
@@ -36970,45 +37142,6 @@ export const NFL_TEAMS: NFLTeam[] = [
     ],
     "injuries": [
       {
-        "id": "nyg-inj-5082353",
-        "playerName": "J.C. Davis",
-        "position": "OT",
-        "teamId": "nyg",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "J.C. Davis (OT) is listed as Out (Undisclosed).",
-        "practiceStatus": "J.C. Davis (OT) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "nyg-inj-4590292",
-        "playerName": "Thomas Fidone II",
-        "position": "TE",
-        "teamId": "nyg",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Thomas Fidone II (TE) is listed as Out (Undisclosed).",
-        "practiceStatus": "Thomas Fidone II (TE) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "nyg-inj-4039243",
-        "playerName": "Josh Sills",
-        "position": "G",
-        "teamId": "nyg",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Josh Sills (G) is listed as Out (Undisclosed).",
-        "practiceStatus": "Josh Sills (G) is listed as Out (Undisclosed)."
-      },
-      {
         "id": "nyg-inj-4360516",
         "playerName": "Tyrone Tracy Jr.",
         "position": "RB",
@@ -37016,75 +37149,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Oct 27",
-        "updatedAt": "Oct 27",
+        "lastUpdated": "Nov 18",
+        "updatedAt": "Nov 18",
         "details": "Tyrone Tracy Jr. (RB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Tyrone Tracy Jr. (RB) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "nyg-inj-4040615",
-        "playerName": "Malik Harrison",
-        "position": "LB",
-        "teamId": "nyg",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Malik Harrison (LB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Malik Harrison (LB) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "nyg-inj-5144942",
-        "playerName": "CJ Okoye",
-        "position": "DT",
-        "teamId": "nyg",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "CJ Okoye (DT) is listed as Out (Undisclosed).",
-        "practiceStatus": "CJ Okoye (DT) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "nyg-inj-4240706",
-        "playerName": "Jason Pinnock",
-        "position": "S",
-        "teamId": "nyg",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Jason Pinnock (S) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Jason Pinnock (S) is listed as Questionable (Undisclosed)."
-      },
-      {
-        "id": "nyg-inj-4691043",
-        "playerName": "Nikko Reed",
-        "position": "CB",
-        "teamId": "nyg",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Nikko Reed (CB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Nikko Reed (CB) is listed as Out (Undisclosed)."
-      },
-      {
-        "id": "nyg-inj-4242547",
-        "playerName": "Paulson Adebo",
-        "position": "CB",
-        "teamId": "nyg",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
-        "details": "Paulson Adebo (CB) is listed as Out (Undisclosed).",
-        "practiceStatus": "Paulson Adebo (CB) is listed as Out (Undisclosed)."
       },
       {
         "id": "nyg-inj-4243389",
@@ -37163,6 +37231,97 @@ export const NFL_TEAMS: NFLTeam[] = [
         "updatedAt": "Sep 30",
         "details": "Jaxson Dart (QB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Jaxson Dart (QB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "nyg-inj-5151880",
+        "playerName": "Thaddeus Dixon",
+        "position": "CB",
+        "teamId": "nyg",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "May 14",
+        "updatedAt": "May 14",
+        "details": "Thaddeus Dixon (CB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Thaddeus Dixon (CB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "nyg-inj-3929950",
+        "playerName": "Tremaine Edmunds",
+        "position": "LB",
+        "teamId": "nyg",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Oct 24",
+        "updatedAt": "Oct 24",
+        "details": "Tremaine Edmunds (LB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Tremaine Edmunds (LB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "nyg-inj-4036132",
+        "playerName": "Chauncey Golston",
+        "position": "DE",
+        "teamId": "nyg",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Oct 10",
+        "updatedAt": "Oct 10",
+        "details": "Chauncey Golston (DE) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Chauncey Golston (DE) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "nyg-inj-4429891",
+        "playerName": "DJ James",
+        "position": "CB",
+        "teamId": "nyg",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Sep 1",
+        "updatedAt": "Sep 1",
+        "details": "DJ James (CB) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "DJ James (CB) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "nyg-inj-4424106",
+        "playerName": "Gunner Olszewski",
+        "position": "WR",
+        "teamId": "nyg",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Jun 1",
+        "updatedAt": "Jun 1",
+        "details": "Gunner Olszewski (WR) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Gunner Olszewski (WR) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "nyg-inj-4368350",
+        "playerName": "Rico Payton",
+        "position": "CB",
+        "teamId": "nyg",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Jul 8",
+        "updatedAt": "Jul 8",
+        "details": "Rico Payton (CB) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Rico Payton (CB) is listed as Injured Reserve (Undisclosed)."
+      },
+      {
+        "id": "nyg-inj-2574891",
+        "playerName": "Roy Robertson-Harris",
+        "position": "DT",
+        "teamId": "nyg",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "IR",
+        "lastUpdated": "Sep 8",
+        "updatedAt": "Sep 8",
+        "details": "Roy Robertson-Harris (DT) is listed as Injured Reserve (Undisclosed).",
+        "practiceStatus": "Roy Robertson-Harris (DT) is listed as Injured Reserve (Undisclosed)."
       }
     ],
     "highlights": [
@@ -37587,6 +37746,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "RB #36 • Clemson • 1 yr exp"
       },
       {
+        "id": "p-nyg-4427278",
+        "name": "Xavier Gipson",
+        "position": "WR",
+        "number": 0,
+        "teamId": "nyg",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4427278.png",
+        "status": "Active",
+        "college": "Stephen F. Austin",
+        "experience": "4 yrs exp",
+        "statsHighlight": "WR #0 • Stephen F. Austin • 4 yrs exp"
+      },
+      {
         "id": "p-nyg-4692590",
         "name": "Jalin Hyatt",
         "position": "WR",
@@ -37597,18 +37768,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Tennessee",
         "experience": "4 yrs exp",
         "statsHighlight": "WR #13 • Tennessee • 4 yrs exp"
-      },
-      {
-        "id": "p-nyg-4257188",
-        "name": "Charlie Jones",
-        "position": "WR",
-        "number": 89,
-        "teamId": "nyg",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4257188.png",
-        "status": "Active",
-        "college": "Purdue",
-        "experience": "5 yrs exp",
-        "statsHighlight": "WR #89 • Purdue • 5 yrs exp"
       },
       {
         "id": "p-nyg-4243389",
@@ -37689,7 +37848,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 86,
         "teamId": "nyg",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4590292.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Nebraska",
         "experience": "2 yrs exp",
         "statsHighlight": "TE #86 • Nebraska • 2 yrs exp"
@@ -37725,7 +37884,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 99,
         "teamId": "nyg",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5144942.png",
-        "status": "Out",
+        "status": "Active",
         "college": "NFL",
         "experience": "2 yrs exp",
         "statsHighlight": "DT #99 • NFL • 2 yrs exp"
@@ -37785,7 +37944,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 54,
         "teamId": "nyg",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4040615.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Ohio State",
         "experience": "7 yrs exp",
         "statsHighlight": "LB #54 • Ohio State • 7 yrs exp"
@@ -37833,22 +37992,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 21,
         "teamId": "nyg",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242547.png",
-        "status": "Out",
+        "status": "Questionable",
         "college": "Stanford",
         "experience": "6 yrs exp",
         "statsHighlight": "CB #21 • Stanford • 6 yrs exp"
-      },
-      {
-        "id": "p-nyg-4691043",
-        "name": "Nikko Reed",
-        "position": "CB",
-        "number": 35,
-        "teamId": "nyg",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4691043.png",
-        "status": "Out",
-        "college": "Oregon",
-        "experience": "2 yrs exp",
-        "statsHighlight": "CB #35 • Oregon • 2 yrs exp"
       },
       {
         "id": "p-nyg-4429281",
@@ -37929,7 +38076,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 25,
         "teamId": "nyg",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4240706.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Pittsburgh",
         "experience": "6 yrs exp",
         "statsHighlight": "S #25 • Pittsburgh • 6 yrs exp"
@@ -37945,6 +38092,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Northern Iowa",
         "experience": "6 yrs exp",
         "statsHighlight": "S #28 • Northern Iowa • 6 yrs exp"
+      },
+      {
+        "id": "p-nyg-4334405",
+        "name": "Tavierre Thomas",
+        "position": "S",
+        "number": 0,
+        "teamId": "nyg",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4334405.png",
+        "status": "Active",
+        "college": "Ferris State",
+        "experience": "Active Roster",
+        "statsHighlight": "S #0 • Ferris State • Active Roster"
       },
       {
         "id": "p-nyg-4258237",
@@ -37965,7 +38124,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 74,
         "teamId": "nyg",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5082353.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Illinois",
         "experience": "Rookie",
         "statsHighlight": "OT #74 • Illinois • Rookie"
@@ -38001,7 +38160,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 67,
         "teamId": "nyg",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4039243.png",
-        "status": "Out",
+        "status": "Active",
         "college": "Oklahoma State",
         "experience": "3 yrs exp",
         "statsHighlight": "G #67 • Oklahoma State • 3 yrs exp"
@@ -38033,24 +38192,24 @@ export const NFL_TEAMS: NFLTeam[] = [
     "logoUrl": "https://a.espncdn.com/i/teamlogos/nfl/500/car.png",
     "stadium": "Bank of America Stadium",
     "record": {
-      "wins": 3,
+      "wins": 4,
       "losses": 5,
       "ties": 0
     },
     "rankInDivision": "Active in NFC South",
     "nextGame": {
-      "week": 10,
-      "opponent": "New Orleans Saints",
-      "opponentAbbr": "NO",
-      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/no.png",
-      "isHome": false,
-      "date": "Sun, Nov 15",
+      "week": 11,
+      "opponent": "Baltimore Ravens",
+      "opponentAbbr": "BAL",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
+      "isHome": true,
+      "date": "Sun, Nov 22",
       "time": "10:00 AM",
       "network": "Fox",
       "broadcastNetwork": "Fox",
       "spread": "CAR Live Line",
-      "stadium": "Caesars Superdome",
-      "venue": "Caesars Superdome",
+      "stadium": "Bank of America Stadium",
+      "venue": "Bank of America Stadium",
       "countdownHours": 48
     },
     "schedule": [
@@ -38165,10 +38324,11 @@ export const NFL_TEAMS: NFLTeam[] = [
         "opponent": "New Orleans Saints",
         "opponentLogo": "https://a.espncdn.com/i/teamlogos/nfl/500/no.png",
         "isHome": false,
-        "timeOrScore": "10:00 AM",
+        "timeOrScore": "20-17",
         "tvNetwork": "Fox",
         "broadcastNetwork": "Fox",
-        "status": "SCHEDULED"
+        "status": "FINAL",
+        "result": "W"
       },
       {
         "week": 11,
@@ -38276,23 +38436,36 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 7",
-        "updatedAt": "Nov 7",
+        "lastUpdated": "Nov 14",
+        "updatedAt": "Nov 14",
         "details": "Brady Christensen (G) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Brady Christensen (G) is listed as Injured Reserve (Undisclosed)."
       },
       {
-        "id": "car-inj-5151083",
-        "playerName": "Will Lee III",
-        "position": "CB",
+        "id": "car-inj-4372780",
+        "playerName": "Tommy Tremble",
+        "position": "TE",
         "teamId": "car",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Will Lee III (CB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Will Lee III (CB) is listed as Questionable (Undisclosed)."
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Tommy Tremble (TE) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Tommy Tremble (TE) is listed as Questionable (Undisclosed)."
+      },
+      {
+        "id": "car-inj-2576925",
+        "playerName": "Darren Waller",
+        "position": "TE",
+        "teamId": "car",
+        "injury": "Undisclosed",
+        "injuryType": "Undisclosed",
+        "status": "Questionable",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Darren Waller (TE) is listed as Questionable (Undisclosed).",
+        "practiceStatus": "Darren Waller (TE) is listed as Questionable (Undisclosed)."
       },
       {
         "id": "car-inj-3117253",
@@ -38302,23 +38475,23 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "Out",
-        "lastUpdated": "Nov 12",
-        "updatedAt": "Nov 12",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Bobby Okereke (LB) is listed as Out (Undisclosed).",
         "practiceStatus": "Bobby Okereke (LB) is listed as Out (Undisclosed)."
       },
       {
-        "id": "car-inj-4242975",
-        "playerName": "Jaelan Phillips",
-        "position": "LB",
+        "id": "car-inj-4035462",
+        "playerName": "Isaiah Simmons",
+        "position": "S",
         "teamId": "car",
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
-        "status": "Questionable",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Jaelan Phillips (LB) is listed as Questionable (Undisclosed).",
-        "practiceStatus": "Jaelan Phillips (LB) is listed as Questionable (Undisclosed)."
+        "status": "Out",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
+        "details": "Isaiah Simmons (S) is listed as Out (Undisclosed).",
+        "practiceStatus": "Isaiah Simmons (S) is listed as Out (Undisclosed)."
       },
       {
         "id": "car-inj-5091739",
@@ -38341,8 +38514,8 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Jonathon Brooks (RB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Jonathon Brooks (RB) is listed as Injured Reserve (Undisclosed)."
       },
@@ -38419,23 +38592,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "injury": "Undisclosed",
         "injuryType": "Undisclosed",
         "status": "IR",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
+        "lastUpdated": "Nov 20",
+        "updatedAt": "Nov 20",
         "details": "Mike Jackson (CB) is listed as Injured Reserve (Undisclosed).",
         "practiceStatus": "Mike Jackson (CB) is listed as Injured Reserve (Undisclosed)."
-      },
-      {
-        "id": "car-inj-4430034",
-        "playerName": "Xavier Legette",
-        "position": "WR",
-        "teamId": "car",
-        "injury": "Undisclosed",
-        "injuryType": "Undisclosed",
-        "status": "IR",
-        "lastUpdated": "Nov 13",
-        "updatedAt": "Nov 13",
-        "details": "Xavier Legette (WR) is listed as Injured Reserve (Undisclosed).",
-        "practiceStatus": "Xavier Legette (WR) is listed as Injured Reserve (Undisclosed)."
       },
       {
         "id": "car-inj-2973051",
@@ -38487,7 +38647,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Alabama",
         "experience": "4 yrs exp",
-        "statsHighlight": "11 CAR, 47 YDS, 1 TD"
+        "statsHighlight": "12 CAR, 48 YDS, 1 TD"
       },
       {
         "id": "p-car-4241416",
@@ -38499,7 +38659,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Oklahoma State",
         "experience": "6 yrs exp",
-        "statsHighlight": "134 CAR, 619 YDS, 5 TD"
+        "statsHighlight": "161 CAR, 711 YDS, 7 TD"
       },
       {
         "id": "p-car-4678008",
@@ -38526,6 +38686,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "31 REC, 393 YDS, 3 TD"
       },
       {
+        "id": "p-car-4430034",
+        "name": "Xavier Legette",
+        "position": "WR",
+        "number": 17,
+        "teamId": "car",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430034.png",
+        "status": "Active",
+        "college": "South Carolina",
+        "experience": "3 yrs exp",
+        "statsHighlight": "Starter • WR #17 • South Carolina • 3 yrs exp"
+      },
+      {
         "id": "p-car-4685472",
         "name": "Tetairoa McMillan",
         "position": "WR",
@@ -38535,19 +38707,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "status": "Active",
         "college": "Arizona",
         "experience": "2 yrs exp",
-        "statsHighlight": "46 REC, 625 YDS, 3 TD"
-      },
-      {
-        "id": "p-car-4430034",
-        "name": "Xavier Legette",
-        "position": "WR",
-        "number": 17,
-        "teamId": "car",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4430034.png",
-        "status": "IR",
-        "college": "South Carolina",
-        "experience": "3 yrs exp",
-        "statsHighlight": "Starter • WR #17 • South Carolina • 3 yrs exp"
+        "statsHighlight": "49 REC, 660 YDS, 3 TD"
       },
       {
         "id": "p-car-4431588",
@@ -38604,7 +38764,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 82,
         "teamId": "car",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4372780.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Notre Dame",
         "experience": "6 yrs exp",
         "statsHighlight": "Starter • TE #82 • Notre Dame • 6 yrs exp"
@@ -38676,7 +38836,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 5,
         "teamId": "car",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4242975.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Miami",
         "experience": "6 yrs exp",
         "statsHighlight": "Starter • LB #5 • Miami • 6 yrs exp"
@@ -38688,7 +38848,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 24,
         "teamId": "car",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5151083.png",
-        "status": "Questionable",
+        "status": "Active",
         "college": "Texas A&M",
         "experience": "Rookie",
         "statsHighlight": "Starter • CB #24 • Texas A&M • Rookie"
@@ -38706,16 +38866,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • CB #26 • Washington State • 3 yrs exp"
       },
       {
-        "id": "p-car-5225251",
-        "name": "Malcolm DeWalt IV",
-        "position": "DB",
-        "number": 36,
+        "id": "p-car-4240595",
+        "name": "Marco Wilson",
+        "position": "CB",
+        "number": 35,
         "teamId": "car",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5225251.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4240595.png",
         "status": "Active",
-        "college": "Akron",
-        "experience": "Rookie",
-        "statsHighlight": "Starter • DB #36 • Akron • Rookie"
+        "college": "Florida",
+        "experience": "6 yrs exp",
+        "statsHighlight": "Starter • CB #35 • Florida • 6 yrs exp"
       },
       {
         "id": "p-car-4362487",
@@ -38730,16 +38890,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "Starter • S #7 • TCU • 6 yrs exp"
       },
       {
-        "id": "p-car-3116179",
-        "name": "Nick Scott",
+        "id": "p-car-4566384",
+        "name": "Zakee Wheatley",
         "position": "S",
-        "number": 21,
+        "number": 20,
         "teamId": "car",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3116179.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4566384.png",
         "status": "Active",
         "college": "Penn State",
-        "experience": "8 yrs exp",
-        "statsHighlight": "Starter • S #21 • Penn State • 8 yrs exp"
+        "experience": "Rookie",
+        "statsHighlight": "Starter • S #20 • Penn State • Rookie"
       },
       {
         "id": "p-car-4870694",
@@ -38874,18 +39034,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "RB #23 • Georgia • 2 yrs exp"
       },
       {
-        "id": "p-car-4239934",
-        "name": "AJ Dillon",
-        "position": "RB",
-        "number": 28,
-        "teamId": "car",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4239934.png",
-        "status": "Active",
-        "college": "Boston College",
-        "experience": "7 yrs exp",
-        "statsHighlight": "17 CAR, 43 YDS"
-      },
-      {
         "id": "p-car-4709392",
         "name": "Anthony Tyus III",
         "position": "RB",
@@ -38896,6 +39044,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Ohio",
         "experience": "1 yr exp",
         "statsHighlight": "RB #34 • Ohio • 1 yr exp"
+      },
+      {
+        "id": "p-car-4239934",
+        "name": "AJ Dillon",
+        "position": "RB",
+        "number": 28,
+        "teamId": "car",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4239934.png",
+        "status": "Active",
+        "college": "Boston College",
+        "experience": "7 yrs exp",
+        "statsHighlight": "17 CAR, 43 YDS"
       },
       {
         "id": "p-car-4360763",
@@ -38940,10 +39100,10 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 88,
         "teamId": "car",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/2576925.png",
-        "status": "Active",
+        "status": "Questionable",
         "college": "Georgia Tech",
         "experience": "9 yrs exp",
-        "statsHighlight": "23 REC, 299 YDS, 4 TD"
+        "statsHighlight": "25 REC, 323 YDS, 4 TD"
       },
       {
         "id": "p-car-4683243",
@@ -38982,6 +39142,18 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "DT #97 • Texas A&M • 6 yrs exp"
       },
       {
+        "id": "p-car-4431077",
+        "name": "TeRah Edwards",
+        "position": "DT",
+        "number": 93,
+        "teamId": "car",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4431077.png",
+        "status": "Active",
+        "college": "Illinois",
+        "experience": "1 yr exp",
+        "statsHighlight": "DT #93 • Illinois • 1 yr exp"
+      },
+      {
         "id": "p-car-4602967",
         "name": "Aaron Hall",
         "position": "DT",
@@ -39004,18 +39176,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Florida",
         "experience": "2 yrs exp",
         "statsHighlight": "DT #99 • Florida • 2 yrs exp"
-      },
-      {
-        "id": "p-car-4431077",
-        "name": "TeRah Edwards",
-        "position": "DT",
-        "number": 93,
-        "teamId": "car",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4431077.png",
-        "status": "Active",
-        "college": "Illinois",
-        "experience": "1 yr exp",
-        "statsHighlight": "DT #93 • Illinois • 1 yr exp"
       },
       {
         "id": "p-car-4035232",
@@ -39064,18 +39224,6 @@ export const NFL_TEAMS: NFLTeam[] = [
         "college": "Ole Miss",
         "experience": "2 yrs exp",
         "statsHighlight": "LB #3 • Ole Miss • 2 yrs exp"
-      },
-      {
-        "id": "p-car-4360773",
-        "name": "Nick Hampton",
-        "position": "LB",
-        "number": 39,
-        "teamId": "car",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4360773.png",
-        "status": "Active",
-        "college": "App State",
-        "experience": "4 yrs exp",
-        "statsHighlight": "LB #39 • App State • 4 yrs exp"
       },
       {
         "id": "p-car-4880613",
@@ -39162,16 +39310,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "CB #31 • Louisville • 2 yrs exp"
       },
       {
-        "id": "p-car-4240595",
-        "name": "Marco Wilson",
-        "position": "CB",
-        "number": 35,
+        "id": "p-car-5225251",
+        "name": "Malcolm DeWalt IV",
+        "position": "DB",
+        "number": 36,
         "teamId": "car",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4240595.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/5225251.png",
         "status": "Active",
-        "college": "Florida",
-        "experience": "6 yrs exp",
-        "statsHighlight": "CB #35 • Florida • 6 yrs exp"
+        "college": "Akron",
+        "experience": "Rookie",
+        "statsHighlight": "DB #36 • Akron • Rookie"
       },
       {
         "id": "p-car-4429110",
@@ -39186,16 +39334,16 @@ export const NFL_TEAMS: NFLTeam[] = [
         "statsHighlight": "S #22 • Ohio State • 2 yrs exp"
       },
       {
-        "id": "p-car-4566384",
-        "name": "Zakee Wheatley",
+        "id": "p-car-3116179",
+        "name": "Nick Scott",
         "position": "S",
-        "number": 20,
+        "number": 21,
         "teamId": "car",
-        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4566384.png",
+        "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/3116179.png",
         "status": "Active",
         "college": "Penn State",
-        "experience": "Rookie",
-        "statsHighlight": "S #20 • Penn State • Rookie"
+        "experience": "8 yrs exp",
+        "statsHighlight": "S #21 • Penn State • 8 yrs exp"
       },
       {
         "id": "p-car-4035462",
@@ -39204,7 +39352,7 @@ export const NFL_TEAMS: NFLTeam[] = [
         "number": 27,
         "teamId": "car",
         "avatarUrl": "https://a.espncdn.com/i/headshots/nfl/players/full/4035462.png",
-        "status": "Active",
+        "status": "Out",
         "college": "Clemson",
         "experience": "6 yrs exp",
         "statsHighlight": "S #27 • Clemson • 6 yrs exp"

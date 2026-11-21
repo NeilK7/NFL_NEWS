@@ -3,14 +3,14 @@ import { NewsArticle } from "@/types";
 export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   "den": [
     {
-      "id": "den-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "den-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Broncos",
         "DEN",
@@ -20,9 +20,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "den",
       "teamTag": "Broncos",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official Denver Broncos update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
+          "Official Denver Broncos update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
           "Current Record: 7-2 (Active in AFC West)"
         ],
         "fantasyImpact": "Monitor active Broncos depth chart led by Bo Nix and Jaylen Waddle.",
@@ -30,14 +30,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       }
     },
     {
-      "id": "den-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "den-news-29553205",
+      "title": "Tom Brady tops list of athletes who became owners",
+      "summary": "The legendary quarterback is a member of an exclusive list of athletes that includes LeBron James, Serena Williams and Wayne Gretzky.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1120/r1748645_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/29553205/dwyane-wade-tom-brady-lebron-james-athletes-team-owners",
       "tags": [
         "Broncos",
         "DEN",
@@ -47,9 +47,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "den",
       "teamTag": "Broncos",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "The legendary quarterback is a member of an exclusive list of athletes that includes LeBron James, Serena Williams and Wayne Gretzky.",
         "keyTakeaways": [
-          "Official Denver Broncos update: NFL Week 10 betting odds: Lines and totals for every game",
+          "Official Denver Broncos update: Tom Brady tops list of athletes who became owners",
           "Current Record: 7-2 (Active in AFC West)"
         ],
         "fantasyImpact": "Monitor active Broncos depth chart led by Bo Nix and Jaylen Waddle.",
@@ -57,14 +57,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       }
     },
     {
-      "id": "den-news-50464884",
-      "title": "ESPN Fantasy Football Hall of Fame recognizes Clinton Portis' 5-touchdown game",
-      "summary": "Clinton Portis scored 5 touchdowns, rushing for over 200 yards in what was for many the first round of the 2003 fantasy football playoffs.",
+      "id": "den-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1112/r1745025_983x553_16-9.png",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50464884/fantasy-football-hall-fame-clinton-portis",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Broncos",
         "DEN",
@@ -74,9 +74,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "den",
       "teamTag": "Broncos",
       "aiSummary": {
-        "executiveBrief": "Clinton Portis scored 5 touchdowns, rushing for over 200 yards in what was for many the first round of the 2003 fantasy football playoffs.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Denver Broncos update: ESPN Fantasy Football Hall of Fame recognizes Clinton Portis' 5-touchdown game",
+          "Official Denver Broncos update: NFL Week 11 betting odds: Lines and totals for every game",
           "Current Record: 7-2 (Active in AFC West)"
         ],
         "fantasyImpact": "Monitor active Broncos depth chart led by Bo Nix and Jaylen Waddle.",
@@ -84,14 +84,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       }
     },
     {
-      "id": "den-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+      "id": "den-news-50541172",
+      "title": "Peyton Manning enshrined in ESPN Fantasy Football Hall of Fame",
+      "summary": "Peyton Manning, who retired as the top scorer of the ESPN fantasy football era, is the latest inductee in the ESPN Fantasy Football Hall of Fame.",
       "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
+      "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1120/r1748541_1280x720_16-9.png",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50541172/fantasy-football-hall-fame-peyton-manning",
       "tags": [
         "Broncos",
         "DEN",
@@ -101,9 +101,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "den",
       "teamTag": "Broncos",
       "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+        "executiveBrief": "Peyton Manning, who retired as the top scorer of the ESPN fantasy football era, is the latest inductee in the ESPN Fantasy Football Hall of Fame.",
         "keyTakeaways": [
-          "Official Denver Broncos update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Official Denver Broncos update: Peyton Manning enshrined in ESPN Fantasy Football Hall of Fame",
           "Current Record: 7-2 (Active in AFC West)"
         ],
         "fantasyImpact": "Monitor active Broncos depth chart led by Bo Nix and Jaylen Waddle.",
@@ -111,14 +111,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       }
     },
     {
-      "id": "den-news-50462723",
-      "title": "NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
-      "summary": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
+      "id": "den-news-50540924",
+      "title": "Can the Broncos continue winning run vs. the Raiders?",
+      "summary": "Can the Broncos continue winning run vs. the Raiders?",
       "source": "ESPN",
-      "author": "Jeremy Fowler",
+      "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1014/r1730810_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50462723/2026-nfl-playoffs-mvp-super-bowl-breakout-players-divisions",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/ss_20261120_091154260_3750909554/ss_20261120_091154260_3750909554.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50540924/can-broncos-continue-winning-run-vs-raiders",
       "tags": [
         "Broncos",
         "DEN",
@@ -128,9 +128,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "den",
       "teamTag": "Broncos",
       "aiSummary": {
-        "executiveBrief": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
+        "executiveBrief": "Can the Broncos continue winning run vs. the Raiders?",
         "keyTakeaways": [
-          "Official Denver Broncos update: NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
+          "Official Denver Broncos update: Can the Broncos continue winning run vs. the Raiders?",
           "Current Record: 7-2 (Active in AFC West)"
         ],
         "fantasyImpact": "Monitor active Broncos depth chart led by Bo Nix and Jaylen Waddle.",
@@ -140,41 +140,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "kc": [
     {
-      "id": "kc-news-50474246",
-      "title": "Andy Reid delivers injury update on Kenneth Walker III",
-      "summary": "Andy Reid delivers injury update on Kenneth Walker III",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/ss_20261113_155720389_3739591/ss_20261113_155720389_3739591.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50474246/andy-reid-delivers-injury-update-kenneth-walker-iii",
-      "tags": [
-        "Chiefs",
-        "KC",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "kc",
-      "teamTag": "Chiefs",
-      "aiSummary": {
-        "executiveBrief": "Andy Reid delivers injury update on Kenneth Walker III",
-        "keyTakeaways": [
-          "Official Kansas City Chiefs update: Andy Reid delivers injury update on Kenneth Walker III",
-          "Current Record: 6-2 (Active in AFC West)"
-        ],
-        "fantasyImpact": "Monitor active Chiefs depth chart led by Patrick Mahomes and Travis Kelce.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "kc-news-50473948",
-      "title": "Chiefs RB Kenneth Walker III (groin) misses practice, status uncertain",
-      "summary": "Chiefs running back Kenneth Walker III missed practice Friday with a sore groin, leaving his status for Sunday's matchup against the Falcons in question.",
+      "id": "kc-news-50543014",
+      "title": "Chiefs' Kenneth Walker III, two linemen out vs. Cardinals",
+      "summary": "Chiefs RB Kenneth Walker III will not play in Sunday's game against the Cardinals after not participating in practice this week due to a groin injury.",
       "source": "ESPN",
       "author": "Nate Taylor",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745250_576x324_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50473948/chiefs-rb-walker-groin-misses-practice-status-uncertain",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1006/r1727003_1296x729_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50543014/chiefs-expect-kenneth-walker-iii-vs-cardinals",
       "tags": [
         "Chiefs",
         "KC",
@@ -184,51 +157,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "kc",
       "teamTag": "Chiefs",
       "aiSummary": {
-        "executiveBrief": "Chiefs running back Kenneth Walker III missed practice Friday with a sore groin, leaving his status for Sunday's matchup against the Falcons in question.",
+        "executiveBrief": "Chiefs RB Kenneth Walker III will not play in Sunday's game against the Cardinals after not participating in practice this week due to a groin injury.",
         "keyTakeaways": [
-          "Official Kansas City Chiefs update: Chiefs RB Kenneth Walker III (groin) misses practice, status uncertain",
-          "Current Record: 6-2 (Active in AFC West)"
+          "Official Kansas City Chiefs update: Chiefs' Kenneth Walker III, two linemen out vs. Cardinals",
+          "Current Record: 7-2 (Active in AFC West)"
         ],
         "fantasyImpact": "Monitor active Chiefs depth chart led by Patrick Mahomes and Travis Kelce.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "kc-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "source": "ESPN",
-      "author": "Anthony Gharib",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
-      "tags": [
-        "Chiefs",
-        "KC",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "kc",
-      "teamTag": "Chiefs",
-      "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-        "keyTakeaways": [
-          "Official Kansas City Chiefs update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 6-2 (Active in AFC West)"
-        ],
-        "fantasyImpact": "Monitor active Chiefs depth chart led by Patrick Mahomes and Travis Kelce.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "kc-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "kc-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Chiefs",
         "KC",
@@ -238,24 +184,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "kc",
       "teamTag": "Chiefs",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Kansas City Chiefs update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 6-2 (Active in AFC West)"
+          "Official Kansas City Chiefs update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 7-2 (Active in AFC West)"
         ],
         "fantasyImpact": "Monitor active Chiefs depth chart led by Patrick Mahomes and Travis Kelce.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "kc-news-50463729",
-      "title": "Week 10 betting preview: Analysis, best bets, TD predictions for Sunday",
-      "summary": "Our experts dive into the odds and player props for Week 10 and offer their betting tips and favorite plays.",
+      "id": "kc-news-50534274",
+      "title": "Week 11 betting preview: Analysis, best bets, TD predictions for Sunday",
+      "summary": "Our experts dive into the odds and player props for Week 11 and offer their betting tips and favorite plays.",
       "source": "ESPN",
       "author": "Ben Solak, Seth Walder, Matt Bowen and Mike Clay",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1112/r1745045_608x342_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50463729/week-10-nfl-odds-touchdown-props-best-bets-sunday-games",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1120/r1748568_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50534274/week-11-nfl-odds-touchdown-props-best-bets-sunday-games",
       "tags": [
         "Chiefs",
         "KC",
@@ -265,10 +211,64 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "kc",
       "teamTag": "Chiefs",
       "aiSummary": {
-        "executiveBrief": "Our experts dive into the odds and player props for Week 10 and offer their betting tips and favorite plays.",
+        "executiveBrief": "Our experts dive into the odds and player props for Week 11 and offer their betting tips and favorite plays.",
         "keyTakeaways": [
-          "Official Kansas City Chiefs update: Week 10 betting preview: Analysis, best bets, TD predictions for Sunday",
-          "Current Record: 6-2 (Active in AFC West)"
+          "Official Kansas City Chiefs update: Week 11 betting preview: Analysis, best bets, TD predictions for Sunday",
+          "Current Record: 7-2 (Active in AFC West)"
+        ],
+        "fantasyImpact": "Monitor active Chiefs depth chart led by Patrick Mahomes and Travis Kelce.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "kc-news-50525533",
+      "title": "NFL offseason free agent and trade acquisitions that have and have not worked",
+      "summary": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
+      "source": "ESPN",
+      "author": "Aaron Schatz",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1747957_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50525533/2026-offseason-change-scenery-fits-players-new-teams",
+      "tags": [
+        "Chiefs",
+        "KC",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "kc",
+      "teamTag": "Chiefs",
+      "aiSummary": {
+        "executiveBrief": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
+        "keyTakeaways": [
+          "Official Kansas City Chiefs update: NFL offseason free agent and trade acquisitions that have and have not worked",
+          "Current Record: 7-2 (Active in AFC West)"
+        ],
+        "fantasyImpact": "Monitor active Chiefs depth chart led by Patrick Mahomes and Travis Kelce.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "kc-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+      "source": "ESPN",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
+      "tags": [
+        "Chiefs",
+        "KC",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "kc",
+      "teamTag": "Chiefs",
+      "aiSummary": {
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+        "keyTakeaways": [
+          "Official Kansas City Chiefs update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 7-2 (Active in AFC West)"
         ],
         "fantasyImpact": "Monitor active Chiefs depth chart led by Patrick Mahomes and Travis Kelce.",
         "urgency": "HIGH"
@@ -277,14 +277,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "sf": [
     {
-      "id": "sf-news-50475033",
-      "title": "49ers OT Williams, LB Greenlaw questionable, WR Evans out vs. Cowboys",
-      "summary": "The 49ers are listing left tackle Trent Williams and linebacker Dre Greenlaw as questionable for Sunday's game against the Cowboys, while receiver Mike Evans has been ruled out.",
+      "id": "sf-news-50543613",
+      "title": "Police investigate man's death after alleged altercation at 49ers-Cowboys game",
+      "summary": "Police are investigating the death of a man who was allegedly involved in an altercation before Sunday's game between the Cowboys and 49ers at AT&T Stadium.",
       "source": "ESPN",
-      "author": "Nick Wagoner",
+      "author": "Todd Archer",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2025/1229/r1594560_600x400_3-2.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50475033/49ers-williams-greenlaw-questionable-evans-vs-cowboys",
+      "imageUrl": "https://a.espncdn.com/photo/2016/0210/r53349_1296x729_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50543613/police-investigate-man-death-incident-cowboys-game",
       "tags": [
         "49ers",
         "SF",
@@ -294,78 +294,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "sf",
       "teamTag": "49ers",
       "aiSummary": {
-        "executiveBrief": "The 49ers are listing left tackle Trent Williams and linebacker Dre Greenlaw as questionable for Sunday's game against the Cowboys, while receiver Mike Evans has been ruled out.",
+        "executiveBrief": "Police are investigating the death of a man who was allegedly involved in an altercation before Sunday's game between the Cowboys and 49ers at AT&T Stadium.",
         "keyTakeaways": [
-          "Official San Francisco 49ers update: 49ers OT Williams, LB Greenlaw questionable, WR Evans out vs. Cowboys",
-          "Current Record: 7-1 (Active in NFC West)"
+          "Official San Francisco 49ers update: Police investigate man's death after alleged altercation at 49ers-Cowboys game",
+          "Current Record: 8-1 (Active in NFC West)"
         ],
         "fantasyImpact": "Monitor active 49ers depth chart led by Brock Purdy and George Kittle.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "sf-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "source": "ESPN",
-      "author": "Anthony Gharib",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
-      "tags": [
-        "49ers",
-        "SF",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "sf",
-      "teamTag": "49ers",
-      "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-        "keyTakeaways": [
-          "Official San Francisco 49ers update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 7-1 (Active in NFC West)"
-        ],
-        "fantasyImpact": "Monitor active 49ers depth chart led by Brock Purdy and George Kittle.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "sf-news-50472986",
-      "title": "Stephen A. is not having Marcus Spears' Cowboys optimism",
-      "summary": "Stephen A. is not having Marcus Spears' Cowboys optimism",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/ss_20261113_125231440_3739440/ss_20261113_125231440_3739440.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50472986/stephen-not-having-marcus-spears-cowboys-optimism",
-      "tags": [
-        "49ers",
-        "SF",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "sf",
-      "teamTag": "49ers",
-      "aiSummary": {
-        "executiveBrief": "Stephen A. is not having Marcus Spears' Cowboys optimism",
-        "keyTakeaways": [
-          "Official San Francisco 49ers update: Stephen A. is not having Marcus Spears' Cowboys optimism",
-          "Current Record: 7-1 (Active in NFC West)"
-        ],
-        "fantasyImpact": "Monitor active 49ers depth chart led by Brock Purdy and George Kittle.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "sf-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "sf-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "49ers",
         "SF",
@@ -375,24 +321,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "sf",
       "teamTag": "49ers",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official San Francisco 49ers update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 7-1 (Active in NFC West)"
+          "Official San Francisco 49ers update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 8-1 (Active in NFC West)"
         ],
         "fantasyImpact": "Monitor active 49ers depth chart led by Brock Purdy and George Kittle.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "sf-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+      "id": "sf-news-50525533",
+      "title": "NFL offseason free agent and trade acquisitions that have and have not worked",
+      "summary": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
       "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
+      "author": "Aaron Schatz",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1747957_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50525533/2026-offseason-change-scenery-fits-players-new-teams",
       "tags": [
         "49ers",
         "SF",
@@ -402,10 +348,64 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "sf",
       "teamTag": "49ers",
       "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+        "executiveBrief": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
         "keyTakeaways": [
-          "Official San Francisco 49ers update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 7-1 (Active in NFC West)"
+          "Official San Francisco 49ers update: NFL offseason free agent and trade acquisitions that have and have not worked",
+          "Current Record: 8-1 (Active in NFC West)"
+        ],
+        "fantasyImpact": "Monitor active 49ers depth chart led by Brock Purdy and George Kittle.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "sf-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+      "source": "ESPN",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
+      "tags": [
+        "49ers",
+        "SF",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "sf",
+      "teamTag": "49ers",
+      "aiSummary": {
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+        "keyTakeaways": [
+          "Official San Francisco 49ers update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 8-1 (Active in NFC West)"
+        ],
+        "fantasyImpact": "Monitor active 49ers depth chart led by Brock Purdy and George Kittle.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "sf-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+      "source": "ESPN",
+      "author": "Anthony Gharib",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
+      "tags": [
+        "49ers",
+        "SF",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "sf",
+      "teamTag": "49ers",
+      "aiSummary": {
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+        "keyTakeaways": [
+          "Official San Francisco 49ers update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 8-1 (Active in NFC West)"
         ],
         "fantasyImpact": "Monitor active 49ers depth chart led by Brock Purdy and George Kittle.",
         "urgency": "HIGH"
@@ -414,95 +414,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "bal": [
     {
-      "id": "bal-news-50474994",
-      "title": "When will Lamar Jackson return to the field?",
-      "summary": "Jamison Hensley provides an update on Jackson's thumb injury post surgery, projecting a potential return as early as Week 16.",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_11-13_Ravens_IA/dm_261113_11-13_Ravens_IA.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50474994/when-lamar-jackson-return-field",
-      "tags": [
-        "Ravens",
-        "BAL",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "bal",
-      "teamTag": "Ravens",
-      "aiSummary": {
-        "executiveBrief": "Jamison Hensley provides an update on Jackson's thumb injury post surgery, projecting a potential return as early as Week 16.",
-        "keyTakeaways": [
-          "Official Baltimore Ravens update: When will Lamar Jackson return to the field?",
-          "Current Record: 4-5 (Active in AFC North)"
-        ],
-        "fantasyImpact": "Monitor active Ravens depth chart led by Lamar Jackson and Zay Flowers.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "bal-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "source": "ESPN",
-      "author": "Anthony Gharib",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
-      "tags": [
-        "Ravens",
-        "BAL",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "bal",
-      "teamTag": "Ravens",
-      "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-        "keyTakeaways": [
-          "Official Baltimore Ravens update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 4-5 (Active in AFC North)"
-        ],
-        "fantasyImpact": "Monitor active Ravens depth chart led by Lamar Jackson and Zay Flowers.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "bal-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-      "source": "ESPN",
-      "author": "ESPN",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
-      "tags": [
-        "Ravens",
-        "BAL",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "bal",
-      "teamTag": "Ravens",
-      "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-        "keyTakeaways": [
-          "Official Baltimore Ravens update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 4-5 (Active in AFC North)"
-        ],
-        "fantasyImpact": "Monitor active Ravens depth chart led by Lamar Jackson and Zay Flowers.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "bal-news-50472222",
-      "title": "Minter: Lamar Jackson 'doing everything' to return; QB had surgery, source says",
-      "summary": "Ravens coach Jesse Minter's update on Lamar Jackson's recovery process calls such timelines \"challenging to predict.\"",
+      "id": "bal-news-50541178",
+      "title": "Can Ravens keep the Marlon Humphrey controversy from becoming a distraction?",
+      "summary": "While there's more to the cornerback's story, one Baltimore teammate says: \"We have enough things to worry about.\"",
       "source": "ESPN",
       "author": "Jamison Hensley",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1101/r1739589_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50472222/ravens-lamar-jackson-injury-typical-line-6-10-weeks",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1120/r1748551_1296x729_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50541178/ravens-avoid-marlon-humphrey-controversy-distraction",
       "tags": [
         "Ravens",
         "BAL",
@@ -512,24 +431,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "bal",
       "teamTag": "Ravens",
       "aiSummary": {
-        "executiveBrief": "Ravens coach Jesse Minter's update on Lamar Jackson's recovery process calls such timelines \"challenging to predict.\"",
+        "executiveBrief": "While there's more to the cornerback's story, one Baltimore teammate says: \"We have enough things to worry about.\"",
         "keyTakeaways": [
-          "Official Baltimore Ravens update: Minter: Lamar Jackson 'doing everything' to return; QB had surgery, source says",
-          "Current Record: 4-5 (Active in AFC North)"
+          "Official Baltimore Ravens update: Can Ravens keep the Marlon Humphrey controversy from becoming a distraction?",
+          "Current Record: 4-6 (Active in AFC North)"
         ],
         "fantasyImpact": "Monitor active Ravens depth chart led by Lamar Jackson and Zay Flowers.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "bal-news-50471768",
-      "title": "Will Lamar Jackson be able to return this season after thumb surgery?",
-      "summary": "Will Lamar Jackson be able to return this season after thumb surgery?",
+      "id": "bal-news-40699880",
+      "title": "Fantasy buzz: Stroud has Houston fans over the moon, Colts continue to crumble",
+      "summary": "Adam Rank waxes nostalgic about Houston football and the reinvigorated C.J. Stroud.",
       "source": "ESPN",
-      "author": "ESPN NFL Desk",
+      "author": "ESPN Fantasy",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/ss_20261113_095240449_3739310/ss_20261113_095240449_3739310.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50471768/will-lamar-jackson-able-return-season-thumb-surgery",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1120/r1748502_576x324_16-9.jpg",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
       "tags": [
         "Ravens",
         "BAL",
@@ -539,10 +458,91 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "bal",
       "teamTag": "Ravens",
       "aiSummary": {
-        "executiveBrief": "Will Lamar Jackson be able to return this season after thumb surgery?",
+        "executiveBrief": "Adam Rank waxes nostalgic about Houston football and the reinvigorated C.J. Stroud.",
         "keyTakeaways": [
-          "Official Baltimore Ravens update: Will Lamar Jackson be able to return this season after thumb surgery?",
-          "Current Record: 4-5 (Active in AFC North)"
+          "Official Baltimore Ravens update: Fantasy buzz: Stroud has Houston fans over the moon, Colts continue to crumble",
+          "Current Record: 4-6 (Active in AFC North)"
+        ],
+        "fantasyImpact": "Monitor active Ravens depth chart led by Lamar Jackson and Zay Flowers.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "bal-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+      "source": "ESPN",
+      "author": "Anthony Gharib",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
+      "tags": [
+        "Ravens",
+        "BAL",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "bal",
+      "teamTag": "Ravens",
+      "aiSummary": {
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+        "keyTakeaways": [
+          "Official Baltimore Ravens update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 4-6 (Active in AFC North)"
+        ],
+        "fantasyImpact": "Monitor active Ravens depth chart led by Lamar Jackson and Zay Flowers.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "bal-news-50535691",
+      "title": "Panthers aim to hold NFC South lead while Ravens look to keep playoffs hopes alive, end 5-game skid",
+      "summary": "— The Carolina Panthers needed a walk-off 54-yard field goal from Ryan Fitzgerald to beat the New Orleans Saints 20-17 last Sunday and remain in first...",
+      "source": "ESPN",
+      "author": "ESPN NFL Desk",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873068.png?templateId=espn.applewatch.awayhome.1",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873068",
+      "tags": [
+        "Ravens",
+        "BAL",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "bal",
+      "teamTag": "Ravens",
+      "aiSummary": {
+        "executiveBrief": "— The Carolina Panthers needed a walk-off 54-yard field goal from Ryan Fitzgerald to beat the New Orleans Saints 20-17 last Sunday and remain in first...",
+        "keyTakeaways": [
+          "Official Baltimore Ravens update: Panthers aim to hold NFC South lead while Ravens look to keep playoffs hopes alive, end 5-game skid",
+          "Current Record: 4-6 (Active in AFC North)"
+        ],
+        "fantasyImpact": "Monitor active Ravens depth chart led by Lamar Jackson and Zay Flowers.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "bal-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+      "source": "ESPN",
+      "author": "ESPN Staff",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
+      "tags": [
+        "Ravens",
+        "BAL",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "bal",
+      "teamTag": "Ravens",
+      "aiSummary": {
+        "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+        "keyTakeaways": [
+          "Official Baltimore Ravens update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 4-6 (Active in AFC North)"
         ],
         "fantasyImpact": "Monitor active Ravens depth chart led by Lamar Jackson and Zay Flowers.",
         "urgency": "HIGH"
@@ -551,41 +551,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "det": [
     {
-      "id": "det-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "source": "ESPN",
-      "author": "Anthony Gharib",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
-      "tags": [
-        "Lions",
-        "DET",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "det",
-      "teamTag": "Lions",
-      "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-        "keyTakeaways": [
-          "Official Detroit Lions update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 6-2 (Active in NFC North)"
-        ],
-        "fantasyImpact": "Monitor active Lions depth chart led by Jared Goff and Amon-Ra St. Brown.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "det-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "det-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Lions",
         "DET",
@@ -595,24 +568,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "det",
       "teamTag": "Lions",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Detroit Lions update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 6-2 (Active in NFC North)"
+          "Official Detroit Lions update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 7-2 (Active in NFC North)"
         ],
         "fantasyImpact": "Monitor active Lions depth chart led by Jared Goff and Amon-Ra St. Brown.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "det-news-50462993",
-      "title": "NFC North: Bears win division? Cousins has Vikes in command?",
-      "summary": "What will Kirk Cousins and Micah Parsons mean for the best division in football, or will the Bears hang on?",
+      "id": "det-news-50532835",
+      "title": "Fantasy football last-minute pickups: Flournoy, Ayomanor among top candidates",
+      "summary": "There is no busier bye week than this one. Matt Bowen lists potential options if you need a fill-in.",
       "source": "ESPN",
-      "author": "Courtney Cronin and Rob Demovsky and Kevin Seifert and Eric Woodyard",
+      "author": "Matt Bowen",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1112/nfc_roundtable3_608x342.png",
-      "url": "https://www.espn.com/nfl/story/_/id/50462993/lions-packers-bears-vikings-nfc-north",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748267_608x342_16-9.jpg",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50532835/fantasy-football-streamers-last-minute-pickups-week-11",
       "tags": [
         "Lions",
         "DET",
@@ -622,24 +595,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "det",
       "teamTag": "Lions",
       "aiSummary": {
-        "executiveBrief": "What will Kirk Cousins and Micah Parsons mean for the best division in football, or will the Bears hang on?",
+        "executiveBrief": "There is no busier bye week than this one. Matt Bowen lists potential options if you need a fill-in.",
         "keyTakeaways": [
-          "Official Detroit Lions update: NFC North: Bears win division? Cousins has Vikes in command?",
-          "Current Record: 6-2 (Active in NFC North)"
+          "Official Detroit Lions update: Fantasy football last-minute pickups: Flournoy, Ayomanor among top candidates",
+          "Current Record: 7-2 (Active in NFC North)"
         ],
         "fantasyImpact": "Monitor active Lions depth chart led by Jared Goff and Amon-Ra St. Brown.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "det-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+      "id": "det-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
       "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
       "tags": [
         "Lions",
         "DET",
@@ -649,24 +622,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "det",
       "teamTag": "Lions",
       "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
         "keyTakeaways": [
-          "Official Detroit Lions update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 6-2 (Active in NFC North)"
+          "Official Detroit Lions update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 7-2 (Active in NFC North)"
         ],
         "fantasyImpact": "Monitor active Lions depth chart led by Jared Goff and Amon-Ra St. Brown.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "det-news-50462723",
-      "title": "NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
-      "summary": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
+      "id": "det-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
-      "author": "Jeremy Fowler",
+      "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1014/r1730810_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50462723/2026-nfl-playoffs-mvp-super-bowl-breakout-players-divisions",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Lions",
         "DET",
@@ -676,10 +649,37 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "det",
       "teamTag": "Lions",
       "aiSummary": {
-        "executiveBrief": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official Detroit Lions update: NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
-          "Current Record: 6-2 (Active in NFC North)"
+          "Official Detroit Lions update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 7-2 (Active in NFC North)"
+        ],
+        "fantasyImpact": "Monitor active Lions depth chart led by Jared Goff and Amon-Ra St. Brown.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "det-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+      "source": "ESPN",
+      "author": "ESPN Staff",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
+      "tags": [
+        "Lions",
+        "DET",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "det",
+      "teamTag": "Lions",
+      "aiSummary": {
+        "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+        "keyTakeaways": [
+          "Official Detroit Lions update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 7-2 (Active in NFC North)"
         ],
         "fantasyImpact": "Monitor active Lions depth chart led by Jared Goff and Amon-Ra St. Brown.",
         "urgency": "HIGH"
@@ -688,14 +688,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "buf": [
     {
-      "id": "buf-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "buf-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Bills",
         "BUF",
@@ -705,24 +705,51 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "buf",
       "teamTag": "Bills",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official Buffalo Bills update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 7-1 (Active in AFC East)"
+          "Official Buffalo Bills update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 8-1 (Active in AFC East)"
         ],
         "fantasyImpact": "Monitor active Bills depth chart led by Josh Allen and Dalton Kincaid.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "buf-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "buf-news-50543381",
+      "title": "Bills TE Dalton Kincaid doubtful to play vs. Dolphins",
+      "summary": "Bills starting tight end Dalton Kincaid, their leading receiver, is listed as doubtful for Sunday's game against the Dolphins due to thumb and ankle injuries.",
+      "source": "ESPN",
+      "author": "Nick Suss",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2024/0722/r1361693_1296x729_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50543381/bills-te-dalton-kincaid-doubtful-play-vs-dolphins",
+      "tags": [
+        "Bills",
+        "BUF",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "buf",
+      "teamTag": "Bills",
+      "aiSummary": {
+        "executiveBrief": "Bills starting tight end Dalton Kincaid, their leading receiver, is listed as doubtful for Sunday's game against the Dolphins due to thumb and ankle injuries.",
+        "keyTakeaways": [
+          "Official Buffalo Bills update: Bills TE Dalton Kincaid doubtful to play vs. Dolphins",
+          "Current Record: 8-1 (Active in AFC East)"
+        ],
+        "fantasyImpact": "Monitor active Bills depth chart led by Josh Allen and Dalton Kincaid.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "buf-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Bills",
         "BUF",
@@ -732,24 +759,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "buf",
       "teamTag": "Bills",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Buffalo Bills update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 7-1 (Active in AFC East)"
+          "Official Buffalo Bills update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 8-1 (Active in AFC East)"
         ],
         "fantasyImpact": "Monitor active Bills depth chart led by Josh Allen and Dalton Kincaid.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "buf-news-50472222",
-      "title": "Minter: Lamar Jackson 'doing everything' to return; QB had surgery, source says",
-      "summary": "Ravens coach Jesse Minter's update on Lamar Jackson's recovery process calls such timelines \"challenging to predict.\"",
+      "id": "buf-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
       "source": "ESPN",
-      "author": "Jamison Hensley",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1101/r1739589_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50472222/ravens-lamar-jackson-injury-typical-line-6-10-weeks",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
       "tags": [
         "Bills",
         "BUF",
@@ -759,51 +786,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "buf",
       "teamTag": "Bills",
       "aiSummary": {
-        "executiveBrief": "Ravens coach Jesse Minter's update on Lamar Jackson's recovery process calls such timelines \"challenging to predict.\"",
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
         "keyTakeaways": [
-          "Official Buffalo Bills update: Minter: Lamar Jackson 'doing everything' to return; QB had surgery, source says",
-          "Current Record: 7-1 (Active in AFC East)"
+          "Official Buffalo Bills update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 8-1 (Active in AFC East)"
         ],
         "fantasyImpact": "Monitor active Bills depth chart led by Josh Allen and Dalton Kincaid.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "buf-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-      "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
-      "tags": [
-        "Bills",
-        "BUF",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "buf",
-      "teamTag": "Bills",
-      "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-        "keyTakeaways": [
-          "Official Buffalo Bills update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 7-1 (Active in AFC East)"
-        ],
-        "fantasyImpact": "Monitor active Bills depth chart led by Josh Allen and Dalton Kincaid.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "buf-news-50465223",
-      "title": "Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
+      "id": "buf-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
       "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
       "source": "ESPN",
       "author": "ESPN Staff",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745073_608x342_16-9.png",
-      "url": "https://www.espn.com/nfl/story/_/id/50465223/nfl-week-10-fashionable-arrivals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
       "tags": [
         "Bills",
         "BUF",
@@ -815,8 +815,8 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "aiSummary": {
         "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
         "keyTakeaways": [
-          "Official Buffalo Bills update: Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
-          "Current Record: 7-1 (Active in AFC East)"
+          "Official Buffalo Bills update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 8-1 (Active in AFC East)"
         ],
         "fantasyImpact": "Monitor active Bills depth chart led by Josh Allen and Dalton Kincaid.",
         "urgency": "HIGH"
@@ -825,41 +825,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "phi": [
     {
-      "id": "phi-news-50474564",
-      "title": "NFL outlines steps in Jalen Hurts investigation in letter to senator",
-      "summary": "The NFL provided some additional details about the investigation into how Jalen Hurts' blood clots were handled in response to an inquiry from a U.S. senator.",
-      "source": "ESPN",
-      "author": "Tim McManus",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1019/r1732959_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50474564/nfl-outlines-aspects-jalen-hurts-investigation-senator",
-      "tags": [
-        "Eagles",
-        "PHI",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "phi",
-      "teamTag": "Eagles",
-      "aiSummary": {
-        "executiveBrief": "The NFL provided some additional details about the investigation into how Jalen Hurts' blood clots were handled in response to an inquiry from a U.S. senator.",
-        "keyTakeaways": [
-          "Official Philadelphia Eagles update: NFL outlines steps in Jalen Hurts investigation in letter to senator",
-          "Current Record: 2-7 (Active in NFC East)"
-        ],
-        "fantasyImpact": "Monitor active Eagles depth chart led by Jalen Hurts and Makai Lemon.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "phi-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "phi-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Eagles",
         "PHI",
@@ -869,9 +842,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "phi",
       "teamTag": "Eagles",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official Philadelphia Eagles update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
+          "Official Philadelphia Eagles update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
           "Current Record: 2-7 (Active in NFC East)"
         ],
         "fantasyImpact": "Monitor active Eagles depth chart led by Jalen Hurts and Makai Lemon.",
@@ -879,14 +852,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       }
     },
     {
-      "id": "phi-news-50473514",
-      "title": "Eagles release wide receiver Hollywood Brown per request",
-      "summary": "Receiver Hollywood Brown, who has played sparingly over the first half of the season, has been released by the Eagles upon his request.",
+      "id": "phi-news-50543681",
+      "title": "Eagles heading into SNF with a promising roster",
+      "summary": "Tim McManus breaks down who will be returning to action for Philadelphia and where the Eagles should make changes for the second half of the regular season.",
       "source": "ESPN",
-      "author": "Tim McManus",
+      "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745388_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50473514/sources-eagles-release-wr-hollywood-brown-per-request",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/dm_261120_11-20_Eagles_IA_Without_Wicks/dm_261120_11-20_Eagles_IA_Without_Wicks.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50543681/eagles-heading-snf-promising-roster",
       "tags": [
         "Eagles",
         "PHI",
@@ -896,9 +869,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "phi",
       "teamTag": "Eagles",
       "aiSummary": {
-        "executiveBrief": "Receiver Hollywood Brown, who has played sparingly over the first half of the season, has been released by the Eagles upon his request.",
+        "executiveBrief": "Tim McManus breaks down who will be returning to action for Philadelphia and where the Eagles should make changes for the second half of the regular season.",
         "keyTakeaways": [
-          "Official Philadelphia Eagles update: Eagles release wide receiver Hollywood Brown per request",
+          "Official Philadelphia Eagles update: Eagles heading into SNF with a promising roster",
           "Current Record: 2-7 (Active in NFC East)"
         ],
         "fantasyImpact": "Monitor active Eagles depth chart led by Jalen Hurts and Makai Lemon.",
@@ -906,14 +879,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       }
     },
     {
-      "id": "phi-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "phi-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Eagles",
         "PHI",
@@ -923,9 +896,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "phi",
       "teamTag": "Eagles",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Philadelphia Eagles update: NFL Week 10 betting odds: Lines and totals for every game",
+          "Official Philadelphia Eagles update: NFL Week 11 betting odds: Lines and totals for every game",
           "Current Record: 2-7 (Active in NFC East)"
         ],
         "fantasyImpact": "Monitor active Eagles depth chart led by Jalen Hurts and Makai Lemon.",
@@ -933,14 +906,41 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       }
     },
     {
-      "id": "phi-news-50465223",
-      "title": "Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
+      "id": "phi-news-50535532",
+      "title": "The Steelers last won in Philadelphia in 1965. Can they top an Eagles team on 7-game losing streak?",
+      "summary": "— Perhaps the Steelers should have stayed attached at the hip pads with the Eagles — as they were when they merged for the 1943 season to form the Steagles — to avoid such an ignominious losing streak in Philadelphia.",
+      "source": "ESPN",
+      "author": "ESPN NFL Desk",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873076.png?templateId=espn.applewatch.awayhome.1",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873076",
+      "tags": [
+        "Eagles",
+        "PHI",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "phi",
+      "teamTag": "Eagles",
+      "aiSummary": {
+        "executiveBrief": "— Perhaps the Steelers should have stayed attached at the hip pads with the Eagles — as they were when they merged for the 1943 season to form the Steagles — to avoid such an ignominious losing streak in Philadelphia.",
+        "keyTakeaways": [
+          "Official Philadelphia Eagles update: The Steelers last won in Philadelphia in 1965. Can they top an Eagles team on 7-game losing streak?",
+          "Current Record: 2-7 (Active in NFC East)"
+        ],
+        "fantasyImpact": "Monitor active Eagles depth chart led by Jalen Hurts and Makai Lemon.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "phi-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
       "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
       "source": "ESPN",
       "author": "ESPN Staff",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745073_608x342_16-9.png",
-      "url": "https://www.espn.com/nfl/story/_/id/50465223/nfl-week-10-fashionable-arrivals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
       "tags": [
         "Eagles",
         "PHI",
@@ -952,7 +952,7 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "aiSummary": {
         "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
         "keyTakeaways": [
-          "Official Philadelphia Eagles update: Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
+          "Official Philadelphia Eagles update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
           "Current Record: 2-7 (Active in NFC East)"
         ],
         "fantasyImpact": "Monitor active Eagles depth chart led by Jalen Hurts and Makai Lemon.",
@@ -962,14 +962,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "min": [
     {
-      "id": "min-news-50475293",
-      "title": "T.J. Hockenson unlikely to play Sunday vs. the Packers",
-      "summary": "Kevin Seifert reports Hockenson's absence would be a significant loss for Kirk Cousins and the Vikings.",
+      "id": "min-news-50543714",
+      "title": "Vikings take on Mexico City",
+      "summary": "Kevin Seifert discusses what the Vikings must do to ensure a win over the 49ers.",
       "source": "ESPN",
       "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_IA_Vikings_16x9/dm_261113_IA_Vikings_16x9.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50475293/tj-hockenson-unlikely-play-sunday-vs-packers",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/dm_261120_VIkings_NFL/dm_261120_VIkings_NFL.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50543714/vikings-take-mexico-city",
       "tags": [
         "Vikings",
         "MIN",
@@ -979,78 +979,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "min",
       "teamTag": "Vikings",
       "aiSummary": {
-        "executiveBrief": "Kevin Seifert reports Hockenson's absence would be a significant loss for Kirk Cousins and the Vikings.",
+        "executiveBrief": "Kevin Seifert discusses what the Vikings must do to ensure a win over the 49ers.",
         "keyTakeaways": [
-          "Official Minnesota Vikings update: T.J. Hockenson unlikely to play Sunday vs. the Packers",
-          "Current Record: 6-2 (Active in NFC North)"
+          "Official Minnesota Vikings update: Vikings take on Mexico City",
+          "Current Record: 7-2 (Active in NFC North)"
         ],
         "fantasyImpact": "Monitor active Vikings depth chart led by Kyler Murray and Justin Jefferson.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "min-news-50474753",
-      "title": "Vikings to start reacquired QB Kirk Cousins vs. Packers",
-      "summary": "Coach Kevin O'Connell called Kirk Cousins' ability to get reacquainted with the Vikings' offense \"impressive.\"",
-      "source": "ESPN",
-      "author": "Kevin Seifert",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2023/1030/r1245867_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50474753/vikings-start-reacquired-qb-kirk-cousins-vs-packers",
-      "tags": [
-        "Vikings",
-        "MIN",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "min",
-      "teamTag": "Vikings",
-      "aiSummary": {
-        "executiveBrief": "Coach Kevin O'Connell called Kirk Cousins' ability to get reacquainted with the Vikings' offense \"impressive.\"",
-        "keyTakeaways": [
-          "Official Minnesota Vikings update: Vikings to start reacquired QB Kirk Cousins vs. Packers",
-          "Current Record: 6-2 (Active in NFC North)"
-        ],
-        "fantasyImpact": "Monitor active Vikings depth chart led by Kyler Murray and Justin Jefferson.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "min-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "source": "ESPN",
-      "author": "Anthony Gharib",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
-      "tags": [
-        "Vikings",
-        "MIN",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "min",
-      "teamTag": "Vikings",
-      "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-        "keyTakeaways": [
-          "Official Minnesota Vikings update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 6-2 (Active in NFC North)"
-        ],
-        "fantasyImpact": "Monitor active Vikings depth chart led by Kyler Murray and Justin Jefferson.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "min-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "min-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Vikings",
         "MIN",
@@ -1060,24 +1006,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "min",
       "teamTag": "Vikings",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Minnesota Vikings update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 6-2 (Active in NFC North)"
+          "Official Minnesota Vikings update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 7-2 (Active in NFC North)"
         ],
         "fantasyImpact": "Monitor active Vikings depth chart led by Kyler Murray and Justin Jefferson.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "min-news-50462993",
-      "title": "NFC North: Bears win division? Cousins has Vikes in command?",
-      "summary": "What will Kirk Cousins and Micah Parsons mean for the best division in football, or will the Bears hang on?",
+      "id": "min-news-50534274",
+      "title": "Week 11 betting preview: Analysis, best bets, TD predictions for Sunday",
+      "summary": "Our experts dive into the odds and player props for Week 11 and offer their betting tips and favorite plays.",
       "source": "ESPN",
-      "author": "Courtney Cronin and Rob Demovsky and Kevin Seifert and Eric Woodyard",
+      "author": "Ben Solak, Seth Walder, Matt Bowen and Mike Clay",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1112/nfc_roundtable3_608x342.png",
-      "url": "https://www.espn.com/nfl/story/_/id/50462993/lions-packers-bears-vikings-nfc-north",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1120/r1748568_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50534274/week-11-nfl-odds-touchdown-props-best-bets-sunday-games",
       "tags": [
         "Vikings",
         "MIN",
@@ -1087,10 +1033,64 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "min",
       "teamTag": "Vikings",
       "aiSummary": {
-        "executiveBrief": "What will Kirk Cousins and Micah Parsons mean for the best division in football, or will the Bears hang on?",
+        "executiveBrief": "Our experts dive into the odds and player props for Week 11 and offer their betting tips and favorite plays.",
         "keyTakeaways": [
-          "Official Minnesota Vikings update: NFC North: Bears win division? Cousins has Vikes in command?",
-          "Current Record: 6-2 (Active in NFC North)"
+          "Official Minnesota Vikings update: Week 11 betting preview: Analysis, best bets, TD predictions for Sunday",
+          "Current Record: 7-2 (Active in NFC North)"
+        ],
+        "fantasyImpact": "Monitor active Vikings depth chart led by Kyler Murray and Justin Jefferson.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "min-news-50541437",
+      "title": "Why Stephen A. is picking the Vikings to beat the 49ers on SNF",
+      "summary": "Why Stephen A. is picking the Vikings to beat the 49ers on SNF",
+      "source": "ESPN",
+      "author": "ESPN NFL Desk",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/ss_20261120_104205853_3750973645/ss_20261120_104205853_3750973645.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50541437/why-stephen-picking-vikings-beat-49ers-snf",
+      "tags": [
+        "Vikings",
+        "MIN",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "min",
+      "teamTag": "Vikings",
+      "aiSummary": {
+        "executiveBrief": "Why Stephen A. is picking the Vikings to beat the 49ers on SNF",
+        "keyTakeaways": [
+          "Official Minnesota Vikings update: Why Stephen A. is picking the Vikings to beat the 49ers on SNF",
+          "Current Record: 7-2 (Active in NFC North)"
+        ],
+        "fantasyImpact": "Monitor active Vikings depth chart led by Kyler Murray and Justin Jefferson.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "min-news-50525533",
+      "title": "NFL offseason free agent and trade acquisitions that have and have not worked",
+      "summary": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
+      "source": "ESPN",
+      "author": "Aaron Schatz",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1747957_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50525533/2026-offseason-change-scenery-fits-players-new-teams",
+      "tags": [
+        "Vikings",
+        "MIN",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "min",
+      "teamTag": "Vikings",
+      "aiSummary": {
+        "executiveBrief": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
+        "keyTakeaways": [
+          "Official Minnesota Vikings update: NFL offseason free agent and trade acquisitions that have and have not worked",
+          "Current Record: 7-2 (Active in NFC North)"
         ],
         "fantasyImpact": "Monitor active Vikings depth chart led by Kyler Murray and Justin Jefferson.",
         "urgency": "HIGH"
@@ -1099,41 +1099,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "gb": [
     {
-      "id": "gb-news-50473776",
-      "title": "Packers ready for a rematch against the Vikings",
-      "summary": "Rob Demovsky breaks down the Packers' prep ahead of Sunday.",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_Pack/dm_261113_Pack.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50473776/packers-ready-rematch-vikings",
-      "tags": [
-        "Packers",
-        "GB",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "gb",
-      "teamTag": "Packers",
-      "aiSummary": {
-        "executiveBrief": "Rob Demovsky breaks down the Packers' prep ahead of Sunday.",
-        "keyTakeaways": [
-          "Official Green Bay Packers update: Packers ready for a rematch against the Vikings",
-          "Current Record: 6-3 (Active in NFC North)"
-        ],
-        "fantasyImpact": "Monitor active Packers depth chart led by Jordan Love and Christian Watson.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "gb-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "gb-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Packers",
         "GB",
@@ -1143,24 +1116,105 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "gb",
       "teamTag": "Packers",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official Green Bay Packers update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 6-3 (Active in NFC North)"
+          "Official Green Bay Packers update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 6-4 (Active in NFC North)"
         ],
         "fantasyImpact": "Monitor active Packers depth chart led by Jordan Love and Christian Watson.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "gb-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "gb-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+      "source": "ESPN",
+      "author": "ESPN Staff",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
+      "tags": [
+        "Packers",
+        "GB",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "gb",
+      "teamTag": "Packers",
+      "aiSummary": {
+        "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+        "keyTakeaways": [
+          "Official Green Bay Packers update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 6-4 (Active in NFC North)"
+        ],
+        "fantasyImpact": "Monitor active Packers depth chart led by Jordan Love and Christian Watson.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "gb-news-50520404",
+      "title": "Midseason reports on every NFL team's offensive coordinator, playcaller",
+      "summary": "Here's the good and the bad for each offensive coordinator or playcaller through Week 10, plus keys to their success the rest of the way.",
+      "source": "ESPN",
+      "author": "NFL Nation",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1118/32_for_32_midseason_look_608x342.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50520404/nfl-offensive-coordinators-playcallers-midseason-report",
+      "tags": [
+        "Packers",
+        "GB",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "gb",
+      "teamTag": "Packers",
+      "aiSummary": {
+        "executiveBrief": "Here's the good and the bad for each offensive coordinator or playcaller through Week 10, plus keys to their success the rest of the way.",
+        "keyTakeaways": [
+          "Official Green Bay Packers update: Midseason reports on every NFL team's offensive coordinator, playcaller",
+          "Current Record: 6-4 (Active in NFC North)"
+        ],
+        "fantasyImpact": "Monitor active Packers depth chart led by Jordan Love and Christian Watson.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "gb-news-50513014",
+      "title": "Why Packers can't protect Jordan Love or rush successfully",
+      "summary": "The two-year demise of the Packers' offensive line began on March 10, 2025, and has no end in sight.",
+      "source": "ESPN",
+      "author": "Rob Demovsky",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/r1747221_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50513014/packers-jordan-love-sack-rushing-offensive-line",
+      "tags": [
+        "Packers",
+        "GB",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "gb",
+      "teamTag": "Packers",
+      "aiSummary": {
+        "executiveBrief": "The two-year demise of the Packers' offensive line began on March 10, 2025, and has no end in sight.",
+        "keyTakeaways": [
+          "Official Green Bay Packers update: Why Packers can't protect Jordan Love or rush successfully",
+          "Current Record: 6-4 (Active in NFC North)"
+        ],
+        "fantasyImpact": "Monitor active Packers depth chart led by Jordan Love and Christian Watson.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "gb-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Packers",
         "GB",
@@ -1170,64 +1224,10 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "gb",
       "teamTag": "Packers",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Green Bay Packers update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 6-3 (Active in NFC North)"
-        ],
-        "fantasyImpact": "Monitor active Packers depth chart led by Jordan Love and Christian Watson.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "gb-news-50462993",
-      "title": "NFC North: Bears win division? Cousins has Vikes in command?",
-      "summary": "What will Kirk Cousins and Micah Parsons mean for the best division in football, or will the Bears hang on?",
-      "source": "ESPN",
-      "author": "Courtney Cronin and Rob Demovsky and Kevin Seifert and Eric Woodyard",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1112/nfc_roundtable3_608x342.png",
-      "url": "https://www.espn.com/nfl/story/_/id/50462993/lions-packers-bears-vikings-nfc-north",
-      "tags": [
-        "Packers",
-        "GB",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "gb",
-      "teamTag": "Packers",
-      "aiSummary": {
-        "executiveBrief": "What will Kirk Cousins and Micah Parsons mean for the best division in football, or will the Bears hang on?",
-        "keyTakeaways": [
-          "Official Green Bay Packers update: NFC North: Bears win division? Cousins has Vikes in command?",
-          "Current Record: 6-3 (Active in NFC North)"
-        ],
-        "fantasyImpact": "Monitor active Packers depth chart led by Jordan Love and Christian Watson.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "gb-news-50462723",
-      "title": "NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
-      "summary": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
-      "source": "ESPN",
-      "author": "Jeremy Fowler",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1014/r1730810_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50462723/2026-nfl-playoffs-mvp-super-bowl-breakout-players-divisions",
-      "tags": [
-        "Packers",
-        "GB",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "gb",
-      "teamTag": "Packers",
-      "aiSummary": {
-        "executiveBrief": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
-        "keyTakeaways": [
-          "Official Green Bay Packers update: NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
-          "Current Record: 6-3 (Active in NFC North)"
+          "Official Green Bay Packers update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 6-4 (Active in NFC North)"
         ],
         "fantasyImpact": "Monitor active Packers depth chart led by Jordan Love and Christian Watson.",
         "urgency": "HIGH"
@@ -1236,122 +1236,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "hou": [
     {
-      "id": "hou-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "source": "ESPN",
-      "author": "Anthony Gharib",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
-      "tags": [
-        "Texans",
-        "HOU",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "hou",
-      "teamTag": "Texans",
-      "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-        "keyTakeaways": [
-          "Official Houston Texans update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 3-5 (Active in AFC South)"
-        ],
-        "fantasyImpact": "Monitor active Texans depth chart led by C.J. Stroud and Nico Collins.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "hou-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-      "source": "ESPN",
-      "author": "ESPN",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
-      "tags": [
-        "Texans",
-        "HOU",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "hou",
-      "teamTag": "Texans",
-      "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-        "keyTakeaways": [
-          "Official Houston Texans update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 3-5 (Active in AFC South)"
-        ],
-        "fantasyImpact": "Monitor active Texans depth chart led by C.J. Stroud and Nico Collins.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "hou-news-50462723",
-      "title": "NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
-      "summary": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
-      "source": "ESPN",
-      "author": "Jeremy Fowler",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1014/r1730810_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50462723/2026-nfl-playoffs-mvp-super-bowl-breakout-players-divisions",
-      "tags": [
-        "Texans",
-        "HOU",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "hou",
-      "teamTag": "Texans",
-      "aiSummary": {
-        "executiveBrief": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
-        "keyTakeaways": [
-          "Official Houston Texans update: NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
-          "Current Record: 3-5 (Active in AFC South)"
-        ],
-        "fantasyImpact": "Monitor active Texans depth chart led by C.J. Stroud and Nico Collins.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "hou-news-50465223",
-      "title": "Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
-      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
-      "source": "ESPN",
-      "author": "ESPN Staff",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745073_608x342_16-9.png",
-      "url": "https://www.espn.com/nfl/story/_/id/50465223/nfl-week-10-fashionable-arrivals",
-      "tags": [
-        "Texans",
-        "HOU",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "hou",
-      "teamTag": "Texans",
-      "aiSummary": {
-        "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
-        "keyTakeaways": [
-          "Official Houston Texans update: Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
-          "Current Record: 3-5 (Active in AFC South)"
-        ],
-        "fantasyImpact": "Monitor active Texans depth chart led by C.J. Stroud and Nico Collins.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "hou-news-50463939",
-      "title": "Deshaun Watson downplays facing Texans as Browns try to stay unbeaten at home, in playoff picture",
-      "summary": "— Deshaun Watson isn't buying the hype, insisting that it's no longer a big deal when he plays against his former team, the Houston Texans.",
+      "id": "hou-news-50542066",
+      "title": "C.J. Stroud on a heater",
+      "summary": "DJ BienAime discusses the Houston Texans' win over the Indianapolis Colts and how C.J. Stroud is just heating up.",
       "source": "ESPN",
       "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873056.png?templateId=espn.applewatch.awayhome.1",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873056",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/dm_261120_cj_stroud/dm_261120_cj_stroud.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50542066/cj-stroud-heater",
       "tags": [
         "Texans",
         "HOU",
@@ -1361,10 +1253,118 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "hou",
       "teamTag": "Texans",
       "aiSummary": {
-        "executiveBrief": "— Deshaun Watson isn't buying the hype, insisting that it's no longer a big deal when he plays against his former team, the Houston Texans.",
+        "executiveBrief": "DJ BienAime discusses the Houston Texans' win over the Indianapolis Colts and how C.J. Stroud is just heating up.",
         "keyTakeaways": [
-          "Official Houston Texans update: Deshaun Watson downplays facing Texans as Browns try to stay unbeaten at home, in playoff picture",
-          "Current Record: 3-5 (Active in AFC South)"
+          "Official Houston Texans update: C.J. Stroud on a heater",
+          "Current Record: 4-6 (Active in AFC South)"
+        ],
+        "fantasyImpact": "Monitor active Texans depth chart led by C.J. Stroud and Nico Collins.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "hou-news-50541129",
+      "title": "Dan Orlovsky: C.J. Stroud is a top-5 AFC QB",
+      "summary": "Dan Orlovsky: C.J. Stroud is a top-5 AFC QB",
+      "source": "ESPN",
+      "author": "ESPN NFL Desk",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/ss_20261120_095509046_3750937/ss_20261120_095509046_3750937.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50541129/cj-stroud-top-5-afc-qb",
+      "tags": [
+        "Texans",
+        "HOU",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "hou",
+      "teamTag": "Texans",
+      "aiSummary": {
+        "executiveBrief": "Dan Orlovsky: C.J. Stroud is a top-5 AFC QB",
+        "keyTakeaways": [
+          "Official Houston Texans update: Dan Orlovsky: C.J. Stroud is a top-5 AFC QB",
+          "Current Record: 4-6 (Active in AFC South)"
+        ],
+        "fantasyImpact": "Monitor active Texans depth chart led by C.J. Stroud and Nico Collins.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "hou-news-40699880",
+      "title": "Fantasy buzz: Stroud has Houston fans over the moon, Colts continue to crumble",
+      "summary": "Adam Rank waxes nostalgic about Houston football and the reinvigorated C.J. Stroud.",
+      "source": "ESPN",
+      "author": "ESPN Fantasy",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1120/r1748502_576x324_16-9.jpg",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "tags": [
+        "Texans",
+        "HOU",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "hou",
+      "teamTag": "Texans",
+      "aiSummary": {
+        "executiveBrief": "Adam Rank waxes nostalgic about Houston football and the reinvigorated C.J. Stroud.",
+        "keyTakeaways": [
+          "Official Houston Texans update: Fantasy buzz: Stroud has Houston fans over the moon, Colts continue to crumble",
+          "Current Record: 4-6 (Active in AFC South)"
+        ],
+        "fantasyImpact": "Monitor active Texans depth chart led by C.J. Stroud and Nico Collins.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "hou-news-50538998",
+      "title": "C.J. Stroud stays in 'groove' with another 3-TD night in Texans' blowout of Colts",
+      "summary": "C.J. Stroud had his third straight game with at least three touchdown passes and led the Texans to their fourth win in six games Thursday night against the Colts.",
+      "source": "ESPN",
+      "author": "DJ Bien-Aime",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1120/r1748445_2_600x400_3-2.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50538998/cj-stroud-stays-groove-texans-blowout-colts",
+      "tags": [
+        "Texans",
+        "HOU",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "hou",
+      "teamTag": "Texans",
+      "aiSummary": {
+        "executiveBrief": "C.J. Stroud had his third straight game with at least three touchdown passes and led the Texans to their fourth win in six games Thursday night against the Colts.",
+        "keyTakeaways": [
+          "Official Houston Texans update: C.J. Stroud stays in 'groove' with another 3-TD night in Texans' blowout of Colts",
+          "Current Record: 4-6 (Active in AFC South)"
+        ],
+        "fantasyImpact": "Monitor active Texans depth chart led by C.J. Stroud and Nico Collins.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "hou-news-50536733",
+      "title": "C.J. Stroud, defense star as Texans get critical win over Colts on TNF",
+      "summary": "C.J. Stroud and a swarming defense helped Houston beat Indy on 'Thursday Night Football.'",
+      "source": "ESPN",
+      "author": "DJ BienAime and Stephen Holder",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1120/r1748413_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50536733/texans-colts-thursday-night-football-cj-stroud-defense",
+      "tags": [
+        "Texans",
+        "HOU",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "hou",
+      "teamTag": "Texans",
+      "aiSummary": {
+        "executiveBrief": "C.J. Stroud and a swarming defense helped Houston beat Indy on 'Thursday Night Football.'",
+        "keyTakeaways": [
+          "Official Houston Texans update: C.J. Stroud, defense star as Texans get critical win over Colts on TNF",
+          "Current Record: 4-6 (Active in AFC South)"
         ],
         "fantasyImpact": "Monitor active Texans depth chart led by C.J. Stroud and Nico Collins.",
         "urgency": "HIGH"
@@ -1373,95 +1373,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "wsh": [
     {
-      "id": "wsh-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "source": "ESPN",
-      "author": "Anthony Gharib",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
-      "tags": [
-        "Commanders",
-        "WSH",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "wsh",
-      "teamTag": "Commanders",
-      "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-        "keyTakeaways": [
-          "Official Washington Commanders update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 3-5 (Active in NFC East)"
-        ],
-        "fantasyImpact": "Monitor active Commanders depth chart led by Jayden Daniels and Stefon Diggs.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "wsh-news-50472819",
-      "title": "Sonny Styles setting up Washington's game-winning drive",
-      "summary": "John Keim breaks down how Styles anticipated the Giants' offense before delivering a big hit on J.J. McCarthy.",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_11-13_Commanders_IA/dm_261113_11-13_Commanders_IA.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50472819/sonny-styles-setting-washington-game-winning-drive",
-      "tags": [
-        "Commanders",
-        "WSH",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "wsh",
-      "teamTag": "Commanders",
-      "aiSummary": {
-        "executiveBrief": "John Keim breaks down how Styles anticipated the Giants' offense before delivering a big hit on J.J. McCarthy.",
-        "keyTakeaways": [
-          "Official Washington Commanders update: Sonny Styles setting up Washington's game-winning drive",
-          "Current Record: 3-5 (Active in NFC East)"
-        ],
-        "fantasyImpact": "Monitor active Commanders depth chart led by Jayden Daniels and Stefon Diggs.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "wsh-news-50472000",
-      "title": "Commanders QB Sam Hartman to star as 'The Bachelor' in milestone 30th season",
-      "summary": "The 30th season of ABC's \"The Bachelor\" that will premiere in March 2027 will star the former Notre Dame standout.",
-      "source": "ESPN",
-      "author": "Kalan Hooks",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745280_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50472000/sam-hartman-bachelor-season-30",
-      "tags": [
-        "Commanders",
-        "WSH",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "wsh",
-      "teamTag": "Commanders",
-      "aiSummary": {
-        "executiveBrief": "The 30th season of ABC's \"The Bachelor\" that will premiere in March 2027 will star the former Notre Dame standout.",
-        "keyTakeaways": [
-          "Official Washington Commanders update: Commanders QB Sam Hartman to star as 'The Bachelor' in milestone 30th season",
-          "Current Record: 3-5 (Active in NFC East)"
-        ],
-        "fantasyImpact": "Monitor active Commanders depth chart led by Jayden Daniels and Stefon Diggs.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "wsh-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "wsh-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Commanders",
         "WSH",
@@ -1471,9 +1390,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "wsh",
       "teamTag": "Commanders",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Washington Commanders update: NFL Week 10 betting odds: Lines and totals for every game",
+          "Official Washington Commanders update: NFL Week 11 betting odds: Lines and totals for every game",
           "Current Record: 3-5 (Active in NFC East)"
         ],
         "fantasyImpact": "Monitor active Commanders depth chart led by Jayden Daniels and Stefon Diggs.",
@@ -1481,14 +1400,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       }
     },
     {
-      "id": "wsh-news-50471328",
-      "title": "'I'd cut Jameis Winston this morning': Whitner not amused by hard count",
-      "summary": "'I'd cut Jameis Winston this morning': Whitner not amused by hard count",
+      "id": "wsh-news-50525533",
+      "title": "NFL offseason free agent and trade acquisitions that have and have not worked",
+      "summary": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
       "source": "ESPN",
-      "author": "ESPN NFL Desk",
+      "author": "Aaron Schatz",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/ss_20261113_085734395_3739285/ss_20261113_085734395_3739285.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50471328/whitner-not-amused-hard-count",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1747957_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50525533/2026-offseason-change-scenery-fits-players-new-teams",
       "tags": [
         "Commanders",
         "WSH",
@@ -1498,9 +1417,90 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "wsh",
       "teamTag": "Commanders",
       "aiSummary": {
-        "executiveBrief": "'I'd cut Jameis Winston this morning': Whitner not amused by hard count",
+        "executiveBrief": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
         "keyTakeaways": [
-          "Official Washington Commanders update: 'I'd cut Jameis Winston this morning': Whitner not amused by hard count",
+          "Official Washington Commanders update: NFL offseason free agent and trade acquisitions that have and have not worked",
+          "Current Record: 3-5 (Active in NFC East)"
+        ],
+        "fantasyImpact": "Monitor active Commanders depth chart led by Jayden Daniels and Stefon Diggs.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "wsh-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+      "source": "ESPN",
+      "author": "Anthony Gharib",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
+      "tags": [
+        "Commanders",
+        "WSH",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "wsh",
+      "teamTag": "Commanders",
+      "aiSummary": {
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+        "keyTakeaways": [
+          "Official Washington Commanders update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 3-5 (Active in NFC East)"
+        ],
+        "fantasyImpact": "Monitor active Commanders depth chart led by Jayden Daniels and Stefon Diggs.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "wsh-news-50535562",
+      "title": "How will the Commanders blitz fare against Joe Burrow?",
+      "summary": "John Keim previews the Commanders matchup against the Bengals on Monday night.",
+      "source": "ESPN",
+      "author": "ESPN NFL Desk",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1119/dm_261119_16x9_Commanders_IA/dm_261119_16x9_Commanders_IA.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50535562/how-commanders-blitz-fare-joe-burrow",
+      "tags": [
+        "Commanders",
+        "WSH",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "wsh",
+      "teamTag": "Commanders",
+      "aiSummary": {
+        "executiveBrief": "John Keim previews the Commanders matchup against the Bengals on Monday night.",
+        "keyTakeaways": [
+          "Official Washington Commanders update: How will the Commanders blitz fare against Joe Burrow?",
+          "Current Record: 3-5 (Active in NFC East)"
+        ],
+        "fantasyImpact": "Monitor active Commanders depth chart led by Jayden Daniels and Stefon Diggs.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "wsh-news-50535323",
+      "title": "Washington Commanders unveil 'Beer Spear' ahead of 'Hail Raiser' debut on 'MNF'",
+      "summary": "The limited-edition collectible vessel can hold 16 ounces of beer, equipped with a gold spear at the end of it.",
+      "source": "ESPN",
+      "author": "ESPN staff",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748324_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50535323/washington-commanders-beer-spear",
+      "tags": [
+        "Commanders",
+        "WSH",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "wsh",
+      "teamTag": "Commanders",
+      "aiSummary": {
+        "executiveBrief": "The limited-edition collectible vessel can hold 16 ounces of beer, equipped with a gold spear at the end of it.",
+        "keyTakeaways": [
+          "Official Washington Commanders update: Washington Commanders unveil 'Beer Spear' ahead of 'Hail Raiser' debut on 'MNF'",
           "Current Record: 3-5 (Active in NFC East)"
         ],
         "fantasyImpact": "Monitor active Commanders depth chart led by Jayden Daniels and Stefon Diggs.",
@@ -1510,14 +1510,41 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "pit": [
     {
-      "id": "pit-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "pit-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+      "source": "ESPN",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
+      "tags": [
+        "Steelers",
+        "PIT",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "pit",
+      "teamTag": "Steelers",
+      "aiSummary": {
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+        "keyTakeaways": [
+          "Official Pittsburgh Steelers update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 6-3 (Active in AFC North)"
+        ],
+        "fantasyImpact": "Monitor active Steelers depth chart led by Aaron Rodgers and DK Metcalf.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "pit-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Steelers",
         "PIT",
@@ -1527,24 +1554,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "pit",
       "teamTag": "Steelers",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official Pittsburgh Steelers update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 6-2 (Active in AFC North)"
+          "Official Pittsburgh Steelers update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 6-3 (Active in AFC North)"
         ],
         "fantasyImpact": "Monitor active Steelers depth chart led by Aaron Rodgers and DK Metcalf.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "pit-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "pit-news-50535532",
+      "title": "The Steelers last won in Philadelphia in 1965. Can they top an Eagles team on 7-game losing streak?",
+      "summary": "— Perhaps the Steelers should have stayed attached at the hip pads with the Eagles — as they were when they merged for the 1943 season to form the Steagles — to avoid such an ignominious losing streak in Philadelphia.",
       "source": "ESPN",
-      "author": "ESPN",
+      "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873076.png?templateId=espn.applewatch.awayhome.1",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873076",
       "tags": [
         "Steelers",
         "PIT",
@@ -1554,24 +1581,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "pit",
       "teamTag": "Steelers",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "— Perhaps the Steelers should have stayed attached at the hip pads with the Eagles — as they were when they merged for the 1943 season to form the Steagles — to avoid such an ignominious losing streak in Philadelphia.",
         "keyTakeaways": [
-          "Official Pittsburgh Steelers update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 6-2 (Active in AFC North)"
+          "Official Pittsburgh Steelers update: The Steelers last won in Philadelphia in 1965. Can they top an Eagles team on 7-game losing streak?",
+          "Current Record: 6-3 (Active in AFC North)"
         ],
         "fantasyImpact": "Monitor active Steelers depth chart led by Aaron Rodgers and DK Metcalf.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "pit-news-50463729",
-      "title": "Week 10 betting preview: Analysis, best bets, TD predictions for Sunday",
-      "summary": "Our experts dive into the odds and player props for Week 10 and offer their betting tips and favorite plays.",
+      "id": "pit-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
       "source": "ESPN",
-      "author": "Ben Solak, Seth Walder, Matt Bowen and Mike Clay",
+      "author": "ESPN Staff",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1112/r1745045_608x342_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50463729/week-10-nfl-odds-touchdown-props-best-bets-sunday-games",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
       "tags": [
         "Steelers",
         "PIT",
@@ -1581,24 +1608,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "pit",
       "teamTag": "Steelers",
       "aiSummary": {
-        "executiveBrief": "Our experts dive into the odds and player props for Week 10 and offer their betting tips and favorite plays.",
+        "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
         "keyTakeaways": [
-          "Official Pittsburgh Steelers update: Week 10 betting preview: Analysis, best bets, TD predictions for Sunday",
-          "Current Record: 6-2 (Active in AFC North)"
+          "Official Pittsburgh Steelers update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 6-3 (Active in AFC North)"
         ],
         "fantasyImpact": "Monitor active Steelers depth chart led by Aaron Rodgers and DK Metcalf.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "pit-news-50464709",
-      "title": "It's a battle for the AFC North: Steelers at Bengals Week 10 primer",
-      "summary": "Aaron Rodgers and Joe Burrow and their 6-2 teams face off Sunday night, and Ben Baby and Brooke Pryor break down the matchup.",
+      "id": "pit-news-50532925",
+      "title": "Hall of Famer Jack Ham returning to broadcast booth after health scare",
+      "summary": "Hall of Fame linebacker and Penn State radio analyst Jack Ham will return to the broadcast booth on Saturday, just two weeks after suffering a medical emergency.",
       "source": "ESPN",
-      "author": "Ben Baby and Brooke Pryor",
+      "author": "Adam Rittenberg",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1110/nfl_rodgers_burrows_matchup_16x9_608x342.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50464709/afc-north-steelers-bengals-rodgers-burrow-week-10",
+      "imageUrl": "https://a.espncdn.com/photo/2017/0408/r197865_600x400_3-2.jpg",
+      "url": "https://www.espn.com/college-football/story/_/id/50532925/jack-ham-returning-broadcast-booth-health-scare",
       "tags": [
         "Steelers",
         "PIT",
@@ -1608,37 +1635,10 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "pit",
       "teamTag": "Steelers",
       "aiSummary": {
-        "executiveBrief": "Aaron Rodgers and Joe Burrow and their 6-2 teams face off Sunday night, and Ben Baby and Brooke Pryor break down the matchup.",
+        "executiveBrief": "Hall of Fame linebacker and Penn State radio analyst Jack Ham will return to the broadcast booth on Saturday, just two weeks after suffering a medical emergency.",
         "keyTakeaways": [
-          "Official Pittsburgh Steelers update: It's a battle for the AFC North: Steelers at Bengals Week 10 primer",
-          "Current Record: 6-2 (Active in AFC North)"
-        ],
-        "fantasyImpact": "Monitor active Steelers depth chart led by Aaron Rodgers and DK Metcalf.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "pit-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-      "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
-      "tags": [
-        "Steelers",
-        "PIT",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "pit",
-      "teamTag": "Steelers",
-      "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-        "keyTakeaways": [
-          "Official Pittsburgh Steelers update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 6-2 (Active in AFC North)"
+          "Official Pittsburgh Steelers update: Hall of Famer Jack Ham returning to broadcast booth after health scare",
+          "Current Record: 6-3 (Active in AFC North)"
         ],
         "fantasyImpact": "Monitor active Steelers depth chart led by Aaron Rodgers and DK Metcalf.",
         "urgency": "HIGH"
@@ -1647,14 +1647,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "atl": [
     {
-      "id": "atl-news-50474442",
-      "title": "Falcons sign two players to contract extensions",
-      "summary": "Marc Raimondi reports on the details of the two Falcons players who have been signed to contract extensions.",
+      "id": "atl-news-50541233",
+      "title": "Falcons are in a familiar spot 👀",
+      "summary": "Marc Raimondi reports on how the Falcons are like 'Groundhog Dog' in terms of where they are compared to last season.",
       "source": "ESPN",
       "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_Falcons_sign_two_players_to_contract_ext991/dm_261113_Falcons_sign_two_players_to_contract_ext991.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50474442/falcons-sign-two-players-contract-extensions",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/dm_261120_Falcons_are_in_a_familiar_spot614/dm_261120_Falcons_are_in_a_familiar_spot614.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50541233/falcons-familiar-spot",
       "tags": [
         "Falcons",
         "ATL",
@@ -1664,24 +1664,51 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "atl",
       "teamTag": "Falcons",
       "aiSummary": {
-        "executiveBrief": "Marc Raimondi reports on the details of the two Falcons players who have been signed to contract extensions.",
+        "executiveBrief": "Marc Raimondi reports on how the Falcons are like 'Groundhog Dog' in terms of where they are compared to last season.",
         "keyTakeaways": [
-          "Official Atlanta Falcons update: Falcons sign two players to contract extensions",
-          "Current Record: 3-6 (Active in NFC South)"
+          "Official Atlanta Falcons update: Falcons are in a familiar spot 👀",
+          "Current Record: 3-7 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Falcons depth chart led by Michael Penix Jr. and Drake London.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "atl-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "atl-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+      "source": "ESPN",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
+      "tags": [
+        "Falcons",
+        "ATL",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "atl",
+      "teamTag": "Falcons",
+      "aiSummary": {
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+        "keyTakeaways": [
+          "Official Atlanta Falcons update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 3-7 (Active in NFC South)"
+        ],
+        "fantasyImpact": "Monitor active Falcons depth chart led by Michael Penix Jr. and Drake London.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "atl-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Falcons",
         "ATL",
@@ -1691,24 +1718,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "atl",
       "teamTag": "Falcons",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official Atlanta Falcons update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 3-6 (Active in NFC South)"
+          "Official Atlanta Falcons update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 3-7 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Falcons depth chart led by Michael Penix Jr. and Drake London.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "atl-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "atl-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
       "source": "ESPN",
-      "author": "ESPN",
+      "author": "ESPN Staff",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
       "tags": [
         "Falcons",
         "ATL",
@@ -1718,24 +1745,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "atl",
       "teamTag": "Falcons",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
         "keyTakeaways": [
-          "Official Atlanta Falcons update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 3-6 (Active in NFC South)"
+          "Official Atlanta Falcons update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 3-7 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Falcons depth chart led by Michael Penix Jr. and Drake London.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "atl-news-50471659",
-      "title": "Falcons sign DE Cameron Thomas, CB C.J. Henderson to multiyear extensions",
-      "summary": "The Atlanta Falcons have signed defensive end Cameron Thomas and cornerback C.J. Henderson to multiyear contract extensions, the team announced Friday.",
+      "id": "atl-news-50520404",
+      "title": "Midseason reports on every NFL team's offensive coordinator, playcaller",
+      "summary": "Here's the good and the bad for each offensive coordinator or playcaller through Week 10, plus keys to their success the rest of the way.",
       "source": "ESPN",
-      "author": "Marc Raimondi",
+      "author": "NFL Nation",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745254_600x400_3-2.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50471659/falcons-sign-de-thomas-cb-henderson-multiyear-extensions",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1118/32_for_32_midseason_look_608x342.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50520404/nfl-offensive-coordinators-playcallers-midseason-report",
       "tags": [
         "Falcons",
         "ATL",
@@ -1745,37 +1772,10 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "atl",
       "teamTag": "Falcons",
       "aiSummary": {
-        "executiveBrief": "The Atlanta Falcons have signed defensive end Cameron Thomas and cornerback C.J. Henderson to multiyear contract extensions, the team announced Friday.",
+        "executiveBrief": "Here's the good and the bad for each offensive coordinator or playcaller through Week 10, plus keys to their success the rest of the way.",
         "keyTakeaways": [
-          "Official Atlanta Falcons update: Falcons sign DE Cameron Thomas, CB C.J. Henderson to multiyear extensions",
-          "Current Record: 3-6 (Active in NFC South)"
-        ],
-        "fantasyImpact": "Monitor active Falcons depth chart led by Michael Penix Jr. and Drake London.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "atl-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-      "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
-      "tags": [
-        "Falcons",
-        "ATL",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "atl",
-      "teamTag": "Falcons",
-      "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-        "keyTakeaways": [
-          "Official Atlanta Falcons update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 3-6 (Active in NFC South)"
+          "Official Atlanta Falcons update: Midseason reports on every NFL team's offensive coordinator, playcaller",
+          "Current Record: 3-7 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Falcons depth chart led by Michael Penix Jr. and Drake London.",
         "urgency": "HIGH"
@@ -1784,14 +1784,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "tb": [
     {
-      "id": "tb-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "tb-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Buccaneers",
         "TB",
@@ -1801,9 +1801,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "tb",
       "teamTag": "Buccaneers",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official Tampa Bay Buccaneers update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
+          "Official Tampa Bay Buccaneers update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
           "Current Record: 3-6 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Buccaneers depth chart led by Baker Mayfield and Emeka Egbuka.",
@@ -1811,14 +1811,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       }
     },
     {
-      "id": "tb-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "tb-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Buccaneers",
         "TB",
@@ -1828,9 +1828,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "tb",
       "teamTag": "Buccaneers",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Tampa Bay Buccaneers update: NFL Week 10 betting odds: Lines and totals for every game",
+          "Official Tampa Bay Buccaneers update: NFL Week 11 betting odds: Lines and totals for every game",
           "Current Record: 3-6 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Buccaneers depth chart led by Baker Mayfield and Emeka Egbuka.",
@@ -1838,14 +1838,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       }
     },
     {
-      "id": "tb-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+      "id": "tb-news-50534274",
+      "title": "Week 11 betting preview: Analysis, best bets, TD predictions for Sunday",
+      "summary": "Our experts dive into the odds and player props for Week 11 and offer their betting tips and favorite plays.",
       "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
+      "author": "Ben Solak, Seth Walder, Matt Bowen and Mike Clay",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1120/r1748568_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50534274/week-11-nfl-odds-touchdown-props-best-bets-sunday-games",
       "tags": [
         "Buccaneers",
         "TB",
@@ -1855,9 +1855,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "tb",
       "teamTag": "Buccaneers",
       "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+        "executiveBrief": "Our experts dive into the odds and player props for Week 11 and offer their betting tips and favorite plays.",
         "keyTakeaways": [
-          "Official Tampa Bay Buccaneers update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Official Tampa Bay Buccaneers update: Week 11 betting preview: Analysis, best bets, TD predictions for Sunday",
           "Current Record: 3-6 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Buccaneers depth chart led by Baker Mayfield and Emeka Egbuka.",
@@ -1865,14 +1865,41 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       }
     },
     {
-      "id": "tb-news-50465223",
-      "title": "Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
+      "id": "tb-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+      "source": "ESPN",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
+      "tags": [
+        "Buccaneers",
+        "TB",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "tb",
+      "teamTag": "Buccaneers",
+      "aiSummary": {
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+        "keyTakeaways": [
+          "Official Tampa Bay Buccaneers update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 3-6 (Active in NFC South)"
+        ],
+        "fantasyImpact": "Monitor active Buccaneers depth chart led by Baker Mayfield and Emeka Egbuka.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "tb-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
       "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
       "source": "ESPN",
       "author": "ESPN Staff",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745073_608x342_16-9.png",
-      "url": "https://www.espn.com/nfl/story/_/id/50465223/nfl-week-10-fashionable-arrivals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
       "tags": [
         "Buccaneers",
         "TB",
@@ -1884,34 +1911,7 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "aiSummary": {
         "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
         "keyTakeaways": [
-          "Official Tampa Bay Buccaneers update: Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
-          "Current Record: 3-6 (Active in NFC South)"
-        ],
-        "fantasyImpact": "Monitor active Buccaneers depth chart led by Baker Mayfield and Emeka Egbuka.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "tb-news-50448976",
-      "title": "2026 NFL midseason report: Questions, stats for all 32 teams entering second half",
-      "summary": "The 2026 NFL season has hit the midway point. Here's what to watch in the second half, key QB stats and fantasy nuggets for all 32 teams.",
-      "source": "ESPN",
-      "author": "NFL Nation reporters and Eric Moody",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1110/nfl_2026_mid_season_report_1296x729.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448976/2026-nfl-midseason-report-questions-stats-fantasy",
-      "tags": [
-        "Buccaneers",
-        "TB",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "tb",
-      "teamTag": "Buccaneers",
-      "aiSummary": {
-        "executiveBrief": "The 2026 NFL season has hit the midway point. Here's what to watch in the second half, key QB stats and fantasy nuggets for all 32 teams.",
-        "keyTakeaways": [
-          "Official Tampa Bay Buccaneers update: 2026 NFL midseason report: Questions, stats for all 32 teams entering second half",
+          "Official Tampa Bay Buccaneers update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
           "Current Record: 3-6 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Buccaneers depth chart led by Baker Mayfield and Emeka Egbuka.",
@@ -1921,68 +1921,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "chi": [
     {
-      "id": "chi-news-50473665",
-      "title": "Jeffery Simmons has high praise for Caleb Williams",
-      "summary": "Jeffery Simmons has high praise for Caleb Williams",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/ss_20261113_144034442_3739521/ss_20261113_144034442_3739521.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50473665/jeffery-simmons-high-praise-caleb-williams",
-      "tags": [
-        "Bears",
-        "CHI",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "chi",
-      "teamTag": "Bears",
-      "aiSummary": {
-        "executiveBrief": "Jeffery Simmons has high praise for Caleb Williams",
-        "keyTakeaways": [
-          "Official Chicago Bears update: Jeffery Simmons has high praise for Caleb Williams",
-          "Current Record: 7-2 (Active in NFC North)"
-        ],
-        "fantasyImpact": "Monitor active Bears depth chart led by Caleb Williams and Luther Burden III.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "chi-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "source": "ESPN",
-      "author": "Anthony Gharib",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
-      "tags": [
-        "Bears",
-        "CHI",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "chi",
-      "teamTag": "Bears",
-      "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-        "keyTakeaways": [
-          "Official Chicago Bears update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 7-2 (Active in NFC North)"
-        ],
-        "fantasyImpact": "Monitor active Bears depth chart led by Caleb Williams and Luther Burden III.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "chi-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "chi-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Bears",
         "CHI",
@@ -1992,9 +1938,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "chi",
       "teamTag": "Bears",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Chicago Bears update: NFL Week 10 betting odds: Lines and totals for every game",
+          "Official Chicago Bears update: NFL Week 11 betting odds: Lines and totals for every game",
           "Current Record: 7-2 (Active in NFC North)"
         ],
         "fantasyImpact": "Monitor active Bears depth chart led by Caleb Williams and Luther Burden III.",
@@ -2002,14 +1948,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       }
     },
     {
-      "id": "chi-news-50462993",
-      "title": "NFC North: Bears win division? Cousins has Vikes in command?",
-      "summary": "What will Kirk Cousins and Micah Parsons mean for the best division in football, or will the Bears hang on?",
+      "id": "chi-news-50542720",
+      "title": "Bears rule out CB Kyler Gordon; RB Kyle Monangai cleared to return",
+      "summary": "The Bears will be without nickel corner Kyler Gordon when they host the Saints, while running back Kyle Monangai, wide receiver Luther Burden III and defensive tackle Jeffery Simmons are expected to play.",
       "source": "ESPN",
-      "author": "Courtney Cronin and Rob Demovsky and Kevin Seifert and Eric Woodyard",
+      "author": "Courtney Cronin",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1112/nfc_roundtable3_608x342.png",
-      "url": "https://www.espn.com/nfl/story/_/id/50462993/lions-packers-bears-vikings-nfc-north",
+      "imageUrl": "https://a.espncdn.com/photo/2025/1213/r1588944_1296x729_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50542720/bears-rule-cb-kyler-gordon-vs-saints",
       "tags": [
         "Bears",
         "CHI",
@@ -2019,9 +1965,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "chi",
       "teamTag": "Bears",
       "aiSummary": {
-        "executiveBrief": "What will Kirk Cousins and Micah Parsons mean for the best division in football, or will the Bears hang on?",
+        "executiveBrief": "The Bears will be without nickel corner Kyler Gordon when they host the Saints, while running back Kyle Monangai, wide receiver Luther Burden III and defensive tackle Jeffery Simmons are expected to play.",
         "keyTakeaways": [
-          "Official Chicago Bears update: NFC North: Bears win division? Cousins has Vikes in command?",
+          "Official Chicago Bears update: Bears rule out CB Kyler Gordon; RB Kyle Monangai cleared to return",
           "Current Record: 7-2 (Active in NFC North)"
         ],
         "fantasyImpact": "Monitor active Bears depth chart led by Caleb Williams and Luther Burden III.",
@@ -2029,14 +1975,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       }
     },
     {
-      "id": "chi-news-50462723",
-      "title": "NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
-      "summary": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
+      "id": "chi-news-50534274",
+      "title": "Week 11 betting preview: Analysis, best bets, TD predictions for Sunday",
+      "summary": "Our experts dive into the odds and player props for Week 11 and offer their betting tips and favorite plays.",
       "source": "ESPN",
-      "author": "Jeremy Fowler",
+      "author": "Ben Solak, Seth Walder, Matt Bowen and Mike Clay",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1014/r1730810_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50462723/2026-nfl-playoffs-mvp-super-bowl-breakout-players-divisions",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1120/r1748568_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50534274/week-11-nfl-odds-touchdown-props-best-bets-sunday-games",
       "tags": [
         "Bears",
         "CHI",
@@ -2046,9 +1992,63 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "chi",
       "teamTag": "Bears",
       "aiSummary": {
-        "executiveBrief": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
+        "executiveBrief": "Our experts dive into the odds and player props for Week 11 and offer their betting tips and favorite plays.",
         "keyTakeaways": [
-          "Official Chicago Bears update: NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
+          "Official Chicago Bears update: Week 11 betting preview: Analysis, best bets, TD predictions for Sunday",
+          "Current Record: 7-2 (Active in NFC North)"
+        ],
+        "fantasyImpact": "Monitor active Bears depth chart led by Caleb Williams and Luther Burden III.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "chi-news-50541996",
+      "title": "Jeffery Simmons making an impact on Bears defense",
+      "summary": "Courtney Cronin breaks down Simmons' influence on the Bears since the trade, highlighting both his on-field production and his leadership in the locker room.",
+      "source": "ESPN",
+      "author": "ESPN NFL Desk",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/dm_261120_11-20_Bears_IA_Studio/dm_261120_11-20_Bears_IA_Studio.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50541996/jeffery-simmons-making-impact-bears-defense",
+      "tags": [
+        "Bears",
+        "CHI",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "chi",
+      "teamTag": "Bears",
+      "aiSummary": {
+        "executiveBrief": "Courtney Cronin breaks down Simmons' influence on the Bears since the trade, highlighting both his on-field production and his leadership in the locker room.",
+        "keyTakeaways": [
+          "Official Chicago Bears update: Jeffery Simmons making an impact on Bears defense",
+          "Current Record: 7-2 (Active in NFC North)"
+        ],
+        "fantasyImpact": "Monitor active Bears depth chart led by Caleb Williams and Luther Burden III.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "chi-news-50536235",
+      "title": "Jeffery Simmons expects to play through knee injury",
+      "summary": "Courtney Cronin reports on Jeffery Simmons' availability for Sunday and the impact he's made on the Bears' defense.",
+      "source": "ESPN",
+      "author": "ESPN NFL Desk",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1119/dm_261119_bears/dm_261119_bears.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50536235/jeffery-simmons-expects-play-knee-injury",
+      "tags": [
+        "Bears",
+        "CHI",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "chi",
+      "teamTag": "Bears",
+      "aiSummary": {
+        "executiveBrief": "Courtney Cronin reports on Jeffery Simmons' availability for Sunday and the impact he's made on the Bears' defense.",
+        "keyTakeaways": [
+          "Official Chicago Bears update: Jeffery Simmons expects to play through knee injury",
           "Current Record: 7-2 (Active in NFC North)"
         ],
         "fantasyImpact": "Monitor active Bears depth chart led by Caleb Williams and Luther Burden III.",
@@ -2058,14 +2058,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "dal": [
     {
-      "id": "dal-news-50475037",
-      "title": "Hope for the Cowboys to right the ship",
-      "summary": "Todd Archer breaks down the Cowboys' mindset ahead of Sunday's matchup with the 49ers.",
+      "id": "dal-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
       "source": "ESPN",
-      "author": "ESPN NFL Desk",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_Cowboys/dm_261113_Cowboys.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50475037/hope-cowboys-right-ship",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
       "tags": [
         "Cowboys",
         "DAL",
@@ -2075,24 +2075,51 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "dal",
       "teamTag": "Cowboys",
       "aiSummary": {
-        "executiveBrief": "Todd Archer breaks down the Cowboys' mindset ahead of Sunday's matchup with the 49ers.",
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
         "keyTakeaways": [
-          "Official Dallas Cowboys update: Hope for the Cowboys to right the ship",
-          "Current Record: 4-5 (Active in NFC East)"
+          "Official Dallas Cowboys update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 4-6 (Active in NFC East)"
         ],
         "fantasyImpact": "Monitor active Cowboys depth chart led by Dak Prescott and CeeDee Lamb.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "dal-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "dal-news-50534234",
+      "title": "With Titans, Eagles up next, it's now or never for Cowboys",
+      "summary": "Thanks to the scuffling NFC East and a friendly schedule the next week, the Cowboys still have a playoff shot.",
+      "source": "ESPN",
+      "author": "Todd Archer",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748282_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50534234/cowboys-titans-eagles-nfc-east-thanksgiving",
+      "tags": [
+        "Cowboys",
+        "DAL",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "dal",
+      "teamTag": "Cowboys",
+      "aiSummary": {
+        "executiveBrief": "Thanks to the scuffling NFC East and a friendly schedule the next week, the Cowboys still have a playoff shot.",
+        "keyTakeaways": [
+          "Official Dallas Cowboys update: With Titans, Eagles up next, it's now or never for Cowboys",
+          "Current Record: 4-6 (Active in NFC East)"
+        ],
+        "fantasyImpact": "Monitor active Cowboys depth chart led by Dak Prescott and CeeDee Lamb.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "dal-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Cowboys",
         "DAL",
@@ -2102,24 +2129,51 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "dal",
       "teamTag": "Cowboys",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official Dallas Cowboys update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 4-5 (Active in NFC East)"
+          "Official Dallas Cowboys update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 4-6 (Active in NFC East)"
         ],
         "fantasyImpact": "Monitor active Cowboys depth chart led by Dak Prescott and CeeDee Lamb.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "dal-news-50472986",
-      "title": "Stephen A. is not having Marcus Spears' Cowboys optimism",
-      "summary": "Stephen A. is not having Marcus Spears' Cowboys optimism",
+      "id": "dal-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+      "source": "ESPN",
+      "author": "ESPN Staff",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
+      "tags": [
+        "Cowboys",
+        "DAL",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "dal",
+      "teamTag": "Cowboys",
+      "aiSummary": {
+        "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+        "keyTakeaways": [
+          "Official Dallas Cowboys update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 4-6 (Active in NFC East)"
+        ],
+        "fantasyImpact": "Monitor active Cowboys depth chart led by Dak Prescott and CeeDee Lamb.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "dal-news-50535173",
+      "title": "How Christian Parker is handling his demotion",
+      "summary": "Todd Archer breaks down Christian Parker's reaction to losing play calling duties.",
       "source": "ESPN",
       "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/ss_20261113_125231440_3739440/ss_20261113_125231440_3739440.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50472986/stephen-not-having-marcus-spears-cowboys-optimism",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1119/dm_261119_Cowboys_Parker_IA/dm_261119_Cowboys_Parker_IA.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50535173/how-christian-parker-handling-demotion",
       "tags": [
         "Cowboys",
         "DAL",
@@ -2129,64 +2183,10 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "dal",
       "teamTag": "Cowboys",
       "aiSummary": {
-        "executiveBrief": "Stephen A. is not having Marcus Spears' Cowboys optimism",
+        "executiveBrief": "Todd Archer breaks down Christian Parker's reaction to losing play calling duties.",
         "keyTakeaways": [
-          "Official Dallas Cowboys update: Stephen A. is not having Marcus Spears' Cowboys optimism",
-          "Current Record: 4-5 (Active in NFC East)"
-        ],
-        "fantasyImpact": "Monitor active Cowboys depth chart led by Dak Prescott and CeeDee Lamb.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "dal-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-      "source": "ESPN",
-      "author": "ESPN",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
-      "tags": [
-        "Cowboys",
-        "DAL",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "dal",
-      "teamTag": "Cowboys",
-      "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-        "keyTakeaways": [
-          "Official Dallas Cowboys update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 4-5 (Active in NFC East)"
-        ],
-        "fantasyImpact": "Monitor active Cowboys depth chart led by Dak Prescott and CeeDee Lamb.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "dal-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-      "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
-      "tags": [
-        "Cowboys",
-        "DAL",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "dal",
-      "teamTag": "Cowboys",
-      "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-        "keyTakeaways": [
-          "Official Dallas Cowboys update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 4-5 (Active in NFC East)"
+          "Official Dallas Cowboys update: How Christian Parker is handling his demotion",
+          "Current Record: 4-6 (Active in NFC East)"
         ],
         "fantasyImpact": "Monitor active Cowboys depth chart led by Dak Prescott and CeeDee Lamb.",
         "urgency": "HIGH"
@@ -2195,68 +2195,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "cin": [
     {
-      "id": "cin-news-50475217",
-      "title": "Bengals confident heading into pivotal Steelers matchup",
-      "summary": "Ben Baby reports on the Bengals' confidence and preparation ahead of a crucial AFC North showdown with the Steelers.",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_bengals/dm_261113_bengals.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50475217/bengals-confident-heading-pivotal-steelers-matchup",
-      "tags": [
-        "Bengals",
-        "CIN",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "cin",
-      "teamTag": "Bengals",
-      "aiSummary": {
-        "executiveBrief": "Ben Baby reports on the Bengals' confidence and preparation ahead of a crucial AFC North showdown with the Steelers.",
-        "keyTakeaways": [
-          "Official Cincinnati Bengals update: Bengals confident heading into pivotal Steelers matchup",
-          "Current Record: 6-2 (Active in AFC North)"
-        ],
-        "fantasyImpact": "Monitor active Bengals depth chart led by Joe Burrow and Tee Higgins.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "cin-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "source": "ESPN",
-      "author": "Anthony Gharib",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
-      "tags": [
-        "Bengals",
-        "CIN",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "cin",
-      "teamTag": "Bengals",
-      "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-        "keyTakeaways": [
-          "Official Cincinnati Bengals update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 6-2 (Active in AFC North)"
-        ],
-        "fantasyImpact": "Monitor active Bengals depth chart led by Joe Burrow and Tee Higgins.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "cin-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "cin-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Bengals",
         "CIN",
@@ -2266,24 +2212,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "cin",
       "teamTag": "Bengals",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Cincinnati Bengals update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 6-2 (Active in AFC North)"
+          "Official Cincinnati Bengals update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 7-2 (Active in AFC North)"
         ],
-        "fantasyImpact": "Monitor active Bengals depth chart led by Joe Burrow and Tee Higgins.",
+        "fantasyImpact": "Monitor active Bengals depth chart led by Joe Burrow and Ja'Marr Chase.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "cin-news-50464709",
-      "title": "It's a battle for the AFC North: Steelers at Bengals Week 10 primer",
-      "summary": "Aaron Rodgers and Joe Burrow and their 6-2 teams face off Sunday night, and Ben Baby and Brooke Pryor break down the matchup.",
+      "id": "cin-news-50541578",
+      "title": "Why Stephen A. thinks 'special' Joe Burrow is the MVP front-runner",
+      "summary": "Why Stephen A. thinks 'special' Joe Burrow is the MVP front-runner",
       "source": "ESPN",
-      "author": "Ben Baby and Brooke Pryor",
+      "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1110/nfl_rodgers_burrows_matchup_16x9_608x342.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50464709/afc-north-steelers-bengals-rodgers-burrow-week-10",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/ss_20261120_110328687_3750993/ss_20261120_110328687_3750993.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50541578/why-stephen-thinks-special-joe-burrow-mvp-front-runner",
       "tags": [
         "Bengals",
         "CIN",
@@ -2293,24 +2239,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "cin",
       "teamTag": "Bengals",
       "aiSummary": {
-        "executiveBrief": "Aaron Rodgers and Joe Burrow and their 6-2 teams face off Sunday night, and Ben Baby and Brooke Pryor break down the matchup.",
+        "executiveBrief": "Why Stephen A. thinks 'special' Joe Burrow is the MVP front-runner",
         "keyTakeaways": [
-          "Official Cincinnati Bengals update: It's a battle for the AFC North: Steelers at Bengals Week 10 primer",
-          "Current Record: 6-2 (Active in AFC North)"
+          "Official Cincinnati Bengals update: Why Stephen A. thinks 'special' Joe Burrow is the MVP front-runner",
+          "Current Record: 7-2 (Active in AFC North)"
         ],
-        "fantasyImpact": "Monitor active Bengals depth chart led by Joe Burrow and Tee Higgins.",
+        "fantasyImpact": "Monitor active Bengals depth chart led by Joe Burrow and Ja'Marr Chase.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "cin-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+      "id": "cin-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
       "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
       "tags": [
         "Bengals",
         "CIN",
@@ -2320,26 +2266,80 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "cin",
       "teamTag": "Bengals",
       "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
         "keyTakeaways": [
-          "Official Cincinnati Bengals update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 6-2 (Active in AFC North)"
+          "Official Cincinnati Bengals update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 7-2 (Active in AFC North)"
         ],
-        "fantasyImpact": "Monitor active Bengals depth chart led by Joe Burrow and Tee Higgins.",
+        "fantasyImpact": "Monitor active Bengals depth chart led by Joe Burrow and Ja'Marr Chase.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "cin-news-50536536",
+      "title": "Is Burrow's illness any cause for concern?",
+      "summary": "Ben Baby breaks down if Joe Burrow missing practice due to illness is a concern.",
+      "source": "ESPN",
+      "author": "ESPN NFL Desk",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1119/dm_261119_Bengals_Burrow_sick_IA/dm_261119_Bengals_Burrow_sick_IA.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50536536/is-burrow-illness-cause-concern",
+      "tags": [
+        "Bengals",
+        "CIN",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "cin",
+      "teamTag": "Bengals",
+      "aiSummary": {
+        "executiveBrief": "Ben Baby breaks down if Joe Burrow missing practice due to illness is a concern.",
+        "keyTakeaways": [
+          "Official Cincinnati Bengals update: Is Burrow's illness any cause for concern?",
+          "Current Record: 7-2 (Active in AFC North)"
+        ],
+        "fantasyImpact": "Monitor active Bengals depth chart led by Joe Burrow and Ja'Marr Chase.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "cin-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+      "source": "ESPN",
+      "author": "Anthony Gharib",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
+      "tags": [
+        "Bengals",
+        "CIN",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "cin",
+      "teamTag": "Bengals",
+      "aiSummary": {
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+        "keyTakeaways": [
+          "Official Cincinnati Bengals update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 7-2 (Active in AFC North)"
+        ],
+        "fantasyImpact": "Monitor active Bengals depth chart led by Joe Burrow and Ja'Marr Chase.",
         "urgency": "HIGH"
       }
     }
   ],
   "nyj": [
     {
-      "id": "nyj-news-50475349",
-      "title": "Would Aaron Glenn take a step back on defense?",
-      "summary": "Rich Cimini discusses the possibility of Aaron Glenn relinquishing defensive play-calling duties.",
+      "id": "nyj-news-50541939",
+      "title": "Draft buzz: Interest in Oklahoma State's Drew Mestemaker could spur draft trade",
+      "summary": "If the Titans or Chargers wind up with the No. 1 selection and stick with their franchise quarterbacks, interest in Oklahoma State's Drew Mestemaker could lead to a team seeking to trade up for the top overall pick.",
       "source": "ESPN",
       "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_16x9_Jets_IA_1/dm_261113_16x9_Jets_IA_1.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50475349/would-aaron-glenn-take-step-back-defense",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1111/r1744598_1296x729_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50541939/draft-buzz-mestemaker-spur-auction-no-1-pick",
       "tags": [
         "Jets",
         "NYJ",
@@ -2349,24 +2349,51 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "nyj",
       "teamTag": "Jets",
       "aiSummary": {
-        "executiveBrief": "Rich Cimini discusses the possibility of Aaron Glenn relinquishing defensive play-calling duties.",
+        "executiveBrief": "If the Titans or Chargers wind up with the No. 1 selection and stick with their franchise quarterbacks, interest in Oklahoma State's Drew Mestemaker could lead to a team seeking to trade up for the top overall pick.",
         "keyTakeaways": [
-          "Official New York Jets update: Would Aaron Glenn take a step back on defense?",
-          "Current Record: 2-7 (Active in AFC East)"
+          "Official New York Jets update: Draft buzz: Interest in Oklahoma State's Drew Mestemaker could spur draft trade",
+          "Current Record: 2-8 (Active in AFC East)"
         ],
         "fantasyImpact": "Monitor active Jets depth chart led by Geno Smith and Garrett Wilson.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "nyj-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "nyj-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+      "source": "ESPN",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
+      "tags": [
+        "Jets",
+        "NYJ",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "nyj",
+      "teamTag": "Jets",
+      "aiSummary": {
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+        "keyTakeaways": [
+          "Official New York Jets update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 2-8 (Active in AFC East)"
+        ],
+        "fantasyImpact": "Monitor active Jets depth chart led by Geno Smith and Garrett Wilson.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "nyj-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Jets",
         "NYJ",
@@ -2376,78 +2403,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "nyj",
       "teamTag": "Jets",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official New York Jets update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 2-7 (Active in AFC East)"
+          "Official New York Jets update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 2-8 (Active in AFC East)"
         ],
         "fantasyImpact": "Monitor active Jets depth chart led by Geno Smith and Garrett Wilson.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "nyj-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-      "source": "ESPN",
-      "author": "ESPN",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
-      "tags": [
-        "Jets",
-        "NYJ",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "nyj",
-      "teamTag": "Jets",
-      "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-        "keyTakeaways": [
-          "Official New York Jets update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 2-7 (Active in AFC East)"
-        ],
-        "fantasyImpact": "Monitor active Jets depth chart led by Geno Smith and Garrett Wilson.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "nyj-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-      "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
-      "tags": [
-        "Jets",
-        "NYJ",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "nyj",
-      "teamTag": "Jets",
-      "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-        "keyTakeaways": [
-          "Official New York Jets update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 2-7 (Active in AFC East)"
-        ],
-        "fantasyImpact": "Monitor active Jets depth chart led by Geno Smith and Garrett Wilson.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "nyj-news-50465223",
-      "title": "Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
+      "id": "nyj-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
       "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
       "source": "ESPN",
       "author": "ESPN Staff",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745073_608x342_16-9.png",
-      "url": "https://www.espn.com/nfl/story/_/id/50465223/nfl-week-10-fashionable-arrivals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
       "tags": [
         "Jets",
         "NYJ",
@@ -2459,8 +2432,35 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "aiSummary": {
         "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
         "keyTakeaways": [
-          "Official New York Jets update: Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
-          "Current Record: 2-7 (Active in AFC East)"
+          "Official New York Jets update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 2-8 (Active in AFC East)"
+        ],
+        "fantasyImpact": "Monitor active Jets depth chart led by Geno Smith and Garrett Wilson.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "nyj-news-50535019",
+      "title": "Reeling Jets head to LA to face Chargers, who are coming off their first win of the season",
+      "summary": "— The New York Jets and Los Angeles Chargers are in the same predicament, but the conversation around the two teams could not be more different heading into their matchup on Sunday.",
+      "source": "ESPN",
+      "author": "ESPN NFL Desk",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873074.png?templateId=espn.applewatch.awayhome.1",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873074",
+      "tags": [
+        "Jets",
+        "NYJ",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "nyj",
+      "teamTag": "Jets",
+      "aiSummary": {
+        "executiveBrief": "— The New York Jets and Los Angeles Chargers are in the same predicament, but the conversation around the two teams could not be more different heading into their matchup on Sunday.",
+        "keyTakeaways": [
+          "Official New York Jets update: Reeling Jets head to LA to face Chargers, who are coming off their first win of the season",
+          "Current Record: 2-8 (Active in AFC East)"
         ],
         "fantasyImpact": "Monitor active Jets depth chart led by Geno Smith and Garrett Wilson.",
         "urgency": "HIGH"
@@ -2469,68 +2469,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "mia": [
     {
-      "id": "mia-news-50473841",
-      "title": "3 things to know ahead of the Dolphins' matchup vs. Colts",
-      "summary": "Marcel Louis-Jacques reports on the 3 things to know for the Dolphins ahead of their upcoming matchup against the Colts.",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_3_things_to_know_ahead_of_the_Dolphins_matchup_vs_Colts/dm_261113_3_things_to_know_ahead_of_the_Dolphins_matchup_vs_Colts.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50473841/3-things-know-ahead-dolphins-matchup-vs-colts",
-      "tags": [
-        "Dolphins",
-        "MIA",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "mia",
-      "teamTag": "Dolphins",
-      "aiSummary": {
-        "executiveBrief": "Marcel Louis-Jacques reports on the 3 things to know for the Dolphins ahead of their upcoming matchup against the Colts.",
-        "keyTakeaways": [
-          "Official Miami Dolphins update: 3 things to know ahead of the Dolphins' matchup vs. Colts",
-          "Current Record: 1-7 (Active in AFC East)"
-        ],
-        "fantasyImpact": "Monitor active Dolphins depth chart led by Malik Willis and Malik Washington.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "mia-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "source": "ESPN",
-      "author": "Anthony Gharib",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
-      "tags": [
-        "Dolphins",
-        "MIA",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "mia",
-      "teamTag": "Dolphins",
-      "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-        "keyTakeaways": [
-          "Official Miami Dolphins update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 1-7 (Active in AFC East)"
-        ],
-        "fantasyImpact": "Monitor active Dolphins depth chart led by Malik Willis and Malik Washington.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "mia-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "mia-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Dolphins",
         "MIA",
@@ -2540,24 +2486,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "mia",
       "teamTag": "Dolphins",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Miami Dolphins update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 1-7 (Active in AFC East)"
+          "Official Miami Dolphins update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 1-8 (Active in AFC East)"
         ],
         "fantasyImpact": "Monitor active Dolphins depth chart led by Malik Willis and Malik Washington.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "mia-news-50435678",
-      "title": "Fantasy football last-minute pickups: 12 players who can help in deeper leagues",
-      "summary": "If injuries, bye weeks or tough matchups have you seeking lineup help, Matt Bowen lists potential options.",
+      "id": "mia-news-50541939",
+      "title": "Draft buzz: Interest in Oklahoma State's Drew Mestemaker could spur draft trade",
+      "summary": "If the Titans or Chargers wind up with the No. 1 selection and stick with their franchise quarterbacks, interest in Oklahoma State's Drew Mestemaker could lead to a team seeking to trade up for the top overall pick.",
       "source": "ESPN",
-      "author": "Matt Bowen",
+      "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1112/r1744927_608x342_16-9.jpg",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50435678/fantasy-football-streamers-last-minute-pickups-week-10",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1111/r1744598_1296x729_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50541939/draft-buzz-mestemaker-spur-auction-no-1-pick",
       "tags": [
         "Dolphins",
         "MIA",
@@ -2567,24 +2513,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "mia",
       "teamTag": "Dolphins",
       "aiSummary": {
-        "executiveBrief": "If injuries, bye weeks or tough matchups have you seeking lineup help, Matt Bowen lists potential options.",
+        "executiveBrief": "If the Titans or Chargers wind up with the No. 1 selection and stick with their franchise quarterbacks, interest in Oklahoma State's Drew Mestemaker could lead to a team seeking to trade up for the top overall pick.",
         "keyTakeaways": [
-          "Official Miami Dolphins update: Fantasy football last-minute pickups: 12 players who can help in deeper leagues",
-          "Current Record: 1-7 (Active in AFC East)"
+          "Official Miami Dolphins update: Draft buzz: Interest in Oklahoma State's Drew Mestemaker could spur draft trade",
+          "Current Record: 1-8 (Active in AFC East)"
         ],
         "fantasyImpact": "Monitor active Dolphins depth chart led by Malik Willis and Malik Washington.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "mia-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+      "id": "mia-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
       "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
       "tags": [
         "Dolphins",
         "MIA",
@@ -2594,10 +2540,64 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "mia",
       "teamTag": "Dolphins",
       "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
         "keyTakeaways": [
-          "Official Miami Dolphins update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 1-7 (Active in AFC East)"
+          "Official Miami Dolphins update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 1-8 (Active in AFC East)"
+        ],
+        "fantasyImpact": "Monitor active Dolphins depth chart led by Malik Willis and Malik Washington.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "mia-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+      "source": "ESPN",
+      "author": "Anthony Gharib",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
+      "tags": [
+        "Dolphins",
+        "MIA",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "mia",
+      "teamTag": "Dolphins",
+      "aiSummary": {
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+        "keyTakeaways": [
+          "Official Miami Dolphins update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 1-8 (Active in AFC East)"
+        ],
+        "fantasyImpact": "Monitor active Dolphins depth chart led by Malik Willis and Malik Washington.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "mia-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+      "source": "ESPN",
+      "author": "ESPN Staff",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
+      "tags": [
+        "Dolphins",
+        "MIA",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "mia",
+      "teamTag": "Dolphins",
+      "aiSummary": {
+        "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+        "keyTakeaways": [
+          "Official Miami Dolphins update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 1-8 (Active in AFC East)"
         ],
         "fantasyImpact": "Monitor active Dolphins depth chart led by Malik Willis and Malik Washington.",
         "urgency": "HIGH"
@@ -2606,41 +2606,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "sea": [
     {
-      "id": "sea-news-50475505",
-      "title": "Seahawks are hurting with injuries, but two players will return vs. Raiders",
-      "summary": "QB Drew Lock will start again for Darnold. LB Uchenna Nwosu and WR Rashid Shaheed will return to the field in Las Vegas.",
-      "source": "ESPN",
-      "author": "Brady Henderson",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745471_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50475505/seahawks-raiders-week-10-darnold-lock-shaheed-returns",
-      "tags": [
-        "Seahawks",
-        "SEA",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "sea",
-      "teamTag": "Seahawks",
-      "aiSummary": {
-        "executiveBrief": "QB Drew Lock will start again for Darnold. LB Uchenna Nwosu and WR Rashid Shaheed will return to the field in Las Vegas.",
-        "keyTakeaways": [
-          "Official Seattle Seahawks update: Seahawks are hurting with injuries, but two players will return vs. Raiders",
-          "Current Record: 5-4 (Active in NFC West)"
-        ],
-        "fantasyImpact": "Monitor active Seahawks depth chart led by Sam Darnold and Jaxon Smith-Njigba.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "sea-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "sea-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Seahawks",
         "SEA",
@@ -2650,24 +2623,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "sea",
       "teamTag": "Seahawks",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official Seattle Seahawks update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 5-4 (Active in NFC West)"
+          "Official Seattle Seahawks update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 6-4 (Active in NFC West)"
         ],
         "fantasyImpact": "Monitor active Seahawks depth chart led by Sam Darnold and Jaxon Smith-Njigba.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "sea-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "sea-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Seahawks",
         "SEA",
@@ -2677,24 +2650,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "sea",
       "teamTag": "Seahawks",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Seattle Seahawks update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 5-4 (Active in NFC West)"
+          "Official Seattle Seahawks update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 6-4 (Active in NFC West)"
         ],
         "fantasyImpact": "Monitor active Seahawks depth chart led by Sam Darnold and Jaxon Smith-Njigba.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "sea-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+      "id": "sea-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
       "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
       "tags": [
         "Seahawks",
         "SEA",
@@ -2704,24 +2677,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "sea",
       "teamTag": "Seahawks",
       "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
         "keyTakeaways": [
-          "Official Seattle Seahawks update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 5-4 (Active in NFC West)"
+          "Official Seattle Seahawks update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 6-4 (Active in NFC West)"
         ],
         "fantasyImpact": "Monitor active Seahawks depth chart led by Sam Darnold and Jaxon Smith-Njigba.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "sea-news-50462723",
-      "title": "NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
-      "summary": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
+      "id": "sea-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
       "source": "ESPN",
-      "author": "Jeremy Fowler",
+      "author": "ESPN Staff",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1014/r1730810_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50462723/2026-nfl-playoffs-mvp-super-bowl-breakout-players-divisions",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
       "tags": [
         "Seahawks",
         "SEA",
@@ -2731,10 +2704,37 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "sea",
       "teamTag": "Seahawks",
       "aiSummary": {
-        "executiveBrief": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
+        "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
         "keyTakeaways": [
-          "Official Seattle Seahawks update: NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
-          "Current Record: 5-4 (Active in NFC West)"
+          "Official Seattle Seahawks update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 6-4 (Active in NFC West)"
+        ],
+        "fantasyImpact": "Monitor active Seahawks depth chart led by Sam Darnold and Jaxon Smith-Njigba.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "sea-news-50520404",
+      "title": "Midseason reports on every NFL team's offensive coordinator, playcaller",
+      "summary": "Here's the good and the bad for each offensive coordinator or playcaller through Week 10, plus keys to their success the rest of the way.",
+      "source": "ESPN",
+      "author": "NFL Nation",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1118/32_for_32_midseason_look_608x342.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50520404/nfl-offensive-coordinators-playcallers-midseason-report",
+      "tags": [
+        "Seahawks",
+        "SEA",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "sea",
+      "teamTag": "Seahawks",
+      "aiSummary": {
+        "executiveBrief": "Here's the good and the bad for each offensive coordinator or playcaller through Week 10, plus keys to their success the rest of the way.",
+        "keyTakeaways": [
+          "Official Seattle Seahawks update: Midseason reports on every NFL team's offensive coordinator, playcaller",
+          "Current Record: 6-4 (Active in NFC West)"
         ],
         "fantasyImpact": "Monitor active Seahawks depth chart led by Sam Darnold and Jaxon Smith-Njigba.",
         "urgency": "HIGH"
@@ -2743,14 +2743,95 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "lac": [
     {
-      "id": "lac-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "lac-news-50541939",
+      "title": "Draft buzz: Interest in Oklahoma State's Drew Mestemaker could spur draft trade",
+      "summary": "If the Titans or Chargers wind up with the No. 1 selection and stick with their franchise quarterbacks, interest in Oklahoma State's Drew Mestemaker could lead to a team seeking to trade up for the top overall pick.",
+      "source": "ESPN",
+      "author": "ESPN NFL Desk",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1111/r1744598_1296x729_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50541939/draft-buzz-mestemaker-spur-auction-no-1-pick",
+      "tags": [
+        "Chargers",
+        "LAC",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "lac",
+      "teamTag": "Chargers",
+      "aiSummary": {
+        "executiveBrief": "If the Titans or Chargers wind up with the No. 1 selection and stick with their franchise quarterbacks, interest in Oklahoma State's Drew Mestemaker could lead to a team seeking to trade up for the top overall pick.",
+        "keyTakeaways": [
+          "Official Los Angeles Chargers update: Draft buzz: Interest in Oklahoma State's Drew Mestemaker could spur draft trade",
+          "Current Record: 1-8 (Active in AFC West)"
+        ],
+        "fantasyImpact": "Monitor active Chargers depth chart led by Justin Herbert and Tre' Harris.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "lac-news-40699880",
+      "title": "Fantasy buzz: Stroud has Houston fans over the moon, Colts continue to crumble",
+      "summary": "Adam Rank waxes nostalgic about Houston football and the reinvigorated C.J. Stroud.",
+      "source": "ESPN",
+      "author": "ESPN Fantasy",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1120/r1748502_576x324_16-9.jpg",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "tags": [
+        "Chargers",
+        "LAC",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "lac",
+      "teamTag": "Chargers",
+      "aiSummary": {
+        "executiveBrief": "Adam Rank waxes nostalgic about Houston football and the reinvigorated C.J. Stroud.",
+        "keyTakeaways": [
+          "Official Los Angeles Chargers update: Fantasy buzz: Stroud has Houston fans over the moon, Colts continue to crumble",
+          "Current Record: 1-8 (Active in AFC West)"
+        ],
+        "fantasyImpact": "Monitor active Chargers depth chart led by Justin Herbert and Tre' Harris.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "lac-news-50525533",
+      "title": "NFL offseason free agent and trade acquisitions that have and have not worked",
+      "summary": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
+      "source": "ESPN",
+      "author": "Aaron Schatz",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1747957_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50525533/2026-offseason-change-scenery-fits-players-new-teams",
+      "tags": [
+        "Chargers",
+        "LAC",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "lac",
+      "teamTag": "Chargers",
+      "aiSummary": {
+        "executiveBrief": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
+        "keyTakeaways": [
+          "Official Los Angeles Chargers update: NFL offseason free agent and trade acquisitions that have and have not worked",
+          "Current Record: 1-8 (Active in AFC West)"
+        ],
+        "fantasyImpact": "Monitor active Chargers depth chart led by Justin Herbert and Tre' Harris.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "lac-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Chargers",
         "LAC",
@@ -2760,105 +2841,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "lac",
       "teamTag": "Chargers",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official Los Angeles Chargers update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 0-8 (Active in AFC West)"
+          "Official Los Angeles Chargers update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 1-8 (Active in AFC West)"
         ],
-        "fantasyImpact": "Monitor active Chargers depth chart led by Justin Herbert and Ladd McConkey.",
+        "fantasyImpact": "Monitor active Chargers depth chart led by Justin Herbert and Tre' Harris.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "lac-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-      "source": "ESPN",
-      "author": "ESPN",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
-      "tags": [
-        "Chargers",
-        "LAC",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "lac",
-      "teamTag": "Chargers",
-      "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-        "keyTakeaways": [
-          "Official Los Angeles Chargers update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 0-8 (Active in AFC West)"
-        ],
-        "fantasyImpact": "Monitor active Chargers depth chart led by Justin Herbert and Ladd McConkey.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "lac-news-50472222",
-      "title": "Minter: Lamar Jackson 'doing everything' to return; QB had surgery, source says",
-      "summary": "Ravens coach Jesse Minter's update on Lamar Jackson's recovery process calls such timelines \"challenging to predict.\"",
-      "source": "ESPN",
-      "author": "Jamison Hensley",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1101/r1739589_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50472222/ravens-lamar-jackson-injury-typical-line-6-10-weeks",
-      "tags": [
-        "Chargers",
-        "LAC",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "lac",
-      "teamTag": "Chargers",
-      "aiSummary": {
-        "executiveBrief": "Ravens coach Jesse Minter's update on Lamar Jackson's recovery process calls such timelines \"challenging to predict.\"",
-        "keyTakeaways": [
-          "Official Los Angeles Chargers update: Minter: Lamar Jackson 'doing everything' to return; QB had surgery, source says",
-          "Current Record: 0-8 (Active in AFC West)"
-        ],
-        "fantasyImpact": "Monitor active Chargers depth chart led by Justin Herbert and Ladd McConkey.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "lac-news-50462723",
-      "title": "NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
-      "summary": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
-      "source": "ESPN",
-      "author": "Jeremy Fowler",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1014/r1730810_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50462723/2026-nfl-playoffs-mvp-super-bowl-breakout-players-divisions",
-      "tags": [
-        "Chargers",
-        "LAC",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "lac",
-      "teamTag": "Chargers",
-      "aiSummary": {
-        "executiveBrief": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
-        "keyTakeaways": [
-          "Official Los Angeles Chargers update: NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
-          "Current Record: 0-8 (Active in AFC West)"
-        ],
-        "fantasyImpact": "Monitor active Chargers depth chart led by Justin Herbert and Ladd McConkey.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "lac-news-50465223",
-      "title": "Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
+      "id": "lac-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
       "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
       "source": "ESPN",
       "author": "ESPN Staff",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745073_608x342_16-9.png",
-      "url": "https://www.espn.com/nfl/story/_/id/50465223/nfl-week-10-fashionable-arrivals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
       "tags": [
         "Chargers",
         "LAC",
@@ -2870,78 +2870,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "aiSummary": {
         "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
         "keyTakeaways": [
-          "Official Los Angeles Chargers update: Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
-          "Current Record: 0-8 (Active in AFC West)"
+          "Official Los Angeles Chargers update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 1-8 (Active in AFC West)"
         ],
-        "fantasyImpact": "Monitor active Chargers depth chart led by Justin Herbert and Ladd McConkey.",
+        "fantasyImpact": "Monitor active Chargers depth chart led by Justin Herbert and Tre' Harris.",
         "urgency": "HIGH"
       }
     }
   ],
   "lar": [
     {
-      "id": "lar-news-50474327",
-      "title": "Myles Garrett listed as questionable vs. Cardinals",
-      "summary": "Sarah Barshop reports on how the Rams are being cautious with Myles Garrett after his recent performance vs. the Commanders.",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_Myles_Garrett_listed_as_questionable_vs_Cardinals/dm_261113_Myles_Garrett_listed_as_questionable_vs_Cardinals.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50474327/myles-garrett-listed-questionable-vs-cardinals",
-      "tags": [
-        "Rams",
-        "LAR",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "lar",
-      "teamTag": "Rams",
-      "aiSummary": {
-        "executiveBrief": "Sarah Barshop reports on how the Rams are being cautious with Myles Garrett after his recent performance vs. the Commanders.",
-        "keyTakeaways": [
-          "Official Los Angeles Rams update: Myles Garrett listed as questionable vs. Cardinals",
-          "Current Record: 5-4 (Active in NFC West)"
-        ],
-        "fantasyImpact": "Monitor active Rams depth chart led by Matthew Stafford and Puka Nacua.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "lar-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "source": "ESPN",
-      "author": "Anthony Gharib",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
-      "tags": [
-        "Rams",
-        "LAR",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "lar",
-      "teamTag": "Rams",
-      "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-        "keyTakeaways": [
-          "Official Los Angeles Rams update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 5-4 (Active in NFC West)"
-        ],
-        "fantasyImpact": "Monitor active Rams depth chart led by Matthew Stafford and Puka Nacua.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "lar-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "lar-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Rams",
         "LAR",
@@ -2951,24 +2897,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "lar",
       "teamTag": "Rams",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Los Angeles Rams update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 5-4 (Active in NFC West)"
+          "Official Los Angeles Rams update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 6-4 (Active in NFC West)"
         ],
         "fantasyImpact": "Monitor active Rams depth chart led by Matthew Stafford and Puka Nacua.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "lar-news-50471662",
-      "title": "Are the Rams' playoff hopes over after Puka Nacua's injury?",
-      "summary": "Are the Rams' playoff hopes over after Puka Nacua's injury?",
+      "id": "lar-news-50542115",
+      "title": "Rapoport: Rams expect Puka to be out for season after knee surgery",
+      "summary": "Rapoport: Rams expect Puka to be out for season after knee surgery",
       "source": "ESPN",
       "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/ss_20261113_094022876_3739299/ss_20261113_094022876_3739299.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50471662/are-rams-playoff-hopes-puka-nacua-injury",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/ss_20261120_123613162_3751092/ss_20261120_123613162_3751092.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50542115/rams-expect-puka-for-season-knee-surgery",
       "tags": [
         "Rams",
         "LAR",
@@ -2978,24 +2924,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "lar",
       "teamTag": "Rams",
       "aiSummary": {
-        "executiveBrief": "Are the Rams' playoff hopes over after Puka Nacua's injury?",
+        "executiveBrief": "Rapoport: Rams expect Puka to be out for season after knee surgery",
         "keyTakeaways": [
-          "Official Los Angeles Rams update: Are the Rams' playoff hopes over after Puka Nacua's injury?",
-          "Current Record: 5-4 (Active in NFC West)"
+          "Official Los Angeles Rams update: Rapoport: Rams expect Puka to be out for season after knee surgery",
+          "Current Record: 6-4 (Active in NFC West)"
         ],
         "fantasyImpact": "Monitor active Rams depth chart led by Matthew Stafford and Puka Nacua.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "lar-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+      "id": "lar-news-50542028",
+      "title": "Rams' Puka Nacua has MCL surgery, likely done for regular season",
+      "summary": "Rams WR Puka Nacua, who is serving a three-game suspension while on IR, had surgery on his MCL and likely will miss at least the rest of the regular season.",
       "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
+      "author": "Sarah Barshop",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0922/r1720500_1296x729_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50542028/rams-puka-nacua-needs-mcl-surgery-likely-done-season",
       "tags": [
         "Rams",
         "LAR",
@@ -3005,10 +2951,64 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "lar",
       "teamTag": "Rams",
       "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+        "executiveBrief": "Rams WR Puka Nacua, who is serving a three-game suspension while on IR, had surgery on his MCL and likely will miss at least the rest of the regular season.",
         "keyTakeaways": [
-          "Official Los Angeles Rams update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 5-4 (Active in NFC West)"
+          "Official Los Angeles Rams update: Rams' Puka Nacua has MCL surgery, likely done for regular season",
+          "Current Record: 6-4 (Active in NFC West)"
+        ],
+        "fantasyImpact": "Monitor active Rams depth chart led by Matthew Stafford and Puka Nacua.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "lar-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+      "source": "ESPN",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
+      "tags": [
+        "Rams",
+        "LAR",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "lar",
+      "teamTag": "Rams",
+      "aiSummary": {
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+        "keyTakeaways": [
+          "Official Los Angeles Rams update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 6-4 (Active in NFC West)"
+        ],
+        "fantasyImpact": "Monitor active Rams depth chart led by Matthew Stafford and Puka Nacua.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "lar-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+      "source": "ESPN",
+      "author": "Anthony Gharib",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
+      "tags": [
+        "Rams",
+        "LAR",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "lar",
+      "teamTag": "Rams",
+      "aiSummary": {
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+        "keyTakeaways": [
+          "Official Los Angeles Rams update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 6-4 (Active in NFC West)"
         ],
         "fantasyImpact": "Monitor active Rams depth chart led by Matthew Stafford and Puka Nacua.",
         "urgency": "HIGH"
@@ -3017,14 +3017,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "ind": [
     {
-      "id": "ind-news-50474656",
-      "title": "Colts look to take advantage of Dolphins without QB Malik Willis",
-      "summary": "Stephen Holder previews the Colts matchup against he Dolphins with new faces on offense post the NFL trade deadline.",
+      "id": "ind-news-50542311",
+      "title": "Shane Steichen announces Daniel Jones' release from Colts",
+      "summary": "Shane Steichen announces Daniel Jones' release from Colts",
       "source": "ESPN",
       "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_11-13_Colts_IA/dm_261113_11-13_Colts_IA.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50474656/colts-look-take-advantage-dolphins-qb-malik-willis",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/ss_20261120_131708172_3751128/ss_20261120_131708172_3751128.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50542311/shane-steichen-announces-daniel-jones-release-colts",
       "tags": [
         "Colts",
         "IND",
@@ -3034,24 +3034,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ind",
       "teamTag": "Colts",
       "aiSummary": {
-        "executiveBrief": "Stephen Holder previews the Colts matchup against he Dolphins with new faces on offense post the NFL trade deadline.",
+        "executiveBrief": "Shane Steichen announces Daniel Jones' release from Colts",
         "keyTakeaways": [
-          "Official Indianapolis Colts update: Colts look to take advantage of Dolphins without QB Malik Willis",
-          "Current Record: 2-7 (Active in AFC South)"
+          "Official Indianapolis Colts update: Shane Steichen announces Daniel Jones' release from Colts",
+          "Current Record: 3-8 (Active in AFC South)"
         ],
-        "fantasyImpact": "Monitor active Colts depth chart led by Daniel Jones and Alec Pierce.",
+        "fantasyImpact": "Monitor active Colts depth chart led by Anthony Richardson Sr. and Alec Pierce.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "ind-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "ind-news-50542310",
+      "title": "Schefter on Daniel Jones’ release: Colts ‘could’ve and should’ve traded him’",
+      "summary": "Schefter on Daniel Jones’ release: Colts ‘could’ve and should’ve traded him’",
       "source": "ESPN",
-      "author": "Anthony Gharib",
+      "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/ss_20261120_131705160_3751127806/ss_20261120_131705160_3751127806.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50542310/colts-couldve-shouldve-traded-him",
       "tags": [
         "Colts",
         "IND",
@@ -3061,24 +3061,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ind",
       "teamTag": "Colts",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Schefter on Daniel Jones’ release: Colts ‘could’ve and should’ve traded him’",
         "keyTakeaways": [
-          "Official Indianapolis Colts update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 2-7 (Active in AFC South)"
+          "Official Indianapolis Colts update: Schefter on Daniel Jones’ release: Colts ‘could’ve and should’ve traded him’",
+          "Current Record: 3-8 (Active in AFC South)"
         ],
-        "fantasyImpact": "Monitor active Colts depth chart led by Daniel Jones and Alec Pierce.",
+        "fantasyImpact": "Monitor active Colts depth chart led by Anthony Richardson Sr. and Alec Pierce.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "ind-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "ind-news-50542293",
+      "title": "Colts release QB Daniel Jones, turn to Anthony Richardson Sr. for next start",
+      "summary": "The Colts have released quarterback Daniel Jones and are turning to Anthony Richardson Sr. to start going forward, coach Shane Steichen announced.",
       "source": "ESPN",
-      "author": "ESPN",
+      "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1101/r1739815_1296x729_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50542293/colts-release-qb-daniel-jones-blowout-loss-texans",
       "tags": [
         "Colts",
         "IND",
@@ -3088,24 +3088,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ind",
       "teamTag": "Colts",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "The Colts have released quarterback Daniel Jones and are turning to Anthony Richardson Sr. to start going forward, coach Shane Steichen announced.",
         "keyTakeaways": [
-          "Official Indianapolis Colts update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 2-7 (Active in AFC South)"
+          "Official Indianapolis Colts update: Colts release QB Daniel Jones, turn to Anthony Richardson Sr. for next start",
+          "Current Record: 3-8 (Active in AFC South)"
         ],
-        "fantasyImpact": "Monitor active Colts depth chart led by Daniel Jones and Alec Pierce.",
+        "fantasyImpact": "Monitor active Colts depth chart led by Anthony Richardson Sr. and Alec Pierce.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "ind-news-50463729",
-      "title": "Week 10 betting preview: Analysis, best bets, TD predictions for Sunday",
-      "summary": "Our experts dive into the odds and player props for Week 10 and offer their betting tips and favorite plays.",
+      "id": "ind-news-50542056",
+      "title": "Colts dismantled by the Texans",
+      "summary": "Stephen Holder breaks down the Colts' struggles against the Texans.",
       "source": "ESPN",
-      "author": "Ben Solak, Seth Walder, Matt Bowen and Mike Clay",
+      "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1112/r1745045_608x342_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50463729/week-10-nfl-odds-touchdown-props-best-bets-sunday-games",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/dm_261120_Colts/dm_261120_Colts.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50542056/colts-dismantled-texans",
       "tags": [
         "Colts",
         "IND",
@@ -3115,24 +3115,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ind",
       "teamTag": "Colts",
       "aiSummary": {
-        "executiveBrief": "Our experts dive into the odds and player props for Week 10 and offer their betting tips and favorite plays.",
+        "executiveBrief": "Stephen Holder breaks down the Colts' struggles against the Texans.",
         "keyTakeaways": [
-          "Official Indianapolis Colts update: Week 10 betting preview: Analysis, best bets, TD predictions for Sunday",
-          "Current Record: 2-7 (Active in AFC South)"
+          "Official Indianapolis Colts update: Colts dismantled by the Texans",
+          "Current Record: 3-8 (Active in AFC South)"
         ],
-        "fantasyImpact": "Monitor active Colts depth chart led by Daniel Jones and Alec Pierce.",
+        "fantasyImpact": "Monitor active Colts depth chart led by Anthony Richardson Sr. and Alec Pierce.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "ind-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+      "id": "ind-news-50542049",
+      "title": "Pat McAfee sees no hope for Colts' future",
+      "summary": "Pat McAfee sees no hope for Colts' future",
       "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
+      "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/ss_20261120_122438893_3751081/ss_20261120_122438893_3751081.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50542049/pat-mcafee-sees-no-hope-colts-future",
       "tags": [
         "Colts",
         "IND",
@@ -3142,26 +3142,26 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ind",
       "teamTag": "Colts",
       "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+        "executiveBrief": "Pat McAfee sees no hope for Colts' future",
         "keyTakeaways": [
-          "Official Indianapolis Colts update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 2-7 (Active in AFC South)"
+          "Official Indianapolis Colts update: Pat McAfee sees no hope for Colts' future",
+          "Current Record: 3-8 (Active in AFC South)"
         ],
-        "fantasyImpact": "Monitor active Colts depth chart led by Daniel Jones and Alec Pierce.",
+        "fantasyImpact": "Monitor active Colts depth chart led by Anthony Richardson Sr. and Alec Pierce.",
         "urgency": "HIGH"
       }
     }
   ],
   "ari": [
     {
-      "id": "ari-news-50475530",
-      "title": "Carson Beck finds familiarity ahead of NFL debut",
-      "summary": "Josh Weinfuss reports on the built-in chemistry Carson Beck has with the Cardinals' receivers ahead of his first NFL start.",
+      "id": "ari-news-50541939",
+      "title": "Draft buzz: Interest in Oklahoma State's Drew Mestemaker could spur draft trade",
+      "summary": "If the Titans or Chargers wind up with the No. 1 selection and stick with their franchise quarterbacks, interest in Oklahoma State's Drew Mestemaker could lead to a team seeking to trade up for the top overall pick.",
       "source": "ESPN",
       "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_beck/dm_261113_beck.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50475530/carson-beck-finds-familiarity-ahead-nfl-debut",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1111/r1744598_1296x729_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50541939/draft-buzz-mestemaker-spur-auction-no-1-pick",
       "tags": [
         "Cardinals",
         "ARI",
@@ -3171,24 +3171,51 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ari",
       "teamTag": "Cardinals",
       "aiSummary": {
-        "executiveBrief": "Josh Weinfuss reports on the built-in chemistry Carson Beck has with the Cardinals' receivers ahead of his first NFL start.",
+        "executiveBrief": "If the Titans or Chargers wind up with the No. 1 selection and stick with their franchise quarterbacks, interest in Oklahoma State's Drew Mestemaker could lead to a team seeking to trade up for the top overall pick.",
         "keyTakeaways": [
-          "Official Arizona Cardinals update: Carson Beck finds familiarity ahead of NFL debut",
-          "Current Record: 3-6 (Active in NFC West)"
+          "Official Arizona Cardinals update: Draft buzz: Interest in Oklahoma State's Drew Mestemaker could spur draft trade",
+          "Current Record: 3-7 (Active in NFC West)"
         ],
         "fantasyImpact": "Monitor active Cardinals depth chart led by Carson Beck and Trey McBride.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "ari-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "ari-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+      "source": "ESPN",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
+      "tags": [
+        "Cardinals",
+        "ARI",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "ari",
+      "teamTag": "Cardinals",
+      "aiSummary": {
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+        "keyTakeaways": [
+          "Official Arizona Cardinals update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 3-7 (Active in NFC West)"
+        ],
+        "fantasyImpact": "Monitor active Cardinals depth chart led by Carson Beck and Trey McBride.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "ari-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Cardinals",
         "ARI",
@@ -3198,78 +3225,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ari",
       "teamTag": "Cardinals",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official Arizona Cardinals update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 3-6 (Active in NFC West)"
+          "Official Arizona Cardinals update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 3-7 (Active in NFC West)"
         ],
         "fantasyImpact": "Monitor active Cardinals depth chart led by Carson Beck and Trey McBride.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "ari-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-      "source": "ESPN",
-      "author": "ESPN",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
-      "tags": [
-        "Cardinals",
-        "ARI",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "ari",
-      "teamTag": "Cardinals",
-      "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-        "keyTakeaways": [
-          "Official Arizona Cardinals update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 3-6 (Active in NFC West)"
-        ],
-        "fantasyImpact": "Monitor active Cardinals depth chart led by Carson Beck and Trey McBride.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "ari-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-      "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
-      "tags": [
-        "Cardinals",
-        "ARI",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "ari",
-      "teamTag": "Cardinals",
-      "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-        "keyTakeaways": [
-          "Official Arizona Cardinals update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 3-6 (Active in NFC West)"
-        ],
-        "fantasyImpact": "Monitor active Cardinals depth chart led by Carson Beck and Trey McBride.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "ari-news-50465223",
-      "title": "Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
+      "id": "ari-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
       "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
       "source": "ESPN",
       "author": "ESPN Staff",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745073_608x342_16-9.png",
-      "url": "https://www.espn.com/nfl/story/_/id/50465223/nfl-week-10-fashionable-arrivals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
       "tags": [
         "Cardinals",
         "ARI",
@@ -3281,8 +3254,35 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "aiSummary": {
         "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
         "keyTakeaways": [
-          "Official Arizona Cardinals update: Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
-          "Current Record: 3-6 (Active in NFC West)"
+          "Official Arizona Cardinals update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 3-7 (Active in NFC West)"
+        ],
+        "fantasyImpact": "Monitor active Cardinals depth chart led by Carson Beck and Trey McBride.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "ari-news-50532863",
+      "title": "Chiefs are flying high but can ill afford to overlook the lowly Cardinals when they meet Sunday",
+      "summary": "— If ever there was a time for an NFL team to overlook somebody, it just might be Sunday afternoon at Arrowhead Stadium, where the Kansas City Chiefs will continue their pursuit of another AFC West title against the injured, downtrodden Arizona...",
+      "source": "ESPN",
+      "author": "ESPN NFL Desk",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873067.png?templateId=espn.applewatch.awayhome.1",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873067",
+      "tags": [
+        "Cardinals",
+        "ARI",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "ari",
+      "teamTag": "Cardinals",
+      "aiSummary": {
+        "executiveBrief": "— If ever there was a time for an NFL team to overlook somebody, it just might be Sunday afternoon at Arrowhead Stadium, where the Kansas City Chiefs will continue their pursuit of another AFC West title against the injured, downtrodden Arizona...",
+        "keyTakeaways": [
+          "Official Arizona Cardinals update: Chiefs are flying high but can ill afford to overlook the lowly Cardinals when they meet Sunday",
+          "Current Record: 3-7 (Active in NFC West)"
         ],
         "fantasyImpact": "Monitor active Cardinals depth chart led by Carson Beck and Trey McBride.",
         "urgency": "HIGH"
@@ -3291,14 +3291,41 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "no": [
     {
-      "id": "no-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "no-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+      "source": "ESPN",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
+      "tags": [
+        "Saints",
+        "NO",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "no",
+      "teamTag": "Saints",
+      "aiSummary": {
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+        "keyTakeaways": [
+          "Official New Orleans Saints update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 3-6 (Active in NFC South)"
+        ],
+        "fantasyImpact": "Monitor active Saints depth chart led by Tyler Shough and Chris Olave.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "no-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Saints",
         "NO",
@@ -3308,24 +3335,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "no",
       "teamTag": "Saints",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official New Orleans Saints update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 3-5 (Active in NFC South)"
+          "Official New Orleans Saints update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 3-6 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Saints depth chart led by Tyler Shough and Chris Olave.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "no-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "no-news-50535568",
+      "title": "Justin Reid requests his release from the team",
+      "summary": "Katherine Terrell explains the Saints reaction to safety Justin Reid's request to be released.",
       "source": "ESPN",
-      "author": "ESPN",
+      "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1119/dm_261119_Saints_Reid_IA/dm_261119_Saints_Reid_IA.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50535568/justin-reid-requests-release-team",
       "tags": [
         "Saints",
         "NO",
@@ -3335,51 +3362,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "no",
       "teamTag": "Saints",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Katherine Terrell explains the Saints reaction to safety Justin Reid's request to be released.",
         "keyTakeaways": [
-          "Official New Orleans Saints update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 3-5 (Active in NFC South)"
+          "Official New Orleans Saints update: Justin Reid requests his release from the team",
+          "Current Record: 3-6 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Saints depth chart led by Tyler Shough and Chris Olave.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "no-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-      "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
-      "tags": [
-        "Saints",
-        "NO",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "no",
-      "teamTag": "Saints",
-      "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-        "keyTakeaways": [
-          "Official New Orleans Saints update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 3-5 (Active in NFC South)"
-        ],
-        "fantasyImpact": "Monitor active Saints depth chart led by Tyler Shough and Chris Olave.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "no-news-50465223",
-      "title": "Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
+      "id": "no-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
       "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
       "source": "ESPN",
       "author": "ESPN Staff",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745073_608x342_16-9.png",
-      "url": "https://www.espn.com/nfl/story/_/id/50465223/nfl-week-10-fashionable-arrivals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
       "tags": [
         "Saints",
         "NO",
@@ -3391,22 +3391,22 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "aiSummary": {
         "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
         "keyTakeaways": [
-          "Official New Orleans Saints update: Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
-          "Current Record: 3-5 (Active in NFC South)"
+          "Official New Orleans Saints update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 3-6 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Saints depth chart led by Tyler Shough and Chris Olave.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "no-news-50464587",
-      "title": "Despite slow starts, the Panthers and Saints meet with a chance to become sole leaders of NFC South",
-      "summary": "— Never mind the Carolina Panthers' three-game losing streak, or that the New Orleans Saints dropped five of their first seven games this season.",
+      "id": "no-news-50534340",
+      "title": "Saints, Justin Reid 'working through' potential release",
+      "summary": "Saints and safety Justin Reid are \"working through some things\" regarding the veteran safety's potential release, defensive coordinator Brandon Staley said Thursday.",
       "source": "ESPN",
-      "author": "ESPN NFL Desk",
+      "author": "Katherine Terrell",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873055.png?templateId=espn.applewatch.awayhome.1",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873055",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1025/r1735922_2_600x400_3-2.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50534340/saints-justin-reid-working-potential-release",
       "tags": [
         "Saints",
         "NO",
@@ -3416,10 +3416,10 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "no",
       "teamTag": "Saints",
       "aiSummary": {
-        "executiveBrief": "— Never mind the Carolina Panthers' three-game losing streak, or that the New Orleans Saints dropped five of their first seven games this season.",
+        "executiveBrief": "Saints and safety Justin Reid are \"working through some things\" regarding the veteran safety's potential release, defensive coordinator Brandon Staley said Thursday.",
         "keyTakeaways": [
-          "Official New Orleans Saints update: Despite slow starts, the Panthers and Saints meet with a chance to become sole leaders of NFC South",
-          "Current Record: 3-5 (Active in NFC South)"
+          "Official New Orleans Saints update: Saints, Justin Reid 'working through' potential release",
+          "Current Record: 3-6 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Saints depth chart led by Tyler Shough and Chris Olave.",
         "urgency": "HIGH"
@@ -3428,14 +3428,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "lv": [
     {
-      "id": "lv-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "lv-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Raiders",
         "LV",
@@ -3445,24 +3445,51 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "lv",
       "teamTag": "Raiders",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official Las Vegas Raiders update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 4-5 (Active in AFC West)"
+          "Official Las Vegas Raiders update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 4-6 (Active in AFC West)"
         ],
         "fantasyImpact": "Monitor active Raiders depth chart led by Fernando Mendoza and Brock Bowers.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "lv-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "lv-news-50543720",
+      "title": "Raiders TE Brock Bowers (ankle, quad) listed as questionable",
+      "summary": "Las Vegas Raiders tight end Brock Bowers (ankle/quad) is questionable for Sunday's divisional matchup against the Denver Broncos, coach Klint Kubiak said Friday.",
+      "source": "ESPN",
+      "author": "Ryan McFadden",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/0806/r1698471_600x400_3-2.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50543720/raiders-te-brock-bowers-ankle-quad-listed-questionable",
+      "tags": [
+        "Raiders",
+        "LV",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "lv",
+      "teamTag": "Raiders",
+      "aiSummary": {
+        "executiveBrief": "Las Vegas Raiders tight end Brock Bowers (ankle/quad) is questionable for Sunday's divisional matchup against the Denver Broncos, coach Klint Kubiak said Friday.",
+        "keyTakeaways": [
+          "Official Las Vegas Raiders update: Raiders TE Brock Bowers (ankle, quad) listed as questionable",
+          "Current Record: 4-6 (Active in AFC West)"
+        ],
+        "fantasyImpact": "Monitor active Raiders depth chart led by Fernando Mendoza and Brock Bowers.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "lv-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Raiders",
         "LV",
@@ -3472,24 +3499,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "lv",
       "teamTag": "Raiders",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Las Vegas Raiders update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 4-5 (Active in AFC West)"
+          "Official Las Vegas Raiders update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 4-6 (Active in AFC West)"
         ],
         "fantasyImpact": "Monitor active Raiders depth chart led by Fernando Mendoza and Brock Bowers.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "lv-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+      "id": "lv-news-50525533",
+      "title": "NFL offseason free agent and trade acquisitions that have and have not worked",
+      "summary": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
       "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
+      "author": "Aaron Schatz",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1747957_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50525533/2026-offseason-change-scenery-fits-players-new-teams",
       "tags": [
         "Raiders",
         "LV",
@@ -3499,24 +3526,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "lv",
       "teamTag": "Raiders",
       "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+        "executiveBrief": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
         "keyTakeaways": [
-          "Official Las Vegas Raiders update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 4-5 (Active in AFC West)"
+          "Official Las Vegas Raiders update: NFL offseason free agent and trade acquisitions that have and have not worked",
+          "Current Record: 4-6 (Active in AFC West)"
         ],
         "fantasyImpact": "Monitor active Raiders depth chart led by Fernando Mendoza and Brock Bowers.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "lv-news-50462155",
-      "title": "Fernando Mendoza and the Raiders' sit-and-learn plan: Is he ready to start?",
-      "summary": "The Raiders had a plan for Fernando Mendoza in Year 1 and stuck to it as long as they could. But he's now QB1 earlier than expected, and they have to trust he's ready.",
+      "id": "lv-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
       "source": "ESPN",
-      "author": "Dan Graziano",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1112/r1744821_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50462155/raiders-starting-fernando-mendoza-plan-decision-graziano",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
       "tags": [
         "Raiders",
         "LV",
@@ -3526,37 +3553,10 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "lv",
       "teamTag": "Raiders",
       "aiSummary": {
-        "executiveBrief": "The Raiders had a plan for Fernando Mendoza in Year 1 and stuck to it as long as they could. But he's now QB1 earlier than expected, and they have to trust he's ready.",
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
         "keyTakeaways": [
-          "Official Las Vegas Raiders update: Fernando Mendoza and the Raiders' sit-and-learn plan: Is he ready to start?",
-          "Current Record: 4-5 (Active in AFC West)"
-        ],
-        "fantasyImpact": "Monitor active Raiders depth chart led by Fernando Mendoza and Brock Bowers.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "lv-news-50465223",
-      "title": "Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
-      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
-      "source": "ESPN",
-      "author": "ESPN Staff",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745073_608x342_16-9.png",
-      "url": "https://www.espn.com/nfl/story/_/id/50465223/nfl-week-10-fashionable-arrivals",
-      "tags": [
-        "Raiders",
-        "LV",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "lv",
-      "teamTag": "Raiders",
-      "aiSummary": {
-        "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
-        "keyTakeaways": [
-          "Official Las Vegas Raiders update: Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
-          "Current Record: 4-5 (Active in AFC West)"
+          "Official Las Vegas Raiders update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 4-6 (Active in AFC West)"
         ],
         "fantasyImpact": "Monitor active Raiders depth chart led by Fernando Mendoza and Brock Bowers.",
         "urgency": "HIGH"
@@ -3565,95 +3565,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "jax": [
     {
-      "id": "jax-news-50474633",
-      "title": "Bhayshul Tuten to play vs. Titans",
-      "summary": "Michael DiRocco reports on RB Bhayshul Tuten is expected to play in the Jaguars' Week 10 matchup vs. the Titans.",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_Bhayshul_Tuten_to_play_vs_Titans/dm_261113_Bhayshul_Tuten_to_play_vs_Titans.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50474633/bhayshul-tuten-play-vs-titans",
-      "tags": [
-        "Jaguars",
-        "JAX",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "jax",
-      "teamTag": "Jaguars",
-      "aiSummary": {
-        "executiveBrief": "Michael DiRocco reports on RB Bhayshul Tuten is expected to play in the Jaguars' Week 10 matchup vs. the Titans.",
-        "keyTakeaways": [
-          "Official Jacksonville Jaguars update: Bhayshul Tuten to play vs. Titans",
-          "Current Record: 6-2 (Active in AFC South)"
-        ],
-        "fantasyImpact": "Monitor active Jaguars depth chart led by Trevor Lawrence and Parker Washington.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "jax-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "source": "ESPN",
-      "author": "Anthony Gharib",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
-      "tags": [
-        "Jaguars",
-        "JAX",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "jax",
-      "teamTag": "Jaguars",
-      "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-        "keyTakeaways": [
-          "Official Jacksonville Jaguars update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 6-2 (Active in AFC South)"
-        ],
-        "fantasyImpact": "Monitor active Jaguars depth chart led by Trevor Lawrence and Parker Washington.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "jax-news-50472481",
-      "title": "Jaguars holding out new players Jordan Davis, Jessie Bates to give them bye",
-      "summary": "The Jaguars are holding out newly acquired Jordan Davis and Jessie Bates to give them a bye week.",
-      "source": "ESPN",
-      "author": "Michael Dirocco",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/r1744606_600x400_3-2.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50472481/jaguars-holding-new-players-jordan-davis-jessie-bates-give-bye",
-      "tags": [
-        "Jaguars",
-        "JAX",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "jax",
-      "teamTag": "Jaguars",
-      "aiSummary": {
-        "executiveBrief": "The Jaguars are holding out newly acquired Jordan Davis and Jessie Bates to give them a bye week.",
-        "keyTakeaways": [
-          "Official Jacksonville Jaguars update: Jaguars holding out new players Jordan Davis, Jessie Bates to give them bye",
-          "Current Record: 6-2 (Active in AFC South)"
-        ],
-        "fantasyImpact": "Monitor active Jaguars depth chart led by Trevor Lawrence and Parker Washington.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "jax-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "jax-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Jaguars",
         "JAX",
@@ -3663,24 +3582,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "jax",
       "teamTag": "Jaguars",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Jacksonville Jaguars update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 6-2 (Active in AFC South)"
+          "Official Jacksonville Jaguars update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 7-2 (Active in AFC South)"
         ],
         "fantasyImpact": "Monitor active Jaguars depth chart led by Trevor Lawrence and Parker Washington.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "jax-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+      "id": "jax-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
       "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
       "tags": [
         "Jaguars",
         "JAX",
@@ -3690,10 +3609,91 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "jax",
       "teamTag": "Jaguars",
       "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
         "keyTakeaways": [
-          "Official Jacksonville Jaguars update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 6-2 (Active in AFC South)"
+          "Official Jacksonville Jaguars update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 7-2 (Active in AFC South)"
+        ],
+        "fantasyImpact": "Monitor active Jaguars depth chart led by Trevor Lawrence and Parker Washington.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "jax-news-50535497",
+      "title": "How Bhayshul Tuten became the clear No. 1 running back for the Jaguars",
+      "summary": "After a lackluster rookie season, Tuten ranks 14th in NFL in rushing yards entering Sunday's game against the Giants.",
+      "source": "ESPN",
+      "author": "Michael DiRocco",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748310_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50535497/jacksonville-jaguars-bhayshul-tuten-rb-stats-fantasy",
+      "tags": [
+        "Jaguars",
+        "JAX",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "jax",
+      "teamTag": "Jaguars",
+      "aiSummary": {
+        "executiveBrief": "After a lackluster rookie season, Tuten ranks 14th in NFL in rushing yards entering Sunday's game against the Giants.",
+        "keyTakeaways": [
+          "Official Jacksonville Jaguars update: How Bhayshul Tuten became the clear No. 1 running back for the Jaguars",
+          "Current Record: 7-2 (Active in AFC South)"
+        ],
+        "fantasyImpact": "Monitor active Jaguars depth chart led by Trevor Lawrence and Parker Washington.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "jax-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+      "source": "ESPN",
+      "author": "Anthony Gharib",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
+      "tags": [
+        "Jaguars",
+        "JAX",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "jax",
+      "teamTag": "Jaguars",
+      "aiSummary": {
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+        "keyTakeaways": [
+          "Official Jacksonville Jaguars update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 7-2 (Active in AFC South)"
+        ],
+        "fantasyImpact": "Monitor active Jaguars depth chart led by Trevor Lawrence and Parker Washington.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "jax-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+      "source": "ESPN",
+      "author": "ESPN Staff",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
+      "tags": [
+        "Jaguars",
+        "JAX",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "jax",
+      "teamTag": "Jaguars",
+      "aiSummary": {
+        "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+        "keyTakeaways": [
+          "Official Jacksonville Jaguars update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 7-2 (Active in AFC South)"
         ],
         "fantasyImpact": "Monitor active Jaguars depth chart led by Trevor Lawrence and Parker Washington.",
         "urgency": "HIGH"
@@ -3702,68 +3702,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "cle": [
     {
-      "id": "cle-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "source": "ESPN",
-      "author": "Anthony Gharib",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
-      "tags": [
-        "Browns",
-        "CLE",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "cle",
-      "teamTag": "Browns",
-      "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-        "keyTakeaways": [
-          "Official Cleveland Browns update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 5-4 (Active in AFC North)"
-        ],
-        "fantasyImpact": "Monitor active Browns depth chart led by Deshaun Watson and Denzel Boston.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "cle-news-50473329",
-      "title": "Brown's defense to face its toughest matchup",
-      "summary": "Sarah Shaw  [1:33 PM] Daniel Oyefusi previews the Browns-Texans matchup and how C.J. Stroud will fare against Cleveland's defense.",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_11-13_Browns_IA/dm_261113_11-13_Browns_IA.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50473329/brown-defense-face-toughest-matchup",
-      "tags": [
-        "Browns",
-        "CLE",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "cle",
-      "teamTag": "Browns",
-      "aiSummary": {
-        "executiveBrief": "Sarah Shaw  [1:33 PM] Daniel Oyefusi previews the Browns-Texans matchup and how C.J. Stroud will fare against Cleveland's defense.",
-        "keyTakeaways": [
-          "Official Cleveland Browns update: Brown's defense to face its toughest matchup",
-          "Current Record: 5-4 (Active in AFC North)"
-        ],
-        "fantasyImpact": "Monitor active Browns depth chart led by Deshaun Watson and Denzel Boston.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "cle-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "cle-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Browns",
         "CLE",
@@ -3773,24 +3719,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "cle",
       "teamTag": "Browns",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Cleveland Browns update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 5-4 (Active in AFC North)"
+          "Official Cleveland Browns update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 6-4 (Active in AFC North)"
         ],
-        "fantasyImpact": "Monitor active Browns depth chart led by Deshaun Watson and Denzel Boston.",
+        "fantasyImpact": "Monitor active Browns depth chart led by Deshaun Watson and Harold Fannin Jr..",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "cle-news-50472222",
-      "title": "Minter: Lamar Jackson 'doing everything' to return; QB had surgery, source says",
-      "summary": "Ravens coach Jesse Minter's update on Lamar Jackson's recovery process calls such timelines \"challenging to predict.\"",
+      "id": "cle-news-50525533",
+      "title": "NFL offseason free agent and trade acquisitions that have and have not worked",
+      "summary": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
       "source": "ESPN",
-      "author": "Jamison Hensley",
+      "author": "Aaron Schatz",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1101/r1739589_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50472222/ravens-lamar-jackson-injury-typical-line-6-10-weeks",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1747957_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50525533/2026-offseason-change-scenery-fits-players-new-teams",
       "tags": [
         "Browns",
         "CLE",
@@ -3800,24 +3746,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "cle",
       "teamTag": "Browns",
       "aiSummary": {
-        "executiveBrief": "Ravens coach Jesse Minter's update on Lamar Jackson's recovery process calls such timelines \"challenging to predict.\"",
+        "executiveBrief": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
         "keyTakeaways": [
-          "Official Cleveland Browns update: Minter: Lamar Jackson 'doing everything' to return; QB had surgery, source says",
-          "Current Record: 5-4 (Active in AFC North)"
+          "Official Cleveland Browns update: NFL offseason free agent and trade acquisitions that have and have not worked",
+          "Current Record: 6-4 (Active in AFC North)"
         ],
-        "fantasyImpact": "Monitor active Browns depth chart led by Deshaun Watson and Denzel Boston.",
+        "fantasyImpact": "Monitor active Browns depth chart led by Deshaun Watson and Harold Fannin Jr..",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "cle-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+      "id": "cle-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
       "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
       "tags": [
         "Browns",
         "CLE",
@@ -3827,26 +3773,80 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "cle",
       "teamTag": "Browns",
       "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
         "keyTakeaways": [
-          "Official Cleveland Browns update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 5-4 (Active in AFC North)"
+          "Official Cleveland Browns update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 6-4 (Active in AFC North)"
         ],
-        "fantasyImpact": "Monitor active Browns depth chart led by Deshaun Watson and Denzel Boston.",
+        "fantasyImpact": "Monitor active Browns depth chart led by Deshaun Watson and Harold Fannin Jr..",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "cle-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+      "source": "ESPN",
+      "author": "Anthony Gharib",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
+      "tags": [
+        "Browns",
+        "CLE",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "cle",
+      "teamTag": "Browns",
+      "aiSummary": {
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+        "keyTakeaways": [
+          "Official Cleveland Browns update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 6-4 (Active in AFC North)"
+        ],
+        "fantasyImpact": "Monitor active Browns depth chart led by Deshaun Watson and Harold Fannin Jr..",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "cle-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+      "source": "ESPN",
+      "author": "ESPN Staff",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
+      "tags": [
+        "Browns",
+        "CLE",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "cle",
+      "teamTag": "Browns",
+      "aiSummary": {
+        "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+        "keyTakeaways": [
+          "Official Cleveland Browns update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 6-4 (Active in AFC North)"
+        ],
+        "fantasyImpact": "Monitor active Browns depth chart led by Deshaun Watson and Harold Fannin Jr..",
         "urgency": "HIGH"
       }
     }
   ],
   "ten": [
     {
-      "id": "ten-news-50475629",
-      "title": "Cedric Gray ready to seize bigger role with Titans",
-      "summary": "Turron Davenport reports on Cedric Gray's opportunity to step up as a leader following the Titans' recent departures.",
+      "id": "ten-news-50541939",
+      "title": "Draft buzz: Interest in Oklahoma State's Drew Mestemaker could spur draft trade",
+      "summary": "If the Titans or Chargers wind up with the No. 1 selection and stick with their franchise quarterbacks, interest in Oklahoma State's Drew Mestemaker could lead to a team seeking to trade up for the top overall pick.",
       "source": "ESPN",
       "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_titans/dm_261113_titans.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50475629/cedric-gray-ready-seize-bigger-role-titans",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1111/r1744598_1296x729_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50541939/draft-buzz-mestemaker-spur-auction-no-1-pick",
       "tags": [
         "Titans",
         "TEN",
@@ -3856,24 +3856,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ten",
       "teamTag": "Titans",
       "aiSummary": {
-        "executiveBrief": "Turron Davenport reports on Cedric Gray's opportunity to step up as a leader following the Titans' recent departures.",
+        "executiveBrief": "If the Titans or Chargers wind up with the No. 1 selection and stick with their franchise quarterbacks, interest in Oklahoma State's Drew Mestemaker could lead to a team seeking to trade up for the top overall pick.",
         "keyTakeaways": [
-          "Official Tennessee Titans update: Cedric Gray ready to seize bigger role with Titans",
-          "Current Record: 1-7 (Active in AFC South)"
+          "Official Tennessee Titans update: Draft buzz: Interest in Oklahoma State's Drew Mestemaker could spur draft trade",
+          "Current Record: 1-8 (Active in AFC South)"
         ],
         "fantasyImpact": "Monitor active Titans depth chart led by Cam Ward and Carnell Tate.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "ten-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "ten-news-50525533",
+      "title": "NFL offseason free agent and trade acquisitions that have and have not worked",
+      "summary": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
       "source": "ESPN",
-      "author": "Anthony Gharib",
+      "author": "Aaron Schatz",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1747957_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50525533/2026-offseason-change-scenery-fits-players-new-teams",
       "tags": [
         "Titans",
         "TEN",
@@ -3883,24 +3883,51 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ten",
       "teamTag": "Titans",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
         "keyTakeaways": [
-          "Official Tennessee Titans update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 1-7 (Active in AFC South)"
+          "Official Tennessee Titans update: NFL offseason free agent and trade acquisitions that have and have not worked",
+          "Current Record: 1-8 (Active in AFC South)"
         ],
         "fantasyImpact": "Monitor active Titans depth chart led by Cam Ward and Carnell Tate.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "ten-news-50473143",
-      "title": "Rookie WR Carnell Tate among multiple Titans starters ruled out vs. Jaguars",
-      "summary": "The Titans will be without multiple starters against the Jaguars on Sunday, including rookie wide receiver Carnell Tate.",
+      "id": "ten-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+      "source": "ESPN",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
+      "tags": [
+        "Titans",
+        "TEN",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "ten",
+      "teamTag": "Titans",
+      "aiSummary": {
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+        "keyTakeaways": [
+          "Official Tennessee Titans update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 1-8 (Active in AFC South)"
+        ],
+        "fantasyImpact": "Monitor active Titans depth chart led by Cam Ward and Carnell Tate.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "ten-news-50523033",
+      "title": "Titans defense crumbling post-Jeffery Simmons, Amani Hooker trades",
+      "summary": "The moves Tennessee made might have helped the rebuilding process, but it also impacted the current team.",
       "source": "ESPN",
       "author": "Turron Davenport",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/0815/r1701990_600x400_3-2.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50473143/rookie-wr-carnell-tate-multiple-titans-ruled-out",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1118/r1747769_1296x729_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50523033/titans-defense-post-jeffery-simmons-amani-hooker-trades",
       "tags": [
         "Titans",
         "TEN",
@@ -3910,24 +3937,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ten",
       "teamTag": "Titans",
       "aiSummary": {
-        "executiveBrief": "The Titans will be without multiple starters against the Jaguars on Sunday, including rookie wide receiver Carnell Tate.",
+        "executiveBrief": "The moves Tennessee made might have helped the rebuilding process, but it also impacted the current team.",
         "keyTakeaways": [
-          "Official Tennessee Titans update: Rookie WR Carnell Tate among multiple Titans starters ruled out vs. Jaguars",
-          "Current Record: 1-7 (Active in AFC South)"
+          "Official Tennessee Titans update: Titans defense crumbling post-Jeffery Simmons, Amani Hooker trades",
+          "Current Record: 1-8 (Active in AFC South)"
         ],
         "fantasyImpact": "Monitor active Titans depth chart led by Cam Ward and Carnell Tate.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "ten-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "ten-news-50539065",
+      "title": "Titans' Calvin Ridley facing misdemeanor assault charge over airport incident",
+      "summary": "Titans wide receiver Calvin Ridley is facing a misdemeanor assault charge as a result of a Nov. 7 incident at Nashville International Airport.",
       "source": "ESPN",
-      "author": "ESPN",
+      "author": "Turron Davenport",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1110/r1743982_600x400_3-2.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50539065/titans-calvin-ridley-assault-charge-airport-incident",
       "tags": [
         "Titans",
         "TEN",
@@ -3937,37 +3964,10 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ten",
       "teamTag": "Titans",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Titans wide receiver Calvin Ridley is facing a misdemeanor assault charge as a result of a Nov. 7 incident at Nashville International Airport.",
         "keyTakeaways": [
-          "Official Tennessee Titans update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 1-7 (Active in AFC South)"
-        ],
-        "fantasyImpact": "Monitor active Titans depth chart led by Cam Ward and Carnell Tate.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "ten-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-      "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
-      "tags": [
-        "Titans",
-        "TEN",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "ten",
-      "teamTag": "Titans",
-      "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
-        "keyTakeaways": [
-          "Official Tennessee Titans update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 1-7 (Active in AFC South)"
+          "Official Tennessee Titans update: Titans' Calvin Ridley facing misdemeanor assault charge over airport incident",
+          "Current Record: 1-8 (Active in AFC South)"
         ],
         "fantasyImpact": "Monitor active Titans depth chart led by Cam Ward and Carnell Tate.",
         "urgency": "HIGH"
@@ -3976,41 +3976,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "ne": [
     {
-      "id": "ne-news-50474420",
-      "title": "Patriots enjoying themselves in Munich",
-      "summary": "Mike Reiss breaks down some fun moments during the Patriots' trip to Germany.",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_Pats/dm_261113_Pats.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50474420/patriots-enjoying-munich",
-      "tags": [
-        "Patriots",
-        "NE",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "ne",
-      "teamTag": "Patriots",
-      "aiSummary": {
-        "executiveBrief": "Mike Reiss breaks down some fun moments during the Patriots' trip to Germany.",
-        "keyTakeaways": [
-          "Official New England Patriots update: Patriots enjoying themselves in Munich",
-          "Current Record: 5-4 (Active in AFC East)"
-        ],
-        "fantasyImpact": "Monitor active Patriots depth chart led by Drake Maye and DeMario Douglas.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "ne-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "ne-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Patriots",
         "NE",
@@ -4020,24 +3993,51 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ne",
       "teamTag": "Patriots",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official New England Patriots update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 5-4 (Active in AFC East)"
+          "Official New England Patriots update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 5-5 (Active in AFC East)"
         ],
         "fantasyImpact": "Monitor active Patriots depth chart led by Drake Maye and DeMario Douglas.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "ne-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "ne-news-50503981",
+      "title": "Drake Maye ankle injury: Is the Patriots' season over? Can Tommy DeVito step up?",
+      "summary": "If the QB doesn't return in 2026, New England faces an uphill battle against some of the NFL's best teams.",
+      "source": "ESPN",
+      "author": "Mike Reiss",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746769_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50503981/drake-maye-ankle-injury-patriots-tommy-devito-stats",
+      "tags": [
+        "Patriots",
+        "NE",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "ne",
+      "teamTag": "Patriots",
+      "aiSummary": {
+        "executiveBrief": "If the QB doesn't return in 2026, New England faces an uphill battle against some of the NFL's best teams.",
+        "keyTakeaways": [
+          "Official New England Patriots update: Drake Maye ankle injury: Is the Patriots' season over? Can Tommy DeVito step up?",
+          "Current Record: 5-5 (Active in AFC East)"
+        ],
+        "fantasyImpact": "Monitor active Patriots depth chart led by Drake Maye and DeMario Douglas.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "ne-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Patriots",
         "NE",
@@ -4047,24 +4047,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ne",
       "teamTag": "Patriots",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official New England Patriots update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 5-4 (Active in AFC East)"
+          "Official New England Patriots update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 5-5 (Active in AFC East)"
         ],
         "fantasyImpact": "Monitor active Patriots depth chart led by Drake Maye and DeMario Douglas.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "ne-news-50463729",
-      "title": "Week 10 betting preview: Analysis, best bets, TD predictions for Sunday",
-      "summary": "Our experts dive into the odds and player props for Week 10 and offer their betting tips and favorite plays.",
+      "id": "ne-news-50542714",
+      "title": "McAfee & Co. speculate who will replace injured Drake Maye",
+      "summary": "McAfee & Co. speculate who will replace injured Drake Maye",
       "source": "ESPN",
-      "author": "Ben Solak, Seth Walder, Matt Bowen and Mike Clay",
+      "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1112/r1745045_608x342_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50463729/week-10-nfl-odds-touchdown-props-best-bets-sunday-games",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/ss_20261120_142826957_3751241/ss_20261120_142826957_3751241.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50542714/mcafee-co-speculate-replace-injured-drake-maye",
       "tags": [
         "Patriots",
         "NE",
@@ -4074,24 +4074,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ne",
       "teamTag": "Patriots",
       "aiSummary": {
-        "executiveBrief": "Our experts dive into the odds and player props for Week 10 and offer their betting tips and favorite plays.",
+        "executiveBrief": "McAfee & Co. speculate who will replace injured Drake Maye",
         "keyTakeaways": [
-          "Official New England Patriots update: Week 10 betting preview: Analysis, best bets, TD predictions for Sunday",
-          "Current Record: 5-4 (Active in AFC East)"
+          "Official New England Patriots update: McAfee & Co. speculate who will replace injured Drake Maye",
+          "Current Record: 5-5 (Active in AFC East)"
         ],
         "fantasyImpact": "Monitor active Patriots depth chart led by Drake Maye and DeMario Douglas.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "ne-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+      "id": "ne-news-50542578",
+      "title": "Patriots QB Drake Maye has fractured fibula, sources say",
+      "summary": "Patriots quarterback Drake Maye has a fractured right fibula, and receiver A.J. Brown has a hamstring injury, sources told ESPN's Mike Reiss and Adam Schefter.",
       "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
+      "author": "Mike Reiss and Adam Schefter",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746589_1296x729_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50542578/patriots-qb-drake-maye-fractured-fibula-sources-say",
       "tags": [
         "Patriots",
         "NE",
@@ -4101,10 +4101,10 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "ne",
       "teamTag": "Patriots",
       "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+        "executiveBrief": "Patriots quarterback Drake Maye has a fractured right fibula, and receiver A.J. Brown has a hamstring injury, sources told ESPN's Mike Reiss and Adam Schefter.",
         "keyTakeaways": [
-          "Official New England Patriots update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 5-4 (Active in AFC East)"
+          "Official New England Patriots update: Patriots QB Drake Maye has fractured fibula, sources say",
+          "Current Record: 5-5 (Active in AFC East)"
         ],
         "fantasyImpact": "Monitor active Patriots depth chart led by Drake Maye and DeMario Douglas.",
         "urgency": "HIGH"
@@ -4113,14 +4113,68 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "nyg": [
     {
-      "id": "nyg-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+      "id": "nyg-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+      "source": "ESPN",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
+      "tags": [
+        "Giants",
+        "NYG",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "nyg",
+      "teamTag": "Giants",
+      "aiSummary": {
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+        "keyTakeaways": [
+          "Official New York Giants update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 5-3 (Active in NFC East)"
+        ],
+        "fantasyImpact": "Monitor active Giants depth chart led by Jameis Winston and Malik Nabers.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "nyg-news-50536967",
+      "title": "Will J.J. McCarthy be able to stand against the Jaguars",
+      "summary": "Jordan Raanan previews  J.J. McCarthy's performance headed into Sunday's game against the Jaguars.",
+      "source": "ESPN",
+      "author": "ESPN NFL Desk",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1119/dm_261119_16x9_Giants_IA/dm_261119_16x9_Giants_IA.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50536967/will-jj-mccarthy-able-stand-jaguars",
+      "tags": [
+        "Giants",
+        "NYG",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "nyg",
+      "teamTag": "Giants",
+      "aiSummary": {
+        "executiveBrief": "Jordan Raanan previews  J.J. McCarthy's performance headed into Sunday's game against the Jaguars.",
+        "keyTakeaways": [
+          "Official New York Giants update: Will J.J. McCarthy be able to stand against the Jaguars",
+          "Current Record: 5-3 (Active in NFC East)"
+        ],
+        "fantasyImpact": "Monitor active Giants depth chart led by Jameis Winston and Malik Nabers.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "nyg-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
       "source": "ESPN",
       "author": "Anthony Gharib",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
       "tags": [
         "Giants",
         "NYG",
@@ -4130,9 +4184,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "nyg",
       "teamTag": "Giants",
       "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
         "keyTakeaways": [
-          "Official New York Giants update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
+          "Official New York Giants update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
           "Current Record: 5-3 (Active in NFC East)"
         ],
         "fantasyImpact": "Monitor active Giants depth chart led by Jameis Winston and Malik Nabers.",
@@ -4140,14 +4194,41 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       }
     },
     {
-      "id": "nyg-news-50472813",
-      "title": "Why the Giants' loss to Commanders was a big missed opportunity",
-      "summary": "Jordan Raanan details how the Giants' 24-21 loss to the Commanders was a missed opportunity to bury the rest of the NFC East.",
+      "id": "nyg-news-50535179",
+      "title": "NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+      "summary": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+      "source": "ESPN",
+      "author": "ESPN Staff",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1748333_608x342_16-9.png",
+      "url": "https://www.espn.com/nfl/story/_/id/50535179/nfl-week-11-fashionable-arrivals",
+      "tags": [
+        "Giants",
+        "NYG",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "nyg",
+      "teamTag": "Giants",
+      "aiSummary": {
+        "executiveBrief": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+        "keyTakeaways": [
+          "Official New York Giants update: NFL Week 11 arrivals: C.J. Stroud leads the way ahead of Colts-Texans",
+          "Current Record: 5-3 (Active in NFC East)"
+        ],
+        "fantasyImpact": "Monitor active Giants depth chart led by Jameis Winston and Malik Nabers.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "nyg-news-50532979",
+      "title": "Jaguars visit the Giants in a matchup of two unexpected division leaders",
+      "summary": "— John Harbaugh had no time this week for analyzing what has made the Jacksonville Jaguars one of the NFL's top teams.",
       "source": "ESPN",
       "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_Why_the_Giants_loss_to_Commanders_was_a_big_missed_opportunity/dm_261113_Why_the_Giants_loss_to_Commanders_was_a_big_missed_opportunity.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50472813/why-giants-loss-commanders-was-big-missed-opportunity",
+      "imageUrl": "https://s.espncdn.com/stitcher/sports/football/nfl/events/401873069.png?templateId=espn.applewatch.awayhome.1",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873069",
       "tags": [
         "Giants",
         "NYG",
@@ -4157,90 +4238,9 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "nyg",
       "teamTag": "Giants",
       "aiSummary": {
-        "executiveBrief": "Jordan Raanan details how the Giants' 24-21 loss to the Commanders was a missed opportunity to bury the rest of the NFC East.",
+        "executiveBrief": "— John Harbaugh had no time this week for analyzing what has made the Jacksonville Jaguars one of the NFL's top teams.",
         "keyTakeaways": [
-          "Official New York Giants update: Why the Giants' loss to Commanders was a big missed opportunity",
-          "Current Record: 5-3 (Active in NFC East)"
-        ],
-        "fantasyImpact": "Monitor active Giants depth chart led by Jameis Winston and Malik Nabers.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "nyg-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-      "source": "ESPN",
-      "author": "ESPN",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
-      "tags": [
-        "Giants",
-        "NYG",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "nyg",
-      "teamTag": "Giants",
-      "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
-        "keyTakeaways": [
-          "Official New York Giants update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 5-3 (Active in NFC East)"
-        ],
-        "fantasyImpact": "Monitor active Giants depth chart led by Jameis Winston and Malik Nabers.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "nyg-news-50472074",
-      "title": "Stephen A.: 'John Harbaugh should be ashamed of himself' after Giants' loss",
-      "summary": "Stephen A.: 'John Harbaugh should be ashamed of himself' after Giants' loss",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/ss_20261113_102422488_3739329/ss_20261113_102422488_3739329.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50472074/john-harbaugh-ashamed-giants-loss",
-      "tags": [
-        "Giants",
-        "NYG",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "nyg",
-      "teamTag": "Giants",
-      "aiSummary": {
-        "executiveBrief": "Stephen A.: 'John Harbaugh should be ashamed of himself' after Giants' loss",
-        "keyTakeaways": [
-          "Official New York Giants update: Stephen A.: 'John Harbaugh should be ashamed of himself' after Giants' loss",
-          "Current Record: 5-3 (Active in NFC East)"
-        ],
-        "fantasyImpact": "Monitor active Giants depth chart led by Jameis Winston and Malik Nabers.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "nyg-news-50471328",
-      "title": "'I'd cut Jameis Winston this morning': Whitner not amused by hard count",
-      "summary": "'I'd cut Jameis Winston this morning': Whitner not amused by hard count",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/ss_20261113_085734395_3739285/ss_20261113_085734395_3739285.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50471328/whitner-not-amused-hard-count",
-      "tags": [
-        "Giants",
-        "NYG",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "nyg",
-      "teamTag": "Giants",
-      "aiSummary": {
-        "executiveBrief": "'I'd cut Jameis Winston this morning': Whitner not amused by hard count",
-        "keyTakeaways": [
-          "Official New York Giants update: 'I'd cut Jameis Winston this morning': Whitner not amused by hard count",
+          "Official New York Giants update: Jaguars visit the Giants in a matchup of two unexpected division leaders",
           "Current Record: 5-3 (Active in NFC East)"
         ],
         "fantasyImpact": "Monitor active Giants depth chart led by Jameis Winston and Malik Nabers.",
@@ -4250,68 +4250,14 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
   ],
   "car": [
     {
-      "id": "car-news-50473949",
-      "title": "Panthers looking to build momentum",
-      "summary": "Mike Kaye previews the Panthers matchup against the Saints as the true second half of the NFL season begins.",
-      "source": "ESPN",
-      "author": "ESPN NFL Desk",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1113/dm_261113_11-13_Panthers_IA/dm_261113_11-13_Panthers_IA.jpg",
-      "url": "https://www.espn.com/video/clip/_/id/50473949/panthers-looking-build-momentum",
-      "tags": [
-        "Panthers",
-        "CAR",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "car",
-      "teamTag": "Panthers",
-      "aiSummary": {
-        "executiveBrief": "Mike Kaye previews the Panthers matchup against the Saints as the true second half of the NFL season begins.",
-        "keyTakeaways": [
-          "Official Carolina Panthers update: Panthers looking to build momentum",
-          "Current Record: 3-5 (Active in NFC South)"
-        ],
-        "fantasyImpact": "Monitor active Panthers depth chart led by Bryce Young and Tetairoa McMillan.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "car-news-50448015",
-      "title": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-      "summary": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "source": "ESPN",
-      "author": "Anthony Gharib",
-      "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1111/16x9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
-      "tags": [
-        "Panthers",
-        "CAR",
-        "NFL",
-        "Live Wire"
-      ],
-      "teamId": "car",
-      "teamTag": "Panthers",
-      "aiSummary": {
-        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-        "keyTakeaways": [
-          "Official Carolina Panthers update: NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
-          "Current Record: 3-5 (Active in NFC South)"
-        ],
-        "fantasyImpact": "Monitor active Panthers depth chart led by Bryce Young and Tetairoa McMillan.",
-        "urgency": "HIGH"
-      }
-    },
-    {
-      "id": "car-news-50414742",
-      "title": "NFL Week 10 betting odds: Lines and totals for every game",
-      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+      "id": "car-news-50501650",
+      "title": "NFL Week 11 betting odds: Lines and totals for every game",
+      "summary": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
       "source": "ESPN",
       "author": "ESPN",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1109/r1743451_2_1296x729_16-9.jpg",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50414742/2026-nfl-week-10-schedule-odds-point-spreads-totals",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1116/r1746635_608x342_16-9.jpg",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50501650/2026-nfl-week-11-schedule-odds-point-spreads-totals",
       "tags": [
         "Panthers",
         "CAR",
@@ -4321,24 +4267,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "car",
       "teamTag": "Panthers",
       "aiSummary": {
-        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 10.",
+        "executiveBrief": "Updated odds, spreads, totals and FPI predictions for every NFL game in Week 11.",
         "keyTakeaways": [
-          "Official Carolina Panthers update: NFL Week 10 betting odds: Lines and totals for every game",
-          "Current Record: 3-5 (Active in NFC South)"
+          "Official Carolina Panthers update: NFL Week 11 betting odds: Lines and totals for every game",
+          "Current Record: 4-5 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Panthers depth chart led by Bryce Young and Tetairoa McMillan.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "car-news-50463509",
-      "title": "Is Chuba Hubbard the biggest X factor to spark a Panthers turnaround?",
-      "summary": "Meet Carolina's team captain, a locker room leader and a relentless running back who is \"chasing greatness myself.\"",
+      "id": "car-news-50542167",
+      "title": "How the Panthers plan to slow down Derrick Henry",
+      "summary": "Mike Kaye breaks down the Panthers' gameplan for Derrick Henry and the Ravens in Week 11.",
       "source": "ESPN",
-      "author": "Mike Kaye",
+      "author": "ESPN NFL Desk",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1112/r1744921_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50463509/chuba-hubbard-x-factor-spark-carolina-panthers",
+      "imageUrl": "https://espnmedia-cdn.akamaized.net/espn/media/common/2026/1120/dm_261120_NFL_InstantAnalysis_Panthers_IA/dm_261120_NFL_InstantAnalysis_Panthers_IA.jpg",
+      "url": "https://www.espn.com/video/clip/_/id/50542167/how-panthers-plan-slow-derrick-henry",
       "tags": [
         "Panthers",
         "CAR",
@@ -4348,24 +4294,24 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "car",
       "teamTag": "Panthers",
       "aiSummary": {
-        "executiveBrief": "Meet Carolina's team captain, a locker room leader and a relentless running back who is \"chasing greatness myself.\"",
+        "executiveBrief": "Mike Kaye breaks down the Panthers' gameplan for Derrick Henry and the Ravens in Week 11.",
         "keyTakeaways": [
-          "Official Carolina Panthers update: Is Chuba Hubbard the biggest X factor to spark a Panthers turnaround?",
-          "Current Record: 3-5 (Active in NFC South)"
+          "Official Carolina Panthers update: How the Panthers plan to slow down Derrick Henry",
+          "Current Record: 4-5 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Panthers depth chart led by Bryce Young and Tetairoa McMillan.",
         "urgency": "HIGH"
       }
     },
     {
-      "id": "car-news-50453355",
-      "title": "NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-      "summary": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+      "id": "car-news-50525533",
+      "title": "NFL offseason free agent and trade acquisitions that have and have not worked",
+      "summary": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
       "source": "ESPN",
-      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Aaron Schatz",
+      "author": "Aaron Schatz",
       "publishedAt": "Live Wire",
-      "imageUrl": "https://a.espncdn.com/photo/2026/1113/r1745080_608x342_16-9.jpg",
-      "url": "https://www.espn.com/nfl/story/_/id/50453355/week-10-picks-predictions-schedule-fantasy-odds-2026",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1119/r1747957_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50525533/2026-offseason-change-scenery-fits-players-new-teams",
       "tags": [
         "Panthers",
         "CAR",
@@ -4375,10 +4321,64 @@ export const TEAM_NEWS_DATABASE: Record<string, NewsArticle[]> = {
       "teamId": "car",
       "teamTag": "Panthers",
       "aiSummary": {
-        "executiveBrief": "Kirk Cousins' return to Minnesota? Patriots vs. Lions in Germany? There are 13 more games in Week 10, and we have picks, predictions and more for all of them.",
+        "executiveBrief": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
         "keyTakeaways": [
-          "Official Carolina Panthers update: NFL Week 10 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "Current Record: 3-5 (Active in NFC South)"
+          "Official Carolina Panthers update: NFL offseason free agent and trade acquisitions that have and have not worked",
+          "Current Record: 4-5 (Active in NFC South)"
+        ],
+        "fantasyImpact": "Monitor active Panthers depth chart led by Bryce Young and Tetairoa McMillan.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "car-news-50522208",
+      "title": "NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+      "summary": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+      "source": "ESPN",
+      "author": "NFL Nation, Pamela Maldonado, Eric Moody and Seth Walder",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2025/0819/r1533632_608x342_16-9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50522208/week-11-picks-predictions-schedule-fantasy-odds-2026",
+      "tags": [
+        "Panthers",
+        "CAR",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "car",
+      "teamTag": "Panthers",
+      "aiSummary": {
+        "executiveBrief": "Joe Burrow vs. Jayden Daniels? Fernando Mendoza vs. Bo Nix? There are 12 more games in Week 11, and we have picks, predictions and more for all of them.",
+        "keyTakeaways": [
+          "Official Carolina Panthers update: NFL Week 11 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "Current Record: 4-5 (Active in NFC South)"
+        ],
+        "fantasyImpact": "Monitor active Panthers depth chart led by Bryce Young and Tetairoa McMillan.",
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "id": "car-news-50514892",
+      "title": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "summary": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+      "source": "ESPN",
+      "author": "Anthony Gharib",
+      "publishedAt": "Live Wire",
+      "imageUrl": "https://a.espncdn.com/photo/2026/1117/commanders-texans-week-11-unis16x9.jpg",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
+      "tags": [
+        "Panthers",
+        "CAR",
+        "NFL",
+        "Live Wire"
+      ],
+      "teamId": "car",
+      "teamTag": "Panthers",
+      "aiSummary": {
+        "executiveBrief": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+        "keyTakeaways": [
+          "Official Carolina Panthers update: NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+          "Current Record: 4-5 (Active in NFC South)"
         ],
         "fantasyImpact": "Monitor active Panthers depth chart led by Bryce Young and Tetairoa McMillan.",
         "urgency": "HIGH"
