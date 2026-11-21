@@ -96,15 +96,18 @@ export default function Navbar({
           <div className="flex items-center gap-3">
             <div className="relative w-10 h-10 rounded-xl overflow-hidden bg-gray-900 flex items-center justify-center shadow-lg shadow-amber-500/20 border border-amber-400/50">
               <img
-                src="/cleats-logo.svg"
-                alt="Cleats Hanging Logo"
+                src="/logo.svg"
+                alt="100-Yards Gridiron Logo"
                 className="w-full h-full object-cover"
               />
             </div>
             <div>
               <div className="flex items-center gap-1.5">
-                <span className="font-extrabold text-xl sm:text-2xl tracking-tight gold-gradient-text">
-                  CLEATS
+                <span className="font-extrabold text-lg sm:text-xl tracking-tight text-white">
+                  100-
+                </span>
+                <span className="font-extrabold text-lg sm:text-xl tracking-tight gold-gradient-text -ml-1.5">
+                  YARDS
                 </span>
               </div>
               <p className="text-[10px] text-gray-400 hidden sm:block -mt-1 font-medium tracking-wide">

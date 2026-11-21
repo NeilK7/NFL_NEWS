@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.neilkelshikar.cleats',
-  appName: 'Cleats',
+  appId: 'com.neilkelshikar.hundredyards',
+  appName: '100-Yards',
   webDir: 'public',
   server: {
     url: 'https://zippy-crystal-2cmj4pf.vercel.app',

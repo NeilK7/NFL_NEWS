@@ -545,7 +545,7 @@ export default function TeamDashboard({
           </div>
           <span className="text-xs text-amber-400 font-semibold flex items-center gap-1">
             <Sparkles className="w-3.5 h-3.5" />
-            {loadingIntel ? "Importing Embedded Highlights..." : "Watch Directly Inside Cleats"}
+            {loadingIntel ? "Importing Embedded Highlights..." : "Watch Directly Inside 100-Yards"}
           </span>
         </div>
 

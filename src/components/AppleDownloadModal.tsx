@@ -89,8 +89,8 @@ export default function AppleDownloadModal({ isOpen, onClose }: AppleDownloadMod
         <div className="flex items-center justify-between px-6 pt-5 pb-3 border-b border-gray-800">
           <div>
             <h2 className="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
-              <img src="/cleats-logo.svg" alt="Cleats" className="w-7 h-7 rounded-lg" />
-              Download <span className="gold-gradient-text">Cleats</span>
+              <img src="/logo.svg" alt="100-Yards" className="w-7 h-7 rounded-lg" />
+              Download <span className="gold-gradient-text">100-Yards</span>
             </h2>
             <p className="text-xs text-gray-400 mt-0.5">
               Optimized for iPhone, iPad & Mac with instant live push, zero lag, and offline caching
@@ -215,7 +215,7 @@ export default function AppleDownloadModal({ isOpen, onClose }: AppleDownloadMod
                       3
                     </span>
                     <span>
-                      Choose <strong className="text-white inline-flex items-center gap-1 mx-1 px-1.5 py-0.5 bg-gray-800 rounded border border-gray-700 text-xs"><PlusSquare className="w-3.5 h-3.5 text-amber-400" /> Add to Home Screen</strong>. Cleats will run in native multi-window Stage Manager.
+                      Choose <strong className="text-white inline-flex items-center gap-1 mx-1 px-1.5 py-0.5 bg-gray-800 rounded border border-gray-700 text-xs"><PlusSquare className="w-3.5 h-3.5 text-amber-400" /> Add to Home Screen</strong>. 100-Yards will run in native multi-window Stage Manager.
                     </span>
                   </li>
                 </ol>
@@ -251,7 +251,7 @@ export default function AppleDownloadModal({ isOpen, onClose }: AppleDownloadMod
                       3
                     </span>
                     <span>
-                      Click <strong className="text-white">Add</strong>. Cleats will appear in your Mac Dock and Launchpad with a dedicated window and separate profile!
+                      Click <strong className="text-white">Add</strong>. 100-Yards will appear in your Mac Dock and Launchpad with a dedicated window and separate profile!
                     </span>
                   </li>
                 </ol>

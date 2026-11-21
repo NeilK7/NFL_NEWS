@@ -1,7 +1,7 @@
 {
-  "name": "Cleats - NFL Intelligence & News",
-  "short_name": "Cleats",
-  "description": "Cleats: Live NFL News, Schedules, Injury Wire, Video Highlights, and Franchise Stats.",
+  "name": "100-Yards - NFL Intelligence & News",
+  "short_name": "100-Yards",
+  "description": "100-Yards: Live NFL News, Schedules, Injury Wire, Embedded Video Highlights, and Franchise Stats.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#090b10",
@@ -19,7 +19,7 @@
       "type": "image/png"
     },
     {
-      "src": "/cleats-logo.svg",
+      "src": "/logo.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     }

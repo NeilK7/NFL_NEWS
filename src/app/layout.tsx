@@ -22,16 +22,16 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Cleats | NFL Intelligence & War Room",
-  description: "Cleats NFL command center with live intelligence from Yahoo Sports, ESPN, real-time injury tracking, embedded video highlights, and schedule analytics.",
+  title: "100-Yards | NFL Intelligence & War Room",
+  description: "100-Yards NFL command center with live intelligence from Yahoo Sports, ESPN, real-time injury tracking, embedded video highlights, and schedule analytics.",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "Cleats",
+    title: "100-Yards",
   },
   icons: {
-    icon: "/cleats-logo.svg",
+    icon: "/logo.svg",
     apple: "/apple-touch-icon.png",
   },
 };
@@ -46,7 +46,7 @@ export default function RootLayout({
       <head>
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content="Cleats" />
+        <meta name="apple-mobile-web-app-title" content="100-Yards" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body
