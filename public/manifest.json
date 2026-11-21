@@ -1,22 +1,27 @@
 {
-  "name": "Gridiron Apex - NFL Intelligence & News",
-  "short_name": "Gridiron Apex",
-  "description": "Premium NFL News, Live Schedules, Injury Wire and AI Tactical Intelligence for iPhone, iPad, and Mac.",
+  "name": "Cleats - NFL Intelligence & News",
+  "short_name": "Cleats",
+  "description": "Cleats: Live NFL News, Schedules, Injury Wire, Video Highlights, and Franchise Stats.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#090d16",
-  "theme_color": "#090d16",
+  "background_color": "#090b10",
+  "theme_color": "#090b10",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+      "src": "/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+      "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "/cleats-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
     }
   ]
 }

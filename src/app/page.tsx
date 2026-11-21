@@ -423,8 +423,8 @@ export default function Home() {
       <footer className="border-t border-gray-800/80 bg-[#06080d] py-8 text-xs text-gray-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <Trophy className="w-4 h-4 text-amber-400" />
-            <span className="font-bold text-gray-300">GRIDIRON APEX</span>
+            <img src="/cleats-logo.svg" alt="Cleats" className="w-5 h-5 rounded" />
+            <span className="font-bold text-gray-300">CLEATS</span>
             <span>• The Definitive NFL Intelligence Platform</span>
           </div>
 

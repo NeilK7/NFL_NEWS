@@ -22,17 +22,17 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Gridiron Apex | Elite NFL Intelligence & War Room",
-  description: "Ultra-luxury NFL command center with live AI-curated intelligence from Yahoo Sports, ESPN, real-time injury tracking, and schedule analytics.",
+  title: "Cleats | NFL Intelligence & War Room",
+  description: "Cleats NFL command center with live intelligence from Yahoo Sports, ESPN, real-time injury tracking, embedded video highlights, and schedule analytics.",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "Gridiron Apex",
+    title: "Cleats",
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: "/cleats-logo.svg",
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -46,8 +46,8 @@ export default function RootLayout({
       <head>
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content="Gridiron Apex" />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <meta name="apple-mobile-web-app-title" content="Cleats" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#090b10] text-gray-100 min-h-screen selection:bg-amber-500 selection:text-black`}

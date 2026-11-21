@@ -94,16 +94,17 @@ export default function Navbar({
         <div className="flex items-center justify-between h-16">
           {/* Logo & Brand */}
           <div className="flex items-center gap-3">
-            <div className="relative w-9 h-9 rounded-xl bg-gradient-to-br from-amber-400 via-amber-600 to-yellow-700 flex items-center justify-center shadow-lg shadow-amber-500/20 border border-amber-400/40">
-              <Trophy className="w-5 h-5 text-black stroke-[2.2]" />
+            <div className="relative w-10 h-10 rounded-xl overflow-hidden bg-gray-900 flex items-center justify-center shadow-lg shadow-amber-500/20 border border-amber-400/50">
+              <img
+                src="/cleats-logo.svg"
+                alt="Cleats Hanging Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <div className="flex items-center gap-1.5">
-                <span className="font-extrabold text-lg sm:text-xl tracking-tight text-white">
-                  GRIDIRON
-                </span>
-                <span className="font-extrabold text-lg sm:text-xl tracking-tight gold-gradient-text">
-                  APEX
+                <span className="font-extrabold text-xl sm:text-2xl tracking-tight gold-gradient-text">
+                  CLEATS
                 </span>
               </div>
               <p className="text-[10px] text-gray-400 hidden sm:block -mt-1 font-medium tracking-wide">
